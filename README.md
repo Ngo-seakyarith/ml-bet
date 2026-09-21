@@ -6,12 +6,11 @@ statistic whenever that file changes.
 
 The system compares Match Winner and Correct Score 2-0 strategies while keeping Over 2.5 bets
 separate. It tracks hit rate, ROI, conditional sweep probability, odds groups, weekly
-performance, league performance, upset frequency, market movement and actual bankroll results.
+performance, league performance, upset frequency, market movement and a running total.
 
-The dashboard distinguishes real placed bets from skipped bets and historical backtests, so
-strategy performance and actual financial performance can be evaluated independently. It also
-distinguishes actual, snapshot and estimated odds so historical simulations never get mixed
-into real betting returns.
+Every tracked pick counts, whether or not it was actually backed. The dashboard measures the
+method, not an account balance. It does distinguish actual, snapshot and estimated odds, so
+reconstructed backtest prices never get mistaken for prices anyone could have taken.
 
 Its purpose is not to record wins and losses, but to find out whether repeatable patterns
 exist — whether certain odds ranges, leagues, weeks or market conditions produce better Match
@@ -48,7 +47,7 @@ than counted at evens.
 | `selected_maps`, `opponent_maps`                    | Decides the 2-0 outcome — our bet wins only when **our** team sweeps  |
 | `strategy_market`                                   | `2-0` or `Over 2.5`; these are never pooled                           |
 | `strategy_odds_actual` / `_snapshot` / `_estimated` | Price priority, in that order                                         |
-| `strategy_bet_status`                               | `placed` is the only status that reaches the bankroll                 |
+| `strategy_result`                                   | `VOID/POSTPONED` drops the row from every rate and return             |
 
 ## How the numbers are defined
 
@@ -74,18 +73,20 @@ Every rate carries a marker: `●` usable, `◐` thin (under 25), `○` anecdote
 return built on six bets is one result away from looking completely different, and the
 interface says so rather than letting a large percentage imply reliability.
 
-## Research mode vs real money
+## What is counted
 
-- **Research** counts every pre-match pick, including ones that were never backed. It measures
-  the method.
-- **Real money** counts only `strategy_bet_status = placed`. It measures the account.
+Every tracked pick, at one flat unit. There is no separate "real money" view: which bets were
+actually staked was never recorded reliably, so splitting the dataset on it produced a
+misleadingly small sample rather than a second useful number. The running total on the
+Bankroll page is what flat staking every pick would have returned — the method's result, not
+an account statement.
 
-The Bankroll page is always real money, whatever the toggle says. Keeping these apart is what
-stops "the strategy would have made +90%" from being confused with what the account actually
-did.
+Two things are still excluded:
 
-The backtest weekend is priced with interpolated 2-0 odds rather than observed ones, so it is
-a separate opt-in toggle and never silently inflates a headline.
+- **Postponed fixtures**, which never resolved, via `VOID/POSTPONED` in the result columns.
+- **Estimated prices**, behind a toggle. The Sep 4-6 weekend is a reconstruction whose 2-0
+  odds were interpolated rather than observed, so it can be switched off to see only prices
+  that really existed.
 
 ## Stack
 

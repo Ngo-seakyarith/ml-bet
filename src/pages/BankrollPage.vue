@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { ALL, useDataset } from '../composables/useDataset'
+import { useDataset } from '../composables/useDataset'
 import { bankrollSeries, drawdown, marketPerformance, summarize } from '../lib/stats'
 import SectionCard from '../components/ui/SectionCard.vue'
 import StatTile from '../components/ui/StatTile.vue'
@@ -8,35 +8,18 @@ import ResultBadge from '../components/ui/ResultBadge.vue'
 import BankrollChart from '../components/charts/BankrollChart.vue'
 import { EMPTY, odds, percent, shortDate, signedPercent, toneFor, units } from '../lib/format'
 
-const { allBets, week } = useDataset()
+const { scoped } = useDataset()
 
-/**
- * The bankroll ignores the research/real toggle on purpose. Money that was
- * never staked cannot appear here, whatever mode the rest of the app is in.
- */
-const placed = computed(() => {
-  const staked = allBets.value.filter((bet) => bet.betStatus === 'placed')
-  return week.value === ALL ? staked : staked.filter((bet) => bet.week === week.value)
-})
-
-const series = computed(() => bankrollSeries(placed.value))
+/** Running total of every tracked pick at flat one-unit stakes. */
+const series = computed(() => bankrollSeries(scoped.value))
 const risk = computed(() => drawdown(series.value))
-const summary = computed(() => summarize(placed.value))
-const twoZero = computed(() => marketPerformance(placed.value, '2-0'))
-const over = computed(() => marketPerformance(placed.value, 'Over 2.5'))
+const summary = computed(() => summarize(scoped.value))
+const twoZero = computed(() => marketPerformance(scoped.value, '2-0'))
+const over = computed(() => marketPerformance(scoped.value, 'Over 2.5'))
 
 const total = computed(() => series.value.at(-1)?.cumulative ?? 0)
 const settled = computed(() => series.value.length)
 const roi = computed(() => (settled.value === 0 ? null : total.value / settled.value))
-
-/** What the same picks would have returned if none had been skipped. */
-const researchComparison = computed(() => {
-  const preMatch = allBets.value.filter(
-    (bet) => bet.betStatus !== 'postponed' && bet.betStatus !== 'backtest_only',
-  )
-  const scoped = week.value === ALL ? preMatch : preMatch.filter((bet) => bet.week === week.value)
-  return marketPerformance(scoped, '2-0')
-})
 </script>
 
 <template>
@@ -74,13 +57,13 @@ const researchComparison = computed(() => {
     </section>
 
     <SectionCard
-      title="Real money only"
-      note="Rows marked placed in the CSV. Skipped picks and the backtest week are excluded regardless of the mode toggle."
+      title="Running total"
+      note="Every tracked pick at one unit, in the order it settled. Break-even is the zero line."
     >
       <BankrollChart :points="series" />
     </SectionCard>
 
-    <SectionCard title="Every placed bet">
+    <SectionCard title="Every settled pick">
       <div class="scroll-x">
         <table class="w-full min-w-[720px] border-collapse text-[13px]">
           <thead>
@@ -123,9 +106,7 @@ const researchComparison = computed(() => {
             </tr>
             <tr v-if="series.length === 0">
               <td colspan="8" class="px-4 py-10 text-center text-muted">
-                No placed bets in this selection. Set
-                <code class="text-ink-2">strategy_bet_status</code> to
-                <code class="text-ink-2">placed</code> in the CSV to track one.
+                Nothing has settled in this selection. Widen the weekend filter.
               </td>
             </tr>
           </tbody>
@@ -133,29 +114,26 @@ const researchComparison = computed(() => {
       </div>
     </SectionCard>
 
-    <SectionCard title="Account versus strategy">
+    <SectionCard title="What the running total is made of">
       <div class="flex flex-col gap-3 px-4 py-4 text-[13px] leading-relaxed text-ink-2">
         <p class="max-w-[72ch]">
-          The account is at
+          The strategy is at
           <span class="tnum font-semibold" :class="toneFor(total) === 'good' ? 'text-good' : toneFor(total) === 'bad' ? 'text-critical' : 'text-ink'">
             {{ settled === 0 ? EMPTY : `${units(total)} units` }}
           </span>
-          across {{ settled }} settled bet{{ settled === 1 ? '' : 's' }}. Over the same weekends
-          the 2-0 strategy as researched returned
-          <span class="tnum font-semibold text-ink">{{ signedPercent(researchComparison.roi) }}</span>
-          over {{ researchComparison.n }} pre-match picks.
+          across {{ settled }} settled pick{{ settled === 1 ? '' : 's' }}, at one unit each.
         </p>
-        <p class="max-w-[72ch] text-muted">
-          A gap between those two numbers is not the strategy working or failing — it is the
-          effect of which bets got placed and which got talked out of. That decision is the
-          thing to examine.
-        </p>
-        <p v-if="over.n > 0" class="max-w-[72ch] text-muted">
-          Of the placed bets, {{ twoZero.n }} were 2-0
+        <p v-if="over.n > 0" class="max-w-[72ch]">
+          Of those, {{ twoZero.n }} were 2-0
           ({{ percent(twoZero.hitRate) }} hit, {{ units(twoZero.profit) }} units) and
           {{ over.n }} were Over 2.5
-          ({{ percent(over.hitRate) }} hit, {{ units(over.profit) }} units). They are counted
-          together here only because both put real money at risk.
+          ({{ percent(over.hitRate) }} hit, {{ units(over.profit) }} units). The running total
+          adds them because both are bets you made a call on; the Dashboard keeps the two
+          markets apart where the comparison matters.
+        </p>
+        <p class="max-w-[72ch] text-muted">
+          This is what flat staking every tracked pick would have returned, not a record of an
+          account. Staking varied in reality, so treat it as the method's result.
         </p>
       </div>
     </SectionCard>

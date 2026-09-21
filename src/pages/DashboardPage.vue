@@ -12,7 +12,7 @@ import TeamScatter from '../components/charts/TeamScatter.vue'
 import { EMPTY, percent, record, signedPercent, units } from '../lib/format'
 import { toneFor } from '../lib/format'
 
-const { scoped, mode } = useDataset()
+const { scoped } = useDataset()
 
 const summary = computed(() => summarize(scoped.value))
 const groups = computed(() => segmentsByOddsGroup(scoped.value))
@@ -227,7 +227,7 @@ const strategies = computed(() => [
 
     <SectionCard
       title="Teams: how they are priced against how they close"
-      :note="mode === 'real' ? 'Only placed bets are in view.' : 'Every pre-match pick in view.'"
+      note="Circle area is the number of picks. Every tracked pick is in view."
     >
       <TeamScatter :points="points" />
     </SectionCard>

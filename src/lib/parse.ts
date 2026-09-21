@@ -4,7 +4,6 @@ import {
   FAVOURITE_ODDS_CEILING,
   ODDS_GROUPS,
   type Bet,
-  type BetStatus,
   type Market,
   type OddsGroupId,
   type OddsQuality,
@@ -74,8 +73,6 @@ const rowSchema = z.object({
   strategy_odds_estimated: numericish,
   strategy_odds_used_for_analysis: numericish,
   strategy_result: text,
-  strategy_bet_status: text,
-  research_2_0_include: flag,
   winner_unit_profit: numericish,
   strategy_unit_profit: numericish,
   odds_note: text,
@@ -84,14 +81,6 @@ const rowSchema = z.object({
 })
 
 type RawRow = z.infer<typeof rowSchema>
-
-const BET_STATUSES: readonly BetStatus[] = [
-  'placed',
-  'skipped',
-  'backtest_only',
-  'postponed',
-  'unknown',
-]
 
 function toOutcome(raw: string): Outcome {
   const value = raw.toUpperCase()
@@ -139,12 +128,6 @@ function normalize(row: RawRow, issues: RowIssue[]): Bet {
   const winnerResult = toOutcome(row.winner_pick_result)
   const strategyResult = toOutcome(row.strategy_result)
   const { odds: effectiveOdds, quality: oddsQuality } = resolveOdds(row)
-
-  const statusRaw = row.strategy_bet_status as BetStatus
-  const betStatus: BetStatus = BET_STATUSES.includes(statusRaw) ? statusRaw : 'unknown'
-  if (!BET_STATUSES.includes(statusRaw) && row.strategy_bet_status !== '') {
-    push('strategy_bet_status', `unrecognised status "${row.strategy_bet_status}", treated as unknown`, 'warning')
-  }
 
   const oddsGroup = toOddsGroup(row.winner_odds)
   if (oddsGroup !== null && row.winner_odds_group !== '' && !row.winner_odds_group.startsWith(oddsGroup)) {
@@ -209,8 +192,6 @@ function normalize(row: RawRow, issues: RowIssue[]): Bet {
     oddsQuality,
     strategyResult,
     strategyProfit,
-    betStatus,
-    researchInclude: row.research_2_0_include ?? false,
 
     isFavourite,
     isUpset: isFavourite === null || winnerResult === 'VOID' ? null : isFavourite && winnerResult === 'L',

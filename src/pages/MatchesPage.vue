@@ -44,7 +44,6 @@ const columns = helper.columns([
   helper.accessor('winnerResult', { header: 'Winner', sortFn: 'alphanumeric' }),
   helper.accessor('strategyResult', { header: 'Strategy', sortFn: 'alphanumeric' }),
   helper.accessor('strategyProfit', { header: 'Units', sortFn: 'basic' }),
-  helper.accessor('betStatus', { header: 'Status', sortFn: 'alphanumeric' }),
 ])
 
 const RIGHT_ALIGNED = new Set(['winnerOdds', 'effectiveOdds', 'strategyProfit'])
@@ -62,25 +61,11 @@ function toggle(id: number) {
 
 const rows = computed(() => table.getRowModel().rows)
 
-const STATUS_LABEL: Record<string, string> = {
-  placed: 'Placed',
-  skipped: 'Skipped',
-  backtest_only: 'Backtest',
-  postponed: 'Postponed',
-  unknown: 'Not recorded',
-}
-
 const QUALITY_LABEL: Record<string, string> = {
   actual: 'Actual',
   snapshot: 'Snapshot',
   estimated: 'Estimated',
   none: 'None',
-}
-
-function statusClass(status: string): string {
-  if (status === 'placed') return 'bg-accent/12 text-accent'
-  if (status === 'backtest_only') return 'bg-sunken text-muted'
-  return 'bg-sunken text-ink-2'
 }
 
 /** Estimated prices are flagged so a backtest ROI is never mistaken for real. */
@@ -147,18 +132,6 @@ function profitClass(bet: Bet): string {
             <option :value="ALL">All</option>
             <option value="2-0">2-0</option>
             <option value="Over 2.5">Over 2.5</option>
-          </select>
-        </label>
-
-        <label class="flex flex-col gap-1">
-          <span class="text-[11.5px] text-muted">Bet status</span>
-          <select v-model="filters.betStatus" class="rounded border border-rule bg-surface px-2 py-1 text-[12.5px] text-ink">
-            <option :value="ALL">All</option>
-            <option value="placed">Placed</option>
-            <option value="skipped">Skipped</option>
-            <option value="backtest_only">Backtest</option>
-            <option value="postponed">Postponed</option>
-            <option value="unknown">Not recorded</option>
           </select>
         </label>
 
@@ -284,14 +257,6 @@ function profitClass(bet: Bet): string {
                 </td>
                 <td class="tnum px-3 py-2 text-right" :class="profitClass(row.original)">
                   {{ row.original.strategyProfit === null ? EMPTY : units(row.original.strategyProfit) }}
-                </td>
-                <td class="px-3 py-2">
-                  <span
-                    class="rounded px-1.5 py-0.5 text-[11px]"
-                    :class="statusClass(row.original.betStatus)"
-                  >
-                    {{ STATUS_LABEL[row.original.betStatus] }}
-                  </span>
                 </td>
               </tr>
 

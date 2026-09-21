@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { ALL, useDataset } from './composables/useDataset'
-import Segmented from './components/ui/Segmented.vue'
 import DashboardPage from './pages/DashboardPage.vue'
 import MatchesPage from './pages/MatchesPage.vue'
 import OddsGroupsPage from './pages/OddsGroupsPage.vue'
@@ -10,7 +9,6 @@ import LeaguesPage from './pages/LeaguesPage.vue'
 import BankrollPage from './pages/BankrollPage.vue'
 import DataPage from './pages/DataPage.vue'
 import { shortWeek } from './lib/format'
-import type { AnalysisMode } from './lib/types'
 
 const PAGES = [
   { id: 'dashboard', label: 'Dashboard', component: DashboardPage },
@@ -27,26 +25,11 @@ type PageId = (typeof PAGES)[number]['id']
 const current = ref<PageId>('dashboard')
 const active = computed(() => PAGES.find((page) => page.id === current.value) ?? PAGES[0])
 
-const { mode, includeBacktest, week, weeks, scoped, allBets } = useDataset()
+const { includeEstimatedPrices, week, weeks, scoped, allBets } = useDataset()
 
-const MODE_OPTIONS = [
-  {
-    value: 'research' as AnalysisMode,
-    label: 'Research',
-    hint: 'Every pre-match pick, including ones you skipped',
-  },
-  {
-    value: 'real' as AnalysisMode,
-    label: 'Real money',
-    hint: 'Only bets you actually placed',
-  },
-]
-
-/** The bankroll page is always real money, whatever the toggle says. */
-const modeIgnored = computed(() => current.value === 'bankroll')
-
-const backtestCount = computed(
-  () => allBets.value.filter((bet) => bet.betStatus === 'backtest_only').length,
+/** Rows whose 2-0 price was interpolated rather than observed. */
+const estimatedCount = computed(
+  () => allBets.value.filter((bet) => bet.oddsQuality === 'estimated').length,
 )
 </script>
 
@@ -94,8 +77,6 @@ const backtestCount = computed(
         <div
           class="sticky top-0 z-10 flex flex-wrap items-end gap-4 border-b border-rule bg-plane/95 px-4 py-3 backdrop-blur lg:px-6"
         >
-          <Segmented v-model="mode" label="Mode" :options="MODE_OPTIONS" />
-
           <label class="flex flex-col gap-1">
             <span class="text-[11.5px] text-muted">Weekend</span>
             <select
@@ -110,17 +91,16 @@ const backtestCount = computed(
           </label>
 
           <label
-            v-if="mode === 'research' && backtestCount > 0"
+            v-if="estimatedCount > 0"
             class="flex items-center gap-2 pb-1.5 text-[12.5px] text-ink-2"
           >
-            <input v-model="includeBacktest" type="checkbox" class="accent-accent" />
-            Include backtest week
-            <span class="text-muted">({{ backtestCount }} rows, estimated prices)</span>
+            <input v-model="includeEstimatedPrices" type="checkbox" class="accent-accent" />
+            Include estimated prices
+            <span class="text-muted">({{ estimatedCount }} backtest rows)</span>
           </label>
 
-          <p class="ml-auto pb-1.5 text-[12px] text-muted">
-            <span v-if="modeIgnored">Bankroll always shows placed bets only</span>
-            <span v-else class="tnum">{{ scoped.length }} rows in scope</span>
+          <p class="tnum ml-auto pb-1.5 text-[12px] text-muted">
+            {{ scoped.length }} picks in scope
           </p>
         </div>
 
@@ -129,8 +109,8 @@ const backtestCount = computed(
         </main>
 
         <footer class="border-t border-rule px-4 py-4 text-[12px] leading-relaxed text-muted lg:px-6">
-          Flat one-unit stakes throughout. Research mode counts picks that were never backed, so
-          its returns are a measure of the method, not of the account.
+          Flat one-unit stakes throughout. Every tracked pick counts, whether or not it was
+          backed, so these returns measure the method rather than an account balance.
         </footer>
       </div>
     </div>

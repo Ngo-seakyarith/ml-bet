@@ -11,13 +11,6 @@ export type Outcome = 'W' | 'L' | 'VOID'
 
 export type Market = '2-0' | 'Over 2.5'
 
-export type BetStatus =
-  | 'placed'
-  | 'skipped'
-  | 'backtest_only'
-  | 'postponed'
-  | 'unknown'
-
 /** Which of the three odds columns actually backs the ROI for a row. */
 export type OddsQuality = 'actual' | 'snapshot' | 'estimated' | 'none'
 
@@ -85,8 +78,6 @@ export interface Bet {
   oddsQuality: OddsQuality
   strategyResult: Outcome
   strategyProfit: number | null
-  betStatus: BetStatus
-  researchInclude: boolean
 
   // --- Favourite / upset -------------------------------------------------
   /** Selected team was priced as favourite (winner odds < 2.00). */
@@ -116,10 +107,3 @@ export interface ParseResult {
   bets: Bet[]
   issues: RowIssue[]
 }
-
-/**
- * Research mode keeps every pre-match pick, including ones the user chose not
- * to back. Real-money mode keeps only bets that actually settled with money on
- * them. Mixing the two is the single biggest way to lie to yourself here.
- */
-export type AnalysisMode = 'research' | 'real'

@@ -4,7 +4,7 @@ import { useDataset } from '../composables/useDataset'
 import { discrepancies, marketMoves, oddsQualityBreakdown } from '../lib/stats'
 import SectionCard from '../components/ui/SectionCard.vue'
 import StatTile from '../components/ui/StatTile.vue'
-import { odds, percent, shortDate, signedPercent } from '../lib/format'
+import { odds, shortDate, signedPercent } from '../lib/format'
 
 const { allBets, issues } = useDataset()
 
@@ -14,11 +14,6 @@ const mismatches = computed(() => discrepancies(allBets.value))
 const quality = computed(() => oddsQualityBreakdown(allBets.value))
 const moves = computed(() => marketMoves(allBets.value))
 
-const statusCounts = computed(() => {
-  const counts = new Map<string, number>()
-  for (const bet of allBets.value) counts.set(bet.betStatus, (counts.get(bet.betStatus) ?? 0) + 1)
-  return [...counts.entries()].sort((a, b) => b[1] - a[1])
-})
 </script>
 
 <template>
@@ -162,22 +157,5 @@ const statusCounts = computed(() => {
       </p>
     </SectionCard>
 
-    <SectionCard title="Rows by bet status">
-      <div class="scroll-x">
-        <table class="w-full min-w-[360px] border-collapse text-[13px]">
-          <tbody>
-            <tr v-for="[status, count] in statusCounts" :key="status" class="border-b border-rule last:border-b-0">
-              <th scope="row" class="px-4 py-2 text-left font-medium text-ink">
-                <code class="text-[12px]">{{ status }}</code>
-              </th>
-              <td class="tnum px-3 py-2 text-right text-ink-2">{{ count }}</td>
-              <td class="tnum px-3 py-2 text-right text-muted">
-                {{ percent(count / allBets.length, 0) }}
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </SectionCard>
   </div>
 </template>

@@ -1,6 +1,5 @@
 import {
   ODDS_GROUPS,
-  type AnalysisMode,
   type Bet,
   type Market,
   type OddsGroupId,
@@ -175,22 +174,20 @@ export function sweepRate(bets: readonly Bet[]): number | null {
 }
 
 /* -------------------------------------------------------------------------
- * Mode and filtering
+ * Selection
  * ---------------------------------------------------------------------- */
 
 /**
- * Research mode keeps every pre-match pick, including ones the user talked
- * themselves out of. Real-money mode keeps only settled, staked bets.
+ * Every tracked pick counts. Rows that never resolved (postponed fixtures) are
+ * dropped, and the reconstructed weekend whose 2-0 prices are interpolated
+ * rather than observed can be excluded so estimated prices are not mistaken
+ * for prices anyone could actually have taken.
  */
-export function applyMode(
-  bets: readonly Bet[],
-  mode: AnalysisMode,
-  includeBacktest: boolean,
-): Bet[] {
-  if (mode === 'real') return bets.filter((bet) => bet.betStatus === 'placed')
+export function selectBets(bets: readonly Bet[], includeEstimatedPrices: boolean): Bet[] {
   return bets.filter(
     (bet) =>
-      bet.betStatus !== 'postponed' && (includeBacktest || bet.betStatus !== 'backtest_only'),
+      bet.winnerResult !== 'VOID' &&
+      (includeEstimatedPrices || bet.oddsQuality !== 'estimated'),
   )
 }
 
@@ -501,4 +498,4 @@ export function summarize(bets: readonly Bet[]): Summary {
   }
 }
 
-export type { AnalysisMode, Bet, Market, OddsGroupId }
+export type { Bet, Market, OddsGroupId }
