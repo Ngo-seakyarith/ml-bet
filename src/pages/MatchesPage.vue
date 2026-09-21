@@ -12,7 +12,7 @@ import {
 import { ALL, useDataset } from '../composables/useDataset'
 import SectionCard from '../components/ui/SectionCard.vue'
 import ResultBadge from '../components/ui/ResultBadge.vue'
-import { EMPTY, odds, shortDate, units } from '../lib/format'
+import { odds, shortDate } from '../lib/format'
 import { ODDS_GROUPS, type Bet } from '../lib/types'
 
 const { filtered, filters, leagues, teams, activeFilterCount, resetFilters } = useDataset()
@@ -43,10 +43,9 @@ const columns = helper.columns([
   helper.accessor('score', { header: 'Score', sortFn: 'alphanumeric' }),
   helper.accessor('winnerResult', { header: 'Winner', sortFn: 'alphanumeric' }),
   helper.accessor('strategyResult', { header: 'Strategy', sortFn: 'alphanumeric' }),
-  helper.accessor('strategyProfit', { header: 'Units', sortFn: 'basic' }),
 ])
 
-const RIGHT_ALIGNED = new Set(['winnerOdds', 'effectiveOdds', 'strategyProfit'])
+const RIGHT_ALIGNED = new Set(['winnerOdds', 'effectiveOdds'])
 
 /**
  * Newest matches first. The most recent weekend is the one worth looking at,
@@ -80,11 +79,6 @@ const QUALITY_LABEL: Record<string, string> = {
 /** Estimated prices are flagged so a backtest ROI is never mistaken for real. */
 function qualityClass(quality: string): string {
   return quality === 'estimated' ? 'text-serious' : 'text-muted'
-}
-
-function profitClass(bet: Bet): string {
-  if (bet.strategyProfit === null) return 'text-muted'
-  return bet.strategyProfit > 0 ? 'text-good' : 'text-critical'
 }
 </script>
 
@@ -191,7 +185,7 @@ function profitClass(bet: Bet): string {
       </div>
 
       <div class="scroll-x">
-        <table class="w-full min-w-[980px] border-collapse text-[13px]">
+        <table class="w-full min-w-[900px] border-collapse text-[13px]">
           <thead>
             <tr
               v-for="group in table.getHeaderGroups()"
@@ -263,9 +257,6 @@ function profitClass(bet: Bet): string {
                 <td class="px-3 py-2">
                   <ResultBadge :result="row.original.strategyResult" compact />
                   <span class="ml-1.5 text-[11px] text-muted">{{ row.original.market }}</span>
-                </td>
-                <td class="tnum px-3 py-2 text-right" :class="profitClass(row.original)">
-                  {{ row.original.strategyProfit === null ? EMPTY : units(row.original.strategyProfit) }}
                 </td>
               </tr>
 
