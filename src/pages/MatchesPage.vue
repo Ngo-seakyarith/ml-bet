@@ -48,7 +48,16 @@ const columns = helper.columns([
 
 const RIGHT_ALIGNED = new Set(['winnerOdds', 'effectiveOdds', 'strategyProfit'])
 
-const table = useTable({ features, columns, data: filtered })
+/**
+ * Newest matches first. The most recent weekend is the one worth looking at,
+ * and it should not need a click to reach. Headers still re-sort freely.
+ */
+const table = useTable({
+  features,
+  columns,
+  data: filtered,
+  initialState: { sorting: [{ id: 'date', desc: true }] },
+})
 
 /** Row expansion is local UI state, so it lives here rather than in the table. */
 const expanded = ref<Set<number>>(new Set())
