@@ -49,9 +49,8 @@ export interface Bet {
 
   // --- Match Winner side -------------------------------------------------
   winnerOdds: number | null
+  /** Derived from winnerOdds; the CSV does not carry a group column. */
   oddsGroup: OddsGroupId | null
-  /** Group label exactly as spelled in the CSV, kept for provenance. */
-  oddsGroupRaw: string
   winnerResult: Outcome
   winnerProfit: number | null
 

@@ -30,7 +30,7 @@ const best = computed(() => {
   <div class="flex flex-col gap-4">
     <SectionCard
       title="Odds groups"
-      note="Groups come from the Match Winner price, derived from the odds themselves rather than the label in the CSV."
+      note="Groups are worked out from each pick's Match Winner price."
     >
       <div class="scroll-x border-b border-rule">
         <table class="w-full min-w-[420px] border-collapse text-[13px]">

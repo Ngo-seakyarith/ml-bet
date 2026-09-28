@@ -58,7 +58,6 @@ const rowSchema = z.object({
   selected_team: text,
   opponent: text,
   winner_odds: numericish,
-  winner_odds_group: text,
   winner_pick_result: text,
   selected_maps: numericish,
   opponent_maps: numericish,
@@ -94,8 +93,8 @@ function toMarket(raw: string): Market {
 }
 
 /**
- * Derives the odds group from the price itself rather than trusting the label,
- * so a mistyped group in the CSV cannot move a bet into the wrong bucket.
+ * Maps a Match Winner price onto its G1–G5 bucket. The group is always derived
+ * here; the CSV does not store it.
  */
 function toOddsGroup(odds: number | null): OddsGroupId | null {
   if (odds === null) return null
@@ -130,13 +129,6 @@ function normalize(row: RawRow, issues: RowIssue[]): Bet {
   const { odds: effectiveOdds, quality: oddsQuality } = resolveOdds(row)
 
   const oddsGroup = toOddsGroup(row.winner_odds)
-  if (oddsGroup !== null && row.winner_odds_group !== '' && !row.winner_odds_group.startsWith(oddsGroup)) {
-    push(
-      'winner_odds_group',
-      `CSV says "${row.winner_odds_group}" but ${row.winner_odds} falls in ${oddsGroup}; using ${oddsGroup}`,
-      'warning',
-    )
-  }
 
   // Our 2-0 bet wins only when OUR team sweeps, not when either side does.
   const selectedTeamSwept =
@@ -171,7 +163,6 @@ function normalize(row: RawRow, issues: RowIssue[]): Bet {
 
     winnerOdds: row.winner_odds,
     oddsGroup,
-    oddsGroupRaw: row.winner_odds_group,
     winnerResult,
     winnerProfit,
 

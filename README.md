@@ -59,8 +59,8 @@ disagreement is reported on the Data page.
   that finished 2-0 divided by all correct winner picks. This is the headline figure because
   it isolates the half of the bet the 2-0 market actually prices. The raw 2-0 hit rate is also
   shown, but it is depressed by every match where the winner pick was simply wrong.
-- **Odds groups** — derived from the price itself (G1 1.01–1.19 … G5 2.00+), so a mistyped
-  group label in the CSV cannot move a bet into the wrong bucket.
+- **Odds groups** — derived from `winner_odds` (G1 1.01–1.19 … G5 2.00+). There is no group
+  column to fill in.
 - **ROI** — flat one-unit stakes. Profit is `odds - 1` on a win and `-1` on a loss. Voided and
   postponed matches are excluded from every rate and return rather than counted as pushes.
 - **Upset rate** — favourite selections (winner odds under 2.00) that lost outright.
