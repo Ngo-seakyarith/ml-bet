@@ -1,29 +1,9 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed } from 'vue'
+import { RouterLink, RouterView } from 'vue-router'
 import { ALL, useDataset } from './composables/useDataset'
-import DashboardPage from './pages/DashboardPage.vue'
-import MatchesPage from './pages/MatchesPage.vue'
-import OddsGroupsPage from './pages/OddsGroupsPage.vue'
-import WeeksPage from './pages/WeeksPage.vue'
-import LeaguesPage from './pages/LeaguesPage.vue'
-import BankrollPage from './pages/BankrollPage.vue'
-import DataPage from './pages/DataPage.vue'
+import { PAGES as NAV } from './router'
 import { shortWeek } from './lib/format'
-
-const PAGES = [
-  { id: 'dashboard', label: 'Dashboard', component: DashboardPage },
-  { id: 'matches', label: 'Matches', component: MatchesPage },
-  { id: 'groups', label: 'Odds groups', component: OddsGroupsPage },
-  { id: 'weeks', label: 'Weeks', component: WeeksPage },
-  { id: 'leagues', label: 'Leagues', component: LeaguesPage },
-  { id: 'bankroll', label: 'Bankroll', component: BankrollPage },
-  { id: 'data', label: 'Data', component: DataPage },
-] as const
-
-type PageId = (typeof PAGES)[number]['id']
-
-const current = ref<PageId>('dashboard')
-const active = computed(() => PAGES.find((page) => page.id === current.value) ?? PAGES[0])
 
 const { includeEstimatedPrices, week, weeks, scoped, allBets } = useDataset()
 
@@ -49,20 +29,22 @@ const estimatedCount = computed(
 
         <nav class="px-2 pb-3 lg:pb-4" aria-label="Sections">
           <ul class="flex flex-wrap gap-1 lg:flex-col">
-            <li v-for="page in PAGES" :key="page.id">
-              <button
-                type="button"
-                class="w-full rounded px-2.5 py-1.5 text-left text-[13px] transition-colors"
-                :class="
-                  current === page.id
-                    ? 'bg-accent/12 font-semibold text-accent'
-                    : 'text-ink-2 hover:bg-sunken'
-                "
-                :aria-current="current === page.id ? 'page' : undefined"
-                @click="current = page.id"
-              >
-                {{ page.label }}
-              </button>
+            <li v-for="item in NAV" :key="item.name">
+              <RouterLink v-slot="{ href, navigate, isExactActive }" :to="{ name: item.name }" custom>
+                <a
+                  :href="href"
+                  class="block w-full rounded px-2.5 py-1.5 text-left text-[13px] transition-colors"
+                  :class="
+                    isExactActive
+                      ? 'bg-accent/12 font-semibold text-accent'
+                      : 'text-ink-2 hover:bg-sunken'
+                  "
+                  :aria-current="isExactActive ? 'page' : undefined"
+                  @click="navigate"
+                >
+                  {{ item.label }}
+                </a>
+              </RouterLink>
             </li>
           </ul>
         </nav>
@@ -105,7 +87,7 @@ const estimatedCount = computed(
         </div>
 
         <main class="px-4 py-4 lg:px-6 lg:py-5">
-          <component :is="active.component" />
+          <RouterView />
         </main>
 
         <footer class="border-t border-rule px-4 py-4 text-[12px] leading-relaxed text-muted lg:px-6">
