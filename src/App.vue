@@ -96,7 +96,7 @@ const estimatedCount = computed(
           >
             <input v-model="includeEstimatedPrices" type="checkbox" class="accent-accent" />
             Include estimated prices
-            <span class="text-muted">({{ estimatedCount }} backtest rows)</span>
+            <span class="text-muted">({{ estimatedCount }} rows with approximate 2-0 odds)</span>
           </label>
 
           <p class="tnum ml-auto pb-1.5 text-[12px] text-muted">

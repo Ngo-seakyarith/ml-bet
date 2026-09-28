@@ -84,9 +84,9 @@ an account statement.
 Two things are still excluded:
 
 - **Postponed fixtures**, which never resolved, via `VOID/POSTPONED` in the result columns.
-- **Estimated prices**, behind a toggle. The Sep 4-6 weekend is a reconstruction whose 2-0
-  odds were interpolated rather than observed, so it can be switched off to see only prices
-  that really existed.
+- **Estimated prices**, behind a toggle. Any 2-0 price in `strategy_odds_estimated` — the
+  interpolated Sep 4-6 reconstruction and later approximate ("~") prices — can be switched off
+  to see only prices that were actually observed.
 
 ## Stack
 

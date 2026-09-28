@@ -37,8 +37,9 @@ function emptyFilters(): MatchFilters {
  * ---------------------------------------------------------------------- */
 
 /**
- * The Sep 4-6 week is a reconstructed backtest priced with interpolated 2-0
- * odds. It is opt-in so its estimated prices never quietly inflate a headline.
+ * Rows whose 2-0 price was estimated rather than observed — the reconstructed
+ * Sep 4-6 backtest plus any later "~" prices. Toggleable so estimated prices
+ * never quietly inflate a headline.
  */
 const includeEstimatedPrices = ref(true)
 
