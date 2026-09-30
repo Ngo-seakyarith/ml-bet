@@ -375,46 +375,6 @@ export function marketMoves(bets: readonly Bet[]): MarketMove[] {
 }
 
 /* -------------------------------------------------------------------------
- * Reconciliation against the CSV's own profit columns
- * ---------------------------------------------------------------------- */
-
-export interface Discrepancy {
-  bet: Bet
-  field: 'winner_unit_profit' | 'strategy_unit_profit'
-  csvValue: number | null
-  computed: number | null
-}
-
-/** Flags rows where the CSV's stored profit disagrees with the recomputation. */
-export function discrepancies(bets: readonly Bet[]): Discrepancy[] {
-  const out: Discrepancy[] = []
-  const differs = (a: number | null, b: number | null) => {
-    if (a === null && b === null) return false
-    if (a === null || b === null) return true
-    return Math.abs(a - b) > 0.005
-  }
-  for (const bet of bets) {
-    if (differs(bet.csvWinnerProfit, bet.winnerProfit)) {
-      out.push({
-        bet,
-        field: 'winner_unit_profit',
-        csvValue: bet.csvWinnerProfit,
-        computed: bet.winnerProfit,
-      })
-    }
-    if (differs(bet.csvStrategyProfit, bet.strategyProfit)) {
-      out.push({
-        bet,
-        field: 'strategy_unit_profit',
-        csvValue: bet.csvStrategyProfit,
-        computed: bet.strategyProfit,
-      })
-    }
-  }
-  return out
-}
-
-/* -------------------------------------------------------------------------
  * Team scatter input
  * ---------------------------------------------------------------------- */
 

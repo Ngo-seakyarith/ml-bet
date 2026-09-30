@@ -54,7 +54,7 @@ export interface Bet {
   winnerResult: Outcome
   winnerProfit: number | null
 
-  // --- Match facts -------------------------------------------------------
+  // --- Match facts (all derived from the CSV `score` column) --------------
   selectedMaps: number | null
   opponentMaps: number | null
   score: string
@@ -88,10 +88,6 @@ export interface Bet {
   oddsNote: string
   notes: string
   sourceUrl: string
-
-  /** Profit columns as they appear in the CSV, for the reconciliation view. */
-  csvWinnerProfit: number | null
-  csvStrategyProfit: number | null
 }
 
 /** A row the parser could not turn into a usable Bet. */

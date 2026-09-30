@@ -44,7 +44,7 @@ than counted at evens.
 | Column                                             | Why it matters                                                       |
 | -------------------------------------------------- | -------------------------------------------------------------------- |
 | `winner_odds`, `winner_pick_result`                 | The Match Winner strategy, independent of which market was played     |
-| `selected_maps`, `opponent_maps`                    | Decides the 2-0 outcome — our bet wins only when **our** team sweeps  |
+| `score`                                             | Series score from the pick's side (`2-0`, `2-1`, `1-2`, `0-2`); blank if not played. Won/lost and sweep are worked out from it |
 | `strategy_market`                                   | `2-0` or `Over 2.5`; these are never pooled                           |
 | `strategy_odds_actual` / `_snapshot` / `_estimated` | Price priority, in that order                                         |
 | `strategy_result`                                   | `VOID/POSTPONED` drops the row from every rate and return             |

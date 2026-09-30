@@ -34,21 +34,6 @@ const numericish = z
 
 const text = z.unknown().transform((value) => blankToNull(value) ?? '')
 
-/**
- * Accepts the CSV's 1/0 flag columns. Anything else is a data error rather
- * than a silent false.
- */
-const flag = z
-  .unknown()
-  .transform(blankToNull)
-  .transform((value, ctx) => {
-    if (value === null) return null
-    if (value === '1') return true
-    if (value === '0') return false
-    ctx.addIssue({ code: 'custom', message: `"${value}" is not 1, 0 or blank` })
-    return null
-  })
-
 const rowSchema = z.object({
   record_id: numericish,
   calendar_week: text,
@@ -59,12 +44,7 @@ const rowSchema = z.object({
   opponent: text,
   winner_odds: numericish,
   winner_pick_result: text,
-  selected_maps: numericish,
-  opponent_maps: numericish,
-  final_score_selected_perspective: text,
-  selected_team_won: flag,
-  match_was_2_0_sweep: flag,
-  sweep_given_selected_team_win: flag,
+  score: text,
   strategy_market: text,
   strategy_selection: text,
   strategy_odds_snapshot: numericish,
@@ -72,8 +52,6 @@ const rowSchema = z.object({
   strategy_odds_estimated: numericish,
   strategy_odds_used_for_analysis: numericish,
   strategy_result: text,
-  winner_unit_profit: numericish,
-  strategy_unit_profit: numericish,
   odds_note: text,
   notes: text,
   result_source_url: text,
@@ -113,6 +91,19 @@ function resolveOdds(row: RawRow): { odds: number | null; quality: OddsQuality }
   return { odds: null, quality: 'none' }
 }
 
+const SCORE = /^(\d+)-(\d+)$/
+
+/**
+ * Reads the series score from the selected team's side ("2-1" means our pick
+ * won two maps to one). Blank means not played yet. Returns null maps for
+ * blank or unreadable scores; the caller reports unreadable ones.
+ */
+function parseScore(raw: string): { selected: number; opponent: number } | null {
+  const match = SCORE.exec(raw.replace(/\s+/g, ''))
+  if (!match) return null
+  return { selected: Number(match[1]), opponent: Number(match[2]) }
+}
+
 /** Flat-stake profit on one unit. A void bet returns the stake, not a result. */
 function unitProfit(result: Outcome, odds: number | null): number | null {
   if (result === 'VOID' || odds === null) return null
@@ -130,11 +121,25 @@ function normalize(row: RawRow, issues: RowIssue[]): Bet {
 
   const oddsGroup = toOddsGroup(row.winner_odds)
 
+  // Everything about how the series went is derived from the one score column.
+  const maps = parseScore(row.score)
+  if (maps === null && row.score !== '') {
+    push('score', `"${row.score}" is not a score like 2-0 or 1-2; leave it blank if not played`)
+  }
+  const selectedTeamWon = maps === null ? null : maps.selected > maps.opponent
+  // A 2-0 either way; used for league sweep rates.
+  const matchWasSweep =
+    maps === null ? null : Math.max(maps.selected, maps.opponent) === 2 && Math.min(maps.selected, maps.opponent) === 0
   // Our 2-0 bet wins only when OUR team sweeps, not when either side does.
-  const selectedTeamSwept =
-    row.selected_maps === null || row.opponent_maps === null
-      ? null
-      : row.selected_maps === 2 && row.opponent_maps === 0
+  const selectedTeamSwept = maps === null ? null : maps.selected === 2 && maps.opponent === 0
+
+  if (selectedTeamWon !== null && winnerResult !== 'VOID' && selectedTeamWon !== (winnerResult === 'W')) {
+    push(
+      'winner_pick_result',
+      `says ${row.winner_pick_result} but the score ${row.score} means the pick ${selectedTeamWon ? 'won' : 'lost'}`,
+      'warning',
+    )
+  }
 
   const winnerProfit = unitProfit(winnerResult, row.winner_odds)
   const strategyProfit = unitProfit(strategyResult, effectiveOdds)
@@ -166,11 +171,11 @@ function normalize(row: RawRow, issues: RowIssue[]): Bet {
     winnerResult,
     winnerProfit,
 
-    selectedMaps: row.selected_maps,
-    opponentMaps: row.opponent_maps,
-    score: row.final_score_selected_perspective,
-    selectedTeamWon: row.selected_team_won,
-    matchWasSweep: row.match_was_2_0_sweep,
+    selectedMaps: maps?.selected ?? null,
+    opponentMaps: maps?.opponent ?? null,
+    score: row.score,
+    selectedTeamWon,
+    matchWasSweep,
     selectedTeamSwept,
 
     market: toMarket(row.strategy_market),
@@ -191,8 +196,6 @@ function normalize(row: RawRow, issues: RowIssue[]): Bet {
     notes: row.notes,
     sourceUrl: row.result_source_url,
 
-    csvWinnerProfit: row.winner_unit_profit,
-    csvStrategyProfit: row.strategy_unit_profit,
   }
 }
 
