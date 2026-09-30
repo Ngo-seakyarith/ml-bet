@@ -52,13 +52,13 @@ record_id,calendar_week,date,league,official_week,selected_team,opponent,strateg
 51,Sep 25-27 2026,2026-09-26,MPL PH,Week 6,Team Falcons PH,ONIC Philippines,2-0,Team Falcons PH 2-0,1.81,3.19,,,3.19,Planned/observed price.,2-1,W,L,Listed as ONIC PH.,https://ph-mpl.com/schedule
 52,Sep 25-27 2026,2026-09-27,MPL PH,Week 6,TNC Pro Team,Omega Esports,2-0,TNC Pro Team 2-0,1.98,,,3.6,3.6,Approximate 2-0 price (~3.60); treated as estimated.,0-2,L,L,Listed as Smart Omega.,https://ph-mpl.com/schedule
 53,Sep 25-27 2026,2026-09-27,MPL PH,Week 6,Aurora Gaming PH,Team Falcons PH,2-0,Aurora Gaming PH 2-0,2.81,,,5.25,5.25,Approximate 2-0 price (~5.25); treated as estimated.,0-2,L,L,,https://ph-mpl.com/schedule
-54,Sep 29 2026,2026-09-29,Asian Games,Group Stage,Myanmar,Uzbekistan,2-0,Myanmar 2-0,1.11,1.52,,,1.52,Observed on bet slip before the match.,,,,Pending result.,
-55,Sep 29 2026,2026-09-29,Asian Games,Group Stage,Malaysia,Saudi Arabia,2-0,Malaysia 2-0,1.51,2.53,,,2.53,Observed on bet slip before the match.,,,,Pending result.,
-56,Sep 29 2026,2026-09-29,Asian Games,Group Stage,Indonesia,Saudi Arabia,2-0,Indonesia 2-0,1.28,1.97,,,1.97,Observed on bet slip before the match.,,,,Pending result.,
-57,Sep 29 2026,2026-09-29,Asian Games,Group Stage,Myanmar,Hong Kong,2-0,Myanmar 2-0,1.19,1.74,,,1.74,Observed on bet slip before the match.,,,,Pending result.,
-58,Sep 29 2026,2026-09-29,Asian Games,Group Stage,Philippines,Jordan,2-0,Philippines 2-0,1.18,1.71,,,1.71,Observed on bet slip before the match.,,,,Pending result.,
-59,Sep 29 2026,2026-09-29,Asian Games,Group Stage,Philippines,Kazakhstan,2-0,Philippines 2-0,1.08,1.42,,,1.42,Observed on bet slip before the match.,,,,Pending result.,
-60,Sep 29 2026,2026-09-29,Asian Games,Group Stage,Cambodia,Mongolia,2-0,Cambodia 2-0,2.42,4.47,,,4.47,Observed on bet slip before the match.,,,,Pending result.,
+54,Sep 29 2026,2026-09-29,Asian Games,Group Stage,Myanmar,Uzbekistan,2-0,Myanmar 2-0,1.11,1.52,,,1.52,Observed on bet slip before the match.,2-0,W,W,,
+55,Sep 29 2026,2026-09-29,Asian Games,Group Stage,Malaysia,Saudi Arabia,2-0,Malaysia 2-0,1.51,2.53,,,2.53,Observed on bet slip before the match.,2-1,W,L,,
+56,Sep 29 2026,2026-09-29,Asian Games,Group Stage,Indonesia,Saudi Arabia,2-0,Indonesia 2-0,1.28,1.97,,,1.97,Observed on bet slip before the match.,2-0,W,W,,
+57,Sep 29 2026,2026-09-29,Asian Games,Group Stage,Myanmar,Hong Kong,2-0,Myanmar 2-0,1.19,1.74,,,1.74,Observed on bet slip before the match.,2-0,W,W,,
+58,Sep 29 2026,2026-09-29,Asian Games,Group Stage,Philippines,Jordan,2-0,Philippines 2-0,1.18,1.71,,,1.71,Observed on bet slip before the match.,2-0,W,W,,
+59,Sep 29 2026,2026-09-29,Asian Games,Group Stage,Philippines,Kazakhstan,2-0,Philippines 2-0,1.08,1.42,,,1.42,Observed on bet slip before the match.,2-0,W,W,,
+60,Sep 29 2026,2026-09-29,Asian Games,Group Stage,Cambodia,Mongolia,2-0,Cambodia 2-0,2.42,4.47,,,4.47,Observed on bet slip before the match.,0-2,L,L,,
 61,Oct 2-4 2026,2026-10-02,MPL ID,Week 7,Geek Fam ID,Bigetron by Vitality,2-0,Geek Fam ID 2-0,3.73,7,,,7,Thunderpick snapshot on Sep 28 2026.,,,,Pending result.,https://id-mpl.com/en/schedule
 62,Oct 2-4 2026,2026-10-02,MPL ID,Week 7,DEWA United,Team Liquid ID,2-0,DEWA United 2-0,3.73,7,,,7,Thunderpick snapshot on Sep 28 2026.,,,,Pending result.,https://id-mpl.com/en/schedule
 63,Oct 2-4 2026,2026-10-03,MPL ID,Week 7,Natus Vincere,ALTER EGO,2-0,Natus Vincere 2-0,2.07,3.79,,,3.79,Thunderpick snapshot on Sep 28 2026.,,,,Pending result.,https://id-mpl.com/en/schedule
@@ -67,5 +67,17 @@ record_id,calendar_week,date,league,official_week,selected_team,opponent,strateg
 66,Oct 2-4 2026,2026-10-04,MPL ID,Week 7,Team Liquid ID,ALTER EGO,2-0,Team Liquid ID 2-0,1.71,3.77,,,3.77,Thunderpick snapshot on Sep 28 2026.,,,,Pending result.,https://id-mpl.com/en/schedule
 67,Oct 2-4 2026,2026-10-04,MPL ID,Week 7,EVOS Esports,RRQ Hoshi,2-0,EVOS Esports 2-0,1.3,2.01,,,2.01,Thunderpick snapshot on Sep 28 2026.,,,,Pending result.,https://id-mpl.com/en/schedule
 68,Oct 2-4 2026,2026-10-04,MPL ID,Week 7,Natus Vincere,ONIC Esports,2-0,Natus Vincere 2-0,1.93,3.48,,,3.48,Thunderpick snapshot on Sep 28 2026.,,,,Pending result.,https://id-mpl.com/en/schedule
-69,Oct 2-4 2026,2026-10-02,MPL PH,Week 7,ONIC Philippines,Twisted Minds PH,2-0,ONIC Philippines 2-0,1.15,1.68,,,1.68,Thunderpick snapshot on Sep 28 2026.,,,,Pending result. Match day not yet confirmed.,https://ph-mpl.com/schedule
-70,Oct 2-4 2026,2026-10-02,MPL PH,Week 7,Aurora Gaming PH,TNC Pro Team,2-0,Aurora Gaming PH 2-0,1.7,2.97,,,2.97,Thunderpick snapshot on Sep 28 2026.,,,,Pending result. Match day not yet confirmed.,https://ph-mpl.com/schedule
+69,Oct 2-4 2026,2026-10-02,MPL PH,Week 7,ONIC Philippines,Twisted Minds PH,2-0,ONIC Philippines 2-0,1.15,1.68,,,1.68,Thunderpick snapshot on Sep 28 2026.,,,,Pending result.,https://ph-mpl.com/schedule
+70,Oct 2-4 2026,2026-10-02,MPL PH,Week 7,Aurora Gaming PH,TNC Pro Team,2-0,Aurora Gaming PH 2-0,1.7,2.97,,,2.97,Thunderpick snapshot on Sep 28 2026.,,,,Pending result.,https://ph-mpl.com/schedule
+71,Oct 2-4 2026,2026-10-03,MPL PH,Week 7,Omega Esports,Twisted Minds PH,2-0,Omega Esports 2-0,1.3,2.01,,,2.01,Thunderpick snapshot on Sep 30 2026.,,,,Pending result.,https://ph-mpl.com/schedule
+72,Oct 2-4 2026,2026-10-03,MPL PH,Week 7,Team Falcons PH,AP.Bren,2-0,Team Falcons PH 2-0,1.12,1.53,,,1.53,Thunderpick snapshot on Sep 30 2026.,,,,Pending result.,https://ph-mpl.com/schedule
+73,Oct 2-4 2026,2026-10-03,MPL PH,Week 7,Aurora Gaming PH,ONIC Philippines,2-0,Aurora Gaming PH 2-0,2.85,5.4,,,5.4,Thunderpick snapshot on Sep 30 2026.,,,,Pending result.,https://ph-mpl.com/schedule
+74,Oct 2-4 2026,2026-10-04,MPL PH,Week 7,Team Liquid PH,AP.Bren,2-0,Team Liquid PH 2-0,1.13,1.56,,,1.56,Thunderpick snapshot on Sep 30 2026.,,,,Pending result.,https://ph-mpl.com/schedule
+75,Oct 2-4 2026,2026-10-04,MPL PH,Week 7,Team Falcons PH,Omega Esports,2-0,Team Falcons PH 2-0,1.31,2.05,,,2.05,Thunderpick snapshot on Sep 30 2026.,,,,Pending result.,https://ph-mpl.com/schedule
+76,Oct 8-11 2026,2026-10-08,MPL MY,Week 7,Team Rey,Bigetron MY by Vitality,2-0,Team Rey 2-0,1.57,2.67,,,2.67,Thunderpick snapshot on Sep 30 2026.,,,,Pending result.,https://mlbbhub.com/mpl/my/schedule
+77,Oct 8-11 2026,2026-10-08,MPL MY,Week 7,Selangor Red Giants,Team Flash,2-0,Selangor Red Giants 2-0,1.14,1.58,,,1.58,Thunderpick snapshot on Sep 30 2026.,,,,Pending result.,https://mlbbhub.com/mpl/my/schedule
+78,Oct 8-11 2026,2026-10-09,MPL MY,Week 7,Team Vamos,Invictus Gaming,2-0,Team Vamos 2-0,1.76,3.1,,,3.1,Thunderpick snapshot on Sep 30 2026.,,,,Pending result.,https://mlbbhub.com/mpl/my/schedule
+79,Oct 8-11 2026,2026-10-09,MPL MY,Week 7,RRQ Tora,AC Esports,2-0,RRQ Tora 2-0,1.71,2.98,,,2.98,Thunderpick snapshot on Sep 30 2026.,,,,Pending result.,https://mlbbhub.com/mpl/my/schedule
+80,Oct 8-11 2026,2026-10-11,MPL MY,Week 7,Team Vamos,Team Flash,2-0,Team Vamos 2-0,1.26,1.91,,,1.91,Thunderpick snapshot on Sep 30 2026.,,,,Pending result.,https://mlbbhub.com/mpl/my/schedule
+81,Oct 8-11 2026,2026-10-11,MPL MY,Week 7,Invictus Gaming,AC Esports,2-0,Invictus Gaming 2-0,1.3,2.02,,,2.02,Thunderpick snapshot on Sep 30 2026.,,,,Pending result.,https://mlbbhub.com/mpl/my/schedule
+82,Oct 8-11 2026,2026-10-11,MPL MY,Week 7,Team Rey,RRQ Tora,2-0,Team Rey 2-0,1.3,2.02,,,2.02,Thunderpick snapshot on Sep 30 2026.,,,,Pending result.,https://mlbbhub.com/mpl/my/schedule
