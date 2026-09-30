@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed, ref, watch } from 'vue'
 import {
   createColumnHelper,
   createSortedRowModel,
@@ -12,6 +12,7 @@ import {
 import { ALL, useDataset } from '../composables/useDataset'
 import SectionCard from '../components/ui/SectionCard.vue'
 import ResultBadge from '../components/ui/ResultBadge.vue'
+import MatchDetails from '../components/MatchDetails.vue'
 import { odds, shortDate } from '../lib/format'
 import { ODDS_GROUPS, type Bet } from '../lib/types'
 
@@ -58,6 +59,22 @@ const table = useTable({
   initialState: { sorting: [{ id: 'date', desc: true }] },
 })
 
+/**
+ * Phones have no column headers to tap, so sorting is a single dropdown that
+ * drives the same table sorting state.
+ */
+const SORTS = [
+  { value: 'date-desc', label: 'Newest first', id: 'date', desc: true },
+  { value: 'date-asc', label: 'Oldest first', id: 'date', desc: false },
+  { value: 'win-asc', label: 'Biggest favourite first', id: 'winnerOdds', desc: false },
+  { value: 'win-desc', label: 'Biggest underdog first', id: 'winnerOdds', desc: true },
+] as const
+const sortChoice = ref<(typeof SORTS)[number]['value']>('date-desc')
+watch(sortChoice, (value) => {
+  const choice = SORTS.find((sort) => sort.value === value)
+  if (choice) table.setSorting([{ id: choice.id, desc: choice.desc }])
+})
+
 /** Row expansion is local UI state, so it lives here rather than in the table. */
 const expanded = ref<Set<number>>(new Set())
 function toggle(id: number) {
@@ -66,6 +83,10 @@ function toggle(id: number) {
   else next.add(id)
   expanded.value = next
 }
+
+/** On phones the extra filters fold away; search stays visible. */
+const showFilters = ref(false)
+const extraFilterCount = computed(() => activeFilterCount.value - (filters.search.trim() ? 1 : 0))
 
 const rows = computed(() => table.getRowModel().rows)
 
@@ -80,111 +101,200 @@ const QUALITY_LABEL: Record<string, string> = {
 function qualityClass(quality: string): string {
   return quality === 'estimated' ? 'text-serious' : 'text-muted'
 }
+
+/** A card's left edge shows how the 2-0 bet ended, next to the W/L badge. */
+function cardEdge(bet: Bet): string {
+  if (bet.strategyResult === 'W') return 'border-l-good'
+  if (bet.strategyResult === 'L') return 'border-l-critical'
+  return 'border-l-rule-strong'
+}
+
+/* Controls are 40px tall on phones (easy to tap) and compact on desktop. */
+const FIELD =
+  'min-h-10 w-full rounded border border-rule bg-surface px-2 text-[14px] text-ink md:min-h-0 md:w-auto md:py-1 md:text-[12.5px]'
 </script>
 
 <template>
   <div class="flex flex-col gap-4">
-    <SectionCard
-      title="Matches"
-      note="Every row in the CSV. Click a match to see its notes, price history and source."
-    >
+    <SectionCard title="Matches" note="Tap a match to see its notes, price history and source.">
       <template #actions>
         <button
           v-if="activeFilterCount > 0"
           type="button"
-          class="rounded border border-rule px-2 py-1 text-[12px] text-ink-2 hover:bg-sunken"
+          class="min-h-9 rounded border border-rule px-2.5 text-[12.5px] text-ink-2 hover:bg-sunken"
           @click="resetFilters"
         >
           Clear {{ activeFilterCount }} filter{{ activeFilterCount === 1 ? '' : 's' }}
         </button>
       </template>
 
-      <!-- Filters sit in one row above the table. -->
-      <div class="flex flex-wrap items-end gap-2 border-b border-rule px-4 py-3">
-        <label class="flex flex-col gap-1">
-          <span class="text-[11.5px] text-muted">Search</span>
-          <input
-            v-model="filters.search"
-            type="search"
-            placeholder="Team, league or note"
-            class="w-48 rounded border border-rule bg-surface px-2 py-1 text-[12.5px] text-ink placeholder:text-muted"
-          />
-        </label>
+      <div class="border-b border-rule px-3 py-3 sm:px-4">
+        <!-- Search, plus the phone-only sort and filter controls, in one row. -->
+        <div class="flex flex-wrap items-end gap-2">
+          <label class="flex min-w-0 flex-1 flex-col gap-1 md:flex-none">
+            <span class="text-[11.5px] text-muted">Search</span>
+            <input
+              v-model="filters.search"
+              type="search"
+              placeholder="Team, league or note"
+              :class="[FIELD, 'md:w-48']"
+            />
+          </label>
+          <button
+            type="button"
+            class="min-h-10 shrink-0 rounded border px-3 text-[13.5px] md:hidden"
+            :class="
+              showFilters || extraFilterCount > 0
+                ? 'border-accent bg-accent/10 font-semibold text-accent'
+                : 'border-rule text-ink-2'
+            "
+            :aria-expanded="showFilters"
+            aria-controls="match-filters"
+            @click="showFilters = !showFilters"
+          >
+            Filters{{ extraFilterCount > 0 ? ` (${extraFilterCount})` : '' }}
+          </button>
+        </div>
 
-        <label class="flex flex-col gap-1">
-          <span class="text-[11.5px] text-muted">League</span>
-          <select v-model="filters.league" class="rounded border border-rule bg-surface px-2 py-1 text-[12.5px] text-ink">
-            <option :value="ALL">All</option>
-            <option v-for="league in leagues" :key="league" :value="league">{{ league }}</option>
+        <label class="mt-2 flex items-center gap-2 md:hidden">
+          <span class="text-[11.5px] text-muted">Sort</span>
+          <select v-model="sortChoice" :class="FIELD">
+            <option v-for="sort in SORTS" :key="sort.value" :value="sort.value">{{ sort.label }}</option>
           </select>
         </label>
 
-        <label class="flex flex-col gap-1">
-          <span class="text-[11.5px] text-muted">Odds group</span>
-          <select v-model="filters.oddsGroup" class="rounded border border-rule bg-surface px-2 py-1 text-[12.5px] text-ink">
-            <option :value="ALL">All</option>
-            <option v-for="group in ODDS_GROUPS" :key="group.id" :value="group.id">
-              {{ group.label }}
-            </option>
-          </select>
-        </label>
-
-        <label class="flex flex-col gap-1">
-          <span class="text-[11.5px] text-muted">Market</span>
-          <select v-model="filters.market" class="rounded border border-rule bg-surface px-2 py-1 text-[12.5px] text-ink">
-            <option :value="ALL">All</option>
-            <option value="2-0">2-0</option>
-            <option value="Over 2.5">Over 2.5</option>
-          </select>
-        </label>
-
-        <label class="flex flex-col gap-1">
-          <span class="text-[11.5px] text-muted">Winner</span>
-          <select v-model="filters.winnerResult" class="rounded border border-rule bg-surface px-2 py-1 text-[12.5px] text-ink">
-            <option :value="ALL">All</option>
-            <option value="W">Won</option>
-            <option value="L">Lost</option>
-          </select>
-        </label>
-
-        <label class="flex flex-col gap-1">
-          <span class="text-[11.5px] text-muted">Strategy</span>
-          <select v-model="filters.strategyResult" class="rounded border border-rule bg-surface px-2 py-1 text-[12.5px] text-ink">
-            <option :value="ALL">All</option>
-            <option value="W">Won</option>
-            <option value="L">Lost</option>
-          </select>
-        </label>
-
-        <label class="flex flex-col gap-1">
-          <span class="text-[11.5px] text-muted">Price</span>
-          <select v-model="filters.oddsQuality" class="rounded border border-rule bg-surface px-2 py-1 text-[12.5px] text-ink">
-            <option :value="ALL">All</option>
-            <option value="actual">Actual</option>
-            <option value="snapshot">Snapshot</option>
-            <option value="estimated">Estimated</option>
-          </select>
-        </label>
-
-        <label class="flex flex-col gap-1">
-          <span class="text-[11.5px] text-muted">Map score</span>
-          <select v-model="filters.sweep" class="rounded border border-rule bg-surface px-2 py-1 text-[12.5px] text-ink">
-            <option :value="ALL">All</option>
-            <option value="sweep">2-0 sweeps</option>
-            <option value="decider">Went to game 3</option>
-          </select>
-        </label>
-
-        <label class="flex flex-col gap-1">
-          <span class="text-[11.5px] text-muted">Team</span>
-          <select v-model="filters.team" class="rounded border border-rule bg-surface px-2 py-1 text-[12.5px] text-ink">
-            <option :value="ALL">All</option>
-            <option v-for="team in teams" :key="team" :value="team">{{ team }}</option>
-          </select>
-        </label>
+        <!-- The other filters: always shown on desktop, folded on phones. -->
+        <div
+          id="match-filters"
+          class="mt-3 grid-cols-2 gap-2 md:mt-3 md:flex md:flex-wrap md:items-end"
+          :class="showFilters ? 'grid' : 'hidden'"
+        >
+          <label class="flex flex-col gap-1">
+            <span class="text-[11.5px] text-muted">League</span>
+            <select v-model="filters.league" :class="FIELD">
+              <option :value="ALL">All</option>
+              <option v-for="league in leagues" :key="league" :value="league">{{ league }}</option>
+            </select>
+          </label>
+          <label class="flex flex-col gap-1">
+            <span class="text-[11.5px] text-muted">Odds group</span>
+            <select v-model="filters.oddsGroup" :class="FIELD">
+              <option :value="ALL">All</option>
+              <option v-for="group in ODDS_GROUPS" :key="group.id" :value="group.id">
+                {{ group.label }}
+              </option>
+            </select>
+          </label>
+          <label class="flex flex-col gap-1">
+            <span class="text-[11.5px] text-muted">Market</span>
+            <select v-model="filters.market" :class="FIELD">
+              <option :value="ALL">All</option>
+              <option value="2-0">2-0</option>
+              <option value="Over 2.5">Over 2.5</option>
+            </select>
+          </label>
+          <label class="flex flex-col gap-1">
+            <span class="text-[11.5px] text-muted">Winner</span>
+            <select v-model="filters.winnerResult" :class="FIELD">
+              <option :value="ALL">All</option>
+              <option value="W">Won</option>
+              <option value="L">Lost</option>
+            </select>
+          </label>
+          <label class="flex flex-col gap-1">
+            <span class="text-[11.5px] text-muted">Strategy</span>
+            <select v-model="filters.strategyResult" :class="FIELD">
+              <option :value="ALL">All</option>
+              <option value="W">Won</option>
+              <option value="L">Lost</option>
+            </select>
+          </label>
+          <label class="flex flex-col gap-1">
+            <span class="text-[11.5px] text-muted">Price</span>
+            <select v-model="filters.oddsQuality" :class="FIELD">
+              <option :value="ALL">All</option>
+              <option value="actual">Actual</option>
+              <option value="snapshot">Snapshot</option>
+              <option value="estimated">Estimated</option>
+            </select>
+          </label>
+          <label class="flex flex-col gap-1">
+            <span class="text-[11.5px] text-muted">Map score</span>
+            <select v-model="filters.sweep" :class="FIELD">
+              <option :value="ALL">All</option>
+              <option value="sweep">2-0 sweeps</option>
+              <option value="decider">Went to game 3</option>
+            </select>
+          </label>
+          <label class="flex flex-col gap-1">
+            <span class="text-[11.5px] text-muted">Team</span>
+            <select v-model="filters.team" :class="FIELD">
+              <option :value="ALL">All</option>
+              <option v-for="team in teams" :key="team" :value="team">{{ team }}</option>
+            </select>
+          </label>
+        </div>
       </div>
 
-      <div class="scroll-x">
+      <!-- Phones: one card per match, everything visible without sideways scrolling. -->
+      <ul class="divide-y divide-rule md:hidden">
+        <li v-for="row in rows" :key="row.id">
+          <button
+            type="button"
+            class="block w-full border-l-4 px-3 py-3 text-left active:bg-sunken"
+            :class="cardEdge(row.original)"
+            :aria-expanded="expanded.has(row.original.id)"
+            @click="toggle(row.original.id)"
+          >
+            <p class="tnum text-[12px] text-muted">
+              {{ shortDate(row.original.date) }} · {{ row.original.league }}
+              <template v-if="row.original.oddsGroup"> · {{ row.original.oddsGroup }}</template>
+            </p>
+            <p class="mt-0.5 text-[15px] leading-snug">
+              <span class="font-semibold text-ink">{{ row.original.selectedTeam }}</span>
+              <span class="text-muted"> vs </span>
+              <span class="text-ink-2">{{ row.original.opponent }}</span>
+            </p>
+
+            <div class="mt-2.5 grid grid-cols-3 gap-2">
+              <div>
+                <p class="text-[11px] text-muted">Score</p>
+                <p class="tnum text-[15px] font-semibold text-ink">{{ row.original.score || '—' }}</p>
+              </div>
+              <div>
+                <p class="text-[11px] text-muted">Winner</p>
+                <p class="flex items-center gap-1.5">
+                  <ResultBadge :result="row.original.winnerResult" compact />
+                  <span class="tnum text-[13px] text-ink-2">{{ odds(row.original.winnerOdds) }}</span>
+                </p>
+              </div>
+              <div>
+                <p class="text-[11px] text-muted">{{ row.original.market }}</p>
+                <p class="flex items-center gap-1.5">
+                  <ResultBadge :result="row.original.strategyResult" compact />
+                  <span class="tnum text-[13px] text-ink-2">{{ odds(row.original.effectiveOdds) }}</span>
+                </p>
+                <p
+                  v-if="row.original.oddsQuality === 'estimated'"
+                  class="text-[10.5px]"
+                  :class="qualityClass(row.original.oddsQuality)"
+                >
+                  Estimated
+                </p>
+              </div>
+            </div>
+          </button>
+          <div v-if="expanded.has(row.original.id)" class="border-l-4 border-l-transparent bg-sunken px-3 py-3">
+            <MatchDetails :bet="row.original" />
+          </div>
+        </li>
+        <li v-if="rows.length === 0" class="px-4 py-10 text-center text-[13px] text-muted">
+          No matches fit these filters. Clear a filter to widen the view.
+        </li>
+      </ul>
+
+      <!-- Desktop: the full sortable table. -->
+      <div class="scroll-x hidden md:block">
         <table class="w-full min-w-[900px] border-collapse text-[13px]">
           <thead>
             <tr
@@ -262,53 +372,7 @@ function qualityClass(quality: string): string {
 
               <tr v-if="expanded.has(row.original.id)" class="border-b border-rule bg-sunken">
                 <td :colspan="columns.length + 1" class="px-4 py-3">
-                  <dl class="grid gap-x-8 gap-y-3 sm:grid-cols-2">
-                    <div>
-                      <dt class="text-[11.5px] text-muted">Pick</dt>
-                      <dd class="text-[13px] text-ink">{{ row.original.selection }}</dd>
-                    </div>
-                    <div>
-                      <dt class="text-[11.5px] text-muted">Prices seen</dt>
-                      <dd class="tnum text-[13px] text-ink">
-                        <span v-if="row.original.oddsSnapshot !== null">
-                          Snapshot {{ odds(row.original.oddsSnapshot) }}
-                        </span>
-                        <span v-if="row.original.oddsActual !== null">
-                          <span v-if="row.original.oddsSnapshot !== null" class="text-muted"> → </span>
-                          Actual {{ odds(row.original.oddsActual) }}
-                        </span>
-                        <span v-if="row.original.oddsEstimated !== null" class="text-serious">
-                          Estimated {{ odds(row.original.oddsEstimated) }}
-                        </span>
-                      </dd>
-                    </div>
-                    <div v-if="row.original.oddsNote">
-                      <dt class="text-[11.5px] text-muted">Odds note</dt>
-                      <dd class="max-w-[62ch] text-[13px] leading-relaxed text-ink-2">
-                        {{ row.original.oddsNote }}
-                      </dd>
-                    </div>
-                    <div v-if="row.original.notes">
-                      <dt class="text-[11.5px] text-muted">Notes</dt>
-                      <dd class="max-w-[62ch] text-[13px] leading-relaxed text-ink-2">
-                        {{ row.original.notes }}
-                      </dd>
-                    </div>
-                    <div v-if="row.original.sourceUrl">
-                      <dt class="text-[11.5px] text-muted">Result source</dt>
-                      <dd class="text-[13px]">
-                        <a
-                          :href="row.original.sourceUrl"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          class="break-all text-accent underline underline-offset-2"
-                          @click.stop
-                        >
-                          {{ row.original.sourceUrl }}
-                        </a>
-                      </dd>
-                    </div>
-                  </dl>
+                  <MatchDetails :bet="row.original" />
                 </td>
               </tr>
             </template>

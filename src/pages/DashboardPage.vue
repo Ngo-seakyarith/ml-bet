@@ -93,7 +93,7 @@ const strategies = computed(() => [
     </section>
 
     <!-- Headline counters -->
-    <section class="grid rounded-md border border-rule bg-surface sm:grid-cols-2 lg:grid-cols-6">
+    <section class="stat-grid" data-cols="6">
       <StatTile
         label="Matches"
         :value="String(summary.totalMatches)"

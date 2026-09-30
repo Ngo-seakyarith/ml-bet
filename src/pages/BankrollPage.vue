@@ -24,7 +24,7 @@ const roi = computed(() => (settled.value === 0 ? null : total.value / settled.v
 
 <template>
   <div class="flex flex-col gap-4">
-    <section class="grid rounded-md border border-rule bg-surface sm:grid-cols-2 lg:grid-cols-5">
+    <section class="stat-grid" data-cols="5">
       <StatTile
         label="Units staked"
         :value="String(settled)"

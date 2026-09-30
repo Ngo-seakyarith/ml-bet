@@ -25,7 +25,7 @@ const moves = computed(() => marketMoves(allBets.value))
       <RawCsvTable />
     </SectionCard>
 
-    <section class="grid rounded-md border border-rule bg-surface sm:grid-cols-3">
+    <section class="stat-grid" data-cols="3">
       <StatTile label="Rows parsed" :value="String(allBets.length)" support="From the bundled CSV" />
       <StatTile
         label="Errors"
@@ -102,7 +102,7 @@ const moves = computed(() => marketMoves(allBets.value))
       title="Price quality"
       note="ROI uses actual before snapshot before estimated. Estimated prices are backtest reconstructions, not bets."
     >
-      <div class="grid gap-0 sm:grid-cols-4">
+      <div class="stat-grid" data-cols="4" data-flush>
         <StatTile label="Actual" :value="String(quality.actual)" support="Price actually taken" />
         <StatTile label="Snapshot" :value="String(quality.snapshot)" support="Planned price observed" />
         <StatTile
