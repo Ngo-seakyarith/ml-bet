@@ -1,16 +1,16 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useDataset } from '../composables/useDataset'
-import { discrepancies, marketMoves, oddsQualityBreakdown } from '../lib/stats'
+import { marketMoves, oddsQualityBreakdown } from '../lib/stats'
 import SectionCard from '../components/ui/SectionCard.vue'
 import StatTile from '../components/ui/StatTile.vue'
+import RawCsvTable from '../components/RawCsvTable.vue'
 import { odds, shortDate, signedPercent } from '../lib/format'
 
 const { allBets, issues } = useDataset()
 
 const errors = computed(() => issues.value.filter((issue) => issue.severity === 'error'))
 const warnings = computed(() => issues.value.filter((issue) => issue.severity === 'warning'))
-const mismatches = computed(() => discrepancies(allBets.value))
 const quality = computed(() => oddsQualityBreakdown(allBets.value))
 const moves = computed(() => marketMoves(allBets.value))
 
@@ -18,7 +18,14 @@ const moves = computed(() => marketMoves(allBets.value))
 
 <template>
   <div class="flex flex-col gap-4">
-    <section class="grid rounded-md border border-rule bg-surface sm:grid-cols-2 lg:grid-cols-4">
+    <SectionCard
+      title="mlbb_betting_dataset.csv"
+      note="The file exactly as written. Edit the CSV and save; this table updates with it."
+    >
+      <RawCsvTable />
+    </SectionCard>
+
+    <section class="grid rounded-md border border-rule bg-surface sm:grid-cols-3">
       <StatTile label="Rows parsed" :value="String(allBets.length)" support="From the bundled CSV" />
       <StatTile
         label="Errors"
@@ -31,12 +38,6 @@ const moves = computed(() => marketMoves(allBets.value))
         :value="String(warnings.length)"
         support="Read, but worth a look"
         :tone="warnings.length > 0 ? 'bad' : 'flat'"
-      />
-      <StatTile
-        label="Profit mismatches"
-        :value="String(mismatches.length)"
-        support="CSV against recomputation"
-        :tone="mismatches.length > 0 ? 'bad' : 'flat'"
       />
     </section>
 
@@ -93,8 +94,7 @@ const moves = computed(() => marketMoves(allBets.value))
 
     <SectionCard v-else title="Validation" note="Nothing to fix.">
       <p class="px-4 py-4 text-[13px] text-ink-2">
-        All {{ allBets.length }} rows parsed cleanly, and every stored profit column agrees with
-        the recomputed value.
+        All {{ allBets.length }} rows parsed cleanly, and every score agrees with its result.
       </p>
     </SectionCard>
 
