@@ -375,6 +375,109 @@ export function marketMoves(bets: readonly Bet[]): MarketMove[] {
 }
 
 /* -------------------------------------------------------------------------
+ * Underdogs: "back the underdog to win, every match"
+ * ---------------------------------------------------------------------- */
+
+/**
+ * Bookmaker margin used to estimate the other team's price when only the
+ * pick's price is recorded, measured from Thunderpick two-way MLBB markets:
+ * - domestic leagues ~7% (MPL MY Oct 9/11: 1.74/2.02, 2.18/1.63, 1.20/4.23)
+ * - Asian Games ~8% (Sep 29: 1.11/5.50, 1.51/2.38, 2.42/1.50)
+ * International events carry the wider margin.
+ */
+export const BOOK_MARGIN = 1.07
+export const INTERNATIONAL_MARGIN = 1.08
+const INTERNATIONAL_LEAGUES: ReadonlySet<string> = new Set(['Asian Games'])
+
+export function marginFor(league: string): number {
+  return INTERNATIONAL_LEAGUES.has(league) ? INTERNATIONAL_MARGIN : BOOK_MARGIN
+}
+
+/** The other side of a two-way market, given one side's decimal odds. */
+export function otherSideOdds(odds: number, margin = BOOK_MARGIN): number | null {
+  const remaining = margin - 1 / odds
+  return remaining > 0 ? 1 / remaining : null
+}
+
+export interface UnderdogBet {
+  bet: Bet
+  /** The team priced as the underdog (longer odds). */
+  team: string
+  opponent: string
+  odds: number
+  /** True when the underdog's price was estimated rather than recorded. */
+  estimated: boolean
+  /** True when the user's own pick was the underdog. */
+  picked: boolean
+  won: boolean
+  /** Flat one-unit Match Winner profit backing the underdog. */
+  profit: number
+}
+
+/**
+ * One row per resolved match: who the underdog was, at what price, and how
+ * backing them to win would have gone. When the user picked the favourite the
+ * underdog's price is estimated from the pick's price and the league's margin
+ * (pass `margin` to force one value, e.g. for a sensitivity check).
+ */
+export function underdogBets(bets: readonly Bet[], margin?: number): UnderdogBet[] {
+  const out: UnderdogBet[] = []
+  for (const bet of bets) {
+    if (bet.winnerResult === 'VOID' || bet.winnerOdds === null) continue
+    const mine = bet.winnerOdds
+    const theirs = otherSideOdds(mine, margin ?? marginFor(bet.league))
+    if (theirs === null) continue
+    const picked = mine > theirs
+    const won = picked ? bet.winnerResult === 'W' : bet.winnerResult === 'L'
+    const odds = picked ? mine : theirs
+    out.push({
+      bet,
+      team: picked ? bet.selectedTeam : bet.opponent,
+      opponent: picked ? bet.opponent : bet.selectedTeam,
+      odds,
+      estimated: !picked,
+      picked,
+      won,
+      profit: won ? odds - 1 : -1,
+    })
+  }
+  return out
+}
+
+export interface UnderdogSummary {
+  n: number
+  wins: number
+  hitRate: number | null
+  ci: Interval | null
+  confidence: Confidence
+  profit: number
+  roi: number | null
+  averageOdds: number | null
+  /** Win rate needed to break even at these prices (1 / average odds). */
+  breakEven: number | null
+  estimatedCount: number
+}
+
+export function summarizeUnderdogs(list: readonly UnderdogBet[]): UnderdogSummary {
+  const n = list.length
+  const wins = list.filter((item) => item.won).length
+  const profit = list.reduce((sum, item) => sum + item.profit, 0)
+  const averageOdds = n === 0 ? null : list.reduce((sum, item) => sum + item.odds, 0) / n
+  return {
+    n,
+    wins,
+    hitRate: n === 0 ? null : wins / n,
+    ci: wilson(wins, n),
+    confidence: confidenceFor(n),
+    profit,
+    roi: n === 0 ? null : profit / n,
+    averageOdds,
+    breakEven: averageOdds === null ? null : 1 / averageOdds,
+    estimatedCount: list.filter((item) => item.estimated).length,
+  }
+}
+
+/* -------------------------------------------------------------------------
  * Team scatter input
  * ---------------------------------------------------------------------- */
 

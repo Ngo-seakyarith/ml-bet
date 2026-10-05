@@ -4,6 +4,7 @@ import MatchesPage from './pages/MatchesPage.vue'
 import OddsGroupsPage from './pages/OddsGroupsPage.vue'
 import WeeksPage from './pages/WeeksPage.vue'
 import LeaguesPage from './pages/LeaguesPage.vue'
+import UnderdogsPage from './pages/UnderdogsPage.vue'
 import BankrollPage from './pages/BankrollPage.vue'
 import DataPage from './pages/DataPage.vue'
 
@@ -14,6 +15,7 @@ export const PAGES = [
   { path: '/odds-groups', name: 'groups', label: 'Odds groups', component: OddsGroupsPage },
   { path: '/weeks', name: 'weeks', label: 'Weeks', component: WeeksPage },
   { path: '/leagues', name: 'leagues', label: 'Leagues', component: LeaguesPage },
+  { path: '/underdogs', name: 'underdogs', label: 'Underdogs', component: UnderdogsPage },
   { path: '/bankroll', name: 'bankroll', label: 'Bankroll', component: BankrollPage },
   { path: '/data', name: 'data', label: 'Data', component: DataPage },
 ] as const
