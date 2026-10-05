@@ -143,7 +143,7 @@ const isUrl = (value: string) => /^https?:\/\//.test(value)
  * Free-text columns are cut off at a fixed width so every row stays one line
  * tall; hovering a cell shows its full text.
  */
-const WIDE = new Set(['odds_note', 'notes', 'result_source_url'])
+const WIDE = new Set(['odds_note', 'notes', 'result_source_url', 'market_odds_source_url', 'market_odds_note'])
 
 const LEGEND = [
   { key: 'day-fri', label: 'Friday' },

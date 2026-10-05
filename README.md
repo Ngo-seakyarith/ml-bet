@@ -44,12 +44,34 @@ than counted at evens.
 
 | Column                                             | Why it matters                                                       |
 | -------------------------------------------------- | -------------------------------------------------------------------- |
-| `winner_odds`, `winner_pick_result`                 | The Match Winner strategy, independent of which market was played     |
+| `selected_match_winner_odds`, `winner_pick_result` | The selected team's Match Winner price and tracked result |
 | `score`                                             | Series score from the pick's side (`2-0`, `2-1`, `1-2`, `0-2`); blank if not played. Won/lost and sweep are worked out from it |
 | `strategy_market`                                   | `2-0` or `Over 2.5`; these are never pooled                           |
-| `opponent_odds`                                     | The other team's Match Winner price; lets the Underdogs page use real prices |
-| `strategy_odds`                                     | The 2-0 (or Over) price. Write `~2.40` for an estimated price         |
+| `opponent_match_winner_odds` | The opponent's Match Winner price; lets the Underdogs page use real prices |
+| `strategy_odds` | The price recorded for the tracked strategy pick. Write `~2.40` for an estimate; refreshing available markets does not overwrite this price |
 | `strategy_result`                                   | `VOID/POSTPONED` drops the row from every rate and return             |
+
+### Available market prices
+
+One row still represents one match. Prices are decimal; blank means not recorded or not
+listed, never zero. The October 8–11 fixtures contain the Thunderpick snapshot collected on
+October 5. Earlier rows keep their existing strategy snapshots and results.
+
+| Columns | Meaning |
+| --- | --- |
+| `correct_score_2_0_odds`, `correct_score_2_1_odds`, `correct_score_1_2_odds`, `correct_score_0_2_odds` | All four BO3 scores from **selected_team's perspective**. For example, 0-2 means the opponent sweeps |
+| `total_maps_over_2_5_odds`, `total_maps_under_2_5_odds` | Over = three maps; under = two maps |
+| `selected_plus_1_5_odds`, `opponent_plus_1_5_odds` | Each team's +1.5 map handicap. A team wins this selection by winning the series or losing 1-2. No duplicate -1.5 columns |
+| `market_odds_snapshot_date`, `market_odds_source_url`, `market_odds_note` | Date, direct match link, and context for the available market prices and refreshed Match Winner prices |
+
+Score and handicap prices are mapped to the CSV's team order even when Thunderpick lists the
+opponent first (including RRQ Tora vs AC Esports and Team Vamos vs Team Flash). Not every
+match offers +1.5 for both sides; unavailable sides stay blank.
+
+The previous `winner_odds` and `opponent_odds` columns are renamed to
+`selected_match_winner_odds` and `opponent_match_winner_odds`. The parser accepts either
+schema, giving the new columns precedence. The Data page displays every new column.
+Available market prices do not confirm a strategy pick or result, and do not enter ROI.
 
 ## How the numbers are defined
 
@@ -61,7 +83,7 @@ disagreement is reported on the Data page.
   that finished 2-0 divided by all correct winner picks. This is the headline figure because
   it isolates the half of the bet the 2-0 market actually prices. The raw 2-0 hit rate is also
   shown, but it is depressed by every match where the winner pick was simply wrong.
-- **Odds groups** — derived from `winner_odds` (G1 1.01–1.19 … G5 2.00+). There is no group
+- **Odds groups** — derived from `selected_match_winner_odds` (G1 1.01–1.19 … G5 2.00+). There is no group
   column to fill in.
 - **ROI** — flat one-unit stakes. Profit is `odds - 1` on a win and `-1` on a loss. Voided and
   postponed matches are excluded from every rate and return rather than counted as pushes.

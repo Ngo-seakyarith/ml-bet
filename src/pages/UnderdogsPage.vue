@@ -88,7 +88,7 @@ const marginNote = computed(() => {
       : m.source === 'domestic'
         ? `no ${league} match has both odds yet, so measured from ${m.samples} other league match${m.samples === 1 ? '' : 'es'}`
         : 'no recorded pairs yet, so taken from earlier screenshots'
-  return `Prices marked ~ had no opponent_odds in the CSV, so they are estimated using a bookmaker margin of ${value} (${from}).`
+  return `Prices marked ~ had no opponent Match Winner price in the CSV, so they are estimated using a bookmaker margin of ${value} (${from}).`
 })
 
 function toneClass(value: number | null): string {
@@ -220,7 +220,7 @@ function toneClass(value: number | null): string {
 
       <p class="px-1 text-[12px] leading-relaxed text-muted">
         These are Match Winner bets on the underdog, not 2-0 bets. Small samples swing a lot: a
-        hollow or half marker means too few matches to rely on. Fill in opponent_odds when you take
+        hollow or half marker means too few matches to rely on. Fill in opponent_match_winner_odds when you take
         a snapshot and that match uses the real price instead of an estimate.
       </p>
     </template>

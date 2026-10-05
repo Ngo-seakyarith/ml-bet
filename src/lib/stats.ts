@@ -352,7 +352,7 @@ export function oddsQualityBreakdown(bets: readonly Bet[]): OddsQualityBreakdown
 
 /**
  * Fallback bookmaker margins, used only until the CSV has recorded pairs
- * (winner_odds + opponent_odds) to measure from. Averages of Thunderpick
+ * (selected_match_winner_odds + opponent_match_winner_odds) to measure from. Averages of Thunderpick
  * two-way markets from screenshots:
  * - domestic: 5 MPL MY matches, Oct 9/11 → 1.0704 (7.0%)
  * - international: 9 Asian Games matches, Sep 29 → 1.0810 (8.1%)
@@ -444,7 +444,7 @@ export interface UnderdogBet {
 /**
  * One row per resolved match: who the underdog was, at what price, and how
  * backing them to win would have gone. The other team's price comes from the
- * CSV's `opponent_odds` when recorded; otherwise it is estimated from the
+ * CSV's `opponent_match_winner_odds` when recorded; otherwise it is estimated from the
  * pick's price and a margin: a per-league lookup (normally from
  * measureMargins), or one fixed number for a sensitivity check. Recorded
  * prices never change. Defaults to the fallback constants.

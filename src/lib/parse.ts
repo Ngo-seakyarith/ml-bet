@@ -61,8 +61,19 @@ const rowSchema = z.object({
   official_week: text,
   selected_team: text,
   opponent: text,
-  winner_odds: numericish,
-  opponent_odds: numericish,
+  selected_match_winner_odds: numericish,
+  opponent_match_winner_odds: numericish,
+  correct_score_2_0_odds: price,
+  correct_score_2_1_odds: price,
+  correct_score_1_2_odds: price,
+  correct_score_0_2_odds: price,
+  total_maps_over_2_5_odds: price,
+  total_maps_under_2_5_odds: price,
+  selected_plus_1_5_odds: price,
+  opponent_plus_1_5_odds: price,
+  market_odds_snapshot_date: text,
+  market_odds_source_url: text,
+  market_odds_note: text,
   winner_pick_result: text,
   score: text,
   strategy_market: text,
@@ -125,16 +136,16 @@ function normalize(row: RawRow, issues: RowIssue[]): Bet {
   const strategyResult = toOutcome(row.strategy_result)
   const { odds: effectiveOdds, quality: oddsQuality } = row.strategy_odds
 
-  const oddsGroup = toOddsGroup(row.winner_odds)
+  const oddsGroup = toOddsGroup(row.selected_match_winner_odds)
 
   // A real two-way market adds up to a little over 1 (the bookmaker's margin,
   // ~7-8% on Thunderpick). Far outside that is almost always a typo.
-  if (row.winner_odds !== null && row.opponent_odds !== null) {
-    const book = 1 / row.winner_odds + 1 / row.opponent_odds
+  if (row.selected_match_winner_odds !== null && row.opponent_match_winner_odds !== null) {
+    const book = 1 / row.selected_match_winner_odds + 1 / row.opponent_match_winner_odds
     if (book < 1.0 || book > 1.15) {
       push(
-        'opponent_odds',
-        `${row.winner_odds} and ${row.opponent_odds} imply a ${((book - 1) * 100).toFixed(0)}% margin; check for a typo`,
+        'opponent_match_winner_odds',
+        `${row.selected_match_winner_odds} and ${row.opponent_match_winner_odds} imply a ${((book - 1) * 100).toFixed(0)}% margin; check for a typo`,
         'warning',
       )
     }
@@ -160,10 +171,10 @@ function normalize(row: RawRow, issues: RowIssue[]): Bet {
     )
   }
 
-  const winnerProfit = unitProfit(winnerResult, row.winner_odds)
+  const winnerProfit = unitProfit(winnerResult, row.selected_match_winner_odds)
   const strategyProfit = unitProfit(strategyResult, effectiveOdds)
 
-  const isFavourite = row.winner_odds === null ? null : row.winner_odds < FAVOURITE_ODDS_CEILING
+  const isFavourite = row.selected_match_winner_odds === null ? null : row.selected_match_winner_odds < FAVOURITE_ODDS_CEILING
 
   return {
     id: row.record_id ?? 0,
@@ -174,8 +185,21 @@ function normalize(row: RawRow, issues: RowIssue[]): Bet {
     selectedTeam: row.selected_team,
     opponent: row.opponent,
 
-    winnerOdds: row.winner_odds,
-    opponentOdds: row.opponent_odds,
+    winnerOdds: row.selected_match_winner_odds,
+    opponentOdds: row.opponent_match_winner_odds,
+    marketOdds: {
+      correctScore20: row.correct_score_2_0_odds,
+      correctScore21: row.correct_score_2_1_odds,
+      correctScore12: row.correct_score_1_2_odds,
+      correctScore02: row.correct_score_0_2_odds,
+      over25: row.total_maps_over_2_5_odds,
+      under25: row.total_maps_under_2_5_odds,
+      selectedPlus15: row.selected_plus_1_5_odds,
+      opponentPlus15: row.opponent_plus_1_5_odds,
+    },
+    marketOddsSnapshotDate: row.market_odds_snapshot_date,
+    marketOddsSourceUrl: row.market_odds_source_url,
+    marketOddsNote: row.market_odds_note,
     oddsGroup,
     winnerResult,
     winnerProfit,
@@ -219,7 +243,13 @@ export function parseDataset(source: string): ParseResult {
 
   const bets: Bet[] = []
   for (const raw of parsed.data) {
-    const result = rowSchema.safeParse(raw)
+    // Read older CSVs too; explicit new columns take precedence, including blanks.
+    const result = rowSchema.safeParse({
+      ...Object.fromEntries(Object.keys(rowSchema.shape).map((field) => [field, ''])),
+      ...raw,
+      selected_match_winner_odds: raw.selected_match_winner_odds ?? raw.winner_odds ?? '',
+      opponent_match_winner_odds: raw.opponent_match_winner_odds ?? raw.opponent_odds ?? '',
+    })
     if (!result.success) {
       const recordId = raw.record_id ?? '?'
       for (const issue of result.error.issues) {

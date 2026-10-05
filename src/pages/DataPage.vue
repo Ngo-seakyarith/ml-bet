@@ -58,6 +58,12 @@ const quality = computed(() => oddsQualityBreakdown(allBets.value))
           blank means "not applicable" everywhere in this app, and a bet with no usable price is
           left out of ROI rather than counted at evens.
         </p>
+        <p class="max-w-[72ch] text-muted">
+          Correct-score prices follow selected_team/opponent order. Market columns contain
+          the available odds snapshot; strategy_odds keeps the price of the tracked pick.
+          +1.5 is recorded for each team separately, and a blank means the line was not listed.
+          The snapshot date and bookmaker link are stored beside the market prices.
+        </p>
       </div>
     </SectionCard>
 

@@ -17,6 +17,23 @@ export type Market = '2-0' | 'Over 2.5'
  */
 export type OddsQuality = 'observed' | 'estimated' | 'none'
 
+export interface MarketPrice {
+  odds: number | null
+  quality: OddsQuality
+}
+
+/** Score prices always follow selectedTeam/opponent order, regardless of site order. */
+export interface MarketOdds {
+  correctScore20: MarketPrice
+  correctScore21: MarketPrice
+  correctScore12: MarketPrice
+  correctScore02: MarketPrice
+  over25: MarketPrice
+  under25: MarketPrice
+  selectedPlus15: MarketPrice
+  opponentPlus15: MarketPrice
+}
+
 export type OddsGroupId = 'G1' | 'G2' | 'G3' | 'G4' | 'G5'
 
 export interface OddsGroup {
@@ -54,6 +71,11 @@ export interface Bet {
   winnerOdds: number | null
   /** The other team's Match Winner price, when recorded. */
   opponentOdds: number | null
+  /** Available market prices, separate from the price of the tracked strategy. */
+  marketOdds: MarketOdds
+  marketOddsSnapshotDate: string
+  marketOddsSourceUrl: string
+  marketOddsNote: string
   /** Derived from winnerOdds; the CSV does not carry a group column. */
   oddsGroup: OddsGroupId | null
   winnerResult: Outcome
