@@ -51,12 +51,38 @@ function weekdayOf(iso: string | undefined): Weekday | null {
 }
 
 const search = ref('')
+
+/**
+ * Newest first by default: latest weekend on top, each league kept together,
+ * latest date first inside it. "File order" shows the CSV exactly as stored.
+ */
+const order = ref<'newest' | 'file'>('newest')
+
 const rows = computed(() => {
   const needle = search.value.trim().toLowerCase()
-  const all = parsed.value.rows.map((cells) => {
+  const all = parsed.value.rows.map((cells, index) => {
     const date = cells[dateIndex.value]
-    return { cells, date: date ?? '', day: weekdayOf(date) }
+    return { cells, date: date ?? '', day: weekdayOf(date), index }
   })
+  if (order.value === 'newest') {
+    // A weekend sorts by its first date, so all of its leagues stay together.
+    const weekStart = new Map<string, string>()
+    for (const row of all) {
+      const week = row.cells[weekIndex.value] ?? ''
+      const first = weekStart.get(week)
+      if (first === undefined || row.date < first) weekStart.set(week, row.date)
+    }
+    all.sort((a, b) => {
+      const wa = weekStart.get(a.cells[weekIndex.value] ?? '') ?? ''
+      const wb = weekStart.get(b.cells[weekIndex.value] ?? '') ?? ''
+      if (wa !== wb) return wb.localeCompare(wa)
+      const la = a.cells[leagueIndex.value] ?? ''
+      const lb = b.cells[leagueIndex.value] ?? ''
+      if (la !== lb) return la.localeCompare(lb)
+      if (a.date !== b.date) return b.date.localeCompare(a.date)
+      return b.index - a.index
+    })
+  }
   if (needle === '') return all
   return all.filter((row) =>
     `${row.cells.join(' ')} ${row.day ? LABEL[row.day] : ''}`.toLowerCase().includes(needle),
@@ -139,6 +165,16 @@ const LEGEND = [
       <span class="tnum text-[12px] text-muted">
         {{ rows.length }} of {{ parsed.rows.length }} rows · {{ parsed.header.length }} columns
       </span>
+      <label class="flex items-center gap-1.5 text-[12px] text-muted">
+        Order
+        <select
+          v-model="order"
+          class="rounded border border-rule bg-surface px-1.5 py-1 text-[12.5px] text-ink"
+        >
+          <option value="newest">Newest first</option>
+          <option value="file">File order</option>
+        </select>
+      </label>
       <ul class="flex flex-wrap items-center gap-x-4 gap-y-1 sm:ml-auto" aria-label="Row colours">
         <li v-for="item in LEGEND" :key="item.key" class="flex items-center gap-1.5 text-[12px] text-ink-2">
           <span class="legend-swatch h-3 w-3 rounded-sm border border-rule-strong" :class="item.key" />

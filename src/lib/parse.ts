@@ -34,6 +34,25 @@ const numericish = z
 
 const text = z.unknown().transform((value) => blankToNull(value) ?? '')
 
+/**
+ * The single strategy price column. "2.52" is a price actually seen on the
+ * bookmaker; "~2.52" is an estimate (the backtest week, or an approximate
+ * price). Blank means no price yet.
+ */
+const price = z
+  .unknown()
+  .transform(blankToNull)
+  .transform((value, ctx): { odds: number | null; quality: OddsQuality } => {
+    if (value === null) return { odds: null, quality: 'none' }
+    const estimated = value.startsWith('~')
+    const parsed = Number(estimated ? value.slice(1).trim() : value)
+    if (!Number.isFinite(parsed) || parsed <= 1) {
+      ctx.addIssue({ code: 'custom', message: `"${value}" is not a price like 2.10 or ~2.10` })
+      return { odds: null, quality: 'none' }
+    }
+    return { odds: parsed, quality: estimated ? 'estimated' : 'observed' }
+  })
+
 const rowSchema = z.object({
   record_id: numericish,
   calendar_week: text,
@@ -43,14 +62,12 @@ const rowSchema = z.object({
   selected_team: text,
   opponent: text,
   winner_odds: numericish,
+  opponent_odds: numericish,
   winner_pick_result: text,
   score: text,
   strategy_market: text,
   strategy_selection: text,
-  strategy_odds_snapshot: numericish,
-  strategy_odds_actual: numericish,
-  strategy_odds_estimated: numericish,
-  strategy_odds_used_for_analysis: numericish,
+  strategy_odds: price,
   strategy_result: text,
   odds_note: text,
   notes: text,
@@ -80,17 +97,6 @@ function toOddsGroup(odds: number | null): OddsGroupId | null {
   return group?.id ?? null
 }
 
-/** actual > snapshot > estimated. Returns the price and where it came from. */
-function resolveOdds(row: RawRow): { odds: number | null; quality: OddsQuality } {
-  if (row.strategy_odds_actual !== null)
-    return { odds: row.strategy_odds_actual, quality: 'actual' }
-  if (row.strategy_odds_snapshot !== null)
-    return { odds: row.strategy_odds_snapshot, quality: 'snapshot' }
-  if (row.strategy_odds_estimated !== null)
-    return { odds: row.strategy_odds_estimated, quality: 'estimated' }
-  return { odds: null, quality: 'none' }
-}
-
 const SCORE = /^(\d+)-(\d+)$/
 
 /**
@@ -117,9 +123,22 @@ function normalize(row: RawRow, issues: RowIssue[]): Bet {
 
   const winnerResult = toOutcome(row.winner_pick_result)
   const strategyResult = toOutcome(row.strategy_result)
-  const { odds: effectiveOdds, quality: oddsQuality } = resolveOdds(row)
+  const { odds: effectiveOdds, quality: oddsQuality } = row.strategy_odds
 
   const oddsGroup = toOddsGroup(row.winner_odds)
+
+  // A real two-way market adds up to a little over 1 (the bookmaker's margin,
+  // ~7-8% on Thunderpick). Far outside that is almost always a typo.
+  if (row.winner_odds !== null && row.opponent_odds !== null) {
+    const book = 1 / row.winner_odds + 1 / row.opponent_odds
+    if (book < 1.0 || book > 1.15) {
+      push(
+        'opponent_odds',
+        `${row.winner_odds} and ${row.opponent_odds} imply a ${((book - 1) * 100).toFixed(0)}% margin; check for a typo`,
+        'warning',
+      )
+    }
+  }
 
   // Everything about how the series went is derived from the one score column.
   const maps = parseScore(row.score)
@@ -144,17 +163,6 @@ function normalize(row: RawRow, issues: RowIssue[]): Bet {
   const winnerProfit = unitProfit(winnerResult, row.winner_odds)
   const strategyProfit = unitProfit(strategyResult, effectiveOdds)
 
-  if (row.strategy_odds_used_for_analysis !== null && effectiveOdds !== null) {
-    const drift = Math.abs(row.strategy_odds_used_for_analysis - effectiveOdds)
-    if (drift > 0.005) {
-      push(
-        'strategy_odds_used_for_analysis',
-        `CSV used ${row.strategy_odds_used_for_analysis} but actual>snapshot>estimated gives ${effectiveOdds}`,
-        'warning',
-      )
-    }
-  }
-
   const isFavourite = row.winner_odds === null ? null : row.winner_odds < FAVOURITE_ODDS_CEILING
 
   return {
@@ -167,6 +175,7 @@ function normalize(row: RawRow, issues: RowIssue[]): Bet {
     opponent: row.opponent,
 
     winnerOdds: row.winner_odds,
+    opponentOdds: row.opponent_odds,
     oddsGroup,
     winnerResult,
     winnerProfit,
@@ -180,10 +189,6 @@ function normalize(row: RawRow, issues: RowIssue[]): Bet {
 
     market: toMarket(row.strategy_market),
     selection: row.strategy_selection,
-    oddsSnapshot: row.strategy_odds_snapshot,
-    oddsActual: row.strategy_odds_actual,
-    oddsEstimated: row.strategy_odds_estimated,
-    oddsUsedInCsv: row.strategy_odds_used_for_analysis,
     effectiveOdds,
     oddsQuality,
     strategyResult,

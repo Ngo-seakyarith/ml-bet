@@ -1,16 +1,29 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
 import { useDataset } from '../composables/useDataset'
-import { marginFor, summarizeUnderdogs, underdogBets, type UnderdogBet } from '../lib/stats'
+import {
+  marginPercent,
+  measureMargins,
+  summarizeUnderdogs,
+  underdogBets,
+  type UnderdogBet,
+} from '../lib/stats'
 import SectionCard from '../components/ui/SectionCard.vue'
 import StatTile from '../components/ui/StatTile.vue'
 import ConfidenceMark from '../components/ui/ConfidenceMark.vue'
 import ResultBadge from '../components/ui/ResultBadge.vue'
+import TeamLogo from '../components/ui/TeamLogo.vue'
 import { odds, percent, shortDate, shortWeek, signedPercent, toneFor, units } from '../lib/format'
 
-const { scoped } = useDataset()
+const { scoped, allBets } = useDataset()
 
-const dogs = computed(() => underdogBets(scoped.value))
+/**
+ * Margins are measured from every recorded odds pair in the CSV (upcoming
+ * matches included, filters ignored), so each new pair refines the estimates.
+ */
+const margins = computed(() => measureMargins(allBets.value))
+
+const dogs = computed(() => underdogBets(scoped.value, (league) => margins.value(league).margin))
 
 /** One card per league, busiest first. */
 const leagues = computed(() => {
@@ -63,10 +76,20 @@ const matches = computed(() =>
   ),
 )
 
-/** The margin used for the selected league's estimates: 7% domestic, 8% international. */
-const marginPercent = computed(() =>
-  current.value ? Math.round((marginFor(current.value.league) - 1) * 100) : 0,
-)
+/** The margin behind the selected league's estimates, and where it came from. */
+const marginNote = computed(() => {
+  if (!current.value) return ''
+  const league = current.value.league
+  const m = margins.value(league)
+  const value = marginPercent(m.margin)
+  const from =
+    m.source === 'league'
+      ? `measured from ${m.samples} ${league} match${m.samples === 1 ? '' : 'es'} with both odds recorded`
+      : m.source === 'domestic'
+        ? `no ${league} match has both odds yet, so measured from ${m.samples} other league match${m.samples === 1 ? '' : 'es'}`
+        : 'no recorded pairs yet, so taken from earlier screenshots'
+  return `Prices marked ~ had no opponent_odds in the CSV, so they are estimated using a bookmaker margin of ${value} (${from}).`
+})
 
 function toneClass(value: number | null): string {
   const tone = toneFor(value)
@@ -164,16 +187,18 @@ function toneClass(value: number | null): string {
 
       <SectionCard
         :title="`Every ${current.league} underdog`"
-        :note="`Prices marked ~ were not recorded; they are estimated from your pick's price assuming a ${marginPercent}% bookmaker margin.`"
+        :note="marginNote"
       >
         <ul class="divide-y divide-rule">
           <li v-for="item in matches" :key="item.bet.id" class="flex items-center gap-3 px-4 py-2.5">
             <ResultBadge :result="item.won ? 'W' : 'L'" compact />
             <div class="min-w-0 flex-1">
-              <p class="truncate text-[14px]">
-                <span class="font-semibold text-ink">{{ item.team }}</span>
-                <span class="text-muted"> vs </span>
-                <span class="text-ink-2">{{ item.opponent }}</span>
+              <p class="flex min-w-0 items-center gap-1.5 text-[14px]">
+                <TeamLogo :team="item.team" :size="18" />
+                <span class="truncate font-semibold text-ink">{{ item.team }}</span>
+                <span class="shrink-0 text-muted">vs</span>
+                <TeamLogo :team="item.opponent" :size="18" />
+                <span class="truncate text-ink-2">{{ item.opponent }}</span>
               </p>
               <p class="tnum text-[12px] text-muted">
                 {{ shortDate(item.bet.date) }} · @{{ item.estimated ? '~' : '' }}{{ odds(item.odds) }}
@@ -195,8 +220,8 @@ function toneClass(value: number | null): string {
 
       <p class="px-1 text-[12px] leading-relaxed text-muted">
         These are Match Winner bets on the underdog, not 2-0 bets. Small samples swing a lot: a
-        hollow or half marker means too few matches to rely on. Recording both teams' odds when you
-        take a snapshot would remove the estimates.
+        hollow or half marker means too few matches to rely on. Fill in opponent_odds when you take
+        a snapshot and that match uses the real price instead of an estimate.
       </p>
     </template>
   </div>

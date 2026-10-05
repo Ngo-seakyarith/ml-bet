@@ -88,7 +88,9 @@ const roi = computed(() => (settled.value === 0 ? null : total.value / settled.v
               <td class="px-3 py-2 text-ink-2">{{ point.bet.market }}</td>
               <td class="tnum px-3 py-2 text-right">
                 {{ odds(point.bet.effectiveOdds) }}
-                <span class="ml-1 text-[10.5px] text-muted">{{ point.bet.oddsQuality }}</span>
+                <span v-if="point.bet.oddsQuality === 'estimated'" class="ml-1 text-[10.5px] text-serious">
+                  estimated
+                </span>
               </td>
               <td class="px-3 py-2"><ResultBadge :result="point.bet.strategyResult" compact /></td>
               <td

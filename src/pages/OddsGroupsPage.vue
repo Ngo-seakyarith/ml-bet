@@ -54,13 +54,13 @@ const best = computed(() => {
         :columns="[
           'n',
           'winnerRecord',
-          'winnerRoi',
           's20Record',
+          'winnerRoi',
+          's20Roi',
+          's20Profit',
           's20Hit',
           'conditional',
           'conditionalBar',
-          's20Roi',
-          's20Profit',
         ]"
       />
     </SectionCard>

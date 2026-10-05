@@ -331,47 +331,19 @@ export function drawdown(points: readonly BankrollPoint[]): DrawdownSummary {
 }
 
 /* -------------------------------------------------------------------------
- * Odds quality / market movement
+ * Odds quality
  * ---------------------------------------------------------------------- */
 
 export interface OddsQualityBreakdown {
-  actual: number
-  snapshot: number
+  observed: number
   estimated: number
   none: number
 }
 
 export function oddsQualityBreakdown(bets: readonly Bet[]): OddsQualityBreakdown {
-  const counts: OddsQualityBreakdown = { actual: 0, snapshot: 0, estimated: 0, none: 0 }
+  const counts: OddsQualityBreakdown = { observed: 0, estimated: 0, none: 0 }
   for (const bet of bets) counts[bet.oddsQuality] += 1
   return counts
-}
-
-export interface MarketMove {
-  bet: Bet
-  snapshot: number
-  actual: number
-  /** Negative means the price shortened between the plan and the bet. */
-  drift: number
-  driftPct: number
-}
-
-/** Rows where we can see what the market did between planning and betting. */
-export function marketMoves(bets: readonly Bet[]): MarketMove[] {
-  return bets
-    .filter((bet) => bet.oddsSnapshot !== null && bet.oddsActual !== null)
-    .map((bet) => {
-      const snapshot = bet.oddsSnapshot as number
-      const actual = bet.oddsActual as number
-      return {
-        bet,
-        snapshot,
-        actual,
-        drift: actual - snapshot,
-        driftPct: (actual - snapshot) / snapshot,
-      }
-    })
-    .sort((a, b) => Math.abs(b.drift) - Math.abs(a.drift))
 }
 
 /* -------------------------------------------------------------------------
@@ -379,18 +351,73 @@ export function marketMoves(bets: readonly Bet[]): MarketMove[] {
  * ---------------------------------------------------------------------- */
 
 /**
- * Bookmaker margin used to estimate the other team's price when only the
- * pick's price is recorded, measured from Thunderpick two-way MLBB markets:
- * - domestic leagues ~7% (MPL MY Oct 9/11: 1.74/2.02, 2.18/1.63, 1.20/4.23)
- * - Asian Games ~8% (Sep 29: 1.11/5.50, 1.51/2.38, 2.42/1.50)
- * International events carry the wider margin.
+ * Fallback bookmaker margins, used only until the CSV has recorded pairs
+ * (winner_odds + opponent_odds) to measure from. Averages of Thunderpick
+ * two-way markets from screenshots:
+ * - domestic: 5 MPL MY matches, Oct 9/11 → 1.0704 (7.0%)
+ * - international: 9 Asian Games matches, Sep 29 → 1.0810 (8.1%)
  */
-export const BOOK_MARGIN = 1.07
-export const INTERNATIONAL_MARGIN = 1.08
+export const BOOK_MARGIN = 1.0704
+export const INTERNATIONAL_MARGIN = 1.081
 const INTERNATIONAL_LEAGUES: ReadonlySet<string> = new Set(['Asian Games'])
 
+export function isInternational(league: string): boolean {
+  return INTERNATIONAL_LEAGUES.has(league)
+}
+
+/** The fallback margin for a league, before any pairs are recorded. */
 export function marginFor(league: string): number {
-  return INTERNATIONAL_LEAGUES.has(league) ? INTERNATIONAL_MARGIN : BOOK_MARGIN
+  return isInternational(league) ? INTERNATIONAL_MARGIN : BOOK_MARGIN
+}
+
+export interface MarginEstimate {
+  /** 1/a + 1/b, e.g. 1.0694 for a 6.94% margin. */
+  margin: number
+  /** How many recorded pairs it was averaged from (0 for a fallback). */
+  samples: number
+  /** Where it came from: this league's pairs, other domestic leagues' pairs, or the fallback. */
+  source: 'league' | 'domestic' | 'fallback'
+}
+
+/**
+ * Measures the bookmaker margin from every row with both Match Winner prices
+ * recorded, including upcoming matches (a snapshot is a real price either
+ * way). Returns a lookup per league:
+ * - the league's own average if it has any pairs;
+ * - otherwise, for a domestic league, the average across all domestic pairs;
+ * - otherwise the fallback constant.
+ * Re-run on every CSV change, so each newly recorded pair refines it.
+ */
+export function measureMargins(bets: readonly Bet[]): (league: string) => MarginEstimate {
+  const byLeague = new Map<string, { sum: number; n: number }>()
+  const domestic = { sum: 0, n: 0 }
+  for (const bet of bets) {
+    if (bet.winnerOdds === null || bet.opponentOdds === null) continue
+    const book = 1 / bet.winnerOdds + 1 / bet.opponentOdds
+    // Ignore pairs the typo check would flag, so one mistake can't skew it.
+    if (book < 1.0 || book > 1.15) continue
+    const entry = byLeague.get(bet.league) ?? { sum: 0, n: 0 }
+    entry.sum += book
+    entry.n += 1
+    byLeague.set(bet.league, entry)
+    if (!isInternational(bet.league)) {
+      domestic.sum += book
+      domestic.n += 1
+    }
+  }
+  return (league: string) => {
+    const own = byLeague.get(league)
+    if (own && own.n > 0) return { margin: own.sum / own.n, samples: own.n, source: 'league' }
+    if (!isInternational(league) && domestic.n > 0) {
+      return { margin: domestic.sum / domestic.n, samples: domestic.n, source: 'domestic' }
+    }
+    return { margin: marginFor(league), samples: 0, source: 'fallback' }
+  }
+}
+
+/** A margin as a one-decimal percentage, e.g. 1.0694 → "6.9%". */
+export function marginPercent(margin: number): string {
+  return `${((margin - 1) * 100).toFixed(1)}%`
 }
 
 /** The other side of a two-way market, given one side's decimal odds. */
@@ -416,16 +443,23 @@ export interface UnderdogBet {
 
 /**
  * One row per resolved match: who the underdog was, at what price, and how
- * backing them to win would have gone. When the user picked the favourite the
- * underdog's price is estimated from the pick's price and the league's margin
- * (pass `margin` to force one value, e.g. for a sensitivity check).
+ * backing them to win would have gone. The other team's price comes from the
+ * CSV's `opponent_odds` when recorded; otherwise it is estimated from the
+ * pick's price and a margin: a per-league lookup (normally from
+ * measureMargins), or one fixed number for a sensitivity check. Recorded
+ * prices never change. Defaults to the fallback constants.
  */
-export function underdogBets(bets: readonly Bet[], margin?: number): UnderdogBet[] {
+export function underdogBets(
+  bets: readonly Bet[],
+  margin: number | ((league: string) => number) = marginFor,
+): UnderdogBet[] {
+  const marginOf = typeof margin === 'number' ? () => margin : margin
   const out: UnderdogBet[] = []
   for (const bet of bets) {
     if (bet.winnerResult === 'VOID' || bet.winnerOdds === null) continue
     const mine = bet.winnerOdds
-    const theirs = otherSideOdds(mine, margin ?? marginFor(bet.league))
+    const recorded = bet.opponentOdds
+    const theirs = recorded ?? otherSideOdds(mine, marginOf(bet.league))
     if (theirs === null) continue
     const picked = mine > theirs
     const won = picked ? bet.winnerResult === 'W' : bet.winnerResult === 'L'
@@ -435,7 +469,7 @@ export function underdogBets(bets: readonly Bet[], margin?: number): UnderdogBet
       team: picked ? bet.selectedTeam : bet.opponent,
       opponent: picked ? bet.opponent : bet.selectedTeam,
       odds,
-      estimated: !picked,
+      estimated: !picked && recorded === null,
       picked,
       won,
       profit: won ? odds - 1 : -1,

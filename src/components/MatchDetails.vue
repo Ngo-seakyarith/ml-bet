@@ -6,23 +6,20 @@ defineProps<{ bet: Bet }>()
 </script>
 
 <template>
-  <!-- The expanded detail for one match: pick, price history, notes, source. -->
+  <!-- The expanded detail for one match: pick, price, notes, source. -->
   <dl class="grid gap-x-8 gap-y-3 sm:grid-cols-2">
     <div>
       <dt class="text-[11.5px] text-muted">Pick</dt>
       <dd class="text-[13px] text-ink">{{ bet.selection }}</dd>
     </div>
     <div>
-      <dt class="text-[11.5px] text-muted">Prices seen</dt>
+      <dt class="text-[11.5px] text-muted">{{ bet.market }} price</dt>
       <dd class="tnum text-[13px] text-ink">
-        <span v-if="bet.oddsSnapshot !== null">Snapshot {{ odds(bet.oddsSnapshot) }}</span>
-        <span v-if="bet.oddsActual !== null">
-          <span v-if="bet.oddsSnapshot !== null" class="text-muted"> → </span>
-          Actual {{ odds(bet.oddsActual) }}
-        </span>
-        <span v-if="bet.oddsEstimated !== null" class="text-serious">
-          Estimated {{ odds(bet.oddsEstimated) }}
-        </span>
+        <template v-if="bet.effectiveOdds !== null">
+          {{ odds(bet.effectiveOdds) }}
+          <span v-if="bet.oddsQuality === 'estimated'" class="text-serious">(estimated)</span>
+        </template>
+        <span v-else class="text-muted">Not recorded yet</span>
       </dd>
     </div>
     <div v-if="bet.oddsNote">

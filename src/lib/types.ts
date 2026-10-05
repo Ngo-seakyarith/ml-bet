@@ -11,8 +11,11 @@ export type Outcome = 'W' | 'L' | 'VOID'
 
 export type Market = '2-0' | 'Over 2.5'
 
-/** Which of the three odds columns actually backs the ROI for a row. */
-export type OddsQuality = 'actual' | 'snapshot' | 'estimated' | 'none'
+/**
+ * Whether the strategy price was a real price seen on the bookmaker, or an
+ * estimate (written with a leading "~" in the CSV, e.g. "~2.52").
+ */
+export type OddsQuality = 'observed' | 'estimated' | 'none'
 
 export type OddsGroupId = 'G1' | 'G2' | 'G3' | 'G4' | 'G5'
 
@@ -49,6 +52,8 @@ export interface Bet {
 
   // --- Match Winner side -------------------------------------------------
   winnerOdds: number | null
+  /** The other team's Match Winner price, when recorded. */
+  opponentOdds: number | null
   /** Derived from winnerOdds; the CSV does not carry a group column. */
   oddsGroup: OddsGroupId | null
   winnerResult: Outcome
@@ -67,12 +72,7 @@ export interface Bet {
   // --- Strategy side -----------------------------------------------------
   market: Market
   selection: string
-  oddsSnapshot: number | null
-  oddsActual: number | null
-  oddsEstimated: number | null
-  /** The price the CSV claims to have used, for cross-checking only. */
-  oddsUsedInCsv: number | null
-  /** actual > snapshot > estimated, recomputed here. */
+  /** The strategy price from the CSV's single `strategy_odds` column. */
   effectiveOdds: number | null
   oddsQuality: OddsQuality
   strategyResult: Outcome

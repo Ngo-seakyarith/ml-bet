@@ -13,6 +13,7 @@ import { ALL, useDataset } from '../composables/useDataset'
 import SectionCard from '../components/ui/SectionCard.vue'
 import ResultBadge from '../components/ui/ResultBadge.vue'
 import MatchDetails from '../components/MatchDetails.vue'
+import TeamLogo from '../components/ui/TeamLogo.vue'
 import { odds, shortDate } from '../lib/format'
 import { ODDS_GROUPS, type Bet } from '../lib/types'
 
@@ -89,13 +90,6 @@ const showFilters = ref(false)
 const extraFilterCount = computed(() => activeFilterCount.value - (filters.search.trim() ? 1 : 0))
 
 const rows = computed(() => table.getRowModel().rows)
-
-const QUALITY_LABEL: Record<string, string> = {
-  actual: 'Actual',
-  snapshot: 'Snapshot',
-  estimated: 'Estimated',
-  none: 'None',
-}
 
 /** Estimated prices are flagged so a backtest ROI is never mistaken for real. */
 function qualityClass(quality: string): string {
@@ -213,8 +207,7 @@ const FIELD =
             <span class="text-[11.5px] text-muted">Price</span>
             <select v-model="filters.oddsQuality" :class="FIELD">
               <option :value="ALL">All</option>
-              <option value="actual">Actual</option>
-              <option value="snapshot">Snapshot</option>
+              <option value="observed">Observed</option>
               <option value="estimated">Estimated</option>
             </select>
           </label>
@@ -250,9 +243,11 @@ const FIELD =
               {{ shortDate(row.original.date) }} · {{ row.original.league }}
               <template v-if="row.original.oddsGroup"> · {{ row.original.oddsGroup }}</template>
             </p>
-            <p class="mt-0.5 text-[15px] leading-snug">
+            <p class="mt-1 flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[15px] leading-snug">
+              <TeamLogo :team="row.original.selectedTeam" :size="22" />
               <span class="font-semibold text-ink">{{ row.original.selectedTeam }}</span>
-              <span class="text-muted"> vs </span>
+              <span class="text-muted">vs</span>
+              <TeamLogo :team="row.original.opponent" :size="22" />
               <span class="text-ink-2">{{ row.original.opponent }}</span>
             </p>
 
@@ -350,14 +345,26 @@ const FIELD =
                 </td>
                 <td class="whitespace-nowrap px-3 py-2 text-ink-2">{{ row.original.league }}</td>
                 <td class="whitespace-nowrap px-3 py-2 font-medium text-ink">
-                  {{ row.original.selectedTeam }}
+                  <span class="inline-flex items-center gap-2">
+                    <TeamLogo :team="row.original.selectedTeam" />
+                    {{ row.original.selectedTeam }}
+                  </span>
                 </td>
-                <td class="whitespace-nowrap px-3 py-2 text-ink-2">{{ row.original.opponent }}</td>
+                <td class="whitespace-nowrap px-3 py-2 text-ink-2">
+                  <span class="inline-flex items-center gap-2">
+                    <TeamLogo :team="row.original.opponent" />
+                    {{ row.original.opponent }}
+                  </span>
+                </td>
                 <td class="tnum px-3 py-2 text-right">{{ odds(row.original.winnerOdds) }}</td>
                 <td class="tnum px-3 py-2 text-right">
                   {{ odds(row.original.effectiveOdds) }}
-                  <span class="ml-1 text-[10.5px]" :class="qualityClass(row.original.oddsQuality)">
-                    {{ QUALITY_LABEL[row.original.oddsQuality] }}
+                  <span
+                    v-if="row.original.oddsQuality === 'estimated'"
+                    class="ml-1 text-[10.5px]"
+                    :class="qualityClass(row.original.oddsQuality)"
+                  >
+                    Estimated
                   </span>
                 </td>
                 <td class="tnum px-3 py-2 text-ink-2">{{ row.original.score }}</td>

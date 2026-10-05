@@ -1,18 +1,16 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useDataset } from '../composables/useDataset'
-import { marketMoves, oddsQualityBreakdown } from '../lib/stats'
+import { oddsQualityBreakdown } from '../lib/stats'
 import SectionCard from '../components/ui/SectionCard.vue'
 import StatTile from '../components/ui/StatTile.vue'
 import RawCsvTable from '../components/RawCsvTable.vue'
-import { odds, shortDate, signedPercent } from '../lib/format'
 
 const { allBets, issues } = useDataset()
 
 const errors = computed(() => issues.value.filter((issue) => issue.severity === 'error'))
 const warnings = computed(() => issues.value.filter((issue) => issue.severity === 'warning'))
 const quality = computed(() => oddsQualityBreakdown(allBets.value))
-const moves = computed(() => marketMoves(allBets.value))
 
 </script>
 
@@ -20,7 +18,7 @@ const moves = computed(() => marketMoves(allBets.value))
   <div class="flex flex-col gap-4">
     <SectionCard
       title="mlbb_betting_dataset.csv"
-      note="The file exactly as written. Edit the CSV and save; this table updates with it."
+      note="Every value exactly as written in the CSV, newest weekend first. Edit the CSV and save; this table updates with it."
     >
       <RawCsvTable />
     </SectionCard>
@@ -100,61 +98,18 @@ const moves = computed(() => marketMoves(allBets.value))
 
     <SectionCard
       title="Price quality"
-      note="ROI uses actual before snapshot before estimated. Estimated prices are backtest reconstructions, not bets."
+      note="Estimated prices (written with ~ in the CSV) are backtest or approximate prices, not ones you could take."
     >
-      <div class="stat-grid" data-cols="4" data-flush>
-        <StatTile label="Actual" :value="String(quality.actual)" support="Price actually taken" />
-        <StatTile label="Snapshot" :value="String(quality.snapshot)" support="Planned price observed" />
+      <div class="stat-grid" data-cols="3" data-flush>
+        <StatTile label="Observed" :value="String(quality.observed)" support="Price seen on the bookmaker" />
         <StatTile
           label="Estimated"
           :value="String(quality.estimated)"
-          support="Interpolated for backtest"
+          support="Written as ~price"
           :tone="quality.estimated > 0 ? 'bad' : 'flat'"
         />
-        <StatTile label="No price" :value="String(quality.none)" support="Excluded from ROI" />
+        <StatTile label="No price yet" :value="String(quality.none)" support="Left out of ROI" />
       </div>
-    </SectionCard>
-
-    <SectionCard
-      v-if="moves.length > 0"
-      title="Market movement"
-      note="Rows where both a planning price and a taken price were recorded."
-    >
-      <div class="scroll-x">
-        <table class="w-full min-w-[620px] border-collapse text-[13px]">
-          <thead>
-            <tr class="border-b border-rule-strong text-left">
-              <th class="px-4 py-2 font-medium text-ink-2">Date</th>
-              <th class="px-3 py-2 font-medium text-ink-2">Bet</th>
-              <th class="px-3 py-2 text-right font-medium text-ink-2">Snapshot</th>
-              <th class="px-3 py-2 text-right font-medium text-ink-2">Taken</th>
-              <th class="px-3 py-2 text-right font-medium text-ink-2">Move</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr v-for="move in moves" :key="move.bet.id" class="border-b border-rule last:border-b-0">
-              <td class="tnum whitespace-nowrap px-4 py-2 text-ink-2">
-                {{ shortDate(move.bet.date) }}
-              </td>
-              <td class="px-3 py-2 text-ink">{{ move.bet.selection }}</td>
-              <td class="tnum px-3 py-2 text-right text-ink-2">{{ odds(move.snapshot) }}</td>
-              <td class="tnum px-3 py-2 text-right font-semibold text-ink">{{ odds(move.actual) }}</td>
-              <td
-                class="tnum px-3 py-2 text-right"
-                :class="move.drift < 0 ? 'text-critical' : 'text-good'"
-              >
-                {{ move.drift > 0 ? '+' : '' }}{{ move.drift.toFixed(2) }}
-                <span class="text-muted">({{ signedPercent(move.driftPct, 0) }})</span>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="border-t border-rule px-4 py-2.5 text-[12px] leading-relaxed text-muted">
-        A shortened price means the market moved against the bet between planning and placing.
-        ROI always uses the taken price, so the drift shown here is information about timing,
-        not a number that feeds any return on this dashboard.
-      </p>
     </SectionCard>
 
   </div>

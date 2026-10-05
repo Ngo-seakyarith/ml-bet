@@ -9,8 +9,9 @@ separate. It tracks hit rate, ROI, conditional sweep probability, odds groups, w
 performance, league performance, upset frequency, market movement and a running total.
 
 Every tracked pick counts, whether or not it was actually backed. The dashboard measures the
-method, not an account balance. It does distinguish actual, snapshot and estimated odds, so
-reconstructed backtest prices never get mistaken for prices anyone could have taken.
+method, not an account balance. It does tell observed prices apart from estimated ones
+(written with a `~`), so reconstructed backtest prices never get mistaken for prices anyone
+could have taken.
 
 Its purpose is not to record wins and losses, but to find out whether repeatable patterns
 exist — whether certain odds ranges, leagues, weeks or market conditions produce better Match
@@ -46,7 +47,8 @@ than counted at evens.
 | `winner_odds`, `winner_pick_result`                 | The Match Winner strategy, independent of which market was played     |
 | `score`                                             | Series score from the pick's side (`2-0`, `2-1`, `1-2`, `0-2`); blank if not played. Won/lost and sweep are worked out from it |
 | `strategy_market`                                   | `2-0` or `Over 2.5`; these are never pooled                           |
-| `strategy_odds_actual` / `_snapshot` / `_estimated` | Price priority, in that order                                         |
+| `opponent_odds`                                     | The other team's Match Winner price; lets the Underdogs page use real prices |
+| `strategy_odds`                                     | The 2-0 (or Over) price. Write `~2.40` for an estimated price         |
 | `strategy_result`                                   | `VOID/POSTPONED` drops the row from every rate and return             |
 
 ## How the numbers are defined
@@ -84,8 +86,8 @@ an account statement.
 Two things are still excluded:
 
 - **Postponed fixtures**, which never resolved, via `VOID/POSTPONED` in the result columns.
-- **Estimated prices**, behind a toggle. Any 2-0 price in `strategy_odds_estimated` — the
-  interpolated Sep 4-6 reconstruction and later approximate ("~") prices — can be switched off
+- **Estimated prices**, behind a toggle. Any `strategy_odds` written with a `~` — the
+  interpolated Sep 4-6 reconstruction and later approximate prices — can be switched off
   to see only prices that were actually observed.
 
 ## Stack

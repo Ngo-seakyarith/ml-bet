@@ -12,7 +12,7 @@ export interface MatchFilters {
   market: Market | All
   winnerResult: 'W' | 'L' | All
   strategyResult: 'W' | 'L' | All
-  oddsQuality: 'actual' | 'snapshot' | 'estimated' | All
+  oddsQuality: 'observed' | 'estimated' | All
   sweep: 'sweep' | 'decider' | All
   team: string
   search: string
