@@ -71,31 +71,19 @@ const rowSchema = z.object({
   total_maps_under_2_5_odds: price,
   selected_plus_1_5_odds: price,
   opponent_plus_1_5_odds: price,
-  market_odds_snapshot_date: text,
-  market_odds_source_url: text,
-  market_odds_note: text,
-  winner_pick_result: text,
   score: text,
-  strategy_market: text,
-  strategy_selection: text,
-  strategy_odds: price,
-  strategy_result: text,
-  odds_note: text,
+  bet: text,
   notes: text,
-  result_source_url: text,
 })
 
 type RawRow = z.infer<typeof rowSchema>
 
-function toOutcome(raw: string): Outcome {
-  const value = raw.toUpperCase()
-  if (value === 'W') return 'W'
-  if (value === 'L') return 'L'
-  return 'VOID'
-}
+const MARKETS: readonly Market[] = ['2-0', '2-1', '1-2', '0-2', 'Over 2.5', 'Under 2.5', '+1.5', 'Win']
 
-function toMarket(raw: string): Market {
-  return raw.trim() === 'Over 2.5' ? 'Over 2.5' : '2-0'
+/** The bet column's value as a Market, or null if blank or unrecognised. */
+function toMarket(raw: string): Market | null {
+  const value = raw.trim()
+  return (MARKETS as readonly string[]).includes(value) ? (value as Market) : null
 }
 
 /**
@@ -132,9 +120,32 @@ function normalize(row: RawRow, issues: RowIssue[]): Bet {
   const push = (field: string, message: string, severity: RowIssue['severity'] = 'error') =>
     issues.push({ recordId, field, message, severity })
 
-  const winnerResult = toOutcome(row.winner_pick_result)
-  const strategyResult = toOutcome(row.strategy_result)
-  const { odds: effectiveOdds, quality: oddsQuality } = row.strategy_odds
+  // The bet's price is the matching market column: no separate strategy price.
+  // A row with no bet is a fixture, not a bet, so it has no price.
+  const market = toMarket(row.bet)
+  if (row.bet !== '' && market === null) {
+    push('bet', `"${row.bet}" is not a bet type; use 2-0, 2-1, 1-2, 0-2, Over 2.5, Under 2.5, +1.5 or Win`)
+  }
+  const winPrice = row.selected_match_winner_odds
+  const PRICE_COLUMN: Record<Market, RawRow['correct_score_2_0_odds']> = {
+    '2-0': row.correct_score_2_0_odds,
+    '2-1': row.correct_score_2_1_odds,
+    '1-2': row.correct_score_1_2_odds,
+    '0-2': row.correct_score_0_2_odds,
+    'Over 2.5': row.total_maps_over_2_5_odds,
+    'Under 2.5': row.total_maps_under_2_5_odds,
+    '+1.5': row.selected_plus_1_5_odds,
+    Win: { odds: winPrice, quality: winPrice === null ? 'none' : 'observed' },
+  }
+  const { odds: effectiveOdds, quality: oddsQuality } =
+    market === null ? { odds: null, quality: 'none' as const } : PRICE_COLUMN[market]
+  // A bet needs its price. A missing +1.5 means the line was not offered (a
+  // heavy favourite gets none), so it is never estimated: it is an error.
+  if (market === '+1.5' && effectiveOdds === null) {
+    push('bet', 'a +1.5 bet but selected_plus_1_5_odds is blank; that line is not offered for this team')
+  } else if (market !== null && effectiveOdds === null) {
+    push('bet', `a ${market} bet but its price column is blank`, 'warning')
+  }
 
   const oddsGroup = toOddsGroup(row.selected_match_winner_odds)
 
@@ -163,13 +174,27 @@ function normalize(row: RawRow, issues: RowIssue[]): Bet {
   // Our 2-0 bet wins only when OUR team sweeps, not when either side does.
   const selectedTeamSwept = maps === null ? null : maps.selected === 2 && maps.opponent === 0
 
-  if (selectedTeamWon !== null && winnerResult !== 'VOID' && selectedTeamWon !== (winnerResult === 'W')) {
-    push(
-      'winner_pick_result',
-      `says ${row.winner_pick_result} but the score ${row.score} means the pick ${selectedTeamWon ? 'won' : 'lost'}`,
-      'warning',
-    )
+  // Both results come from the score. No score (not played, or postponed)
+  // means unresolved, which keeps the row out of every rate and return.
+  const winnerResult: Outcome = selectedTeamWon === null ? 'VOID' : selectedTeamWon ? 'W' : 'L'
+  // How each bet type is settled from the score.
+  const settle = (m: Market, s: { selected: number; opponent: number }): boolean => {
+    switch (m) {
+      case 'Over 2.5':
+        return s.selected + s.opponent === 3
+      case 'Under 2.5':
+        return s.selected + s.opponent === 2
+      case '+1.5':
+        // Wins unless the selected team is swept 0-2.
+        return s.selected >= 1
+      case 'Win':
+        return s.selected > s.opponent
+      default:
+        return `${s.selected}-${s.opponent}` === m
+    }
   }
+  const strategyWon = maps === null || market === null ? null : settle(market, maps)
+  const strategyResult: Outcome = strategyWon === null ? 'VOID' : strategyWon ? 'W' : 'L'
 
   const winnerProfit = unitProfit(winnerResult, row.selected_match_winner_odds)
   const strategyProfit = unitProfit(strategyResult, effectiveOdds)
@@ -197,9 +222,6 @@ function normalize(row: RawRow, issues: RowIssue[]): Bet {
       selectedPlus15: row.selected_plus_1_5_odds,
       opponentPlus15: row.opponent_plus_1_5_odds,
     },
-    marketOddsSnapshotDate: row.market_odds_snapshot_date,
-    marketOddsSourceUrl: row.market_odds_source_url,
-    marketOddsNote: row.market_odds_note,
     oddsGroup,
     winnerResult,
     winnerProfit,
@@ -211,8 +233,16 @@ function normalize(row: RawRow, issues: RowIssue[]): Bet {
     matchWasSweep,
     selectedTeamSwept,
 
-    market: toMarket(row.strategy_market),
-    selection: row.strategy_selection,
+    market,
+    // Display label, e.g. "DEWA United 2-1", "Over 2.5", "RRQ Hoshi to win".
+    selection:
+      market === null
+        ? ''
+        : market === 'Over 2.5' || market === 'Under 2.5'
+          ? market
+          : market === 'Win'
+            ? `${row.selected_team} to win`
+            : `${row.selected_team} ${market}`,
     effectiveOdds,
     oddsQuality,
     strategyResult,
@@ -221,10 +251,7 @@ function normalize(row: RawRow, issues: RowIssue[]): Bet {
     isFavourite,
     isUpset: isFavourite === null || winnerResult === 'VOID' ? null : isFavourite && winnerResult === 'L',
 
-    oddsNote: row.odds_note,
     notes: row.notes,
-    sourceUrl: row.result_source_url,
-
   }
 }
 

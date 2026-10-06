@@ -59,10 +59,10 @@ const quality = computed(() => oddsQualityBreakdown(allBets.value))
           left out of ROI rather than counted at evens.
         </p>
         <p class="max-w-[72ch] text-muted">
-          Correct-score prices follow selected_team/opponent order. Market columns contain
-          the available odds snapshot; strategy_odds keeps the price of the tracked pick.
+          Correct-score prices follow selected_team/opponent order. Your bet's price is read from
+          the matching market column (2-0 or Over 2.5), so put the price you actually got there.
           +1.5 is recorded for each team separately, and a blank means the line was not listed.
-          The snapshot date and bookmaker link are stored beside the market prices.
+          Use the single notes column only for things the other columns cannot show.
         </p>
       </div>
     </SectionCard>

@@ -184,7 +184,13 @@ const FIELD =
             <select v-model="filters.market" :class="FIELD">
               <option :value="ALL">All</option>
               <option value="2-0">2-0</option>
+              <option value="2-1">2-1</option>
+              <option value="1-2">1-2</option>
+              <option value="0-2">0-2</option>
               <option value="Over 2.5">Over 2.5</option>
+              <option value="Under 2.5">Under 2.5</option>
+              <option value="+1.5">+1.5</option>
+              <option value="Win">Win</option>
             </select>
           </label>
           <label class="flex flex-col gap-1">

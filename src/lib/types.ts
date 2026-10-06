@@ -9,7 +9,12 @@
 
 export type Outcome = 'W' | 'L' | 'VOID'
 
-export type Market = '2-0' | 'Over 2.5'
+/**
+ * A bet on the selected team's match: a correct score (from the selected
+ * team's side), total maps, the selected team +1.5 maps, or the selected team
+ * to win the series.
+ */
+export type Market = '2-0' | '2-1' | '1-2' | '0-2' | 'Over 2.5' | 'Under 2.5' | '+1.5' | 'Win'
 
 /**
  * Whether the strategy price was a real price seen on the bookmaker, or an
@@ -22,7 +27,15 @@ export interface MarketPrice {
   quality: OddsQuality
 }
 
-/** Score prices always follow selectedTeam/opponent order, regardless of site order. */
+/**
+ * Score prices always follow selectedTeam/opponent order, regardless of site order.
+ *
+ * A blank price means the bookmaker did not offer that bet; it must never be
+ * estimated. In particular a heavy favourite has no "+1.5 maps" line (only the
+ * underdog's +1.5 is offered), so selectedPlus15/opponentPlus15 is often
+ * missing for one side. Any analysis of these markets should count only the
+ * matches where the price exists, and leave the rest out.
+ */
 export interface MarketOdds {
   correctScore20: MarketPrice
   correctScore21: MarketPrice
@@ -73,9 +86,6 @@ export interface Bet {
   opponentOdds: number | null
   /** Available market prices, separate from the price of the tracked strategy. */
   marketOdds: MarketOdds
-  marketOddsSnapshotDate: string
-  marketOddsSourceUrl: string
-  marketOddsNote: string
   /** Derived from winnerOdds; the CSV does not carry a group column. */
   oddsGroup: OddsGroupId | null
   winnerResult: Outcome
@@ -92,9 +102,15 @@ export interface Bet {
   selectedTeamSwept: boolean | null
 
   // --- Strategy side -----------------------------------------------------
-  market: Market
+  /** The bet type, or null for a fixture with no bet. */
+  market: Market | null
   selection: string
-  /** The strategy price from the CSV's single `strategy_odds` column. */
+  /**
+   * The bet's price, read from the matching market column (2-0 →
+   * correct_score_2_0_odds, +1.5 → selected_plus_1_5_odds, Win →
+   * selected_match_winner_odds). Null when the row has no bet (blank `bet`
+   * column).
+   */
   effectiveOdds: number | null
   oddsQuality: OddsQuality
   strategyResult: Outcome
@@ -107,9 +123,7 @@ export interface Bet {
   isUpset: boolean | null
 
   // --- Provenance --------------------------------------------------------
-  oddsNote: string
   notes: string
-  sourceUrl: string
 }
 
 /** A row the parser could not turn into a usable Bet. */
