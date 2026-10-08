@@ -38,9 +38,9 @@ const rows = computed<GroupBar[]>(() =>
       }
       return {
         group: segment.key,
-        value: segment.strategy20.roi ?? 0,
-        n: segment.strategy20.n,
-        detail: `${segment.strategy20.wins}-${segment.strategy20.losses} from ${segment.strategy20.n} bets`,
+        value: segment.strategy.roi ?? 0,
+        n: segment.strategy.n,
+        detail: `${segment.strategy.wins}-${segment.strategy.losses} from ${segment.strategy.n} bets`,
       }
     })
     .filter((row) => row.n > 0),

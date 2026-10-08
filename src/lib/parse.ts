@@ -109,6 +109,33 @@ function parseScore(raw: string): { selected: number; opponent: number } | null 
   return { selected: Number(match[1]), opponent: Number(match[2]) }
 }
 
+/**
+ * Settles one bet type from the score, read from the backed team's side
+ * (`team` maps first). Total-maps bets ignore which side is first.
+ */
+export function settle(market: Market, s: { team: number; other: number }): boolean {
+  switch (market) {
+    case 'Over 2.5':
+      return s.team + s.other === 3
+    case 'Under 2.5':
+      return s.team + s.other === 2
+    case '+1.5':
+      // Wins unless the team is swept 0-2.
+      return s.team >= 1
+    case 'Win':
+      return s.team > s.other
+    default:
+      return `${s.team}-${s.other}` === market
+  }
+}
+
+/** Display label, e.g. "DEWA United 2-1", "Over 2.5", "RRQ Hoshi to win". */
+export function selectionLabel(market: Market, team: string): string {
+  if (market === 'Over 2.5' || market === 'Under 2.5') return market
+  if (market === 'Win') return `${team} to win`
+  return `${team} ${market}`
+}
+
 /** Flat-stake profit on one unit. A void bet returns the stake, not a result. */
 function unitProfit(result: Outcome, odds: number | null): number | null {
   if (result === 'VOID' || odds === null) return null
@@ -177,23 +204,8 @@ function normalize(row: RawRow, issues: RowIssue[]): Bet {
   // Both results come from the score. No score (not played, or postponed)
   // means unresolved, which keeps the row out of every rate and return.
   const winnerResult: Outcome = selectedTeamWon === null ? 'VOID' : selectedTeamWon ? 'W' : 'L'
-  // How each bet type is settled from the score.
-  const settle = (m: Market, s: { selected: number; opponent: number }): boolean => {
-    switch (m) {
-      case 'Over 2.5':
-        return s.selected + s.opponent === 3
-      case 'Under 2.5':
-        return s.selected + s.opponent === 2
-      case '+1.5':
-        // Wins unless the selected team is swept 0-2.
-        return s.selected >= 1
-      case 'Win':
-        return s.selected > s.opponent
-      default:
-        return `${s.selected}-${s.opponent}` === m
-    }
-  }
-  const strategyWon = maps === null || market === null ? null : settle(market, maps)
+  const strategyWon =
+    maps === null || market === null ? null : settle(market, { team: maps.selected, other: maps.opponent })
   const strategyResult: Outcome = strategyWon === null ? 'VOID' : strategyWon ? 'W' : 'L'
 
   const winnerProfit = unitProfit(winnerResult, row.selected_match_winner_odds)
@@ -234,15 +246,7 @@ function normalize(row: RawRow, issues: RowIssue[]): Bet {
     selectedTeamSwept,
 
     market,
-    // Display label, e.g. "DEWA United 2-1", "Over 2.5", "RRQ Hoshi to win".
-    selection:
-      market === null
-        ? ''
-        : market === 'Over 2.5' || market === 'Under 2.5'
-          ? market
-          : market === 'Win'
-            ? `${row.selected_team} to win`
-            : `${row.selected_team} ${market}`,
+    selection: market === null ? '' : selectionLabel(market, row.selected_team),
     effectiveOdds,
     oddsQuality,
     strategyResult,

@@ -10,10 +10,10 @@ export type SegmentColumn =
   | 'winnerHit'
   | 'winnerRoi'
   | 'sweepRate'
-  | 's20Record'
-  | 's20Hit'
-  | 's20Roi'
-  | 's20Profit'
+  | 'strategyRecord'
+  | 'strategyHit'
+  | 'strategyRoi'
+  | 'strategyProfit'
   | 'conditional'
   | 'conditionalBar'
   | 'upset'
@@ -28,15 +28,15 @@ const props = defineProps<{
 }>()
 
 const HEADINGS: Record<SegmentColumn, string> = {
-  n: 'Picks',
+  n: 'Matches',
   winnerRecord: 'Winner W-L',
   winnerHit: 'Winner accuracy',
   winnerRoi: 'Winner ROI',
   sweepRate: 'Sweep rate',
-  s20Record: '2-0 W-L',
-  s20Hit: '2-0 hit',
-  s20Roi: '2-0 ROI',
-  s20Profit: '2-0 units',
+  strategyRecord: 'Strategy W-L',
+  strategyHit: 'Strategy hit',
+  strategyRoi: 'Strategy ROI',
+  strategyProfit: 'Strategy units',
   conditional: '2-0 given winner',
   conditionalBar: '95% interval',
   upset: 'Favourite upsets',
@@ -47,9 +47,9 @@ const NUMERIC: ReadonlySet<SegmentColumn> = new Set<SegmentColumn>([
   'winnerHit',
   'winnerRoi',
   'sweepRate',
-  's20Hit',
-  's20Roi',
-  's20Profit',
+  'strategyHit',
+  'strategyRoi',
+  'strategyProfit',
   'conditional',
   'upset',
 ])
@@ -128,30 +128,30 @@ defineExpose({ columns: props.columns })
               {{ percent(segment.sweepRate) }}
             </template>
 
-            <template v-else-if="column === 's20Record'">
-              {{ record(segment.strategy20.wins, segment.strategy20.losses) }}
+            <template v-else-if="column === 'strategyRecord'">
+              {{ record(segment.strategy.wins, segment.strategy.losses) }}
             </template>
 
-            <template v-else-if="column === 's20Hit'">
+            <template v-else-if="column === 'strategyHit'">
               <span class="inline-flex items-center justify-end gap-1.5">
-                {{ percent(segment.strategy20.hitRate) }}
+                {{ percent(segment.strategy.hitRate) }}
                 <ConfidenceMark
-                  v-if="segment.strategy20.n > 0"
-                  :confidence="segment.strategy20.confidence"
-                  :n="segment.strategy20.n"
+                  v-if="segment.strategy.n > 0"
+                  :confidence="segment.strategy.confidence"
+                  :n="segment.strategy.n"
                 />
               </span>
             </template>
 
-            <template v-else-if="column === 's20Roi'">
-              <span :class="roiTone(segment.strategy20.roi)">
-                {{ signedPercent(segment.strategy20.roi) }}
+            <template v-else-if="column === 'strategyRoi'">
+              <span :class="roiTone(segment.strategy.roi)">
+                {{ signedPercent(segment.strategy.roi) }}
               </span>
             </template>
 
-            <template v-else-if="column === 's20Profit'">
-              <span :class="roiTone(segment.strategy20.profit)">
-                {{ segment.strategy20.n === 0 ? EMPTY : units(segment.strategy20.profit) }}
+            <template v-else-if="column === 'strategyProfit'">
+              <span :class="roiTone(segment.strategy.profit)">
+                {{ segment.strategy.n === 0 ? EMPTY : units(segment.strategy.profit) }}
               </span>
             </template>
 

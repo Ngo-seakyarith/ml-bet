@@ -4,12 +4,13 @@ import { useDataset } from '../composables/useDataset'
 import { segmentsByLeague, teamPoints } from '../lib/stats'
 import SectionCard from '../components/ui/SectionCard.vue'
 import SegmentTable from '../components/SegmentTable.vue'
+import StrategyPicker from '../components/StrategyPicker.vue'
 import TeamScatter from '../components/charts/TeamScatter.vue'
 import { percent } from '../lib/format'
 
-const { scoped } = useDataset()
-const leagues = computed(() => segmentsByLeague(scoped.value))
-const points = computed(() => teamPoints(scoped.value))
+const { scoped, measure, includeEstimatedPrices } = useDataset()
+const leagues = computed(() => segmentsByLeague(scoped.value, measure.value))
+const points = computed(() => teamPoints(scoped.value, 1, includeEstimatedPrices.value))
 
 /** Leagues with enough matches to be worth comparing at all. */
 const comparable = computed(() =>
@@ -27,6 +28,8 @@ const sweepSpread = computed(() => {
 
 <template>
   <div class="flex flex-col gap-4">
+    <StrategyPicker />
+
     <SectionCard
       title="Leagues"
       note="Sweep rate is how often a match ended 2-0 either way; the conditional column is how often our pick swept."
@@ -36,13 +39,13 @@ const sweepSpread = computed(() => {
         :segments="leagues"
         :columns="[
           'n',
+          'strategyRecord',
+          'strategyRoi',
+          'strategyProfit',
           'winnerHit',
           'sweepRate',
           'conditional',
           'conditionalBar',
-          's20Hit',
-          's20Roi',
-          's20Profit',
         ]"
         empty-message="No leagues in this selection."
       />

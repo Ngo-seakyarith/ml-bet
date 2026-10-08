@@ -4,6 +4,7 @@ import {
   type Market,
   type OddsGroupId,
 } from './types'
+import type { StrategyBet, StrategyStats } from './strategies'
 
 /* -------------------------------------------------------------------------
  * Core measures
@@ -70,7 +71,7 @@ export function confidenceFor(n: number): Confidence {
 }
 
 /** Builds a Performance from already-resolved (win/loss, price) pairs. */
-function performanceFrom(entries: readonly { won: boolean; profit: number }[]): Performance {
+export function performanceFrom(entries: readonly { won: boolean; profit: number }[]): Performance {
   if (entries.length === 0) return EMPTY_PERFORMANCE
   let wins = 0
   let profit = 0
@@ -105,11 +106,18 @@ export function winnerPerformance(bets: readonly Bet[]): Performance {
  * Performance of one strategy market. Over 2.5 and 2-0 are never pooled —
  * they are different bets with different distributions.
  */
-export function marketPerformance(bets: readonly Bet[], market: Market): Performance {
+export function marketPerformance(
+  bets: readonly Bet[],
+  market: Market,
+  includeEstimated = true,
+): Performance {
   const entries = bets
     .filter(
       (bet) =>
-        bet.market === market && bet.strategyResult !== 'VOID' && bet.strategyProfit !== null,
+        bet.market === market &&
+        bet.strategyResult !== 'VOID' &&
+        bet.strategyProfit !== null &&
+        (includeEstimated || bet.oddsQuality !== 'estimated'),
     )
     .map((bet) => ({ won: bet.strategyResult === 'W', profit: bet.strategyProfit as number }))
   return performanceFrom(entries)
@@ -178,17 +186,14 @@ export function sweepRate(bets: readonly Bet[]): number | null {
  * ---------------------------------------------------------------------- */
 
 /**
- * Every tracked pick counts. Rows that never resolved (postponed fixtures) are
- * dropped, and the reconstructed weekend whose 2-0 prices are interpolated
- * rather than observed can be excluded so estimated prices are not mistaken
- * for prices anyone could actually have taken.
+ * Every tracked pick counts. Rows that never resolved (unplayed or postponed)
+ * are dropped. Estimated prices are not dropped here: a match row stays, and
+ * each return leaves out only the bets whose own price is estimated, so
+ * switching estimates off never removes a match from a what-if that has a
+ * real price for it.
  */
-export function selectBets(bets: readonly Bet[], includeEstimatedPrices: boolean): Bet[] {
-  return bets.filter(
-    (bet) =>
-      bet.winnerResult !== 'VOID' &&
-      (includeEstimatedPrices || bet.oddsQuality !== 'estimated'),
-  )
+export function selectBets(bets: readonly Bet[]): Bet[] {
+  return bets.filter((bet) => bet.winnerResult !== 'VOID')
 }
 
 /* -------------------------------------------------------------------------
@@ -200,19 +205,23 @@ export interface Segment {
   label: string
   bets: Bet[]
   winner: Performance
-  strategy20: Performance
+  /** The selected strategy on this segment's matches. */
+  strategy: StrategyStats
   conditional: ConditionalSweep
   upsets: UpsetStats
   sweepRate: number | null
 }
 
-function buildSegment(key: string, label: string, bets: Bet[]): Segment {
+/** Measures the selected strategy on a set of match rows. */
+export type StrategyMeasure = (bets: readonly Bet[]) => StrategyStats
+
+function buildSegment(key: string, label: string, bets: Bet[], measure: StrategyMeasure): Segment {
   return {
     key,
     label,
     bets,
     winner: winnerPerformance(bets),
-    strategy20: marketPerformance(bets, '2-0'),
+    strategy: measure(bets),
     conditional: conditionalSweep(bets),
     upsets: upsetStats(bets),
     sweepRate: sweepRate(bets),
@@ -232,24 +241,24 @@ function groupBy(bets: readonly Bet[], key: (bet: Bet) => string | null): Map<st
 }
 
 /** G1–G5, always all five in order so gaps stay visible. */
-export function segmentsByOddsGroup(bets: readonly Bet[]): Segment[] {
+export function segmentsByOddsGroup(bets: readonly Bet[], measure: StrategyMeasure): Segment[] {
   const groups = groupBy(bets, (bet) => bet.oddsGroup)
   return ODDS_GROUPS.map((group) =>
-    buildSegment(group.id, group.label, groups.get(group.id) ?? []),
+    buildSegment(group.id, group.label, groups.get(group.id) ?? [], measure),
   )
 }
 
-export function segmentsByLeague(bets: readonly Bet[]): Segment[] {
+export function segmentsByLeague(bets: readonly Bet[], measure: StrategyMeasure): Segment[] {
   return [...groupBy(bets, (bet) => bet.league)]
-    .map(([league, rows]) => buildSegment(league, league, rows))
+    .map(([league, rows]) => buildSegment(league, league, rows, measure))
     .sort((a, b) => b.bets.length - a.bets.length)
 }
 
 /** Chronological, using the earliest date seen in each weekend bucket. */
-export function segmentsByWeek(bets: readonly Bet[]): Segment[] {
+export function segmentsByWeek(bets: readonly Bet[], measure: StrategyMeasure): Segment[] {
   const groups = groupBy(bets, (bet) => bet.week)
   return [...groups]
-    .map(([week, rows]) => buildSegment(week, week, rows))
+    .map(([week, rows]) => buildSegment(week, week, rows, measure))
     .sort((a, b) => {
       const aDate = a.bets.reduce((min, bet) => (bet.date < min ? bet.date : min), '9999')
       const bDate = b.bets.reduce((min, bet) => (bet.date < min ? bet.date : min), '9999')
@@ -257,9 +266,9 @@ export function segmentsByWeek(bets: readonly Bet[]): Segment[] {
     })
 }
 
-export function segmentsByTeam(bets: readonly Bet[]): Segment[] {
+export function segmentsByTeam(bets: readonly Bet[], measure: StrategyMeasure): Segment[] {
   return [...groupBy(bets, (bet) => bet.selectedTeam)]
-    .map(([team, rows]) => buildSegment(team, team, rows))
+    .map(([team, rows]) => buildSegment(team, team, rows, measure))
     .sort((a, b) => b.bets.length - a.bets.length)
 }
 
@@ -270,29 +279,25 @@ export function segmentsByTeam(bets: readonly Bet[]): Segment[] {
 export interface BankrollPoint {
   index: number
   bet: Bet
+  item: StrategyBet
   profit: number
   cumulative: number
   bankroll: number
 }
 
 /**
- * Flat one-unit staking over settled bets in date order. Voids are skipped
- * rather than counted as a push, because none of them settled.
+ * Flat one-unit staking over a strategy's settled bets, in date order.
+ * Unplayed matches never reach here: a strategy only places settled bets.
  */
-export function bankrollSeries(bets: readonly Bet[], startingBankroll = 0): BankrollPoint[] {
-  const settled = bets
-    .filter((bet) => bet.strategyResult !== 'VOID' && bet.strategyProfit !== null)
-    .slice()
-    .sort((a, b) => (a.date === b.date ? a.id - b.id : a.date.localeCompare(b.date)))
-
+export function bankrollSeries(items: readonly StrategyBet[], startingBankroll = 0): BankrollPoint[] {
   let cumulative = 0
-  return settled.map((bet, index) => {
-    const profit = bet.strategyProfit as number
-    cumulative += profit
+  return items.map((item, index) => {
+    cumulative += item.profit
     return {
       index: index + 1,
-      bet,
-      profit,
+      bet: item.bet,
+      item,
+      profit: item.profit,
       cumulative,
       bankroll: startingBankroll + cumulative,
     }
@@ -533,7 +538,7 @@ export interface TeamPoint {
   bets: Bet[]
 }
 
-export function teamPoints(bets: readonly Bet[], minimumPicks = 1): TeamPoint[] {
+export function teamPoints(bets: readonly Bet[], minimumPicks = 1, includeEstimated = true): TeamPoint[] {
   const groups = groupBy(bets, (bet) => bet.selectedTeam)
   const points: TeamPoint[] = []
 
@@ -543,7 +548,7 @@ export function teamPoints(bets: readonly Bet[], minimumPicks = 1): TeamPoint[] 
 
     const conditional = conditionalSweep(rows)
     const winner = winnerPerformance(rows)
-    const strategy = marketPerformance(rows, '2-0')
+    const strategy = marketPerformance(rows, '2-0', includeEstimated)
     const averageWinnerOdds =
       priced.reduce((sum, bet) => sum + (bet.winnerOdds as number), 0) / priced.length
 
@@ -577,19 +582,17 @@ export interface Summary {
   leagues: number
   winner: Performance
   strategy20: Performance
-  over25: Performance
   conditional: ConditionalSweep
   upsets: UpsetStats
 }
 
-export function summarize(bets: readonly Bet[]): Summary {
+export function summarize(bets: readonly Bet[], includeEstimated = true): Summary {
   return {
     totalMatches: bets.length,
     weeks: new Set(bets.map((bet) => bet.week)).size,
     leagues: new Set(bets.map((bet) => bet.league)).size,
     winner: winnerPerformance(bets),
-    strategy20: marketPerformance(bets, '2-0'),
-    over25: marketPerformance(bets, 'Over 2.5'),
+    strategy20: marketPerformance(bets, '2-0', includeEstimated),
     conditional: conditionalSweep(bets),
     upsets: upsetStats(bets),
   }

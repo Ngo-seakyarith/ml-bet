@@ -4,30 +4,33 @@ import { useDataset } from '../composables/useDataset'
 import { segmentsByOddsGroup } from '../lib/stats'
 import SectionCard from '../components/ui/SectionCard.vue'
 import SegmentTable from '../components/SegmentTable.vue'
+import StrategyPicker from '../components/StrategyPicker.vue'
 import OddsGroupChart from '../components/charts/OddsGroupChart.vue'
 import { ODDS_GROUPS } from '../lib/types'
-import { percent, signedPercent } from '../lib/format'
+import { signedPercent } from '../lib/format'
 
-const { scoped } = useDataset()
-const groups = computed(() => segmentsByOddsGroup(scoped.value))
+const { scoped, measure, strategy } = useDataset()
+const groups = computed(() => segmentsByOddsGroup(scoped.value, measure.value))
 
 /** Groups whose numbers are too thin to act on, named explicitly. */
 const thin = computed(() =>
   groups.value.filter(
-    (group) => group.strategy20.n > 0 && group.strategy20.confidence === 'low',
+    (group) => group.strategy.n > 0 && group.strategy.confidence === 'low',
   ),
 )
 
 const best = computed(() => {
   const ranked = groups.value
-    .filter((group) => group.strategy20.n >= 10 && group.strategy20.roi !== null)
-    .sort((a, b) => (b.strategy20.roi ?? 0) - (a.strategy20.roi ?? 0))
+    .filter((group) => group.strategy.n >= 10 && group.strategy.roi !== null)
+    .sort((a, b) => (b.strategy.roi ?? 0) - (a.strategy.roi ?? 0))
   return ranked[0] ?? null
 })
 </script>
 
 <template>
   <div class="flex flex-col gap-4">
+    <StrategyPicker />
+
     <SectionCard
       title="Odds groups"
       note="Groups are worked out from each pick's Match Winner price."
@@ -54,11 +57,11 @@ const best = computed(() => {
         :columns="[
           'n',
           'winnerRecord',
-          's20Record',
+          'strategyRecord',
           'winnerRoi',
-          's20Roi',
-          's20Profit',
-          's20Hit',
+          'strategyRoi',
+          'strategyProfit',
+          'strategyHit',
           'conditional',
           'conditionalBar',
         ]"
@@ -73,7 +76,7 @@ const best = computed(() => {
         <OddsGroupChart :segments="groups" measure="conditional" />
       </SectionCard>
 
-      <SectionCard title="2-0 return by group" note="Flat stakes, break-even at the zero line.">
+      <SectionCard :title="`${strategy.label}: return by group`" note="Flat stakes, break-even at the zero line.">
         <OddsGroupChart :segments="groups" measure="roi" />
       </SectionCard>
     </div>
@@ -83,14 +86,13 @@ const best = computed(() => {
         <p v-if="best" class="max-w-[72ch]">
           On the current selection the strongest group with a usable sample is
           <span class="font-semibold text-ink">{{ best.label }}</span> at
-          <span class="tnum font-semibold" :class="(best.strategy20.roi ?? 0) > 0 ? 'text-good' : 'text-critical'">
-            {{ signedPercent(best.strategy20.roi) }}
+          <span class="tnum font-semibold" :class="(best.strategy.roi ?? 0) > 0 ? 'text-good' : 'text-critical'">
+            {{ signedPercent(best.strategy.roi) }}
           </span>
-          across {{ best.strategy20.n }} settled 2-0 bets, sweeping
-          {{ percent(best.conditional.rate) }} of the time when the winner pick was right.
+          across {{ best.strategy.n }} settled {{ strategy.label }} bets.
         </p>
         <p v-else class="max-w-[72ch]">
-          No group yet has ten or more settled 2-0 bets, so none of these returns should be
+          No group yet has ten or more settled {{ strategy.label }} bets, so none of these returns should be
           treated as a finding.
         </p>
 

@@ -4,10 +4,11 @@ import { useDataset } from '../composables/useDataset'
 import { segmentsByWeek } from '../lib/stats'
 import SectionCard from '../components/ui/SectionCard.vue'
 import SegmentTable from '../components/SegmentTable.vue'
+import StrategyPicker from '../components/StrategyPicker.vue'
 import { percent } from '../lib/format'
 
-const { scoped } = useDataset()
-const weeks = computed(() => segmentsByWeek(scoped.value))
+const { scoped, measure } = useDataset()
+const weeks = computed(() => segmentsByWeek(scoped.value, measure.value))
 
 /** The spread in favourite-upset rate is what makes a good week look like skill. */
 const upsetSpread = computed(() => {
@@ -22,6 +23,8 @@ const upsetSpread = computed(() => {
 
 <template>
   <div class="flex flex-col gap-4">
+    <StrategyPicker />
+
     <SectionCard
       title="Week by week"
       note="Each weekend on its own. The global week filter above narrows every other page; this one always shows them side by side."
@@ -31,13 +34,13 @@ const upsetSpread = computed(() => {
         :segments="weeks"
         :columns="[
           'n',
+          'strategyRecord',
+          'strategyRoi',
+          'strategyProfit',
           'winnerHit',
-          's20Hit',
-          'conditional',
-          'conditionalBar',
-          'upset',
           'winnerRoi',
-          's20Roi',
+          'conditional',
+          'upset',
         ]"
         empty-message="No weeks in this selection."
       />

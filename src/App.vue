@@ -7,9 +7,12 @@ import { shortWeek } from './lib/format'
 
 const { includeEstimatedPrices, week, weeks, scoped, allBets } = useDataset()
 
-/** Rows whose 2-0 price was interpolated rather than observed. */
+/** Rows with at least one predicted (~) price in any market column. */
 const estimatedCount = computed(
-  () => allBets.value.filter((bet) => bet.oddsQuality === 'estimated').length,
+  () =>
+    allBets.value.filter((bet) =>
+      Object.values(bet.marketOdds).some((price) => price.quality === 'estimated'),
+    ).length,
 )
 
 /**
@@ -126,10 +129,10 @@ watch(
           <label
             v-if="estimatedCount > 0"
             class="flex min-h-10 items-center gap-2 text-[13px] text-ink-2 lg:min-h-0 lg:text-[12.5px]"
-            :title="`${estimatedCount} rows have approximate 2-0 odds`"
+            :title="`${estimatedCount} rows have at least one predicted (~) price`"
           >
             <input v-model="includeEstimatedPrices" type="checkbox" class="h-4 w-4 accent-accent" />
-            Estimated prices
+            Predicted prices (~)
             <span class="hidden text-muted sm:inline">({{ estimatedCount }} rows)</span>
           </label>
 

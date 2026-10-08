@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useDataset } from '../composables/useDataset'
+import { RouterLink } from 'vue-router'
 import { segmentsByOddsGroup, summarize, teamPoints } from '../lib/stats'
+import { applyStrategy, strategyStats } from '../lib/strategies'
 import SectionCard from '../components/ui/SectionCard.vue'
 import StatTile from '../components/ui/StatTile.vue'
 import ConfidenceMark from '../components/ui/ConfidenceMark.vue'
@@ -12,30 +14,31 @@ import TeamScatter from '../components/charts/TeamScatter.vue'
 import { EMPTY, percent, record, signedPercent, units } from '../lib/format'
 import { toneFor } from '../lib/format'
 
-const { scoped } = useDataset()
+const { scoped, strategies, strategyContext, strategyId, includeEstimatedPrices } = useDataset()
 
-const summary = computed(() => summarize(scoped.value))
-const groups = computed(() => segmentsByOddsGroup(scoped.value))
-const points = computed(() => teamPoints(scoped.value))
+const summary = computed(() => summarize(scoped.value, includeEstimatedPrices.value))
+/** The odds-group table on this page always shows your 2-0 bets, the headline strategy. */
+const groups = computed(() =>
+  segmentsByOddsGroup(scoped.value, (rows) =>
+    strategyStats(applyStrategy(rows, 'mine:2-0', strategyContext.value)),
+  ),
+)
+const points = computed(() => teamPoints(scoped.value, 1, includeEstimatedPrices.value))
 
-/** The three strategies stay on separate rows — pooling them would be a lie. */
-const strategies = computed(() => [
-  {
-    name: 'Match Winner',
-    performance: summary.value.winner,
-    note: 'Every tracked match, regardless of which market was played.',
-  },
-  {
-    name: 'Correct Score 2-0',
-    performance: summary.value.strategy20,
-    note: 'Selected team to sweep. The strategy under test.',
-  },
-  {
-    name: 'Over 2.5 maps',
-    performance: summary.value.over25,
-    note: 'Tracked separately — a different bet with a different distribution.',
-  },
-])
+/**
+ * One row per bet type you have actually placed, plus your pick to win on
+ * every match. Each type stays on its own row; a new type gets one by itself.
+ */
+const myRows = computed(() =>
+  strategies.value
+    .filter((s) => s.id === 'pick:Win' || (s.group === 'Your bets' && s.id !== 'mine'))
+    .map((s) => ({
+      id: s.id,
+      name: s.label,
+      note: s.describe,
+      performance: strategyStats(applyStrategy(scoped.value, s.id, strategyContext.value)),
+    })),
+)
 </script>
 
 <template>
@@ -133,9 +136,14 @@ const strategies = computed(() => [
     </section>
 
     <SectionCard
-      title="Strategy comparison"
-      note="Over 2.5 is never pooled with 2-0. Flat one-unit stakes throughout."
+      title="Your bets by type"
+      note="Bet types are never pooled. Flat one-unit stakes throughout."
     >
+      <template #actions>
+        <RouterLink :to="{ name: 'strategies' }" class="text-[12.5px] font-medium text-accent hover:underline">
+          Test other strategies
+        </RouterLink>
+      </template>
       <div class="scroll-x">
         <table class="w-full min-w-[620px] border-collapse text-[13px]">
           <thead>
@@ -150,9 +158,10 @@ const strategies = computed(() => [
           </thead>
           <tbody>
             <tr
-              v-for="strategy in strategies"
-              :key="strategy.name"
-              class="border-b border-rule last:border-b-0"
+              v-for="strategy in myRows"
+              :key="strategy.id"
+              class="cursor-pointer border-b border-rule last:border-b-0 hover:bg-sunken/50"
+              @click="strategyId = strategy.id; $router.push({ name: 'strategies' })"
               :class="strategy.performance.n === 0 ? 'opacity-45' : ''"
             >
               <th scope="row" class="px-4 py-2.5 text-left font-medium text-ink">
@@ -201,7 +210,7 @@ const strategies = computed(() => [
         <OddsGroupChart :segments="groups" measure="conditional" />
       </SectionCard>
 
-      <SectionCard title="2-0 return by odds group" note="Flat stakes. Zero line is break-even.">
+      <SectionCard title="Your 2-0 return by odds group" note="Flat stakes. Zero line is break-even.">
         <OddsGroupChart :segments="groups" measure="roi" />
       </SectionCard>
     </div>
@@ -217,10 +226,10 @@ const strategies = computed(() => [
           'n',
           'winnerRecord',
           'winnerRoi',
-          's20Record',
-          's20Hit',
+          'strategyRecord',
+          'strategyHit',
           'conditional',
-          's20Roi',
+          'strategyRoi',
         ]"
       />
     </SectionCard>

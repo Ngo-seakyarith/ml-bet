@@ -56,8 +56,8 @@ const chart = computed(() =>
         const row = point.datum
         return [
           `Bet ${row.index} · ${shortDate(row.bet.date)}`,
-          row.bet.selection,
-          `@${odds(row.bet.effectiveOdds)} ${row.bet.strategyResult} ${units(row.profit)}`,
+          row.item.selection,
+          `@${odds(row.item.odds)} ${row.item.won ? 'W' : 'L'} ${units(row.profit)}`,
           `Running total ${units(row.cumulative)} units`,
         ].join('\n')
       },

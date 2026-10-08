@@ -78,6 +78,28 @@ The previous `winner_odds` and `opponent_odds` columns are renamed to
 schema, giving the new columns precedence. The Data page displays every new column.
 Available market prices do not confirm a strategy pick or result, and do not enter ROI.
 
+## Strategies
+
+A strategy is a rule that turns each match row into one bet. Every return in the app is shown
+for one strategy at a time, chosen with the Strategy picker (shared by Leagues, Weeks, Odds
+groups and Bankroll, and remembered in the browser). The Strategies page lists them all side
+by side:
+
+- **Your bets**: the rows whose `bet` column is filled in, all together or one bet type at a time.
+- **Your pick, every match**: your selected team to win, 2-0, 2-1 or +1.5 in every finished match.
+- **Favourite / Underdog, every match**: the same bets on whichever side the Match Winner prices
+  make favourite.
+- **Total maps, every match**: Over 2.5 and Under 2.5.
+
+A what-if only counts matches that have a price for that bet. A blank price means the bet was
+not offered, so the match is left out and the price is never made up (this is why +1.5 stays
+empty until real +1.5 prices are recorded). The one exception is the other side of the Match
+Winner market, which is always offered: when it was not recorded it is worked out from the
+measured margin and counted as estimated. Each row shows how many of its prices are
+predicted; when most are, its ROI is a guess, not evidence.
+
+Adding a new bet type to the parser adds it to every table automatically: no new page needed.
+
 ## How the numbers are defined
 
 **Everything derived is recomputed from the raw columns**, not read from the CSV's stored
@@ -112,10 +134,10 @@ an account statement.
 
 Two things are still excluded:
 
-- **Postponed fixtures**, which never resolved, via `VOID/POSTPONED` in the result columns.
-- **Estimated prices**, behind a toggle. Any bet whose price is written with a `~` — the
-  interpolated Sep 4-6 reconstruction and later approximate prices — can be switched off
-  to see only prices that were actually observed.
+- **Unplayed or postponed fixtures**: a blank `score` keeps the row out of every stat.
+- **Predicted prices**, behind a toggle. Switching it off leaves out every bet whose own price
+  is written with a `~` (or derived from the margin). The match row itself stays, so a
+  strategy with a real price for that match still counts it.
 
 ## Stack
 
@@ -128,8 +150,8 @@ returns numbers, with no Vue imports — so it can be tested or reused directly.
 ```
 src/
   data/       the CSV — the source of truth
-  lib/        parse.ts, stats.ts, types.ts, format.ts, palette.ts
+  lib/        parse.ts, stats.ts, strategies.ts, types.ts, format.ts, palette.ts
   composables/ reactive dataset, filters and colour scheme
   components/ UI primitives, shared segment table, charts
-  pages/      Dashboard, Matches, Odds groups, Weeks, Leagues, Bankroll, Data
+  pages/      Dashboard, Strategies, Matches, Odds groups, Weeks, Leagues, Underdogs, Bankroll, Data
 ```

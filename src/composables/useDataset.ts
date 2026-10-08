@@ -1,6 +1,7 @@
-import { computed, reactive, ref } from 'vue'
+import { computed, reactive, ref, watch } from 'vue'
 import { dataset } from '../lib/dataset'
-import { selectBets } from '../lib/stats'
+import { measureMargins, selectBets } from '../lib/stats'
+import { applyStrategy, strategiesFor, strategyStats, type StrategyContext } from '../lib/strategies'
 import type { Bet, Market, OddsGroupId } from '../lib/types'
 
 export const ALL = 'all' as const
@@ -48,6 +49,27 @@ const week = ref<string | All>(ALL)
 
 const filters = reactive<MatchFilters>(emptyFilters())
 
+/**
+ * The strategy every return on every page is measured for. Remembered per
+ * browser as a convenience only; an unknown id falls back to your bets.
+ */
+const STRATEGY_KEY = 'mlbb-strategy'
+function readStoredStrategy(): string {
+  try {
+    return localStorage.getItem(STRATEGY_KEY) ?? 'mine'
+  } catch {
+    return 'mine'
+  }
+}
+const strategyId = ref(readStoredStrategy())
+watch(strategyId, (id) => {
+  try {
+    localStorage.setItem(STRATEGY_KEY, id)
+  } catch {
+    // Private windows can refuse storage; the choice just will not persist.
+  }
+})
+
 export function useDataset() {
   const allBets = computed<Bet[]>(() => dataset.bets)
   const issues = computed(() => dataset.issues)
@@ -71,9 +93,9 @@ export function useDataset() {
     [...new Set(dataset.bets.map((bet) => bet.selectedTeam))].sort((a, b) => a.localeCompare(b)),
   )
 
-  /** Week and price-quality applied. Every statistic on every page reads this. */
+  /** Week applied, unplayed rows dropped. Every statistic on every page reads this. */
   const scoped = computed<Bet[]>(() => {
-    const selected = selectBets(dataset.bets, includeEstimatedPrices.value)
+    const selected = selectBets(dataset.bets)
     return week.value === ALL ? selected : selected.filter((bet) => bet.week === week.value)
   })
 
@@ -99,6 +121,31 @@ export function useDataset() {
     })
   })
 
+  /** Every strategy that can be measured on this dataset. */
+  const strategies = computed(() => strategiesFor(dataset.bets))
+
+  /** The selected strategy, falling back to your bets if the stored id is gone. */
+  const strategy = computed(
+    () => strategies.value.find((s) => s.id === strategyId.value) ?? strategies.value[0]!,
+  )
+
+  /** Margins are measured from every recorded pair, not just the scoped rows. */
+  const strategyContext = computed<StrategyContext>(() => {
+    const margins = measureMargins(dataset.bets)
+    return {
+      includeEstimated: includeEstimatedPrices.value,
+      margin: (league) => margins(league).margin,
+    }
+  })
+
+  /** Measures the selected strategy on any set of rows (a league, a weekend...). */
+  const measure = computed(
+    () => (rows: readonly Bet[]) => strategyStats(applyStrategy(rows, strategy.value.id, strategyContext.value)),
+  )
+
+  /** The selected strategy's settled bets on the scoped rows. */
+  const strategyBets = computed(() => applyStrategy(scoped.value, strategy.value.id, strategyContext.value))
+
   const activeFilterCount = computed(() => {
     const defaults = emptyFilters()
     return (Object.keys(defaults) as (keyof MatchFilters)[]).filter(
@@ -123,5 +170,11 @@ export function useDataset() {
     filtered,
     activeFilterCount,
     resetFilters,
+    strategies,
+    strategyId,
+    strategy,
+    strategyContext,
+    measure,
+    strategyBets,
   }
 }
