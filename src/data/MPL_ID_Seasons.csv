@@ -1,0 +1,289 @@
+season,week,date,team_1,team_2,score
+15,1,2025-03-07,Natus Vincere,RRQ Hoshi,0-2
+15,1,2025-03-07,EVOS Esports,Team Liquid ID,2-1
+15,1,2025-03-08,EVOS Esports,Geek Fam ID,2-0
+15,1,2025-03-08,Bigetron by Vitality,ALTER EGO,2-0
+15,1,2025-03-08,RRQ Hoshi,ONIC Esports,2-0
+15,1,2025-03-09,DEWA United,Bigetron by Vitality,2-1
+15,1,2025-03-09,ALTER EGO,ONIC Esports,2-1
+15,1,2025-03-09,Team Liquid ID,Natus Vincere,2-1
+15,2,2025-03-14,ONIC Esports,Geek Fam ID,1-2
+15,2,2025-03-14,DEWA United,Natus Vincere,2-0
+15,2,2025-03-15,Natus Vincere,ALTER EGO,1-2
+15,2,2025-03-15,RRQ Hoshi,Team Liquid ID,2-0
+15,2,2025-03-15,Bigetron by Vitality,EVOS Esports,1-2
+15,2,2025-03-16,Geek Fam ID,Bigetron by Vitality,0-2
+15,2,2025-03-16,ALTER EGO,EVOS Esports,2-0
+15,2,2025-03-16,Team Liquid ID,DEWA United,2-0
+15,3,2025-03-21,ONIC Esports,DEWA United,2-1
+15,3,2025-03-21,Natus Vincere,EVOS Esports,0-2
+15,3,2025-03-22,Team Liquid ID,Geek Fam ID,1-2
+15,3,2025-03-22,ONIC Esports,Bigetron by Vitality,2-0
+15,3,2025-03-22,RRQ Hoshi,ALTER EGO,2-1
+15,3,2025-03-23,Bigetron by Vitality,Natus Vincere,2-1
+15,3,2025-03-23,Geek Fam ID,RRQ Hoshi,1-2
+15,3,2025-03-23,ALTER EGO,DEWA United,2-1
+15,4,2025-04-18,Natus Vincere,ONIC Esports,1-2
+15,4,2025-04-18,EVOS Esports,DEWA United,1-2
+15,4,2025-04-19,Team Liquid ID,Bigetron by Vitality,1-2
+15,4,2025-04-19,RRQ Hoshi,EVOS Esports,2-1
+15,4,2025-04-19,Geek Fam ID,ALTER EGO,2-1
+15,4,2025-04-20,ONIC Esports,Team Liquid ID,1-2
+15,4,2025-04-20,Bigetron by Vitality,RRQ Hoshi,2-0
+15,4,2025-04-20,DEWA United,Geek Fam ID,1-2
+15,5,2025-04-25,Geek Fam ID,Natus Vincere,2-0
+15,5,2025-04-25,EVOS Esports,ONIC Esports,2-0
+15,5,2025-04-26,DEWA United,RRQ Hoshi,0-2
+15,5,2025-04-26,ALTER EGO,Team Liquid ID,1-2
+15,5,2025-04-26,EVOS Esports,Bigetron by Vitality,1-2
+15,5,2025-04-27,ALTER EGO,Natus Vincere,2-1
+15,5,2025-04-27,Geek Fam ID,ONIC Esports,1-2
+15,5,2025-04-27,DEWA United,Team Liquid ID,1-2
+15,6,2025-05-02,Natus Vincere,DEWA United,0-2
+15,6,2025-05-02,ALTER EGO,Geek Fam ID,0-2
+15,6,2025-05-03,EVOS Esports,ALTER EGO,0-2
+15,6,2025-05-03,Team Liquid ID,ONIC Esports,0-2
+15,6,2025-05-03,RRQ Hoshi,Bigetron by Vitality,2-1
+15,6,2025-05-04,Natus Vincere,Team Liquid ID,0-2
+15,6,2025-05-04,ONIC Esports,RRQ Hoshi,2-1
+15,6,2025-05-04,Geek Fam ID,EVOS Esports,2-1
+15,7,2025-05-09,Geek Fam ID,DEWA United,2-0
+15,7,2025-05-09,Bigetron by Vitality,Team Liquid ID,1-2
+15,7,2025-05-10,DEWA United,ALTER EGO,0-2
+15,7,2025-05-10,EVOS Esports,RRQ Hoshi,0-2
+15,7,2025-05-10,ONIC Esports,Natus Vincere,2-0
+15,7,2025-05-11,RRQ Hoshi,Geek Fam ID,2-1
+15,7,2025-05-11,Natus Vincere,Bigetron by Vitality,0-2
+15,7,2025-05-11,Team Liquid ID,EVOS Esports,2-1
+15,8,2025-05-16,Team Liquid ID,ALTER EGO,0-2
+15,8,2025-05-16,Bigetron by Vitality,DEWA United,2-0
+15,8,2025-05-17,Geek Fam ID,Team Liquid ID,2-1
+15,8,2025-05-17,ALTER EGO,RRQ Hoshi,1-2
+15,8,2025-05-17,Bigetron by Vitality,ONIC Esports,2-1
+15,8,2025-05-18,RRQ Hoshi,DEWA United,0-2
+15,8,2025-05-18,ONIC Esports,EVOS Esports,2-0
+15,8,2025-05-18,Natus Vincere,Geek Fam ID,0-2
+15,9,2025-05-23,Bigetron by Vitality,Geek Fam ID,1-2
+15,9,2025-05-23,DEWA United,ONIC Esports,1-2
+15,9,2025-05-24,EVOS Esports,Natus Vincere,2-1
+15,9,2025-05-24,Team Liquid ID,RRQ Hoshi,2-0
+15,9,2025-05-24,ONIC Esports,ALTER EGO,2-0
+15,9,2025-05-25,DEWA United,EVOS Esports,0-2
+15,9,2025-05-25,ALTER EGO,Bigetron by Vitality,2-0
+15,9,2025-05-25,RRQ Hoshi,Natus Vincere,2-0
+16,1,2025-08-22,ONIC Esports,DEWA United,2-0
+16,1,2025-08-22,Natus Vincere,EVOS Esports,0-2
+16,1,2025-08-23,Team Liquid ID,Geek Fam ID,1-2
+16,1,2025-08-23,ONIC Esports,Bigetron by Vitality,2-0
+16,1,2025-08-23,RRQ Hoshi,ALTER EGO,2-1
+16,1,2025-08-24,Bigetron by Vitality,Natus Vincere,1-2
+16,1,2025-08-24,Geek Fam ID,RRQ Hoshi,2-0
+16,1,2025-08-24,ALTER EGO,DEWA United,2-0
+16,2,2025-08-29,ONIC Esports,Geek Fam ID,2-0
+16,2,2025-08-29,DEWA United,Natus Vincere,2-0
+16,2,2025-08-30,Geek Fam ID,Bigetron by Vitality,0-2
+16,2,2025-08-30,ALTER EGO,EVOS Esports,2-1
+16,2,2025-08-30,Team Liquid ID,DEWA United,1-2
+16,2,2025-08-31,Natus Vincere,ALTER EGO,2-0
+16,2,2025-08-31,RRQ Hoshi,Team Liquid ID,2-0
+16,2,2025-08-31,Bigetron by Vitality,EVOS Esports,2-1
+16,3,2025-09-05,Natus Vincere,RRQ Hoshi,0-2
+16,3,2025-09-05,EVOS Esports,Team Liquid ID,2-0
+16,3,2025-09-06,EVOS Esports,Geek Fam ID,2-0
+16,3,2025-09-06,Bigetron by Vitality,ALTER EGO,2-1
+16,3,2025-09-06,RRQ Hoshi,ONIC Esports,0-2
+16,3,2025-09-07,DEWA United,Bigetron by Vitality,1-2
+16,3,2025-09-07,ALTER EGO,ONIC Esports,1-2
+16,3,2025-09-07,Team Liquid ID,Natus Vincere,0-2
+16,4,2025-09-12,Natus Vincere,ONIC Esports,1-2
+16,4,2025-09-12,EVOS Esports,DEWA United,2-0
+16,4,2025-09-13,Team Liquid ID,Bigetron by Vitality,0-2
+16,4,2025-09-13,RRQ Hoshi,EVOS Esports,2-0
+16,4,2025-09-13,Geek Fam ID,ALTER EGO,0-2
+16,4,2025-09-14,ONIC Esports,Team Liquid ID,2-0
+16,4,2025-09-14,Bigetron by Vitality,RRQ Hoshi,2-1
+16,4,2025-09-14,DEWA United,Geek Fam ID,2-1
+16,5,2025-09-19,Geek Fam ID,Natus Vincere,0-2
+16,5,2025-09-19,EVOS Esports,ONIC Esports,1-2
+16,5,2025-09-20,DEWA United,RRQ Hoshi,2-0
+16,5,2025-09-20,ALTER EGO,Team Liquid ID,2-1
+16,5,2025-09-20,EVOS Esports,Bigetron by Vitality,0-2
+16,5,2025-09-21,ALTER EGO,Natus Vincere,2-1
+16,5,2025-09-21,Geek Fam ID,ONIC Esports,0-2
+16,5,2025-09-21,DEWA United,Team Liquid ID,2-0
+16,6,2025-09-26,Natus Vincere,DEWA United,0-2
+16,6,2025-09-26,ALTER EGO,Geek Fam ID,2-0
+16,6,2025-09-27,EVOS Esports,ALTER EGO,1-2
+16,6,2025-09-27,Team Liquid ID,ONIC Esports,0-2
+16,6,2025-09-27,RRQ Hoshi,Bigetron by Vitality,1-2
+16,6,2025-09-28,Natus Vincere,Team Liquid ID,2-1
+16,6,2025-09-28,ONIC Esports,RRQ Hoshi,2-0
+16,6,2025-09-28,Geek Fam ID,EVOS Esports,0-2
+16,7,2025-10-03,Geek Fam ID,DEWA United,2-0
+16,7,2025-10-03,Bigetron by Vitality,Team Liquid ID,0-2
+16,7,2025-10-04,DEWA United,ALTER EGO,2-0
+16,7,2025-10-04,EVOS Esports,RRQ Hoshi,2-1
+16,7,2025-10-04,ONIC Esports,Natus Vincere,2-0
+16,7,2025-10-05,RRQ Hoshi,Geek Fam ID,0-2
+16,7,2025-10-05,Natus Vincere,Bigetron by Vitality,0-2
+16,7,2025-10-05,Team Liquid ID,EVOS Esports,1-2
+16,8,2025-10-10,Team Liquid ID,ALTER EGO,2-1
+16,8,2025-10-10,Bigetron by Vitality,DEWA United,2-0
+16,8,2025-10-11,Geek Fam ID,Team Liquid ID,1-2
+16,8,2025-10-11,ALTER EGO,RRQ Hoshi,2-0
+16,8,2025-10-11,Bigetron by Vitality,ONIC Esports,2-0
+16,8,2025-10-12,RRQ Hoshi,DEWA United,2-0
+16,8,2025-10-12,ONIC Esports,EVOS Esports,2-0
+16,8,2025-10-12,Natus Vincere,Geek Fam ID,2-0
+16,9,2025-10-17,Bigetron by Vitality,Geek Fam ID,0-2
+16,9,2025-10-17,DEWA United,ONIC Esports,0-2
+16,9,2025-10-18,EVOS Esports,Natus Vincere,2-1
+16,9,2025-10-18,Team Liquid ID,RRQ Hoshi,2-0
+16,9,2025-10-18,ONIC Esports,ALTER EGO,1-2
+16,9,2025-10-19,DEWA United,EVOS Esports,2-0
+16,9,2025-10-19,ALTER EGO,Bigetron by Vitality,1-2
+16,9,2025-10-19,RRQ Hoshi,Natus Vincere,2-1
+17,1,2026-03-27,Bigetron by Vitality,ALTER EGO,2-1
+17,1,2026-03-27,Natus Vincere,RRQ Hoshi,2-0
+17,1,2026-03-28,EVOS Esports,Geek Fam ID,2-0
+17,1,2026-03-28,ALTER EGO,ONIC Esports,0-2
+17,1,2026-03-28,Team Liquid ID,Natus Vincere,2-1
+17,1,2026-03-29,DEWA United,Bigetron by Vitality,2-0
+17,1,2026-03-29,EVOS Esports,Team Liquid ID,0-2
+17,1,2026-03-29,RRQ Hoshi,ONIC Esports,0-2
+17,2,2026-04-03,ONIC Esports,Geek Fam ID,2-0
+17,2,2026-04-03,DEWA United,Natus Vincere,2-0
+17,2,2026-04-04,Geek Fam ID,Bigetron by Vitality,2-0
+17,2,2026-04-04,ALTER EGO,EVOS Esports,2-1
+17,2,2026-04-04,Team Liquid ID,DEWA United,2-1
+17,2,2026-04-05,Natus Vincere,ALTER EGO,1-2
+17,2,2026-04-05,RRQ Hoshi,Team Liquid ID,0-2
+17,2,2026-04-05,Bigetron by Vitality,EVOS Esports,2-1
+17,3,2026-04-10,ONIC Esports,DEWA United,2-1
+17,3,2026-04-10,Natus Vincere,EVOS Esports,0-2
+17,3,2026-04-11,Team Liquid ID,Geek Fam ID,0-2
+17,3,2026-04-11,ONIC Esports,Bigetron by Vitality,1-2
+17,3,2026-04-11,RRQ Hoshi,ALTER EGO,1-2
+17,3,2026-04-12,Bigetron by Vitality,Natus Vincere,1-2
+17,3,2026-04-12,Geek Fam ID,RRQ Hoshi,2-1
+17,3,2026-04-12,ALTER EGO,DEWA United,0-2
+17,4,2026-04-17,Natus Vincere,ONIC Esports,0-2
+17,4,2026-04-17,EVOS Esports,DEWA United,2-0
+17,4,2026-04-18,Team Liquid ID,Bigetron by Vitality,1-2
+17,4,2026-04-18,RRQ Hoshi,EVOS Esports,0-2
+17,4,2026-04-18,Geek Fam ID,ALTER EGO,1-2
+17,4,2026-04-19,ONIC Esports,Team Liquid ID,2-0
+17,4,2026-04-19,Bigetron by Vitality,RRQ Hoshi,2-1
+17,4,2026-04-19,DEWA United,Geek Fam ID,2-0
+17,5,2026-04-24,Geek Fam ID,Natus Vincere,0-2
+17,5,2026-04-24,EVOS Esports,ONIC Esports,0-2
+17,5,2026-04-25,DEWA United,RRQ Hoshi,2-0
+17,5,2026-04-25,ALTER EGO,Team Liquid ID,1-2
+17,5,2026-04-25,EVOS Esports,Bigetron by Vitality,0-2
+17,5,2026-04-26,ALTER EGO,Natus Vincere,2-1
+17,5,2026-04-26,Geek Fam ID,ONIC Esports,2-1
+17,5,2026-04-26,DEWA United,Team Liquid ID,2-0
+17,6,2026-05-01,Natus Vincere,DEWA United,1-2
+17,6,2026-05-01,ALTER EGO,Geek Fam ID,2-1
+17,6,2026-05-02,EVOS Esports,ALTER EGO,2-1
+17,6,2026-05-02,Team Liquid ID,ONIC Esports,0-2
+17,6,2026-05-02,RRQ Hoshi,Bigetron by Vitality,2-0
+17,6,2026-05-03,Natus Vincere,Team Liquid ID,1-2
+17,6,2026-05-03,ONIC Esports,RRQ Hoshi,2-0
+17,6,2026-05-03,Geek Fam ID,EVOS Esports,2-0
+17,7,2026-05-08,Geek Fam ID,DEWA United,1-2
+17,7,2026-05-08,Bigetron by Vitality,Team Liquid ID,0-2
+17,7,2026-05-09,DEWA United,ALTER EGO,1-2
+17,7,2026-05-09,EVOS Esports,RRQ Hoshi,2-0
+17,7,2026-05-09,ONIC Esports,Natus Vincere,2-0
+17,7,2026-05-10,RRQ Hoshi,Geek Fam ID,0-2
+17,7,2026-05-10,Natus Vincere,Bigetron by Vitality,2-1
+17,7,2026-05-10,Team Liquid ID,EVOS Esports,0-2
+17,8,2026-05-15,Bigetron by Vitality,Geek Fam ID,0-2
+17,8,2026-05-15,DEWA United,ONIC Esports,0-2
+17,8,2026-05-16,EVOS Esports,Natus Vincere,0-2
+17,8,2026-05-16,Team Liquid ID,RRQ Hoshi,2-0
+17,8,2026-05-16,ONIC Esports,ALTER EGO,2-1
+17,8,2026-05-17,DEWA United,EVOS Esports,0-2
+17,8,2026-05-17,ALTER EGO,Bigetron by Vitality,0-2
+17,8,2026-05-17,RRQ Hoshi,Natus Vincere,0-2
+17,9,2026-05-22,Bigetron by Vitality,DEWA United,2-1
+17,9,2026-05-22,Team Liquid ID,ALTER EGO,2-0
+17,9,2026-05-23,Geek Fam ID,Team Liquid ID,0-2
+17,9,2026-05-23,ALTER EGO,RRQ Hoshi,1-2
+17,9,2026-05-23,Bigetron by Vitality,ONIC Esports,2-1
+17,9,2026-05-24,RRQ Hoshi,DEWA United,1-2
+17,9,2026-05-24,ONIC Esports,EVOS Esports,2-0
+17,9,2026-05-24,Natus Vincere,Geek Fam ID,1-2
+18,1,2026-08-14,EVOS Esports,RRQ Hoshi,2-0
+18,1,2026-08-14,Natus Vincere,ALTER EGO,0-2
+18,1,2026-08-15,Team Liquid ID,Geek Fam ID,2-1
+18,1,2026-08-15,DEWA United,RRQ Hoshi,1-2
+18,1,2026-08-15,EVOS Esports,Natus Vincere,1-2
+18,1,2026-08-16,Team Liquid ID,DEWA United,2-0
+18,1,2026-08-16,Bigetron by Vitality,Geek Fam ID,2-1
+18,1,2026-08-16,ALTER EGO,ONIC Esports,0-2
+18,2,2026-08-21,Team Liquid ID,Natus Vincere,0-2
+18,2,2026-08-21,Bigetron by Vitality,DEWA United,2-0
+18,2,2026-08-22,Team Liquid ID,EVOS Esports,2-0
+18,2,2026-08-22,Natus Vincere,Geek Fam ID,2-1
+18,2,2026-08-22,ONIC Esports,RRQ Hoshi,2-0
+18,2,2026-08-23,DEWA United,ALTER EGO,0-2
+18,2,2026-08-23,ONIC Esports,Bigetron by Vitality,1-2
+18,2,2026-08-23,Geek Fam ID,EVOS Esports,0-2
+18,3,2026-08-28,Bigetron by Vitality,Natus Vincere,2-0
+18,3,2026-08-28,DEWA United,Geek Fam ID,2-0
+18,3,2026-08-29,Team Liquid ID,ONIC Esports,2-1
+18,3,2026-08-29,ALTER EGO,EVOS Esports,2-0
+18,3,2026-08-29,RRQ Hoshi,Bigetron by Vitality,1-2
+18,3,2026-08-30,Natus Vincere,ONIC Esports,2-0
+18,3,2026-08-30,Geek Fam ID,RRQ Hoshi,0-2
+18,3,2026-08-30,Team Liquid ID,ALTER EGO,2-1
+18,4,2026-09-04,Natus Vincere,DEWA United,2-0
+18,4,2026-09-04,Team Liquid ID,RRQ Hoshi,2-0
+18,4,2026-09-05,DEWA United,ONIC Esports,2-1
+18,4,2026-09-05,EVOS Esports,Bigetron by Vitality,2-1
+18,4,2026-09-05,ALTER EGO,Geek Fam ID,2-0
+18,4,2026-09-06,RRQ Hoshi,Natus Vincere,0-2
+18,4,2026-09-06,ONIC Esports,EVOS Esports,2-0
+18,4,2026-09-06,Bigetron by Vitality,ALTER EGO,0-2
+18,5,2026-09-11,Geek Fam ID,ONIC Esports,2-1
+18,5,2026-09-12,Team Liquid ID,Bigetron by Vitality,2-0
+18,5,2026-09-12,ALTER EGO,RRQ Hoshi,2-0
+18,5,2026-09-12,Natus Vincere,EVOS Esports,2-0
+18,5,2026-09-13,Geek Fam ID,Team Liquid ID,0-2
+18,5,2026-09-13,ONIC Esports,ALTER EGO,0-2
+18,6,2026-09-18,ONIC Esports,Geek Fam ID,0-2
+18,6,2026-09-18,DEWA United,EVOS Esports,0-2
+18,6,2026-09-18,RRQ Hoshi,DEWA United,1-2
+18,6,2026-09-19,Geek Fam ID,Natus Vincere,0-2
+18,6,2026-09-19,RRQ Hoshi,ALTER EGO,1-2
+18,6,2026-09-19,Bigetron by Vitality,Team Liquid ID,0-2
+18,6,2026-09-20,ALTER EGO,DEWA United,0-2
+18,6,2026-09-20,Bigetron by Vitality,ONIC Esports,0-2
+18,6,2026-09-20,EVOS Esports,Team Liquid ID,2-1
+18,7,2026-10-02,Geek Fam ID,Bigetron by Vitality,1-2
+18,7,2026-10-02,DEWA United,Team Liquid ID,2-1
+18,7,2026-10-03,ALTER EGO,Natus Vincere,1-2
+18,7,2026-10-03,Bigetron by Vitality,RRQ Hoshi,2-1
+18,7,2026-10-03,Geek Fam ID,DEWA United,2-1
+18,7,2026-10-04,ALTER EGO,Team Liquid ID,0-2
+18,7,2026-10-04,RRQ Hoshi,EVOS Esports,2-1
+18,7,2026-10-04,ONIC Esports,Natus Vincere,2-1
+18,8,2026-10-08,EVOS Esports,DEWA United,2-1
+18,8,2026-10-08,ALTER EGO,Bigetron by Vitality,2-0
+18,8,2026-10-08,Natus Vincere,Team Liquid ID,2-0
+18,8,2026-10-09,EVOS Esports,ONIC Esports,2-1
+18,8,2026-10-09,RRQ Hoshi,Team Liquid ID,0-2
+18,8,2026-10-09,DEWA United,Natus Vincere,0-2
+18,8,2026-10-11,EVOS Esports,Geek Fam ID,
+18,8,2026-10-11,RRQ Hoshi,ONIC Esports,
+18,8,2026-10-11,DEWA United,Bigetron by Vitality,
+18,9,2026-10-16,Natus Vincere,RRQ Hoshi,
+18,9,2026-10-16,Geek Fam ID,ALTER EGO,
+18,9,2026-10-17,ONIC Esports,DEWA United,
+18,9,2026-10-17,Bigetron by Vitality,EVOS Esports,
+18,9,2026-10-17,RRQ Hoshi,Geek Fam ID,
+18,9,2026-10-18,EVOS Esports,ALTER EGO,
+18,9,2026-10-18,Natus Vincere,Bigetron by Vitality,
+18,9,2026-10-18,ONIC Esports,Team Liquid ID,

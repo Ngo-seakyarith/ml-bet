@@ -1,0 +1,169 @@
+season,week,date,scheduled_time_ph_utc8,team_1,team_2,score
+15,1,2025-02-28,17:00,Twisted Minds PH,Aurora Gaming PH,0-2
+15,1,2025-02-28,19:30,ONIC Philippines,TNC Pro Team,2-0
+15,1,2025-03-01,14:30,Team Falcons PH,Team Liquid PH,0-2
+15,1,2025-03-01,17:00,TNC Pro Team,AP.Bren,2-0
+15,1,2025-03-01,19:30,Aurora Gaming PH,ONIC Philippines,2-1
+15,1,2025-03-02,17:00,Omega Esports,Team Falcons PH,0-2
+15,1,2025-03-02,19:30,Team Liquid PH,Twisted Minds PH,2-0
+15,2,2025-03-07,17:00,Team Falcons PH,ONIC Philippines,2-1
+15,2,2025-03-07,19:30,AP.Bren,Aurora Gaming PH,1-2
+15,2,2025-03-08,14:30,TNC Pro Team,Omega Esports,2-0
+15,2,2025-03-08,17:00,Twisted Minds PH,Team Falcons PH,0-2
+15,2,2025-03-08,19:30,Team Liquid PH,AP.Bren,2-0
+15,2,2025-03-09,17:00,Twisted Minds PH,TNC Pro Team,1-2
+15,2,2025-03-09,19:30,Omega Esports,Team Liquid PH,1-2
+15,3,2025-03-14,17:00,Omega Esports,Twisted Minds PH,2-0
+15,3,2025-03-14,19:30,TNC Pro Team,Team Falcons PH,0-2
+15,3,2025-03-15,14:30,AP.Bren,Twisted Minds PH,1-2
+15,3,2025-03-15,17:00,Omega Esports,Aurora Gaming PH,1-2
+15,3,2025-03-15,19:30,Team Liquid PH,ONIC Philippines,2-0
+15,3,2025-03-16,17:00,Aurora Gaming PH,TNC Pro Team,2-1
+15,3,2025-03-16,19:30,ONIC Philippines,AP.Bren,2-0
+15,4,2025-03-21,17:00,TNC Pro Team,Team Liquid PH,1-2
+15,4,2025-03-21,19:30,AP.Bren,Omega Esports,2-0
+15,4,2025-03-22,14:30,Aurora Gaming PH,Team Liquid PH,2-1
+15,4,2025-03-22,17:00,ONIC Philippines,Omega Esports,2-0
+15,4,2025-03-22,19:30,Team Falcons PH,AP.Bren,2-1
+15,4,2025-03-23,17:00,Twisted Minds PH,ONIC Philippines,1-2
+15,4,2025-03-23,19:30,Team Falcons PH,Aurora Gaming PH,0-2
+15,5,2025-03-28,17:00,Aurora Gaming PH,Twisted Minds PH,2-0
+15,5,2025-03-28,19:30,TNC Pro Team,ONIC Philippines,0-2
+15,5,2025-03-29,14:30,Team Liquid PH,Team Falcons PH,2-1
+15,5,2025-03-29,17:00,AP.Bren,TNC Pro Team,0-2
+15,5,2025-03-29,19:30,ONIC Philippines,Aurora Gaming PH,2-1
+15,5,2025-03-30,17:00,Team Falcons PH,Omega Esports,2-0
+15,5,2025-03-30,19:30,Twisted Minds PH,Team Liquid PH,1-2
+15,6,2025-04-04,17:00,ONIC Philippines,Team Falcons PH,2-0
+15,6,2025-04-04,19:30,Aurora Gaming PH,AP.Bren,2-0
+15,6,2025-04-05,14:30,Omega Esports,TNC Pro Team,0-2
+15,6,2025-04-05,17:00,Team Falcons PH,Twisted Minds PH,2-0
+15,6,2025-04-05,19:30,AP.Bren,Team Liquid PH,0-2
+15,6,2025-04-06,17:00,TNC Pro Team,Twisted Minds PH,0-2
+15,6,2025-04-06,19:30,Team Liquid PH,Omega Esports,2-0
+15,7,2025-04-25,17:00,Twisted Minds PH,Omega Esports,1-2
+15,7,2025-04-25,19:30,Team Falcons PH,TNC Pro Team,2-1
+15,7,2025-04-26,14:30,Twisted Minds PH,AP.Bren,2-0
+15,7,2025-04-26,17:00,Aurora Gaming PH,Omega Esports,2-0
+15,7,2025-04-26,19:30,ONIC Philippines,Team Liquid PH,2-1
+15,7,2025-04-27,17:00,TNC Pro Team,Aurora Gaming PH,1-2
+15,7,2025-04-27,19:30,AP.Bren,ONIC Philippines,0-2
+15,8,2025-05-02,17:00,Team Liquid PH,TNC Pro Team,2-0
+15,8,2025-05-02,19:30,Omega Esports,AP.Bren,1-2
+15,8,2025-05-03,14:30,Team Liquid PH,Aurora Gaming PH,2-0
+15,8,2025-05-03,17:00,Omega Esports,ONIC Philippines,1-2
+15,8,2025-05-03,19:30,AP.Bren,Team Falcons PH,2-1
+15,8,2025-05-04,17:00,ONIC Philippines,Twisted Minds PH,2-0
+15,8,2025-05-04,19:30,Aurora Gaming PH,Team Falcons PH,2-1
+16,1,2025-08-22,17:00,Omega Esports,TNC Pro Team,2-1
+16,1,2025-08-22,19:30,Aurora Gaming PH,Team Falcons PH,0-2
+16,1,2025-08-23,14:30,AP.Bren,Omega Esports,2-1
+16,1,2025-08-23,17:00,Team Falcons PH,Twisted Minds PH,0-2
+16,1,2025-08-23,19:30,ONIC Philippines,Team Liquid PH,2-0
+16,1,2025-08-24,17:00,AP.Bren,Twisted Minds PH,1-2
+16,1,2025-08-24,19:30,TNC Pro Team,Team Liquid PH,0-2
+16,2,2025-08-29,17:00,AP.Bren,ONIC Philippines,0-2
+16,2,2025-08-29,19:30,Team Liquid PH,Aurora Gaming PH,1-2
+16,2,2025-08-30,14:30,TNC Pro Team,Team Falcons PH,2-0
+16,2,2025-08-30,17:00,Omega Esports,Twisted Minds PH,1-2
+16,2,2025-08-30,19:30,ONIC Philippines,Aurora Gaming PH,1-2
+16,2,2025-08-31,17:00,Omega Esports,Team Falcons PH,2-0
+16,2,2025-08-31,19:30,Team Liquid PH,Twisted Minds PH,2-0
+16,3,2025-09-05,17:00,Aurora Gaming PH,Twisted Minds PH,2-1
+16,3,2025-09-05,19:30,ONIC Philippines,Team Falcons PH,2-0
+16,3,2025-09-06,14:30,AP.Bren,TNC Pro Team,0-2
+16,3,2025-09-06,17:00,Omega Esports,Team Liquid PH,0-2
+16,3,2025-09-06,19:30,ONIC Philippines,Twisted Minds PH,1-2
+16,3,2025-09-07,17:00,AP.Bren,Team Falcons PH,2-1
+16,3,2025-09-07,19:30,TNC Pro Team,Aurora Gaming PH,0-2
+16,4,2025-09-12,17:00,AP.Bren,Aurora Gaming PH,0-2
+16,4,2025-09-12,19:30,ONIC Philippines,Omega Esports,2-0
+16,4,2025-09-13,14:30,TNC Pro Team,Twisted Minds PH,2-1
+16,4,2025-09-13,17:00,Omega Esports,Aurora Gaming PH,1-2
+16,4,2025-09-13,19:30,Team Liquid PH,Team Falcons PH,2-1
+16,4,2025-09-14,17:00,ONIC Philippines,TNC Pro Team,2-1
+16,4,2025-09-14,19:30,AP.Bren,Team Liquid PH,0-2
+16,5,2025-09-19,17:00,TNC Pro Team,Omega Esports,1-2
+16,5,2025-09-19,19:30,Team Falcons PH,Aurora Gaming PH,1-2
+16,5,2025-09-20,14:30,Omega Esports,AP.Bren,1-2
+16,5,2025-09-20,17:00,Twisted Minds PH,Team Falcons PH,1-2
+16,5,2025-09-20,19:30,Team Liquid PH,ONIC Philippines,1-2
+16,5,2025-09-21,17:00,Twisted Minds PH,AP.Bren,2-0
+16,5,2025-09-21,19:30,Team Liquid PH,TNC Pro Team,2-0
+16,6,2025-09-27,14:30,Team Falcons PH,TNC Pro Team,1-2
+16,6,2025-09-27,17:00,Twisted Minds PH,Omega Esports,0-2
+16,6,2025-09-27,19:30,Aurora Gaming PH,ONIC Philippines,2-1
+16,6,2025-09-28,17:00,Team Falcons PH,Omega Esports,1-2
+16,6,2025-09-28,19:30,Twisted Minds PH,Team Liquid PH,1-2
+16,6,2025-09-29,17:00,ONIC Philippines,AP.Bren,0-2
+16,6,2025-09-29,19:30,Aurora Gaming PH,Team Liquid PH,2-0
+16,7,2025-10-03,17:00,Twisted Minds PH,Aurora Gaming PH,0-2
+16,7,2025-10-03,19:30,Team Falcons PH,ONIC Philippines,2-1
+16,7,2025-10-04,14:30,TNC Pro Team,AP.Bren,2-1
+16,7,2025-10-04,17:00,Team Liquid PH,Omega Esports,2-0
+16,7,2025-10-04,19:30,Twisted Minds PH,ONIC Philippines,0-2
+16,7,2025-10-05,17:00,Team Falcons PH,AP.Bren,2-0
+16,7,2025-10-05,19:30,Aurora Gaming PH,TNC Pro Team,2-1
+16,8,2025-10-10,17:00,Aurora Gaming PH,AP.Bren,2-1
+16,8,2025-10-10,19:30,Omega Esports,ONIC Philippines,0-2
+16,8,2025-10-11,14:30,Twisted Minds PH,TNC Pro Team,2-1
+16,8,2025-10-11,17:00,Aurora Gaming PH,Omega Esports,2-0
+16,8,2025-10-11,19:30,Team Falcons PH,Team Liquid PH,2-1
+16,8,2025-10-12,17:00,TNC Pro Team,ONIC Philippines,1-2
+16,8,2025-10-12,19:30,Team Liquid PH,AP.Bren,2-0
+17,1,2026-03-20,17:00,Team Liquid PH,Aurora Gaming PH,2-1
+17,1,2026-03-20,19:30,Twisted Minds PH,ONIC Philippines,1-2
+17,1,2026-03-21,14:30,AP.Bren,Omega Esports,2-0
+17,1,2026-03-21,17:00,Aurora Gaming PH,TNC Pro Team,2-0
+17,1,2026-03-21,19:30,Twisted Minds PH,Team Liquid PH,0-2
+17,1,2026-03-22,17:00,TNC Pro Team,AP.Bren,1-2
+17,1,2026-03-22,19:30,ONIC Philippines,Team Falcons PH,1-2
+17,2,2026-03-27,17:00,Twisted Minds PH,Omega Esports,2-1
+17,2,2026-03-27,19:30,ONIC Philippines,TNC Pro Team,0-2
+17,2,2026-03-28,14:30,Team Falcons PH,Team Liquid PH,1-2
+17,2,2026-03-28,17:00,Omega Esports,TNC Pro Team,2-0
+17,2,2026-03-28,19:30,Twisted Minds PH,Aurora Gaming PH,0-2
+17,2,2026-03-29,17:00,AP.Bren,Team Liquid PH,1-2
+17,2,2026-03-29,19:30,Aurora Gaming PH,Team Falcons PH,1-2
+17,3,2026-04-10,17:00,ONIC Philippines,AP.Bren,2-0
+17,3,2026-04-10,19:30,Team Liquid PH,Omega Esports,2-0
+17,3,2026-04-11,14:30,AP.Bren,Twisted Minds PH,0-2
+17,3,2026-04-11,17:00,Omega Esports,Team Falcons PH,0-2
+17,3,2026-04-11,19:30,TNC Pro Team,Team Liquid PH,0-2
+17,3,2026-04-12,17:00,Team Falcons PH,Twisted Minds PH,2-0
+17,3,2026-04-12,19:30,ONIC Philippines,Aurora Gaming PH,2-0
+17,4,2026-04-17,17:00,TNC Pro Team,Team Falcons PH,0-2
+17,4,2026-04-17,19:30,Omega Esports,ONIC Philippines,0-2
+17,4,2026-04-18,14:30,TNC Pro Team,Twisted Minds PH,1-2
+17,4,2026-04-18,17:00,Team Falcons PH,AP.Bren,2-0
+17,4,2026-04-18,19:30,Aurora Gaming PH,Omega Esports,1-2
+17,4,2026-04-19,17:00,Team Liquid PH,ONIC Philippines,2-0
+17,4,2026-04-19,19:30,AP.Bren,Aurora Gaming PH,0-2
+17,5,2026-04-24,17:00,Aurora Gaming PH,Team Liquid PH,0-2
+17,5,2026-04-24,19:30,ONIC Philippines,Twisted Minds PH,2-0
+17,5,2026-04-25,14:30,Omega Esports,AP.Bren,2-1
+17,5,2026-04-25,17:00,TNC Pro Team,Aurora Gaming PH,2-0
+17,5,2026-04-25,19:30,Team Liquid PH,Twisted Minds PH,2-0
+17,5,2026-04-26,17:00,AP.Bren,TNC Pro Team,2-1
+17,5,2026-04-26,19:30,Team Falcons PH,ONIC Philippines,2-1
+17,6,2026-05-01,17:00,Omega Esports,Twisted Minds PH,2-0
+17,6,2026-05-01,19:30,TNC Pro Team,ONIC Philippines,0-2
+17,6,2026-05-02,14:30,Team Liquid PH,Team Falcons PH,1-2
+17,6,2026-05-02,17:00,TNC Pro Team,Omega Esports,0-2
+17,6,2026-05-02,19:30,Aurora Gaming PH,Twisted Minds PH,1-2
+17,6,2026-05-03,17:00,Team Liquid PH,AP.Bren,2-1
+17,6,2026-05-03,19:30,Team Falcons PH,Aurora Gaming PH,2-0
+17,7,2026-05-08,17:00,AP.Bren,ONIC Philippines,0-2
+17,7,2026-05-08,19:30,Omega Esports,Team Liquid PH,0-2
+17,7,2026-05-09,14:30,Twisted Minds PH,AP.Bren,2-0
+17,7,2026-05-09,17:00,Team Falcons PH,Omega Esports,1-2
+17,7,2026-05-09,19:30,Team Liquid PH,TNC Pro Team,2-0
+17,7,2026-05-10,17:00,Twisted Minds PH,Team Falcons PH,0-2
+17,7,2026-05-10,19:30,Aurora Gaming PH,ONIC Philippines,1-2
+17,8,2026-05-15,17:00,Team Falcons PH,TNC Pro Team,2-0
+17,8,2026-05-15,19:30,ONIC Philippines,Omega Esports,2-1
+17,8,2026-05-16,14:30,Twisted Minds PH,TNC Pro Team,2-1
+17,8,2026-05-16,17:00,AP.Bren,Team Falcons PH,0-2
+17,8,2026-05-16,19:30,Omega Esports,Aurora Gaming PH,1-2
+17,8,2026-05-17,17:00,ONIC Philippines,Team Liquid PH,0-2
+17,8,2026-05-17,19:30,Aurora Gaming PH,AP.Bren,2-1

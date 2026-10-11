@@ -82,8 +82,11 @@ export interface Bet {
 
   // --- Match Winner side -------------------------------------------------
   winnerOdds: number | null
+  /** 'estimated' when written with ~ (a predicted price, e.g. a backfilled week). */
+  winnerOddsQuality: OddsQuality
   /** The other team's Match Winner price, when recorded. */
   opponentOdds: number | null
+  opponentOddsQuality: OddsQuality
   /** Available market prices, separate from the price of the tracked strategy. */
   marketOdds: MarketOdds
   /** Derived from winnerOdds; the CSV does not carry a group column. */
@@ -102,7 +105,12 @@ export interface Bet {
   selectedTeamSwept: boolean | null
 
   // --- Strategy side -----------------------------------------------------
-  /** The bet type, or null for a fixture with no bet. */
+  /**
+   * The bet type, or null when there is no bet: an upcoming fixture, or a
+   * finished match you did not pick. A finished match with no bet is left out
+   * of everything about your picks and only counts in the what-ifs
+   * (favourite, underdog, total maps) and league-wide rates.
+   */
   market: Market | null
   selection: string
   /**

@@ -15,7 +15,7 @@ import ResultBadge from '../components/ui/ResultBadge.vue'
 import TeamLogo from '../components/ui/TeamLogo.vue'
 import { odds, percent, shortDate, shortWeek, signedPercent, toneFor, units } from '../lib/format'
 
-const { scoped, allBets, includeEstimatedPrices } = useDataset()
+const { scoped, allBets } = useDataset()
 
 /**
  * Margins are measured from every recorded odds pair in the CSV (upcoming
@@ -23,12 +23,7 @@ const { scoped, allBets, includeEstimatedPrices } = useDataset()
  */
 const margins = computed(() => measureMargins(allBets.value))
 
-/** With estimated prices switched off, only underdogs with a recorded price remain. */
-const dogs = computed(() =>
-  underdogBets(scoped.value, (league) => margins.value(league).margin).filter(
-    (item) => includeEstimatedPrices.value || !item.estimated,
-  ),
-)
+const dogs = computed(() => underdogBets(scoped.value, (league) => margins.value(league).margin))
 
 /** One card per league, busiest first. */
 const leagues = computed(() => {

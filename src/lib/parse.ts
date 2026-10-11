@@ -61,8 +61,8 @@ const rowSchema = z.object({
   official_week: text,
   selected_team: text,
   opponent: text,
-  selected_match_winner_odds: numericish,
-  opponent_match_winner_odds: numericish,
+  selected_match_winner_odds: price,
+  opponent_match_winner_odds: price,
   correct_score_2_0_odds: price,
   correct_score_2_1_odds: price,
   correct_score_1_2_odds: price,
@@ -153,7 +153,9 @@ function normalize(row: RawRow, issues: RowIssue[]): Bet {
   if (row.bet !== '' && market === null) {
     push('bet', `"${row.bet}" is not a bet type; use 2-0, 2-1, 1-2, 0-2, Over 2.5, Under 2.5, +1.5 or Win`)
   }
-  const winPrice = row.selected_match_winner_odds
+  // Match Winner prices can be predicted too ("~1.60"), e.g. a backfilled week.
+  const selectedWin = row.selected_match_winner_odds.odds
+  const opponentWin = row.opponent_match_winner_odds.odds
   const PRICE_COLUMN: Record<Market, RawRow['correct_score_2_0_odds']> = {
     '2-0': row.correct_score_2_0_odds,
     '2-1': row.correct_score_2_1_odds,
@@ -162,7 +164,7 @@ function normalize(row: RawRow, issues: RowIssue[]): Bet {
     'Over 2.5': row.total_maps_over_2_5_odds,
     'Under 2.5': row.total_maps_under_2_5_odds,
     '+1.5': row.selected_plus_1_5_odds,
-    Win: { odds: winPrice, quality: winPrice === null ? 'none' : 'observed' },
+    Win: row.selected_match_winner_odds,
   }
   const { odds: effectiveOdds, quality: oddsQuality } =
     market === null ? { odds: null, quality: 'none' as const } : PRICE_COLUMN[market]
@@ -174,16 +176,16 @@ function normalize(row: RawRow, issues: RowIssue[]): Bet {
     push('bet', `a ${market} bet but its price column is blank`, 'warning')
   }
 
-  const oddsGroup = toOddsGroup(row.selected_match_winner_odds)
+  const oddsGroup = toOddsGroup(selectedWin)
 
   // A real two-way market adds up to a little over 1 (the bookmaker's margin,
   // ~7-8% on Thunderpick). Far outside that is almost always a typo.
-  if (row.selected_match_winner_odds !== null && row.opponent_match_winner_odds !== null) {
-    const book = 1 / row.selected_match_winner_odds + 1 / row.opponent_match_winner_odds
+  if (selectedWin !== null && opponentWin !== null) {
+    const book = 1 / selectedWin + 1 / opponentWin
     if (book < 1.0 || book > 1.15) {
       push(
         'opponent_match_winner_odds',
-        `${row.selected_match_winner_odds} and ${row.opponent_match_winner_odds} imply a ${((book - 1) * 100).toFixed(0)}% margin; check for a typo`,
+        `${selectedWin} and ${opponentWin} imply a ${((book - 1) * 100).toFixed(0)}% margin; check for a typo`,
         'warning',
       )
     }
@@ -208,10 +210,10 @@ function normalize(row: RawRow, issues: RowIssue[]): Bet {
     maps === null || market === null ? null : settle(market, { team: maps.selected, other: maps.opponent })
   const strategyResult: Outcome = strategyWon === null ? 'VOID' : strategyWon ? 'W' : 'L'
 
-  const winnerProfit = unitProfit(winnerResult, row.selected_match_winner_odds)
+  const winnerProfit = unitProfit(winnerResult, selectedWin)
   const strategyProfit = unitProfit(strategyResult, effectiveOdds)
 
-  const isFavourite = row.selected_match_winner_odds === null ? null : row.selected_match_winner_odds < FAVOURITE_ODDS_CEILING
+  const isFavourite = selectedWin === null ? null : selectedWin < FAVOURITE_ODDS_CEILING
 
   return {
     id: row.record_id ?? 0,
@@ -222,8 +224,10 @@ function normalize(row: RawRow, issues: RowIssue[]): Bet {
     selectedTeam: row.selected_team,
     opponent: row.opponent,
 
-    winnerOdds: row.selected_match_winner_odds,
-    opponentOdds: row.opponent_match_winner_odds,
+    winnerOdds: selectedWin,
+    winnerOddsQuality: row.selected_match_winner_odds.quality,
+    opponentOdds: opponentWin,
+    opponentOddsQuality: row.opponent_match_winner_odds.quality,
     marketOdds: {
       correctScore20: row.correct_score_2_0_odds,
       correctScore21: row.correct_score_2_1_odds,

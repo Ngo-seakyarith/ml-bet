@@ -14,16 +14,16 @@ import TeamScatter from '../components/charts/TeamScatter.vue'
 import { EMPTY, percent, record, signedPercent, units } from '../lib/format'
 import { toneFor } from '../lib/format'
 
-const { scoped, strategies, strategyContext, strategyId, includeEstimatedPrices } = useDataset()
+const { scoped, strategies, strategyContext, strategyId } = useDataset()
 
-const summary = computed(() => summarize(scoped.value, includeEstimatedPrices.value))
+const summary = computed(() => summarize(scoped.value))
 /** The odds-group table on this page always shows your 2-0 bets, the headline strategy. */
 const groups = computed(() =>
   segmentsByOddsGroup(scoped.value, (rows) =>
     strategyStats(applyStrategy(rows, 'mine:2-0', strategyContext.value)),
   ),
 )
-const points = computed(() => teamPoints(scoped.value, 1, includeEstimatedPrices.value))
+const points = computed(() => teamPoints(scoped.value))
 
 /**
  * One row per bet type you have actually placed, plus your pick to win on

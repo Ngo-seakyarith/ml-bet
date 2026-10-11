@@ -18,6 +18,8 @@
 
   --color-accent: #2a78d6;
   --color-good: #0ca30c;
+  /* Yellow-green: a clinched playoff place (green is the upper bracket). */
+  --color-lime: #9cbf1f;
   --color-warning: #fab219;
   --color-serious: #ec835a;
   --color-critical: #d03b3b;
@@ -44,6 +46,8 @@
 
     --color-accent: #3987e5;
     --color-good: #0ca30c;
+    /* Yellow-green: a clinched playoff place (green is the upper bracket). */
+    --color-lime: #a8cc2a;
     --color-warning: #fab219;
     --color-serious: #ec835a;
     --color-critical: #d03b3b;

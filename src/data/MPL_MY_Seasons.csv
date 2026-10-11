@@ -1,0 +1,113 @@
+season,week,date,team_1,team_2,score
+17,1,2026-04-03,Selangor Red Giants,Team Vamos,2-0
+17,1,2026-04-03,RRQ Tora,Team Rey,2-0
+17,1,2026-04-04,Invictus Gaming,Bigetron MY by Vitality,2-0
+17,1,2026-04-04,AC Esports,Team Flash,1-2
+17,1,2026-04-04,Team Rey,Selangor Red Giants,1-2
+17,1,2026-04-05,AC Esports,Bigetron MY by Vitality,2-1
+17,1,2026-04-05,RRQ Tora,Team Flash,2-0
+17,2,2026-04-10,Invictus Gaming,RRQ Tora,1-2
+17,2,2026-04-10,Selangor Red Giants,Bigetron MY by Vitality,2-0
+17,2,2026-04-11,Team Rey,Team Flash,2-1
+17,2,2026-04-11,Invictus Gaming,Team Vamos,2-1
+17,2,2026-04-11,RRQ Tora,AC Esports,2-1
+17,2,2026-04-12,Selangor Red Giants,Team Flash,2-0
+17,2,2026-04-12,AC Esports,Team Vamos,0-2
+17,3,2026-04-17,Team Flash,Bigetron MY by Vitality,1-2
+17,3,2026-04-17,Team Vamos,RRQ Tora,2-0
+17,3,2026-04-18,Bigetron MY by Vitality,Team Rey,0-2
+17,3,2026-04-18,AC Esports,Invictus Gaming,0-2
+17,3,2026-04-18,RRQ Tora,Selangor Red Giants,0-2
+17,3,2026-04-19,Team Rey,Invictus Gaming,2-1
+17,3,2026-04-19,Team Flash,Team Vamos,0-2
+17,4,2026-04-24,Bigetron MY by Vitality,Team Vamos,1-2
+17,4,2026-04-24,Selangor Red Giants,AC Esports,2-0
+17,4,2026-04-25,Invictus Gaming,Selangor Red Giants,1-2
+17,4,2026-04-25,Team Vamos,Team Rey,0-2
+17,4,2026-04-25,Bigetron MY by Vitality,RRQ Tora,2-0
+17,4,2026-04-26,Team Rey,AC Esports,2-1
+17,4,2026-04-26,Team Flash,Invictus Gaming,0-2
+17,5,2026-05-01,Team Flash,AC Esports,0-2
+17,5,2026-05-01,Team Vamos,Invictus Gaming,1-2
+17,5,2026-05-02,Team Vamos,Bigetron MY by Vitality,0-2
+17,5,2026-05-02,Team Flash,Team Rey,0-2
+17,5,2026-05-02,Selangor Red Giants,RRQ Tora,2-0
+17,5,2026-05-03,AC Esports,Team Rey,0-2
+17,5,2026-05-03,Selangor Red Giants,Invictus Gaming,2-0
+17,6,2026-05-08,Team Rey,Team Vamos,0-2
+17,6,2026-05-08,RRQ Tora,Bigetron MY by Vitality,0-2
+17,6,2026-05-09,Invictus Gaming,Team Flash,2-1
+17,6,2026-05-09,RRQ Tora,Team Vamos,0-2
+17,6,2026-05-09,AC Esports,Selangor Red Giants,2-1
+17,6,2026-05-10,Invictus Gaming,AC Esports,2-0
+17,6,2026-05-10,Bigetron MY by Vitality,Selangor Red Giants,1-2
+17,7,2026-05-15,Team Flash,Selangor Red Giants,0-2
+17,7,2026-05-15,Bigetron MY by Vitality,AC Esports,1-2
+17,7,2026-05-16,Invictus Gaming,Team Rey,2-0
+17,7,2026-05-16,Team Flash,RRQ Tora,0-2
+17,7,2026-05-16,Team Vamos,Selangor Red Giants,2-0
+17,7,2026-05-17,Team Rey,Bigetron MY by Vitality,2-1
+17,7,2026-05-17,RRQ Tora,Invictus Gaming,0-2
+17,8,2026-05-22,Bigetron MY by Vitality,Team Flash,2-0
+17,8,2026-05-22,Team Rey,RRQ Tora,0-2
+17,8,2026-05-23,Team Vamos,AC Esports,2-1
+17,8,2026-05-23,Selangor Red Giants,Team Rey,2-1
+17,8,2026-05-23,Bigetron MY by Vitality,Invictus Gaming,2-0
+17,8,2026-05-24,Team Vamos,Team Flash,2-0
+17,8,2026-05-24,AC Esports,RRQ Tora,2-0
+18,1,2026-08-14,AC Esports,Bigetron MY by Vitality,1-2
+18,1,2026-08-14,Team Vamos,Team Flash,2-1
+18,1,2026-08-15,Team Flash,Bigetron MY by Vitality,1-2
+18,1,2026-08-15,RRQ Tora,Team Rey,0-2
+18,1,2026-08-15,Selangor Red Giants,Invictus Gaming,2-0
+18,1,2026-08-16,Invictus Gaming,RRQ Tora,2-0
+18,1,2026-08-16,Team Rey,Selangor Red Giants,0-2
+18,2,2026-08-21,Invictus Gaming,Team Vamos,2-1
+18,2,2026-08-21,Bigetron MY by Vitality,Selangor Red Giants,1-2
+18,2,2026-08-22,Team Rey,Team Vamos,1-2
+18,2,2026-08-22,AC Esports,Invictus Gaming,0-2
+18,2,2026-08-22,Bigetron MY by Vitality,RRQ Tora,2-0
+18,2,2026-08-23,Team Rey,AC Esports,2-0
+18,2,2026-08-23,Team Flash,Selangor Red Giants,0-2
+18,3,2026-08-28,Bigetron MY by Vitality,Team Rey,1-2
+18,3,2026-08-28,Team Vamos,RRQ Tora,2-1
+18,3,2026-08-29,Team Flash,Team Rey,0-2
+18,3,2026-08-29,Bigetron MY by Vitality,Team Vamos,1-2
+18,3,2026-08-29,Selangor Red Giants,AC Esports,2-0
+18,3,2026-08-30,Invictus Gaming,Team Flash,0-2
+18,3,2026-08-30,RRQ Tora,AC Esports,1-2
+18,4,2026-09-04,AC Esports,Team Flash,0-2
+18,4,2026-09-04,RRQ Tora,Selangor Red Giants,2-1
+18,4,2026-09-05,Team Flash,RRQ Tora,2-0
+18,4,2026-09-05,Team Rey,Invictus Gaming,2-0
+18,4,2026-09-05,Selangor Red Giants,Team Vamos,2-0
+18,4,2026-09-06,Invictus Gaming,Bigetron MY by Vitality,2-1
+18,4,2026-09-06,Team Vamos,AC Esports,2-0
+18,5,2026-09-11,Invictus Gaming,Team Rey,2-0
+18,5,2026-09-11,Selangor Red Giants,Bigetron MY by Vitality,2-0
+18,5,2026-09-12,Team Flash,AC Esports,2-0
+18,5,2026-09-12,Team Vamos,Team Rey,0-2
+18,5,2026-09-12,Selangor Red Giants,RRQ Tora,2-1
+18,5,2026-09-13,Bigetron MY by Vitality,AC Esports,2-0
+18,5,2026-09-13,RRQ Tora,Team Flash,2-0
+18,6,2026-09-18,Team Rey,Team Flash,2-1
+18,6,2026-09-18,RRQ Tora,Team Vamos,1-2
+18,6,2026-09-19,Team Vamos,Bigetron MY by Vitality,2-0
+18,6,2026-09-19,RRQ Tora,Invictus Gaming,1-2
+18,6,2026-09-19,AC Esports,Selangor Red Giants,0-2
+18,6,2026-09-20,Bigetron MY by Vitality,Invictus Gaming,2-1
+18,6,2026-09-20,Selangor Red Giants,Team Rey,1-2
+18,7,2026-10-08,Team Rey,Bigetron MY by Vitality,2-0
+18,7,2026-10-08,Selangor Red Giants,Team Flash,2-0
+18,7,2026-10-09,Team Vamos,Invictus Gaming,2-1
+18,7,2026-10-09,AC Esports,RRQ Tora,1-2
+18,7,2026-10-11,Team Flash,Team Vamos,
+18,7,2026-10-11,Invictus Gaming,AC Esports,
+18,7,2026-10-11,Team Rey,RRQ Tora,
+18,8,2026-10-16,Team Flash,Invictus Gaming,
+18,8,2026-10-16,Team Vamos,Selangor Red Giants,
+18,8,2026-10-17,Bigetron MY by Vitality,Team Flash,
+18,8,2026-10-17,AC Esports,Team Rey,
+18,8,2026-10-17,Invictus Gaming,Selangor Red Giants,
+18,8,2026-10-18,AC Esports,Team Vamos,
+18,8,2026-10-18,RRQ Tora,Bigetron MY by Vitality,

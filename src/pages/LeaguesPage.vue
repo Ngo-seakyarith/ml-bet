@@ -8,9 +8,9 @@ import StrategyPicker from '../components/StrategyPicker.vue'
 import TeamScatter from '../components/charts/TeamScatter.vue'
 import { percent } from '../lib/format'
 
-const { scoped, measure, includeEstimatedPrices } = useDataset()
+const { scoped, measure } = useDataset()
 const leagues = computed(() => segmentsByLeague(scoped.value, measure.value))
-const points = computed(() => teamPoints(scoped.value, 1, includeEstimatedPrices.value))
+const points = computed(() => teamPoints(scoped.value))
 
 /** Leagues with enough matches to be worth comparing at all. */
 const comparable = computed(() =>

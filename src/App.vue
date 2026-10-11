@@ -1,19 +1,10 @@
 <script setup lang="ts">
-import { computed, nextTick, ref, watch } from 'vue'
+import { nextTick, ref, watch } from 'vue'
 import { RouterLink, RouterView, useRoute } from 'vue-router'
-import { ALL, useDataset } from './composables/useDataset'
+import { useDataset } from './composables/useDataset'
 import { PAGES as NAV } from './router'
-import { shortWeek } from './lib/format'
 
-const { includeEstimatedPrices, week, weeks, scoped, allBets } = useDataset()
-
-/** Rows with at least one predicted (~) price in any market column. */
-const estimatedCount = computed(
-  () =>
-    allBets.value.filter((bet) =>
-      Object.values(bet.marketOdds).some((price) => price.quality === 'estimated'),
-    ).length,
-)
+const { allBets } = useDataset()
 
 /**
  * On phones the tabs are one swipeable row. Keep the current tab in view when
@@ -107,37 +98,6 @@ watch(
             </a>
           </RouterLink>
         </nav>
-
-        <!-- Global controls: these scope every figure on every page. -->
-        <div
-          class="flex flex-wrap items-center gap-x-4 gap-y-2 border-b border-rule px-4 py-2.5 lg:sticky lg:top-0 lg:z-10 lg:bg-plane/95 lg:px-6 lg:py-3 lg:backdrop-blur"
-        >
-          <label class="flex items-center gap-2">
-            <!-- The dropdown already reads "All weeks", so phones drop the visible label. -->
-            <span class="text-[12.5px] text-muted max-sm:sr-only">Weekend</span>
-            <select
-              v-model="week"
-              class="min-h-10 rounded border border-rule bg-surface px-2 text-[14px] text-ink lg:min-h-0 lg:py-1.5 lg:text-[12.5px]"
-            >
-              <option :value="ALL">All weeks</option>
-              <option v-for="label in weeks" :key="label" :value="label">
-                {{ shortWeek(label) }}
-              </option>
-            </select>
-          </label>
-
-          <label
-            v-if="estimatedCount > 0"
-            class="flex min-h-10 items-center gap-2 text-[13px] text-ink-2 lg:min-h-0 lg:text-[12.5px]"
-            :title="`${estimatedCount} rows have at least one predicted (~) price`"
-          >
-            <input v-model="includeEstimatedPrices" type="checkbox" class="h-4 w-4 accent-accent" />
-            Predicted prices (~)
-            <span class="hidden text-muted sm:inline">({{ estimatedCount }} rows)</span>
-          </label>
-
-          <p class="tnum ml-auto text-[12px] text-muted">{{ scoped.length }} picks</p>
-        </div>
 
         <main class="px-3 py-3 sm:px-4 sm:py-4 lg:px-6 lg:py-5">
           <RouterView />

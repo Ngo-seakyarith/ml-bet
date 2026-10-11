@@ -37,16 +37,6 @@ function emptyFilters(): MatchFilters {
  * Global state — shared by every page
  * ---------------------------------------------------------------------- */
 
-/**
- * Rows whose 2-0 price was estimated rather than observed — the reconstructed
- * Sep 4-6 backtest plus any later "~" prices. Toggleable so estimated prices
- * never quietly inflate a headline.
- */
-const includeEstimatedPrices = ref(true)
-
-/** Global weekend filter; every page respects it. */
-const week = ref<string | All>(ALL)
-
 const filters = reactive<MatchFilters>(emptyFilters())
 
 /**
@@ -93,11 +83,8 @@ export function useDataset() {
     [...new Set(dataset.bets.map((bet) => bet.selectedTeam))].sort((a, b) => a.localeCompare(b)),
   )
 
-  /** Week applied, unplayed rows dropped. Every statistic on every page reads this. */
-  const scoped = computed<Bet[]>(() => {
-    const selected = selectBets(dataset.bets)
-    return week.value === ALL ? selected : selected.filter((bet) => bet.week === week.value)
-  })
+  /** Unplayed rows dropped. Every statistic on every page reads this. */
+  const scoped = computed<Bet[]>(() => selectBets(dataset.bets))
 
   /** Scoped rows with the Matches page's own column filters on top. */
   const filtered = computed<Bet[]>(() => {
@@ -133,7 +120,7 @@ export function useDataset() {
   const strategyContext = computed<StrategyContext>(() => {
     const margins = measureMargins(dataset.bets)
     return {
-      includeEstimated: includeEstimatedPrices.value,
+      includeEstimated: true,
       margin: (league) => margins(league).margin,
     }
   })
@@ -158,8 +145,6 @@ export function useDataset() {
   }
 
   return {
-    includeEstimatedPrices,
-    week,
     filters,
     allBets,
     issues,

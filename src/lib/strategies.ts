@@ -101,8 +101,8 @@ export function strategiesFor(bets: readonly Bet[]): Strategy[] {
 function teamSide(bet: Bet, selected: boolean, ctx: StrategyContext) {
   const m = bet.marketOdds
   let win: MarketPrice
-  if (selected) win = { odds: bet.winnerOdds, quality: bet.winnerOdds === null ? 'none' : 'observed' }
-  else if (bet.opponentOdds !== null) win = { odds: bet.opponentOdds, quality: 'observed' }
+  if (selected) win = { odds: bet.winnerOdds, quality: bet.winnerOddsQuality }
+  else if (bet.opponentOdds !== null) win = { odds: bet.opponentOdds, quality: bet.opponentOddsQuality }
   else {
     const odds = bet.winnerOdds === null ? null : otherSideOdds(bet.winnerOdds, ctx.margin(bet.league))
     win = { odds, quality: odds === null ? 'none' : 'estimated' }
@@ -166,6 +166,8 @@ export function applyStrategy(bets: readonly Bet[], id: string, ctx: StrategyCon
       const won = settle(rawMarket, { team: bet.selectedMaps, other: bet.opponentMaps })
       result = placed(bet, rawMarket, '', price, won, ctx)
     } else if (rawMarket !== undefined) {
+      // "Your pick" needs a pick: a finished match with no bet is skipped.
+      if (kind === 'pick' && bet.market === null) continue
       let selected = true
       if (kind !== 'pick') {
         const fav = selectedIsFavourite(bet, ctx)

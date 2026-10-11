@@ -2,6 +2,7 @@ import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router'
 import DashboardPage from './pages/DashboardPage.vue'
 import MatchesPage from './pages/MatchesPage.vue'
 import StrategiesPage from './pages/StrategiesPage.vue'
+import StandingsPage from './pages/StandingsPage.vue'
 import OddsGroupsPage from './pages/OddsGroupsPage.vue'
 import WeeksPage from './pages/WeeksPage.vue'
 import LeaguesPage from './pages/LeaguesPage.vue'
@@ -13,6 +14,7 @@ import DataPage from './pages/DataPage.vue'
 export const PAGES = [
   { path: '/', name: 'dashboard', label: 'Dashboard', component: DashboardPage },
   { path: '/strategies', name: 'strategies', label: 'Strategies', component: StrategiesPage },
+  { path: '/standings', name: 'standings', label: 'Standings', component: StandingsPage },
   { path: '/matches', name: 'matches', label: 'Matches', component: MatchesPage },
   { path: '/odds-groups', name: 'groups', label: 'Odds groups', component: OddsGroupsPage },
   { path: '/weeks', name: 'weeks', label: 'Weeks', component: WeeksPage },

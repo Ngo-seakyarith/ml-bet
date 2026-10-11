@@ -94,10 +94,13 @@ export function performanceFrom(entries: readonly { won: boolean; profit: number
   }
 }
 
-/** Match Winner performance. Independent of which strategy market was played. */
+/**
+ * Your pick to win, on every match you picked (any bet type). A match with
+ * no bet was not picked, so it does not count.
+ */
 export function winnerPerformance(bets: readonly Bet[]): Performance {
   const entries = bets
-    .filter((bet) => bet.winnerResult !== 'VOID' && bet.winnerProfit !== null)
+    .filter((bet) => bet.market !== null && bet.winnerResult !== 'VOID' && bet.winnerProfit !== null)
     .map((bet) => ({ won: bet.winnerResult === 'W', profit: bet.winnerProfit as number }))
   return performanceFrom(entries)
 }
@@ -141,7 +144,9 @@ export interface ConditionalSweep {
  * 2-0 market actually prices.
  */
 export function conditionalSweep(bets: readonly Bet[]): ConditionalSweep {
-  const correct = bets.filter((bet) => bet.winnerResult === 'W' && bet.selectedTeamSwept !== null)
+  const correct = bets.filter(
+    (bet) => bet.market !== null && bet.winnerResult === 'W' && bet.selectedTeamSwept !== null,
+  )
   const sweeps = correct.filter((bet) => bet.selectedTeamSwept === true).length
   const n = correct.length
   return {
@@ -163,7 +168,9 @@ export interface UpsetStats {
 
 /** How often the market favourite we backed actually lost. */
 export function upsetStats(bets: readonly Bet[]): UpsetStats {
-  const favourites = bets.filter((bet) => bet.isFavourite === true && bet.winnerResult !== 'VOID')
+  const favourites = bets.filter(
+    (bet) => bet.market !== null && bet.isFavourite === true && bet.winnerResult !== 'VOID',
+  )
   const losses = favourites.filter((bet) => bet.winnerResult === 'L').length
   const n = favourites.length
   return {
@@ -398,6 +405,8 @@ export function measureMargins(bets: readonly Bet[]): (league: string) => Margin
   const domestic = { sum: 0, n: 0 }
   for (const bet of bets) {
     if (bet.winnerOdds === null || bet.opponentOdds === null) continue
+    // Only real pairs measure the margin; a predicted pair would measure our own guess.
+    if (bet.winnerOddsQuality === 'estimated' || bet.opponentOddsQuality === 'estimated') continue
     const book = 1 / bet.winnerOdds + 1 / bet.opponentOdds
     // Ignore pairs the typo check would flag, so one mistake can't skew it.
     if (book < 1.0 || book > 1.15) continue
@@ -466,15 +475,19 @@ export function underdogBets(
     const recorded = bet.opponentOdds
     const theirs = recorded ?? otherSideOdds(mine, marginOf(bet.league))
     if (theirs === null) continue
-    const picked = mine > theirs
-    const won = picked ? bet.winnerResult === 'W' : bet.winnerResult === 'L'
-    const odds = picked ? mine : theirs
+    const dogIsSelected = mine > theirs
+    // Your pick was the underdog only if you picked at all.
+    const picked = bet.market !== null && dogIsSelected
+    const won = dogIsSelected ? bet.winnerResult === 'W' : bet.winnerResult === 'L'
+    const odds = dogIsSelected ? mine : theirs
     out.push({
       bet,
-      team: picked ? bet.selectedTeam : bet.opponent,
-      opponent: picked ? bet.opponent : bet.selectedTeam,
+      team: dogIsSelected ? bet.selectedTeam : bet.opponent,
+      opponent: dogIsSelected ? bet.opponent : bet.selectedTeam,
       odds,
-      estimated: !picked && recorded === null,
+      estimated: dogIsSelected
+        ? bet.winnerOddsQuality === 'estimated'
+        : recorded === null || bet.opponentOddsQuality === 'estimated',
       picked,
       won,
       profit: won ? odds - 1 : -1,
@@ -539,7 +552,11 @@ export interface TeamPoint {
 }
 
 export function teamPoints(bets: readonly Bet[], minimumPicks = 1, includeEstimated = true): TeamPoint[] {
-  const groups = groupBy(bets, (bet) => bet.selectedTeam)
+  // Teams you picked; a match with no bet was not a pick.
+  const groups = groupBy(
+    bets.filter((bet) => bet.market !== null),
+    (bet) => bet.selectedTeam,
+  )
   const points: TeamPoint[] = []
 
   for (const [team, rows] of groups) {

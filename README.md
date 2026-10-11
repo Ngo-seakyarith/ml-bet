@@ -46,7 +46,7 @@ than counted at evens.
 | -------------------------------------------------- | -------------------------------------------------------------------- |
 | `selected_match_winner_odds` | The selected team's Match Winner price |
 | `score`                                             | Series score from the pick's side (`2-0`, `2-1`, `1-2`, `0-2`); blank if not played. Won/lost and sweep are worked out from it |
-| `bet` | Your bet: `2-0`, `2-1`, `1-2`, `0-2`, `Over 2.5`, `Under 2.5`, `+1.5` (selected team) or `Win` (selected team to win). Blank = no bet, just a fixture |
+| `bet` | Your bet: `2-0`, `2-1`, `1-2`, `0-2`, `Over 2.5`, `Under 2.5`, `+1.5` (selected team) or `Win` (selected team to win). Blank = no bet: an upcoming fixture, or a finished match you did not pick. A finished match with no bet counts only in the favourite/underdog/total-maps what-ifs and league rates, never in your picks |
 | `opponent_match_winner_odds` | The opponent's Match Winner price; lets the Underdogs page use real prices |
 | `notes` | One short note, only for what the other columns can't show (skipped bet, price moved, postponed, team listed under another name) |
 | (results) | Worked out from `score`: who won, and whether the bet won. A blank score (not played or postponed) keeps the row out of every stat |
@@ -66,7 +66,9 @@ October 5. Earlier rows keep their existing strategy snapshots and results.
 Your bet's price is the matching market column (2-0 → `correct_score_2_0_odds`, Under 2.5 →
 `total_maps_under_2_5_odds`, +1.5 → `selected_plus_1_5_odds`, Win →
 `selected_match_winner_odds`), so put the price you actually got there. A `~` marks a predicted
-or estimated price. A +1.5 bet with a blank `selected_plus_1_5_odds` is an error: that line was
+or estimated price, in any price column including the two Match Winner columns (used for
+backfilled weeks where the real price was never recorded). Predicted Match Winner pairs are
+never used to measure the bookmaker margin. A +1.5 bet with a blank `selected_plus_1_5_odds` is an error: that line was
 not offered, and it is never estimated. A row with a blank `bet` is a fixture, not a bet.
 
 Score and handicap prices are mapped to the CSV's team order even when Thunderpick lists the
@@ -99,6 +101,34 @@ measured margin and counted as estimated. Each row shows how many of its prices 
 predicted; when most are, its ROI is a guess, not evidence.
 
 Adding a new bet type to the parser adds it to every table automatically: no new page needed.
+
+## Standings
+
+The Standings page shows regular-season tables for MPL PH, MPL ID and MPL MY, ranked by series wins and
+then map difference, with a week picker to see the table as it stood after any week. Each season
+comes from one results file per league in `src/data/` (one row per series:
+`season,week,date,team_1,team_2,score`, score from team_1's side, blank when not played yet):
+
+- `MPL_PH_Seasons.csv`: Seasons 15–17. This PH season is read from the betting CSV instead,
+  which already holds every PH match, so PH results are entered once.
+- `MPL_ID_Seasons.csv`: Seasons 15–18, including this season's fixtures still to play. Add
+  each week's ID scores here (the betting CSV only has the ID matches you tracked).
+- `MPL_MY_Seasons.csv`: Seasons 17–18, the same way.
+
+Older seasons are left out on purpose: team names changed, so they would not line up.
+
+Matches still to play get a call from that league's playbook. PH: skip Weeks 1–2, back the
+favourite from Week 3, 2-0 against the last-place team, skip when the table and the bookmaker
+disagree. ID: back the underdog to win (never 2-0), 2 units when the underdog has the better
+record. MY: 2-0 against the last-place team; no other MY rule is tested yet. Calls use the prices in the betting CSV, so a fixture needs a row there to get a price.
+
+## Playoffs
+
+The Standings page also draws the playoff bracket under the table for any season that has one, from `src/data/MPL_Playoffs.csv` (one row per
+series: `league,season,round,date,team_1,team_2,score`). Seeds are the regular-season final
+ranks from the results files, and a series the lower seed won is marked as an upset. Rounds:
+Play-in, Upper Bracket Semifinal, Upper Bracket Final, Lower Bracket Semifinal, Lower Bracket
+Final, Grand Final.
 
 ## How the numbers are defined
 
@@ -153,5 +183,5 @@ src/
   lib/        parse.ts, stats.ts, strategies.ts, types.ts, format.ts, palette.ts
   composables/ reactive dataset, filters and colour scheme
   components/ UI primitives, shared segment table, charts
-  pages/      Dashboard, Strategies, Matches, Odds groups, Weeks, Leagues, Underdogs, Bankroll, Data
+  pages/      Dashboard, Strategies, Standings, Matches, Odds groups, Weeks, Leagues, Underdogs, Bankroll, Data
 ```
