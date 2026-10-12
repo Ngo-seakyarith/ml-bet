@@ -1,169 +1,545 @@
-season,week,date,scheduled_time_ph_utc8,team_1,team_2,score
-15,1,2025-02-28,17:00,Twisted Minds PH,Aurora Gaming PH,0-2
-15,1,2025-02-28,19:30,ONIC Philippines,TNC Pro Team,2-0
-15,1,2025-03-01,14:30,Team Falcons PH,Team Liquid PH,0-2
-15,1,2025-03-01,17:00,TNC Pro Team,AP.Bren,2-0
-15,1,2025-03-01,19:30,Aurora Gaming PH,ONIC Philippines,2-1
-15,1,2025-03-02,17:00,Omega Esports,Team Falcons PH,0-2
-15,1,2025-03-02,19:30,Team Liquid PH,Twisted Minds PH,2-0
-15,2,2025-03-07,17:00,Team Falcons PH,ONIC Philippines,2-1
-15,2,2025-03-07,19:30,AP.Bren,Aurora Gaming PH,1-2
-15,2,2025-03-08,14:30,TNC Pro Team,Omega Esports,2-0
-15,2,2025-03-08,17:00,Twisted Minds PH,Team Falcons PH,0-2
-15,2,2025-03-08,19:30,Team Liquid PH,AP.Bren,2-0
-15,2,2025-03-09,17:00,Twisted Minds PH,TNC Pro Team,1-2
-15,2,2025-03-09,19:30,Omega Esports,Team Liquid PH,1-2
-15,3,2025-03-14,17:00,Omega Esports,Twisted Minds PH,2-0
-15,3,2025-03-14,19:30,TNC Pro Team,Team Falcons PH,0-2
-15,3,2025-03-15,14:30,AP.Bren,Twisted Minds PH,1-2
-15,3,2025-03-15,17:00,Omega Esports,Aurora Gaming PH,1-2
-15,3,2025-03-15,19:30,Team Liquid PH,ONIC Philippines,2-0
-15,3,2025-03-16,17:00,Aurora Gaming PH,TNC Pro Team,2-1
-15,3,2025-03-16,19:30,ONIC Philippines,AP.Bren,2-0
-15,4,2025-03-21,17:00,TNC Pro Team,Team Liquid PH,1-2
-15,4,2025-03-21,19:30,AP.Bren,Omega Esports,2-0
-15,4,2025-03-22,14:30,Aurora Gaming PH,Team Liquid PH,2-1
-15,4,2025-03-22,17:00,ONIC Philippines,Omega Esports,2-0
-15,4,2025-03-22,19:30,Team Falcons PH,AP.Bren,2-1
-15,4,2025-03-23,17:00,Twisted Minds PH,ONIC Philippines,1-2
-15,4,2025-03-23,19:30,Team Falcons PH,Aurora Gaming PH,0-2
-15,5,2025-03-28,17:00,Aurora Gaming PH,Twisted Minds PH,2-0
-15,5,2025-03-28,19:30,TNC Pro Team,ONIC Philippines,0-2
-15,5,2025-03-29,14:30,Team Liquid PH,Team Falcons PH,2-1
-15,5,2025-03-29,17:00,AP.Bren,TNC Pro Team,0-2
-15,5,2025-03-29,19:30,ONIC Philippines,Aurora Gaming PH,2-1
-15,5,2025-03-30,17:00,Team Falcons PH,Omega Esports,2-0
-15,5,2025-03-30,19:30,Twisted Minds PH,Team Liquid PH,1-2
-15,6,2025-04-04,17:00,ONIC Philippines,Team Falcons PH,2-0
-15,6,2025-04-04,19:30,Aurora Gaming PH,AP.Bren,2-0
-15,6,2025-04-05,14:30,Omega Esports,TNC Pro Team,0-2
-15,6,2025-04-05,17:00,Team Falcons PH,Twisted Minds PH,2-0
-15,6,2025-04-05,19:30,AP.Bren,Team Liquid PH,0-2
-15,6,2025-04-06,17:00,TNC Pro Team,Twisted Minds PH,0-2
-15,6,2025-04-06,19:30,Team Liquid PH,Omega Esports,2-0
-15,7,2025-04-25,17:00,Twisted Minds PH,Omega Esports,1-2
-15,7,2025-04-25,19:30,Team Falcons PH,TNC Pro Team,2-1
-15,7,2025-04-26,14:30,Twisted Minds PH,AP.Bren,2-0
-15,7,2025-04-26,17:00,Aurora Gaming PH,Omega Esports,2-0
-15,7,2025-04-26,19:30,ONIC Philippines,Team Liquid PH,2-1
-15,7,2025-04-27,17:00,TNC Pro Team,Aurora Gaming PH,1-2
-15,7,2025-04-27,19:30,AP.Bren,ONIC Philippines,0-2
-15,8,2025-05-02,17:00,Team Liquid PH,TNC Pro Team,2-0
-15,8,2025-05-02,19:30,Omega Esports,AP.Bren,1-2
-15,8,2025-05-03,14:30,Team Liquid PH,Aurora Gaming PH,2-0
-15,8,2025-05-03,17:00,Omega Esports,ONIC Philippines,1-2
-15,8,2025-05-03,19:30,AP.Bren,Team Falcons PH,2-1
-15,8,2025-05-04,17:00,ONIC Philippines,Twisted Minds PH,2-0
-15,8,2025-05-04,19:30,Aurora Gaming PH,Team Falcons PH,2-1
-16,1,2025-08-22,17:00,Omega Esports,TNC Pro Team,2-1
-16,1,2025-08-22,19:30,Aurora Gaming PH,Team Falcons PH,0-2
-16,1,2025-08-23,14:30,AP.Bren,Omega Esports,2-1
-16,1,2025-08-23,17:00,Team Falcons PH,Twisted Minds PH,0-2
-16,1,2025-08-23,19:30,ONIC Philippines,Team Liquid PH,2-0
-16,1,2025-08-24,17:00,AP.Bren,Twisted Minds PH,1-2
-16,1,2025-08-24,19:30,TNC Pro Team,Team Liquid PH,0-2
-16,2,2025-08-29,17:00,AP.Bren,ONIC Philippines,0-2
-16,2,2025-08-29,19:30,Team Liquid PH,Aurora Gaming PH,1-2
-16,2,2025-08-30,14:30,TNC Pro Team,Team Falcons PH,2-0
-16,2,2025-08-30,17:00,Omega Esports,Twisted Minds PH,1-2
-16,2,2025-08-30,19:30,ONIC Philippines,Aurora Gaming PH,1-2
-16,2,2025-08-31,17:00,Omega Esports,Team Falcons PH,2-0
-16,2,2025-08-31,19:30,Team Liquid PH,Twisted Minds PH,2-0
-16,3,2025-09-05,17:00,Aurora Gaming PH,Twisted Minds PH,2-1
-16,3,2025-09-05,19:30,ONIC Philippines,Team Falcons PH,2-0
-16,3,2025-09-06,14:30,AP.Bren,TNC Pro Team,0-2
-16,3,2025-09-06,17:00,Omega Esports,Team Liquid PH,0-2
-16,3,2025-09-06,19:30,ONIC Philippines,Twisted Minds PH,1-2
-16,3,2025-09-07,17:00,AP.Bren,Team Falcons PH,2-1
-16,3,2025-09-07,19:30,TNC Pro Team,Aurora Gaming PH,0-2
-16,4,2025-09-12,17:00,AP.Bren,Aurora Gaming PH,0-2
-16,4,2025-09-12,19:30,ONIC Philippines,Omega Esports,2-0
-16,4,2025-09-13,14:30,TNC Pro Team,Twisted Minds PH,2-1
-16,4,2025-09-13,17:00,Omega Esports,Aurora Gaming PH,1-2
-16,4,2025-09-13,19:30,Team Liquid PH,Team Falcons PH,2-1
-16,4,2025-09-14,17:00,ONIC Philippines,TNC Pro Team,2-1
-16,4,2025-09-14,19:30,AP.Bren,Team Liquid PH,0-2
-16,5,2025-09-19,17:00,TNC Pro Team,Omega Esports,1-2
-16,5,2025-09-19,19:30,Team Falcons PH,Aurora Gaming PH,1-2
-16,5,2025-09-20,14:30,Omega Esports,AP.Bren,1-2
-16,5,2025-09-20,17:00,Twisted Minds PH,Team Falcons PH,1-2
-16,5,2025-09-20,19:30,Team Liquid PH,ONIC Philippines,1-2
-16,5,2025-09-21,17:00,Twisted Minds PH,AP.Bren,2-0
-16,5,2025-09-21,19:30,Team Liquid PH,TNC Pro Team,2-0
-16,6,2025-09-27,14:30,Team Falcons PH,TNC Pro Team,1-2
-16,6,2025-09-27,17:00,Twisted Minds PH,Omega Esports,0-2
-16,6,2025-09-27,19:30,Aurora Gaming PH,ONIC Philippines,2-1
-16,6,2025-09-28,17:00,Team Falcons PH,Omega Esports,1-2
-16,6,2025-09-28,19:30,Twisted Minds PH,Team Liquid PH,1-2
-16,6,2025-09-29,17:00,ONIC Philippines,AP.Bren,0-2
-16,6,2025-09-29,19:30,Aurora Gaming PH,Team Liquid PH,2-0
-16,7,2025-10-03,17:00,Twisted Minds PH,Aurora Gaming PH,0-2
-16,7,2025-10-03,19:30,Team Falcons PH,ONIC Philippines,2-1
-16,7,2025-10-04,14:30,TNC Pro Team,AP.Bren,2-1
-16,7,2025-10-04,17:00,Team Liquid PH,Omega Esports,2-0
-16,7,2025-10-04,19:30,Twisted Minds PH,ONIC Philippines,0-2
-16,7,2025-10-05,17:00,Team Falcons PH,AP.Bren,2-0
-16,7,2025-10-05,19:30,Aurora Gaming PH,TNC Pro Team,2-1
-16,8,2025-10-10,17:00,Aurora Gaming PH,AP.Bren,2-1
-16,8,2025-10-10,19:30,Omega Esports,ONIC Philippines,0-2
-16,8,2025-10-11,14:30,Twisted Minds PH,TNC Pro Team,2-1
-16,8,2025-10-11,17:00,Aurora Gaming PH,Omega Esports,2-0
-16,8,2025-10-11,19:30,Team Falcons PH,Team Liquid PH,2-1
-16,8,2025-10-12,17:00,TNC Pro Team,ONIC Philippines,1-2
-16,8,2025-10-12,19:30,Team Liquid PH,AP.Bren,2-0
-17,1,2026-03-20,17:00,Team Liquid PH,Aurora Gaming PH,2-1
-17,1,2026-03-20,19:30,Twisted Minds PH,ONIC Philippines,1-2
-17,1,2026-03-21,14:30,AP.Bren,Omega Esports,2-0
-17,1,2026-03-21,17:00,Aurora Gaming PH,TNC Pro Team,2-0
-17,1,2026-03-21,19:30,Twisted Minds PH,Team Liquid PH,0-2
-17,1,2026-03-22,17:00,TNC Pro Team,AP.Bren,1-2
-17,1,2026-03-22,19:30,ONIC Philippines,Team Falcons PH,1-2
-17,2,2026-03-27,17:00,Twisted Minds PH,Omega Esports,2-1
-17,2,2026-03-27,19:30,ONIC Philippines,TNC Pro Team,0-2
-17,2,2026-03-28,14:30,Team Falcons PH,Team Liquid PH,1-2
-17,2,2026-03-28,17:00,Omega Esports,TNC Pro Team,2-0
-17,2,2026-03-28,19:30,Twisted Minds PH,Aurora Gaming PH,0-2
-17,2,2026-03-29,17:00,AP.Bren,Team Liquid PH,1-2
-17,2,2026-03-29,19:30,Aurora Gaming PH,Team Falcons PH,1-2
-17,3,2026-04-10,17:00,ONIC Philippines,AP.Bren,2-0
-17,3,2026-04-10,19:30,Team Liquid PH,Omega Esports,2-0
-17,3,2026-04-11,14:30,AP.Bren,Twisted Minds PH,0-2
-17,3,2026-04-11,17:00,Omega Esports,Team Falcons PH,0-2
-17,3,2026-04-11,19:30,TNC Pro Team,Team Liquid PH,0-2
-17,3,2026-04-12,17:00,Team Falcons PH,Twisted Minds PH,2-0
-17,3,2026-04-12,19:30,ONIC Philippines,Aurora Gaming PH,2-0
-17,4,2026-04-17,17:00,TNC Pro Team,Team Falcons PH,0-2
-17,4,2026-04-17,19:30,Omega Esports,ONIC Philippines,0-2
-17,4,2026-04-18,14:30,TNC Pro Team,Twisted Minds PH,1-2
-17,4,2026-04-18,17:00,Team Falcons PH,AP.Bren,2-0
-17,4,2026-04-18,19:30,Aurora Gaming PH,Omega Esports,1-2
-17,4,2026-04-19,17:00,Team Liquid PH,ONIC Philippines,2-0
-17,4,2026-04-19,19:30,AP.Bren,Aurora Gaming PH,0-2
-17,5,2026-04-24,17:00,Aurora Gaming PH,Team Liquid PH,0-2
-17,5,2026-04-24,19:30,ONIC Philippines,Twisted Minds PH,2-0
-17,5,2026-04-25,14:30,Omega Esports,AP.Bren,2-1
-17,5,2026-04-25,17:00,TNC Pro Team,Aurora Gaming PH,2-0
-17,5,2026-04-25,19:30,Team Liquid PH,Twisted Minds PH,2-0
-17,5,2026-04-26,17:00,AP.Bren,TNC Pro Team,2-1
-17,5,2026-04-26,19:30,Team Falcons PH,ONIC Philippines,2-1
-17,6,2026-05-01,17:00,Omega Esports,Twisted Minds PH,2-0
-17,6,2026-05-01,19:30,TNC Pro Team,ONIC Philippines,0-2
-17,6,2026-05-02,14:30,Team Liquid PH,Team Falcons PH,1-2
-17,6,2026-05-02,17:00,TNC Pro Team,Omega Esports,0-2
-17,6,2026-05-02,19:30,Aurora Gaming PH,Twisted Minds PH,1-2
-17,6,2026-05-03,17:00,Team Liquid PH,AP.Bren,2-1
-17,6,2026-05-03,19:30,Team Falcons PH,Aurora Gaming PH,2-0
-17,7,2026-05-08,17:00,AP.Bren,ONIC Philippines,0-2
-17,7,2026-05-08,19:30,Omega Esports,Team Liquid PH,0-2
-17,7,2026-05-09,14:30,Twisted Minds PH,AP.Bren,2-0
-17,7,2026-05-09,17:00,Team Falcons PH,Omega Esports,1-2
-17,7,2026-05-09,19:30,Team Liquid PH,TNC Pro Team,2-0
-17,7,2026-05-10,17:00,Twisted Minds PH,Team Falcons PH,0-2
-17,7,2026-05-10,19:30,Aurora Gaming PH,ONIC Philippines,1-2
-17,8,2026-05-15,17:00,Team Falcons PH,TNC Pro Team,2-0
-17,8,2026-05-15,19:30,ONIC Philippines,Omega Esports,2-1
-17,8,2026-05-16,14:30,Twisted Minds PH,TNC Pro Team,2-1
-17,8,2026-05-16,17:00,AP.Bren,Team Falcons PH,0-2
-17,8,2026-05-16,19:30,Omega Esports,Aurora Gaming PH,1-2
-17,8,2026-05-17,17:00,ONIC Philippines,Team Liquid PH,0-2
-17,8,2026-05-17,19:30,Aurora Gaming PH,AP.Bren,2-1
+season,week,date,scheduled_time_ph_utc8,team_1,team_2,game,winner,duration,kills_1,kills_2,lords_1,lords_2,turtles_1,turtles_2,towers_1,towers_2,team_1_player_1,team_1_hero_1,team_1_player_2,team_1_hero_2,team_1_player_3,team_1_hero_3,team_1_player_4,team_1_hero_4,team_1_player_5,team_1_hero_5,team_2_player_1,team_2_hero_1,team_2_player_2,team_2_hero_2,team_2_player_3,team_2_hero_3,team_2_player_4,team_2_hero_4,team_2_player_5,team_2_hero_5
+15,1,2025-02-28,17:00,Twisted Minds PH,Aurora Gaming PH,1,Aurora Gaming PH,18.9,7,18,0,2,2,1,3,8,MPtheKing.,Hayabusa,Jeymz,Hilda,Hadjizy,Yve,Outplayed,Harith,Sensui,Hylos,Demonkite,Suyou,Domengkite,Granger,Edward,Phoveus,Renejay,Chou,Yue,Vexana
+15,1,2025-02-28,17:00,Twisted Minds PH,Aurora Gaming PH,2,Aurora Gaming PH,13.9,2,9,0,2,0,3,0,9,Jeymz,Gloo,MPtheKing.,Hanzo,Sensui,Hilda,Hadjizy,Faramis,Outplayed,Granger,Demonkite,Suyou,Edward,Edith,Domengkite,Harith,Yue,Pharsa,Renejay,Hylos
+15,1,2025-02-28,19:30,ONIC Philippines,TNC Pro Team,1,ONIC Philippines,17.9,21,13,1,1,3,0,9,5,K1NGKONG,Joy,Kirk,Cici,Kelra,Granger,Brusko,Khaleed,SuperFrince,Pharsa,LanceCy,Luo Yi,Yawi,Gatotkaca,Zaida,Suyou,Kouzen,Moskov,LordJM.,Hilda
+15,1,2025-02-28,19:30,ONIC Philippines,TNC Pro Team,2,ONIC Philippines,21.9,5,8,1,3,0,3,6,8,Brusko,Chou,K1NGKONG,Suyou,Kelra,Granger,SuperFrince,Cecilion,Kirk,Edith,Kouzen,Harith,Zaida,Alpha,Yawi,Mathilda,LordJM.,Barats,LanceCy,Aurora
+15,1,2025-03-01,14:30,Team Falcons PH,Team Liquid PH,1,Team Liquid PH,18.6,11,15,0,3,2,1,3,8,KyleTzy,Suyou,Pheww,Pharsa,FlapTzy,Gloo,SuperMarco,Karrie,Owgwen,Khaleed,Oheb,Granger,Jaypee,Mathilda,Sanford,Phoveus,Sanji,Valentina,KarlTzy,Alpha
+15,1,2025-03-01,14:30,Team Falcons PH,Team Liquid PH,2,Team Liquid PH,12.5,5,12,0,1,0,3,0,8,KyleTzy,Suyou,Owgwen,Chou,SuperMarco,Granger,Pheww,Selena,FlapTzy,Lukas,Oheb,Harith,Sanji,Pharsa,Sanford,Cici,Jaypee,Chip,KarlTzy,Joy
+15,1,2025-03-01,17:00,TNC Pro Team,AP.Bren,1,TNC Pro Team,13.2,18,4,2,0,2,1,7,1,Zaida,Suyou,Kouzen,Harith,LordJM.,Badang,Yawi,Jawhead,LanceCy,Vexana,JamesPangks,Joy,Der.,Phoveus,shizou,Granger,kkd0t,Hylos,chovskrt,Selena
+15,1,2025-03-01,17:00,TNC Pro Team,AP.Bren,2,TNC Pro Team,11.2,15,6,1,0,3,0,7,1,Yawi,Chou,Kouzen,Granger,Zaida,Suyou,LanceCy,Pharsa,LordJM.,Gatotkaca,JamesPangks,Joy,Der.,Cici,shizou,Moskov,kkd0t,Hylos,chovskrt,Selena
+15,1,2025-03-01,19:30,Aurora Gaming PH,ONIC Philippines,1,Aurora Gaming PH,19.8,9,7,3,0,3,0,9,1,Yue,Zhuxin,Renejay,Khaleed,Demonkite,Suyou,Domengkite,Karrie,Edward,Badang,Brusko,Gatotkaca,Kelra,Harith,Kirk,Edith,K1NGKONG,Nolan,SuperFrince,Mathilda
+15,1,2025-03-01,19:30,Aurora Gaming PH,ONIC Philippines,2,ONIC Philippines,12.7,4,10,0,1,1,2,2,8,Demonkite,Suyou,Domengkite,Granger,Renejay,Chou,Yue,Valentina,Edward,Lukas,K1NGKONG,Joy,Brusko,Chip,Kelra,Irithel,SuperFrince,Faramis,Kirk,Gatotkaca
+15,1,2025-03-01,19:30,Aurora Gaming PH,ONIC Philippines,3,Aurora Gaming PH,16.0,22,12,2,0,1,2,9,4,Yue,Yve,Demonkite,Alpha,Domengkite,Granger,Edward,Edith,Renejay,Hylos,Kelra,Harith,K1NGKONG,Suyou,SuperFrince,Pharsa,Kirk,Chou,Brusko,Gatotkaca
+15,1,2025-03-02,17:00,Omega Esports,Team Falcons PH,1,Team Falcons PH,13.8,3,21,0,2,0,3,0,9,Andoryuuu,Joy,JOWM,Irithel,UK1R,Selena,Louis,Edith,Ch4knu,Hylos,FlapTzy,Badang,KyleTzy,Suyou,SuperMarco,Granger,Pheww,Pharsa,Owgwen,Tigreal
+15,1,2025-03-02,17:00,Omega Esports,Team Falcons PH,2,Team Falcons PH,13.7,1,8,0,2,0,3,0,8,JOWM,Moskov,Andoryuuu,Suyou,Louis,Hylos,UK1R,Valentina,Ch4knu,Jawhead,Pheww,Yve,Owgwen,Chip,FlapTzy,Hilda,KyleTzy,Joy,SuperMarco,Irithel
+15,1,2025-03-02,19:30,Team Liquid PH,Twisted Minds PH,1,Team Liquid PH,12.7,10,2,1,0,2,1,8,1,Sanji,Luo Yi,Oheb,Granger,KarlTzy,Joy,Sanford,Hilda,Jaypee,Chou,MPtheKing.,Suyou,Sensui,Gatotkaca,Outplayed,Moskov,Hadjizy,Selena,Jeymz,lukas
+15,1,2025-03-02,19:30,Team Liquid PH,Twisted Minds PH,2,Team Liquid PH,9.1,19,10,0,0,3,0,6,0,Sanford,Phoveus,Oheb,Moskov,KarlTzy,Suyou,Jaypee,Jawhead,Sanji,Pharsa,MPtheKing.,Joy,Hadjizy,Yve,Sensui,Gatotkaca,Outplayed,Irithel,Jeymz,Hilda
+15,2,2025-03-07,17:00,Team Falcons PH,ONIC Philippines,1,ONIC Philippines,21.0,11,22,2,0,3,0,9,6,KyleTzy,Joy,FlapTzy,Badang,SuperMarco,Granger,Pheww,Faramis,Owgwen,Chip,Kelra,Moskov,Brusko,Chou,K1NGKONG,Fanny,SuperFrince,Valentina,Kirk,Lukas
+15,2,2025-03-07,17:00,Team Falcons PH,ONIC Philippines,2,Team Falcons PH,14.5,19,10,2,0,2,1,9,0,SuperMarco,Granger,FlapTzy,Hilda,Pheww,Pharsa,Owgwen,Chou,KyleTzy,Suyou,SuperFrince,Yve,Kelra,Irithel,Kirk,Cici,Brusko,Tigreal,K1NGKONG,Lukas
+15,2,2025-03-07,17:00,Team Falcons PH,ONIC Philippines,3,Team Falcons PH,20.6,24,9,1,2,3,0,8,1,SuperMarco,Granger,FlapTzy,Chou,KyleTzy,Nolan,Pheww,Vale,Owgwen,Khaleed,Kirk,Phoveus,SuperFrince,Luo Yi,Kelra,Irithel,K1NGKONG,Barats,Brusko,Badang
+15,2,2025-03-07,19:30,AP.Bren,Aurora Gaming PH,1,AP.Bren,20.1,16,17,2,1,2,1,4,8,JamesPangks,Suyou,shizou,Harith,Der.,Badang,chovskrt,Vexana,kkd0t,Jawhead,Demonkite,Joy,Domengkite,Granger,Renejay,Chou,Yue,Pharsa,Edward,Hylos
+15,2,2025-03-07,19:30,AP.Bren,Aurora Gaming PH,2,Aurora Gaming PH,13.5,8,19,0,2,0,3,0,7,shizou,Harith,kkd0t,Gatotkaca,Der.,Barats,chovskrt,Vexana,JamesPangks,Lukas,Demonkite,Suyou,Domengkite,Granger,Edward,Phoveus,Yue,Cecilion,Renejay,Hylos
+15,2,2025-03-07,19:30,AP.Bren,Aurora Gaming PH,3,Aurora Gaming PH,17.1,8,19,0,2,1,2,1,9,JamesPangks,Suyou,shizou,Harith,kkd0t,Jawhead,chovskrt,Vexana,Der.,Cici,Domengkite,Granger,Renejay,Gatotkaca,Yue,Valentina,Demonkite,Nolan,Edward,Edith
+15,2,2025-03-08,14:30,TNC Pro Team,Omega Esports,1,TNC Pro Team,23.6,12,9,4,0,1,2,8,2,Kouzen,Irithel,Yawi,Selena,LordJM.,Cici,LanceCy,Novaria,Zaida,Baxia,Ch4knu,Badang,JOWM,Granger,Andoryuuu,Hayabusa,UK1R,Vexana,Louis,Arlott
+15,2,2025-03-08,14:30,TNC Pro Team,Omega Esports,2,TNC Pro Team,15.7,12,7,2,0,2,1,8,2,Kouzen,Harith,LanceCy,Yve,Yawi,Chou,LordJM.,Hilda,Zaida,Nolan,Ch4knu,Tigreal,Andoryuuu,Suyou,JOWM,Moskov,UK1R,Pharsa,Louis,Badang
+15,2,2025-03-08,17:00,Twisted Minds PH,Team Falcons PH,1,Team Falcons PH,15.3,4,10,0,2,1,2,0,7,MPtheKing.,Suyou,Escalera,Hylos,Outplayed,Moskov,Jeymz,Lukas,Hadjizy,Pharsa,FlapTzy,Hilda,SuperMarco,Granger,KyleTzy,Nolan,Owgwen,Jawhead,Pheww,Luo Yi
+15,2,2025-03-08,17:00,Twisted Minds PH,Team Falcons PH,2,Team Falcons PH,14.6,7,20,0,1,0,3,1,9,Outplayed,Moskov,Jeymz,Badang,Escalera,Hylos,Hadjizy,Valentina,MPtheKing.,Hanzo,KyleTzy,Joy,SuperMarco,Irithel,FlapTzy,Chou,Pheww,Vexana,Owgwen,Jawhead
+15,2,2025-03-08,19:30,Team Liquid PH,AP.Bren,1,Team Liquid PH,14.7,21,7,2,0,3,0,9,1,Oheb,Harith,Sanji,Luo Yi,KarlTzy,Suyou,Jaypee,Jawhead,Sanford,Hilda,kkd0t,Badang,JamesPangks,Fanny,shizou,Irithel,chovskrt,Novaria,Der.,Edith
+15,2,2025-03-08,19:30,Team Liquid PH,AP.Bren,2,Team Liquid PH,17.7,15,12,0,3,3,0,6,5,Sanji,Luo Yi,KarlTzy,Joy,Oheb,Irithel,Jaypee,Hylos,Sanford,Lukas,shizou,Granger,Der.,Badang,JamesPangks,Suyou,chovskrt,Vexana,kkd0t,Gatotkaca
+15,2,2025-03-09,17:00,Twisted Minds PH,TNC Pro Team,1,Twisted Minds PH,11.6,20,8,3,1,1,2,7,2,Outplayed,Irithel,Jeymz,Phoveus,MPtheKing.,Julian,Escalera,Mathilda,Hadjizy,Cecilion,Kouzen,Granger,Zaida,Suyou,Yawi,Khaleed,LanceCy,Valentina,LordJM.,Edith
+15,2,2025-03-09,17:00,Twisted Minds PH,TNC Pro Team,2,TNC Pro Team,14.6,9,23,1,1,0,3,1,8,MPtheKing.,Suyou,Escalera,Chou,Jeymz,Phoveus,Hadjizy,Vexana,Outplayed,Moskov,Kouzen,Harith,LordJM.,Hilda,Zaida,Nolan,Yawi,Khufra,LanceCy,Pharsa
+15,2,2025-03-09,17:00,Twisted Minds PH,TNC Pro Team,3,TNC Pro Team,16.4,10,17,1,1,0,3,1,9,MPtheKing.,Joy,Escalera,Chou,Outplayed,Irithel,Hadjizy,Kadita,Jeymz,Gatotkaca,Kouzen,Granger,LordJM.,Badang,Zaida,Suyou,LanceCy,Pharsa,Yawi,Akai
+15,2,2025-03-09,19:30,Omega Esports,Team Liquid PH,1,Team Liquid PH,15.8,13,22,0,2,0,3,2,9,Louis,Gloo,JOWM,Granger,UK1R,Pharsa,SuperYoshi,Chou,Andoryuuu,Hayabusa,KarlTzy,Suyou,Oheb,Harith,Jaypee,Jawhead,Sanji,Valentina,Sanford,Lukas
+15,2,2025-03-09,19:30,Omega Esports,Team Liquid PH,2,Omega Esports,15.8,24,22,4,1,3,0,8,7,JOWM,Granger,UK1R,Luo Yi,Louis,Hilda,SuperYoshi,Ruby,Andoryuuu,Suyou,KarlTzy,Fanny,Sanford,Chou,Oheb,Irithel,Jaypee,Gatotkaca,Sanji,Vale
+15,2,2025-03-09,19:30,Omega Esports,Team Liquid PH,3,Team Liquid PH,17.1,13,20,0,2,3,0,3,9,Andoryuuu,Suyou,JOWM,Granger,Louis,Gloo,SuperYoshi,Chou,UK1R,Vexana,Oheb,Harith,Sanford,Hilda,Sanji,Yve,Jaypee,Chip,KarlTzy,Hayabusa
+15,3,2025-03-14,17:00,Omega Esports,Twisted Minds PH,1,Omega Esports,9.9,11,2,1,0,2,0,8,2,Louis,Phoveus,JOWM,Granger,Andoryuuu,Hayabusa,UK1R,Vexana,SuperYoshi,Ruby,MPtheKing.,Joy,Hadjizy,Chou,Outplayed,Irithel,Escalera,Floryn,Jeymz,Hilda
+15,3,2025-03-14,17:00,Omega Esports,Twisted Minds PH,2,Omega Esports,20.7,23,25,2,1,2,1,8,8,Andoryuuu,Joy,JOWM,Granger,Louis,Edith,UK1R,Pharsa,SuperYoshi,Badang,Jeymz,Phoveus,Escalera,Angela,Hadjizy,Chou,Outplayed,Irithel,MPtheKing.,Alice
+15,3,2025-03-14,19:30,TNC Pro Team,Team Falcons PH,1,Team Falcons PH,10.2,1,10,0,1,0,3,1,7,LordJM.,Cici,Yawi,Selena,Zaida,Baxia,LanceCy,Pharsa,Kouzen,Moskov,SuperMarco,Harith,KyleTzy,Hayabusa,Owgwen,Chou,Pheww,Valentina,FlapTzy,X.Borg
+15,3,2025-03-14,19:30,TNC Pro Team,Team Falcons PH,2,Team Falcons PH,17.2,8,14,2,0,3,0,7,8,LordJM.,Hilda,Zaida,Hayabusa,Kouzen,Granger,Yawi,Khufra,LanceCy,Pharsa,SuperMarco,Harith,FlapTzy,Chou,Pheww,Selena,KyleTzy,Ling,Owgwen,Hylos
+15,3,2025-03-15,14:30,AP.Bren,Twisted Minds PH,1,Twisted Minds PH,16.7,6,15,0,2,2,1,4,9,JamesPangks,Suyou,shizou,Granger,chovskrt,Pharsa,Der.,lukas,kkd0t,Hylos,Outplayed,Harith,Jeymz,Phoveus,MPtheKing.,Alice,Escalera,Floryn,Hadjizy,Hilda
+15,3,2025-03-15,14:30,AP.Bren,Twisted Minds PH,2,AP.Bren,10.7,20,7,1,0,2,1,7,0,chovskrt,Pharsa,JamesPangks,Suyou,shizou,Granger,kkd0t,Gatotkaca,Der.,Edith,Outplayed,Harith,Jeymz,Phoveus,MPtheKing.,Alice,Hadjizy,Hilda,Escalera,Selena
+15,3,2025-03-15,14:30,AP.Bren,Twisted Minds PH,3,Twisted Minds PH,13.6,3,17,0,1,1,2,2,7,JamesPangks,Suyou,shizou,Harith,kkd0t,Jawhead,chovskrt,Aurora,Der.,Edith,Escalera,Gatotkaca,Jeymz,Cici,MPtheKing.,Alice,Hadjizy,Angela,Outplayed,Granger
+15,3,2025-03-15,17:00,Omega Esports,Aurora Gaming PH,1,Aurora Gaming PH,25.2,13,16,4,1,3,0,8,8,Andoryuuu,Suyou,SuperYoshi,Chou,UK1R,Pharsa,JOWM,Claude,Louis,Edith,Yue,Luo Yi,Domengkite,Granger,Demonkite,Nolan,Renejay,Gatotkaca,Edward,lukas
+15,3,2025-03-15,17:00,Omega Esports,Aurora Gaming PH,2,Omega Esports,17.3,18,8,3,0,1,2,9,2,Louis,Phoveus,JOWM,Granger,Andoryuuu,Joy,UK1R,Vexana,SuperYoshi,Ruby,Demonkite,Suyou,Renejay,Gatotkaca,Domengkite,Harith,Yue,Valentina,Edward,Edith
+15,3,2025-03-15,17:00,Omega Esports,Aurora Gaming PH,3,Aurora Gaming PH,18.2,9,15,0,3,1,2,3,8,Andoryuuu,Suyou,SuperYoshi,Jawhead,UK1R,Vexana,JOWM,Moskov,Louis,Edith,Domengkite,Granger,Edward,Phoveus,Demonkite,Joy,Yue,Faramis,Renejay,Hylos
+15,3,2025-03-15,19:30,Team Liquid PH,ONIC Philippines,1,Team Liquid PH,11.7,11,3,1,0,3,0,7,1,Sanji,Luo Yi,KarlTzy,Suyou,Jaypee,Jawhead,Oheb,Bruno,Sanford,lukas,Kelra,Granger,K1NGKONG,Joy,SuperFrince,Selena,Kirk,Cici,Brusko,Hylos
+15,3,2025-03-15,19:30,Team Liquid PH,ONIC Philippines,2,Team Liquid PH,16.3,11,9,1,1,1,2,7,4,Sanji,Luo Yi,KarlTzy,Joy,Oheb,Granger,Jaypee,Gatotkaca,Sanford,Gloo,K1NGKONG,Suyou,Brusko,Jawhead,Kelra,Irithel,SuperFrince,Valentina,Kirk,Edith
+15,3,2025-03-16,17:00,Aurora Gaming PH,TNC Pro Team,1,Aurora Gaming PH,13.7,14,5,2,0,2,1,9,1,Demonkite,Suyou,Domengkite,Granger,Edward,Phoveus,Yue,Cecilion,Renejay,Tigreal,Kouzen,Harith,LordJM.,Badang,Zaida,Nolan,LanceCy,Vexana,Yawi,Jawhead
+15,3,2025-03-16,17:00,Aurora Gaming PH,TNC Pro Team,2,TNC Pro Team,20.9,18,19,0,3,0,3,4,9,Domengkite,Granger,Demonkite,Joy,Renejay,Chip,Edward,lukas,Yue,Cecilion,Zaida,Suyou,LordJM.,Badang,Kouzen,Harith,Yawi,Chou,LanceCy,Faramis
+15,3,2025-03-16,17:00,Aurora Gaming PH,TNC Pro Team,3,Aurora Gaming PH,17.9,7,2,3,0,2,1,9,2,Demonkite,Suyou,Edward,Hilda,Yue,Cecilion,Domengkite,Karrie,Renejay,Hylos,Kouzen,Granger,LordJM.,Phoveus,Zaida,Nolan,Yawi,Chou,LanceCy,Vexana
+15,3,2025-03-16,19:30,ONIC Philippines,AP.Bren,1,ONIC Philippines,13.2,14,6,2,0,3,0,8,0,K1NGKONG,Suyou,Brusko,Jawhead,Kelra,Harith,Kirk,Edith,SuperFrince,Selena,shizou,Granger,chovskrt,Pharsa,JamesPangks,Joy,Der.,Cici,kkd0t,Gatotkaca
+15,3,2025-03-16,19:30,ONIC Philippines,AP.Bren,2,ONIC Philippines,18.2,20,11,1,2,3,0,9,4,Kelra,Granger,Brusko,Jawhead,K1NGKONG,Joy,Kirk,lukas,SuperFrince,Aurora,JamesPangks,Suyou,kkd0t,Chou,shizou,Moskov,chovskrt,Pharsa,Der.,Phoveus
+15,4,2025-03-21,17:00,TNC Pro Team,Team Liquid PH,1,Team Liquid PH,23.6,11,16,2,2,2,1,6,6,Zaida,Suyou,Yawi,Jawhead,Bennyqt,Granger,LordJM.,Hylos,LanceCy,Novaria,Oheb,Harith,Jaypee,Mathilda,KarlTzy,Alpha,Sanford,lukas,Sanji,Faramis
+15,4,2025-03-21,17:00,TNC Pro Team,Team Liquid PH,2,TNC Pro Team,19.8,17,8,2,1,2,1,9,2,Yawi,Chou,Bennyqt,Granger,Zaida,Fanny,LordJM.,Hilda,LanceCy,Cecilion,KarlTzy,Suyou,Jaypee,Gatotkaca,Oheb,Harith,Sanford,lukas,Sanji,Valentina
+15,4,2025-03-21,17:00,TNC Pro Team,Team Liquid PH,3,Team Liquid PH,22.9,23,17,1,2,1,2,7,6,Bennyqt,Granger,Zaida,Joy,Yawi,Chou,LordJM.,Gloo,LanceCy,Valentina,KarlTzy,Suyou,Jaypee,Jawhead,Sanji,Pharsa,Sanford,Hilda,Oheb,Karrie
+15,4,2025-03-21,20:30,AP.Bren,Omega Esports,1,AP.Bren,20.4,12,1,4,0,3,0,8,2,kkd0t,Jawhead,shizou,Bruno,JamesPangks,Joy,chovskrt,Valentina,Der.,Hilda,Andoryuuu,Suyou,JOWM,Granger,SuperYoshi,Chou,UK1R,Vexana,Louis,Gloo
+15,4,2025-03-21,20:30,AP.Bren,Omega Esports,2,AP.Bren,14.2,10,5,1,1,0,3,7,6,Der.,Badang,kkd0t,Jawhead,JamesPangks,Suyou,chovskrt,Valentina,shizou,Moskov,Andoryuuu,Joy,JOWM,Granger,UK1R,Zhuxin,Louis,Edith,SuperYoshi,Gatotkaca
+15,4,2025-03-22,14:30,Aurora Gaming PH,Team Liquid PH,1,Team Liquid PH,16.3,8,13,0,2,0,3,2,9,Renejay,Mathilda,Yue,Cecilion,Domengkite,Harith,Edward,Cici,Demonkite,Baxia,Oheb,Granger,KarlTzy,Alpha,Sanji,Pharsa,Jaypee,Hylos,Sanford,Benedetta
+15,4,2025-03-22,14:30,Aurora Gaming PH,Team Liquid PH,2,Aurora Gaming PH,10.9,14,13,1,0,1,2,7,3,Domengkite,Granger,Edward,Phoveus,Yue,Cecilion,Demonkite,Hayabusa,Renejay,Gatotkaca,KarlTzy,Suyou,Jaypee,Hylos,Oheb,Harith,Sanji,Novaria,Sanford,Hilda
+15,4,2025-03-22,14:30,Aurora Gaming PH,Team Liquid PH,3,Aurora Gaming PH,15.1,16,4,1,1,1,2,8,5,Domengkite,Granger,Yue,Cecilion,Edward,Edith,Renejay,Estes,Demonkite,Baxia,Jaypee,Mathilda,KarlTzy,Alpha,Sanji,Pharsa,Oheb,Bruno,Sanford,Benedetta
+15,4,2025-03-22,17:00,ONIC Philippines,Omega Esports,1,ONIC Philippines,10.9,11,1,1,0,3,0,7,2,K1NGKONG,Suyou,Kelra,Harith,Brusko,Jawhead,Kirk,Gatotkaca,SuperFrince,Pharsa,JOWM,Granger,SuperYoshi,Chou,Andoryuuu,Joy,UK1R,Luo Yi,Louis,Hylos
+15,4,2025-03-22,17:00,ONIC Philippines,Omega Esports,2,ONIC Philippines,15.1,18,3,2,0,3,0,9,3,K1NGKONG,Suyou,Kelra,Harith,Brusko,Jawhead,SuperFrince,Selena,Kirk,Edith,SuperYoshi,Chip,Andoryuuu,Joy,JOWM,Granger,Louis,Gatotkaca,UK1R,Valentina
+15,4,2025-03-22,19:30,Team Falcons PH,AP.Bren,1,AP.Bren,12.0,3,10,0,1,0,3,0,7,KyleTzy,Joy,Owgwen,Hylos,SuperMarco,Irithel,Pheww,Faramis,FlapTzy,Phoveus,chovskrt,Pharsa,kkd0t,Jawhead,JamesPangks,Hayabusa,Der.,Badang,shizou,Granger
+15,4,2025-03-22,19:30,Team Falcons PH,AP.Bren,2,Team Falcons PH,16.5,19,5,3,0,2,1,9,2,SuperMarco,Harith,KyleTzy,Suyou,Owgwen,Hylos,Pheww,Luo Yi,FlapTzy,Gloo,kkd0t,Chip,JamesPangks,Joy,chovskrt,Valentina,shizou,Irithel,Der.,Cici
+15,4,2025-03-22,19:30,Team Falcons PH,AP.Bren,3,Team Falcons PH,14.1,18,4,1,0,3,0,7,0,KyleTzy,Joy,Owgwen,Chip,SuperMarco,Moskov,Pheww,Luo Yi,FlapTzy,Gloo,kkd0t,Khaleed,JamesPangks,Suyou,Der.,Badang,chovskrt,Valentina,shizou,Beatrix
+15,4,2025-03-23,17:00,Twisted Minds PH,ONIC Philippines,1,Twisted Minds PH,15.1,14,10,1,1,2,1,6,3,MPtheKing.,Suyou,Escalera,Hylos,Outplayed,Granger,Hadjizy,Cecilion,Jeymz,Phoveus,Kelra,Harith,Brusko,Gatotkaca,K1NGKONG,Joy,SuperFrince,Selena,Kirk,lukas
+15,4,2025-03-23,17:00,Twisted Minds PH,ONIC Philippines,2,ONIC Philippines,23.2,9,13,3,1,3,0,8,6,Jeymz,Hilda,Outplayed,Harith,MPtheKing.,Joy,Escalera,Hylos,Hadjizy,Faramis,K1NGKONG,Suyou,SuperFrince,Cecilion,Brusko,Tigreal,Kirk,Cici,Kelra,Karrie
+15,4,2025-03-23,17:00,Twisted Minds PH,ONIC Philippines,3,ONIC Philippines,16.4,8,12,0,2,3,0,2,9,MPtheKing.,Suyou,Jeymz,Phoveus,Outplayed,Granger,Escalera,Guinevere,Hadjizy,Aurora,Brusko,Gatotkaca,Kelra,Harith,K1NGKONG,Alpha,SuperFrince,Pharsa,Kirk,Gloo
+15,4,2025-03-23,19:30,Team Falcons PH,Aurora Gaming PH,1,Aurora Gaming PH,20.8,10,21,0,3,0,2,3,9,SuperMarco,Harith,KyleTzy,Joy,Owgwen,Hylos,Pheww,Angela,FlapTzy,Terizla,Domengkite,Moskov,Edward,Phoveus,Demonkite,Hayabusa,Renejay,Badang,Yue,Faramis
+15,4,2025-03-23,19:30,Team Falcons PH,Aurora Gaming PH,2,Aurora Gaming PH,10.1,3,8,0,0,2,1,0,5,Owgwen,Mathilda,SuperMarco,Harith,Pheww,Valentina,KyleTzy,lukas,FlapTzy,X.Borg,Demonkite,Suyou,Yue,Cecilion,Domengkite,Moskov,Edward,Barats,Renejay,Franco
+15,5,2025-03-28,17:00,Aurora Gaming PH,Twisted Minds PH,1,Aurora Gaming PH,15.2,13,8,1,0,1,2,7,1,Renejay,Kalea,Edward,Phoveus,Domengkite,Granger,Yue,Vale,Demonkite,lukas,Hadjizy,Cecilion,Jamal,Harith,MPtheKing.,Hanzo,Escalera,Gatotkaca,Jeymz,Hilda
+15,5,2025-03-28,17:00,Aurora Gaming PH,Twisted Minds PH,2,Aurora Gaming PH,13.1,17,7,1,0,1,2,8,1,Edward,Phoveus,Domengkite,Granger,Demonkite,Hayabusa,Yue,Pharsa,Renejay,Franco,MPtheKing.,Suyou,Hadjizy,Valentina,Jamal,Harith,Escalera,Hylos,Jeymz,Gloo
+15,5,2025-03-28,19:30,TNC Pro Team,ONIC Philippines,1,ONIC Philippines,18.3,9,10,0,3,1,2,1,9,Yawi,Kalea,Zaida,Hanzo,LordJM.,Badang,LanceCy,Valentina,Bennyqt,Karrie,Kelra,Granger,K1NGKONG,Joy,SuperFrince,Zhuxin,Brusko,Hilda,Kirk,Gloo
+15,5,2025-03-28,19:30,TNC Pro Team,ONIC Philippines,2,ONIC Philippines,23.5,15,15,2,1,1,2,7,7,Yawi,Chou,Bennyqt,Granger,Zaida,Hanzo,LordJM.,Hilda,LanceCy,Zhask,K1NGKONG,Suyou,Kelra,Harith,SuperFrince,Zhuxin,Brusko,Jawhead,Kirk,Gatotkaca
+15,5,2025-03-29,14:30,Team Liquid PH,Team Falcons PH,1,Team Falcons PH,14.0,12,19,0,2,1,2,2,7,Sanji,Luo Yi,KarlTzy,Suyou,Jaypee,Hylos,Sanford,Cici,Oheb,Irithel,Owgwen,Jawhead,SuperMarco,Granger,KyleTzy,Joy,FlapTzy,Gloo,Pheww,Pharsa
+15,5,2025-03-29,14:30,Team Liquid PH,Team Falcons PH,2,Team Liquid PH,17.9,14,12,2,1,2,1,9,4,Sanford,Phoveus,Sanji,Luo Yi,KarlTzy,Suyou,Oheb,Moskov,Jaypee,Hylos,FlapTzy,Cici,Pheww,Selena,KyleTzy,Joy,Owgwen,Kalea,SuperMarco,Bruno
+15,5,2025-03-29,14:30,Team Liquid PH,Team Falcons PH,3,Team Liquid PH,13.6,11,3,1,1,3,0,9,3,Oheb,Granger,KarlTzy,Suyou,Sanford,Phoveus,Jaypee,Gatotkaca,Sanji,Valentina,Owgwen,Jawhead,Pheww,Selena,FlapTzy,Hilda,SuperMarco,Moskov,KyleTzy,Joy
+15,5,2025-03-29,17:00,AP.Bren,TNC Pro Team,1,TNC Pro Team,21.1,12,18,0,4,1,1,0,9,JamesPangks,Suyou,kkd0t,Gatotkaca,chovskrt,Luo Yi,shizou,Harith,Der.,Hilda,Yawi,Chou,Bennyqt,Granger,Koyl,Fanny,3MarTzy,Gloo,LanceCy,Zhuxin
+15,5,2025-03-29,17:00,AP.Bren,TNC Pro Team,2,TNC Pro Team,20.0,14,16,0,4,1,2,0,9,JamesPangks,Suyou,shizou,Granger,kkd0t,Tigreal,chovskrt,Cecilion,Der.,Ruby,Yawi,Kalea,Koyl,Joy,LanceCy,Luo Yi,Bennyqt,Bruno,3MarTzy,Gloo
+15,5,2025-03-29,19:30,ONIC Philippines,Aurora Gaming PH,1,Aurora Gaming PH,14.6,5,6,0,1,0,3,3,7,K1NGKONG,Suyou,Brusko,Jawhead,Kelra,Granger,SuperFrince,Yve,Kirk,Edith,Domengkite,Harith,Renejay,Kalea,Demonkite,lukas,Yue,Cecilion,Edward,Hilda
+15,5,2025-03-29,19:30,ONIC Philippines,Aurora Gaming PH,2,ONIC Philippines,11.6,7,2,1,0,2,1,8,1,K1NGKONG,Suyou,Kelra,Granger,SuperFrince,Yve,Brusko,Chou,Kirk,Gatotkaca,Yue,Zhuxin,Renejay,Khaleed,Domengkite,Harith,Demonkite,Ling,Edward,Hylos
+15,5,2025-03-29,19:30,ONIC Philippines,Aurora Gaming PH,3,ONIC Philippines,15.4,14,2,2,0,3,0,9,0,K1NGKONG,Suyou,Kelra,Harith,Brusko,Tigreal,SuperFrince,Pharsa,Kirk,Hilda,Yue,Cecilion,Domengkite,Granger,Demonkite,lukas,Renejay,Gatotkaca,Edward,Edith
+15,5,2025-03-30,17:00,Team Falcons PH,Omega Esports,1,Team Falcons PH,22.9,17,11,3,1,2,1,9,4,SuperMarco,Granger,KyleTzy,Joy,FlapTzy,Gloo,Pheww,Yve,Owgwen,Gatotkaca,Andoryuuu,Suyou,Louis,Phoveus,UK1R,Vexana,SuperYoshi,Badang,JOWM,Irithel
+15,5,2025-03-30,17:00,Team Falcons PH,Omega Esports,2,Team Falcons PH,14.2,15,4,2,0,2,1,8,1,FlapTzy,Badang,SuperMarco,Moskov,KyleTzy,Suyou,Owgwen,Gatotkaca,Pheww,Faramis,Andoryuuu,Fanny,UK1R,Pharsa,Louis,Phoveus,JOWM,Karrie,SuperYoshi,Ruby
+15,5,2025-03-30,19:30,Twisted Minds PH,Team Liquid PH,1,Twisted Minds PH,20.6,18,6,3,0,1,2,8,1,Jeymz,Phoveus,MPtheKing.,Joy,Outplayed,Harith,Hadjizy,Pharsa,Escalera,Guinevere,Oheb,Granger,KarlTzy,Suyou,Sanji,Cecilion,Jaypee,Gatotkaca,Sanford,Badang
+15,5,2025-03-30,19:30,Twisted Minds PH,Team Liquid PH,2,Team Liquid PH,12.8,6,10,0,1,1,2,3,7,Outplayed,Harith,Escalera,Kalea,MPtheKing.,Suyou,Hadjizy,Cecilion,Jeymz,Cici,KarlTzy,Joy,Oheb,Granger,Jaypee,Jawhead,Sanji,Faramis,Sanford,Hylos
+15,5,2025-03-30,19:30,Twisted Minds PH,Team Liquid PH,3,Team Liquid PH,10.7,0,6,0,1,1,2,0,8,Escalera,Guinevere,Jeymz,Hilda,Outplayed,Granger,Hadjizy,Nana,MPtheKing.,Joy,Jaypee,Jawhead,Oheb,Harith,KarlTzy,Suyou,Sanji,Valentina,Sanford,Chou
+15,6,2025-04-04,17:00,ONIC Philippines,Team Falcons PH,1,ONIC Philippines,11.5,18,5,1,0,3,0,9,0,Brusko,Kalea,SuperFrince,Luo Yi,K1NGKONG,Suyou,Kirk,Gatotkaca,Kelra,Bruno,SuperMarco,Granger,KyleTzy,Joy,FlapTzy,Gloo,Owgwen,Khaleed,Pheww,Yve
+15,6,2025-04-04,17:00,ONIC Philippines,Team Falcons PH,2,ONIC Philippines,18.5,15,5,1,1,1,2,7,3,SuperFrince,Zhuxin,Kirk,Hilda,K1NGKONG,Joy,Kelra,Beatrix,Brusko,Chou,KyleTzy,Fanny,Owgwen,Khaleed,FlapTzy,Gatotkaca,SuperMarco,Harith,Pheww,Aurora
+15,6,2025-04-04,19:30,Aurora Gaming PH,AP.Bren,1,Aurora Gaming PH,10.3,14,4,1,0,1,2,6,0,Demonkite,Suyou,Domengkite,Moskov,Edward,Hilda,Yue,Zhuxin,Renejay,Chou,Der.,Phoveus,kkd0t,Kalea,JamesPangks,lukas,chovskrt,Valentina,shizou,Karrie
+15,6,2025-04-04,19:30,Aurora Gaming PH,AP.Bren,2,Aurora Gaming PH,13.1,12,6,1,0,0,3,7,1,Edward,Valentina,Domengkite,Granger,Demonkite,Hayabusa,Yue,Pharsa,Renejay,Hilda,JamesPangks,Suyou,shizou,Harith,chovskrt,Aurora,kkd0t,Jawhead,Der.,Lukas
+15,6,2025-04-05,14:30,Omega Esports,TNC Pro Team,1,TNC Pro Team,15.3,2,14,0,2,2,1,2,9,Andoryuuu,Joy,UK1R,Zhuxin,JOWM,Granger,Ch4knu,Baxia,Louis,Edith,Bennyqt,Harith,Koyl,Suyou,3MarTzy,Hilda,Yawi,Mathilda,LanceCy,Valentina
+15,6,2025-04-05,14:30,Omega Esports,TNC Pro Team,2,TNC Pro Team,17.2,5,15,1,2,0,3,2,8,UK1R,Zhuxin,JOWM,Harith,Andoryuuu,Hanzo,Louis,Edith,Ch4knu,Gatotkaca,Koyl,Suyou,Bennyqt,Granger,Yawi,Chou,LanceCy,Pharsa,3MarTzy,Hylos
+15,6,2025-04-05,17:00,Team Falcons PH,Twisted Minds PH,1,Team Falcons PH,21.5,14,13,4,0,3,0,9,3,FlapTzy,Hylos,KyleTzy,Suyou,SuperMarco,Granger,Pheww,Valentina,Owgwen,Kalea,Outplayed,Harith,MPtheKing.,Joy,Jeymz,Hilda,Hadjizy,Pharsa,Escalera,Guinevere
+15,6,2025-04-05,17:00,Team Falcons PH,Twisted Minds PH,2,Team Falcons PH,20.9,10,1,3,0,2,1,9,1,FlapTzy,Hylos,KyleTzy,Suyou,Owgwen,Kalea,Pheww,Cecilion,SuperMarco,Wanwan,Escalera,Mathilda,Jeymz,Phoveus,Outplayed,Harith,Hadjizy,Pharsa,MPtheKing.,Julian
+15,6,2025-04-05,19:30,AP.Bren,Team Liquid PH,1,Team Liquid PH,15.5,7,12,0,2,0,3,1,9,JamesPangks,Joy,Der.,Hilda,chovskrt,Zhuxin,shizou,Claude,kkd0t,Baxia,Oheb,Granger,Sanford,Phoveus,KarlTzy,Suyou,Jaypee,Hylos,Sanji,Pharsa
+15,6,2025-04-05,19:30,AP.Bren,Team Liquid PH,2,Team Liquid PH,15.1,7,15,0,2,2,1,3,9,Der.,Hilda,shizou,Harith,kkd0t,Gatotkaca,chovskrt,Pharsa,JamesPangks,Hayabusa,KarlTzy,Suyou,Oheb,Granger,Jaypee,Jawhead,Sanji,Vexana,Sanford,Badang
+15,6,2025-04-06,17:00,TNC Pro Team,Twisted Minds PH,1,Twisted Minds PH,26.1,11,16,2,2,2,1,6,7,Zaida,Suyou,Bennyqt,Harith,Yawi,Jawhead,LanceCy,Vexana,3MarTzy,Gloo,Outplayed,Granger,Escalera,Tigreal,MPtheKing.,Joy,Hadjizy,Pharsa,Jeymz,Hilda
+15,6,2025-04-06,17:00,TNC Pro Team,Twisted Minds PH,2,Twisted Minds PH,20.6,1,7,0,4,0,3,1,9,LanceCy,Cecilion,Zaida,Suyou,Bennyqt,Harith,3MarTzy,Edith,Yawi,Gatotkaca,Escalera,Mathilda,Jeymz,Hilda,Outplayed,Granger,MPtheKing.,Alpha,Hadjizy,Faramis
+15,6,2025-04-06,19:30,Team Liquid PH,Omega Esports,1,Team Liquid PH,11.4,16,3,1,0,3,0,8,1,KarlTzy,Suyou,Oheb,Granger,Jaypee,Hylos,Sanford,lukas,Sanji,Zhuxin,JOWM,Harith,Louis,Hilda,UK1R,Pharsa,Ch4knu,Badang,Andoryuuu,Ling
+15,6,2025-04-06,19:30,Team Liquid PH,Omega Esports,2,Team Liquid PH,23.3,20,17,1,3,1,2,9,7,Oheb,Granger,Jaypee,Chou,KarlTzy,Joy,Sanji,Pharsa,Sanford,Hylos,Andoryuuu,Suyou,JOWM,Harith,UK1R,Vexana,Ch4knu,Gatotkaca,Louis,Edith
+15,7,2025-04-25,17:00,Twisted Minds PH,Omega Esports,1,Omega Esports,14.1,9,13,1,0,2,1,6,3,MPtheKing.,Joy,Jeymz,Phoveus,Escalera,Chou,Outplayed,Moskov,Hadjizy,Yve,UK1R,Zhuxin,Louis,Gatotkaca,Andoryuuu,Hayabusa,SuperYoshi,Kalea,JOWM,Bruno
+15,7,2025-04-25,17:00,Twisted Minds PH,Omega Esports,2,Twisted Minds PH,14.0,15,5,2,0,3,0,9,1,MPtheKing.,Joy,Hadjizy,Yve,Escalera,Kalea,Jeymz,Hylos,Outplayed,Granger,UK1R,Zhuxin,JOWM,Harith,SuperYoshi,Badang,Louis,Phoveus,Andoryuuu,Helcurt
+15,7,2025-04-25,17:00,Twisted Minds PH,Omega Esports,3,Omega Esports,11.1,3,17,0,1,0,3,0,7,MPtheKing.,Joy,Hadjizy,Yve,Jeymz,Phoveus,Outplayed,Karrie,Escalera,Khaleed,SuperYoshi,Kalea,UK1R,Zhuxin,Andoryuuu,Ling,Louis,Gatotkaca,JOWM,Granger
+15,7,2025-04-25,19:30,Team Falcons PH,TNC Pro Team,1,TNC Pro Team,19.7,7,17,1,2,1,2,6,9,FlapTzy,Thamuz,SuperMarco,Granger,Pheww,Luo Yi,KyleTzy,Joy,Pandora,Gatotkaca,LordJM.,Badang,Bennyqt,Harith,Zaida,Hayabusa,Yawi,Chou,LanceCy,Valentina
+15,7,2025-04-25,19:30,Team Falcons PH,TNC Pro Team,2,Team Falcons PH,24.3,14,12,2,2,2,1,8,7,FlapTzy,Hilda,Pandora,Badang,KyleTzy,Hayabusa,Pheww,Novaria,SuperMarco,Clint,Bennyqt,Granger,Zaida,Joy,LordJM.,Hylos,LanceCy,Selena,Yawi,Guinevere
+15,7,2025-04-25,19:30,Team Falcons PH,TNC Pro Team,3,Team Falcons PH,11.6,20,7,1,0,1,2,7,2,Pandora,Kalea,KyleTzy,lukas,FlapTzy,Badang,SuperMarco,Beatrix,Pheww,Valentina,Zaida,Fredrinn,LanceCy,Luo Yi,Yawi,Mathilda,Bennyqt,Harith,LordJM.,Arlott
+15,7,2025-04-26,14:30,Twisted Minds PH,AP.Bren,1,Twisted Minds PH,12.4,9,12,0,1,2,1,4,1,Escalera,Chip,MPtheKing.,Leomord,Jeymz,Phoveus,Outplayed,Irithel,Hadjizy,Yve,shizou,Harith,chovskrt,Valentina,JamesPangks,lukas,Der.,Cici,kkd0t,Carmilla
+15,7,2025-04-26,14:30,Twisted Minds PH,AP.Bren,2,Twisted Minds PH,18.5,19,13,2,1,1,2,9,3,Escalera,Kalea,Hadjizy,Zhuxin,MPtheKing.,Ling,Outplayed,Granger,Jeymz,Arlott,JamesPangks,Joy,Der.,Cici,chovskrt,Aurora,kkd0t,Jawhead,shizou,Harith
+15,7,2025-04-26,17:00,Aurora Gaming PH,Omega Esports,1,Aurora Gaming PH,14.7,11,3,2,0,3,0,9,2,Yue,Zhuxin,Demonkite,Suyou,Renejay,Khaleed,Edward,Esmeralda,Domengkite,Karrie,Louis,Hilda,JOWM,Harith,Andoryuuu,Hayabusa,SuperYoshi,Badang,UK1R,Pharsa
+15,7,2025-04-26,17:00,Aurora Gaming PH,Omega Esports,2,Aurora Gaming PH,16.8,14,11,2,0,1,2,8,5,Domengkite,Harith,Yue,Zhuxin,Demonkite,Fredrinn,Renejay,Chou,Edward,Arlott,SuperYoshi,Kalea,Andoryuuu,Fanny,UK1R,Yve,JOWM,Clint,Louis,Gatotkaca
+15,7,2025-04-26,19:30,ONIC Philippines,Team Liquid PH,1,ONIC Philippines,13.1,12,5,1,0,2,1,7,2,K1NGKONG,Joy,Kirk,Hylos,Kelra,Moskov,Brusko,Khufra,SuperFrince,Valir,Sanford,Phoveus,Sanji,Luo Yi,KarlTzy,Hayabusa,Jaypee,Chou,Oheb,Harith
+15,7,2025-04-26,19:30,ONIC Philippines,Team Liquid PH,2,Team Liquid PH,10.9,2,15,0,1,1,2,4,6,Kirk,Gatotkaca,K1NGKONG,Joy,SuperFrince,Valir,Kelra,Moskov,Brusko,Chou,Jaypee,Jawhead,KarlTzy,Hayabusa,Sanford,Badang,Oheb,Harith,Sanji,Novaria
+15,7,2025-04-26,19:30,ONIC Philippines,Team Liquid PH,3,ONIC Philippines,12.8,8,5,0,1,0,3,4,5,K1NGKONG,Joy,Kirk,Gatotkaca,SuperFrince,Valir,Brusko,Chou,Kelra,Beatrix,Sanford,Badang,Sanji,Luo Yi,KarlTzy,Hayabusa,Jaypee,Hylos,Oheb,Granger
+15,7,2025-04-27,17:00,TNC Pro Team,Aurora Gaming PH,1,Aurora Gaming PH,13.4,2,16,1,1,1,2,3,8,LanceCy,Cecilion,Koyl,Fredrinn,Yawi,Franco,Bennyqt,Granger,3MarTzy,Hilda,Edward,Kalea,Renejay,Mathilda,Domengkite,Moskov,Yue,Pharsa,Demonkite,Hanzo
+15,7,2025-04-27,17:00,TNC Pro Team,Aurora Gaming PH,2,TNC Pro Team,21.6,25,7,3,1,3,0,8,7,3MarTzy,Phoveus,Koyl,Hayabusa,Bennyqt,Harith,Yawi,Badang,LanceCy,Valir,Renejay,Chip,Demonkite,Suyou,Yue,Valentina,Edward,Hylos,Domengkite,Irithel
+15,7,2025-04-27,17:00,TNC Pro Team,Aurora Gaming PH,3,Aurora Gaming PH,19.6,10,11,0,3,2,1,5,9,LanceCy,Zhuxin,Koyl,Hayabusa,3MarTzy,Hilda,Yawi,Gatotkaca,Bennyqt,Granger,Renejay,Kalea,Yue,Yve,Demonkite,Suyou,Domengkite,Karrie,Edward,Esmeralda
+15,7,2025-04-27,19:30,AP.Bren,ONIC Philippines,1,ONIC Philippines,11.3,3,18,0,1,0,3,2,7,JamesPangks,Joy,Der.,Phoveus,shizou,Granger,kkd0t,Gatotkaca,chovskrt,Valentina,Brusko,Kalea,Kelra,Harith,K1NGKONG,Hayabusa,SuperFrince,Pharsa,Kirk,Hylos
+15,7,2025-04-27,19:30,AP.Bren,ONIC Philippines,2,ONIC Philippines,15.3,7,22,0,1,1,2,3,8,Der.,Hylos,shizou,Moskov,chovskrt,Luo Yi,kkd0t,Jawhead,JamesPangks,Ling,K1NGKONG,Hayabusa,Brusko,Gatotkaca,SuperFrince,Selena,Kirk,Badang,Kelra,Bruno
+15,8,2025-05-02,17:00,Team Liquid PH,TNC Pro Team,1,Team Liquid PH,16.6,15,6,1,1,2,1,9,2,KarlTzy,Joy,Oheb,Moskov,Sanford,Gloo,Sanji,Pharsa,Jaypee,Gatotkaca,LanceCy,Zhuxin,Yawi,Kalea,Bennyqt,Wanwan,3MarTzy,Badang,Zaida,Suyou
+15,8,2025-05-02,17:00,Team Liquid PH,TNC Pro Team,2,Team Liquid PH,10.5,14,2,1,0,1,1,8,0,Sanford,Phoveus,Oheb,Harith,KarlTzy,Hayabusa,Sanji,Pharsa,Jaypee,Tigreal,Zaida,Joy,3MarTzy,Hylos,Bennyqt,Granger,Yawi,Chou,LanceCy,Valentina
+15,8,2025-05-02,19:30,Omega Esports,AP.Bren,1,Omega Esports,13.1,17,2,1,0,3,0,7,1,SuperYoshi,Kalea,Andoryuuu,Joy,JOWM,Granger,Louis,Gloo,UK1R,Vexana,Der.,Cici,kkd0t,Gatotkaca,shizou,Harith,Sindel.,Angela,JamesPangks,Alice
+15,8,2025-05-02,19:30,Omega Esports,AP.Bren,2,AP.Bren,16.7,8,15,1,0,2,1,1,6,SuperYoshi,Kalea,Andoryuuu,Suyou,JOWM,Irithel,Louis,Cici,UK1R,Valir,JamesPangks,Leomord,chovskrt,Luo Yi,kkd0t,Hylos,shizou,Granger,Der.,Phoveus
+15,8,2025-05-02,19:30,Omega Esports,AP.Bren,3,AP.Bren,22.7,13,12,1,2,3,0,6,8,SuperYoshi,Kalea,JOWM,Ruby,UK1R,Lunox,Louis,Gloo,Andoryuuu,Yi Sun-shin,Der.,X.Borg,shizou,Granger,chovskrt,Zhuxin,kkd0t,Hylos,JamesPangks,Leomord
+15,8,2025-05-03,14:30,Team Liquid PH,Aurora Gaming PH,1,Team Liquid PH,26.0,22,19,0,4,2,1,5,9,Jaypee,Kalea,Sanji,Valentina,KarlTzy,lukas,Sanford,Gloo,Oheb,Kimmy,Demonkite,Hayabusa,Yue,Zhuxin,Edward,Badang,Domengkite,Moskov,Renejay,Khaleed
+15,8,2025-05-03,14:30,Team Liquid PH,Aurora Gaming PH,2,Team Liquid PH,12.3,19,9,1,0,3,0,7,5,Oheb,Harith,Sanford,Phoveus,KarlTzy,lukas,Sanji,Novaria,Jaypee,Gatotkaca,Renejay,Chip,Demonkite,Suyou,Domengkite,Moskov,Yue,Pharsa,Edward,Edith
+15,8,2025-05-03,17:00,Omega Esports,ONIC Philippines,1,Omega Esports,13.7,15,5,2,0,3,0,7,5,Andoryuuu,Joy,Louis,Gloo,UK1R,Selena,SuperYoshi,Gatotkaca,JOWM,Bruno,Brusko,Kalea,Kelra,Moskov,Kirk,Phoveus,SuperFrince,Pharsa,K1NGKONG,Ling
+15,8,2025-05-03,17:00,Omega Esports,ONIC Philippines,2,ONIC Philippines,15.4,8,11,0,2,0,3,2,9,UK1R,Zhuxin,JOWM,Moskov,SuperYoshi,Gatotkaca,Andoryuuu,Fredrinn,Louis,Arlott,Brusko,Kalea,K1NGKONG,Suyou,SuperFrince,Aurora,Kirk,Cici,Kelra,Wanwan
+15,8,2025-05-03,17:00,Omega Esports,ONIC Philippines,3,ONIC Philippines,24.8,19,15,3,2,3,0,6,9,Andoryuuu,Hayabusa,Louis,Hylos,UK1R,Selena,SuperYoshi,Chou,JOWM,Kimmy,Kelra,Harith,Brusko,Chip,SuperFrince,Faramis,K1NGKONG,X.Borg,Kirk,Masha
+15,8,2025-05-03,19:30,AP.Bren,Team Falcons PH,1,Team Falcons PH,17.2,9,20,0,3,1,1,2,8,shizou,Moskov,chovskrt,Valentina,JamesPangks,lukas,Sindel.,Chou,Der.,Hilda,FlapTzy,Phoveus,KyleTzy,Fanny,Pheww,Luo Yi,SuperMarco,Kimmy,Owgwen,Badang
+15,8,2025-05-03,19:30,AP.Bren,Team Falcons PH,2,AP.Bren,22.7,18,17,1,3,1,2,7,7,shizou,Granger,kkd0t,Hylos,chovskrt,Luo Yi,JamesPangks,Leomord,Der.,Arlott,Pandora,Cici,Pheww,Valentina,Owgwen,Kalea,KyleTzy,lukas,SuperMarco,Beatrix
+15,8,2025-05-03,19:30,AP.Bren,Team Falcons PH,3,AP.Bren,18.1,17,6,3,0,1,2,9,1,chovskrt,Luo Yi,JamesPangks,Leomord,shizou,Granger,Der.,Esmeralda,kkd0t,Baxia,Pheww,Valir,Owgwen,Badang,Pandora,Hylos,KyleTzy,Suyou,SuperMarco,Harith
+15,8,2025-05-04,17:00,ONIC Philippines,Twisted Minds PH,1,ONIC Philippines,23.1,10,6,3,0,2,1,7,3,Kelra,Harith,Brusko,Kalea,K1NGKONG,Suyou,SuperFrince,Kimmy,Kirk,lukas,Hadjizy,Zhuxin,Sensui,Fredrinn,Escalera,Floryn,Jeymz,Lapu-Lapu,Outplayed,Granger
+15,8,2025-05-04,17:00,ONIC Philippines,Twisted Minds PH,2,ONIC Philippines,14.2,13,9,2,0,3,0,9,3,Brusko,Kalea,Kelra,Harith,K1NGKONG,Suyou,SuperFrince,Valir,Kirk,Cici,Escalera,Chip,Hadjizy,Zhuxin,Jeymz,Masha,Outplayed,Claude,Sensui,Akai
+15,8,2025-05-04,19:30,Aurora Gaming PH,Team Falcons PH,1,Team Falcons PH,15.7,5,12,0,2,0,3,0,8,Yue,Zhuxin,Demonkite,Fredrinn,Domengkite,Harith,Renejay,Mathilda,Edward,Paquito,FlapTzy,Esmeralda,KyleTzy,Fanny,SuperMarco,Wanwan,Owgwen,Kalea,Pheww,Zhask
+15,8,2025-05-04,19:30,Aurora Gaming PH,Team Falcons PH,2,Aurora Gaming PH,13.8,15,7,2,0,2,1,8,0,Yue,Zhuxin,Demonkite,Suyou,Edward,Gloo,Domengkite,Karrie,Renejay,Jawhead,FlapTzy,Esmeralda,KyleTzy,lukas,Pheww,Valentina,Owgwen,Kalea,SuperMarco,Wanwan
+15,8,2025-05-04,19:30,Aurora Gaming PH,Team Falcons PH,3,Aurora Gaming PH,16.4,17,9,1,1,1,2,8,2,Demonkite,Fanny,Domengkite,Harith,Renejay,Jawhead,Yue,Novaria,Edward,Cici,FlapTzy,Hilda,KyleTzy,lukas,Pheww,Valentina,Owgwen,Kalea,SuperMarco,Karrie
+16,1,2025-08-22,17:00,Omega Esports,TNC Pro Team,1,Omega Esports,11.2,13,4,1,0,1,2,6,1,Hadji,Pharsa,Raizen.,Fanny,Jeymz,Lapu-Lapu,SUPERYOSHI,Kalea,Netskie,Karrie,Ch4knu,Gatotkaca,LanceCy,Selena,.3Mar,Arlott,Zaida,Joy,Bennyqt,Granger
+16,1,2025-08-22,17:00,Omega Esports,TNC Pro Team,2,TNC Pro Team,13.4,5,15,0,2,0,3,2,8,Jeymz,Hilda,Hadji,Pharsa,Raizen.,Fanny,SUPERYOSHI,Gatotkaca,Netskie,Harith,Zaida,Hayabusa,Bennyqt,Moskov,.3Mar,Lapu-Lapu,Ch4knu,Baxia,LanceCy,Kimmy
+16,1,2025-08-22,17:00,Omega Esports,TNC Pro Team,3,Omega Esports,10.8,8,2,1,0,2,1,6,1,Hadji,Pharsa,Raizen.,Hayabusa,Jeymz,Phoveus,Netskie,Harith,SUPERYOSHI,Khufra,Zaida,Fredrinn,LanceCy,Selena,Bennyqt,Moskov,Ch4knu,Badang,.3Mar,Gloo
+16,1,2025-08-22,19:30,Aurora Gaming PH,Team Falcons PH,1,Team Falcons PH,24.4,12,14,2,1,1,2,9,7,Demonkite,Yi Sun-shin,Yue,Selena,Domengkite,Ruby,Edward,Lapu-Lapu,Light.,Hylos,SuperMarco,Moskov,Owgwen,Gatotkaca,KyleTzy,Joy,Pheww,Kagura,Ferdz.,Cici
+16,1,2025-08-22,19:30,Aurora Gaming PH,Team Falcons PH,2,Team Falcons PH,14.4,7,10,0,2,0,3,3,9,Light.,Kalea,Yue,Selena,Demonkite,Fanny,Domengkite,Moskov,Edward,Uranus,KyleTzy,Joy,Pheww,Pharsa,Owgwen,Gatotkaca,SuperMarco,Bruno,Ferdz.,Cici
+16,1,2025-08-23,14:30,AP.Bren,Omega Esports,1,AP.Bren,22.2,15,6,3,0,2,1,8,2,LordJM.,Arlott,AQUA,Valentina,shizou,Moskov,JamesPangks,Akai,xNova,Gatotkaca,SUPERYOSHI,Kalea,Hadji,Pharsa,Jeymz,Lapu-Lapu,Raizen.,X.Borg,Netskie,Beatrix
+16,1,2025-08-23,14:30,AP.Bren,Omega Esports,2,Omega Esports,16.9,16,16,1,1,3,0,4,8,JamesPangks,Uranus,AQUA,Pharsa,xNova,Chou,shizou,Claude,LordJM.,Benedetta,Raizen.,Lancelot,Jeymz,Lapu-Lapu,Hadji,Kimmy,SUPERYOSHI,Badang,Netskie,Harith
+16,1,2025-08-23,14:30,AP.Bren,Omega Esports,3,AP.Bren,19.7,8,5,3,0,1,2,8,2,JamesPangks,Lancelot,AQUA,Selena,shizou,Harith,xNova,Khufra,LordJM.,Esmeralda,SUPERYOSHI,Chou,Hadji,Pharsa,Raizen.,Hayabusa,Jeymz,Gloo,Netskie,Granger
+16,1,2025-08-23,17:00,Team Falcons PH,Twisted Minds PH,1,Twisted Minds PH,15.7,9,24,2,0,1,2,1,8,Ferdz.,Phoveus,KyleTzy,Yi Sun-shin,SuperMarco,Harith,Owgwen,Gatotkaca,Pheww,Zhuxin,Lansu,Gloo,MPtheKing.,Lancelot,Sionnn,Kimmy,Caloy,Kalea,Nosia,Granger
+16,1,2025-08-23,17:00,Team Falcons PH,Twisted Minds PH,2,Twisted Minds PH,20.4,13,15,3,0,3,0,7,6,Ferdz.,Lapu-Lapu,KyleTzy,Lancelot,Pheww,Kagura,Owgwen,Hylos,SuperMarco,Karrie,Lansu,Uranus,MPtheKing.,Yi Sun-shin,Sionnn,Selena,Caloy,Arlott,Nosia,Moskov
+16,1,2025-08-23,19:30,ONIC Philippines,Team Liquid PH,1,ONIC Philippines,13.3,13,2,2,0,3,0,7,3,K1NGKONG,Lancelot,Brusko,Hylos,SuperFrince,Pharsa,Kirk,Badang,Kelra,Bruno,Sanford,Cici,Sanji,Zhuxin,KarlTzy,Joy,Oheb,Moskov,Jaypee,Jawhead
+16,1,2025-08-23,19:30,ONIC Philippines,Team Liquid PH,2,ONIC Philippines,19.1,18,15,3,0,2,1,7,3,SuperFrince,Selena,K1NGKONG,Lancelot,Kirk,Phoveus,Brusko,Hylos,Kelra,Claude,KarlTzy,Yi Sun-shin,Oheb,Harith,Jaypee,Gatotkaca,Sanford,Lapu-Lapu,Sanji,Valentina
+16,1,2025-08-24,17:00,AP.Bren,Twisted Minds PH,1,Twisted Minds PH,14.3,5,17,0,2,0,3,3,9,JamesPangks,Fanny,shizou,Moskov,AQUA,Selena,xNova,Baxia,LordJM.,Esmeralda,Lansu,Cici,MPtheKing.,Hayabusa,Sionnn,Kagura,Nosia,Harith,Caloy,Gatotkaca
+16,1,2025-08-24,17:00,AP.Bren,Twisted Minds PH,2,AP.Bren,13.6,20,9,1,0,2,1,8,1,xNova,Kalea,AQUA,Pharsa,shizou,Harith,JamesPangks,Hayabusa,LordJM.,Phoveus,Sionnn,Zhuxin,MPtheKing.,Roger,Lansu,Cici,Caloy,Gatotkaca,Nosia,Granger
+16,1,2025-08-24,17:00,AP.Bren,Twisted Minds PH,3,Twisted Minds PH,11.8,3,19,0,1,0,3,1,8,LordJM.,Phoveus,JamesPangks,Lukas,AQUA,Pharsa,xNova,Gatotkaca,shizou,Harith,Caloy,Kalea,MPtheKing.,Yi Sun-shin,Sionnn,Kagura,Nosia,Granger,Lansu,Hylos
+16,1,2025-08-24,19:30,TNC Pro Team,Team Liquid PH,1,Team Liquid PH,16.9,6,15,0,1,2,1,1,8,Zaida,Lancelot,Ch4knu,Gatotkaca,Bennyqt,Granger,.3Mar,Phoveus,LanceCy,Valentina,Jaypee,Hylos,Sanji,Pharsa,KarlTzy,Yi Sun-shin,Sanford,Lapu-Lapu,Oheb,Moskov
+16,1,2025-08-24,19:30,TNC Pro Team,Team Liquid PH,2,Team Liquid PH,22.3,17,13,3,1,3,0,9,8,Zaida,Lancelot,.3Mar,Lapu-Lapu,Ch4knu,Gatotkaca,LanceCy,Luo Yi,Bennyqt,Karrie,Jaypee,Hylos,Sanji,Pharsa,KarlTzy,Yi Sun-shin,Oheb,Harith,Sanford,Ruby
+16,2,2025-08-29,17:00,AP.Bren,ONIC Philippines,1,ONIC Philippines,11.7,3,16,0,1,0,3,1,8,xNova,Hylos,JamesPangks,Lancelot,AQUA,Zhuxin,shizou,Harith,LordJM.,Uranus,Kirk,Phoveus,Brusko,Kalea,K1NGKONG,Yi Sun-shin,SuperFrince,Kagura,Kelra,Lunox
+16,2,2025-08-29,17:00,AP.Bren,ONIC Philippines,2,ONIC Philippines,14.7,8,12,1,1,3,0,4,8,LordJM.,Cici,JamesPangks,Joy,AQUA,Kagura,xNova,Gatotkaca,shizou,Bruno,Kelra,Harith,K1NGKONG,Lancelot,SuperFrince,Luo Yi,Brusko,Hylos,Kirk,Arlott
+16,2,2025-08-29,19:30,Team Liquid PH,Aurora Gaming PH,1,Aurora Gaming PH,14.8,5,15,0,1,3,0,1,6,KarlTzy,Lancelot,Sanford,Phoveus,Jaypee,Gatotkaca,Sanji,Kagura,Oheb,Claude,Light.,Hylos,Demonkite,Yi Sun-shin,Edward,Lapu-Lapu,Yue,Kimmy,Domengkite,Harith
+16,2,2025-08-29,19:30,Team Liquid PH,Aurora Gaming PH,2,Team Liquid PH,10.8,8,1,1,0,3,0,9,1,Sanford,Lapu-Lapu,Jaypee,Baxia,Oheb,Granger,Sanji,Kimmy,KarlTzy,Fredrinn,Demonkite,Yi Sun-shin,Yue,Valentina,Light.,Grock,Domengkite,Karrie,Edward,Gloo
+16,2,2025-08-29,19:30,Team Liquid PH,Aurora Gaming PH,3,Aurora Gaming PH,26.6,14,16,1,3,0,3,8,9,Sanji,Pharsa,Sanford,Arlott,KarlTzy,Yi Sun-shin,Jaypee,Kalea,Oheb,Lunox,Light.,Hylos,Demonkite,Lancelot,Edward,Lapu-Lapu,Domengkite,Harith,Yue,Novaria
+16,2,2025-08-30,14:30,TNC Pro Team,Team Falcons PH,1,TNC Pro Team,23.3,14,12,3,1,1,2,9,7,Zaida,Lancelot,.3Mar,Gloo,LanceCy,Pharsa,Ch4knu,Grock,Bennyqt,Granger,KyleTzy,Yi Sun-shin,Pheww,Selena,FlapTzy,Benedetta,SuperMarco,Harith,Owgwen,Baxia
+16,2,2025-08-30,14:30,TNC Pro Team,Team Falcons PH,2,TNC Pro Team,17.1,16,9,0,2,1,2,7,6,.3Mar,Cici,LanceCy,Zhuxin,Zaida,Fanny,Ch4knu,Grock,Bennyqt,Moskov,KyleTzy,Lancelot,FlapTzy,Uranus,SuperMarco,Granger,Pheww,Pharsa,Owgwen,Ruby
+16,2,2025-08-30,17:00,Omega Esports,Twisted Minds PH,1,Twisted Minds PH,14.3,6,20,1,1,1,1,3,8,Raizen.,Lancelot,Hadji,Yve,SUPERYOSHI,Gatotkaca,Netskie,Granger,Jeymz,Ruby,Lansu,Lapu-Lapu,Sionnn,Kagura,Nosia,Moskov,Caloy,Kalea,MPtheKing.,Hayabusa
+16,2,2025-08-30,17:00,Omega Esports,Twisted Minds PH,2,Omega Esports,24.3,24,17,3,1,2,1,7,7,Raizen.,Lancelot,Jeymz,Phoveus,Hadji,Kagura,SUPERYOSHI,Ruby,Netskie,Karrie,MPtheKing.,Hayabusa,Lansu,Esmeralda,Sionnn,Valentina,Caloy,Kalea,Nosia,Granger
+16,2,2025-08-30,17:00,Omega Esports,Twisted Minds PH,3,Twisted Minds PH,10.4,2,9,0,1,0,3,0,8,Raizen.,Lancelot,SUPERYOSHI,Gatotkaca,Netskie,Harith,Jeymz,Cici,Hadji,Zhuxin,Lansu,Uranus,MPtheKing.,Nolan,Caloy,Kalea,Sionnn,Kagura,Nosia,Beatrix
+16,2,2025-08-30,19:30,ONIC Philippines,Aurora Gaming PH,1,ONIC Philippines,22.8,7,8,3,2,1,2,9,7,Kirk,Cici,K1NGKONG,Yi Sun-shin,SuperFrince,Selena,Brusko,Edith,Kelra,Moskov,Domengkite,Harith,Demonkite,Lancelot,Edward,Arlott,Light.,Grock,Yue,Valentina
+16,2,2025-08-30,19:30,ONIC Philippines,Aurora Gaming PH,2,Aurora Gaming PH,11.3,6,9,0,1,0,3,0,8,Kirk,Hilda,Brusko,Kalea,K1NGKONG,Yi Sun-shin,SuperFrince,Kagura,Kelra,Cici,Domengkite,Moskov,Demonkite,Lancelot,Edward,Uranus,Yue,Kimmy,Light.,Chou
+16,2,2025-08-30,19:30,ONIC Philippines,Aurora Gaming PH,3,Aurora Gaming PH,17.4,3,12,1,2,0,3,2,8,SuperFrince,Zhuxin,Kirk,Cici,K1NGKONG,Yi Sun-shin,Brusko,Kalea,Kelra,Granger,Domengkite,Moskov,Light.,Hylos,Yue,Yve,Edward,Lapu-Lapu,Demonkite,Joy
+16,2,2025-08-31,17:00,Omega Esports,Team Falcons PH,1,Omega Esports,13.9,12,9,2,0,0,3,7,1,Raizen.,Hayabusa,Netskie,Harith,Jeymz,Lapu-Lapu,SUPERYOSHI,Chou,Hadji,Luo Yi,SuperMarco,Moskov,FlapTzy,Arlott,Pheww,Valentina,Owgwen,Badang,KyleTzy,Baxia
+16,2,2025-08-31,17:00,Omega Esports,Team Falcons PH,2,Omega Esports,13.9,15,3,1,0,1,2,8,1,Raizen.,Fanny,Netskie,Harith,Jeymz,Lapu-Lapu,Hadji,Zhuxin,SUPERYOSHI,Grock,FlapTzy,Arlott,SuperMarco,Moskov,Owgwen,Khufra,Pheww,Kagura,KyleTzy,Baxia
+16,2,2025-08-31,19:30,Team Liquid PH,Twisted Minds PH,1,Team Liquid PH,14.1,17,8,2,0,2,1,8,1,Sanji,Zhuxin,KarlTzy,Fredrinn,Sanford,Lapu-Lapu,Jaypee,Chip,Oheb,Harith,Lansu,Uranus,MPtheKing.,Joy,Sionnn,Kimmy,Nosia,Moskov,Caloy,Hylos
+16,2,2025-08-31,19:30,Team Liquid PH,Twisted Minds PH,2,Team Liquid PH,11.1,11,5,1,0,1,2,9,1,Sanji,Zhuxin,KarlTzy,Fredrinn,Sanford,Lapu-Lapu,Oheb,Granger,Jaypee,Mathilda,MPtheKing.,Hayabusa,Lansu,Uranus,Sionnn,Kimmy,Nosia,Moskov,Caloy,Gatotkaca
+16,3,2025-09-05,17:00,Aurora Gaming PH,Twisted Minds PH,1,Aurora Gaming PH,11.6,13,4,1,0,3,0,8,0,Domengkite,Harith,Demonkite,Baxia,Edward,Arlott,Yue,Kimmy,Light.,Chip,MPtheKing.,Lancelot,Lansu,Uranus,Sionnn,Kagura,Caloy,Khaleed,Nosia,Granger
+16,3,2025-09-05,17:00,Aurora Gaming PH,Twisted Minds PH,2,Twisted Minds PH,13.1,2,9,0,1,0,3,2,8,Demonkite,Yi Sun-shin,Light.,Hylos,Yue,Kimmy,Edward,Esmeralda,Domengkite,Roger,MPtheKing.,Lancelot,Lansu,Uranus,Sionnn,Kagura,Caloy,Kaja,Nosia,Karrie
+16,3,2025-09-05,17:00,Aurora Gaming PH,Twisted Minds PH,3,Aurora Gaming PH,13.7,12,2,2,0,3,0,9,1,Demonkite,Lancelot,Domengkite,Moskov,Light.,Gatotkaca,Edward,Lapu-Lapu,Yue,Kimmy,Lansu,Phoveus,MPtheKing.,Yi Sun-shin,Caloy,Badang,Sionnn,Kagura,Nosia,Harith
+16,3,2025-09-05,19:30,ONIC Philippines,Team Falcons PH,1,ONIC Philippines,16.5,19,6,2,0,3,0,9,2,Brusko,Kalea,Kirk,Phoveus,K1NGKONG,Fanny,Kelra,Beatrix,SuperFrince,Selena,Ferdz.,Lapu-Lapu,Pheww,Pharsa,SuperMarco,Moskov,KyleTzy,Joy,Owgwen,Grock
+16,3,2025-09-05,19:30,ONIC Philippines,Team Falcons PH,2,ONIC Philippines,17.9,15,10,2,1,1,2,7,4,Kirk,Lapu-Lapu,Brusko,Kalea,K1NGKONG,Hayabusa,SuperFrince,Kagura,Kelra,Karrie,Ferdz.,Esmeralda,Pheww,Selena,SuperMarco,Ruby,Owgwen,Gatotkaca,KyleTzy,Yi Sun-shin
+16,3,2025-09-06,14:30,AP.Bren,TNC Pro Team,1,TNC Pro Team,13.9,6,12,0,1,0,3,0,6,LordJM.,Arlott,xNova,Hylos,shizou,Moskov,chovskrt,Kagura,JamesPangks,Lukas,LanceCy,Zhuxin,Zaida,Fanny,Ch4knu,Gatotkaca,.3Mar,Lapu-Lapu,Bennyqt,Karrie
+16,3,2025-09-06,14:30,AP.Bren,TNC Pro Team,2,TNC Pro Team,15.2,4,19,0,1,0,2,1,9,LordJM.,Lapu-Lapu,JamesPangks,Hayabusa,shizou,Moskov,chovskrt,Kagura,xNova,Baxia,.3Mar,Arlott,LanceCy,Pharsa,Zaida,Fanny,Ch4knu,Akai,Bennyqt,Harith
+16,3,2025-09-06,17:00,Omega Esports,Team Liquid PH,1,Team Liquid PH,25.1,15,16,1,4,1,2,5,8,Jeymz,Phoveus,Raizen.,Lancelot,Hadji,Kagura,SUPERYOSHI,Ruby,Netskie,Claude,Jaypee,Kalea,KarlTzy,Yi Sun-shin,Sanji,Pharsa,Oheb,Granger,Sanford,Gloo
+16,3,2025-09-06,17:00,Omega Esports,Team Liquid PH,2,Team Liquid PH,16.4,7,15,0,2,0,3,0,7,SUPERYOSHI,Kalea,Jeymz,Lapu-Lapu,Raizen.,Hayabusa,Hadji,Kimmy,Netskie,Karrie,Oheb,Harith,KarlTzy,Lancelot,Sanford,Esmeralda,Jaypee,Gatotkaca,Sanji,Selena
+16,3,2025-09-06,19:30,ONIC Philippines,Twisted Minds PH,1,ONIC Philippines,14.1,13,5,2,0,2,1,8,2,Brusko,Kalea,SuperFrince,Pharsa,Kirk,Lapu-Lapu,K1NGKONG,Joy,Kelra,Bruno,Sensui,Fredrinn,Sionnn,Zhuxin,Nosia,Moskov,Lansu,Esmeralda,Caloy,Khaleed
+16,3,2025-09-06,19:30,ONIC Philippines,Twisted Minds PH,2,Twisted Minds PH,11.2,3,13,0,1,0,3,2,8,Kelra,Harith,Brusko,Hylos,K1NGKONG,Yi Sun-shin,SuperFrince,Zhuxin,Kirk,Terizla,Caloy,Kalea,Sionnn,Kimmy,Nosia,Beatrix,Sensui,Akai,Lansu,Cici
+16,3,2025-09-06,19:30,ONIC Philippines,Twisted Minds PH,3,Twisted Minds PH,25.2,10,18,1,4,0,3,8,6,K1NGKONG,Lancelot,Kirk,Lapu-Lapu,SuperFrince,Pharsa,Kelra,Moskov,Brusko,Hylos,Sensui,Akai,Sionnn,Kimmy,Lansu,Arlott,Nosia,Harith,Caloy,Gatotkaca
+16,3,2025-09-07,17:00,AP.Bren,Team Falcons PH,1,Team Falcons PH,18.9,10,14,0,3,3,0,5,9,xNova,Kalea,shizou,Harith,AQUA,Pharsa,LordJM.,Benedetta,JamesPangks,Fredrinn,Pheww,Zhuxin,Ferdz.,Uranus,KyleTzy,Hayabusa,Owgwen,Grock,SuperMarco,Granger
+16,3,2025-09-07,17:00,AP.Bren,Team Falcons PH,2,AP.Bren,14.1,13,10,1,0,3,0,8,2,AQUA,Zhuxin,JamesPangks,Hayabusa,shizou,Harith,LordJM.,Cici,xNova,Badang,Ferdz.,Lapu-Lapu,KyleTzy,Joy,Pheww,Luo Yi,Owgwen,Kalea,SuperMarco,Granger
+16,3,2025-09-07,17:00,AP.Bren,Team Falcons PH,3,AP.Bren,13.4,14,8,1,0,3,0,6,0,shizou,Harith,LordJM.,Uranus,JamesPangks,Suyou,xNova,Gatotkaca,AQUA,Kagura,Pheww,Pharsa,Owgwen,Kalea,KyleTzy,Yi Sun-shin,Ferdz.,Cici,SuperMarco,Lunox
+16,3,2025-09-07,19:30,TNC Pro Team,Aurora Gaming PH,1,Aurora Gaming PH,12.2,0,9,0,1,0,3,1,8,Bennyqt,Harith,Zaida,Yi Sun-shin,.3Mar,Cici,Ch4knu,Gatotkaca,LanceCy,Selena,Demonkite,Baxia,Edward,Lapu-Lapu,Domengkite,Moskov,Yue,Kagura,Light.,Franco
+16,3,2025-09-07,19:30,TNC Pro Team,Aurora Gaming PH,2,Aurora Gaming PH,17.2,8,9,0,2,2,1,1,7,.3Mar,Lapu-Lapu,Ch4knu,Hylos,Zaida,Hayabusa,LanceCy,Pharsa,Bennyqt,Claude,Demonkite,Yi Sun-shin,Edward,Esmeralda,Domengkite,Harith,Light.,Badang,Yue,Selena
+16,4,2025-09-12,17:00,AP.Bren,Aurora Gaming PH,1,Aurora Gaming PH,10.9,3,11,0,1,0,3,1,7,xNova,Kalea,JamesPangks,Joy,shizou,Beatrix,AQUA,Lunox,LordJM.,Ruby,Domengkite,Harith,Demonkite,Yi Sun-shin,Light.,Gatotkaca,Yue,Kimmy,Edward,Terizla
+16,4,2025-09-12,17:00,AP.Bren,Aurora Gaming PH,2,Aurora Gaming PH,17.4,5,18,0,3,1,2,1,9,xNova,Kalea,JamesPangks,Hayabusa,shizou,Beatrix,LordJM.,Ruby,AQUA,Lunox,Domengkite,Harith,Demonkite,Yi Sun-shin,Yue,Selena,Light.,Gatotkaca,Edward,Cici
+16,4,2025-09-12,19:30,ONIC Philippines,Omega Esports,1,ONIC Philippines,15.1,14,7,2,0,2,0,9,1,SuperFrince,Zhuxin,Ryota.,Arlott,K1NGKONG,Lancelot,Brusko,Grock,Kelra,Claude,SUPERYOSHI,Ruby,Raizen.,Yi Sun-shin,Hadji,Lunox,Jeymz,Esmeralda,Netskie,Helcurt
+16,4,2025-09-12,19:30,ONIC Philippines,Omega Esports,2,ONIC Philippines,11.8,8,3,1,0,3,0,8,1,SuperFrince,Zhuxin,K1NGKONG,Lancelot,Brusko,Grock,Kelra,Granger,Ryota.,Arlott,SUPERYOSHI,Chou,Raizen.,Yi Sun-shin,Hadji,Vexana,Jeymz,Lapu-Lapu,Netskie,Ruby
+16,4,2025-09-13,14:30,TNC Pro Team,Twisted Minds PH,1,Twisted Minds PH,15.3,11,10,0,2,0,3,3,9,LanceCy,Zhuxin,.3Mar,Cici,Zaida,Yi Sun-shin,Bennyqt,Esmeralda,Ch4knu,Carmilla,Lansu,Lapu-Lapu,Sensui,Akai,Sionnn,Yve,Nosia,Harith,Caloy,Kalea
+16,4,2025-09-13,14:30,TNC Pro Team,Twisted Minds PH,2,TNC Pro Team,17.5,17,10,1,1,0,3,7,3,.3Mar,Uranus,Zaida,Yi Sun-shin,LanceCy,Yve,Ch4knu,Gatotkaca,Bennyqt,Karrie,Lansu,Lapu-Lapu,Sensui,Akai,Sionnn,Zhuxin,Nosia,Harith,Caloy,Arlott
+16,4,2025-09-13,14:30,TNC Pro Team,Twisted Minds PH,3,TNC Pro Team,22.1,22,17,3,1,3,0,9,5,Zaida,Yi Sun-shin,Ch4knu,Grock,LanceCy,Lunox,.3Mar,Arlott,Bennyqt,Cici,Lansu,Uranus,Sionnn,Yve,Caloy,Kalea,Nosia,Beatrix,Sensui,Hayabusa
+16,4,2025-09-13,17:00,Omega Esports,Aurora Gaming PH,1,Aurora Gaming PH,18.3,6,10,0,3,0,3,2,8,Raizen.,Hayabusa,Netskie,Harith,Hadji,Kagura,Jeymz,Phoveus,SUPERYOSHI,Grock,Demonkite,Yi Sun-shin,Yue,Selena,Light.,Gatotkaca,Edward,Terizla,Domengkite,Granger
+16,4,2025-09-13,17:00,Omega Esports,Aurora Gaming PH,2,Omega Esports,14.8,16,3,2,0,2,1,9,2,Raizen.,Hayabusa,Netskie,Harith,Hadji,Kagura,Jeymz,Phoveus,SUPERYOSHI,Grock,Demonkite,Yi Sun-shin,Light.,Gatotkaca,Yue,Selena,Edward,Terizla,Domengkite,Moskov
+16,4,2025-09-13,17:00,Omega Esports,Aurora Gaming PH,3,Aurora Gaming PH,20.9,6,9,0,4,0,3,0,9,Netskie,Granger,Raizen.,Hayabusa,Jeymz,Esmeralda,SUPERYOSHI,Gatotkaca,Hadji,Vexana,Domengkite,Harith,Demonkite,Fredrinn,Edward,Lapu-Lapu,Light.,Chip,Yue,Pharsa
+16,4,2025-09-13,19:30,Team Liquid PH,Team Falcons PH,1,Team Liquid PH,10.9,6,1,1,0,3,0,8,0,Sanji,Zhuxin,KarlTzy,Fredrinn,Sanford,Arlott,Jaypee,Gatotkaca,Oheb,Moskov,Ferdz.,Lapu-Lapu,SuperMarco,Harith,Pheww,Kimmy,Owgwen,Grock,KyleTzy,Hayabusa
+16,4,2025-09-13,19:30,Team Liquid PH,Team Falcons PH,2,Team Falcons PH,18.3,4,16,0,3,0,3,1,9,Jaypee,Baxia,KarlTzy,Yi Sun-shin,Sanford,Esmeralda,Oheb,Granger,Sanji,Luo Yi,Pheww,Zhuxin,KyleTzy,Fredrinn,Owgwen,Chip,SuperMarco,Claude,Ferdz.,Lapu-Lapu
+16,4,2025-09-13,19:30,Team Liquid PH,Team Falcons PH,3,Team Liquid PH,18.1,17,9,2,1,0,3,9,2,KarlTzy,Yi Sun-shin,Sanford,Arlott,Jaypee,Gatotkaca,Oheb,Natan,Sanji,Pharsa,Ferdz.,Lapu-Lapu,KyleTzy,Baxia,Pheww,Kagura,SuperMarco,Moskov,Owgwen,Hylos
+16,4,2025-09-14,17:00,ONIC Philippines,TNC Pro Team,1,ONIC Philippines,11.4,11,4,1,0,3,0,6,2,K1NGKONG,Lancelot,SuperFrince,Kimmy,Brusko,Hylos,Ryota.,Hilda,Kelra,Brody,Ch4knu,Grock,LanceCy,Zhuxin,Zaida,Fanny,.3Mar,Uranus,Bennyqt,Karrie
+16,4,2025-09-14,17:00,ONIC Philippines,TNC Pro Team,2,TNC Pro Team,17.9,7,17,1,2,1,2,5,9,SuperFrince,Kimmy,Brusko,Grock,K1NGKONG,Hayabusa,Ryota.,Uranus,Kelra,Granger,Zaida,Yi Sun-shin,.3Mar,Arlott,LanceCy,Zhuxin,Bennyqt,Moskov,Ch4knu,Baxia
+16,4,2025-09-14,17:00,ONIC Philippines,TNC Pro Team,3,ONIC Philippines,11.7,12,2,1,0,3,0,8,1,SuperFrince,Zhuxin,K1NGKONG,Joy,Ryota.,Lapu-Lapu,Brusko,Gatotkaca,Kelra,Granger,Zaida,Yi Sun-shin,Ch4knu,Grock,.3Mar,Arlott,LanceCy,Aurora,Bennyqt,Karrie
+16,4,2025-09-14,19:30,AP.Bren,Team Liquid PH,1,Team Liquid PH,19.6,6,13,0,2,1,2,1,8,JamesPangks,Lancelot,shizou,Harith,LordJM.,Uranus,xNova,Grock,AQUA,Kimmy,Sanji,Zhuxin,Jaypee,Gatotkaca,KarlTzy,Yi Sun-shin,Oheb,Moskov,Sanford,Dyrroth
+16,4,2025-09-14,19:30,AP.Bren,Team Liquid PH,2,Team Liquid PH,13.2,4,7,0,1,0,3,2,8,xNova,Grock,AQUA,Valentina,JamesPangks,Joy,LordJM.,Cici,shizou,Moskov,KarlTzy,Lancelot,Sanji,Selena,Oheb,Granger,Jaypee,Hylos,Sanford,Phoveus
+16,5,2025-09-19,17:00,TNC Pro Team,Omega Esports,1,Omega Esports,18.3,5,12,0,3,3,0,3,8,Zaida,Baxia,Ch4knu,Hilda,LanceCy,Kimmy,Bennyqt,Bruno,.3Mar,Benedetta,Jeymz,Lapu-Lapu,Raizen.,Lancelot,SUPERYOSHI,Chou,Netskie,Claude,Hadji,Kagura
+16,5,2025-09-19,17:00,TNC Pro Team,Omega Esports,2,TNC Pro Team,17.9,9,8,1,1,2,1,6,7,Zaida,Lancelot,Ch4knu,Grock,Bennyqt,Karrie,LanceCy,Pharsa,.3Mar,Gloo,Jeymz,Lapu-Lapu,Raizen.,Fredrinn,Hadji,Valentina,Netskie,Claude,SUPERYOSHI,Khaleed
+16,5,2025-09-19,17:00,TNC Pro Team,Omega Esports,3,Omega Esports,17.2,3,9,0,1,1,2,2,9,Zaida,Lancelot,Bennyqt,Karrie,Ch4knu,Grock,.3Mar,Gloo,LanceCy,Luo Yi,Jeymz,Lapu-Lapu,Raizen.,Fredrinn,Hadji,Valentina,SUPERYOSHI,Khaleed,Netskie,Claude
+16,5,2025-09-19,19:30,Team Falcons PH,Aurora Gaming PH,1,Team Falcons PH,15.6,17,9,1,1,1,1,7,5,KyleTzy,Baxia,FlapTzy,Cici,Pheww,Pharsa,SuperMarco,Claude,Owgwen,Franco,Domengkite,Granger,Demonkite,Lancelot,Edward,Lapu-Lapu,Yue,Valentina,Light.,Chou
+16,5,2025-09-19,19:30,Team Falcons PH,Aurora Gaming PH,2,Aurora Gaming PH,10.9,6,16,0,1,1,2,0,8,FlapTzy,Esmeralda,KyleTzy,Yi Sun-shin,SuperMarco,Claude,Owgwen,Gatotkaca,Pheww,Zhuxin,Domengkite,Harith,Light.,Kalea,Demonkite,Lancelot,Edward,Uranus,Yue,Cecilion
+16,5,2025-09-19,19:30,Team Falcons PH,Aurora Gaming PH,3,Aurora Gaming PH,10.7,3,12,0,1,0,3,1,8,Pheww,Angela,KyleTzy,Joy,FlapTzy,Dyrroth,Owgwen,Khaleed,SuperMarco,Cici,Domengkite,Granger,Demonkite,Lancelot,Light.,Franco,Edward,Uranus,Yue,Kimmy
+16,5,2025-09-20,14:30,Omega Esports,AP.Bren,1,AP.Bren,25.4,16,17,3,1,2,1,9,5,Hadji,Zhuxin,SUPERYOSHI,Chou,Raizen.,Fredrinn,Jeymz,Khaleed,Netskie,Karrie,LordJM.,Lapu-Lapu,JamesPangks,Baxia,AQUA,Kimmy,shizou,Moskov,xNova,Grock
+16,5,2025-09-20,14:30,Omega Esports,AP.Bren,2,Omega Esports,16.0,4,13,0,2,0,3,4,6,Hadji,Valentina,Raizen.,Fanny,Jeymz,Ruby,Netskie,Karrie,SUPERYOSHI,Baxia,AQUA,Angela,JamesPangks,Uranus,LordJM.,Cici,xNova,Gatotkaca,shizou,Granger
+16,5,2025-09-20,14:30,Omega Esports,AP.Bren,3,AP.Bren,21.2,13,10,1,2,3,0,6,9,Hadji,Zhuxin,Netskie,Harith,Raizen.,Fredrinn,SUPERYOSHI,Chou,Jeymz,Khaleed,LordJM.,Esmeralda,AQUA,Kimmy,JamesPangks,Baxia,shizou,Bruno,xNova,Mathilda
+16,5,2025-09-20,17:00,Twisted Minds PH,Team Falcons PH,1,Twisted Minds PH,19.3,17,22,0,2,1,2,7,7,MPtheKing.,Baxia,Sionnn,Kimmy,Caloy,Kalea,Lansu,Phoveus,Nosia,Moskov,FlapTzy,Lapu-Lapu,Pheww,Zhuxin,SuperMarco,Granger,Owgwen,Grock,KyleTzy,Fredrinn
+16,5,2025-09-20,17:00,Twisted Minds PH,Team Falcons PH,2,Team Falcons PH,11.6,5,14,0,1,1,2,3,5,MPtheKing.,Yi Sun-shin,Caloy,Badang,Sionnn,Yve,Nosia,Beatrix,Lansu,Uranus,Pheww,Zhuxin,KyleTzy,Fredrinn,Owgwen,Franco,FlapTzy,Arlott,SuperMarco,Granger
+16,5,2025-09-20,17:00,Twisted Minds PH,Team Falcons PH,3,Team Falcons PH,20.9,21,20,3,0,1,2,7,7,MPtheKing.,Baxia,Sionnn,Kimmy,Caloy,Kalea,Lansu,Cici,Nosia,Granger,Pheww,Zhuxin,KyleTzy,Fredrinn,SuperMarco,Moskov,Owgwen,Badang,FlapTzy,Arlott
+16,5,2025-09-20,19:30,Team Liquid PH,ONIC Philippines,1,Team Liquid PH,16.3,15,10,2,0,0,3,8,2,Oheb,Wanwan,KarlTzy,Yi Sun-shin,Sanford,Uranus,Jaypee,Franco,Sanji,Kimmy,SuperFrince,Zhuxin,K1NGKONG,Lancelot,Brusko,Khaleed,Kelra,Lunox,Kirk,Gloo
+16,5,2025-09-20,19:30,Team Liquid PH,ONIC Philippines,2,ONIC Philippines,16.1,12,12,0,2,1,2,3,8,Sanford,Uranus,Sanji,Zhuxin,KarlTzy,Yi Sun-shin,Jaypee,Khaleed,Oheb,Granger,K1NGKONG,Lancelot,SuperFrince,Pharsa,Kelra,Harith,Kirk,Cici,Brusko,Hilda
+16,5,2025-09-20,19:30,Team Liquid PH,ONIC Philippines,3,ONIC Philippines,13.9,3,15,0,2,0,3,0,9,Oheb,Harith,Sanji,Zhuxin,Sanford,Lapu-Lapu,Jaypee,Gatotkaca,KarlTzy,Yi Sun-shin,K1NGKONG,Lancelot,SuperFrince,Pharsa,Kirk,Phoveus,Brusko,Mathilda,Kelra,Bruno
+16,5,2025-09-21,17:00,Twisted Minds PH,AP.Bren,1,Twisted Minds PH,20.3,18,17,2,1,0,3,8,7,Nosia,Wanwan,Sionnn,Pharsa,Caloy,Kalea,MPtheKing.,Hayabusa,Lansu,Gloo,JamesPangks,Baxia,AQUA,Kimmy,LordJM.,Phoveus,xNova,Khaleed,shizou,Granger
+16,5,2025-09-21,17:00,Twisted Minds PH,AP.Bren,2,Twisted Minds PH,14.0,6,1,2,0,3,0,9,2,Lansu,Cici,MPtheKing.,Baxia,Nosia,Harith,Caloy,Gatotkaca,Sionnn,Valentina,LordJM.,X.Borg,JamesPangks,Lancelot,AQUA,Pharsa,xNova,Chou,shizou,Granger
+16,5,2025-09-21,19:30,Team Liquid PH,TNC Pro Team,1,Team Liquid PH,11.3,13,3,1,0,3,0,9,0,KarlTzy,Lancelot,Sanford,Arlott,Sanji,Kimmy,Jaypee,Mathilda,Oheb,Bruno,Bennyqt,Harith,LanceCy,Zhuxin,Zaida,Yi Sun-shin,Ch4knu,Gatotkaca,.3Mar,Lapu-Lapu
+16,5,2025-09-21,19:30,Team Liquid PH,TNC Pro Team,2,Team Liquid PH,14.6,8,2,2,0,2,1,9,0,Sanji,Kimmy,Sanford,Lapu-Lapu,Jaypee,Novaria,Oheb,Granger,KarlTzy,Baxia,Zaida,Yi Sun-shin,LanceCy,Zhuxin,Bennyqt,Cici,Ch4knu,Khufra,.3Mar,Gloo
+16,6,2025-09-27,14:30,Team Falcons PH,TNC Pro Team,1,Team Falcons PH,20.8,15,11,1,2,3,0,8,6,KyleTzy,Baxia,FlapTzy,Arlott,Pheww,Kimmy,Owgwen,Mathilda,SuperMarco,Bruno,LanceCy,Zhuxin,Zaida,Fredrinn,.3Mar,Lapu-Lapu,Bennyqt,Moskov,Ch4knu,Lolita
+16,6,2025-09-27,14:30,Team Falcons PH,TNC Pro Team,2,TNC Pro Team,15.8,6,16,0,2,0,3,0,9,FlapTzy,Phoveus,Pheww,Angela,KyleTzy,Joy,Owgwen,Gatotkaca,SuperMarco,Granger,Zaida,Yi Sun-shin,LanceCy,Kimmy,.3Mar,Esmeralda,Bennyqt,Bane,Ch4knu,Kalea
+16,6,2025-09-27,14:30,Team Falcons PH,TNC Pro Team,3,TNC Pro Team,12.7,2,18,0,1,0,3,2,8,KyleTzy,Lancelot,Pheww,Kimmy,Owgwen,Chip,SuperMarco,Granger,FlapTzy,Lapu-Lapu,Zaida,Hayabusa,LanceCy,Zhuxin,Ch4knu,Grock,.3Mar,Arlott,Bennyqt,Natan
+16,6,2025-09-27,17:00,Twisted Minds PH,Omega Esports,1,Omega Esports,13.7,8,21,0,1,1,2,3,7,MPtheKing.,Lancelot,Sionnn,Angela,Lansu,Phoveus,Nosia,Karrie,Caloy,Hylos,Jeymz,Esmeralda,Raizen.,Fredrinn,Hadji,Kimmy,SUPERYOSHI,Grock,Netskie,Harith
+16,6,2025-09-27,17:00,Twisted Minds PH,Omega Esports,2,Omega Esports,13.1,3,7,0,1,1,2,3,9,MPtheKing.,Lancelot,Lansu,Esmeralda,Sionnn,Angela,Nosia,Moskov,Caloy,Badang,Jeymz,Arlott,Raizen.,Fredrinn,Hadji,Pharsa,SUPERYOSHI,Gatotkaca,Netskie,Harith
+16,6,2025-09-27,19:30,Aurora Gaming PH,ONIC Philippines,1,Aurora Gaming PH,13.8,9,6,0,1,3,0,5,4,Domengkite,Wanwan,Demonkite,Fredrinn,Edward,Lapu-Lapu,Light.,Hylos,Yue,Kimmy,Brusko,Kalea,K1NGKONG,Lancelot,Kirk,Phoveus,SuperFrince,Valentina,Kelra,Claude
+16,6,2025-09-27,19:30,Aurora Gaming PH,ONIC Philippines,2,ONIC Philippines,23.4,11,16,2,2,1,2,6,7,Light.,Kalea,Domengkite,Harith,Demonkite,Hayabusa,Yue,Kagura,Edward,Uranus,SuperFrince,Zhuxin,K1NGKONG,Joy,Brusko,Gatotkaca,Kelra,Moskov,Kirk,Phoveus
+16,6,2025-09-27,19:30,Aurora Gaming PH,ONIC Philippines,3,Aurora Gaming PH,15.0,12,7,2,0,3,0,9,3,Demonkite,Lancelot,Domengkite,Granger,Light.,Hylos,Yue,Novaria,Edward,Phoveus,Brusko,Kalea,Kelra,Harith,K1NGKONG,Yi Sun-shin,Kirk,Lapu-Lapu,SuperFrince,Selena
+16,6,2025-09-28,17:00,Team Falcons PH,Omega Esports,1,Omega Esports,17.0,7,12,1,1,2,1,2,7,Pheww,Zhuxin,KyleTzy,Hayabusa,Owgwen,Kalea,FlapTzy,Arlott,SuperMarco,Granger,SUPERYOSHI,Grock,Hadji,Kagura,Jeymz,Uranus,Raizen.,Lancelot,Netskie,Karrie
+16,6,2025-09-28,17:00,Team Falcons PH,Omega Esports,2,Team Falcons PH,16.1,15,7,0,2,1,2,7,4,FlapTzy,Arlott,Pheww,Zhuxin,KyleTzy,Akai,Owgwen,Grock,SuperMarco,Karrie,Raizen.,Fredrinn,SUPERYOSHI,Hylos,Jeymz,Lapu-Lapu,Netskie,Claude,Hadji,Kimmy
+16,6,2025-09-28,17:00,Team Falcons PH,Omega Esports,3,Omega Esports,21.5,3,13,2,0,3,0,7,6,Pheww,Zhuxin,Owgwen,Badang,FlapTzy,Arlott,KyleTzy,Akai,SuperMarco,Moskov,Raizen.,Fanny,SUPERYOSHI,Grock,Hadji,Valentina,Jeymz,Uranus,Netskie,Karrie
+16,6,2025-09-28,19:30,Twisted Minds PH,Team Liquid PH,1,Twisted Minds PH,20.8,26,10,1,2,1,2,7,6,MPtheKing.,Baxia,Caloy,Gatotkaca,Sionnn,Kimmy,Lansu,Cici,Nosia,Moskov,KarlTzy,Hayabusa,Sanji,Pharsa,Sanford,Arlott,Jaypee,Hylos,Oheb,Claude
+16,6,2025-09-28,19:30,Twisted Minds PH,Team Liquid PH,2,Team Liquid PH,14.1,8,15,0,1,1,2,0,9,MPtheKing.,Yi Sun-shin,Caloy,Gatotkaca,Nosia,Claude,Sionnn,Kalea,Lansu,Lapu-Lapu,Sanji,Zhuxin,Oheb,Harith,Jaypee,Chip,KarlTzy,Joy,Sanford,Cici
+16,6,2025-09-28,19:30,Twisted Minds PH,Team Liquid PH,3,Team Liquid PH,16.5,4,16,0,2,0,3,4,7,Sionnn,Kimmy,MPtheKing.,Hayabusa,Caloy,Gatotkaca,Lansu,Uranus,Nosia,Moskov,KarlTzy,Yi Sun-shin,Jaypee,Kalea,Sanford,Phoveus,Sanji,Lunox,Oheb,Bane
+16,6,2025-09-29,17:00,ONIC Philippines,AP.Bren,1,AP.Bren,14.0,5,12,0,2,0,3,1,8,K1NGKONG,Lancelot,Kelra,Harith,Brusko,Gatotkaca,Ryota.,Cici,SuperFrince,Luo Yi,AQUA,Zhuxin,xNova,Khaleed,JamesPangks,Yi Sun-shin,LordJM.,Esmeralda,shizou,Ruby
+16,6,2025-09-29,17:00,ONIC Philippines,AP.Bren,2,AP.Bren,15.1,4,12,0,2,1,2,1,8,K1NGKONG,Lancelot,SuperFrince,Kimmy,Brusko,Hylos,Ryota.,Lapu-Lapu,Kelra,Granger,xNova,Khaleed,AQUA,Zhuxin,JamesPangks,Yi Sun-shin,LordJM.,Uranus,shizou,Obsidia
+16,6,2025-09-29,19:30,Aurora Gaming PH,Team Liquid PH,1,Aurora Gaming PH,10.8,19,2,1,0,3,0,8,0,Domengkite,Harith,Edward,Lapu-Lapu,Demonkite,Yi Sun-shin,Light.,Grock,Yue,Cecilion,Sanji,Kimmy,KarlTzy,Fredrinn,Sanford,Cici,Oheb,Obsidia,Jaypee,Hylos
+16,6,2025-09-29,19:30,Aurora Gaming PH,Team Liquid PH,2,Aurora Gaming PH,11.8,14,3,1,0,1,2,8,1,Domengkite,Granger,Edward,Arlott,Demonkite,Akai,Light.,Hylos,Yue,Yve,Sanji,Zhuxin,KarlTzy,Fredrinn,Sanford,Phoveus,Jaypee,Gatotkaca,Oheb,Moskov
+16,7,2025-10-03,17:00,Twisted Minds PH,Aurora Gaming PH,1,Aurora Gaming PH,12.6,3,14,0,1,1,2,1,8,MPtheKing.,Baxia,Lansu,Lapu-Lapu,Sionnn,Kimmy,Caloy,Guinevere,Nosia,Obsidia,Domengkite,Granger,Edward,Arlott,Light.,Grock,Yue,Cecilion,Demonkite,Akai
+16,7,2025-10-03,17:00,Twisted Minds PH,Aurora Gaming PH,2,Aurora Gaming PH,11.0,4,8,0,1,0,3,1,9,Nosia,Harith,Caloy,Gatotkaca,Lansu,Cici,Sionnn,Lunox,MPtheKing.,Bane,Demonkite,Lancelot,Domengkite,Granger,Light.,Hylos,Yue,Kimmy,Edward,Phoveus
+16,7,2025-10-03,19:30,Team Falcons PH,ONIC Philippines,1,Team Falcons PH,15.0,15,13,2,0,1,2,8,3,FlapTzy,Lapu-Lapu,KyleTzy,Fredrinn,Pheww,Kimmy,SuperMarco,Granger,Owgwen,Franco,Kirk,Arlott,K1NGKONG,Yi Sun-shin,Brusko,Gatotkaca,Kelra,Bane,SuperFrince,Angela
+16,7,2025-10-03,19:30,Team Falcons PH,ONIC Philippines,2,ONIC Philippines,22.0,10,16,1,2,2,1,5,8,FlapTzy,Alice,KyleTzy,Fredrinn,Pheww,Pharsa,Owgwen,Hilda,SuperMarco,Wanwan,Kirk,Arlott,K1NGKONG,Yi Sun-shin,Brusko,Gatotkaca,SuperFrince,Valentina,Kelra,Granger
+16,7,2025-10-03,19:30,Team Falcons PH,ONIC Philippines,3,Team Falcons PH,21.3,12,14,2,1,2,1,7,6,Pheww,Pharsa,KyleTzy,Yi Sun-shin,Owgwen,Kaja,SuperMarco,Bane,FlapTzy,Uranus,Kirk,Arlott,Kelra,Granger,K1NGKONG,Lancelot,Brusko,Khaleed,SuperFrince,Angela
+16,7,2025-10-04,14:30,TNC Pro Team,AP.Bren,1,AP.Bren,25.1,12,15,0,4,0,3,6,9,Zaida,Yi Sun-shin,Bennyqt,Harith,.3Mar,Esmeralda,LanceCy,Kimmy,Ch4knu,Gatotkaca,AQUA,Angela,shizou,Cici,JamesPangks,Joy,xNova,Chou,LordJM.,Terizla
+16,7,2025-10-04,14:30,TNC Pro Team,AP.Bren,2,TNC Pro Team,20.9,20,13,1,1,0,3,7,3,Zaida,Hayabusa,LanceCy,Kimmy,.3Mar,Lapu-Lapu,Bennyqt,Cici,Ch4knu,Mathilda,JamesPangks,Yi Sun-shin,AQUA,Valentina,xNova,Khaleed,LordJM.,Chou,shizou,Ruby
+16,7,2025-10-04,14:30,TNC Pro Team,AP.Bren,3,TNC Pro Team,24.0,17,12,1,3,0,3,7,7,Zaida,Yi Sun-shin,Bennyqt,Harith,Ch4knu,Kalea,LanceCy,Kimmy,.3Mar,Gloo,shizou,Cici,AQUA,Angela,JamesPangks,Joy,LordJM.,Esmeralda,xNova,Khaleed
+16,7,2025-10-04,17:00,Team Liquid PH,Omega Esports,1,Team Liquid PH,10.6,15,4,1,0,3,0,9,2,KarlTzy,Lancelot,Oheb,Granger,Sanji,Zhuxin,Sanford,Gloo,Jaypee,Gatotkaca,Jeymz,Esmeralda,Raizen.,Fredrinn,Hadji,Kagura,Netskie,Karrie,SUPERYOSHI,Arlott
+16,7,2025-10-04,17:00,Team Liquid PH,Omega Esports,2,Team Liquid PH,25.9,17,12,2,1,1,2,9,6,KarlTzy,Lancelot,Oheb,Granger,Jaypee,Hylos,Sanford,Phoveus,Sanji,Pharsa,Jeymz,Esmeralda,Hadji,Zhuxin,Raizen.,Fredrinn,Netskie,Irithel,SUPERYOSHI,Arlott
+16,7,2025-10-04,19:30,Twisted Minds PH,ONIC Philippines,1,ONIC Philippines,12.3,2,10,0,1,1,2,1,8,Caloy,Kalea,Sensu1,Guinevere,Nosia,Granger,Lansu,Uranus,Sionnn,Kagura,Brusko,Gatotkaca,K1NGKONG,Yi Sun-shin,SuperFrince,Kimmy,Kirk,Arlott,Kelra,Cici
+16,7,2025-10-04,19:30,Twisted Minds PH,ONIC Philippines,2,ONIC Philippines,24.6,13,14,2,3,3,0,8,8,Caloy,Kalea,Sensu1,Lancelot,Sionnn,Kimmy,Lansu,Arlott,Nosia,Beatrix,SuperFrince,Zhuxin,K1NGKONG,Hayabusa,Brusko,Gatotkaca,Kirk,Lapu-Lapu,Kelra,Bane
+16,7,2025-10-05,17:00,Team Falcons PH,AP.Bren,1,Team Falcons PH,23.3,17,14,3,0,2,1,9,2,KyleTzy,Yi Sun-shin,Pheww,Pharsa,FlapTzy,Uranus,SuperMarco,Bane,Owgwen,Kaja,LordJM.,Arlott,shizou,Harith,JamesPangks,Hayabusa,xNova,Grock,AQUA,Zetian
+16,7,2025-10-05,17:00,Team Falcons PH,AP.Bren,2,Team Falcons PH,20.2,10,9,3,0,2,1,8,0,Pheww,Pharsa,FlapTzy,Uranus,KyleTzy,Lancelot,Owgwen,Hilda,SuperMarco,Moskov,JamesPangks,Yi Sun-shin,xNova,Khaleed,AQUA,Kimmy,LordJM.,Esmeralda,shizou,Harith
+16,7,2025-10-05,19:30,Aurora Gaming PH,TNC Pro Team,1,Aurora Gaming PH,19.6,19,20,0,2,1,2,6,9,Domengkite,Wanwan,Demonkite,Fredrinn,Edward,Arlott,Yue,Pharsa,Light.,Franco,LanceCy,Kimmy,Zaida,Yi Sun-shin,Bennyqt,Cici,.3Mar,Phoveus,Ch4knu,Gatotkaca
+16,7,2025-10-05,19:30,Aurora Gaming PH,TNC Pro Team,2,TNC Pro Team,13.1,4,13,0,1,0,3,2,9,Yue,Kimmy,Demonkite,Lancelot,Light.,Gatotkaca,Edward,Uranus,Domengkite,Karrie,Zaida,Yi Sun-shin,LanceCy,Pharsa,Bennyqt,Cici,Ch4knu,Akai,.3Mar,Arlott
+16,7,2025-10-05,19:30,Aurora Gaming PH,TNC Pro Team,3,Aurora Gaming PH,14.6,9,2,2,0,3,0,9,1,Domengkite,Wanwan,Edward,Lapu-Lapu,Demonkite,Fredrinn,Light.,Badang,Yue,Yve,LanceCy,Kimmy,Bennyqt,Cici,Zaida,Lancelot,Ch4knu,Franco,.3Mar,Uranus
+16,8,2025-10-10,17:00,Aurora Gaming PH,AP.Bren,1,AP.Bren,13.4,8,14,2,0,3,0,6,4,Domengkite,Wanwan,Edward,Lapu-Lapu,Demonkite,Fredrinn,Light.,Grock,Yue,Yve,AQUA,Pharsa,JamesPangks,Yi Sun-shin,LordJM.,Alice,xNova,Kaja,shizou,Cici
+16,8,2025-10-10,17:00,Aurora Gaming PH,AP.Bren,2,Aurora Gaming PH,12.6,11,3,0,1,2,1,6,2,Light.,Kalea,Yue,Angela,Demonkite,Lancelot,Edward,Alice,Domengkite,Moskov,shizou,Ruby,JamesPangks,Joy,AQUA,Kimmy,xNova,Grock,LordJM.,Cici
+16,8,2025-10-10,17:00,Aurora Gaming PH,AP.Bren,3,Aurora Gaming PH,15.6,21,7,2,0,3,0,9,2,Domengkite,Harith,Demonkite,Akai,Yue,Yve,Edward,Lapu-Lapu,Light.,Franco,AQUA,Kimmy,JamesPangks,Fredrinn,LordJM.,Alice,xNova,Helcurt,shizou,Esmeralda
+16,8,2025-10-10,19:30,Omega Esports,ONIC Philippines,1,ONIC Philippines,13.9,3,13,0,1,0,3,0,8,Raizen.,Fredrinn,SUPERYOSHI,Gatotkaca,Jeymz,Lapu-Lapu,Hadji,Kagura,Netskie,Wanwan,SuperFrince,Pharsa,Brusko,Kalea,K1NGKONG,Lancelot,Kirk,Alice,Kelra,Obsidia
+16,8,2025-10-10,19:30,Omega Esports,ONIC Philippines,2,ONIC Philippines,22.6,6,10,0,4,1,2,1,9,Jeymz,Gloo,SUPERYOSHI,Kalea,Raizen.,Lancelot,Netskie,Harith,Hadji,Kagura,SuperFrince,Pharsa,Kelra,Wanwan,Brusko,Grock,K1NGKONG,Fredrinn,Kirk,Esmeralda
+16,8,2025-10-11,14:30,Twisted Minds PH,TNC Pro Team,1,TNC Pro Team,17.8,13,24,1,1,2,1,3,9,MPtheKing.,Yi Sun-shin,Nosia,Harith,Caloy,Hylos,Sionnn,Kagura,Lansu,Lapu-Lapu,LanceCy,Zhuxin,Bennyqt,Wanwan,Zaida,Hayabusa,.3Mar,Alice,Ch4knu,Jawhead
+16,8,2025-10-11,14:30,Twisted Minds PH,TNC Pro Team,2,Twisted Minds PH,14.3,16,4,2,0,2,1,9,1,Caloy,Grock,MPtheKing.,Hayabusa,Lansu,Alice,Nosia,Granger,Sionnn,Kagura,LanceCy,Zhuxin,.3Mar,Arlott,Zaida,Yi Sun-shin,Bennyqt,Natan,Ch4knu,Hylos
+16,8,2025-10-11,14:30,Twisted Minds PH,TNC Pro Team,3,Twisted Minds PH,10.6,15,2,1,0,3,0,7,1,Caloy,Grock,MPtheKing.,Hayabusa,Nosia,Granger,Lansu,Gloo,Sionnn,Kagura,.3Mar,Arlott,LanceCy,Zhuxin,Zaida,Fredrinn,Bennyqt,Natan,Ch4knu,Helcurt
+16,8,2025-10-11,17:00,Aurora Gaming PH,Omega Esports,1,Aurora Gaming PH,26.0,19,11,1,4,1,2,5,9,Domengkite,Harith,Demonkite,Yi Sun-shin,Edward,Alice,Light.,Kalea,Yue,Angela,Raizen.,Fredrinn,Hadji,Kimmy,Jeymz,Esmeralda,Netskie,Claude,SUPERYOSHI,Arlott
+16,8,2025-10-11,17:00,Aurora Gaming PH,Omega Esports,2,Aurora Gaming PH,10.8,7,2,1,0,3,0,8,0,Domengkite,Harith,Edward,Alice,Demonkite,Yi Sun-shin,Light.,Gatotkaca,Yue,Novaria,Jeymz,Cici,Raizen.,Fredrinn,Hadji,Kimmy,SUPERYOSHI,Kalea,Netskie,Granger
+16,8,2025-10-11,19:30,Team Falcons PH,Team Liquid PH,1,Team Falcons PH,24.0,18,15,2,2,2,1,8,8,FlapTzy,Esmeralda,Pheww,Pharsa,KyleTzy,Yi Sun-shin,Owgwen,Hilda,SuperMarco,Cici,KarlTzy,Lancelot,Sanford,Lapu-Lapu,Oheb,Harith,Jaypee,Grock,Sanji,Kimmy
+16,8,2025-10-11,19:30,Team Falcons PH,Team Liquid PH,2,Team Liquid PH,12.7,7,12,0,1,0,3,1,7,Pheww,Pharsa,KyleTzy,Baxia,FlapTzy,Alice,Owgwen,Franco,SuperMarco,Moskov,Oheb,Wanwan,KarlTzy,Lancelot,Sanford,Lapu-Lapu,Sanji,Selena,Jaypee,Gatotkaca
+16,8,2025-10-11,19:30,Team Falcons PH,Team Liquid PH,3,Team Falcons PH,21.6,8,12,3,0,1,2,8,3,KyleTzy,Lancelot,SuperMarco,Harith,Pheww,Pharsa,FlapTzy,Esmeralda,Owgwen,Kaja,Sanford,Lapu-Lapu,Jaypee,Baxia,Oheb,Granger,Sanji,Angela,KarlTzy,Joy
+16,8,2025-10-12,17:00,TNC Pro Team,ONIC Philippines,1,TNC Pro Team,21.5,17,12,2,0,3,0,7,4,Ch4knu,Grock,.3Mar,Alice,Zaida,Hayabusa,LanceCy,Lunox,Bennyqt,Chou,SuperFrince,Valentina,K1NGKONG,Yi Sun-shin,Brusko,Hilda,Kirk,Uranus,Kelra,Ruby
+16,8,2025-10-12,17:00,TNC Pro Team,ONIC Philippines,2,ONIC Philippines,26.0,9,23,0,5,0,3,4,9,Zaida,Yi Sun-shin,LanceCy,Lunox,.3Mar,Arlott,Ch4knu,Chip,Bennyqt,Bane,Kirk,Phoveus,SuperFrince,Pharsa,Brusko,Gatotkaca,K1NGKONG,Lancelot,Kelra,Claude
+16,8,2025-10-12,17:00,TNC Pro Team,ONIC Philippines,3,ONIC Philippines,15.3,3,5,0,2,0,3,1,9,Ch4knu,Grock,Bennyqt,Wanwan,LanceCy,Kimmy,.3Mar,Gloo,Zaida,Hayabusa,SuperFrince,Zhuxin,K1NGKONG,Lancelot,Kirk,Phoveus,Brusko,Hilda,Kelra,Claude
+16,8,2025-10-12,19:30,Team Liquid PH,AP.Bren,1,Team Liquid PH,21.5,27,18,2,0,0,3,9,1,Oheb,Wanwan,KarlTzy,Akai,Sanford,Arlott,Sanji,Luo Yi,Jaypee,Chip,JamesPangks,Fredrinn,AQUA,Pharsa,shizou,Moskov,xNova,Mathilda,LordJM.,Lapu-Lapu
+16,8,2025-10-12,19:30,Team Liquid PH,AP.Bren,2,Team Liquid PH,11.8,16,2,1,0,3,0,8,1,KarlTzy,Yi Sun-shin,Jaypee,Kalea,Sanji,Lunox,Sanford,Alice,Oheb,Chou,LordJM.,Uranus,shizou,Granger,JamesPangks,Lancelot,AQUA,Valentina,xNova,Jawhead
+17,1,2026-03-20,17:00,Team Liquid PH,Aurora Gaming PH,1,Team Liquid PH,20.6,22,19,1,1,2,0,6,7,KarlTzy,Leomord,Sanji,Yve,Jaypee,Khaleed,Sanford,Alice,Daiki_,Moskov,Light,Grock,Yue,Zhuxin,Domengkite,Claude,Edward,Lapu-Lapu,Demonkite,Balmond
+17,1,2026-03-20,17:00,Team Liquid PH,Aurora Gaming PH,2,Aurora Gaming PH,16.9,9,20,0,2,0,3,0,7,Sanji,Zetian,Jaypee,Khaleed,Sanford,Gloo,Daiki_,Claude,KarlTzy,Hayabusa,Yue,Zhuxin,Demonkite,Baxia,Edward,Lapu-Lapu,Light,Grock,Domengkite,Harith
+17,1,2026-03-20,17:00,Team Liquid PH,Aurora Gaming PH,3,Team Liquid PH,11.8,15,8,1,0,3,0,7,0,Sanji,Zhuxin,Sanford,Lapu-Lapu,KarlTzy,Suyou,Daiki_,Karrie,Jaypee,Gatotkaca,Demonkite,Leomord,Light,Grock,Edward,Arlott,Yue,Pharsa,Domengkite,Lesley
+17,1,2026-03-20,20:00,Twisted Minds PH,ONIC Philippines,1,ONIC Philippines,30.6,10,10,3,2,1,2,8,9,Sionnn,Yve,Caloy,Marcel,Owl.,Claude,MPtheKing.,Leomord,Lansu,Phoveus,K1NGKONG,Harley,Ryota,Yu Zhong,Savero,Yi Sun-shin,Brusko,Kalea,SuperFrince,Zetian
+17,1,2026-03-20,20:00,Twisted Minds PH,ONIC Philippines,2,Twisted Minds PH,17.9,21,12,1,1,3,0,7,6,MPtheKing.,Leomord,Caloy,Khaleed,Lansu,Gloo,Sionnn,Valentina,Owl.,Claude,SuperFrince,Yve,K1NGKONG,Suyou,Brusko,Hilda,Savero,Moskov,Ryota,Phoveus
+17,1,2026-03-20,20:00,Twisted Minds PH,ONIC Philippines,3,ONIC Philippines,19.5,11,15,0,3,2,1,4,9,Lansu,Phoveus,MPtheKing.,Suyou,Sionnn,Pharsa,Caloy,Khaleed,Owl.,Yi Sun-shin,Ryota,Yu Zhong,SuperFrince,Yve,K1NGKONG,Leomord,Savero,Claude,Brusko,Gatotkaca
+17,1,2026-03-21,14:30,AP.Bren,Omega Esports,1,AP.Bren,25.9,16,11,3,2,0,3,7,8,Nova_,Kalea,Kielvj,Sora,shizou,Claude,JamesPangks,Suyou,Aqua,Zetian,Jeymz,Lapu-Lapu,Raizen.,Baxia,Minguin,Yve,Netskie,Hanabi,Perkziva,Marcel
+17,1,2026-03-21,14:30,AP.Bren,Omega Esports,2,AP.Bren,15.4,15,3,2,0,3,0,6,3,Nova_,Hilda,Kielvj,Arlott,JamesPangks,Leomord,Aqua,Pharsa,shizou,Claude,Raizen.,Fanny,Jeymz,Sora,Minguin,Yve,Perkziva,Chou,Netskie,Harith
+17,1,2026-03-21,17:00,Aurora Gaming PH,TNC Pro Team,1,Aurora Gaming PH,11.2,12,3,1,0,2,1,6,0,Domengkite,Freya,Yue,Kimmy,Demonkite,Guinevere,Edward,Lapu-Lapu,Light,Hylos,LanceCy,Yve,Zaida,Leomord,3Mar,Phoveus,Ch4knu,Marcel,Bennyqt,Moskov
+17,1,2026-03-21,17:00,Aurora Gaming PH,TNC Pro Team,2,Aurora Gaming PH,11.5,14,1,1,0,3,0,8,0,Demonkite,Baxia,Yue,Kimmy,Domengkite,Claude,Light,Grock,Edward,Lapu-Lapu,Zaida,Guinevere,LanceCy,Lunox,Bennyqt,Sora,Ch4knu,Gatotkaca,3Mar,Cici
+17,1,2026-03-21,19:30,Twisted Minds PH,Team Liquid PH,1,Team Liquid PH,16.2,6,11,1,1,1,2,4,7,Lansu,Uranus,MPtheKing.,Nolan,Sionnn,Yve,Caloy,Khaleed,Nosia,Karrie,Jaypee,Hylos,Sanji,Zhuxin,KarlTzy,Leomord,Sanford,Lapu-Lapu,Daiki_,Granger
+17,1,2026-03-21,19:30,Twisted Minds PH,Team Liquid PH,2,Team Liquid PH,15.3,12,17,1,1,0,3,3,7,MPtheKing.,Leomord,Caloy,Hylos,Sionnn,Pharsa,Lansu,Alice,Nosia,Claude,Sanji,Yve,KarlTzy,Suyou,Daiki_,Harith,Sanford,Sora,Jaypee,Khaleed
+17,1,2026-03-22,17:00,TNC Pro Team,AP.Bren,1,AP.Bren,22.6,8,16,1,3,2,1,2,8,Bennyqt,Karrie,Zaida,Fredrinn,LanceCy,Yve,3Mar,Lapu-Lapu,Ch4knu,Khaleed,Aqua,Valentina,JamesPangks,Suyou,shizou,Harith,Nova_,Marcel,Kielvj,Alice
+17,1,2026-03-22,17:00,TNC Pro Team,AP.Bren,2,TNC Pro Team,23.0,13,9,2,1,1,2,8,7,LanceCy,Yve,Bennyqt,Harith,3Mar,Phoveus,Ch4knu,Kalea,Zaida,Nolan,Aqua,Valentina,Nova_,Grock,shizou,Claude,JamesPangks,Suyou,Kielvj,Esmeralda
+17,1,2026-03-22,17:00,TNC Pro Team,AP.Bren,3,AP.Bren,11.4,3,18,1,2,1,2,3,8,Zaida,Leomord,Bennyqt,Yi Sun-shin,LanceCy,Zetian,Ch4knu,Grock,3Mar,Alice,Kielvj,Sora,Aqua,Yve,Nova_,Marcel,shizou,Moskov,JamesPangks,Baxia
+17,1,2026-03-22,19:30,ONIC Philippines,Team Falcons PH,1,ONIC Philippines,22.2,21,12,3,0,2,1,9,3,Brusko,Kalea,K1NGKONG,Guinevere,Kirk,Sora,SuperFrince,Lylia,Savero,Yi Sun-shin,SuperMarco,Claude,Kyle,Baxia,Hadji,Pharsa,Owgwen,Khaleed,Flap,Lapu-Lapu
+17,1,2026-03-22,19:30,ONIC Philippines,Team Falcons PH,2,Team Falcons PH,21.3,9,17,0,3,0,3,3,8,Kirk,Lapu-Lapu,K1NGKONG,Leomord,SuperFrince,Valir,Brusko,Gloo,Savero,Claude,Hadji,Valentina,Flap,Sora,SuperMarco,Harith,Owgwen,Chou,Kyle,Hayabusa
+17,1,2026-03-22,19:30,ONIC Philippines,Team Falcons PH,3,Team Falcons PH,14.6,5,13,0,2,0,3,3,9,SuperFrince,Yve,Brusko,Chou,Kirk,Terizla,K1NGKONG,Suyou,Savero,Claude,Flap,Sora,Owgwen,Khaleed,SuperMarco,Harith,Kyle,Fredrinn,Hadji,Kimmy
+17,2,2026-03-27,17:00,Twisted Minds PH,Omega Esports,1,Twisted Minds PH,11.4,16,2,1,0,2,1,8,0,Sionnn,Valentina,MPtheKing.,Harley,Caloy,Khaleed,Lansu,Phoveus,Owl.,Karrie,Raizen.,Fredrinn,Minguin,Kimmy,Netskie,Claude,Perkziva,Hilda,Jeymz,Cici
+17,2,2026-03-27,17:00,Twisted Minds PH,Omega Esports,2,Omega Esports,14.8,10,11,0,2,0,3,2,7,Lansu,Phoveus,MPtheKing.,Leomord,Sionnn,Valentina,Caloy,Khaleed,Owl.,Karrie,Netskie,Freya,Raizen.,Suyou,Minguin,Kimmy,Perkziva,Chip,Jeymz,Lapu-Lapu
+17,2,2026-03-27,17:00,Twisted Minds PH,Omega Esports,3,Twisted Minds PH,22.3,18,7,1,2,1,2,9,4,Sionnn,Valentina,MPtheKing.,Harley,Lansu,Gloo,Caloy,Hilda,Owl.,Granger,Netskie,Claude,Perkziva,Khaleed,Jeymz,Phoveus,Raizen.,Leomord,Minguin,Vexana
+17,2,2026-03-27,19:30,ONIC Philippines,TNC Pro Team,1,TNC Pro Team,12.5,3,16,0,1,2,1,2,9,Ryota,Hylos,K1NGKONG,Leomord,SuperFrince,Kimmy,Brusko,Chou,Savero,Sora,Stowm.,Yve,Ch4knu,Marcel,3Mar,Phoveus,Bennyqt,Claude,Zaida,Harley
+17,2,2026-03-27,19:30,ONIC Philippines,TNC Pro Team,2,TNC Pro Team,13.2,8,14,0,1,0,3,5,7,Brusko,Hilda,K1NGKONG,Leomord,Ryota,Phoveus,Savero,Obsidia,SuperFrince,Pharsa,Stowm.,Valentina,3Mar,Sora,Zaida,Harley,Bennyqt,Cici,Ch4knu,Baxia
+17,2,2026-03-28,14:30,Team Falcons PH,Team Liquid PH,1,Team Falcons PH,18.3,16,9,3,0,2,0,9,2,Kyle,Baxia,Hadji,Valentina,SuperMarco,Claude,Flap,Phoveus,Owgwen,Hilda,Teddy,Karrie,KarlTzy,Fredrinn,Jaypee,Khaleed,Sanji,Pharsa,Sanford,Sora
+17,2,2026-03-28,14:30,Team Falcons PH,Team Liquid PH,2,Team Liquid PH,13.2,5,16,0,2,0,3,1,7,Owgwen,Khaleed,Hadji,Zhuxin,SuperMarco,Harith,Flap,Lapu-Lapu,Kyle,Fanny,Teddy,Claude,Sanji,Yve,Jaypee,Hylos,Sanford,Yu Zhong,KarlTzy,Harley
+17,2,2026-03-28,14:30,Team Falcons PH,Team Liquid PH,3,Team Liquid PH,15.8,6,26,0,2,0,3,0,9,SuperMarco,Claude,Kyle,Fredrinn,Owgwen,Gloo,Hadji,Valir,Flap,Lapu-Lapu,KarlTzy,Baxia,Teddy,Karrie,Sanji,Valentina,Jaypee,Hylos,Sanford,Benedetta
+17,2,2026-03-28,17:00,Omega Esports,TNC Pro Team,1,Omega Esports,15.9,14,4,2,0,3,0,8,1,Netskie,Karrie,Perkziva,Kalea,Raizen.,Leomord,Jeymz,Gloo,Minguin,Valentina,Stowm.,Yve,Zaida,Suyou,Ch4knu,Chou,3Mar,Phoveus,Bennyqt,Moskov
+17,2,2026-03-28,17:00,Omega Esports,TNC Pro Team,2,Omega Esports,31.6,11,13,5,1,1,2,9,6,Perkziva,Khaleed,Minguin,Yve,Raizen.,Fredrinn,Netskie,Brody,Jeymz,Lapu-Lapu,3Mar,Sora,Ch4knu,Hilda,Zaida,Fanny,Bennyqt,Yi Sun-shin,Stowm.,Zetian
+17,2,2026-03-28,19:30,Twisted Minds PH,Aurora Gaming PH,1,Aurora Gaming PH,18.1,8,13,0,3,1,2,1,7,Lansu,Gloo,MPtheKing.,Harley,Caloy,Khaleed,Owl.,Freya,Sionnn,Gord,Demonkite,Fredrinn,Yue,Zhuxin,Domengkite,Karrie,Edward,Sora,Light,Chou
+17,2,2026-03-28,19:30,Twisted Minds PH,Aurora Gaming PH,2,Aurora Gaming PH,14.6,9,17,0,2,0,2,1,9,MPtheKing.,Harley,Caloy,Kalea,Sionnn,Gord,Lansu,Alice,Owl.,Yi Sun-shin,Yue,Valentina,Demonkite,Fredrinn,Domengkite,Harith,Edward,Sora,Light,Grock
+17,2,2026-03-29,17:00,AP.Bren,Team Liquid PH,1,AP.Bren,17.9,24,10,1,1,2,1,6,5,shizou,Claude,Kielvj,Sora,Aqua,Yve,Nova_,Gloo,JamesPangks,Suyou,Sanji,Zhuxin,Jaypee,Hylos,KarlTzy,Harley,Sanford,Phoveus,Teddy,Moskov
+17,2,2026-03-29,17:00,AP.Bren,Team Liquid PH,2,Team Liquid PH,15.7,11,12,0,2,2,1,2,7,Nova_,Hylos,shizou,Karrie,JamesPangks,Harley,Kielvj,Phoveus,Aqua,Pharsa,Teddy,Claude,Sanford,Sora,Sanji,Yve,Jaypee,Khaleed,KarlTzy,Guinevere
+17,2,2026-03-29,17:00,AP.Bren,Team Liquid PH,3,Team Liquid PH,11.5,3,13,0,1,0,3,2,7,Aqua,Valentina,JamesPangks,Harley,shizou,Karrie,Kielvj,Uranus,Nova_,Hilda,Teddy,Claude,Sanji,Yve,KarlTzy,Fredrinn,Sanford,Yu Zhong,Jaypee,Chou
+17,2,2026-03-29,19:30,Aurora Gaming PH,Team Falcons PH,1,Aurora Gaming PH,13.3,13,8,2,0,3,0,8,1,Demonkite,Baxia,Domengkite,Freya,Yue,Kimmy,Light,Gatotkaca,Edward,Lapu-Lapu,Flap,Sora,Kyle,Leomord,SuperMarco,Karrie,Owgwen,Kalea,Hadji,Pharsa
+17,2,2026-03-29,19:30,Aurora Gaming PH,Team Falcons PH,2,Team Falcons PH,10.9,4,18,0,1,1,2,2,7,Demonkite,Fredrinn,Yue,Kimmy,Edward,Lapu-Lapu,Light,Khaleed,Domengkite,Wanwan,Hadji,Valentina,Kyle,Leomord,Flap,Sora,SuperMarco,Karrie,Owgwen,Kalea
+17,2,2026-03-29,19:30,Aurora Gaming PH,Team Falcons PH,3,Team Falcons PH,22.4,11,25,1,3,0,3,4,8,Domengkite,Freya,Yue,Kimmy,Demonkite,Fredrinn,Edward,Lapu-Lapu,Light,Chip,Hadji,Valentina,Owgwen,Kaja,SuperMarco,Karrie,Flap,Phoveus,Kyle,Uranus
+17,3,2026-04-10,17:00,ONIC Philippines,AP.Bren,1,ONIC Philippines,19.5,13,8,3,0,3,0,9,4,SuperFrince,Zhuxin,Savero,Yi Sun-shin,Kirk,Yu Zhong,Brusko,Chou,K1NGKONG,Baxia,JamesPangks,Harley,Nova_,Gloo,Aqua,Yve,shizou,Claude,Kielvj,Lapu-Lapu
+17,3,2026-04-10,17:00,ONIC Philippines,AP.Bren,2,ONIC Philippines,14.4,12,6,2,0,3,0,9,1,K1NGKONG,Baxia,Brusko,Khaleed,SuperFrince,Kimmy,Savero,Yi Sun-shin,Kirk,Uranus,Aqua,Zhuxin,Nova_,Chou,JamesPangks,Leomord,Kielvj,Gloo,shizou,Moskov
+17,3,2026-04-10,19:30,Team Liquid PH,Omega Esports,1,Team Liquid PH,15.0,12,5,2,0,3,0,7,3,Teddy,Claude,Sanji,Yve,Sanford,Phoveus,Jaypee,Hylos,KarlTzy,Leomord,Jeymz,Sora,Minguin,Valentina,Raizen.,Fredrinn,Perkziva,Khaleed,Netskie,Hanabi
+17,3,2026-04-10,19:30,Team Liquid PH,Omega Esports,2,Team Liquid PH,22.7,22,16,4,0,0,2,8,5,Teddy,Claude,Sanford,Phoveus,Jaypee,Gatotkaca,KarlTzy,Guinevere,Sanji,Pharsa,Minguin,Valentina,Perkziva,Kalea,Netskie,Karrie,Jeymz,Gloo,Raizen.,Suyou
+17,3,2026-04-11,14:30,AP.Bren,Twisted Minds PH,1,Twisted Minds PH,20.9,9,15,2,1,1,2,3,9,JamesPangks,Baxia,shizou,Harith,Aqua,Yve,Kielvj,Arlott,Nova_,Marcel,MPtheKing.,Harley,Sionnn,Zhuxin,Caloy,Gloo,Lansu,Lapu-Lapu,Owl.,Claude
+17,3,2026-04-11,14:30,AP.Bren,Twisted Minds PH,2,Twisted Minds PH,20.0,14,17,0,3,0,2,5,9,Kielvj,Uranus,Nova_,Kalea,JamesPangks,Fanny,Aqua,Valentina,shizou,Obsidia,MPtheKing.,Harley,Lansu,Arlott,Caloy,Gatotkaca,Owl.,Claude,Sionnn,Zetian
+17,3,2026-04-11,17:00,Omega Esports,Team Falcons PH,1,Team Falcons PH,13.5,7,11,0,2,0,3,3,9,Minguin,Valentina,Netskie,Karrie,Perkziva,Kalea,Jeymz,Uranus,Raizen.,Harley,Hadji,Pharsa,Kyle,Guinevere,SuperMarco,Claude,Owgwen,Gloo,Flap,Arlott
+17,3,2026-04-11,17:00,Omega Esports,Team Falcons PH,2,Team Falcons PH,25.6,15,23,1,4,2,1,3,9,Netskie,Claude,Minguin,Yve,Perkziva,Khaleed,Jeymz,Phoveus,Raizen.,Leomord,Owgwen,Marcel,Kyle,Harley,SuperMarco,Yi Sun-shin,Flap,Alice,Hadji,Valentina
+17,3,2026-04-11,19:30,TNC Pro Team,Team Liquid PH,1,Team Liquid PH,13.5,2,12,0,2,0,3,0,8,Zaida,Harley,Stowm.,Lylia,Bennyqt,Yi Sun-shin,3Mar,Lapu-Lapu,Ch4knu,Chou,Sanji,Zhuxin,Teddy,Claude,Jaypee,Khaleed,Sanford,Uranus,KarlTzy,Lancelot
+17,3,2026-04-11,19:30,TNC Pro Team,Team Liquid PH,2,Team Liquid PH,14.4,5,15,0,2,0,3,0,9,Zaida,Guinevere,Stowm.,Zhuxin,3Mar,Arlott,Ch4knu,Gatotkaca,Bennyqt,Obsidia,Teddy,Claude,Sanford,Uranus,Sanji,Yve,Jaypee,Hylos,KarlTzy,Harley
+17,3,2026-04-12,17:00,Team Falcons PH,Twisted Minds PH,1,Team Falcons PH,18.0,14,7,2,0,3,0,7,2,Owgwen,Marcel,Kyle,Suyou,SuperMarco,Yi Sun-shin,Hadji,Pharsa,Flap,Alice,Caloy,Khaleed,Sionnn,Valentina,MPtheKing.,Leomord,Owl.,Claude,Lansu,Phoveus
+17,3,2026-04-12,17:00,Team Falcons PH,Twisted Minds PH,2,Team Falcons PH,22.1,18,12,3,0,3,0,9,4,SuperMarco,Claude,Kyle,Suyou,Flap,Phoveus,Owgwen,Kalea,Hadji,Kimmy,Sionnn,Valentina,Owl.,Harith,MPtheKing.,Yi Sun-shin,Caloy,Grock,Lansu,Gloo
+17,3,2026-04-12,19:30,ONIC Philippines,Aurora Gaming PH,1,ONIC Philippines,16.8,10,2,3,0,3,0,9,2,Savero,Freya,SuperFrince,Lylia,Brusko,Khaleed,K1NGKONG,Suyou,Kirk,Uranus,Yue,Zhuxin,Demonkite,Guinevere,Domengkite,Yi Sun-shin,Edward,Benedetta,Light,Grock
+17,3,2026-04-12,19:30,ONIC Philippines,Aurora Gaming PH,2,ONIC Philippines,22.5,12,7,3,1,3,0,9,0,Brusko,Khaleed,K1NGKONG,Harley,SuperFrince,Valentina,Kirk,Alice,Savero,Yi Sun-shin,Yue,Zhuxin,Demonkite,Guinevere,Domengkite,Harith,Light,Gloo,Edward,Lapu-Lapu
+17,4,2026-04-17,17:00,TNC Pro Team,Team Falcons PH,1,Team Falcons PH,21.2,9,11,2,0,2,1,7,5,LanceCy,Valentina,Zaida,Harley,3Mar,Sora,Ch4knu,Khaleed,Bennyqt,Yi Sun-shin,Owgwen,Marcel,Kyle,Suyou,Flap,Arlott,Hadji,Lylia,SuperMarco,Granger
+17,4,2026-04-17,17:00,TNC Pro Team,Team Falcons PH,2,Team Falcons PH,19.9,10,16,2,1,2,1,3,9,Zaida,Harley,LanceCy,Valentina,3Mar,Sora,Bennyqt,Claude,Ch4knu,Gatotkaca,Owgwen,Marcel,Hadji,Pharsa,Kyle,Suyou,Flap,Uranus,SuperMarco,Moskov
+17,4,2026-04-17,19:30,Omega Esports,ONIC Philippines,1,ONIC Philippines,11.5,6,19,0,1,1,2,0,8,Raizen.,Baxia,Perkziva,Khaleed,Netskie,Karrie,Minguin,Pharsa,Jeymz,Lapu-Lapu,Savero,Yi Sun-shin,SuperFrince,Zhuxin,Brusko,Kalea,K1NGKONG,Nolan,Kirk,Freya
+17,4,2026-04-17,19:30,Omega Esports,ONIC Philippines,2,ONIC Philippines,19.0,4,16,0,3,1,2,3,9,Perkziva,Chou,Minguin,Zetian,Raizen.,Harley,Jeymz,Valentina,Netskie,Karrie,K1NGKONG,Baxia,Brusko,Kalea,Kirk,Phoveus,Savero,Clint,SuperFrince,Valir
+17,4,2026-04-18,14:30,TNC Pro Team,Twisted Minds PH,1,Twisted Minds PH,25.6,12,20,1,3,3,0,6,9,3Mar,Uranus,Zaida,Hayabusa,LanceCy,Yve,Bennyqt,Freya,Ch4knu,Khaleed,Caloy,Arlott,MPtheKing.,Harley,Sionnn,Zhuxin,Owl.,Claude,Lansu,Hilda
+17,4,2026-04-18,14:30,TNC Pro Team,Twisted Minds PH,2,TNC Pro Team,21.4,12,3,4,0,3,0,9,1,Ch4knu,Marcel,LanceCy,Zhuxin,Bennyqt,Karrie,3Mar,Alice,Zaida,Hayabusa,MPtheKing.,Harley,Lansu,Arlott,Caloy,Khaleed,Owl.,Granger,Sionnn,Yve
+17,4,2026-04-18,14:30,TNC Pro Team,Twisted Minds PH,3,Twisted Minds PH,14.3,13,16,0,2,0,3,2,7,Bennyqt,Karrie,LanceCy,Zhuxin,3Mar,Alice,Zaida,Suyou,Ch4knu,Kalea,MPtheKing.,Harley,Lansu,Phoveus,Owl.,Claude,Caloy,Khaleed,Sionnn,Yve
+17,4,2026-04-18,17:00,Team Falcons PH,AP.Bren,1,Team Falcons PH,13.5,9,5,2,0,2,1,9,2,Kyle,Suyou,Owgwen,Kalea,SuperMarco,Claude,Flap,Arlott,Hadji,Pharsa,Nova_,Marcel,Aqua,Zetian,JamesPangks,Leomord,shizou,Karrie,Kielvj,Valentina
+17,4,2026-04-18,17:00,Team Falcons PH,AP.Bren,2,Team Falcons PH,15.0,17,9,2,0,2,1,9,0,Flap,Uranus,Kyle,Harley,Hadji,Valentina,Owgwen,Hilda,SuperMarco,Moskov,Nova_,Marcel,JamesPangks,Guinevere,Aqua,Pharsa,Kielvj,Yu Zhong,shizou,Yi Sun-shin
+17,4,2026-04-18,19:30,Aurora Gaming PH,Omega Esports,1,Aurora Gaming PH,17.6,13,3,3,0,3,0,9,2,Yue,Valentina,Domengkite,Claude,Edward,Sora,Light,Grock,Demonkite,Suyou,Raizen.,Guinevere,Netskie,Karrie,Perkziva,Kalea,Minguin,Pharsa,Jeymz,Lapu-Lapu
+17,4,2026-04-18,19:30,Aurora Gaming PH,Omega Esports,2,Omega Esports,22.9,16,14,0,4,2,1,6,7,Yue,Kimmy,Demonkite,Suyou,Light,Kalea,Edward,Alice,Domengkite,Granger,Minguin,Valentina,Netskie,Claude,Raizen.,Harley,Perkziva,Gatotkaca,Jeymz,Arlott
+17,4,2026-04-18,19:30,Aurora Gaming PH,Omega Esports,3,Omega Esports,19.0,5,10,1,2,2,0,2,8,Yue,Valentina,Domengkite,Moskov,Edward,Sora,Light,Grock,Demonkite,Leomord,Raizen.,Fanny,Netskie,Claude,Jeymz,Alice,Minguin,Luo Yi,Perkziva,Guinevere
+17,4,2026-04-19,17:00,Team Liquid PH,ONIC Philippines,1,Team Liquid PH,21.8,12,11,2,2,1,2,7,6,Sanford,Freya,Jaypee,Khaleed,Sanji,Yve,Teddy,Harith,KarlTzy,Fredrinn,SuperFrince,Zhuxin,K1NGKONG,Suyou,Brusko,Kalea,Kirk,Yu Zhong,Savero,Granger
+17,4,2026-04-19,17:00,Team Liquid PH,ONIC Philippines,2,Team Liquid PH,12.2,10,3,1,0,3,0,8,1,Sanji,Zhuxin,Sanford,Uranus,KarlTzy,Suyou,Teddy,Claude,Jaypee,Hylos,K1NGKONG,Harley,Kirk,Alice,Brusko,Khaleed,SuperFrince,Luo Yi,Savero,Karrie
+17,4,2026-04-19,19:30,AP.Bren,Aurora Gaming PH,1,Aurora Gaming PH,17.8,10,13,0,3,2,1,2,8,Kielvj,Sora,Aqua,Valentina,Nova_,Khaleed,shizou,Yi Sun-shin,JamesPangks,Joy,Demonkite,Baxia,Edward,Lapu-Lapu,Yue,Kimmy,Light,Gatotkaca,Domengkite,Granger
+17,4,2026-04-19,19:30,AP.Bren,Aurora Gaming PH,2,Aurora Gaming PH,14.4,4,13,0,2,1,2,2,8,Aqua,Valentina,Nova_,Khaleed,Kielvj,Sora,JamesPangks,Harley,shizou,Moskov,Demonkite,Baxia,Edward,Lapu-Lapu,Yue,Kimmy,Light,Badang,Domengkite,Harith
+17,5,2026-04-24,17:00,Aurora Gaming PH,Team Liquid PH,1,Team Liquid PH,11.2,2,14,0,1,2,1,0,8,Yue,Zhuxin,Demonkite,Leomord,Domengkite,Granger,Light,Hylos,Edward,Lapu-Lapu,Teddy,Harith,KarlTzy,Suyou,Sanji,Valentina,Sanford,Terizla,Jaypee,Marcel
+17,5,2026-04-24,17:00,Aurora Gaming PH,Team Liquid PH,2,Team Liquid PH,13.8,6,8,0,2,1,2,1,8,Edward,Phoveus,Yue,Valentina,Domengkite,Karrie,Light,Chou,Demonkite,Harley,Sanford,Uranus,KarlTzy,Yi Sun-shin,Jaypee,Hylos,Sanji,Pharsa,Teddy,Freya
+17,5,2026-04-24,19:30,ONIC Philippines,Twisted Minds PH,1,ONIC Philippines,19.7,15,9,2,1,2,1,9,1,Brusko,Kalea,SuperFrince,Zhuxin,Kirk,Uranus,K1NGKONG,Lancelot,Savero,Harith,MPtheKing.,Harley,Sionnn,Zetian,Caloy,Khaleed,Lansu,Alice,Owl.,Moskov
+17,5,2026-04-24,19:30,ONIC Philippines,Twisted Minds PH,2,ONIC Philippines,14.9,13,9,1,0,1,2,9,2,SuperFrince,Valentina,Brusko,Marcel,Savero,Bruno,K1NGKONG,Harley,Kirk,Alice,Caloy,Kalea,MPtheKing.,Suyou,Sionnn,Kagura,Lansu,Hilda,Owl.,Claude
+17,5,2026-04-25,14:30,Omega Esports,AP.Bren,1,Omega Esports,24.3,14,13,3,1,3,0,8,4,Perkziva,Marcel,Jeymz,Terizla,Minguin,Valentina,Raizen.,Lancelot,Netskie,Harith,JamesPangks,Baxia,shizou,Claude,Nova_,Khaleed,Kielvj,Alice,Aqua,Pharsa
+17,5,2026-04-25,14:30,Omega Esports,AP.Bren,2,AP.Bren,18.7,7,11,1,1,0,3,7,7,Raizen.,Baxia,Minguin,Zhuxin,Jeymz,Arlott,Perkziva,Hylos,Netskie,Obsidia,Kielvj,Freya,Nova_,Khaleed,Aqua,Lylia,JamesPangks,Leomord,shizou,Granger
+17,5,2026-04-25,14:30,Omega Esports,AP.Bren,3,Omega Esports,18.9,13,4,3,0,1,2,8,2,Minguin,Zhuxin,Raizen.,Harley,Perkziva,Hylos,Jeymz,Yu Zhong,Netskie,Bruno,Kielvj,Phoveus,JamesPangks,Lancelot,Aqua,Lylia,shizou,Claude,Nova_,Chou
+17,5,2026-04-25,17:00,TNC Pro Team,Aurora Gaming PH,1,TNC Pro Team,22.7,21,13,3,1,3,0,9,7,LanceCy,Zhuxin,Bennyqt,Claude,Zaida,Leomord,3Mar,Dyrroth,Ch4knu,Atlas,Edward,Uranus,Light,Kalea,Yue,Yve,Demonkite,Suyou,Domengkite,Karrie
+17,5,2026-04-25,17:00,TNC Pro Team,Aurora Gaming PH,2,TNC Pro Team,16.4,16,5,1,1,1,2,9,4,3Mar,Uranus,Bennyqt,Claude,Zaida,Suyou,Ch4knu,Hylos,LanceCy,Valir,Yue,Valentina,Demonkite,Fredrinn,Domengkite,Moskov,Light,Khaleed,Edward,Lapu-Lapu
+17,5,2026-04-25,19:30,Team Liquid PH,Twisted Minds PH,1,Team Liquid PH,11.9,16,3,1,0,3,0,8,1,KarlTzy,Leomord,Teddy,Karrie,Sanji,Valentina,Jaypee,Baxia,Sanford,Terizla,Owl.,Claude,Sionnn,Zhuxin,MPtheKing.,Suyou,Caloy,Khaleed,Lansu,Uranus
+17,5,2026-04-25,19:30,Team Liquid PH,Twisted Minds PH,2,Team Liquid PH,11.0,18,7,1,0,3,0,8,1,Sanji,Zhuxin,KarlTzy,Leomord,Teddy,Karrie,Jaypee,Hylos,Sanford,Terizla,Lansu,Phoveus,Sionnn,Kimmy,Caloy,Khaleed,MPtheKing.,Uranus,Owl.,Yi Sun-shin
+17,5,2026-04-26,17:00,AP.Bren,TNC Pro Team,1,AP.Bren,17.5,15,4,3,0,1,2,9,2,JamesPangks,Harley,Kielvj,Uranus,Aqua,Valentina,shizou,Karrie,Nova_,Kaja,Bennyqt,Claude,LanceCy,Zhuxin,3Mar,Dyrroth,Ch4knu,Hylos,Zaida,Yi Sun-shin
+17,5,2026-04-26,17:00,AP.Bren,TNC Pro Team,2,TNC Pro Team,18.4,5,8,0,3,0,3,3,9,JamesPangks,Harley,Kielvj,Sora,Aqua,Zhuxin,Nova_,Kalea,shizou,Karrie,3Mar,Uranus,Bennyqt,Claude,LanceCy,Valentina,Zaida,Leomord,Ch4knu,Badang
+17,5,2026-04-26,17:00,AP.Bren,TNC Pro Team,3,AP.Bren,15.6,15,5,1,1,0,3,9,0,Kielvj,Uranus,Aqua,Zhuxin,JamesPangks,Harley,shizou,Moskov,Nova_,Hilda,Bennyqt,Claude,LanceCy,Valentina,Zaida,Leomord,3Mar,Terizla,Ch4knu,Badang
+17,5,2026-04-26,19:30,Team Falcons PH,ONIC Philippines,1,Team Falcons PH,16.5,10,1,3,0,3,0,9,2,SuperMarco,Freya,Kyle,Suyou,Flap,Uranus,Hadji,Zetian,Owgwen,Gatotkaca,Brusko,Kalea,K1NGKONG,Harley,Kirk,Sora,Savero,Bruno,SuperFrince,Lylia
+17,5,2026-04-26,19:30,Team Falcons PH,ONIC Philippines,2,ONIC Philippines,17.3,12,9,2,0,2,1,6,7,Owgwen,Marcel,Hadji,Valentina,Kyle,Baxia,SuperMarco,Granger,Flap,Hilda,K1NGKONG,Harley,Kirk,Phoveus,SuperFrince,Yve,Brusko,Badang,Savero,Moskov
+17,5,2026-04-26,19:30,Team Falcons PH,ONIC Philippines,3,Team Falcons PH,10.8,11,1,1,0,2,1,8,2,Owgwen,Kalea,SuperMarco,Harith,Flap,Phoveus,Kyle,Guinevere,Hadji,Pharsa,SuperFrince,Valentina,K1NGKONG,Suyou,Kirk,Uranus,Savero,Claude,Brusko,Khaleed
+17,6,2026-05-01,17:00,Omega Esports,Twisted Minds PH,1,Omega Esports,14.0,14,3,2,0,1,2,8,0,Raizen.,Harley,Perkziva,Hylos,Netskie,Claude,Minguin,Gord,Jeymz,Lapu-Lapu,Lansu,Phoveus,Sionnn,Valentina,MPtheKing.,Suyou,Nosia,Harith,Caloy,Hilda
+17,6,2026-05-01,17:00,Omega Esports,Twisted Minds PH,2,Omega Esports,30.1,5,9,4,2,3,0,8,6,Minguin,Zhuxin,Jeymz,Phoveus,Raizen.,Leomord,Perkziva,Gatotkaca,Netskie,Harith,Caloy,Marcel,MPtheKing.,Suyou,Lansu,Uranus,Sionnn,Selena,Nosia,Karrie
+17,6,2026-05-01,19:30,TNC Pro Team,ONIC Philippines,1,ONIC Philippines,18.6,9,16,1,2,1,2,3,9,3Mar,Uranus,Bennyqt,Harith,Ch4knu,Hylos,Zaida,Hayabusa,LanceCy,Valir,K1NGKONG,Harley,SuperFrince,Valentina,Brusko,Kalea,Savero,Beatrix,Kirk,Hilda
+17,6,2026-05-01,19:30,TNC Pro Team,ONIC Philippines,2,ONIC Philippines,14.8,6,18,0,2,1,2,2,9,Zaida,Suyou,Ch4knu,Marcel,LanceCy,Valentina,3Mar,Alice,Bennyqt,Moskov,Savero,Freya,Kirk,Phoveus,K1NGKONG,Leomord,Brusko,Grock,SuperFrince,Gord
+17,6,2026-05-02,14:30,Team Liquid PH,Team Falcons PH,1,Team Liquid PH,14.6,19,6,2,0,1,2,8,1,Sanford,Phoveus,KarlTzy,Fredrinn,Teddy,Karrie,Jaypee,Gatotkaca,Sanji,Yve,Kyle,Leomord,SuperMarco,Claude,Flap,Alice,Owgwen,Hylos,Hadji,Pharsa
+17,6,2026-05-02,14:30,Team Liquid PH,Team Falcons PH,2,Team Falcons PH,14.5,3,18,0,2,1,2,3,9,Teddy,Moskov,KarlTzy,Suyou,Jaypee,Gatotkaca,Sanford,Terizla,Sanji,Selena,SuperMarco,Claude,Kyle,Guinevere,Owgwen,Kalea,Flap,Arlott,Hadji,Yve
+17,6,2026-05-02,14:30,Team Liquid PH,Team Falcons PH,3,Team Falcons PH,11.3,3,12,0,1,0,3,0,7,Teddy,Harith,Sanford,Uranus,KarlTzy,Leomord,Sanji,Yve,Jaypee,Khaleed,SuperMarco,Claude,Hadji,Valentina,Kyle,Suyou,Owgwen,Kalea,Flap,Sora
+17,6,2026-05-02,17:00,TNC Pro Team,Omega Esports,1,Omega Esports,15.1,4,10,1,1,1,2,1,7,Zaida,Harley,3Mar,Gloo,LanceCy,Yve,Bennyqt,Karrie,Ch4knu,Khufra,Perkziva,Hylos,Minguin,Zhuxin,Raizen.,Fanny,Jeymz,Arlott,Netskie,Bruno
+17,6,2026-05-02,17:00,TNC Pro Team,Omega Esports,2,Omega Esports,18.2,8,17,0,3,1,2,2,9,Bennyqt,Harith,LanceCy,Zhuxin,3Mar,Arlott,Ch4knu,Gloo,Zaida,Suyou,Raizen.,Harley,Perkziva,Hylos,Netskie,Claude,Minguin,Valentina,Jeymz,Yu Zhong
+17,6,2026-05-02,19:30,Aurora Gaming PH,Twisted Minds PH,1,Aurora Gaming PH,14.4,14,5,1,0,1,2,8,0,Demonkite,Harley,Domengkite,Claude,Yue,Pharsa,Edward,Thamuz,Light,Gatotkaca,Caloy,Marcel,Sionnn,Valentina,MPtheKing.,Leomord,Lansu,Terizla,Nosia,Granger
+17,6,2026-05-02,19:30,Aurora Gaming PH,Twisted Minds PH,2,Twisted Minds PH,15.4,7,15,1,1,1,2,7,7,Yue,Zhuxin,Domengkite,Claude,Demonkite,Fredrinn,Light,Badang,Edward,Thamuz,MPtheKing.,Harley,Tracyy,Khaleed,Sionnn,Valentina,Lansu,Hilda,Nosia,Karrie
+17,6,2026-05-02,19:30,Aurora Gaming PH,Twisted Minds PH,3,Twisted Minds PH,16.6,6,13,1,2,2,1,5,7,Demonkite,Suyou,Yue,Valentina,Domengkite,Harith,Light,Hylos,Edward,Terizla,Sionnn,Zhuxin,MPtheKing.,Leomord,Nosia,Claude,Tracyy,Khaleed,Lansu,Alice
+17,6,2026-05-03,17:00,Team Liquid PH,AP.Bren,1,Team Liquid PH,13.4,19,10,1,0,3,0,9,0,Sanford,Phoveus,Teddy,Claude,KarlTzy,Leomord,Sanji,Pharsa,Jaypee,Chou,Nova_,Hylos,Aqua,Yve,shizou,Harith,Kielvj,Alice,JamesPangks,Aulus
+17,6,2026-05-03,17:00,Team Liquid PH,AP.Bren,2,AP.Bren,22.1,11,16,1,3,1,2,4,8,Sanford,Phoveus,Sanji,Yve,KarlTzy,Fredrinn,Teddy,Moskov,Jaypee,Gatotkaca,shizou,Claude,Nova_,Marcel,JamesPangks,Leomord,Aqua,Pharsa,Kielvj,Terizla
+17,6,2026-05-03,17:00,Team Liquid PH,AP.Bren,3,Team Liquid PH,14.7,19,7,2,0,2,1,7,2,KarlTzy,Suyou,Sanji,Valentina,Jaypee,Gatotkaca,Sanford,Arlott,Teddy,Bruno,Kielvj,Uranus,shizou,Claude,JamesPangks,Leomord,Aqua,Pharsa,Nova_,Hilda
+17,6,2026-05-03,19:30,Team Falcons PH,Aurora Gaming PH,1,Team Falcons PH,14.4,12,3,2,0,3,0,8,0,Hadji,Valentina,Kyle,Suyou,Flap,Sora,Owgwen,Gloo,SuperMarco,Moskov,Demonkite,Harley,Domengkite,Claude,Yue,Pharsa,Light,Marcel,Edward,Arlott
+17,6,2026-05-03,19:30,Team Falcons PH,Aurora Gaming PH,2,Team Falcons PH,12.9,17,2,1,0,3,0,9,2,Owgwen,Kalea,Kyle,Harley,Flap,Terizla,SuperMarco,Claude,Hadji,Yve,Edward,Phoveus,Yue,Valentina,Demonkite,Suyou,Domengkite,Moskov,Light,Gatotkaca
+17,7,2026-05-08,17:00,AP.Bren,ONIC Philippines,1,ONIC Philippines,17.0,11,17,1,1,2,1,4,9,shizou,Moskov,Nova_,Hilda,Kielvj,Freya,JamesPangks,Guinevere,Aqua,Lylia,SuperFrince,Zhuxin,K1NGKONG,Harley,Kirk,Arlott,Brusko,Khaleed,Savero,Claude
+17,7,2026-05-08,17:00,AP.Bren,ONIC Philippines,2,ONIC Philippines,11.4,2,14,0,1,1,2,1,8,Nova_,Marcel,Aqua,Kimmy,shizou,Claude,Kielvj,Phoveus,JamesPangks,Joy,K1NGKONG,Baxia,Brusko,Kalea,SuperFrince,Gord,Kirk,Lapu-Lapu,Savero,Clint
+17,7,2026-05-08,19:30,Omega Esports,Team Liquid PH,1,Team Liquid PH,10.9,4,14,0,1,1,2,1,7,Minguin,Zhuxin,Raizen.,Leomord,Jeymz,Phoveus,Perkziva,Chou,Netskie,Obsidia,KarlTzy,Harley,Teddy,Freya,Sanford,Terizla,Jaypee,Hilda,Sanji,Pharsa
+17,7,2026-05-08,19:30,Omega Esports,Team Liquid PH,2,Team Liquid PH,12.2,3,14,0,1,0,3,1,8,Minguin,Zhuxin,Raizen.,Leomord,Perkziva,Hylos,Netskie,Moskov,Jeymz,Lapu-Lapu,Teddy,Claude,KarlTzy,Suyou,Sanji,Yve,Jaypee,Gatotkaca,Sanford,Yu Zhong
+17,7,2026-05-09,14:30,Twisted Minds PH,AP.Bren,1,Twisted Minds PH,13.9,13,11,1,1,1,2,7,3,MPtheKing.,Leomord,Tracyy,Kalea,Lansu,Uranus,Nosia,Moskov,Sionnn,Gord,shizou,Claude,Aqua,Valentina,Kielvj,Alice,JamesPangks,Joy,Nova_,Baxia
+17,7,2026-05-09,14:30,Twisted Minds PH,AP.Bren,2,Twisted Minds PH,19.1,18,7,2,0,2,1,9,3,Tracyy,Khaleed,Sionnn,Zhuxin,MPtheKing.,Leomord,Nosia,Harith,Lansu,Gloo,JamesPangks,Harley,Kielvj,Arlott,chovskrt,Yve,shizou,Granger,Nova_,Gatotkaca
+17,7,2026-05-09,17:00,Team Falcons PH,Omega Esports,1,Omega Esports,14.3,0,8,0,2,2,1,3,9,Hadji,Valentina,Flap,Uranus,Kyle,Suyou,SuperMarco,Moskov,Owgwen,Chou,Perkziva,Marcel,Raizen.,Harley,Netskie,Claude,Jeymz,Hilda,Minguin,Luo Yi
+17,7,2026-05-09,17:00,Team Falcons PH,Omega Esports,2,Team Falcons PH,18.1,11,5,0,2,1,2,7,6,SuperMarco,Claude,Kyle,Suyou,Hadji,Yve,Owgwen,Kalea,Flap,Alice,Perkziva,Marcel,Jeymz,Phoveus,Minguin,Valentina,Raizen.,Fredrinn,Netskie,Bruno
+17,7,2026-05-09,17:00,Team Falcons PH,Omega Esports,3,Omega Esports,16.4,7,14,0,2,0,3,1,8,Kyle,Harley,Owgwen,Khaleed,Hadji,Pharsa,Flap,Sora,SuperMarco,Karrie,Netskie,Claude,Minguin,Zhuxin,Raizen.,Suyou,Perkziva,Gatotkaca,Jeymz,Valentina
+17,7,2026-05-09,19:30,Team Liquid PH,TNC Pro Team,1,Team Liquid PH,13.4,18,3,2,0,3,0,9,0,KarlTzy,Suyou,Sanji,Yve,Teddy,Claude,Jaypee,Khaleed,Sanford,Terizla,Bennyqt,Harith,Stowm.,Zhuxin,Zaida,Leomord,Ch4knu,Hylos,3Mar,Sora
+17,7,2026-05-09,19:30,Team Liquid PH,TNC Pro Team,2,Team Liquid PH,10.5,17,5,1,0,3,0,7,0,Teddy,Claude,Sanji,Zhuxin,KarlTzy,Guinevere,Jaypee,Khaleed,Sanford,Sora,Zaida,Suyou,Bennyqt,Karrie,Stowm.,Yve,Ch4knu,Gatotkaca,3Mar,Alice
+17,7,2026-05-10,17:00,Twisted Minds PH,Team Falcons PH,1,Team Falcons PH,20.1,8,9,2,1,2,1,5,6,Tracyy,Marcel,MPtheKing.,Leomord,Sionnn,Valentina,Nosia,Moskov,Lansu,Hilda,SuperMarco,Claude,Kyle,Suyou,Owgwen,Kalea,Hadji,Yve,Flap,Terizla
+17,7,2026-05-10,17:00,Twisted Minds PH,Team Falcons PH,2,Team Falcons PH,14.4,9,18,0,2,0,3,2,9,Tracyy,Marcel,MPtheKing.,Leomord,Nosia,Claude,Sionnn,Gord,Lansu,Alice,Hadji,Valentina,Kyle,Suyou,Owgwen,Hilda,SuperMarco,Moskov,Flap,Lapu-Lapu
+17,7,2026-05-10,19:30,Aurora Gaming PH,ONIC Philippines,1,Aurora Gaming PH,18.4,14,7,3,0,2,1,9,2,Demonkite,Harley,Edward,Phoveus,Domengkite,Claude,Light,Gatotkaca,Yue,Kimmy,Brusko,Khaleed,SuperFrince,Zhuxin,K1NGKONG,Suyou,Kirk,Gloo,Savero,Harith
+17,7,2026-05-10,19:30,Aurora Gaming PH,ONIC Philippines,2,ONIC Philippines,19.1,6,7,1,2,3,0,2,9,Demonkite,Suyou,Yue,Valentina,Domengkite,Harith,Light,Gatotkaca,Edward,Arlott,K1NGKONG,Harley,Kirk,Hilda,SuperFrince,Gord,Brusko,Hylos,Savero,Claude
+17,7,2026-05-10,19:30,Aurora Gaming PH,ONIC Philippines,3,ONIC Philippines,17.6,13,17,0,3,2,1,3,9,Domengkite,Claude,Demonkite,Fredrinn,Yue,Yve,Edward,Sora,Light,Gatotkaca,Kirk,Phoveus,K1NGKONG,Suyou,Savero,Harith,SuperFrince,Gord,Brusko,Atlas
+17,8,2026-05-15,17:00,Team Falcons PH,TNC Pro Team,1,Team Falcons PH,14.4,15,6,1,0,1,2,7,0,Hadji,Valentina,Kyle,Guinevere,SuperMarco,Claude,Owgwen,Hilda,Flap,Lapu-Lapu,Ch4knu,Marcel,LanceCy,Zhuxin,Zaida,Harley,Bennyqt,Yi Sun-shin,3Mar,Terizla
+17,8,2026-05-15,17:00,Team Falcons PH,TNC Pro Team,2,Team Falcons PH,13.7,16,8,1,0,2,1,8,1,Owgwen,Kalea,Kyle,Guinevere,SuperMarco,Moskov,Flap,Sora,Hadji,Pharsa,LanceCy,Zhuxin,Zaida,Suyou,Bennyqt,Claude,Ch4knu,Khaleed,3Mar,Alice
+17,8,2026-05-15,19:30,ONIC Philippines,Omega Esports,1,ONIC Philippines,15.2,13,2,2,0,0,3,8,2,K1NGKONG,Harley,SuperFrince,Gord,Kirk,Terizla,Savero,Claude,Brusko,Kaja,Perkziva,Khaleed,Minguin,Zhuxin,Netskie,Harith,Raizen.,Lancelot,Jeymz,Hilda
+17,8,2026-05-15,19:30,ONIC Philippines,Omega Esports,2,Omega Esports,16.9,15,16,0,2,3,0,5,7,SuperFrince,Zhuxin,Savero,Moskov,K1NGKONG,Suyou,Brusko,Hylos,Kirk,Hilda,Raizen.,Fanny,Minguin,Yve,Netskie,Claude,Jeymz,Alice,Perkziva,Grock
+17,8,2026-05-15,19:30,ONIC Philippines,Omega Esports,3,ONIC Philippines,14.6,20,5,2,0,3,0,7,3,SuperFrince,Valentina,Brusko,Chou,K1NGKONG,Baxia,Savero,Obsidia,Kirk,Lapu-Lapu,Raizen.,Harley,Perkziva,Hylos,Jeymz,Arlott,Netskie,Bruno,Minguin,Luo Yi
+17,8,2026-05-16,14:30,Twisted Minds PH,TNC Pro Team,1,TNC Pro Team,19.8,12,16,0,3,0,3,2,9,MPtheKing.,Suyou,Lansu,Hilda,Nosia,Claude,Tracyy,Chou,Sionnn,Gord,Stowm.,Valentina,Bennyqt,Harith,3Mar,Sora,Ch4knu,Gloo,Zaida,Nolan
+17,8,2026-05-16,14:30,Twisted Minds PH,TNC Pro Team,2,Twisted Minds PH,18.1,16,4,3,0,3,0,9,3,Nosia,Claude,MPtheKing.,Suyou,Lansu,Alice,Tracyy,Baxia,Sionnn,Selena,3Mar,Phoveus,Bennyqt,Moskov,Stowm.,Valentina,Zaida,Guinevere,Ch4knu,Atlas
+17,8,2026-05-16,14:30,Twisted Minds PH,TNC Pro Team,3,Twisted Minds PH,17.6,12,8,1,1,2,1,8,3,MPtheKing.,Harley,Lansu,Alice,Nosia,Claude,Sionnn,Gord,Tracyy,Hilda,3Mar,Uranus,Stowm.,Yve,Bennyqt,Harith,Ch4knu,Khaleed,Zaida,Saber
+17,8,2026-05-16,17:00,AP.Bren,Team Falcons PH,1,Team Falcons PH,22.5,11,16,0,4,2,1,3,9,JamesPangks,Harley,Kielvj,Alice,Aqua,Gord,shizou,Irithel,Nova_,Hylos,Hadji,Valentina,Owgwen,Khaleed,SuperMarco,Claude,Flap,Phoveus,Kyle,Hayabusa
+17,8,2026-05-16,17:00,AP.Bren,Team Falcons PH,2,Team Falcons PH,16.5,5,12,0,2,1,2,2,9,JamesPangks,Harley,Aqua,Zhuxin,Kielvj,Uranus,shizou,Granger,Nova_,Marcel,Hadji,Valentina,Owgwen,Gloo,SuperMarco,Claude,Kyle,Fredrinn,Flap,Arlott
+17,8,2026-05-16,19:30,Omega Esports,Aurora Gaming PH,1,Omega Esports,14.1,12,5,2,0,3,0,7,3,Netskie,Claude,Perkziva,Marcel,Minguin,Selena,Raizen.,Fredrinn,Jeymz,Yu Zhong,Demonkite,Suyou,Yue,Zhuxin,Light,Gloo,Edward,Arlott,Domengkite,Clint
+17,8,2026-05-16,19:30,Omega Esports,Aurora Gaming PH,2,Aurora Gaming PH,14.9,4,10,0,2,3,0,2,9,Netskie,Claude,Jeymz,Phoveus,Perkziva,Gatotkaca,Raizen.,Suyou,Minguin,Selena,Demonkite,Harley,Yue,Gord,Light,Kalea,Edward,Hilda,Domengkite,Clint
+17,8,2026-05-16,19:30,Omega Esports,Aurora Gaming PH,3,Aurora Gaming PH,15.5,12,15,0,2,1,2,3,8,Minguin,Zhuxin,Raizen.,Leomord,Jeymz,Phoveus,Perkziva,Kalea,Netskie,Irithel,Demonkite,Suyou,Domengkite,Claude,Edward,Gloo,Yue,Kimmy,Light,Belerick
+17,8,2026-05-17,17:00,ONIC Philippines,Team Liquid PH,1,Team Liquid PH,16.9,6,9,0,2,1,2,2,9,Kirk,Phoveus,SuperFrince,Gord,Savero,Clint,Brusko,Grock,K1NGKONG,Guinevere,Teddy,Harith,KarlTzy,Suyou,Jaypee,Marcel,Sanford,Terizla,Sanji,Yve
+17,8,2026-05-17,17:00,ONIC Philippines,Team Liquid PH,2,Team Liquid PH,13.3,2,18,0,2,0,3,1,9,SuperFrince,Zhuxin,K1NGKONG,Suyou,Savero,Claude,Brusko,Gatotkaca,Kirk,Sora,Sanford,Benedetta,KarlTzy,Guinevere,Jaypee,Marcel,Sanji,Gord,Teddy,Freya
+17,8,2026-05-17,19:30,Aurora Gaming PH,AP.Bren,1,AP.Bren,15.1,0,12,0,2,0,3,0,7,Demonkite,Harley,Domengkite,Claude,Edward,Uranus,Light,Grock,Yue,Lylia,chovskrt,Zhuxin,JamesPangks,Guinevere,Nova_,Khaleed,Kielvj,Phoveus,shizou,Moskov
+17,8,2026-05-17,19:30,Aurora Gaming PH,AP.Bren,2,Aurora Gaming PH,18.0,16,9,2,1,1,2,9,5,Demonkite,Harley,Domengkite,Claude,Yue,Valentina,Edward,Phoveus,Light,Gatotkaca,Nova_,Marcel,JamesPangks,Leomord,shizou,Moskov,Kielvj,Lapu-Lapu,chovskrt,Selena
+17,8,2026-05-17,19:30,Aurora Gaming PH,AP.Bren,3,Aurora Gaming PH,16.4,18,6,2,0,3,0,8,3,Yue,Zhuxin,Edward,Lapu-Lapu,Demonkite,Fredrinn,Domengkite,Granger,Light,Badang,shizou,Harith,Kielvj,Phoveus,JamesPangks,Fanny,chovskrt,Valentina,Nova_,Atlas
+18,1,2026-08-21,17:00,Aurora Gaming PH,ONIC Philippines,1,ONIC Philippines,14.1,0,6,0,2,0,3,0,9,Koyl,Hirara,Light,Belerick,Domeng,Claude,Yue,Rafaela,Nathzz,Alice,Kirk,Barats,Savero,Melissa,SuperFrince,Novaria,SUPERYOSHI,Mathilda,K1NGKONG,Nolan
+18,1,2026-08-21,17:00,Aurora Gaming PH,ONIC Philippines,2,ONIC Philippines,13.3,3,19,0,1,0,3,2,9,Domeng,Melissa,Koyl,Nolan,Light,Belerick,Nathzz,Carmilla,Yue,Lylia,Kirk,Barats,K1NGKONG,Hirara,SUPERYOSHI,Kaja,SuperFrince,Aurora,Savero,Beatrix
+18,1,2026-08-21,19:30,Team Liquid PH,Team Falcons PH,1,Team Liquid PH,11.4,15,1,1,0,2,1,9,1,Jaypee,Rafaela,KarlTzy,Paquito,Sanji,Novaria,Teddy,Clint,Sanford,Uranus,Hadji,Eudora,Owgwen,Marcel,Kyle,Hirara,SuperMarco,Brody,Flap,Belerick
+18,1,2026-08-21,19:30,Team Liquid PH,Team Falcons PH,2,Team Falcons PH,13.6,10,14,0,1,0,3,3,7,Sanford,Carmilla,KarlTzy,Hirara,Jaypee,Badang,Sanji,Selena,Teddy,Moskov,Flap,Barats,Hadji,Rafaela,Kyle,Fanny,SuperMarco,Claude,Owgwen,Belerick
+18,1,2026-08-21,19:30,Team Liquid PH,Team Falcons PH,3,Team Falcons PH,20.0,13,16,1,2,1,1,8,7,Sanford,Atlas,KarlTzy,Harley,Sanji,Novaria,Jaypee,Marcel,Teddy,Clint,Flap,Barats,Kyle,Hirara,Owgwen,Rafaela,SuperMarco,Brody,Hadji,Valentina
+18,1,2026-08-22,14:00,AP.Bren,Twisted Minds PH,1,Twisted Minds PH,21.4,2,14,0,3,0,3,3,9,JamesPangks.,Hirara,LanceCy,Eudora,JMPINKMAN,Esmeralda,Escalera,Gatotkaca,Shizou,Harith,Sionnn,Selena,Tracyyy,Belerick,Sensu1,Nolan,Lansu,Dyrroth,Bennyqt,Karrie
+18,1,2026-08-22,14:00,AP.Bren,Twisted Minds PH,2,AP.Bren,12.2,6,4,1,0,3,0,8,3,Escalera,Belerick,JamesPangks.,Paquito,JMPINKMAN,Esmeralda,LanceCy,Vexana,Shizou,Claude,Bennyqt,Moskov,Lansu,Dyrroth,Sionnn,Valentina,Sensu1,Hirara,Tracyyy,Mathilda
+18,1,2026-08-22,14:00,AP.Bren,Twisted Minds PH,3,AP.Bren,11.1,11,3,1,0,2,1,7,0,JMPINKMAN,Barats,LanceCy,Eudora,Shizou,Clint,JamesPangks.,Paquito,Escalera,Rafaela,Sensu1,Hirara,Tracyyy,Gatotkaca,Bennyqt,Hanabi,Lansu,Carmilla,Sionnn,Novaria
+18,1,2026-08-22,17:00,Omega Esports,Team Liquid PH,1,Team Liquid PH,11.1,3,10,0,1,0,3,1,8,Perkziva,Atlas,Louis,Dyrroth,Minguin,Eudora,Raizen,Ling,Cull,Brody,Sanford,Uranus,KarlTzy,Harley,Sanji,Novaria,Jaypee,Mathilda,Teddy,Clint
+18,1,2026-08-22,17:00,Omega Esports,Team Liquid PH,2,Team Liquid PH,19.0,9,11,1,2,1,2,3,9,Louis,Barats,Raizen,Hirara,Minguin,Valentina,Perkziva,Angela,Cull,Clint,Sanford,Belerick,KarlTzy,Paquito,Teddy,Claude,Sanji,Novaria,Jaypee,Rafaela
+18,1,2026-08-22,19:30,Team Falcons PH,TNC Pro Team,1,Team Falcons PH,10.5,17,2,1,0,3,0,8,0,Kyle,Nolan,Owgwen,Rafaela,Hadji,Vexana,Flap,Belerick,SuperMarco,Paquito,Zehn,Gloo,Zaida,Hirara,Jowm,Claude,Ryota,Alice,Vinnn,Angela
+18,1,2026-08-22,19:30,Team Falcons PH,TNC Pro Team,2,Team Falcons PH,19.9,14,13,2,1,1,2,7,7,Hadji,Rafaela,Kyle,Paquito,Flap,Lapu-Lapu,SuperMarco,Moskov,Owgwen,Belerick,Ryota,Barats,Jowm,Brody,Zaida,Hirara,Vinnn,Lylia,Zehn,Badang
+18,1,2026-08-23,17:00,ONIC Philippines,AP.Bren,1,ONIC Philippines,14.4,13,6,0,1,2,1,6,7,Savero,Brody,SUPERYOSHI,Kaja,Kirk,Belerick,SuperFrince,Novaria,K1NGKONG,Hirara,Shizou,Melissa,JMPINKMAN,Esmeralda,LanceCy,Mathilda,Escalera,Gatotkaca,JamesPangks.,Lukas
+18,1,2026-08-23,17:00,ONIC Philippines,AP.Bren,2,ONIC Philippines,23.9,20,9,3,2,3,0,7,6,Kirk,Barats,K1NGKONG,Hirara,SUPERYOSHI,Kaja,SuperFrince,Vexana,Savero,Beatrix,Shizou,Melissa,JMPINKMAN,Esmeralda,Escalera,Belerick,LanceCy,Rafaela,JamesPangks.,Suyou
+18,1,2026-08-23,19:30,TNC Pro Team,Aurora Gaming PH,1,TNC Pro Team,22.0,13,3,4,0,2,1,8,2,Zaida,Paquito,Vinnn,Rafaela,Ryota,Edith,Jowm,Claude,Zehn,Belerick,Nathzz,Uranus,Koyl,Hirara,Light,Kaja,Yue,Cecilion,Domeng,Brody
+18,1,2026-08-23,19:30,TNC Pro Team,Aurora Gaming PH,2,Aurora Gaming PH,12.1,5,13,0,1,1,2,2,8,Zehn,Marcel,Zaida,Hirara,Jowm,Brody,Ryota,Arlott,Vinnn,Lylia,Domeng,Melissa,Light,Mathilda,Nathzz,Esmeralda,Koyl,Suyou,Yue,Zhuxin
+18,1,2026-08-23,19:30,TNC Pro Team,Aurora Gaming PH,3,TNC Pro Team,18.7,10,8,0,3,0,3,4,7,Jowm,Melissa,Zaida,Hirara,Zehn,Gloo,Vinnn,Angela,Ryota,Belerick,Nathzz,Barats,Yue,Vexana,Koyl,Harley,Domeng,Granger,Light,Rafaela
+18,2,2026-08-28,17:00,AP.Bren,Team Liquid PH,1,Team Liquid PH,11.1,2,17,0,1,1,2,1,8,JamesPangks.,Hirara,JMPINKMAN,Esmeralda,Escalera,Belerick,Shizou,Moskov,LanceCy,Mathilda,Sanji,Selena,KarlTzy,Suyou,Sanford,Atlas,Teddy,Clint,Jaypee,Minotaur
+18,2,2026-08-28,17:00,AP.Bren,Team Liquid PH,2,Team Liquid PH,17.4,10,14,0,3,1,2,4,9,Shizou,Brody,Escalera,Mathilda,JamesPangks.,Harley,LanceCy,Valentina,JMPINKMAN,Barats,Sanford,Carmilla,KarlTzy,Hirara,Sanji,Novaria,Jaypee,Belerick,Teddy,Paquito
+18,2,2026-08-28,19:30,Twisted Minds PH,ONIC Philippines,1,ONIC Philippines,17.1,2,8,0,2,1,2,2,7,Bennyqt,Melissa,Sensu1,Suyou,Sionnn,Selena,Tracyyy,Gatotkaca,Lansu,Uranus,SUPERYOSHI,Mathilda,Kirk,Belerick,SuperFrince,Lunox,Savero,Claude,K1NGKONG,Hirara
+18,2,2026-08-28,19:30,Twisted Minds PH,ONIC Philippines,2,ONIC Philippines,14.9,3,9,0,2,0,3,1,9,Bennyqt,Melissa,Sensu1,Paquito,Tracyyy,Belerick,Lansu,Esmeralda,Sionnn,Vexana,K1NGKONG,Hirara,Kirk,Barats,SuperFrince,Novaria,Savero,Claude,SUPERYOSHI,Chou
+18,2,2026-08-29,14:30,AP.Bren,TNC Pro Team,1,TNC Pro Team,14.5,6,18,0,2,0,3,1,9,Escalera,Mathilda,JamesPangks.,Paquito,LanceCy,Eudora,Shizou,Clint,JMPINKMAN,Belerick,Ryota,Uranus,Vinnn,Valentina,Zaida,Hirara,Zehn,Badang,Jowm,Brody
+18,2,2026-08-29,14:30,AP.Bren,TNC Pro Team,2,AP.Bren,17.9,11,7,3,0,2,1,7,3,JamesPangks.,Hirara,Escalera,Belerick,Shizou,Claude,JMPINKMAN,Alice,LanceCy,Angela,Vinnn,Valentina,Zehn,Atlas,Zaida,Paquito,Ryota,Barats,Jowm,Clint
+18,2,2026-08-29,14:30,AP.Bren,TNC Pro Team,3,TNC Pro Team,12.1,3,6,0,1,2,1,4,5,JamesPangks.,Hirara,JMPINKMAN,Esmeralda,Escalera,Gatotkaca,Shizou,Karrie,LanceCy,Mathilda,Jowm,Claude,Zehn,Belerick,Zaida,Harley,Vinnn,Zhuxin,Ryota,Ruby
+18,2,2026-08-29,17:00,Omega Esports,Team Falcons PH,1,Omega Esports,22.1,12,6,3,1,1,2,9,1,Cull,Melissa,Raizen,Fanny,Minguin,Selena,Perkziva,Gloo,Louis,Ruby,Hadji,Novaria,Flap,Uranus,SuperMarco,Brody,Owgwen,Marcel,Kyle,Hirara
+18,2,2026-08-29,17:00,Omega Esports,Team Falcons PH,2,Team Falcons PH,10.9,1,16,0,1,1,2,1,8,Louis,Paquito,Minguin,Selena,Perkziva,Minotaur,Cull,Claude,Raizen,Fredrinn,Kyle,Hirara,Owgwen,Belerick,SuperMarco,Brody,Hadji,Mathilda,Flap,Carmilla
+18,2,2026-08-29,17:00,Omega Esports,Team Falcons PH,3,Omega Esports,14.2,13,3,1,0,3,0,8,2,Louis,Phoveus,Raizen,Hirara,Perkziva,Angela,Minguin,Vexana,Cull,Paquito,SuperMarco,Brody,Hadji,Mathilda,Kyle,Fanny,Owgwen,Hylos,Flap,Carmilla
+18,2,2026-08-29,19:30,Team Liquid PH,Aurora Gaming PH,1,Team Liquid PH,22.6,19,11,4,0,2,1,7,3,KarlTzy,Paquito,Sanford,Ruby,Sanji,Eudora,Jaypee,Marcel,Teddy,Clint,Koyl,Hirara,Nathzz,Uranus,Domeng,Brody,Yue,Zhuxin,Light,Minotaur
+18,2,2026-08-29,19:30,Team Liquid PH,Aurora Gaming PH,2,Team Liquid PH,21.1,13,5,3,0,2,1,9,5,Sanford,Atlas,KarlTzy,Suyou,Sanji,Eudora,Jaypee,Marcel,Teddy,Clint,Koyl,Hirara,Light,Mathilda,Yue,Kimmy,Domeng,Moskov,Nathzz,Esmeralda
+18,2,2026-08-30,17:00,Twisted Minds PH,Team Falcons PH,1,Team Falcons PH,11.4,2,14,0,1,0,3,0,8,Sensu1,Hirara,Bennyqt,Brody,Tracyyy,Mathilda,Lansu,Phoveus,Sionnn,Selena,Owgwen,Belerick,Kyle,Paquito,SuperMarco,Clint,Flap,Ruby,Hadji,Eudora
+18,2,2026-08-30,17:00,Twisted Minds PH,Team Falcons PH,2,Team Falcons PH,12.4,1,10,0,1,0,3,3,9,Sionnn,Selena,Sensu1,Hirara,Bennyqt,Moskov,Lansu,Uranus,Tracyyy,Baxia,Owgwen,Belerick,Kyle,Paquito,Hadji,Rafaela,SuperMarco,Claude,Flap,Alice
+18,2,2026-08-30,19:30,ONIC Philippines,Omega Esports,1,ONIC Philippines,10.5,15,4,1,0,3,0,8,0,SuperFrince,Selena,Kirk,Atlas,K1NGKONG,Suyou,Savero,Moskov,SUPERYOSHI,Belerick,Raizen,Hirara,Louis,Gatotkaca,Perkziva,Angela,Cull,Chou,Minguin,Kagura
+18,2,2026-08-30,19:30,ONIC Philippines,Omega Esports,2,Omega Esports,20.6,7,14,3,1,2,1,7,7,SuperFrince,Selena,Kirk,Belerick,K1NGKONG,Suyou,Savero,Claude,SUPERYOSHI,Khaleed,Raizen,Hirara,Perkziva,Mathilda,Minguin,Novaria,Louis,Gatotkaca,Cull,Hanabi
+18,2,2026-08-30,19:30,ONIC Philippines,Omega Esports,3,ONIC Philippines,13.2,8,7,1,0,3,0,9,3,SUPERYOSHI,Mathilda,K1NGKONG,Paquito,SuperFrince,Luo Yi,Savero,Clint,Kirk,Atlas,Perkziva,Rafaela,Raizen,Leomord,Cull,Brody,Louis,Belerick,Minguin,Kimmy
+18,3,2026-09-04,17:00,Twisted Minds PH,Aurora Gaming PH,1,Aurora Gaming PH,16.8,5,12,0,2,2,1,1,9,Sensu1,Hirara,Tracyyy,Belerick,Sionnn,Novaria,Bennyqt,Yi Sun-shin,Lansu,Alice,Koyl,Paquito,Nathzz,Uranus,Yue,Eudora,Domeng,Clint,Light,Marcel
+18,3,2026-09-04,17:00,Twisted Minds PH,Aurora Gaming PH,2,Aurora Gaming PH,9.7,0,8,0,0,0,3,0,8,Tracyyy,Mathilda,Sensu1,Hirara,Sionnn,Eudora,Bennyqt,Moskov,Lansu,Phoveus,Koyl,Paquito,Yue,Pharsa,Nathzz,Belerick,Domeng,Clint,Light,Rafaela
+18,3,2026-09-04,19:30,TNC Pro Team,ONIC Philippines,1,TNC Pro Team,17.6,11,10,1,1,1,2,6,7,Ryota,Barats,Vinnn,Valentina,Jowm,Claude,Zehn,Badang,Zaida,Suyou,K1NGKONG,Hirara,SuperFrince,Selena,Kirk,Hylos,Savero,Clint,SUPERYOSHI,Chou
+18,3,2026-09-04,19:30,TNC Pro Team,ONIC Philippines,2,ONIC Philippines,13.3,5,16,0,2,1,2,2,8,Jowm,Claude,Ryota,Barats,Vinnn,Zhuxin,Zaida,Yi Sun-shin,Zehn,Lolita,K1NGKONG,Hirara,SUPERYOSHI,Mathilda,SuperFrince,Selena,Kirk,Hylos,Savero,Hanabi
+18,3,2026-09-04,19:30,TNC Pro Team,ONIC Philippines,3,ONIC Philippines,11.2,1,12,0,1,0,3,1,9,Zehn,Marcel,Zaida,Paquito,Jowm,Brody,Ryota,Uranus,Vinnn,Xavier,Savero,Melissa,K1NGKONG,Hirara,SuperFrince,Novaria,SUPERYOSHI,Gatotkaca,Kirk,Sora
+18,3,2026-09-05,14:30,Omega Esports,AP.Bren,1,AP.Bren,19.9,7,7,0,3,0,3,5,7,Cull,Melissa,Raizen,Suyou,Minguin,Valentina,Louis,Ruby,Perkziva,Atlas,JamesPangks.,Hirara,Escalera,Minotaur,JMPINKMAN,Uranus,Shizou,Miya,LanceCy,Rafaela
+18,3,2026-09-05,14:30,Omega Esports,AP.Bren,2,Omega Esports,14.9,18,6,2,0,3,0,9,2,Louis,Belerick,Raizen,Paquito,Minguin,Eudora,Cull,Brody,Perkziva,Kalea,JamesPangks.,Hirara,LanceCy,Angela,JMPINKMAN,Esmeralda,Escalera,Atlas,Shizou,Miya
+18,3,2026-09-05,14:30,Omega Esports,AP.Bren,3,Omega Esports,12.8,12,1,2,0,2,0,9,1,Raizen,Paquito,Perkziva,Hylos,Minguin,Eudora,Cull,Claude,Louis,Ruby,Escalera,Minotaur,LanceCy,Rafaela,JamesPangks.,Hirara,Shizou,Moskov,JMPINKMAN,Yu Zhong
+18,3,2026-09-05,17:00,TNC Pro Team,Team Liquid PH,1,Team Liquid PH,16.1,9,24,0,2,0,3,2,8,Zaida,Hirara,Ryota,Belerick,Jowm,Claude,Zehn,Badang,Vinnn,Novaria,Jaypee,Atlas,Sanji,Eudora,KarlTzy,Suyou,Teddy,Clint,Sanford,Carmilla
+18,3,2026-09-05,17:00,TNC Pro Team,Team Liquid PH,2,Team Liquid PH,22.2,16,16,2,2,3,0,8,7,Ryota,Atlas,Zaida,Hirara,Vinnn,Eudora,Jowm,Claude,Zehn,Gatotkaca,Teddy,Melissa,Jaypee,Minotaur,Sanji,Valentina,KarlTzy,Nolan,Sanford,Belerick
+18,3,2026-09-05,19:30,ONIC Philippines,Team Falcons PH,1,ONIC Philippines,16.6,12,3,2,1,3,0,8,3,Savero,Beatrix,Kirk,Barats,SuperFrince,Valentina,SUPERYOSHI,Kaja,K1NGKONG,Nolan,Kyle,Paquito,Owgwen,Gatotkaca,Flap,Uranus,SuperMarco,Obsidia,Hadji,Mathilda
+18,3,2026-09-05,19:30,ONIC Philippines,Team Falcons PH,2,Team Falcons PH,13.7,6,16,0,2,0,3,3,8,Kirk,Barats,Savero,Melissa,SuperFrince,Lylia,SUPERYOSHI,Chou,K1NGKONG,Fanny,Kyle,Hirara,Hadji,Selena,Flap,Carmilla,Owgwen,Khufra,SuperMarco,Miya
+18,3,2026-09-05,19:30,ONIC Philippines,Team Falcons PH,3,Team Falcons PH,13.4,4,11,0,2,0,3,2,9,Savero,Melissa,Kirk,Barats,SuperFrince,Novaria,K1NGKONG,Suyou,SUPERYOSHI,Marcel,Kyle,Hirara,SuperMarco,Miya,Flap,Carmilla,Hadji,Rafaela,Owgwen,Gloo
+18,3,2026-09-06,17:00,Team Liquid PH,Twisted Minds PH,1,Team Liquid PH,18.1,17,13,2,1,1,2,9,5,Sanford,Atlas,KarlTzy,Suyou,Sanji,Eudora,Jaypee,Minotaur,Teddy,Claude,Kayn,Hirara,Sionnn,Valentina,Tracyyy,Belerick,Bennyqt,Harith,Lansu,Gatotkaca
+18,3,2026-09-06,17:00,Team Liquid PH,Twisted Minds PH,2,Team Liquid PH,12.7,12,1,1,0,2,1,7,1,Sanford,Barats,Sanji,Selena,KarlTzy,Nolan,Teddy,Claude,Jaypee,Minotaur,Kayn,Hirara,Lansu,Esmeralda,Tracyyy,Gloo,Bennyqt,Miya,Sionnn,Mathilda
+18,3,2026-09-06,19:30,Aurora Gaming PH,Omega Esports,1,Aurora Gaming PH,13.9,11,3,2,0,2,1,9,1,Koyl,Paquito,Nathzz,Uranus,Yue,Pharsa,Light,Rafaela,Domeng,Clint,Raizen,Hirara,Louis,Ruby,Perkziva,Belerick,Cull,Claude,Minguin,Novaria
+18,3,2026-09-06,19:30,Aurora Gaming PH,Omega Esports,2,Aurora Gaming PH,19.3,17,15,1,1,0,3,7,5,Yue,Eudora,Koyl,Hirara,Light,Marcel,Domeng,Clint,Nathzz,Uranus,Raizen,Paquito,Perkziva,Carmilla,Minguin,Cecilion,Cull,Brody,Louis,Hylos
+18,4,2026-09-11,17:00,Omega Esports,Twisted Minds PH,1,Omega Esports,13.7,17,7,1,0,3,0,7,2,Raizen,Paquito,Perkziva,Carmilla,Minguin,Cecilion,Louis,Hylos,Cull,Claude,Sionnn,Eudora,Kayn,Hirara,Lansu,Uranus,Bennyqt,Karrie,Tracyyy,Badang
+18,4,2026-09-11,17:00,Omega Esports,Twisted Minds PH,2,Twisted Minds PH,19.6,4,21,0,3,0,3,6,9,Louis,Barats,Raizen,Hirara,Minguin,Selena,Cull,Miya,Perkziva,Gloo,Kayn,Paquito,Sionnn,Eudora,Lansu,Gatotkaca,Tracyyy,Marcel,Bennyqt,Moskov
+18,4,2026-09-11,17:00,Omega Esports,Twisted Minds PH,3,Omega Esports,13.9,14,9,1,0,3,0,6,4,Louis,Ruby,Raizen,Hirara,Minguin,Eudora,Perkziva,Hylos,Cull,Moskov,Lansu,Gatotkaca,Sionnn,Selena,Kayn,Fanny,Bennyqt,Miya,Tracyyy,Badang
+18,4,2026-09-11,19:30,Aurora Gaming PH,AP.Bren,1,Aurora Gaming PH,12.7,9,5,1,0,1,2,7,2,Nathzz,Atlas,Koyl,Fanny,Yue,Selena,Light,Gatotkaca,Domeng,Obsidia,LanceCy,Valentina,JMPINKMAN,Barats,Shizou,Miya,JamesPangks.,Suyou,Escalera,Belerick
+18,4,2026-09-11,19:30,Aurora Gaming PH,AP.Bren,2,Aurora Gaming PH,12.8,9,1,1,0,3,0,8,1,Yue,Rafaela,Nathzz,Uranus,Koyl,Nolan,Domeng,Clint,Light,Gloo,JamesPangks.,Hirara,JMPINKMAN,Barats,LanceCy,Eudora,Escalera,Marcel,Shizou,Brody
+18,4,2026-09-12,14:30,Twisted Minds PH,TNC Pro Team,1,TNC Pro Team,14.1,6,9,0,2,1,2,2,8,Kayn,Paquito,Sionnn,Eudora,Lansu,Hilda,Bennyqt,Karrie,Tracyyy,Gatotkaca,Zaida,Hirara,Zehn,Gloo,Vinnn,Selena,Ryota,Belerick,Jowm,Clint
+18,4,2026-09-12,14:30,Twisted Minds PH,TNC Pro Team,2,TNC Pro Team,14.1,1,5,0,2,0,3,1,9,Tracyyy,Belerick,Kayn,Hirara,Sionnn,Selena,Bennyqt,Beatrix,Lansu,Hylos,Ryota,Barats,Zaida,Paquito,Vinnn,Valentina,Zehn,Mathilda,Jowm,Hanabi
+18,4,2026-09-12,17:00,Team Falcons PH,AP.Bren,1,Team Falcons PH,14.7,14,4,1,1,1,2,9,2,Kyle,Hirara,SuperMarco,Melissa,Flap,Esmeralda,Owgwen,Minotaur,Hadji,Vexana,JMPINKMAN,Freya,JamesPangks.,Paquito,Escalera,Gatotkaca,Shizou,Clint,LanceCy,Eudora
+18,4,2026-09-12,17:00,Team Falcons PH,AP.Bren,2,Team Falcons PH,17.3,8,9,0,3,1,2,4,7,Flap,Freya,Kyle,Hirara,Owgwen,Carmilla,Hadji,Vexana,SuperMarco,Brody,Shizou,Melissa,JamesPangks.,Paquito,LanceCy,Zhuxin,Escalera,Minotaur,JMPINKMAN,Uranus
+18,4,2026-09-12,19:30,ONIC Philippines,Team Liquid PH,1,Team Liquid PH,12.0,0,8,0,1,0,3,3,9,K1NGKONG,Hirara,SuperFrince,Aurora,SUPERYOSHI,Kaja,Kirk,Belerick,Savero,Moskov,Teddy,Melissa,KarlTzy,Paquito,Jaypee,Minotaur,Sanji,Novaria,Sanford,Carmilla
+18,4,2026-09-12,19:30,ONIC Philippines,Team Liquid PH,2,Team Liquid PH,11.3,1,13,0,1,1,2,0,8,Kirk,Belerick,K1NGKONG,Hirara,SuperFrince,Zetian,SUPERYOSHI,Gloo,Savero,Claude,KarlTzy,Paquito,Sanford,Uranus,Sanji,Eudora,Jaypee,Mathilda,Teddy,Clint
+18,4,2026-09-13,17:00,TNC Pro Team,Omega Esports,1,Omega Esports,17.1,3,10,0,2,0,3,1,9,Jowm,Melissa,Zaida,Suyou,Ryota,Minotaur,Zehn,Chou,Vinnn,Zhuxin,Louis,Phoveus,Raizen,Hirara,Perkziva,Gatotkaca,Cull,Paquito,Minguin,Angela
+18,4,2026-09-13,17:00,TNC Pro Team,Omega Esports,2,TNC Pro Team,17.0,11,7,2,0,3,0,8,4,Zehn,Carmilla,Zaida,Hirara,Vinnn,Selena,Ryota,Minotaur,Jowm,Obsidia,Cull,Paquito,Perkziva,Marcel,Minguin,Novaria,Raizen,Yi Sun-shin,Louis,Gatotkaca
+18,4,2026-09-13,17:00,TNC Pro Team,Omega Esports,3,Omega Esports,14.1,3,9,0,2,0,3,1,7,Zaida,Hirara,Ryota,Minotaur,Vinnn,Selena,Zehn,Carmilla,Jowm,Obsidia,Minguin,Eudora,Perkziva,Belerick,Louis,Uranus,Cull,Miya,Raizen,Suyou
+18,4,2026-09-13,19:30,Team Falcons PH,Aurora Gaming PH,1,Team Falcons PH,10.9,15,1,1,0,3,0,7,2,Kyle,Hirara,Hadji,Selena,Owgwen,Carmilla,SuperMarco,Miya,Flap,Barats,Nathzz,Esmeralda,Koyl,Paquito,Yue,Rafaela,Domeng,Obsidia,Light,Belerick
+18,4,2026-09-13,19:30,Team Falcons PH,Aurora Gaming PH,2,Aurora Gaming PH,14.1,3,4,0,2,1,2,0,7,Flap,Minotaur,Kyle,Hirara,SuperMarco,Miya,Owgwen,Belerick,Hadji,Eudora,Light,Gatotkaca,Koyl,Nolan,Yue,Valentina,Nathzz,Atlas,Domeng,Moskov
+18,4,2026-09-13,19:30,Team Falcons PH,Aurora Gaming PH,3,Team Falcons PH,39.6,24,11,3,4,1,2,9,8,SuperMarco,Melissa,Kyle,Nolan,Owgwen,Belerick,Hadji,Eudora,Flap,Minotaur,Yue,Rafaela,Koyl,Hirara,Light,Gatotkaca,Domeng,Moskov,Nathzz,Sora
+18,5,2026-09-18,17:00,Team Liquid PH,TNC Pro Team,1,Team Liquid PH,16.9,9,5,2,1,3,0,9,1,KarlTzy,Paquito,Sanford,Uranus,Sanji,Eudora,Jaypee,Mathilda,Teddy,Karrie,Zaida,Hirara,Ryota,Carmilla,Jowm,Obsidia,Vinnn,Valentina,Zehn,Minotaur
+18,5,2026-09-18,17:00,Team Liquid PH,TNC Pro Team,2,TNC Pro Team,20.7,12,15,0,3,0,3,3,9,Sanford,Barats,KarlTzy,Hirara,Sanji,Novaria,Teddy,Clint,Jaypee,Carmilla,Vinnn,Selena,Zaida,Fanny,Ryota,Belerick,Zehn,Gatotkaca,Jowm,Bruno
+18,5,2026-09-18,17:00,Team Liquid PH,TNC Pro Team,3,Team Liquid PH,19.6,12,12,1,2,3,0,7,7,KarlTzy,Paquito,Jaypee,Minotaur,Sanji,Eudora,Sanford,Ruby,Teddy,Clint,Zaida,Hirara,Zehn,Carmilla,Vinnn,Cecilion,Ryota,Belerick,Jowm,Bruno
+18,5,2026-09-18,19:30,Omega Esports,Aurora Gaming PH,1,Aurora Gaming PH,14.1,7,9,1,1,0,3,1,8,Raizen,Hirara,Minguin,Eudora,Louis,Ruby,Perkziva,Belerick,Cull,Bruno,Nathzz,Barats,Yue,Rafaela,Koyl,Nolan,Domeng,Clint,Light,Hylos
+18,5,2026-09-18,19:30,Omega Esports,Aurora Gaming PH,2,Aurora Gaming PH,13.8,7,14,0,2,1,2,2,9,Louis,Ruby,Raizen,Hirara,Minguin,Eudora,Cull,Miya,Perkziva,Hylos,Koyl,Nolan,Nathzz,Uranus,Domeng,Clint,Yue,Yve,Light,Gatotkaca
+18,5,2026-09-19,14:30,TNC Pro Team,AP.Bren,1,AP.Bren,17.3,0,10,0,3,0,3,2,9,Ryota,Freya,Zaida,Hirara,Vinnn,Vexana,Zehn,Carmilla,Jowm,Bruno,JMPINKMAN,Esmeralda,JamesPangks.,Paquito,Shizou,Obsidia,LanceCy,Eudora,SpiderMilez,Minotaur
+18,5,2026-09-19,14:30,TNC Pro Team,AP.Bren,2,AP.Bren,10.5,2,10,0,1,0,3,1,5,Ryota,Uranus,Zaida,Nolan,Vinnn,Lylia,Jowm,Clint,Zehn,Gatotkaca,JamesPangks.,Hirara,LanceCy,Eudora,SpiderMilez,Carmilla,JMPINKMAN,Hilda,Shizou,Moskov
+18,5,2026-09-19,17:00,Team Falcons PH,Twisted Minds PH,1,Team Falcons PH,13.5,10,3,2,0,3,0,9,1,Kyle,Hirara,Flap,Minotaur,Owgwen,Gloo,Hadji,Valentina,SuperMarco,Paquito,Sionnn,Selena,Tracyyy,Gatotkaca,Kayn,Nolan,Lansu,Carmilla,Bennyqt,Brody
+18,5,2026-09-19,17:00,Team Falcons PH,Twisted Minds PH,2,Team Falcons PH,13.7,7,1,2,0,3,0,9,0,Flap,Uranus,Kyle,Nolan,Hadji,Selena,SuperMarco,Clint,Owgwen,Minotaur,Tracyyy,Carmilla,Bennyqt,Brody,Sionnn,Cecilion,Kayn,Hanzo,Lansu,Gatotkaca
+18,5,2026-09-19,19:30,Aurora Gaming PH,Team Liquid PH,1,Aurora Gaming PH,16.7,8,12,1,1,1,2,7,3,Domeng,Freya,Yue,Kimmy,Light,Gloo,Koyl,Yi Sun-shin,Nathzz,Gatotkaca,Sanford,Carmilla,KarlTzy,Hirara,Teddy,Paquito,Jaypee,Angela,Sanji,Zhuxin
+18,5,2026-09-19,19:30,Aurora Gaming PH,Team Liquid PH,2,Aurora Gaming PH,13.4,6,0,2,0,2,1,8,0,Yue,Eudora,Koyl,Nolan,Light,Gloo,Domeng,Claude,Nathzz,Esmeralda,Sanji,Selena,Jaypee,Mathilda,KarlTzy,Hirara,Teddy,Melissa,Sanford,Carmilla
+18,5,2026-09-20,17:00,AP.Bren,ONIC Philippines,1,ONIC Philippines,16.9,6,10,0,3,0,3,0,9,JMPINKMAN,Barats,JamesPangks.,Nolan,SpiderMilez,Minotaur,LanceCy,Novaria,Shizou,Obsidia,SuperFrince,Eudora,K1NGKONG,Hirara,Kirk,Uranus,Brusko,Gatotkaca,Savero,Aulus
+18,5,2026-09-20,17:00,AP.Bren,ONIC Philippines,2,AP.Bren,12.8,11,3,2,0,3,0,9,2,JamesPangks.,Hirara,JMPINKMAN,Barats,SpiderMilez,Gatotkaca,Shizou,Claude,LanceCy,Valentina,SuperFrince,Eudora,K1NGKONG,Yi Sun-shin,Brusko,Kalea,Savero,Bruno,Kirk,Hylos
+18,5,2026-09-20,17:00,AP.Bren,ONIC Philippines,3,ONIC Philippines,20.7,9,18,1,3,2,1,6,7,LanceCy,Eudora,SpiderMilez,Carmilla,JamesPangks.,Suyou,JMPINKMAN,Uranus,Shizou,Moskov,Kirk,Dyrroth,Brusko,Gatotkaca,SuperFrince,Zhuxin,Savero,Obsidia,K1NGKONG,Hirara
+18,5,2026-09-20,19:30,Team Liquid PH,Omega Esports,1,Team Liquid PH,15.3,16,8,2,0,2,1,8,3,KarlTzy,Nolan,Sanford,Minotaur,Sanji,Zhuxin,Jaypee,Marcel,Teddy,Karrie,Louis,Barats,Minguin,Eudora,Cull,Brody,Perkziva,Kalea,Raizen,Hayabusa
+18,5,2026-09-20,19:30,Team Liquid PH,Omega Esports,2,Team Liquid PH,19.4,13,3,3,0,2,1,9,2,KarlTzy,Nolan,Sanford,Esmeralda,Sanji,Eudora,Jaypee,Minotaur,Teddy,Bruno,Perkziva,Marcel,Louis,Barats,Minguin,Novaria,Raizen,Hirara,Cull,Brody
+18,6,2026-09-25,17:00,Twisted Minds PH,AP.Bren,1,AP.Bren,10.8,3,12,0,1,1,2,1,8,Kayn,Aulus,Sionnn,Zhuxin,Tracyyy,Minotaur,Bennyqt,Moskov,Lansu,Hylos,SpiderMilez,Carmilla,Shizou,Obsidia,LanceCy,Eudora,JamesPangks.,Fanny,JMPINKMAN,Alice
+18,6,2026-09-25,17:00,Twisted Minds PH,AP.Bren,2,AP.Bren,17.1,11,14,0,2,1,2,4,7,Bennyqt,Aulus,Kayn,Hirara,Sionnn,Zhuxin,Lansu,Hylos,Tracyyy,Angela,LanceCy,Eudora,JamesPangks.,Suyou,Shizou,Obsidia,SpiderMilez,Kalea,JMPINKMAN,Hilda
+18,6,2026-09-25,19:30,Omega Esports,ONIC Philippines,1,ONIC Philippines,14.4,4,13,0,2,0,3,1,9,Louis,Phoveus,Raizen,Fanny,Minguin,Cecilion,Cull,Obsidia,Perkziva,Carmilla,Kirk,Belerick,SuperFrince,Valentina,Savero,Moskov,K1NGKONG,Suyou,Brusko,Masha
+18,6,2026-09-25,19:30,Omega Esports,ONIC Philippines,2,ONIC Philippines,10.2,3,11,0,1,0,3,0,7,Minguin,Valentina,Perkziva,Minotaur,Louis,Uranus,Raizen,Nolan,Cull,Bruno,K1NGKONG,Hirara,Savero,Claude,SuperFrince,Selena,Brusko,Carmilla,Kirk,Dyrroth
+18,6,2026-09-26,14:30,TNC Pro Team,Twisted Minds PH,1,TNC Pro Team,11.5,12,1,1,0,3,0,8,0,Zehn,Gloo,Vinnn,Lylia,Zaida,Nolan,Jowm,Claude,Ryota,Masha,Sionnn,Zhuxin,Kayn,Aulus,Lansu,Esmeralda,Tracyyy,Carmilla,Bennyqt,Moskov
+18,6,2026-09-26,14:30,TNC Pro Team,Twisted Minds PH,2,TNC Pro Team,15.1,10,4,1,0,1,2,9,0,Ryota,Freya,Vinnn,Zhuxin,Zehn,Atlas,Zaida,Alice,Jowm,Claude,Tracyyy,Belerick,Sionnn,Eudora,Kayn,Nolan,Lansu,Masha,Bennyqt,Melissa
+18,6,2026-09-26,17:00,AP.Bren,Aurora Gaming PH,1,Aurora Gaming PH,14.0,4,9,1,1,2,1,2,7,LanceCy,Eudora,JamesPangks.,Hirara,Shizou,Obsidia,SpiderMilez,Gatotkaca,JMPINKMAN,Alice,Light,Masha,Yue,Rafaela,Koyl,Nolan,Domeng,Clint,Nathzz,Minotaur
+18,6,2026-09-26,17:00,AP.Bren,Aurora Gaming PH,2,Aurora Gaming PH,17.8,12,19,0,2,2,1,1,9,LanceCy,Eudora,JamesPangks.,Hirara,SpiderMilez,Gatotkaca,Shizou,Claude,JMPINKMAN,Barats,Domeng,Obsidia,Nathzz,Minotaur,Koyl,Nolan,Yue,Zhuxin,Light,Gloo
+18,6,2026-09-26,19:30,Team Falcons PH,ONIC Philippines,1,Team Falcons PH,17.4,6,4,2,0,2,1,7,1,Flap,Hylos,Kyle,Nolan,SuperMarco,Obsidia,Owgwen,Masha,Hadji,Valentina,Kirk,Minotaur,K1NGKONG,Paquito,Savero,Aulus,SuperFrince,Luo Yi,Brusko,Marcel
+18,6,2026-09-26,19:30,Team Falcons PH,ONIC Philippines,2,ONIC Philippines,13.4,0,7,0,2,1,2,2,8,Flap,Cici,Kyle,Guinevere,Hadji,Eudora,SuperMarco,Paquito,Owgwen,Minotaur,Brusko,Belerick,SuperFrince,Valentina,Kirk,Barats,K1NGKONG,Hirara,Savero,Claude
+18,6,2026-09-26,19:30,Team Falcons PH,ONIC Philippines,3,Team Falcons PH,16.9,11,3,3,0,3,0,9,3,Hadji,Valentina,SuperMarco,Obsidia,Flap,Minotaur,Owgwen,Marcel,Kyle,Harley,Brusko,Carmilla,Kirk,Belerick,Savero,Clint,K1NGKONG,Paquito,SuperFrince,Selena
+18,6,2026-09-27,17:00,Omega Esports,TNC Pro Team,1,Omega Esports,13.0,15,3,1,0,1,2,7,0,Perkziva,Masha,Raizen,Yi Sun-shin,Cull,Aulus,Louis,Belerick,Minguin,Yve,Zehn,Carmilla,Zaida,Alice,Vinnn,Zhuxin,Jowm,Claude,Ryota,Lukas
+18,6,2026-09-27,17:00,Omega Esports,TNC Pro Team,2,Omega Esports,15.9,14,1,2,0,3,0,7,3,Cull,Aulus,Minguin,Valentina,Perkziva,Minotaur,Louis,Barats,Raizen,Harley,Zaida,Nolan,Jowm,Obsidia,Vinnn,Eudora,Zehn,Gloo,Ryota,Hylos
+18,6,2026-09-27,19:30,Aurora Gaming PH,Team Falcons PH,1,Team Falcons PH,14.4,3,16,0,2,2,1,1,9,Koyl,Hirara,Yue,Pharsa,Nathzz,Uranus,Domeng,Paquito,Light,Rafaela,Flap,Barats,Kyle,Nolan,SuperMarco,Aulus,Hadji,Kimmy,Owgwen,Estes
+18,6,2026-09-27,19:30,Aurora Gaming PH,Team Falcons PH,2,Team Falcons PH,17.6,11,13,0,3,0,3,4,7,Light,Carmilla,Koyl,Hirara,Yue,Cecilion,Domeng,Obsidia,Nathzz,Alice,Flap,Atlas,Kyle,Nolan,Hadji,Eudora,SuperMarco,Aulus,Owgwen,Marcel
+18,7,2026-10-02,17:00,ONIC Philippines,Twisted Minds PH,1,ONIC Philippines,13.9,10,3,2,0,3,0,9,1,K1NGKONG,Hirara,SuperFrince,Valentina,Kirk,Belerick,Brusko,Marcel,Savero,Brody,Tracyyy,Gatotkaca,Kayn,Nolan,Sionnn,Selena,Bennyqt,Miya,Lansu,Minotaur
+18,7,2026-10-02,17:00,ONIC Philippines,Twisted Minds PH,2,ONIC Philippines,10.6,10,1,1,0,3,0,7,0,Kirk,Carmilla,SuperFrince,Selena,Brusko,Gatotkaca,K1NGKONG,Hayabusa,Savero,Obsidia,Kayn,Hirara,Lansu,Uranus,Sionnn,Valentina,Tracyyy,Minotaur,Bennyqt,Brody
+18,7,2026-10-02,19:30,Aurora Gaming PH,TNC Pro Team,1,TNC Pro Team,20.1,15,15,1,2,2,1,8,6,Nathzz,Atlas,Yue,Eudora,Koyl,Nolan,Light,Gatotkaca,Domeng,Miya,Zaida,Hirara,Vinnn,Valentina,Ryota,Belerick,Zehn,Marcel,Jowm,Melissa
+18,7,2026-10-02,19:30,Aurora Gaming PH,TNC Pro Team,2,Aurora Gaming PH,14.2,15,3,2,0,2,0,8,0,Koyl,Paquito,Nathzz,Uranus,Yue,Zhuxin,Domeng,Obsidia,Light,Khaleed,Zaida,Hirara,Ryota,Belerick,Vinnn,Valentina,Zehn,Gloo,Jowm,Brody
+18,7,2026-10-02,19:30,Aurora Gaming PH,TNC Pro Team,3,Aurora Gaming PH,20.6,20,17,1,1,0,3,8,8,Nathzz,Uranus,Yue,Zhuxin,Koyl,Paquito,Light,Atlas,Domeng,Miya,Vinnn,Valentina,Zaida,Hirara,Ryota,Carmilla,Jowm,Obsidia,Zehn,Gloo
+18,7,2026-10-03,14:30,Twisted Minds PH,Omega Esports,1,Omega Esports,14.6,5,7,1,1,3,0,4,4,Bennyqt,Paquito,Lansu,Cici,Sionnn,Valentina,Kayn,Hayabusa,Tracyyy,Minotaur,Perkziva,Gloo,Cull,Obsidia,Raizen,Nolan,Louis,Carmilla,Minguin,Zhuxin
+18,7,2026-10-03,14:30,Twisted Minds PH,Omega Esports,2,Omega Esports,18.3,16,10,0,2,1,2,6,9,Bennyqt,Paquito,Tracyyy,Minotaur,Sionnn,Eudora,Lansu,Cici,Kayn,Saber,Cull,Aulus,Raizen,Hirara,Louis,Barats,Minguin,Vexana,Perkziva,Belerick
+18,7,2026-10-03,17:00,AP.Bren,Team Falcons PH,1,AP.Bren,21.7,15,7,2,2,1,2,8,5,JamesPangks.,Hirara,SpiderMilez,Carmilla,LanceCy,Zhuxin,JMPINKMAN,Alice,Shizou,Claude,Kyle,Nolan,Flap,Minotaur,Hadji,Vexana,SuperMarco,Paquito,Owgwen,Belerick
+18,7,2026-10-03,17:00,AP.Bren,Team Falcons PH,2,Team Falcons PH,12.2,1,12,0,1,0,3,3,8,JamesPangks.,Paquito,LanceCy,Valentina,SpiderMilez,Minotaur,JMPINKMAN,Barats,Shizou,Miya,Kyle,Hirara,Hadji,Eudora,SuperMarco,Obsidia,Flap,Hylos,Owgwen,Khufra
+18,7,2026-10-03,17:00,AP.Bren,Team Falcons PH,3,Team Falcons PH,17.5,7,16,0,3,0,3,2,9,LanceCy,Valentina,Shizou,Obsidia,SpiderMilez,Carmilla,JamesPangks.,Harley,JMPINKMAN,Phoveus,Hadji,Eudora,Kyle,Nolan,Owgwen,Marcel,SuperMarco,Chou,Flap,Hylos
+18,7,2026-10-03,19:30,ONIC Philippines,Aurora Gaming PH,1,ONIC Philippines,25.5,14,9,2,3,3,0,9,4,Savero,Freya,Kirk,Carmilla,K1NGKONG,Fanny,Brusko,Gatotkaca,SuperFrince,Kimmy,Yue,Zhuxin,Domeng,Obsidia,Nathzz,Barats,Koyl,Harley,Light,Badang
+18,7,2026-10-03,19:30,ONIC Philippines,Aurora Gaming PH,2,Aurora Gaming PH,10.3,4,11,0,1,0,3,0,7,K1NGKONG,Nolan,SuperFrince,Valentina,Kirk,Atlas,Savero,Moskov,Brusko,Hylos,Yue,Zhuxin,Domeng,Obsidia,Koyl,Fanny,Light,Belerick,Nathzz,Gatotkaca
+18,7,2026-10-03,19:30,ONIC Philippines,Aurora Gaming PH,3,Aurora Gaming PH,16.2,7,9,1,1,3,0,5,9,Savero,Aulus,SuperFrince,Valentina,Brusko,Marcel,K1NGKONG,Hayabusa,Kirk,Gatotkaca,Light,Gloo,Domeng,Obsidia,Koyl,Nolan,Yue,Lylia,Nathzz,Carmilla
+18,7,2026-10-04,17:00,Team Liquid PH,AP.Bren,1,Team Liquid PH,14.3,9,7,2,0,3,0,8,1,Sanford,Lukas,KarlTzy,Aulus,Sanji,Kimmy,Jaypee,Gloo,Teddy,Freya,LanceCy,Eudora,JamesPangks.,Hirara,Shizou,Claude,SpiderMilez,Minotaur,JMPINKMAN,Esmeralda
+18,7,2026-10-04,17:00,Team Liquid PH,AP.Bren,2,Team Liquid PH,17.3,15,9,2,1,0,3,9,5,Sanford,Arlott,KarlTzy,Hirara,Jaypee,Minotaur,Sanji,Yve,Teddy,Freya,LanceCy,Zhuxin,JamesPangks.,Nolan,SpiderMilez,Gatotkaca,Shizou,Brody,JMPINKMAN,Uranus
+18,7,2026-10-04,19:30,Team Falcons PH,Omega Esports,1,Team Falcons PH,18.1,17,8,2,0,2,1,8,1,SuperMarco,Paquito,Flap,Sora,Hadji,Valentina,Owgwen,Carmilla,Kyle,Nolan,Cull,Aulus,Perkziva,Minotaur,Minguin,Kimmy,Raizen,Alice,Louis,Phoveus
+18,7,2026-10-04,19:30,Team Falcons PH,Omega Esports,2,Team Falcons PH,12.8,18,3,2,0,3,0,9,0,Flap,Barats,Kyle,Nolan,Hadji,Eudora,SuperMarco,Chou,Owgwen,Marcel,Cull,Paquito,Perkziva,Belerick,Louis,Aulus,Minguin,Selena,Raizen,Yi Sun-shin
+18,8,2026-10-08,17:00,Twisted Minds PH,Team Liquid PH,1,Team Liquid PH,17.8,11,15,1,1,1,2,3,8,Kayn,Aulus,Sionnn,Eudora,Lansu,Minotaur,Tracyyy,Marcel,Bennyqt,Sora,Sanford,Lukas,KarlTzy,Nolan,Sanji,Zhuxin,Teddy,Cici,Jaypee,Hilda
+18,8,2026-10-08,17:00,Twisted Minds PH,Team Liquid PH,2,Team Liquid PH,19.3,7,17,2,1,2,1,3,8,Lansu,Aulus,Kayn,Hirara,Tracyyy,Marcel,Sionnn,Vexana,Bennyqt,Sora,KarlTzy,Nolan,Teddy,Freya,Jaypee,Gatotkaca,Sanji,Kimmy,Sanford,Esmeralda
+18,8,2026-10-08,19:30,ONIC Philippines,TNC Pro Team,1,ONIC Philippines,23.2,12,7,4,0,3,0,8,6,K1NGKONG,Aulus,Savero,Lukas,Kirk,Minotaur,Brusko,Gatotkaca,SuperFrince,Rafaela,Jowm,Paquito,Zaida,Nolan,Zehn,Marcel,Ryota,Belerick,Vinnn,Zetian
+18,8,2026-10-08,19:30,ONIC Philippines,TNC Pro Team,2,TNC Pro Team,20.6,2,11,0,3,2,1,3,8,SuperFrince,Valentina,K1NGKONG,Nolan,Kirk,Lukas,Brusko,Gatotkaca,Savero,Miya,Zaida,Hirara,Vinnn,Eudora,Zehn,Marcel,Ryota,Atlas,Jowm,Cici
+18,8,2026-10-08,19:30,ONIC Philippines,TNC Pro Team,3,ONIC Philippines,13.7,12,0,2,0,3,0,9,1,K1NGKONG,Yi Sun-shin,SuperFrince,Valentina,Kirk,Minotaur,Savero,Aulus,Brusko,Kalea,Ryota,Alice,Zaida,Nolan,Vinnn,Kimmy,Jowm,Melissa,Zehn,Belerick
+18,8,2026-10-09,14:30,AP.Bren,Omega Esports,1,Omega Esports,18.1,7,15,1,1,0,3,5,7,JamesPangks.,Hirara,SpiderMilez,Minotaur,LanceCy,Valentina,JMPINKMAN,Barats,Shizou,Chou,Minguin,Zhuxin,Cull,Freya,Raizen,Nolan,Perkziva,Gatotkaca,Louis,Uranus
+18,8,2026-10-09,14:30,AP.Bren,Omega Esports,2,Omega Esports,16.2,1,7,0,3,1,2,1,9,JMPINKMAN,Alice,JamesPangks.,Suyou,Shizou,Obsidia,LanceCy,Valentina,SpiderMilez,Minotaur,Cull,Freya,Raizen,Paquito,Minguin,Kimmy,Louis,Phoveus,Perkziva,Marcel
+18,8,2026-10-09,17:00,TNC Pro Team,Team Falcons PH,1,TNC Pro Team,24.4,10,16,1,2,1,2,6,8,Ryota,Aulus,Vinnn,Valentina,Zehn,Carmilla,Zaida,Alice,Jowm,Lukas,Flap,Atlas,Hadji,Eudora,SuperMarco,Paquito,Owgwen,Khufra,Kyle,Harley
+18,8,2026-10-09,17:00,TNC Pro Team,Team Falcons PH,2,Team Falcons PH,15.4,8,21,0,2,0,3,2,9,Ryota,Aulus,Zaida,Hirara,Zehn,Badang,Jowm,Cici,Vinnn,Eudora,Flap,Hylos,Hadji,Selena,Kyle,Nolan,Owgwen,Khufra,SuperMarco,Freya
+18,8,2026-10-09,17:00,TNC Pro Team,Team Falcons PH,3,Team Falcons PH,24.0,20,10,1,2,1,2,9,5,Vinnn,Selena,Zaida,Fanny,Ryota,Uranus,Jowm,Cici,Zehn,Belerick,Owgwen,Marcel,Kyle,Hirara,SuperMarco,Chou,Hadji,Lylia,Flap,Carmilla
+18,8,2026-10-09,19:30,Team Liquid PH,ONIC Philippines,1,Team Liquid PH,13.5,14,1,1,0,3,0,9,3,Sanford,Arlott,Teddy,Cici,Sanji,Zhuxin,Jaypee,Atlas,KarlTzy,Suyou,Savero,Freya,K1NGKONG,Aulus,Brusko,Marcel,SuperFrince,Luo Yi,Kirk,Minotaur
+18,8,2026-10-09,19:30,Team Liquid PH,ONIC Philippines,2,Team Liquid PH,11.2,12,1,1,0,3,0,7,2,Sanford,Alice,KarlTzy,Hirara,Sanji,Zhuxin,Jaypee,Hylos,Teddy,Cici,SuperFrince,Valentina,Brusko,Kalea,Kirk,Minotaur,K1NGKONG,Yi Sun-shin,Savero,Aulus
+18,8,2026-10-11,17:00,Aurora Gaming PH,Twisted Minds PH,1,Twisted Minds PH,21.0,9,12,2,2,1,2,6,7,Domeng,Freya,Yue,Kimmy,Light,Gatotkaca,Nathzz,Esmeralda,Koyl,Suyou,Bennyqt,Paquito,Kayn,Aulus,Sionnn,Selena,Tracyyy,Belerick,Lansu,Uranus
+18,8,2026-10-11,17:00,Aurora Gaming PH,Twisted Minds PH,2,Aurora Gaming PH,12.1,13,5,1,0,1,2,7,2,Light,Carmilla,Yue,Zhuxin,Koyl,Paquito,Nathzz,Barats,Domeng,Miya,Kayn,Aulus,Lansu,Cici,Tracyyy,Gatotkaca,Sionnn,Kimmy,Bennyqt,Chou
+18,8,2026-10-11,17:00,Aurora Gaming PH,Twisted Minds PH,3,Aurora Gaming PH,20.9,14,12,2,2,3,0,9,6,Koyl,Aulus,Yue,Eudora,Domeng,Obsidia,Light,Badang,Nathzz,Gatotkaca,Kayn,Fanny,Sionnn,Selena,Bennyqt,Miya,Tracyyy,Belerick,Lansu,Minotaur
+18,8,2026-10-11,19:30,Team Falcons PH,Team Liquid PH,1,Team Falcons PH,11.4,16,2,1,0,3,0,7,0,SuperMarco,Freya,Flap,Hylos,Kyle,Paquito,Owgwen,Marcel,Hadji,Eudora,KarlTzy,Aulus,Sanji,Kimmy,Teddy,Cici,Jaypee,Gatotkaca,Sanford,Lukas
+18,8,2026-10-11,19:30,Team Falcons PH,Team Liquid PH,2,Team Liquid PH,11.8,6,16,0,1,1,2,4,8,Hadji,Eudora,Kyle,Paquito,SuperMarco,Esmeralda,Owgwen,Kalea,Flap,Hylos,Teddy,Freya,KarlTzy,Aulus,Jaypee,Minotaur,Sanji,Pharsa,Sanford,Alice
+18,8,2026-10-11,19:30,Team Falcons PH,Team Liquid PH,3,Team Liquid PH,20.8,12,15,1,1,2,1,5,9,SuperMarco,Freya,Kyle,Alice,Hadji,Eudora,Owgwen,Gatotkaca,Flap,Carmilla,Sanford,Lapu-Lapu,KarlTzy,Aulus,Sanji,Pharsa,Jaypee,Minotaur,Teddy,Paquito

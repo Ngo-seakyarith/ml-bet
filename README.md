@@ -106,14 +106,38 @@ Adding a new bet type to the parser adds it to every table automatically: no new
 
 The Standings page shows regular-season tables for MPL PH, MPL ID and MPL MY, ranked by series wins and
 then map difference, with a week picker to see the table as it stood after any week. Each season
-comes from one results file per league in `src/data/` (one row per series:
-`season,week,date,team_1,team_2,score`, score from team_1's side, blank when not played yet):
+comes from one results file per league in `src/data/`:
 
-- `MPL_PH_Seasons.csv`: Seasons 15–17. This PH season is read from the betting CSV instead,
-  which already holds every PH match, so PH results are entered once.
-- `MPL_ID_Seasons.csv`: Seasons 15–18, including this season's fixtures still to play. Add
-  each week's ID scores here (the betting CSV only has the ID matches you tracked).
-- `MPL_MY_Seasons.csv`: Seasons 17–18, the same way.
+- `MPL_PH_Seasons.csv`: Seasons 15–18, **one row per game**:
+  `season,week,date,scheduled_time_ph_utc8,team_1,team_2,game,winner,duration,kills_1,kills_2,lords_1,lords_2,turtles_1,turtles_2,towers_1,towers_2`.
+  All 544 games have scheduled times and five player/hero pairs for each team.
+  Official match pages supply statistics and player picks; Liquipedia supplies recorded
+  drafts and game results. Game order is matched by drafts, rather than assuming that
+  an archived source's first data container is the first game. One unrelated April 18,
+  2026 TNC–Twisted Minds scoreboard was replaced using its official game recording.
+  Each game also has `team_1_player_1` / `team_1_hero_1` through
+  `team_1_player_5` / `team_1_hero_5`, with the same five pairs for `team_2`.
+  A player and hero in the same numbered slot belong together. Slots do not impose a
+  fixed lane order. `duration` is minutes rounded to **one decimal**. Published game
+  times are used when available; official gold divided by gold per minute is an
+  acceptable approximation when no clock is published. No separate mm:ss column is kept.
+- `MPL_ID_Seasons.csv`: Seasons 15–18, **one row per game**, with scheduled time in UTC+7,
+  winner, duration in minutes to one decimal, kills, and the same ten player/hero pairs.
+  All 678 played games are filled. Eight future fixtures retain blank game details.
+  Official MPL ID scoreboards provide the game data; five missing hero labels use
+  independently recorded drafts. Four missing lineups and three missing kill totals
+  were verified against official game recordings. ID's official scoreboards do not
+  publish the PH objective totals, so those columns are not added to the ID file.
+- `MPL_MY_Seasons.csv`: Seasons 17–18, one row per series:
+  `season,week,date,team_1,team_2,score`; score is from team_1's side and blank until played.
+
+PH and ID series scores are counted from the game winners. Source notes stay
+outside the CSV. Completion means that the requested fields
+for played games are filled; it does not guarantee that every source is error-free.
+The NAVI–EVOS draft disagreement (August 22, 2025, game 2) was resolved against the
+[official game recording at 15:00](https://www.youtube.com/watch?v=JttXKvVFhOk&t=900):
+Xyve played Harith and Erlan played Granger. The CSV's official MPL picks were correct;
+Liquipedia exchanged the two gold-lane heroes.
 
 Older seasons are left out on purpose: team names changed, so they would not line up.
 

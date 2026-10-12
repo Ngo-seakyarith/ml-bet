@@ -1,289 +1,687 @@
-season,week,date,team_1,team_2,score
-15,1,2025-03-07,Natus Vincere,RRQ Hoshi,0-2
-15,1,2025-03-07,EVOS Esports,Team Liquid ID,2-1
-15,1,2025-03-08,EVOS Esports,Geek Fam ID,2-0
-15,1,2025-03-08,Bigetron by Vitality,ALTER EGO,2-0
-15,1,2025-03-08,RRQ Hoshi,ONIC Esports,2-0
-15,1,2025-03-09,DEWA United,Bigetron by Vitality,2-1
-15,1,2025-03-09,ALTER EGO,ONIC Esports,2-1
-15,1,2025-03-09,Team Liquid ID,Natus Vincere,2-1
-15,2,2025-03-14,ONIC Esports,Geek Fam ID,1-2
-15,2,2025-03-14,DEWA United,Natus Vincere,2-0
-15,2,2025-03-15,Natus Vincere,ALTER EGO,1-2
-15,2,2025-03-15,RRQ Hoshi,Team Liquid ID,2-0
-15,2,2025-03-15,Bigetron by Vitality,EVOS Esports,1-2
-15,2,2025-03-16,Geek Fam ID,Bigetron by Vitality,0-2
-15,2,2025-03-16,ALTER EGO,EVOS Esports,2-0
-15,2,2025-03-16,Team Liquid ID,DEWA United,2-0
-15,3,2025-03-21,ONIC Esports,DEWA United,2-1
-15,3,2025-03-21,Natus Vincere,EVOS Esports,0-2
-15,3,2025-03-22,Team Liquid ID,Geek Fam ID,1-2
-15,3,2025-03-22,ONIC Esports,Bigetron by Vitality,2-0
-15,3,2025-03-22,RRQ Hoshi,ALTER EGO,2-1
-15,3,2025-03-23,Bigetron by Vitality,Natus Vincere,2-1
-15,3,2025-03-23,Geek Fam ID,RRQ Hoshi,1-2
-15,3,2025-03-23,ALTER EGO,DEWA United,2-1
-15,4,2025-04-18,Natus Vincere,ONIC Esports,1-2
-15,4,2025-04-18,EVOS Esports,DEWA United,1-2
-15,4,2025-04-19,Team Liquid ID,Bigetron by Vitality,1-2
-15,4,2025-04-19,RRQ Hoshi,EVOS Esports,2-1
-15,4,2025-04-19,Geek Fam ID,ALTER EGO,2-1
-15,4,2025-04-20,ONIC Esports,Team Liquid ID,1-2
-15,4,2025-04-20,Bigetron by Vitality,RRQ Hoshi,2-0
-15,4,2025-04-20,DEWA United,Geek Fam ID,1-2
-15,5,2025-04-25,Geek Fam ID,Natus Vincere,2-0
-15,5,2025-04-25,EVOS Esports,ONIC Esports,2-0
-15,5,2025-04-26,DEWA United,RRQ Hoshi,0-2
-15,5,2025-04-26,ALTER EGO,Team Liquid ID,1-2
-15,5,2025-04-26,EVOS Esports,Bigetron by Vitality,1-2
-15,5,2025-04-27,ALTER EGO,Natus Vincere,2-1
-15,5,2025-04-27,Geek Fam ID,ONIC Esports,1-2
-15,5,2025-04-27,DEWA United,Team Liquid ID,1-2
-15,6,2025-05-02,Natus Vincere,DEWA United,0-2
-15,6,2025-05-02,ALTER EGO,Geek Fam ID,0-2
-15,6,2025-05-03,EVOS Esports,ALTER EGO,0-2
-15,6,2025-05-03,Team Liquid ID,ONIC Esports,0-2
-15,6,2025-05-03,RRQ Hoshi,Bigetron by Vitality,2-1
-15,6,2025-05-04,Natus Vincere,Team Liquid ID,0-2
-15,6,2025-05-04,ONIC Esports,RRQ Hoshi,2-1
-15,6,2025-05-04,Geek Fam ID,EVOS Esports,2-1
-15,7,2025-05-09,Geek Fam ID,DEWA United,2-0
-15,7,2025-05-09,Bigetron by Vitality,Team Liquid ID,1-2
-15,7,2025-05-10,DEWA United,ALTER EGO,0-2
-15,7,2025-05-10,EVOS Esports,RRQ Hoshi,0-2
-15,7,2025-05-10,ONIC Esports,Natus Vincere,2-0
-15,7,2025-05-11,RRQ Hoshi,Geek Fam ID,2-1
-15,7,2025-05-11,Natus Vincere,Bigetron by Vitality,0-2
-15,7,2025-05-11,Team Liquid ID,EVOS Esports,2-1
-15,8,2025-05-16,Team Liquid ID,ALTER EGO,0-2
-15,8,2025-05-16,Bigetron by Vitality,DEWA United,2-0
-15,8,2025-05-17,Geek Fam ID,Team Liquid ID,2-1
-15,8,2025-05-17,ALTER EGO,RRQ Hoshi,1-2
-15,8,2025-05-17,Bigetron by Vitality,ONIC Esports,2-1
-15,8,2025-05-18,RRQ Hoshi,DEWA United,0-2
-15,8,2025-05-18,ONIC Esports,EVOS Esports,2-0
-15,8,2025-05-18,Natus Vincere,Geek Fam ID,0-2
-15,9,2025-05-23,Bigetron by Vitality,Geek Fam ID,1-2
-15,9,2025-05-23,DEWA United,ONIC Esports,1-2
-15,9,2025-05-24,EVOS Esports,Natus Vincere,2-1
-15,9,2025-05-24,Team Liquid ID,RRQ Hoshi,2-0
-15,9,2025-05-24,ONIC Esports,ALTER EGO,2-0
-15,9,2025-05-25,DEWA United,EVOS Esports,0-2
-15,9,2025-05-25,ALTER EGO,Bigetron by Vitality,2-0
-15,9,2025-05-25,RRQ Hoshi,Natus Vincere,2-0
-16,1,2025-08-22,ONIC Esports,DEWA United,2-0
-16,1,2025-08-22,Natus Vincere,EVOS Esports,0-2
-16,1,2025-08-23,Team Liquid ID,Geek Fam ID,1-2
-16,1,2025-08-23,ONIC Esports,Bigetron by Vitality,2-0
-16,1,2025-08-23,RRQ Hoshi,ALTER EGO,2-1
-16,1,2025-08-24,Bigetron by Vitality,Natus Vincere,1-2
-16,1,2025-08-24,Geek Fam ID,RRQ Hoshi,2-0
-16,1,2025-08-24,ALTER EGO,DEWA United,2-0
-16,2,2025-08-29,ONIC Esports,Geek Fam ID,2-0
-16,2,2025-08-29,DEWA United,Natus Vincere,2-0
-16,2,2025-08-30,Geek Fam ID,Bigetron by Vitality,0-2
-16,2,2025-08-30,ALTER EGO,EVOS Esports,2-1
-16,2,2025-08-30,Team Liquid ID,DEWA United,1-2
-16,2,2025-08-31,Natus Vincere,ALTER EGO,2-0
-16,2,2025-08-31,RRQ Hoshi,Team Liquid ID,2-0
-16,2,2025-08-31,Bigetron by Vitality,EVOS Esports,2-1
-16,3,2025-09-05,Natus Vincere,RRQ Hoshi,0-2
-16,3,2025-09-05,EVOS Esports,Team Liquid ID,2-0
-16,3,2025-09-06,EVOS Esports,Geek Fam ID,2-0
-16,3,2025-09-06,Bigetron by Vitality,ALTER EGO,2-1
-16,3,2025-09-06,RRQ Hoshi,ONIC Esports,0-2
-16,3,2025-09-07,DEWA United,Bigetron by Vitality,1-2
-16,3,2025-09-07,ALTER EGO,ONIC Esports,1-2
-16,3,2025-09-07,Team Liquid ID,Natus Vincere,0-2
-16,4,2025-09-12,Natus Vincere,ONIC Esports,1-2
-16,4,2025-09-12,EVOS Esports,DEWA United,2-0
-16,4,2025-09-13,Team Liquid ID,Bigetron by Vitality,0-2
-16,4,2025-09-13,RRQ Hoshi,EVOS Esports,2-0
-16,4,2025-09-13,Geek Fam ID,ALTER EGO,0-2
-16,4,2025-09-14,ONIC Esports,Team Liquid ID,2-0
-16,4,2025-09-14,Bigetron by Vitality,RRQ Hoshi,2-1
-16,4,2025-09-14,DEWA United,Geek Fam ID,2-1
-16,5,2025-09-19,Geek Fam ID,Natus Vincere,0-2
-16,5,2025-09-19,EVOS Esports,ONIC Esports,1-2
-16,5,2025-09-20,DEWA United,RRQ Hoshi,2-0
-16,5,2025-09-20,ALTER EGO,Team Liquid ID,2-1
-16,5,2025-09-20,EVOS Esports,Bigetron by Vitality,0-2
-16,5,2025-09-21,ALTER EGO,Natus Vincere,2-1
-16,5,2025-09-21,Geek Fam ID,ONIC Esports,0-2
-16,5,2025-09-21,DEWA United,Team Liquid ID,2-0
-16,6,2025-09-26,Natus Vincere,DEWA United,0-2
-16,6,2025-09-26,ALTER EGO,Geek Fam ID,2-0
-16,6,2025-09-27,EVOS Esports,ALTER EGO,1-2
-16,6,2025-09-27,Team Liquid ID,ONIC Esports,0-2
-16,6,2025-09-27,RRQ Hoshi,Bigetron by Vitality,1-2
-16,6,2025-09-28,Natus Vincere,Team Liquid ID,2-1
-16,6,2025-09-28,ONIC Esports,RRQ Hoshi,2-0
-16,6,2025-09-28,Geek Fam ID,EVOS Esports,0-2
-16,7,2025-10-03,Geek Fam ID,DEWA United,2-0
-16,7,2025-10-03,Bigetron by Vitality,Team Liquid ID,0-2
-16,7,2025-10-04,DEWA United,ALTER EGO,2-0
-16,7,2025-10-04,EVOS Esports,RRQ Hoshi,2-1
-16,7,2025-10-04,ONIC Esports,Natus Vincere,2-0
-16,7,2025-10-05,RRQ Hoshi,Geek Fam ID,0-2
-16,7,2025-10-05,Natus Vincere,Bigetron by Vitality,0-2
-16,7,2025-10-05,Team Liquid ID,EVOS Esports,1-2
-16,8,2025-10-10,Team Liquid ID,ALTER EGO,2-1
-16,8,2025-10-10,Bigetron by Vitality,DEWA United,2-0
-16,8,2025-10-11,Geek Fam ID,Team Liquid ID,1-2
-16,8,2025-10-11,ALTER EGO,RRQ Hoshi,2-0
-16,8,2025-10-11,Bigetron by Vitality,ONIC Esports,2-0
-16,8,2025-10-12,RRQ Hoshi,DEWA United,2-0
-16,8,2025-10-12,ONIC Esports,EVOS Esports,2-0
-16,8,2025-10-12,Natus Vincere,Geek Fam ID,2-0
-16,9,2025-10-17,Bigetron by Vitality,Geek Fam ID,0-2
-16,9,2025-10-17,DEWA United,ONIC Esports,0-2
-16,9,2025-10-18,EVOS Esports,Natus Vincere,2-1
-16,9,2025-10-18,Team Liquid ID,RRQ Hoshi,2-0
-16,9,2025-10-18,ONIC Esports,ALTER EGO,1-2
-16,9,2025-10-19,DEWA United,EVOS Esports,2-0
-16,9,2025-10-19,ALTER EGO,Bigetron by Vitality,1-2
-16,9,2025-10-19,RRQ Hoshi,Natus Vincere,2-1
-17,1,2026-03-27,Bigetron by Vitality,ALTER EGO,2-1
-17,1,2026-03-27,Natus Vincere,RRQ Hoshi,2-0
-17,1,2026-03-28,EVOS Esports,Geek Fam ID,2-0
-17,1,2026-03-28,ALTER EGO,ONIC Esports,0-2
-17,1,2026-03-28,Team Liquid ID,Natus Vincere,2-1
-17,1,2026-03-29,DEWA United,Bigetron by Vitality,2-0
-17,1,2026-03-29,EVOS Esports,Team Liquid ID,0-2
-17,1,2026-03-29,RRQ Hoshi,ONIC Esports,0-2
-17,2,2026-04-03,ONIC Esports,Geek Fam ID,2-0
-17,2,2026-04-03,DEWA United,Natus Vincere,2-0
-17,2,2026-04-04,Geek Fam ID,Bigetron by Vitality,2-0
-17,2,2026-04-04,ALTER EGO,EVOS Esports,2-1
-17,2,2026-04-04,Team Liquid ID,DEWA United,2-1
-17,2,2026-04-05,Natus Vincere,ALTER EGO,1-2
-17,2,2026-04-05,RRQ Hoshi,Team Liquid ID,0-2
-17,2,2026-04-05,Bigetron by Vitality,EVOS Esports,2-1
-17,3,2026-04-10,ONIC Esports,DEWA United,2-1
-17,3,2026-04-10,Natus Vincere,EVOS Esports,0-2
-17,3,2026-04-11,Team Liquid ID,Geek Fam ID,0-2
-17,3,2026-04-11,ONIC Esports,Bigetron by Vitality,1-2
-17,3,2026-04-11,RRQ Hoshi,ALTER EGO,1-2
-17,3,2026-04-12,Bigetron by Vitality,Natus Vincere,1-2
-17,3,2026-04-12,Geek Fam ID,RRQ Hoshi,2-1
-17,3,2026-04-12,ALTER EGO,DEWA United,0-2
-17,4,2026-04-17,Natus Vincere,ONIC Esports,0-2
-17,4,2026-04-17,EVOS Esports,DEWA United,2-0
-17,4,2026-04-18,Team Liquid ID,Bigetron by Vitality,1-2
-17,4,2026-04-18,RRQ Hoshi,EVOS Esports,0-2
-17,4,2026-04-18,Geek Fam ID,ALTER EGO,1-2
-17,4,2026-04-19,ONIC Esports,Team Liquid ID,2-0
-17,4,2026-04-19,Bigetron by Vitality,RRQ Hoshi,2-1
-17,4,2026-04-19,DEWA United,Geek Fam ID,2-0
-17,5,2026-04-24,Geek Fam ID,Natus Vincere,0-2
-17,5,2026-04-24,EVOS Esports,ONIC Esports,0-2
-17,5,2026-04-25,DEWA United,RRQ Hoshi,2-0
-17,5,2026-04-25,ALTER EGO,Team Liquid ID,1-2
-17,5,2026-04-25,EVOS Esports,Bigetron by Vitality,0-2
-17,5,2026-04-26,ALTER EGO,Natus Vincere,2-1
-17,5,2026-04-26,Geek Fam ID,ONIC Esports,2-1
-17,5,2026-04-26,DEWA United,Team Liquid ID,2-0
-17,6,2026-05-01,Natus Vincere,DEWA United,1-2
-17,6,2026-05-01,ALTER EGO,Geek Fam ID,2-1
-17,6,2026-05-02,EVOS Esports,ALTER EGO,2-1
-17,6,2026-05-02,Team Liquid ID,ONIC Esports,0-2
-17,6,2026-05-02,RRQ Hoshi,Bigetron by Vitality,2-0
-17,6,2026-05-03,Natus Vincere,Team Liquid ID,1-2
-17,6,2026-05-03,ONIC Esports,RRQ Hoshi,2-0
-17,6,2026-05-03,Geek Fam ID,EVOS Esports,2-0
-17,7,2026-05-08,Geek Fam ID,DEWA United,1-2
-17,7,2026-05-08,Bigetron by Vitality,Team Liquid ID,0-2
-17,7,2026-05-09,DEWA United,ALTER EGO,1-2
-17,7,2026-05-09,EVOS Esports,RRQ Hoshi,2-0
-17,7,2026-05-09,ONIC Esports,Natus Vincere,2-0
-17,7,2026-05-10,RRQ Hoshi,Geek Fam ID,0-2
-17,7,2026-05-10,Natus Vincere,Bigetron by Vitality,2-1
-17,7,2026-05-10,Team Liquid ID,EVOS Esports,0-2
-17,8,2026-05-15,Bigetron by Vitality,Geek Fam ID,0-2
-17,8,2026-05-15,DEWA United,ONIC Esports,0-2
-17,8,2026-05-16,EVOS Esports,Natus Vincere,0-2
-17,8,2026-05-16,Team Liquid ID,RRQ Hoshi,2-0
-17,8,2026-05-16,ONIC Esports,ALTER EGO,2-1
-17,8,2026-05-17,DEWA United,EVOS Esports,0-2
-17,8,2026-05-17,ALTER EGO,Bigetron by Vitality,0-2
-17,8,2026-05-17,RRQ Hoshi,Natus Vincere,0-2
-17,9,2026-05-22,Bigetron by Vitality,DEWA United,2-1
-17,9,2026-05-22,Team Liquid ID,ALTER EGO,2-0
-17,9,2026-05-23,Geek Fam ID,Team Liquid ID,0-2
-17,9,2026-05-23,ALTER EGO,RRQ Hoshi,1-2
-17,9,2026-05-23,Bigetron by Vitality,ONIC Esports,2-1
-17,9,2026-05-24,RRQ Hoshi,DEWA United,1-2
-17,9,2026-05-24,ONIC Esports,EVOS Esports,2-0
-17,9,2026-05-24,Natus Vincere,Geek Fam ID,1-2
-18,1,2026-08-14,EVOS Esports,RRQ Hoshi,2-0
-18,1,2026-08-14,Natus Vincere,ALTER EGO,0-2
-18,1,2026-08-15,Team Liquid ID,Geek Fam ID,2-1
-18,1,2026-08-15,DEWA United,RRQ Hoshi,1-2
-18,1,2026-08-15,EVOS Esports,Natus Vincere,1-2
-18,1,2026-08-16,Team Liquid ID,DEWA United,2-0
-18,1,2026-08-16,Bigetron by Vitality,Geek Fam ID,2-1
-18,1,2026-08-16,ALTER EGO,ONIC Esports,0-2
-18,2,2026-08-21,Team Liquid ID,Natus Vincere,0-2
-18,2,2026-08-21,Bigetron by Vitality,DEWA United,2-0
-18,2,2026-08-22,Team Liquid ID,EVOS Esports,2-0
-18,2,2026-08-22,Natus Vincere,Geek Fam ID,2-1
-18,2,2026-08-22,ONIC Esports,RRQ Hoshi,2-0
-18,2,2026-08-23,DEWA United,ALTER EGO,0-2
-18,2,2026-08-23,ONIC Esports,Bigetron by Vitality,1-2
-18,2,2026-08-23,Geek Fam ID,EVOS Esports,0-2
-18,3,2026-08-28,Bigetron by Vitality,Natus Vincere,2-0
-18,3,2026-08-28,DEWA United,Geek Fam ID,2-0
-18,3,2026-08-29,Team Liquid ID,ONIC Esports,2-1
-18,3,2026-08-29,ALTER EGO,EVOS Esports,2-0
-18,3,2026-08-29,RRQ Hoshi,Bigetron by Vitality,1-2
-18,3,2026-08-30,Natus Vincere,ONIC Esports,2-0
-18,3,2026-08-30,Geek Fam ID,RRQ Hoshi,0-2
-18,3,2026-08-30,Team Liquid ID,ALTER EGO,2-1
-18,4,2026-09-04,Natus Vincere,DEWA United,2-0
-18,4,2026-09-04,Team Liquid ID,RRQ Hoshi,2-0
-18,4,2026-09-05,DEWA United,ONIC Esports,2-1
-18,4,2026-09-05,EVOS Esports,Bigetron by Vitality,2-1
-18,4,2026-09-05,ALTER EGO,Geek Fam ID,2-0
-18,4,2026-09-06,RRQ Hoshi,Natus Vincere,0-2
-18,4,2026-09-06,ONIC Esports,EVOS Esports,2-0
-18,4,2026-09-06,Bigetron by Vitality,ALTER EGO,0-2
-18,5,2026-09-11,Geek Fam ID,ONIC Esports,2-1
-18,5,2026-09-12,Team Liquid ID,Bigetron by Vitality,2-0
-18,5,2026-09-12,ALTER EGO,RRQ Hoshi,2-0
-18,5,2026-09-12,Natus Vincere,EVOS Esports,2-0
-18,5,2026-09-13,Geek Fam ID,Team Liquid ID,0-2
-18,5,2026-09-13,ONIC Esports,ALTER EGO,0-2
-18,6,2026-09-18,ONIC Esports,Geek Fam ID,0-2
-18,6,2026-09-18,DEWA United,EVOS Esports,0-2
-18,6,2026-09-18,RRQ Hoshi,DEWA United,1-2
-18,6,2026-09-19,Geek Fam ID,Natus Vincere,0-2
-18,6,2026-09-19,RRQ Hoshi,ALTER EGO,1-2
-18,6,2026-09-19,Bigetron by Vitality,Team Liquid ID,0-2
-18,6,2026-09-20,ALTER EGO,DEWA United,0-2
-18,6,2026-09-20,Bigetron by Vitality,ONIC Esports,0-2
-18,6,2026-09-20,EVOS Esports,Team Liquid ID,2-1
-18,7,2026-10-02,Geek Fam ID,Bigetron by Vitality,1-2
-18,7,2026-10-02,DEWA United,Team Liquid ID,2-1
-18,7,2026-10-03,ALTER EGO,Natus Vincere,1-2
-18,7,2026-10-03,Bigetron by Vitality,RRQ Hoshi,2-1
-18,7,2026-10-03,Geek Fam ID,DEWA United,2-1
-18,7,2026-10-04,ALTER EGO,Team Liquid ID,0-2
-18,7,2026-10-04,RRQ Hoshi,EVOS Esports,2-1
-18,7,2026-10-04,ONIC Esports,Natus Vincere,2-1
-18,8,2026-10-08,EVOS Esports,DEWA United,2-1
-18,8,2026-10-08,ALTER EGO,Bigetron by Vitality,2-0
-18,8,2026-10-08,Natus Vincere,Team Liquid ID,2-0
-18,8,2026-10-09,EVOS Esports,ONIC Esports,2-1
-18,8,2026-10-09,RRQ Hoshi,Team Liquid ID,0-2
-18,8,2026-10-09,DEWA United,Natus Vincere,0-2
-18,8,2026-10-11,EVOS Esports,Geek Fam ID,0-2
-18,8,2026-10-11,RRQ Hoshi,ONIC Esports,1-2
-18,8,2026-10-11,DEWA United,Bigetron by Vitality,0-2
-18,9,2026-10-16,Natus Vincere,RRQ Hoshi,
-18,9,2026-10-16,Geek Fam ID,ALTER EGO,
-18,9,2026-10-17,ONIC Esports,DEWA United,
-18,9,2026-10-17,Bigetron by Vitality,EVOS Esports,
-18,9,2026-10-17,RRQ Hoshi,Geek Fam ID,
-18,9,2026-10-18,EVOS Esports,ALTER EGO,
-18,9,2026-10-18,Natus Vincere,Bigetron by Vitality,
-18,9,2026-10-18,ONIC Esports,Team Liquid ID,
+season,week,date,scheduled_time_id_utc7,team_1,team_2,game,winner,duration,kills_1,kills_2,team_1_player_1,team_1_hero_1,team_1_player_2,team_1_hero_2,team_1_player_3,team_1_hero_3,team_1_player_4,team_1_hero_4,team_1_player_5,team_1_hero_5,team_2_player_1,team_2_hero_1,team_2_player_2,team_2_hero_2,team_2_player_3,team_2_hero_3,team_2_player_4,team_2_hero_4,team_2_player_5,team_2_hero_5
+15,1,2025-03-07,15:00,Natus Vincere,RRQ Hoshi,1,RRQ Hoshi,13.2,4,9,Xyve,Moskov,Karss,Badang,Aether,Suyou,Hanafi,Chou,xMagic,Vexana,Idok,Gatotkaca,Sutsujin,Joy,ToYy,Granger,Rinz,Pharsa,Dyrennn,Cici
+15,1,2025-03-07,15:00,Natus Vincere,RRQ Hoshi,2,RRQ Hoshi,12.3,6,19,Karss,Badang,Xyve,Granger,xMagic,Luo Yi,Hanafi,Gatotkaca,Aether,Hayabusa,Dyrennn,Cici,Sutsujin,Suyou,ToYy,Irithel,Idok,Tigreal,Rinz,Yve
+15,1,2025-03-07,18:00,EVOS Esports,Team Liquid ID,1,EVOS Esports,11.4,18,9,Alberttt,Suyou,Erlan,Granger,Natco,Luo Yi,Regii,Edith,Kyy,Jawhead,Aran,Cici,Widy,Gatotkaca,yehezkiel,Selena,AeronnShikii,Bruno,Faviannn,Ling
+15,1,2025-03-07,18:00,EVOS Esports,Team Liquid ID,2,Team Liquid ID,14.9,6,14,Alberttt,Suyou,Regii,Cici,Erlan,Granger,Kyy,Gatotkaca,Natco,Vexana,AeronnShikii,Harith,Aran,Badang,yehezkiel,Selena,Faviannn,Joy,Widy,Khaleed
+15,1,2025-03-07,18:00,EVOS Esports,Team Liquid ID,3,EVOS Esports,11.7,10,4,Kyy,Gatotkaca,Erlan,Granger,Natco,Vexana,Regii,Edith,Alberttt,lukas,Faviannn,Joy,Aran,Cici,yehezkiel,Selena,Widy,Hylos,AeronnShikii,Karrie
+15,1,2025-03-08,14:00,EVOS Esports,Geek Fam ID,1,EVOS Esports,11.8,14,3,Alberttt,Suyou,Erlan,Granger,Regii,Gatotkaca,Natco,Vexana,Kyy,Jawhead,Gobs,Badang,KennzyySkie,Karrie,Baloyskie,Chou,A B O Y,Valentina,Maykids,Joy
+15,1,2025-03-08,14:00,EVOS Esports,Geek Fam ID,2,EVOS Esports,18.4,23,8,Alberttt,Joy,Natco,Vexana,Regii,Gloo,Kyy,Gatotkaca,Erlan,Bruno,Baloyskie,Guinevere,KennzyySkie,Granger,Gobs,Phoveus,A B O Y,Cecilion,Maykids,Suyou
+15,1,2025-03-08,17:00,Bigetron by Vitality,ALTER EGO,1,Bigetron by Vitality,17.2,23,9,EMANN,Granger,Moreno,Pharsa,LUKE,Badang,Light,Hylos,Anavel,Joy,Hijumee,Valentina,HAIZZ,Harith,Nino,Chou,DreamS,Gatotkaca,Gebe,Suyou
+15,1,2025-03-08,17:00,Bigetron by Vitality,ALTER EGO,2,Bigetron by Vitality,18.3,23,13,LUKE,Gloo,Anavel,Joy,Moreno,Yve,EMANN,Granger,Light,Gatotkaca,HAIZZ,Harith,DreamS,Hylos,Gebe,Suyou,Hijumee,Valentina,Nino,lukas
+15,1,2025-03-08,20:00,RRQ Hoshi,ONIC Esports,1,RRQ Hoshi,25.4,14,16,Hazle,Suyou,Idok,Chip,ToYy,Irithel,Dyrennn,Gatotkaca,Rinz,Valentina,CW,Granger,Kairi,Nolan,Rezzz,Cici,S A N Z,Cecilion,Kiboy,Hylos
+15,1,2025-03-08,20:00,RRQ Hoshi,ONIC Esports,2,RRQ Hoshi,24.0,21,16,Rinz,Yve,ToYy,Granger,Dyrennn,lukas,Idok,Tigreal,Hazle,Hanzo,CW,Claude,S A N Z,Pharsa,Kairi,Suyou,Rezzz,Gloo,Kiboy,Chou
+15,1,2025-03-09,14:00,DEWA United,Bigetron by Vitality,1,Bigetron by Vitality,14.1,6,11,Reyy,Fanny,Muezza,Ruby,Maybe,Granger,Xorizo,Hylos,Octa,Vexana,EMANN,Harith,Moreno,Vale,LUKE,Badang,Anavel,Suyou,Light,Gatotkaca
+15,1,2025-03-09,14:00,DEWA United,Bigetron by Vitality,2,DEWA United,15.1,16,13,Reyy,Suyou,Muezza,Badang,Octa,Vexana,Maybe,Granger,Xorizo,Phoveus,LUKE,Cici,Moreno,Luo Yi,EMANN,Irithel,Anavel,Fanny,Light,Gatotkaca
+15,1,2025-03-09,14:00,DEWA United,Bigetron by Vitality,3,DEWA United,25.9,16,15,Reyy,Alpha,Xorizo,Uranus,Muezza,Mathilda,Octa,Valentina,Maybe,Moskov,Moreno,Cecilion,Anavel,Suyou,EMANN,Granger,Light,Jawhead,LUKE,Cici
+15,1,2025-03-09,17:00,ALTER EGO,ONIC Esports,1,ALTER EGO,14.8,23,13,DreamS,Hylos,Rinee,Joy,HAIZZ,Granger,Hijumee,Faramis,Nino,Cici,CW,Harith,Nnael,Suyou,S A N Z,Aurora,Rezzz,Phoveus,Kiboy,Chou
+15,1,2025-03-09,17:00,ALTER EGO,ONIC Esports,2,ONIC Esports,24.1,21,19,Hijumee,Luo Yi,DreamS,Hylos,HAIZZ,Claude,Nino,Valentina,Rinee,Hanzo,S A N Z,Yve,CW,Harith,Kiboy,Gatotkaca,Rezzz,lukas,Nnael,Suyou
+15,1,2025-03-09,17:00,ALTER EGO,ONIC Esports,3,ALTER EGO,13.5,21,7,Hijumee,Pharsa,DreamS,Gatotkaca,Nino,Cici,Rinee,Joy,HAIZZ,Harith,CW,Karrie,Kiboy,Chip,S A N Z,Yve,Rezzz,Phoveus,Nnael,Suyou
+15,1,2025-03-09,20:00,Team Liquid ID,Natus Vincere,1,Natus Vincere,11.9,7,19,Aran,Badang,Faviannn,Lukas,Yehezkiel,Yve,AeronnShikii,Harith,Widy,Hylos,Karss,Cici,Aether,Suyou,xMagic,Valentina,Xyve,Bruno,Hanafi,Gatotkaca
+15,1,2025-03-09,20:00,Team Liquid ID,Natus Vincere,2,Team Liquid ID,24.7,15,17,Aran,Badang,Faviannn,Suyou,Yehezkiel,Pharsa,AeronnShikii,Granger,Widy,Khaleed,Karss,Cici,Aether,Martis,xMagic,Yve,Xyve,Harith,Hanafi,Gatotkaca
+15,1,2025-03-09,20:00,Team Liquid ID,Natus Vincere,3,Team Liquid ID,18.7,15,19,Aran,Gatotkaca,Faviannn,Suyou,Yehezkiel,Cecilion,AeronnShikii,Moskov,Widy,Hylos,Karss,Edith,Aether,Lukas,xMagic,Valentina,Xyve,Granger,Hanafi,Chou
+15,2,2025-03-14,15:00,ONIC Esports,Geek Fam ID,1,ONIC Esports,13.6,14,2,Nnael,Badang,Kairi,Joy,S A N Z,Yve,CW,Bruno,Kiboy,Hylos,A B O Y,Aurora,Baloyskie,Gatotkaca,Caderaa,Moskov,Gobs,Cici,Maykids,Suyou
+15,2,2025-03-14,15:00,ONIC Esports,Geek Fam ID,2,Geek Fam ID,14.2,11,10,Kiboy,Hylos,S A N Z,Yve,Kairi,Joy,Nnael,Badang,CW,Bruno,A B O Y,Aurora,Caderaa,Moskov,Gobs,Cici,Baloyskie,Gatotkaca,Maykids,Suyou
+15,2,2025-03-14,15:00,ONIC Esports,Geek Fam ID,3,Geek Fam ID,18.4,13,8,CW,Karrie,Kiboy,Hylos,Nnael,Badang,Kairi,Joy,S A N Z,Yve,Baloyskie,Gatotkaca,A B O Y,Aurora,Gobs,Cici,Caderaa,Claude,Maykids,Suyou
+15,2,2025-03-14,18:00,DEWA United,Natus Vincere,1,DEWA United,15.0,12,6,Muezza,Chou,Maybe,Granger,Octa,Luo Yi,Reyy,Suyou,Xorizo,Cici,Karss,Edith,Xyve,Harith,Woshipaul,lukas,xMagic,Valentina,Hanafi,Gatotkaca
+15,2,2025-03-14,18:00,DEWA United,Natus Vincere,2,DEWA United,15.1,8,8,Reyy,Suyou,Maybe,Granger,Octa,Luo Yi,Muezza,Gatotkaca,Xorizo,Cici,Xyve,Harith,Hanafi,Hylos,Woshipaul,Hayabusa,xMagic,Pharsa,Karss,Edith
+15,2,2025-03-15,14:00,Natus Vincere,ALTER EGO,1,ALTER EGO,19.7,13,16,Xyve,Harith,xMagic,Luo Yi,Woshipaul,Suyou,Karss,Hilda,Hanafi,Jawhead,Gebe,Joy,DreamS,Chou,HAIZZ,Granger,Hijumee,Valentina,Nino,Gatotkaca
+15,2,2025-03-15,14:00,Natus Vincere,ALTER EGO,2,Natus Vincere,22.1,13,9,Xyve,Granger,Hanafi,Mathilda,Woshipaul,Alpha,Karss,Badang,xMagic,Cecilion,Nino,Gatotkaca,HAIZZ,Moskov,Gebe,Joy,DreamS,Khaleed,Hijumee,Valentina
+15,2,2025-03-15,14:00,Natus Vincere,ALTER EGO,3,ALTER EGO,14.2,2,10,Karss,Gloo,Woshipaul,Joy,Xyve,Granger,Hanafi,Badang,xMagic,Valentina,HAIZZ,Harith,DreamS,Hylos,Gebe,Suyou,Hijumee,Yve,Nino,Phoveus
+15,2,2025-03-15,17:00,RRQ Hoshi,Team Liquid ID,1,RRQ Hoshi,11.1,14,8,Rinz,Zhuxin,ToYy,Granger,Dyrennn,Cici,Hazle,Ling,Idok,Tigreal,Faviannn,Hayabusa,AeronnShikii,Harith,Widy,Hylos,Aran,Gatotkaca,yehezkiel,Cecilion
+15,2,2025-03-15,17:00,RRQ Hoshi,Team Liquid ID,2,RRQ Hoshi,9.7,21,1,ToYy,Harith,Dyrennn,Hylos,Rinz,Cecilion,Idok,Franco,Hazle,Hayabusa,Widy,Mathilda,Aran,Phoveus,Faviannn,Alpha,yehezkiel,Valentina,AeronnShikii,Bruno
+15,2,2025-03-15,20:00,Bigetron by Vitality,EVOS Esports,1,EVOS Esports,16.6,8,16,Anavel,Joy,EMANN,Harith,Moreno,Faramis,LUKE,Badang,Light,Chip,Erlan,Granger,Alberttt,Suyou,Regii,Phoveus,Kyy,Hylos,Natco,Valentina
+15,2,2025-03-15,20:00,Bigetron by Vitality,EVOS Esports,2,Bigetron by Vitality,14.1,13,2,EMANN,Harith,Moreno,Luo Yi,LUKE,Hilda,Anavel,Nolan,Light,Chou,Regii,Cici,Alberttt,Suyou,Erlan,Granger,Kyy,Hylos,Natco,Novaria
+15,2,2025-03-15,20:00,Bigetron by Vitality,EVOS Esports,3,EVOS Esports,18.2,9,19,Moreno,Faramis,EMANN,Moskov,Anavel,Joy,LUKE,Badang,Light,Chip,Natco,Luo Yi,Erlan,Granger,Alberttt,lukas,Kyy,Chou,Regii,Hylos
+15,2,2025-03-16,14:00,Geek Fam ID,Bigetron by Vitality,1,Bigetron by Vitality,22.6,11,13,Baloyskie,Khufra,KennzyySkie,Harith,A B O Y,Pharsa,Gobs,Cici,Maykids,Joy,EMANN,Beatrix,Anavel,Suyou,Moreno,Vexana,LUKE,Badang,Light,Gatotkaca
+15,2,2025-03-16,14:00,Geek Fam ID,Bigetron by Vitality,2,Bigetron by Vitality,12.1,7,20,Gobs,Cici,Maykids,Suyou,A B O Y,Aurora,Baloyskie,Gatotkaca,KennzyySkie,Karrie,Anavel,Joy,LUKE,Edith,Moreno,Luo Yi,Light,Chou,EMANN,Beatrix
+15,2,2025-03-16,17:00,ALTER EGO,EVOS Esports,1,ALTER EGO,15.6,23,15,Hijumee,Pharsa,Nino,Cici,HAIZZ,Moskov,DreamS,Khaleed,Rinee,Joy,Natco,Luo Yi,Regii,Phoveus,Alberttt,Suyou,Kyy,Badang,Erlan,Irithel
+15,2,2025-03-16,17:00,ALTER EGO,EVOS Esports,2,ALTER EGO,14.9,19,5,HAIZZ,Moskov,DreamS,Gatotkaca,Nino,Cici,Rinee,Hayabusa,Hijumee,Yve,Alberttt,Joy,Natco,Luo Yi,Regii,Hilda,Kyy,Hylos,Erlan,Bruno
+15,2,2025-03-16,20:00,Team Liquid ID,DEWA United,1,Team Liquid ID,16.0,11,6,Faviannn,Joy,Kyou,Irithel,Aran,Gloo,Widy,Gatotkaca,yehezkiel,Pharsa,Maybe,Granger,Muezza,Chou,Reyy,Hayabusa,Octa,Valentina,Xorizo,Cici
+15,2,2025-03-16,20:00,Team Liquid ID,DEWA United,2,Team Liquid ID,13.2,8,0,Kyou,Granger,Faviannn,Suyou,Widy,Khaleed,yehezkiel,Valentina,Aran,Badang,Muezza,Mathilda,Reyy,Alpha,Maybe,Moskov,Xorizo,Cici,Octa,Vexana
+15,3,2025-03-21,15:00,ONIC Esports,DEWA United,1,ONIC Esports,18.6,15,6,Kiboy,Jawhead,Kairi,Suyou,CW,Bruno,Ryota,Hilda,S A N Z,Cecilion,Maybe,Granger,Xorizo,lukas,Reyy,Joy,Octa,Luo Yi,Muezza,Gatotkaca
+15,3,2025-03-21,15:00,ONIC Esports,DEWA United,2,DEWA United,13.7,3,12,CW,Granger,Kiboy,Gatotkaca,S A N Z,Zhuxin,Kairi,Ling,Ryota,Hilda,Maybe,Harith,Reyy,Hayabusa,Muezza,Chou,Xorizo,Badang,Octa,Lunox
+15,3,2025-03-21,15:00,ONIC Esports,DEWA United,3,ONIC Esports,14.7,15,15,Kairi,Suyou,Ryota,Gloo,S A N Z,Cecilion,Kiboy,Jawhead,CW,Bruno,Xorizo,Badang,Maybe,Granger,Reyy,Joy,Octa,Luo Yi,Muezza,Guinevere
+15,3,2025-03-21,19:00,Natus Vincere,EVOS Esports,1,EVOS Esports,18.4,6,12,Hanafi,Badang,Karss,Phoveus,Aether,Joy,Xyve,Bruno,xMagic,Yve,Kyy,Chip,SwayLow,Valentina,Alberttt,lukas,Erlan,Moskov,Regii,Belerick
+15,3,2025-03-21,19:00,Natus Vincere,EVOS Esports,2,EVOS Esports,16.2,8,16,Karss,Hilda,Hanafi,Gatotkaca,Aether,Nolan,Xyve,Moskov,xMagic,Zhuxin,Erlan,Harith,Alberttt,Joy,Regii,Cici,Kyy,Chou,SwayLow,Aurora
+15,3,2025-03-22,14:00,Team Liquid ID,Geek Fam ID,1,Team Liquid ID,11.8,20,8,Widy,Chip,Faviannn,Suyou,AeronnShikii,Granger,Aran,Edith,yehezkiel,Pharsa,Baloyskie,Khaleed,A B O Y,Faramis,Gobs,Hilda,Maykids,Joy,Caderaa,Moskov
+15,3,2025-03-22,14:00,Team Liquid ID,Geek Fam ID,2,Geek Fam ID,22.1,13,24,Widy,Jawhead,Faviannn,Suyou,AeronnShikii,Moskov,Aran,Gloo,yehezkiel,Selena,Maykids,Hanzo,Baloyskie,Chou,Gobs,Khaleed,A B O Y,Pharsa,Caderaa,Harith
+15,3,2025-03-22,14:00,Team Liquid ID,Geek Fam ID,3,Geek Fam ID,13.1,5,13,Faviannn,Joy,AeronnShikii,Granger,Aran,Hilda,Widy,Hylos,yehezkiel,Valentina,Baloyskie,Chou,Gobs,Gloo,Caderaa,Moskov,Maykids,Suyou,A B O Y,Luo Yi
+15,3,2025-03-22,17:00,ONIC Esports,Bigetron by Vitality,1,ONIC Esports,11.0,14,2,S A N Z,Cecilion,Kairi,Suyou,Ryota,Phoveus,Savero,Karrie,Kiboy,Jawhead,Moreno,Vexana,EMANN,Irithel,Anavel,Joy,Light,Mathilda,LUKE,Hilda
+15,3,2025-03-22,17:00,ONIC Esports,Bigetron by Vitality,2,ONIC Esports,28.5,18,16,Kiboy,Khaleed,S A N Z,Cecilion,Kairi,Hayabusa,Savero,Moskov,Ryota,Hilda,LUKE,Hylos,Moreno,Zhuxin,Light,Chip,Anavel,Joy,EMANN,Wanwan
+15,3,2025-03-22,20:00,RRQ Hoshi,ALTER EGO,1,ALTER EGO,14.5,6,17,Hazle,Joy,ToYy,Irithel,Dyrennn,Hilda,Rinz,Aurora,Idok,Khufra,HAIZZ,Granger,DreamS,Hylos,Nino,lukas,Rinee,Hanzo,Hijumee,Valentina
+15,3,2025-03-22,20:00,RRQ Hoshi,ALTER EGO,2,RRQ Hoshi,14.4,13,5,Dyrennn,Hylos,Hazle,Suyou,Rinz,Pharsa,Idok,Jawhead,ToYy,Irithel,HAIZZ,Granger,Rinee,Joy,Hijumee,Valentina,DreamS,Badang,Nino,Hilda
+15,3,2025-03-22,20:00,RRQ Hoshi,ALTER EGO,3,RRQ Hoshi,12.4,18,4,Idok,Chip,ToYy,Granger,Rinz,Valentina,Dyrennn,Phoveus,Hazle,Hayabusa,DreamS,Khaleed,Hijumee,Zhuxin,HAIZZ,Bruno,Rinee,Ling,Nino,Hilda
+15,3,2025-03-23,14:00,Bigetron by Vitality,Natus Vincere,1,Bigetron by Vitality,17.1,16,8,LUKE,Gloo,EMANN,Beatrix,Light,Chou,Moreno,Selena,Anavel,Suyou,xMagic,Luo Yi,Hanafi,Jawhead,Karss,Cici,Xyve,Bruno,Aether,lukas
+15,3,2025-03-23,14:00,Bigetron by Vitality,Natus Vincere,2,Natus Vincere,15.6,5,21,Moreno,Yve,Anavel,Nolan,EMANN,Moskov,LUKE,lukas,Light,Jawhead,Aether,Suyou,Xyve,Irithel,Karss,Badang,xMagic,Cecilion,Hanafi,Khaleed
+15,3,2025-03-23,14:00,Bigetron by Vitality,Natus Vincere,3,Bigetron by Vitality,14.7,14,5,Anavel,Joy,LUKE,Terizla,EMANN,Beatrix,Light,Chou,Moreno,Valentina,Aether,Suyou,Hanafi,Khaleed,xMagic,Cecilion,Karss,Badang,Xyve,Bruno
+15,3,2025-03-23,17:00,Geek Fam ID,RRQ Hoshi,1,RRQ Hoshi,17.6,15,19,Baloyskie,Khaleed,Gobs,Gloo,A B O Y,Luo Yi,Caderaa,Moskov,Maykids,Hanzo,ToYy,Granger,Sutsujin,Suyou,Rinz,Valentina,Dyrennn,Badang,Idok,Gatotkaca
+15,3,2025-03-23,17:00,Geek Fam ID,RRQ Hoshi,2,Geek Fam ID,21.3,15,15,Caderaa,Harith,Gobs,Gloo,A B O Y,Pharsa,Baloyskie,Chou,Maykids,Joy,Sutsujin,Suyou,Dyrennn,Cici,ToYy,Granger,Idok,Gatotkaca,Rinz,Faramis
+15,3,2025-03-23,17:00,Geek Fam ID,RRQ Hoshi,3,RRQ Hoshi,13.9,2,15,Gobs,Hilda,Maykids,Joy,A B O Y,Cecilion,Caderaa,Moskov,Baloyskie,Chou,Dyrennn,Phoveus,Sutsujin,Lukas,Rinz,Valentina,ToYy,Granger,Idok,Tigreal
+15,3,2025-03-23,20:00,ALTER EGO,DEWA United,1,DEWA United,14.6,6,14,HAIZZ,Harith,DreamS,Khaleed,Gebe,Joy,Hijumee,Pharsa,Nino,Gatotkaca,Muezza,Jawhead,Reyy,Suyou,Xorizo,Phoveus,Maybe,Beatrix,Octa,Lunox
+15,3,2025-03-23,20:00,ALTER EGO,DEWA United,2,ALTER EGO,18.9,21,9,HAIZZ,Granger,Hijumee,Luo Yi,Gebe,Joy,Nino,Hylos,DreamS,Franco,Maybe,Harith,Xorizo,Phoveus,Muezza,Mathilda,Octa,Hilda,Reyy,Alpha
+15,3,2025-03-23,20:00,ALTER EGO,DEWA United,3,ALTER EGO,10.1,15,2,Hijumee,Vale,DreamS,Gatotkaca,HAIZZ,Granger,Rinee,Suyou,Nino,Chou,Muezza,Jawhead,Maybe,Harith,Reyy,Hayabusa,Octa,Cecilion,Xorizo,Badang
+15,4,2025-04-18,15:00,Natus Vincere,ONIC Esports,1,Natus Vincere,10.6,9,2,Karss,Kalea,Aether,Hayabusa,bq syaii,Hilda,xMagic,Cecilion,Xyve,Bruno,S A N Z,Selena,Savero,Moskov,Lutpiii,Cici,Kiboy,Chou,Kairi,Joy
+15,4,2025-04-18,15:00,Natus Vincere,ONIC Esports,2,ONIC Esports,13.8,8,14,Karss,Kalea,Xyve,Karrie,bq syaii,Phoveus,Aether,Joy,xMagic,Valentina,Lutpiii,Badang,S A N Z,Zhuxin,Kairi,Suyou,Savero,Moskov,Kiboy,Gatotkaca
+15,4,2025-04-18,15:00,Natus Vincere,ONIC Esports,3,ONIC Esports,11.1,1,11,xMagic,Zhuxin,Woshipaul,Hayabusa,Karss,Chou,Xyve,Irithel,bq syaii,Kalea,S A N Z,Cecilion,Kiboy,Badang,Lutpiii,Gloo,Savero,Granger,Kairi,Suyou
+15,4,2025-04-18,18:00,EVOS Esports,DEWA United,1,DEWA United,19.3,7,9,Alberttt,Fanny,Regii,Cici,SwayLow,Cecilion,Erlan,Karrie,Kyy,Badang,Muezza,Mathilda,Reyy,Suyou,Octa,Vexana,Maybe,Harith,Rezzz,Phoveus
+15,4,2025-04-18,18:00,EVOS Esports,DEWA United,2,EVOS Esports,19.4,15,6,Kyy,Chip,Alberttt,Joy,Erlan,Irithel,SwayLow,Yve,Regii,Hilda,Maybe,Granger,Reyy,Suyou,Rezzz,Badang,Muezza,Chou,Octa,Selena
+15,4,2025-04-18,18:00,EVOS Esports,DEWA United,3,DEWA United,16.4,5,14,Alberttt,Suyou,Kyy,Jawhead,Erlan,Moskov,SwayLow,Aurora,Regii,Gloo,Muezza,Badang,Reyy,Joy,Octa,Zhuxin,Rezzz,Phoveus,Maybe,Granger
+15,4,2025-04-19,14:00,Team Liquid ID,Bigetron by Vitality,1,Team Liquid ID,14.8,15,8,Kyou,Granger,Aran,Gloo,Faviannn,Joy,Widy,Kalea,yehezkiel,Cecilion,Moreno,Zhuxin,EMANN,Claude,Anavel,lukas,LUKE,Badang,Light,Hylos
+15,4,2025-04-19,14:00,Team Liquid ID,Bigetron by Vitality,2,Bigetron by Vitality,11.1,5,18,Aran,Kalea,Widy,Mathilda,Faviannn,lukas,Kyou,Bruno,yehezkiel,Faramis,Light,Chip,EMANN,Granger,Moreno,Valentina,Anavel,Fredrinn,LUKE,Masha
+15,4,2025-04-19,14:00,Team Liquid ID,Bigetron by Vitality,3,Bigetron by Vitality,18.9,11,11,Aran,Hilda,Faviannn,Joy,Widy,Kalea,yehezkiel,Aurora,Kyou,Karrie,Moreno,Zhuxin,EMANN,Moskov,Anavel,Lancelot,Light,Chou,LUKE,Gloo
+15,4,2025-04-19,17:00,RRQ Hoshi,EVOS Esports,1,RRQ Hoshi,11.7,8,1,Idok,Chip,Hazle,Hayabusa,Rinz,Zhuxin,ToYy,Moskov,Dyrennn,Hylos,Regii,Phoveus,Alberttt,Joy,Kyy,Tigreal,Erlan,Irithel,SwayLow,Yve
+15,4,2025-04-19,17:00,RRQ Hoshi,EVOS Esports,2,EVOS Esports,10.8,7,15,Idok,Kalea,Rinz,Valentina,Dyrennn,Hylos,Hazle,Fanny,ToYy,Bruno,Erlan,Harith,Kyy,Chou,Alberttt,Suyou,Regii,Gatotkaca,SwayLow,Vexana
+15,4,2025-04-19,17:00,RRQ Hoshi,EVOS Esports,3,RRQ Hoshi,22.8,22,18,ToYy,Claude,Idok,Gatotkaca,Rinz,Cecilion,Hazle,Suyou,Dyrennn,Arlott,Erlan,Moskov,Regii,Edith,Alberttt,Joy,SwayLow,Yve,Kyy,Kalea
+15,4,2025-04-19,20:00,Geek Fam ID,ALTER EGO,1,ALTER EGO,11.8,1,17,Baloyskie,Gatotkaca,Gobs,Hilda,A B O Y,Pharsa,Caderaa,Harith,Maykids,Suyou,Rinee,Hayabusa,Hijumee,Selena,HAIZZ,Moskov,DreamS,Chou,Nino,Cici
+15,4,2025-04-19,20:00,Geek Fam ID,ALTER EGO,2,Geek Fam ID,11.6,14,3,Baloyskie,Chou,Gobs,Gloo,Caderaa,Harith,A B O Y,Zhuxin,Maykids,Suyou,Hijumee,Faramis,DreamS,Gatotkaca,Nino,Cici,Rinee,Hayabusa,HAIZZ,Moskov
+15,4,2025-04-19,20:00,Geek Fam ID,ALTER EGO,3,Geek Fam ID,13.9,18,9,Baloyskie,Badang,Gobs,Gatotkaca,Maykids,Suyou,A B O Y,Zhuxin,Caderaa,Granger,Nino,Cici,DreamS,Khaleed,HAIZZ,Moskov,Rinee,Hayabusa,Hijumee,Valentina
+15,4,2025-04-20,14:00,ONIC Esports,Team Liquid ID,1,Team Liquid ID,17.9,10,17,S A N Z,Cecilion,Savero,Beatrix,Kiboy,Chou,Ryota,Arlott,Kairi,Fanny,yehezkiel,Zhuxin,Widy,Kalea,Faviannn,Joy,Aran,Badang,Kyou,Karrie
+15,4,2025-04-20,14:00,ONIC Esports,Team Liquid ID,2,ONIC Esports,14.3,19,6,Kairi,Fanny,Kiboy,Badang,Savero,Granger,S A N Z,Valentina,Ryota,Cici,Widy,Chou,Kyou,Moskov,Faviannn,Suyou,yehezkiel,Vexana,Aran,Kalea
+15,4,2025-04-20,14:00,ONIC Esports,Team Liquid ID,3,Team Liquid ID,13.5,3,5,S A N Z,Pharsa,Kairi,Hanzo,Savero,Moskov,Kiboy,Chip,Ryota,Kalea,Kyou,Granger,Faviannn,Suyou,Widy,Mathilda,yehezkiel,Valentina,Aran,Gatotkaca
+15,4,2025-04-20,17:00,Bigetron by Vitality,RRQ Hoshi,1,Bigetron by Vitality,24.6,24,11,Moreno,Zhuxin,Anavel,Suyou,EMANN,Claude,LUKE,Gatotkaca,Finn,Carmilla,Rinz,Yve,ToYy,Moskov,Hazle,lukas,Dyrennn,Hilda,Idok,Chip
+15,4,2025-04-20,17:00,Bigetron by Vitality,RRQ Hoshi,2,Bigetron by Vitality,16.5,19,14,Moreno,Zhuxin,Finn,Hylos,LUKE,Masha,Anavel,Joy,EMANN,Ruby,Hazle,Fanny,Dyrennn,Phoveus,Rinz,Yve,Idok,Kalea,ToYy,Claude
+15,4,2025-04-20,20:00,DEWA United,Geek Fam ID,1,Geek Fam ID,12.3,7,15,Reyy,Fanny,Octa,Zhuxin,Rezzz,Phoveus,Muezza,Gatotkaca,Maybe,Karrie,Baloyskie,Chou,A B O Y,Yve,Caderaa,Moskov,Gobs,Hylos,Maykids,Suyou
+15,4,2025-04-20,20:00,DEWA United,Geek Fam ID,2,DEWA United,15.1,19,4,Maybe,Moskov,Muezza,Mathilda,Reyy,Fanny,Rezzz,Phoveus,Octa,Cecilion,Baloyskie,Chou,Gobs,Gatotkaca,Caderaa,Beatrix,Maykids,Suyou,A B O Y,Zhuxin
+15,4,2025-04-20,20:00,DEWA United,Geek Fam ID,3,Geek Fam ID,14.7,3,14,Maybe,Moskov,Octa,Cecilion,Reyy,Joy,Muezza,Carmilla,Rezzz,Uranus,Baloyskie,Kalea,A B O Y,Valentina,Maykids,Suyou,Gobs,Phoveus,Caderaa,Claude
+15,5,2025-04-25,15:00,Geek Fam ID,Natus Vincere,1,Geek Fam ID,13.7,13,3,Baloyskie,Floryn,Gobs,Kalea,A B O Y,Novaria,Maykids,Fredrinn,Caderaa,Granger,Xyve,Clint,bq syaii,Phoveus,Karss,Hylos,Woshipaul,Joy,xMagic,Faramis
+15,5,2025-04-25,15:00,Geek Fam ID,Natus Vincere,2,Geek Fam ID,11.0,15,5,Baloyskie,Kalea,Gobs,Phoveus,Caderaa,Granger,A B O Y,Valentina,Maykids,Suyou,bq syaii,Hylos,xMagic,Novaria,Xyve,Natan,Woshipaul,Fredrinn,Karss,Chou
+15,5,2025-04-25,18:00,EVOS Esports,ONIC Esports,1,EVOS Esports,13.6,13,3,Erlan,Harith,Alberttt,Fanny,Natco,Edith,Kyy,Gatotkaca,SwayLow,Zhask,Kairi,Hayabusa,S A N Z,Zhuxin,Ryota,Hilda,Kiboy,Kalea,Savero,Granger
+15,5,2025-04-25,18:00,EVOS Esports,ONIC Esports,2,EVOS Esports,17.2,13,8,Kyy,Hylos,Erlan,Granger,Alberttt,Suyou,SwayLow,Zhask,Natco,Kalea,Kairi,Joy,Savero,Irithel,Kiboy,Hilda,Ryota,Cici,S A N Z,Valentina
+15,5,2025-04-26,14:00,DEWA United,RRQ Hoshi,1,RRQ Hoshi,10.6,2,14,Rezzz,Phoveus,Octa,Valentina,Muezza,Mathilda,Maybe,Harith,Reyy,Alpha,ToYy,Granger,Idok,Hilda,Sutsujin,Hayabusa,Rinz,Novaria,Dyrennn,Badang
+15,5,2025-04-26,14:00,DEWA United,RRQ Hoshi,2,RRQ Hoshi,18.5,15,12,Reyy,Hayabusa,Muezza,Gatotkaca,Rezzz,Hilda,Octa,Selena,Maybe,Harith,Dyrennn,Phoveus,Sutsujin,Suyou,Idok,Chip,Rinz,Pharsa,ToYy,Wanwan
+15,5,2025-04-26,17:00,ALTER EGO,Team Liquid ID,1,Team Liquid ID,21.1,14,20,HAIZZ,Granger,Hijumee,Selena,Rinee,Fredrinn,DreamS,Novaria,Nino,Hylos,Kyou,Harith,Faviannn,Suyou,Widy,Chip,Aran,Edith,yehezkiel,Pharsa
+15,5,2025-04-26,17:00,ALTER EGO,Team Liquid ID,2,ALTER EGO,25.8,24,18,Hijumee,Novaria,Rinee,Hayabusa,DreamS,Khaleed,Nino,Hylos,HAIZZ,Granger,Aran,Hilda,Faviannn,Joy,Widy,Chou,yehezkiel,Pharsa,Kyou,Irithel
+15,5,2025-04-26,17:00,ALTER EGO,Team Liquid ID,3,Team Liquid ID,12.9,7,18,Hijumee,Valentina,DreamS,Hylos,Rinee,Joy,HAIZZ,Moskov,Nino,Phoveus,Kyou,Harith,Widy,Kalea,Faviannn,Suyou,Aran,Edith,yehezkiel,Yve
+15,5,2025-04-26,20:00,EVOS Esports,Bigetron by Vitality,1,EVOS Esports,22.7,20,17,Erlan,Harith,Alberttt,Suyou,SwayLow,Yve,Kyy,Gatotkaca,Natco,Edith,Moreno,Zhuxin,LUKE,Phoveus,EMANN,Wanwan,Finn,Kalea,Anavel,Hanzo
+15,5,2025-04-26,20:00,EVOS Esports,Bigetron by Vitality,2,Bigetron by Vitality,16.3,5,10,Erlan,Harith,Alberttt,lukas,SwayLow,Valentina,Kyy,Hylos,Natco,Badang,EMANN,Wanwan,Moreno,Zhuxin,LUKE,Cici,Finn,Gatotkaca,Anavel,Suyou
+15,5,2025-04-26,20:00,EVOS Esports,Bigetron by Vitality,3,Bigetron by Vitality,21.4,17,21,Kyy,Hylos,Alberttt,Joy,Erlan,Irithel,SwayLow,Zhask,Natco,Kalea,EMANN,Moskov,Anavel,Suyou,Finn,Tigreal,LUKE,Hilda,Moreno,Novaria
+15,5,2025-04-27,14:00,ALTER EGO,Natus Vincere,1,Natus Vincere,14.9,4,16,DreamS,Chou,Nino,Hylos,HAIZZ,Granger,Rinee,Lancelot,Hijumee,Zhuxin,Xyve,Harith,Karss,Kalea,xMagic,Yve,Aether,Suyou,bq syaii,Hilda
+15,5,2025-04-27,14:00,ALTER EGO,Natus Vincere,2,ALTER EGO,12.2,18,7,DreamS,Kalea,Rinee,Hayabusa,HAIZZ,Granger,Hijumee,Zhask,Nino,Hylos,Xyve,Harith,Aether,Suyou,bq syaii,Badang,Karss,Gatotkaca,xMagic,Zhuxin
+15,5,2025-04-27,14:00,ALTER EGO,Natus Vincere,3,ALTER EGO,10.9,13,2,HAIZZ,Harith,DreamS,Gatotkaca,Rinee,Hayabusa,Nino,Badang,Hijumee,Zhask,xMagic,Zhuxin,Karss,Kalea,bq syaii,Phoveus,Aether,Lancelot,Xyve,Bruno
+15,5,2025-04-27,17:00,Geek Fam ID,ONIC Esports,1,Geek Fam ID,19.8,20,21,Maykids,Suyou,Gobs,Kalea,A B O Y,Novaria,Baloyskie,Chou,Caderaa,Moskov,S A N Z,Pharsa,Lutpiii,Badang,Kairi,Joy,Kiboy,Gatotkaca,Savero,Granger
+15,5,2025-04-27,17:00,Geek Fam ID,ONIC Esports,2,ONIC Esports,11.1,0,14,Baloyskie,Badang,Gobs,Hylos,Maykids,Joy,A B O Y,Novaria,Caderaa,Moskov,S A N Z,Luo Yi,Kairi,Hayabusa,Savero,Harith,Lutpiii,Gatotkaca,Kiboy,Kalea
+15,5,2025-04-27,17:00,Geek Fam ID,ONIC Esports,3,ONIC Esports,18.2,11,18,Baloyskie,Helcurt,A B O Y,Valentina,Caderaa,Moskov,Gobs,Kalea,Maykids,Suyou,Savero,Granger,Kairi,Joy,S A N Z,Zhuxin,Kiboy,Badang,Lutpiii,Hylos
+15,5,2025-04-27,20:00,DEWA United,Team Liquid ID,1,Team Liquid ID,11.6,3,10,Reyy,Fanny,Octa,Cecilion,Maybe,Wanwan,Rezzz,Badang,Muezza,Chou,yehezkiel,Zhuxin,Widy,Kalea,Faviannn,Suyou,Kyou,Beatrix,Aran,Akai
+15,5,2025-04-27,20:00,DEWA United,Team Liquid ID,2,DEWA United,18.4,30,17,Reyy,Suyou,Muezza,Kalea,Rezzz,Badang,Maybe,Beatrix,Octa,Lunox,yehezkiel,Zhuxin,Faviannn,Joy,Aran,Hilda,Widy,Chou,Kyou,Wanwan
+15,5,2025-04-27,20:00,DEWA United,Team Liquid ID,3,Team Liquid ID,17.3,7,14,Octa,Zhuxin,Muezza,Mathilda,Reyy,Fredrinn,Rezzz,Badang,Maybe,Clint,Aran,Phoveus,Kyou,Moskov,yehezkiel,Cecilion,Widy,Gatotkaca,Faviannn,Suyou
+15,6,2025-05-02,15:00,Natus Vincere,DEWA United,1,DEWA United,10.5,6,17,xMagic,Zhuxin,bq syaii,Hylos,Karss,Khaleed,Aether,Joy,Xyve,Karrie,Rezzz,Hilda,Maybe,Moskov,Reyy,Hayabusa,Muezza,Gatotkaca,Octa,Kimmy
+15,6,2025-05-02,15:00,Natus Vincere,DEWA United,2,DEWA United,22.7,19,20,bq syaii,Hilda,Aether,Yi Sun-shin,Karss,Chou,Xyve,Lunox,xMagic,Zhuxin,Reyy,Suyou,Maybe,Harith,Rezzz,Phoveus,Octa,Kimmy,Muezza,Jawhead
+15,6,2025-05-02,18:00,ALTER EGO,Geek Fam ID,1,Geek Fam ID,14.7,11,21,DreamS,Kalea,Rinee,Fredrinn,Hijumee,Novaria,Nino,Esmeralda,HAIZZ,Kimmy,A B O Y,Valentina,Baloyskie,Chou,KennzyySkie,Harith,Maykids,Suyou,Gobs,Phoveus
+15,6,2025-05-02,18:00,ALTER EGO,Geek Fam ID,2,Geek Fam ID,14.2,9,12,DreamS,Kalea,Hijumee,Novaria,Rinee,Hanzo,Nino,Hilda,HAIZZ,Kimmy,A B O Y,Valentina,Baloyskie,Chou,Gobs,Hylos,KennzyySkie,Harith,Maykids,Suyou
+15,6,2025-05-03,14:00,EVOS Esports,ALTER EGO,1,ALTER EGO,12.5,6,16,SwayLow,Zhuxin,Erlan,Granger,Alberttt,Joy,Kyy,Gatotkaca,Natco,Badang,HAIZZ,Harith,Rinee,Ling,Nino,lukas,Hijumee,Selena,DreamS,Kalea
+15,6,2025-05-03,14:00,EVOS Esports,ALTER EGO,2,ALTER EGO,18.4,24,22,SwayLow,Zhuxin,Kyy,Jawhead,Alberttt,lukas,Erlan,Moskov,Natco,Kalea,Rinee,Suyou,Hijumee,Yve,DreamS,Gatotkaca,HAIZZ,Karrie,Nino,Cici
+15,6,2025-05-03,17:00,Team Liquid ID,ONIC Esports,1,ONIC Esports,14.2,9,12,AeronnShikii,Harith,Widy,Chip,Faviannn,Hayabusa,yehezkiel,Pharsa,Aran,Edith,Kairi,Joy,Savero,Claude,S A N Z,Valentina,Lutpiii,Badang,Kiboy,Chou
+15,6,2025-05-03,17:00,Team Liquid ID,ONIC Esports,2,ONIC Esports,14.1,8,20,AeronnShikii,Harith,Widy,Chip,Faviannn,Suyou,Aran,Edith,yehezkiel,Novaria,Lutpiii,Hilda,Kairi,Hayabusa,S A N Z,Pharsa,Kiboy,Kalea,Savero,Beatrix
+15,6,2025-05-03,20:00,RRQ Hoshi,Bigetron by Vitality,1,Bigetron by Vitality,15.7,12,12,Sutsujin,Ling,ToYy,Harith,Dyrennn,Phoveus,Idok,Tigreal,Rinz,Novaria,Light,Gatotkaca,EMANN,Wanwan,Moreno,Kimmy,Anavel,Joy,LUKE,Gloo
+15,6,2025-05-03,20:00,RRQ Hoshi,Bigetron by Vitality,2,RRQ Hoshi,15.8,21,18,Sutsujin,Joy,Rinz,Pharsa,Dyrennn,Hylos,Idok,Franco,ToYy,Granger,EMANN,Harith,Light,Jawhead,Moreno,Valentina,Anavel,Hayabusa,LUKE,Hilda
+15,6,2025-05-03,20:00,RRQ Hoshi,Bigetron by Vitality,3,RRQ Hoshi,13.6,17,5,Dyrennn,Kalea,Sutsujin,lukas,Rinz,Valentina,Idok,Mathilda,ToYy,Granger,LUKE,Hilda,EMANN,Wanwan,Moreno,Pharsa,Anavel,Joy,Light,Badang
+15,6,2025-05-04,14:00,Natus Vincere,Team Liquid ID,1,Team Liquid ID,21.8,16,23,Karss,Chip,bq syaii,Hylos,Woshipaul,Joy,Xyve,Claude,xMagic,Pharsa,AeronnShikii,Harith,Aran,Phoveus,Widy,Mathilda,yehezkiel,Valentina,Faviannn,Suyou
+15,6,2025-05-04,14:00,Natus Vincere,Team Liquid ID,2,Team Liquid ID,15.6,5,15,Karss,Kalea,Xyve,Granger,Woshipaul,Joy,bq syaii,Gloo,xMagic,Vexana,Aran,Phoveus,AeronnShikii,Harith,Faviannn,Hayabusa,yehezkiel,Pharsa,Widy,Chou
+15,6,2025-05-04,17:00,ONIC Esports,RRQ Hoshi,1,RRQ Hoshi,13.9,3,18,Savero,Harith,Lutpiii,Hilda,Kiboy,Kalea,Kairi,Lancelot,S A N Z,Pharsa,Rinz,Selena,Idok,Chip,ToYy,Granger,Sutsujin,Hayabusa,Dyrennn,Esmeralda
+15,6,2025-05-04,17:00,ONIC Esports,RRQ Hoshi,2,ONIC Esports,20.6,21,17,S A N Z,Pharsa,Savero,Harith,Lutpiii,Hylos,Kiboy,Badang,Kairi,Hayabusa,Sutsujin,Joy,ToYy,Granger,Dyrennn,Gatotkaca,Idok,Khaleed,Rinz,Kadita
+15,6,2025-05-04,17:00,ONIC Esports,RRQ Hoshi,3,ONIC Esports,18.0,10,5,Lutpiii,Benedetta,Kairi,X.Borg,Savero,Granger,S A N Z,Faramis,Kiboy,Gatotkaca,ToYy,Harith,Sutsujin,lukas,Idok,Mathilda,Dyrennn,Badang,Rinz,Cecilion
+15,6,2025-05-04,20:00,Geek Fam ID,EVOS Esports,1,EVOS Esports,12.3,6,19,Baloyskie,Chou,KennzyySkie,Karrie,A B O Y,Valentina,Gobs,Phoveus,Maykids,Fanny,SwayLow,Zhuxin,Branz,Moskov,Alberttt,Suyou,Kyy,Franco,Natco,Hylos
+15,6,2025-05-04,20:00,Geek Fam ID,EVOS Esports,2,Geek Fam ID,15.6,11,10,Baloyskie,Chou,Gobs,Edith,KennzyySkie,Claude,Maykids,Joy,A B O Y,Yve,Alberttt,Hayabusa,SwayLow,Zhuxin,Natco,Phoveus,Branz,Moskov,Kyy,Ruby
+15,6,2025-05-04,20:00,Geek Fam ID,EVOS Esports,3,Geek Fam ID,17.1,13,6,A B O Y,Cecilion,Baloyskie,Kalea,KennzyySkie,Granger,Maykids,Fredrinn,Gobs,Edith,SwayLow,Zhuxin,Alberttt,Suyou,Branz,Moskov,Kyy,Mathilda,Natco,Gatotkaca
+15,7,2025-05-09,15:00,Geek Fam ID,DEWA United,1,Geek Fam ID,14.6,15,5,Baloyskie,Helcurt,A B O Y,Zhuxin,Maykids,Fanny,Caderaa,Claude,Gobs,Phoveus,Octa,Kimmy,Muezza,Chou,Vanz,lukas,Rezzz,Hilda,Maybe,Moskov
+15,7,2025-05-09,15:00,Geek Fam ID,DEWA United,2,Geek Fam ID,12.8,12,8,A B O Y,Zhuxin,Baloyskie,Gatotkaca,Caderaa,Moskov,Gobs,Edith,Maykids,Fanny,Muezza,Chou,Octa,Kimmy,Rezzz,Badang,Vanz,Ling,Maybe,Ruby
+15,7,2025-05-09,18:00,Bigetron by Vitality,Team Liquid ID,1,Bigetron by Vitality,18.2,19,12,Moreno,Valentina,LUKE,Gloo,EMANN,Granger,Anavel,Fredrinn,Finn,Kalea,AeronnShikii,Moskov,Widy,Mathilda,Aran,Phoveus,yehezkiel,Kimmy,Faviannn,Suyou
+15,7,2025-05-09,18:00,Bigetron by Vitality,Team Liquid ID,2,Team Liquid ID,20.0,12,22,LUKE,Masha,EMANN,Granger,Anavel,Ling,Moreno,Valentina,Finn,Gatotkaca,AeronnShikii,Harith,Aran,Phoveus,Faviannn,Hayabusa,yehezkiel,Kimmy,Widy,Mathilda
+15,7,2025-05-09,18:00,Bigetron by Vitality,Team Liquid ID,3,Team Liquid ID,13.8,0,6,EMANN,Kimmy,Moreno,Valentina,Anavel,X.Borg,Finn,Carmilla,LUKE,Masha,Widy,Chip,AeronnShikii,Harith,Aran,Phoveus,Faviannn,Suyou,yehezkiel,Pharsa
+15,7,2025-05-10,14:00,DEWA United,ALTER EGO,1,ALTER EGO,14.4,12,19,Octa,Lunox,Muezza,Chip,Reyy,lukas,Maybe,Irithel,Rezzz,Phoveus,Hijumee,Kimmy,DreamS,Gatotkaca,Nino,Valentina,Rinee,Leomord,Arfy,Harith
+15,7,2025-05-10,14:00,DEWA United,ALTER EGO,2,ALTER EGO,13.3,6,17,Octa,Kimmy,Muezza,Kalea,Reyy,Fredrinn,Rezzz,Cici,Maybe,Moskov,Nino,Phoveus,Hijumee,Pharsa,Rinee,Ling,Arfy,Harith,DreamS,Gatotkaca
+15,7,2025-05-10,17:00,EVOS Esports,RRQ Hoshi,1,RRQ Hoshi,16.9,13,16,Kyy,Kalea,SwayLow,Valentina,Alberttt,Suyou,Erlan,Moskov,Regii,Edith,Rinz,Luo Yi,Idok,Hylos,Dyrennn,Badang,Sutsujin,Hayabusa,ToYy,Kimmy
+15,7,2025-05-10,17:00,EVOS Esports,RRQ Hoshi,2,RRQ Hoshi,16.6,14,17,Kyy,Kalea,Alberttt,Suyou,SwayLow,Yve,Erlan,Bruno,Regii,Edith,Sutsujin,Joy,Rinz,Zhuxin,ToYy,Wanwan,Dyrennn,Hylos,Idok,Franco
+15,7,2025-05-10,20:00,ONIC Esports,Natus Vincere,1,ONIC Esports,11.7,14,5,S A N Z,Kimmy,Lutpiii,Benedetta,Kiboy,Gatotkaca,Kairi,X.Borg,Savero,Granger,Karss,Kalea,bq syaii,Edith,Woshipaul,lukas,xMagic,Valentina,Xyve,Irithel
+15,7,2025-05-10,20:00,ONIC Esports,Natus Vincere,2,ONIC Esports,16.3,15,6,Savero,Harith,S A N Z,Valentina,Lutpiii,Hylos,Kairi,Hayabusa,Kiboy,Kalea,bq syaii,Phoveus,Woshipaul,Suyou,Karss,Chip,Xyve,Moskov,xMagic,Valir
+15,7,2025-05-11,14:00,RRQ Hoshi,Geek Fam ID,1,Geek Fam ID,14.1,6,19,Sutsujin,Suyou,Rinz,Valentina,Dyrennn,Gloo,Idok,Chip,ToYy,Granger,Baloyskie,Kalea,A B O Y,Faramis,Gobs,Phoveus,Maykids,Ling,Caderaa,Claude
+15,7,2025-05-11,14:00,RRQ Hoshi,Geek Fam ID,2,RRQ Hoshi,17.3,21,14,Sutsujin,Suyou,Rinz,Pharsa,ToYy,Moskov,Idok,Tigreal,Dyrennn,Hylos,Gobs,Edith,Maykids,Fanny,A B O Y,Zhuxin,Baloyskie,Chou,Caderaa,Harith
+15,7,2025-05-11,14:00,RRQ Hoshi,Geek Fam ID,3,RRQ Hoshi,11.1,13,4,Dyrennn,Badang,ToYy,Kimmy,Sutsujin,Suyou,Rinz,Zhask,Idok,Hylos,Gobs,Edith,Maykids,Ling,Baloyskie,Chip,Caderaa,Harith,A B O Y,Zhuxin
+15,7,2025-05-11,17:00,Natus Vincere,Bigetron by Vitality,1,Bigetron by Vitality,13.8,7,18,Woshipaul,Joy,xMagic,Kimmy,Karss,Gatotkaca,bq syaii,Terizla,Xyve,Moskov,LUKE,Arlott,Anavel,Fredrinn,EMANN,Beatrix,Moreno,Pharsa,Light,Kalea
+15,7,2025-05-11,17:00,Natus Vincere,Bigetron by Vitality,2,Bigetron by Vitality,20.6,14,16,Xyve,Granger,Woshipaul,Fanny,bq syaii,Hilda,Karss,Jawhead,xMagic,Kimmy,LUKE,Badang,Anavel,Joy,Moreno,Zhuxin,Light,Chou,EMANN,Moskov
+15,7,2025-05-11,20:00,Team Liquid ID,EVOS Esports,1,Team Liquid ID,20.1,20,14,yehezkiel,Pharsa,Widy,Kalea,Faviannn,Suyou,Aran,Phoveus,AeronnShikii,Kimmy,Alberttt,Fanny,Kyy,Gatotkaca,Regii,Gloo,SwayLow,Yve,Branz,Bruno
+15,7,2025-05-11,20:00,Team Liquid ID,EVOS Esports,2,EVOS Esports,14.3,8,16,AeronnShikii,Harith,Aran,Phoveus,yehezkiel,Zhuxin,Faviannn,Hayabusa,Widy,Gatotkaca,Kyy,Jawhead,Alberttt,Suyou,Branz,Beatrix,Regii,Gloo,SwayLow,Yve
+15,7,2025-05-11,20:00,Team Liquid ID,EVOS Esports,3,Team Liquid ID,20.9,18,10,Widy,Kalea,Aran,Phoveus,Faviannn,Hayabusa,yehezkiel,Yve,AeronnShikii,Karrie,Branz,Granger,Alberttt,Joy,Regii,Gloo,SwayLow,Faramis,Kyy,Hylos
+15,8,2025-05-16,15:00,Team Liquid ID,ALTER EGO,1,ALTER EGO,16.5,13,14,Faviannn,Hayabusa,AeronnShikii,Kimmy,Aran,Hilda,yehezkiel,Zhuxin,Widy,Khaleed,Nino,Phoveus,Hijumee,Yve,DreamS,Gatotkaca,Arfy,Clint,Rinee,Ling
+15,8,2025-05-16,15:00,Team Liquid ID,ALTER EGO,2,ALTER EGO,23.6,9,17,Faviannn,Hayabusa,Widy,Baxia,AeronnShikii,Moskov,Aran,Kalea,yehezkiel,Novaria,Hijumee,Kimmy,Arfy,Granger,DreamS,Franco,Rinee,Ling,Nino,Gatotkaca
+15,8,2025-05-16,18:00,Bigetron by Vitality,DEWA United,1,Bigetron by Vitality,16.5,4,9,Moreno,Luo Yi,Anavel,Lancelot,EMANN,Moskov,Light,Chip,LUKE,Fredrinn,Xorizo,Terizla,Reyy,Joy,Maybe,Granger,Spencer,Zhuxin,Itoshi Kesu,Gatotkaca
+15,8,2025-05-16,18:00,Bigetron by Vitality,DEWA United,2,Bigetron by Vitality,14.8,17,7,LUKE,Kalea,Anavel,Baxia,EMANN,Beatrix,Moreno,Cecilion,Light,Chip,Xorizo,Edith,Reyy,Suyou,Spencer,Zhuxin,Maybe,Harith,Itoshi Kesu,Gatotkaca
+15,8,2025-05-17,14:00,Geek Fam ID,Team Liquid ID,1,Geek Fam ID,16.7,24,13,Baloyskie,Badang,Maykids,Suyou,KennzyySkie,Granger,Gobs,Gloo,A B O Y,Zhask,Widy,Chip,yehezkiel,Zhuxin,AeronnShikii,Moskov,Aran,Gatotkaca,Faviannn,lukas
+15,8,2025-05-17,14:00,Geek Fam ID,Team Liquid ID,2,Team Liquid ID,15.7,11,16,Gobs,Hylos,Maykids,Joy,A B O Y,Zhask,Baloyskie,Badang,KennzyySkie,Granger,Widy,Chip,Faviannn,Suyou,yehezkiel,Zhuxin,Aran,Gatotkaca,AeronnShikii,Bruno
+15,8,2025-05-17,14:00,Geek Fam ID,Team Liquid ID,3,Geek Fam ID,14.2,15,3,A B O Y,Valentina,Baloyskie,Badang,Gobs,Terizla,KennzyySkie,Granger,Maykids,Joy,Widy,Chip,yehezkiel,Zhuxin,Faviannn,Suyou,AeronnShikii,Bruno,Aran,Gatotkaca
+15,8,2025-05-17,17:00,ALTER EGO,RRQ Hoshi,1,RRQ Hoshi,13.1,6,16,Hijumee,Selena,Nino,Phoveus,DreamS,Gatotkaca,Arfy,Karrie,Rinee,Ling,Rinz,Zhuxin,Idok,Franco,ToYy,Beatrix,Sutsujin,Hayabusa,Dyrennn,Hilda
+15,8,2025-05-17,17:00,ALTER EGO,RRQ Hoshi,2,ALTER EGO,13.9,24,7,Rinee,Hayabusa,Hijumee,Yve,Nino,Chou,Arfy,Karrie,DreamS,Gatotkaca,Dyrennn,Hylos,Sutsujin,Joy,Idok,Chip,ToYy,Moskov,Rinz,Zhuxin
+15,8,2025-05-17,17:00,ALTER EGO,RRQ Hoshi,3,RRQ Hoshi,19.1,17,22,Rinee,Hayabusa,DreamS,Tigreal,Hijumee,Yve,Nino,Hylos,Arfy,Claude,Sutsujin,Joy,Idok,Gatotkaca,Dyrennn,Badang,ToYy,Wanwan,Rinz,Pharsa
+15,8,2025-05-17,20:00,Bigetron by Vitality,ONIC Esports,1,Bigetron by Vitality,15.6,15,1,Moreno,Pharsa,LUKE,Kalea,Anavel,Baxia,EMANN,Granger,Finn,Badang,Savero,Kimmy,Lutpiii,Gatotkaca,S A N Z,Selena,Kiboy,Jawhead,Kairi,Ling
+15,8,2025-05-17,20:00,Bigetron by Vitality,ONIC Esports,2,ONIC Esports,19.8,26,26,LUKE,Kalea,Anavel,Baxia,Moreno,Pharsa,EMANN,Granger,Finn,Badang,S A N Z,Faramis,Kiboy,Gatotkaca,Lutpiii,Gloo,Savero,Harith,Kairi,Hanzo
+15,8,2025-05-17,20:00,Bigetron by Vitality,ONIC Esports,3,Bigetron by Vitality,23.4,13,13,Moreno,Kimmy,Anavel,Fredrinn,EMANN,Granger,LUKE,Ruby,Finn,Badang,Savero,Harith,Kiboy,Baxia,S A N Z,Valir,Kairi,Hanzo,Lutpiii,Phoveus
+15,8,2025-05-18,14:00,RRQ Hoshi,DEWA United,1,DEWA United,15.1,1,9,Rinz,Valentina,ToYy,Wanwan,Idok,Gatotkaca,Dyrennn,Badang,Chenn,Suyou,Itoshi Kesu,Chip,Spencer,Yve,Xorizo,Esmeralda,Reyy,Fredrinn,Maybe,Granger
+15,8,2025-05-18,14:00,RRQ Hoshi,DEWA United,2,DEWA United,25.0,21,18,Rinz,Pharsa,Dyrennn,Terizla,Chenn,Joy,Idok,Chip,ToYy,Beatrix,Xorizo,Cici,Maybe,Harith,Reyy,Fredrinn,Spencer,Kimmy,Itoshi Kesu,Badang
+15,8,2025-05-18,17:00,ONIC Esports,EVOS Esports,1,ONIC Esports,14.9,12,4,S A N Z,Pharsa,Lutpiii,Hylos,Savero,Granger,Kiboy,Badang,Kairi,Fanny,Erlan,Harith,Kyy,Gatotkaca,Alberttt,Suyou,SwayLow,Cecilion,Regii,Chou
+15,8,2025-05-18,17:00,ONIC Esports,EVOS Esports,2,ONIC Esports,17.6,22,16,S A N Z,Luo Yi,Lutpiii,Hylos,Kairi,Joy,Savero,Granger,Kiboy,Jawhead,Erlan,Harith,Kyy,Tigreal,Alberttt,Ling,SwayLow,Pharsa,Regii,Kalea
+15,8,2025-05-18,20:00,Natus Vincere,Geek Fam ID,1,Geek Fam ID,13.9,4,3,Karss,Khaleed,Xyve,Harith,Febbb,Gatotkaca,Woshipaul,Hanzo,xMagic,Zhuxin,Baloyskie,Badang,KennzyySkie,Wanwan,A B O Y,Kimmy,Gobs,Hylos,Maykids,Suyou
+15,8,2025-05-18,20:00,Natus Vincere,Geek Fam ID,2,Geek Fam ID,13.3,1,17,Karss,Gatotkaca,xMagic,Vexana,Xyve,Wanwan,Febbb,Badang,Woshipaul,Joy,Baloyskie,Kalea,A B O Y,Valentina,KennzyySkie,Harith,Gobs,Akai,Maykids,lukas
+15,9,2025-05-23,15:00,Bigetron by Vitality,Geek Fam ID,1,Bigetron by Vitality,15.2,19,8,LUKE,Phoveus,EMANN,Irithel,Anavel,Baxia,Moreno,Valentina,Finn,Angela,Baloyskie,Badang,KennzyySkie,Harith,A B O Y,Zhuxin,Gobs,Gloo,Maykids,Suyou
+15,9,2025-05-23,15:00,Bigetron by Vitality,Geek Fam ID,2,Geek Fam ID,10.9,4,12,EMANN,Clint,Moreno,Luo Yi,Finn,Hylos,Anavel,lukas,LUKE,Badang,Gobs,Phoveus,Maykids,Suyou,A B O Y,Valentina,Baloyskie,Gatotkaca,KennzyySkie,Granger
+15,9,2025-05-23,15:00,Bigetron by Vitality,Geek Fam ID,3,Geek Fam ID,20.7,12,17,Anavel,Hayabusa,LUKE,Kalea,Moreno,Kimmy,EMANN,Beatrix,Finn,Tigreal,Gobs,Gloo,Maykids,Joy,A B O Y,Zhuxin,Baloyskie,Badang,KennzyySkie,Wanwan
+15,9,2025-05-23,18:00,DEWA United,ONIC Esports,1,DEWA United,14.6,13,6,Spencer,Kimmy,Reyy,Fredrinn,Itoshi Kesu,Chou,Maybe,Granger,Xorizo,Gloo,Lutpiii,Phoveus,Kairi,Joy,Savero,Beatrix,S A N Z,Pharsa,Kiboy,Gatotkaca
+15,9,2025-05-23,18:00,DEWA United,ONIC Esports,2,ONIC Esports,11.8,4,14,Reyy,Fredrinn,Xorizo,Cici,Itoshi Kesu,Mathilda,Spencer,Kimmy,Maybe,Harith,Lutpiii,Paquito,Kairi,Baxia,S A N Z,Yve,Kiboy,Franco,Savero,Granger
+15,9,2025-05-23,18:00,DEWA United,ONIC Esports,3,ONIC Esports,16.4,10,16,Reyy,Lancelot,Itoshi Kesu,Chou,Spencer,Yve,Maybe,Granger,Xorizo,Gloo,S A N Z,Kimmy,Kairi,Ling,Lutpiii,Baxia,Savero,Claude,Kiboy,Khaleed
+15,9,2025-05-24,14:00,EVOS Esports,Natus Vincere,1,EVOS Esports,14.8,17,7,Erlan,Harith,Kyy,Chip,SwayLow,Pharsa,REGIII,Cici,Alberttt,Guinevere,Karss,Kalea,xMagic,Valentina,Febbb,Benedetta,Woshipaul,Baxia,Xyve,Irithel
+15,9,2025-05-24,14:00,EVOS Esports,Natus Vincere,2,Natus Vincere,18.6,12,20,Kyy,Chip,Erlan,Harith,SwayLow,Pharsa,Alberttt,Guinevere,REGIII,X.Borg,xMagic,Kimmy,Xyve,Granger,Karss,Kalea,Woshipaul,Hayabusa,Febbb,Gloo
+15,9,2025-05-24,14:00,EVOS Esports,Natus Vincere,3,EVOS Esports,28.5,19,21,Erlan,Harith,Alberttt,Suyou,SwayLow,Pharsa,REGIII,Gatotkaca,Kyy,Baxia,Karss,Kalea,Xyve,Granger,xMagic,Luo Yi,Febbb,Cici,Woshipaul,Fredrinn
+15,9,2025-05-24,17:00,Team Liquid ID,RRQ Hoshi,1,Team Liquid ID,14.0,16,4,Widy,Chip,Faviannn,Ling,Aran,Hilda,Kyou,Granger,yehezkiel,Kimmy,Rinz,Zhuxin,Dyrennn,Gloo,Sutsujin,Suyou,ToYy,Karrie,Idok,Franco
+15,9,2025-05-24,17:00,Team Liquid ID,RRQ Hoshi,2,Team Liquid ID,17.6,24,10,Widy,Chip,Faviannn,Ling,Aran,Hilda,Kyou,Kimmy,yehezkiel,Zhuxin,Dyrennn,Gloo,Sutsujin,Suyou,Idok,Kalea,Rinz,Pharsa,ToYy,Beatrix
+15,9,2025-05-24,20:00,ONIC Esports,ALTER EGO,1,ONIC Esports,12.6,18,1,Savero,Harith,Kairi,Fredrinn,Lutpiii,Paquito,S A N Z,Luo Yi,Kiboy,Chip,DreamS,Gatotkaca,Hijumee,Kimmy,Arfy,Granger,Nino,Phoveus,Rinee,Joy
+15,9,2025-05-24,20:00,ONIC Esports,ALTER EGO,2,ONIC Esports,11.2,18,3,S A N Z,Luo Yi,Savero,Claude,Lutpiii,Gloo,Kairi,Hayabusa,Kiboy,Badang,Nino,Phoveus,DreamS,Kalea,Rinee,Suyou,Arfy,Moskov,Hijumee,Kimmy
+15,9,2025-05-25,14:00,DEWA United,EVOS Esports,1,EVOS Esports,13.3,3,12,Azura,Granger,Reyy,Hayabusa,Spencer,Pharsa,Rezzz,Badang,Itoshi Kesu,Khaleed,SwayLow,Kimmy,REGIII,Kalea,Kyy,Angela,Erlan,Wanwan,Alberttt,Baxia
+15,9,2025-05-25,14:00,DEWA United,EVOS Esports,2,EVOS Esports,10.8,8,19,Reyy,Fredrinn,Rezzz,Badang,Azura,Moskov,Itoshi Kesu,Kalea,Spencer,Zhuxin,Alberttt,Joy,Kyy,Baxia,Erlan,Granger,SwayLow,Kimmy,REGIII,Terizla
+15,9,2025-05-25,17:00,ALTER EGO,Bigetron by Vitality,1,ALTER EGO,19.9,18,13,Hijumee,Luo Yi,Arfy,Granger,Nino,Badang,Rinee,Baxia,DreamS,Angela,Moreno,Selena,EMANN,Moskov,Anavel,Joy,LUKE,Phoveus,Finn,Gatotkaca
+15,9,2025-05-25,17:00,ALTER EGO,Bigetron by Vitality,2,ALTER EGO,20.0,18,24,Arfy,Granger,Hijumee,Luo Yi,Rinee,X.Borg,Nino,lukas,DreamS,Khaleed,EMANN,Harith,LUKE,Benedetta,Moreno,Pharsa,Anavel,Baxia,Finn,Kalea
+15,9,2025-05-25,20:00,RRQ Hoshi,Natus Vincere,1,RRQ Hoshi,14.7,15,7,Sutsujin,Joy,Rinz,Selena,ToYy,Wanwan,Idok,Baxia,Dyrennn,Badang,Karss,Chou,Febbb,Gloo,xMagic,Valentina,Xyve,Irithel,Woshipaul,Hayabusa
+15,9,2025-05-25,20:00,RRQ Hoshi,Natus Vincere,2,RRQ Hoshi,13.0,18,8,ToYy,Harith,Sutsujin,Ling,Dyrennn,Terizla,Rinz,Faramis,Idok,Chou,Karss,Ruby,Xyve,Bruno,Woshipaul,Fanny,Febbb,Baxia,xMagic,Kimmy
+16,1,2025-08-22,15:00,ONIC Esports,DEWA United,1,ONIC Esports,11.7,11,0,Skylar,Claude,S A N Z,Pharsa,Kairi,Joy,Lutpiii,Cici,Kiboy,Hylos,Vanz,Lancelot,Muezza,Gatotkaca,Maybe,Harith,Markkk,Esmeralda,Octa,Helcurt
+16,1,2025-08-22,15:00,ONIC Esports,DEWA United,2,ONIC Esports,19.9,18,8,Skylar,Granger,Kairi,Lancelot,Lutpiii,Cici,Kiboy,Gatotkaca,S A N Z,Pharsa,Maybe,Beatrix,Muezza,Kalea,Vanz,Joy,Markkk,Esmeralda,Octa,Kagura
+16,1,2025-08-22,18:00,Natus Vincere,EVOS Esports,1,EVOS Esports,12.6,2,16,Karss,Uranus,xMagic,Pharsa,Xyve,Moskov,APRHO,Gatotkaca,Woshipaul,Fanny,Xorizo,Cici,Erlan,Granger,Kyy,Franco,RoundeL,Valentina,Alberttt,Baxia
+16,1,2025-08-22,18:00,Natus Vincere,EVOS Esports,2,EVOS Esports,18.1,6,14,xMagic,Pharsa,Woshipaul,Baxia,Xyve,Harith,APRHO,Badang,Karss,Paquito,Xorizo,Cici,Erlan,Granger,Kyy,Gatotkaca,RoundeL,Lylia,Alberttt,Fredrinn
+16,1,2025-08-23,14:00,Team Liquid ID,Geek Fam ID,1,Geek Fam ID,15.1,11,18,Widy,Baxia,yehezkiel,Kimmy,JOOOO,Fanny,Kabuki,Claude,Aran,Phoveus,A B O Y,Pharsa,KennzyySkie,Moskov,Maykids,Hayabusa,Gobs,Gloo,Baloyskie,Chou
+16,1,2025-08-23,14:00,Team Liquid ID,Geek Fam ID,2,Team Liquid ID,21.1,16,7,Widy,Baxia,yehezkiel,Kimmy,JOOOO,Fanny,Kabuki,Claude,Aran,Ruby,A B O Y,Valentina,Baloyskie,Hylos,Maykids,Yi Sun-shin,KennzyySkie,Granger,Gobs,Cici
+16,1,2025-08-23,14:00,Team Liquid ID,Geek Fam ID,3,Geek Fam ID,14.4,3,17,Widy,Baxia,JOOOO,Hayabusa,yehezkiel,Zhuxin,Kabuki,Harith,Aran,Arlott,Baloyskie,Gatotkaca,Maykids,Suyou,A B O Y,Pharsa,Gobs,Gloo,KennzyySkie,Granger
+16,1,2025-08-23,17:00,ONIC Esports,Bigetron by Vitality,1,ONIC Esports,11.7,11,3,Kairi,Lancelot,Lutpiii,Phoveus,Savero,Granger,S A N Z,Yve,Kiboy,Gatotkaca,Finn,Mathilda,Moreno,Kimmy,NNAEL,Baxia,EMANN,Bruno,Shogun,Hylos
+16,1,2025-08-23,17:00,ONIC Esports,Bigetron by Vitality,2,ONIC Esports,18.2,14,15,Lutpiii,Phoveus,S A N Z,Pharsa,Kiboy,Gatotkaca,Savero,Bruno,Kairi,Lancelot,NNAEL,Baxia,Moreno,Zhuxin,Finn,Kalea,Shogun,Benedetta,EMANN,Granger
+16,1,2025-08-23,20:00,RRQ Hoshi,ALTER EGO,1,ALTER EGO,12.5,5,20,Rinz,Pharsa,Rezzz,Arlott,ToYy,Moskov,Zunesh,Lancelot,Idok,Kaja,Hijumee,Zhuxin,Yazukee,Fanny,Nino,Uranus,Arfy,Harith,alekk,Khaleed
+16,1,2025-08-23,20:00,RRQ Hoshi,ALTER EGO,2,RRQ Hoshi,10.7,24,3,Idok,Kalea,Rezzz,Esmeralda,Zunesh,Hayabusa,Rinz,Pharsa,ToYy,Harith,Nino,Lapu-Lapu,Yazukee,Lancelot,Arfy,Claude,alekk,Hilda,Hijumee,Zhuxin
+16,1,2025-08-23,20:00,RRQ Hoshi,ALTER EGO,3,RRQ Hoshi,18.3,22,8,Rezzz,Chou,Rinz,Kimmy,Zunesh,Hayabusa,ToYy,Claude,Idok,Gatotkaca,Nino,Ruby,Yazukee,Lancelot,Hijumee,Zhuxin,alekk,Kalea,Arfy,Granger
+16,1,2025-08-24,14:00,Bigetron by Vitality,Natus Vincere,1,Natus Vincere,15.4,3,10,Finn,Kalea,Moreno,Valentina,NNAEL,Joy,Shogun,Gatotkaca,EMANN,Granger,Xyve,Wanwan,Karss,Phoveus,Woshipaul,Baxia,APRHO,Badang,xMagic,Kimmy
+16,1,2025-08-24,14:00,Bigetron by Vitality,Natus Vincere,2,Bigetron by Vitality,12.8,14,3,NNAEL,Baxia,Moreno,Pharsa,Finn,Hylos,EMANN,Moskov,Shogun,Benedetta,Karss,Lapu-Lapu,APRHO,Kalea,xMagic,Valentina,Woshipaul,Fredrinn,Xyve,Wanwan
+16,1,2025-08-24,14:00,Bigetron by Vitality,Natus Vincere,3,Natus Vincere,15.2,8,13,Shogun,Arlott,NNAEL,Akai,Moreno,Valentina,Finn,Gatotkaca,EMANN,Harith,xMagic,Pharsa,Woshipaul,Baxia,Xyve,Granger,APRHO,Hylos,Karss,Masha
+16,1,2025-08-24,17:00,Geek Fam ID,RRQ Hoshi,1,Geek Fam ID,13.7,13,9,KennzyySkie,Moskov,Baloyskie,Badang,Maykids,Lancelot,A B O Y,Valentina,Gobs,Arlott,Rinz,Pharsa,Rezzz,Cici,Zunesh,Fanny,Idok,Hylos,ToYy,Kimmy
+16,1,2025-08-24,17:00,Geek Fam ID,RRQ Hoshi,2,Geek Fam ID,16.8,23,10,KennzyySkie,Sun,Maykids,Baxia,A B O Y,Pharsa,Gobs,Cici,Baloyskie,Helcurt,Rinz,Kimmy,Idok,Chou,Zunesh,Hayabusa,Rezzz,Gatotkaca,ToYy,Lapu-Lapu
+16,1,2025-08-24,20:00,ALTER EGO,DEWA United,1,ALTER EGO,21.6,16,19,alekk,Gatotkaca,Arfy,Harith,Nino,Arlott,Rinee,Lancelot,Cyruz,Yve,Markkk,Cici,Octa,Zhuxin,Vanz,Joy,Muezza,Chou,Maybe,Beatrix
+16,1,2025-08-24,20:00,ALTER EGO,DEWA United,2,ALTER EGO,11.1,20,2,Nino,Arlott,Rinee,Baxia,Arfy,Granger,Cyruz,Valentina,alekk,Kalea,Vanz,Yi Sun-shin,Muezza,Gatotkaca,Octa,Selena,Markkk,Uranus,Maybe,Bruno
+16,2,2025-08-29,15:00,ONIC Esports,Geek Fam ID,1,ONIC Esports,29.5,24,11,Lutpiii,Phoveus,Kiboy,Gatotkaca,Skylar,Claude,Kairi,Joy,S A N Z,Zhuxin,KennzyySkie,Bruno,A B O Y,Kimmy,Gobs,Gloo,Maykids,Lancelot,Baloyskie,Mathilda
+16,2,2025-08-29,15:00,ONIC Esports,Geek Fam ID,2,ONIC Esports,13.7,14,3,S A N Z,Zhuxin,Kairi,Yi Sun-shin,Lutpiii,Cici,Skylar,Lunox,Kiboy,Chou,Gobs,Uranus,Maykids,Baxia,A B O Y,Pharsa,Baloyskie,Estes,KennzyySkie,Harith
+16,2,2025-08-29,18:00,DEWA United,Natus Vincere,1,DEWA United,14.7,19,2,Qinn,Arlott,Maybe,Harith,Reyy,Yi Sun-shin,Muezza,Chou,Octa,Lunox,Karss,Uranus,Woshipaul,Lancelot,xMagic,Pharsa,APRHO,Hilda,Xyve,Granger
+16,2,2025-08-29,18:00,DEWA United,Natus Vincere,2,DEWA United,20.5,18,8,Maybe,Harith,Qinn,Phoveus,Reyy,Fanny,Muezza,Gatotkaca,Octa,Yve,Woshipaul,Yi Sun-shin,xMagic,Zhuxin,APRHO,Hylos,Karss,Edith,Xyve,Moskov
+16,2,2025-08-30,14:00,Geek Fam ID,Bigetron by Vitality,1,Bigetron by Vitality,18.6,7,19,Maykids,Fredrinn,A B O Y,Pharsa,KennzyySkie,Bruno,Gobs,Benedetta,Baloyskie,Estes,Finn,Hylos,Shogun,Chou,NNAEL,Yi Sun-shin,EMANN,Irithel,Moreno,Selena
+16,2,2025-08-30,14:00,Geek Fam ID,Bigetron by Vitality,2,Bigetron by Vitality,19.0,13,13,Gobs,Gloo,A B O Y,Zhuxin,Maykids,Joy,KennzyySkie,Granger,Baloyskie,Kalea,Finn,Hylos,Moreno,Valentina,Shogun,Badang,EMANN,Bruno,NNAEL,Lancelot
+16,2,2025-08-30,17:00,ALTER EGO,EVOS Esports,1,EVOS Esports,14.2,6,15,Rinee,Yi Sun-shin,Nino,Lapu-Lapu,Hijumee,Yve,Arfy,Harith,alekk,Badang,RoundeL,Zhuxin,Alberttt,Lancelot,Kyy,Gloo,Erlan,Claude,Xorizo,Esmeralda
+16,2,2025-08-30,17:00,ALTER EGO,EVOS Esports,2,ALTER EGO,13.2,15,5,Rinee,Lancelot,Hijumee,Pharsa,alekk,Gatotkaca,Nino,Cici,Arfy,Kimmy,Alberttt,Yi Sun-shin,Erlan,Ruby,RoundeL,Valentina,Xorizo,Paquito,Kyy,Khufra
+16,2,2025-08-30,17:00,ALTER EGO,EVOS Esports,3,ALTER EGO,13.8,24,9,Hijumee,Zhuxin,Rinee,Yi Sun-shin,Nino,Uranus,alekk,Khaleed,Arfy,Claude,Alberttt,Lancelot,Xorizo,Arlott,Kyy,Hylos,RoundeL,Pharsa,Erlan,Harith
+16,2,2025-08-30,20:00,Team Liquid ID,DEWA United,1,Team Liquid ID,15.1,19,11,Aran,Lapu-Lapu,JOOOO,Yi Sun-shin,yehezkiel,Zhuxin,Widy,Gatotkaca,Kabuki,Granger,QINN,Phoveus,Maybe,Harith,Reyy,Lancelot,Muezza,Hylos,Octa,Valentina
+16,2,2025-08-30,20:00,Team Liquid ID,DEWA United,2,DEWA United,14.1,6,20,JOOOO,Yi Sun-shin,Aran,Gloo,yehezkiel,Valentina,Widy,Gatotkaca,Kabuki,Moskov,Muezza,Franco,Maybe,Granger,QINN,Badang,Octa,Kimmy,Reyy,Baxia
+16,2,2025-08-30,20:00,Team Liquid ID,DEWA United,3,DEWA United,27.2,15,15,Aran,Phoveus,Widy,Badang,yehezkiel,Pharsa,JOOOO,Hayabusa,Kabuki,Granger,Octa,Zhuxin,Muezza,Gatotkaca,QINN,Esmeralda,Maybe,Harith,Reyy,Yi Sun-shin
+16,2,2025-08-31,14:00,Natus Vincere,ALTER EGO,1,Natus Vincere,11.5,15,2,UK1R,Zhuxin,Andoryuuu,Lancelot,Xyve,Harith,APRHO,Khaleed,Karss,Lapu-Lapu,Nino,Cici,IVANN,Gatotkaca,Cyruz,Valentina,Arfy,Claude,Yazukee,Yi Sun-shin
+16,2,2025-08-31,14:00,Natus Vincere,ALTER EGO,2,Natus Vincere,20.2,23,12,UK1R,Zhuxin,Xyve,Harith,Karss,Arlott,APRHO,Hylos,Andoryuuu,Yi Sun-shin,Yazukee,Lancelot,Nino,Cici,Cyruz,Yve,IVANN,Gatotkaca,Arfy,Claude
+16,2,2025-08-31,17:00,RRQ Hoshi,Team Liquid ID,1,RRQ Hoshi,20.4,12,7,Rezzz,Uranus,Idok,Grock,ToYy,Moskov,Rinz,Pharsa,Zunesh,Guinevere,Aran,Lapu-Lapu,JOOOO,Fredrinn,Kabuki,Granger,Widy,Arlott,yehezkiel,Zhuxin
+16,2,2025-08-31,17:00,RRQ Hoshi,Team Liquid ID,2,RRQ Hoshi,13.7,15,7,Idok,Kalea,Zunesh,Fredrinn,Rinz,Yve,ToYy,Irithel,Rezzz,Esmeralda,yehezkiel,Pharsa,Aran,Phoveus,Kabuki,Harith,JOOOO,X.Borg,Widy,Mathilda
+16,2,2025-08-31,20:00,Bigetron by Vitality,EVOS Esports,1,EVOS Esports,17.9,12,18,Shogun,Uranus,NNAEL,Lancelot,EMANN,Moskov,Finn,Hylos,Moreno,Pharsa,Alberttt,Baxia,RoundeL,Valentina,Kyy,Helcurt,Erlan,Claude,Xorizo,Lapu-Lapu
+16,2,2025-08-31,20:00,Bigetron by Vitality,EVOS Esports,2,Bigetron by Vitality,20.5,10,8,NNAEL,Yi Sun-shin,Moreno,Pharsa,Finn,Hylos,Shogun,Arlott,EMANN,Chou,Erlan,Wanwan,RoundeL,Kadita,Kyy,Gatotkaca,Xorizo,Lapu-Lapu,Alberttt,Fredrinn
+16,2,2025-08-31,20:00,Bigetron by Vitality,EVOS Esports,3,Bigetron by Vitality,14.0,14,2,Finn,Baxia,EMANN,Harith,NNAEL,Yi Sun-shin,Moreno,Pharsa,Shogun,Hilda,Xorizo,Uranus,RoundeL,Valentina,Alberttt,Lancelot,Erlan,Claude,Kyy,Gloo
+16,3,2025-09-05,15:00,Natus Vincere,RRQ Hoshi,1,RRQ Hoshi,13.0,7,18,Andoryuuu,Lancelot,Xyve,Harith,APRHO,Hylos,UK1R,Kimmy,Karss,Lapu-Lapu,Zunesh,Hayabusa,Rinz,Pharsa,Rezzz,Cici,ToYy,Moskov,Idok,Gatotkaca
+16,3,2025-09-05,15:00,Natus Vincere,RRQ Hoshi,2,RRQ Hoshi,18.6,10,22,Karss,Cici,UK1R,Selena,APRHO,Gatotkaca,Andoryuuu,Joy,Xyve,Granger,Rinz,Pharsa,Zunesh,Lancelot,Idok,Tigreal,ToYy,Harith,Rezzz,Arlott
+16,3,2025-09-05,18:00,EVOS Esports,Team Liquid ID,1,EVOS Esports,13.5,20,12,Rendyy,Cici,Alberttt,Yi Sun-shin,Kyy,Kalea,Erlan,Granger,Swaylow,Valentina,Aran,Paquito,Faviannn,Pharsa,Widy,Gatotkaca,JOOOO,Joy,Kabuki,Harith
+16,3,2025-09-05,18:00,EVOS Esports,Team Liquid ID,2,EVOS Esports,10.8,17,2,Kyy,Baxia,Rendyy,Lapu-Lapu,Swaylow,Pharsa,Erlan,Harith,Alberttt,Hayabusa,Faviannn,Selena,JOOOO,Yi Sun-shin,Kabuki,Claude,Widy,Gatotkaca,Aran,Gloo
+16,3,2025-09-06,14:00,EVOS Esports,Geek Fam ID,1,EVOS Esports,10.9,21,7,Rendyy,Uranus,Swaylow,Yve,Alberttt,Hayabusa,Erlan,Beatrix,Kyy,Kalea,A B O Y,Zhuxin,Baloyskie,Hylos,KennzyySkie,Moskov,Gobs,Hilda,Maykids,Baxia
+16,3,2025-09-06,14:00,EVOS Esports,Geek Fam ID,2,EVOS Esports,13.6,17,6,Swaylow,Zhuxin,Alberttt,Yi Sun-shin,Kyy,Baxia,Erlan,Granger,Rendyy,Arlott,KennzyySkie,Sun,A B O Y,Pharsa,Maykids,Joy,Gobs,Phoveus,Baloyskie,Gatotkaca
+16,3,2025-09-06,17:00,Bigetron by Vitality,ALTER EGO,1,Bigetron by Vitality,13.9,15,11,EMANN,Moskov,Finn,Grock,Ronn,Lancelot,Moreno,Pharsa,Shogun,Arlott,Hijumee,Kagura,Nino,Uranus,alekk,Hilda,Arfy,Hanabi,Rinee,Yi Sun-shin
+16,3,2025-09-06,17:00,Bigetron by Vitality,ALTER EGO,2,ALTER EGO,13.3,3,19,Shogun,Hilda,Finn,Chou,EMANN,Harith,Ronn,Lancelot,Moreno,Pharsa,Hijumee,Luo Yi,alekk,Hylos,Rinee,Yi Sun-shin,Arfy,Granger,Nino,Arlott
+16,3,2025-09-06,17:00,Bigetron by Vitality,ALTER EGO,3,Bigetron by Vitality,12.7,14,10,Moreno,Zhuxin,Finn,Gatotkaca,Ronn,Joy,EMANN,Claude,Shogun,Chou,Rinee,Lancelot,Nino,Uranus,Arfy,Granger,alekk,Grock,Hijumee,Yve
+16,3,2025-09-06,20:00,RRQ Hoshi,ONIC Esports,1,ONIC Esports,14.4,9,19,Rinz,Pharsa,Dyrennn,Uranus,Zunesh,Fanny,Idok,Grock,ToYy,Natan,S A N Z,Zhuxin,Lutpiii,Arlott,Kairi,Lancelot,Skylar,Harith,Kiboy,Hylos
+16,3,2025-09-06,20:00,RRQ Hoshi,ONIC Esports,2,ONIC Esports,20.9,9,25,Idok,Kalea,Zunesh,Hayabusa,ToYy,Moskov,Dyrennn,Gloo,Rinz,Yve,Skylar,Harith,Kiboy,Gatotkaca,Lutpiii,Phoveus,S A N Z,Pharsa,Kairi,Yi Sun-shin
+16,3,2025-09-07,14:00,DEWA United,Bigetron by Vitality,1,Bigetron by Vitality,29.6,27,36,Reyy,Fanny,QINN,Lapu-Lapu,Maybe,Harith,Muezza,Gatotkaca,Octa,Selena,EMANN,Granger,NNAEL,Lancelot,Finn,Grock,Moreno,Pharsa,Shogun,Phoveus
+16,3,2025-09-07,14:00,DEWA United,Bigetron by Vitality,2,DEWA United,14.2,16,6,Muezza,Kalea,Octa,Pharsa,Maybe,Beatrix,QINN,Terizla,Reyy,Hayabusa,EMANN,Moskov,Finn,Baxia,NNAEL,Joy,Moreno,Selena,Shogun,Lapu-Lapu
+16,3,2025-09-07,14:00,DEWA United,Bigetron by Vitality,3,Bigetron by Vitality,20.2,19,18,Muezza,Kalea,Octa,Pharsa,Maybe,Beatrix,Reyy,Baxia,QINN,Terizla,Finn,Hylos,EMANN,Granger,Moreno,Zhuxin,Shogun,Phoveus,NNAEL,Yi Sun-shin
+16,3,2025-09-07,17:00,ALTER EGO,ONIC Esports,1,ALTER EGO,14.9,14,4,Rinee,Baxia,alekk,Gatotkaca,Arfy,Harith,Hijumee,Selena,Nino,Arlott,Lutpiii,Cici,S A N Z,Yve,Kairi,Lancelot,Savero,Granger,Kiboy,Hylos
+16,3,2025-09-07,17:00,ALTER EGO,ONIC Esports,2,ONIC Esports,14.1,8,16,Nino,Uranus,Hijumee,Zhuxin,Arfy,Bruno,alekk,Badang,Rinee,Yi Sun-shin,S A N Z,Luo Yi,Savero,Harith,Kiboy,Gatotkaca,Lutpiii,Cici,Kairi,Hayabusa
+16,3,2025-09-07,17:00,ALTER EGO,ONIC Esports,3,ONIC Esports,12.7,3,16,Hijumee,Luo Yi,Rinee,Yi Sun-shin,alekk,Gatotkaca,Nino,Cici,Arfy,Claude,S A N Z,Zhuxin,Savero,Harith,Lutpiii,Phoveus,Kairi,Lancelot,Kiboy,Khaleed
+16,3,2025-09-07,20:00,Team Liquid ID,Natus Vincere,1,Natus Vincere,13.1,12,20,Aran,Uranus,Widy,Grock,Kyou,Harith,JOOOO,Yi Sun-shin,yehezkiel,Zetian,APRHO,Kalea,UK1R,Pharsa,Andoryuuu,Hayabusa,Xyve,Granger,Karss,Phoveus
+16,3,2025-09-07,20:00,Team Liquid ID,Natus Vincere,2,Natus Vincere,15.7,10,15,Aran,Uranus,yehezkiel,Kagura,Widy,Kaja,JOOOO,Yi Sun-shin,Kyou,Karrie,UK1R,Pharsa,APRHO,Kalea,Xyve,Granger,Andoryuuu,Fredrinn,Karss,Esmeralda
+16,4,2025-09-12,15:00,Natus Vincere,ONIC Esports,1,ONIC Esports,24.3,14,17,Karss,Cici,UK1R,Pharsa,APRHO,Kalea,Xyve,Granger,Andoryuuu,Fredrinn,Kairi,Yi Sun-shin,S A N Z,Zhuxin,Lutpiii,Arlott,Kiboy,Grock,Skylar,Claude
+16,4,2025-09-12,15:00,Natus Vincere,ONIC Esports,2,Natus Vincere,17.9,17,5,UK1R,Zhuxin,Karss,Arlott,Andoryuuu,Hayabusa,APRHO,Khaleed,Xyve,Bruno,S A N Z,Pharsa,Kairi,Lancelot,Lutpiii,Lapu-Lapu,Kiboy,Gatotkaca,Skylar,Granger
+16,4,2025-09-12,15:00,Natus Vincere,ONIC Esports,3,ONIC Esports,14.7,11,13,UK1R,Pharsa,Karss,Arlott,APRHO,Gatotkaca,Andoryuuu,Yi Sun-shin,Xyve,Ruby,Lutpiii,Cici,Skylar,Granger,Kairi,Lancelot,S A N Z,Kagura,Kiboy,Kalea
+16,4,2025-09-12,18:00,EVOS Esports,DEWA United,1,EVOS Esports,14.4,18,5,Rendyy,Uranus,Alberttt,Hayabusa,RoundeL,Pharsa,Erlan,Claude,Kyy,Chip,QINN,Cici,Reyy,Joy,Maybe,Granger,Muezza,Kalea,Octa,Kagura
+16,4,2025-09-12,18:00,EVOS Esports,DEWA United,2,EVOS Esports,13.5,15,8,Alberttt,Lancelot,Rendyy,Uranus,RoundeL,Zhuxin,Erlan,Granger,Kyy,Gatotkaca,Reyy,Baxia,Muezza,Franco,QINN,Ruby,Octa,Kimmy,Maybe,Bruno
+16,4,2025-09-13,14:00,Team Liquid ID,Bigetron by Vitality,1,Bigetron by Vitality,11.2,4,17,Firzaa,Kalea,Kabuki,Harith,Aran,Lapu-Lapu,JOOOO,Fredrinn,yehezkiel,Kimmy,Finn,Gatotkaca,Shogun,Cici,EMANN,Granger,Moreno,Kagura,NNAEL,Guinevere
+16,4,2025-09-13,14:00,Team Liquid ID,Bigetron by Vitality,2,Bigetron by Vitality,10.9,2,18,Firzaa,Kalea,yehezkiel,Pharsa,JOOOO,Fredrinn,Kabuki,Granger,Aran,Arlott,Finn,Badang,EMANN,Harith,Shogun,Lapu-Lapu,Moreno,Kagura,NNAEL,Baxia
+16,4,2025-09-13,17:00,RRQ Hoshi,EVOS Esports,1,RRQ Hoshi,11.1,15,3,Sutsujin,Yi Sun-shin,Idok,Gatotkaca,Rinz,Selena,ToYy,Granger,Rezzz,Lapu-Lapu,Xorizo,Cici,Alberttt,Lancelot,Swaylow,Zhuxin,Kyy,Chip,Erlan,Claude
+16,4,2025-09-13,17:00,RRQ Hoshi,EVOS Esports,2,RRQ Hoshi,13.0,19,9,ToYy,Granger,Idok,Gatotkaca,Rinz,Selena,Rezzz,Phoveus,Sutsujin,Hayabusa,Rendyy,Cici,Swaylow,Zhuxin,Kyy,Kalea,Erlan,Claude,Alberttt,Lancelot
+16,4,2025-09-13,20:00,Geek Fam ID,ALTER EGO,1,ALTER EGO,24.5,21,24,KennzyySkie,Bruno,Baloyskie,Grock,A B O Y,Kimmy,Maykids,Fanny,Gobs,Uranus,alekk,Kalea,Hijumee,Kagura,Arfy,Harith,Nino,Ruby,Yazukee,Yi Sun-shin
+16,4,2025-09-13,20:00,Geek Fam ID,ALTER EGO,2,ALTER EGO,13.8,2,13,A B O Y,Valentina,Baloyskie,Gatotkaca,KennzyySkie,Bruno,Gobs,Cici,Maykids,Lancelot,Hijumee,Zhuxin,Arfy,Harith,Yazukee,Yi Sun-shin,Nino,Phoveus,alekk,Badang
+16,4,2025-09-14,14:00,ONIC Esports,Team Liquid ID,1,ONIC Esports,10.4,10,0,Kairi,Hayabusa,Lutpiii,Lapu-Lapu,S A N Z,Luo Yi,Kiboy,Hylos,Skylar,Harith,yehezkiel,Zhuxin,Aran,Phoveus,Kabuki,Moskov,JOOOO,Guinevere,Firzaa,Chou
+16,4,2025-09-14,14:00,ONIC Esports,Team Liquid ID,2,ONIC Esports,10.9,12,0,Kairi,Guinevere,S A N Z,Zhuxin,Skylar,Wanwan,Kiboy,Hylos,Lutpiii,Cici,JOOOO,Hayabusa,Aran,Phoveus,yehezkiel,Pharsa,Firzaa,Gatotkaca,Kabuki,Granger
+16,4,2025-09-14,17:00,Bigetron by Vitality,RRQ Hoshi,1,RRQ Hoshi,14.7,10,17,NNAEL,Lancelot,Finn,Gatotkaca,Moreno,Kagura,Shogun,Cici,EMANN,Karrie,Rezzz,Arlott,Sutsujin,Yi Sun-shin,Idok,Badang,Rinz,Selena,ToYy,Moskov
+16,4,2025-09-14,17:00,Bigetron by Vitality,RRQ Hoshi,2,Bigetron by Vitality,16.8,20,10,EMANN,Ruby,Moreno,Zhuxin,Finn,Khaleed,Shogun,Esmeralda,NNAEL,Yi Sun-shin,ToYy,Harith,Idok,Hylos,Sutsujin,Lancelot,Rinz,Pharsa,Rezzz,Phoveus
+16,4,2025-09-14,17:00,Bigetron by Vitality,RRQ Hoshi,3,Bigetron by Vitality,14.4,24,4,Moreno,Zhuxin,EMANN,Harith,Finn,Hylos,NNAEL,Hayabusa,Shogun,Chou,Rezzz,Uranus,ToYy,Granger,Sutsujin,Lancelot,Idok,Gatotkaca,Rinz,Lunox
+16,4,2025-09-14,20:00,DEWA United,Geek Fam ID,1,Geek Fam ID,14.3,6,18,Reyy,Fanny,QINN,Terizla,Maybe,Harith,Octa,Helcurt,Muezza,Chou,Baloyskie,Kalea,Maykids,Yi Sun-shin,KennzyySkie,Moskov,A B O Y,Kimmy,Gobs,Gloo
+16,4,2025-09-14,20:00,DEWA United,Geek Fam ID,2,DEWA United,15.2,17,8,Reyy,Fanny,Muezza,Grock,Octa,Kimmy,Maybe,Bruno,QINN,Esmeralda,Baloyskie,Kalea,A B O Y,Zhuxin,Maykids,Lancelot,KennzyySkie,Harith,Gobs,Cici
+16,4,2025-09-14,20:00,DEWA United,Geek Fam ID,3,DEWA United,13.7,11,8,Reyy,Fanny,Octa,Kimmy,Muezza,Grock,QINN,Uranus,Maybe,Bruno,Baloyskie,Kalea,KennzyySkie,Harith,Maykids,Lancelot,A B O Y,Pharsa,Gobs,Gloo
+16,5,2025-09-19,15:00,Geek Fam ID,Natus Vincere,1,Natus Vincere,16.1,11,20,Baloyskie,Chip,KennzyySkie,Claude,Gobs,Arlott,Maykids,Lancelot,A B O Y,Kimmy,Karss,Esmeralda,Andoryuuu,Yi Sun-shin,APRHO,Khaleed,Xyve,Cici,UK1R,Selena
+16,5,2025-09-19,15:00,Geek Fam ID,Natus Vincere,2,Natus Vincere,14.6,15,17,Maykids,Yi Sun-shin,Baloyskie,Khaleed,Gobs,Cici,KennzyySkie,Ruby,A B O Y,Lunox,APRHO,Chip,UK1R,Kimmy,Karss,Arlott,Xyve,Granger,Andoryuuu,Guinevere
+16,5,2025-09-19,18:00,EVOS Esports,ONIC Esports,1,ONIC Esports,16.6,10,18,Erlan,Wanwan,Kyy,Khaleed,RoundeL,Zhuxin,Alberttt,Guinevere,Rendyy,Lapu-Lapu,Lutpiii,Cici,S A N Z,Angela,Skylar,Lunox,Kairi,Yi Sun-shin,Kiboy,Chou
+16,5,2025-09-19,18:00,EVOS Esports,ONIC Esports,2,EVOS Esports,10.9,12,3,RoundeL,Zhuxin,Alberttt,Hayabusa,Rendyy,Uranus,Kyy,Gatotkaca,Erlan,Granger,Skylar,Harith,S A N Z,Kagura,Kiboy,Khaleed,Kairi,Yi Sun-shin,Lutpiii,Gloo
+16,5,2025-09-19,18:00,EVOS Esports,ONIC Esports,3,ONIC Esports,13.5,3,16,Erlan,Wanwan,Rendyy,Arlott,Alberttt,Fredrinn,Kyy,Gatotkaca,RoundeL,Valentina,Lutpiii,Phoveus,S A N Z,Zhuxin,Kairi,Lancelot,Skylar,Claude,Kiboy,Hylos
+16,5,2025-09-20,14:00,DEWA United,RRQ Hoshi,1,DEWA United,19.9,23,7,Reyy,Yi Sun-shin,Octa,Zhuxin,Muezza,Chou,Maybe,Ruby,QINN,Uranus,Sutsujin,Lancelot,Dyrennn,Arlott,Idok,Khaleed,Rinz,Cecilion,ToYy,Kimmy
+16,5,2025-09-20,14:00,DEWA United,RRQ Hoshi,2,DEWA United,11.9,18,5,Muezza,Kalea,Octa,Lunox,Reyy,Fredrinn,Maybe,Claude,QINN,Arlott,Rinz,Angela,ToYy,Granger,Dyrennn,Cici,Idok,Gatotkaca,Sutsujin,Thamuz
+16,5,2025-09-20,17:00,ALTER EGO,Team Liquid ID,1,ALTER EGO,15.1,20,12,Hijumee,Zhuxin,Arfy,Granger,Nino,Ruby,alekk,Gatotkaca,Yazukee,Lancelot,Kabuki,Harith,Aran,Uranus,JOOOO,Yi Sun-shin,yehezkiel,Yve,Widy,Kalea
+16,5,2025-09-20,17:00,ALTER EGO,Team Liquid ID,2,Team Liquid ID,14.6,7,13,Arfy,Harith,Nino,Cici,alekk,Kalea,Hijumee,Valentina,Yazukee,Hayabusa,JOOOO,Yi Sun-shin,Kabuki,Lunox,Aran,Esmeralda,yehezkiel,Angela,Widy,Hilda
+16,5,2025-09-20,17:00,ALTER EGO,Team Liquid ID,3,ALTER EGO,10.5,17,2,Hijumee,Kagura,alekk,Kaja,Arfy,Granger,Yazukee,Baxia,Nino,Arlott,yehezkiel,Zhuxin,Aran,Uranus,JOOOO,Yi Sun-shin,Kabuki,Harith,Widy,Gatotkaca
+16,5,2025-09-20,20:00,EVOS Esports,Bigetron by Vitality,1,Bigetron by Vitality,26.4,13,15,RoundeL,Angela,Alberttt,Joy,Rendyy,Cici,Kyy,Hylos,Branz,Claude,Moreno,Kimmy,EMANN,Bane,Shogun,Uranus,NNAEL,Yi Sun-shin,Finn,Hilda
+16,5,2025-09-20,20:00,EVOS Esports,Bigetron by Vitality,2,Bigetron by Vitality,18.5,7,13,Alberttt,Hayabusa,RoundeL,Pharsa,Rendyy,Esmeralda,Branz,Granger,Kyy,Gatotkaca,Shogun,Uranus,NNAEL,Ling,Moreno,Zhuxin,Finn,Hilda,EMANN,Chou
+16,5,2025-09-21,14:00,ALTER EGO,Natus Vincere,1,ALTER EGO,12.5,15,3,Hijumee,Zhuxin,Yazukee,Lancelot,alekk,Hilda,Arfy,Harith,Nino,Phoveus,Karss,Cici,Andoryuuu,Yi Sun-shin,UK1R,Angela,Xyve,Ruby,APRHO,Grock
+16,5,2025-09-21,14:00,ALTER EGO,Natus Vincere,2,Natus Vincere,10.4,1,14,Yazukee,Lancelot,Hijumee,Yve,Nino,Phoveus,Arfy,Granger,alekk,Mathilda,Xyve,Harith,UK1R,Zhuxin,Andoryuuu,Yi Sun-shin,APRHO,Chou,Karss,Lapu-Lapu
+16,5,2025-09-21,14:00,ALTER EGO,Natus Vincere,3,ALTER EGO,13.6,14,3,Arfy,Granger,alekk,Hylos,Hijumee,Zhuxin,Nino,Phoveus,Yazukee,Yi Sun-shin,Xyve,Harith,Andoryuuu,Lancelot,UK1R,Kimmy,APRHO,Khaleed,Karss,Cici
+16,5,2025-09-21,17:00,Geek Fam ID,ONIC Esports,1,ONIC Esports,13.9,4,20,Baloyskie,Badang,Maykids,Hayabusa,KennzyySkie,Wanwan,A B O Y,Zhuxin,Gobs,Uranus,Kairi,Lancelot,Skylar,Harith,Lutpiii,Arlott,Kiboy,Hylos,S A N Z,Angela
+16,5,2025-09-21,17:00,Geek Fam ID,ONIC Esports,2,ONIC Esports,14.6,4,18,Gobs,Uranus,Maykids,Yi Sun-shin,A B O Y,Zhuxin,Baloyskie,Kalea,KennzyySkie,Wanwan,Lutpiii,Arlott,Kairi,Hayabusa,S A N Z,Angela,Skylar,Harith,Kiboy,Gatotkaca
+16,5,2025-09-21,20:00,DEWA United,Team Liquid ID,1,DEWA United,10.4,21,1,Reyy,Yi Sun-shin,Muezza,Kalea,Octa,Lunox,QINN,Terizla,Maybe,Ruby,Widy,Khaleed,JOOOO,Joy,Aran,Esmeralda,Kabuki,Granger,yehezkiel,Angela
+16,5,2025-09-21,20:00,DEWA United,Team Liquid ID,2,DEWA United,10.1,13,1,Muezza,Kaja,QINN,Arlott,Reyy,Baxia,Maybe,Moskov,Octa,Kadita,yehezkiel,Angela,Widy,Chou,Kabuki,Harith,JOOOO,Fanny,Aran,Hilda
+16,6,2025-09-26,15:00,Natus Vincere,DEWA United,1,DEWA United,19.0,7,15,Andoryuuu,Yi Sun-shin,APRHO,Mathilda,Karss,Esmeralda,Xyve,Chou,UK1R,Selena,Muezza,Chip,QINN,Phoveus,Octa,Lunox,Reyy,Lancelot,Maybe,Obsidia
+16,6,2025-09-26,15:00,Natus Vincere,DEWA United,2,DEWA United,15.9,7,18,Andoryuuu,Fanny,UK1R,Kimmy,Karss,Uranus,Xyve,Granger,APRHO,Minotaur,Muezza,Chip,Reyy,Fredrinn,QINN,Arlott,Octa,Odette,Maybe,Obsidia
+16,6,2025-09-26,18:00,ALTER EGO,Geek Fam ID,1,ALTER EGO,11.9,16,3,Hijumee,Zhuxin,Nino,Uranus,alekk,Grock,Arfy,Granger,Yazukee,Yi Sun-shin,Gobs,Phoveus,KennzyySkie,Harith,A B O Y,Angela,Baloyskie,Hylos,Maykids,Lancelot
+16,6,2025-09-26,18:00,ALTER EGO,Geek Fam ID,2,ALTER EGO,14.7,28,14,Nino,Uranus,Yazukee,Lukas,Hijumee,Kimmy,alekk,Mathilda,Arfy,Brody,Maykids,Fanny,Gobs,Phoveus,KennzyySkie,Harith,Baloyskie,Khaleed,A B O Y,Lunox
+16,6,2025-09-27,14:00,EVOS Esports,ALTER EGO,1,EVOS Esports,9.4,17,2,Rendyy,Uranus,RoundeL,Zhuxin,Alberttt,Yi Sun-shin,Kyy,Kalea,Erlan,Cici,Yazukee,Lancelot,Arfy,Bruno,alekk,Hylos,Hijumee,Lunox,Nino,Chou
+16,6,2025-09-27,14:00,EVOS Esports,ALTER EGO,2,ALTER EGO,29.6,14,18,Alberttt,Lancelot,Rendyy,Uranus,RoundeL,Yve,Kyy,Kalea,Erlan,Lunox,alekk,Grock,Arfy,Granger,Nino,Cici,Hijumee,Zhuxin,Yazukee,Yi Sun-shin
+16,6,2025-09-27,14:00,EVOS Esports,ALTER EGO,3,ALTER EGO,13.7,10,23,RoundeL,Zhuxin,Alberttt,Lancelot,Kyy,Khaleed,Rendyy,Dyrroth,Erlan,Claude,alekk,Franco,Arfy,Harith,Hijumee,Kimmy,Nino,Uranus,Yazukee,Yi Sun-shin
+16,6,2025-09-27,17:00,Team Liquid ID,ONIC Esports,1,ONIC Esports,15.3,6,18,yehezkiel,Zhuxin,JOOOO,Yi Sun-shin,Kabuki,Lunox,Aran,Hylos,Widy,Kaja,Kairi,Lancelot,S A N Z,Angela,Lutpiii,Esmeralda,Kiboy,Kalea,Skylar,Beatrix
+16,6,2025-09-27,17:00,Team Liquid ID,ONIC Esports,2,ONIC Esports,10.1,0,17,Aran,Arlott,JOOOO,Joy,yehezkiel,Angela,Widy,Hilda,Kabuki,Freya,Lutpiii,Phoveus,Kairi,Baxia,S A N Z,Kimmy,Kiboy,Chou,Skylar,Harith
+16,6,2025-09-27,20:00,RRQ Hoshi,Bigetron by Vitality,1,Bigetron by Vitality,15.9,11,21,Rinz,Kimmy,Rezzz,Phoveus,Idok,Franco,Sutsujin,Baxia,ToYy,Bruno,Moreno,Angela,Shogun,Terizla,NNAEL,Joy,Finn,Khaleed,EMANN,Cici
+16,6,2025-09-27,20:00,RRQ Hoshi,Bigetron by Vitality,2,RRQ Hoshi,21.6,27,15,Rezzz,Arlott,Rinz,Pharsa,Idok,Jawhead,ToYy,Obsidia,Sutsujin,Joy,Shogun,Hilda,Finn,Badang,EMANN,Cici,Moreno,Novaria,NNAEL,Hayabusa
+16,6,2025-09-27,20:00,RRQ Hoshi,Bigetron by Vitality,3,Bigetron by Vitality,15.2,11,15,Rinz,Pharsa,Rezzz,Arlott,Idok,Hilda,Sutsujin,Joy,ToYy,Karrie,Finn,Gatotkaca,EMANN,Cici,NNAEL,Hayabusa,Moreno,Novaria,Shogun,Phoveus
+16,6,2025-09-28,14:00,Natus Vincere,Team Liquid ID,1,Natus Vincere,18.7,19,14,UK1R,Zhuxin,Andoryuuu,Fredrinn,Karss,Esmeralda,APRHO,Arlott,Xyve,Granger,Widy,Chip,JOOOO,Yi Sun-shin,Aran,Lapu-Lapu,Kabuki,Harith,yehezkiel,Yve
+16,6,2025-09-28,14:00,Natus Vincere,Team Liquid ID,2,Team Liquid ID,14.3,7,16,Karss,Lukas,Andoryuuu,Yi Sun-shin,UK1R,Zhuxin,APRHO,Chou,Xyve,Cici,yehezkiel,Angela,Aran,Ruby,JOOOO,Joy,Widy,Khaleed,Kabuki,Granger
+16,6,2025-09-28,14:00,Natus Vincere,Team Liquid ID,3,Natus Vincere,15.5,15,7,UK1R,Angela,Karss,Lapu-Lapu,Andoryuuu,Joy,Xyve,Obsidia,APRHO,Khaleed,JOOOO,Yi Sun-shin,Aran,Arlott,yehezkiel,Zhuxin,Kabuki,Harith,Widy,Hilda
+16,6,2025-09-28,17:00,ONIC Esports,RRQ Hoshi,1,ONIC Esports,17.5,12,4,S A N Z,Kimmy,Lutpiii,Lapu-Lapu,Skylar,Harith,Kairi,Baxia,Kiboy,Chou,Rinz,Zhuxin,Rezzz,Cici,Idok,Jawhead,ToYy,Claude,Sutsujin,Fredrinn
+16,6,2025-09-28,17:00,ONIC Esports,RRQ Hoshi,2,ONIC Esports,10.7,17,0,Skylar,Granger,Kiboy,Gatotkaca,S A N Z,Zhuxin,Kairi,Hayabusa,Lutpiii,Arlott,Sutsujin,Yi Sun-shin,Rinz,Kimmy,Idok,Kalea,Rezzz,Hilda,ToYy,Bane
+16,6,2025-09-28,20:00,Geek Fam ID,EVOS Esports,1,EVOS Esports,13.2,2,13,Baloyskie,Zhuxin,A B O Y,Novaria,Maykids,Fredrinn,Zeltron,Obsidia,Gobs,Lapu-Lapu,Kyy,Chip,Rendyy,Arlott,Erlan,Granger,RoundeL,Kimmy,Alberttt,Yi Sun-shin
+16,6,2025-09-28,20:00,Geek Fam ID,EVOS Esports,2,EVOS Esports,16.4,5,17,Maykids,Fredrinn,A B O Y,Kimmy,Baloyskie,Novaria,Gobs,Arlott,Zeltron,Granger,Erlan,Wanwan,Rendyy,Cici,Kyy,Kalea,Alberttt,Guinevere,RoundeL,Zhuxin
+16,7,2025-10-03,15:00,Geek Fam ID,DEWA United,1,Geek Fam ID,12.9,13,4,Baloyskie,Kalea,KennzyySkie,Granger,Maykids,Lancelot,A B O Y,Kimmy,Gobs,Cici,Maybe,Ruby,Reyy,Yi Sun-shin,Octa,Zhuxin,Muezza,Grock,QINN,Terizla
+16,7,2025-10-03,15:00,Geek Fam ID,DEWA United,2,Geek Fam ID,14.3,12,2,Baloyskie,Kalea,Maykids,Yi Sun-shin,KennzyySkie,Granger,A B O Y,Luo Yi,Gobs,Esmeralda,Muezza,Grock,Octa,Kimmy,Maybe,Obsidia,QINN,Uranus,Reyy,Lancelot
+16,7,2025-10-03,18:00,Bigetron by Vitality,Team Liquid ID,1,Team Liquid ID,11.3,2,12,Moreno,Angela,EMANN,Moskov,Shogun,Esmeralda,Finn,Gatotkaca,NNAEL,Joy,Widy,Kalea,JOOOO,Yi Sun-shin,yehezkiel,Lunox,Aran,Uranus,Kabuki,Ruby
+16,7,2025-10-03,18:00,Bigetron by Vitality,Team Liquid ID,2,Team Liquid ID,11.1,3,15,Moreno,Angela,NNAEL,Joy,Shogun,Phoveus,Finn,Khaleed,EMANN,Clint,Aran,Arlott,JOOOO,Fredrinn,yehezkiel,Kimmy,Kabuki,Lapu-Lapu,Widy,Gatotkaca
+16,7,2025-10-04,14:00,DEWA United,ALTER EGO,1,DEWA United,15.4,20,8,Octa,Zhuxin,Reyy,Fredrinn,Maybe,Claude,Muezza,Helcurt,QINN,Alice,alekk,Hylos,Hijumee,Kimmy,Yazukee,Hayabusa,Arfy,Harith,Nino,Uranus
+16,7,2025-10-04,14:00,DEWA United,ALTER EGO,2,DEWA United,17.0,20,6,Reyy,Fredrinn,QINN,Hilda,Muezza,Helcurt,Maybe,Wanwan,Octa,Zhuxin,Nino,Arlott,Yazukee,Lancelot,Hijumee,Kagura,alekk,Kalea,Arfy,Harith
+16,7,2025-10-04,17:00,EVOS Esports,RRQ Hoshi,1,RRQ Hoshi,14.9,3,16,Rendyy,Arlott,Erlan,Granger,Kyy,Kalea,Alberttt,Lancelot,RoundeL,Nana,Ferxiic,Yi Sun-shin,Idok,Chip,Rezzz,Lapu-Lapu,ToYy,Cici,Rinz,Luo Yi
+16,7,2025-10-04,17:00,EVOS Esports,RRQ Hoshi,2,EVOS Esports,14.1,14,5,Rendyy,Cici,Kyy,Gatotkaca,RoundeL,Zhuxin,Erlan,Granger,Alberttt,Joy,Rezzz,Lapu-Lapu,Ferxiic,Yi Sun-shin,Rinz,Yve,ToYy,Ruby,Idok,Hylos
+16,7,2025-10-04,17:00,EVOS Esports,RRQ Hoshi,3,EVOS Esports,10.6,17,2,Rendyy,Gloo,Kyy,Kalea,Alberttt,Yi Sun-shin,RoundeL,Kimmy,Erlan,Cici,Rezzz,Arlott,Rinz,Zhuxin,Ferxiic,Hayabusa,Idok,Grock,ToYy,Natan
+16,7,2025-10-04,20:00,ONIC Esports,Natus Vincere,1,ONIC Esports,10.0,12,0,Lutpiii,Yu Zhong,Kairi,Yi Sun-shin,S A N Z,Angela,Skylar,Harith,Kiboy,Gatotkaca,APRHO,Chip,Karss,Alice,UK1R,Lunox,Andoryuuu,Guinevere,Xyve,Granger
+16,7,2025-10-04,20:00,ONIC Esports,Natus Vincere,2,ONIC Esports,10.7,16,2,Kairi,Lancelot,Lutpiii,Yu Zhong,S A N Z,Zhuxin,Kiboy,Kaja,Skylar,Beatrix,Karss,Arlott,Andoryuuu,Fredrinn,Xyve,Harith,UK1R,Cecilion,APRHO,Grock
+16,7,2025-10-05,14:00,RRQ Hoshi,Geek Fam ID,1,Geek Fam ID,14.4,3,11,Rezzz,Uranus,Rinz,Zhuxin,Ferxiic,Lancelot,Idok,Chou,ToYy,Wanwan,Maykids,Yi Sun-shin,A B O Y,Kimmy,Gobs,Esmeralda,KennzyySkie,Cici,Baloyskie,Ruby
+16,7,2025-10-05,14:00,RRQ Hoshi,Geek Fam ID,2,Geek Fam ID,19.3,8,18,Rezzz,Arlott,Rinz,Luo Yi,ToYy,Obsidia,Idok,Hilda,Ferxiic,Lancelot,KennzyySkie,Granger,Baloyskie,Grock,Gobs,Phoveus,Maykids,Fanny,A B O Y,Pharsa
+16,7,2025-10-05,17:00,Natus Vincere,Bigetron by Vitality,1,Bigetron by Vitality,13.5,3,15,APRHO,Kalea,UK1R,Kimmy,Andoryuuu,Hayabusa,Xyve,Granger,Karss,Lapu-Lapu,NNAEL,Yi Sun-shin,Moreno,Zhuxin,EMANN,Bane,Finn,Gatotkaca,Shogun,Hilda
+16,7,2025-10-05,17:00,Natus Vincere,Bigetron by Vitality,2,Bigetron by Vitality,13.1,8,17,Andoryuuu,Yi Sun-shin,APRHO,Chip,Karss,Alice,UK1R,Pharsa,Xyve,Granger,Moreno,Zhuxin,Shogun,Phoveus,EMANN,Wanwan,NNAEL,Lancelot,Finn,Kalea
+16,7,2025-10-05,20:00,Team Liquid ID,EVOS Esports,1,Team Liquid ID,17.9,23,17,yehezkiel,Angela,JOOOO,Joy,Aran,Arlott,Widy,Gatotkaca,Kabuki,Wanwan,Rendyy,Cici,Erlan,Harith,Kyy,Kalea,Alberttt,Yi Sun-shin,RoundeL,Nana
+16,7,2025-10-05,20:00,Team Liquid ID,EVOS Esports,2,EVOS Esports,12.8,9,19,yehezkiel,Yve,Widy,Gatotkaca,Kabuki,Minsitthar,Aran,Alice,JOOOO,Yi Sun-shin,Rendyy,Cici,RoundeL,Zhuxin,Kyy,Kalea,Erlan,Wanwan,Alberttt,Joy
+16,7,2025-10-05,20:00,Team Liquid ID,EVOS Esports,3,EVOS Esports,11.0,3,20,Aran,Arlott,JOOOO,Fredrinn,Widy,Hilda,Kabuki,Granger,yehezkiel,Kimmy,Rendyy,Uranus,Kyy,Kalea,Alberttt,Yi Sun-shin,RoundeL,Yve,Erlan,Obsidia
+16,8,2025-10-10,15:00,Team Liquid ID,ALTER EGO,1,Team Liquid ID,15.6,19,10,yehezkiel,Zhuxin,Aran,Arlott,JOOOO,Fredrinn,Widy,Gatotkaca,Kabuki,Claude,alekk,Kalea,Hijumee,Kimmy,Nino,Alice,Arfy,Cici,Yazukee,Hayabusa
+16,8,2025-10-10,15:00,Team Liquid ID,ALTER EGO,2,ALTER EGO,16.8,9,22,Kabuki,Cici,Widy,Gatotkaca,JOOOO,Yi Sun-shin,Aran,Badang,yehezkiel,Pharsa,Nino,Uranus,alekk,Helcurt,Hijumee,Kimmy,Arfy,Brody,Yazukee,Fanny
+16,8,2025-10-10,15:00,Team Liquid ID,ALTER EGO,3,Team Liquid ID,14.7,15,12,JOOOO,Baxia,Aran,Lapu-Lapu,yehezkiel,Kimmy,Widy,Kalea,Kabuki,Granger,Hijumee,Novaria,Arfy,Cici,Yazukee,Yi Sun-shin,Nino,Terizla,alekk,Grock
+16,8,2025-10-10,18:00,Bigetron by Vitality,DEWA United,1,Bigetron by Vitality,20.9,17,7,Finn,Gatotkaca,Shogun,Alice,Moreno,Zhuxin,EMANN,Bruno,NNAEL,Fanny,Reyy,Fredrinn,QINN,Phoveus,Maybe,Moskov,Octa,Kimmy,Muezza,Franco
+16,8,2025-10-10,18:00,Bigetron by Vitality,DEWA United,2,Bigetron by Vitality,13.5,15,3,Finn,Kalea,NNAEL,Yi Sun-shin,Moreno,Lunox,Shogun,Uranus,EMANN,Ruby,Octa,Odette,Muezza,Chip,Reyy,Lancelot,QINN,Zhuxin,Maybe,Lapu-Lapu
+16,8,2025-10-11,14:00,Geek Fam ID,Team Liquid ID,1,Team Liquid ID,9.9,2,16,A B O Y,Kimmy,Baloyskie,Hylos,KennzyySkie,Cici,Maykids,Yi Sun-shin,Gobs,Esmeralda,JOOOO,Joy,Widy,Kalea,yehezkiel,Zhuxin,Kabuki,Beatrix,Aran,Uranus
+16,8,2025-10-11,14:00,Geek Fam ID,Team Liquid ID,2,Geek Fam ID,22.6,21,10,A B O Y,Kimmy,KennzyySkie,Granger,Maykids,Joy,Baloyskie,Grock,Gobs,Cici,Widy,Kalea,Aran,Uranus,JOOOO,Yi Sun-shin,yehezkiel,Yve,Kabuki,Harith
+16,8,2025-10-11,14:00,Geek Fam ID,Team Liquid ID,3,Team Liquid ID,16.4,3,12,Baloyskie,Kalea,Gobs,Lapu-Lapu,KennzyySkie,Bruno,A B O Y,Kimmy,Maykids,Joy,Aran,Uranus,JOOOO,Yi Sun-shin,yehezkiel,Zhuxin,Kabuki,Cici,Widy,Khaleed
+16,8,2025-10-11,17:00,ALTER EGO,RRQ Hoshi,1,ALTER EGO,11.8,18,3,Hijumee,Zhuxin,alekk,Franco,Nino,Arlott,Arfy,Harith,Yazukee,Baxia,Dyrennn,Lapu-Lapu,ToYy,Wanwan,Idok,Hylos,Rinz,Kimmy,Ferxiic,Lancelot
+16,8,2025-10-11,17:00,ALTER EGO,RRQ Hoshi,2,ALTER EGO,21.2,14,9,Hijumee,Kimmy,Yazukee,Lancelot,Arfy,Cici,alekk,Hilda,Nino,Phoveus,Ferxiic,Yi Sun-shin,Dyrennn,Arlott,ToYy,Granger,Rinz,Yve,Idok,Tigreal
+16,8,2025-10-11,20:00,Bigetron by Vitality,ONIC Esports,1,Bigetron by Vitality,15.0,19,7,EMANN,Cici,NNAEL,Hayabusa,Finn,Kalea,Moreno,Lunox,Shogun,Alice,Lutpiii,Phoveus,Kairi,Yi Sun-shin,Skylar,Harith,S A N Z,Zhuxin,Kiboy,Hylos
+16,8,2025-10-11,20:00,Bigetron by Vitality,ONIC Esports,2,Bigetron by Vitality,15.5,19,10,Finn,Kalea,NNAEL,Yi Sun-shin,Moreno,Lunox,Shogun,Hilda,EMANN,Chou,Lutpiii,Lapu-Lapu,Kairi,Fanny,S A N Z,Kimmy,Kiboy,Baxia,Skylar,Granger
+16,8,2025-10-12,14:00,RRQ Hoshi,DEWA United,1,RRQ Hoshi,19.5,14,7,Rinz,Valentina,ToYy,Wanwan,Dyrennn,Cici,Ferxiic,Fredrinn,Idok,Franco,Reyy,Yi Sun-shin,QINN,Alice,Muezza,Helcurt,Maybe,Lapu-Lapu,Octa,Zetian
+16,8,2025-10-12,14:00,RRQ Hoshi,DEWA United,2,RRQ Hoshi,14.4,15,4,ToYy,Cici,Idok,Gatotkaca,Ferxiic,Hayabusa,Rinz,Selena,Dyrennn,Yu Zhong,Muezza,Kalea,Octa,Lunox,Reyy,Lancelot,Maybe,Granger,QINN,Phoveus
+16,8,2025-10-12,17:00,ONIC Esports,EVOS Esports,1,ONIC Esports,13.7,22,6,Kairi,Hayabusa,Lutpiii,Lapu-Lapu,S A N Z,Lunox,Skylar,Cici,Kiboy,Grock,Alberttt,Yi Sun-shin,RoundeL,Zhuxin,Kyy,Chip,Erlan,Bane,Rendyy,Hilda
+16,8,2025-10-12,17:00,ONIC Esports,EVOS Esports,2,ONIC Esports,13.5,11,4,Kairi,Lancelot,Lutpiii,Cici,Skylar,Esmeralda,Kiboy,Hilda,S A N Z,Lunox,Alberttt,Yi Sun-shin,Kyy,Grock,RoundeL,Pharsa,Erlan,Obsidia,Rendyy,Alice
+16,8,2025-10-12,20:00,Natus Vincere,Geek Fam ID,1,Natus Vincere,19.5,20,9,Andoryuuu,Yi Sun-shin,APRHO,Gatotkaca,Karss,Arlott,UK1R,Lunox,Xyve,Ruby,Baloyskie,Grock,KennzyySkie,Cici,A B O Y,Kimmy,Maykids,Lancelot,Gobs,Phoveus
+16,8,2025-10-12,20:00,Natus Vincere,Geek Fam ID,2,Natus Vincere,16.2,23,9,UK1R,Kimmy,APRHO,Grock,Andoryuuu,Hayabusa,Karss,Alice,Xyve,Ruby,Baloyskie,Chou,KennzyySkie,Granger,A B O Y,Zhuxin,Maykids,Joy,Gobs,Gloo
+16,9,2025-10-17,15:00,Bigetron by Vitality,Geek Fam ID,1,Geek Fam ID,17.6,13,20,EMANN,Granger,Finn,Grock,Moreno,Valentina,Shogun,Yu Zhong,Ronn,Fanny,Baloyskie,Khufra,KennzyySkie,Moskov,A B O Y,Lunox,Maykids,Yi Sun-shin,Gobs,Phoveus
+16,9,2025-10-17,15:00,Bigetron by Vitality,Geek Fam ID,2,Geek Fam ID,13.9,3,19,Ronn,Fanny,Shogun,Phoveus,Moreno,Kagura,Finn,Chou,EMANN,Wanwan,Baloyskie,Hylos,Gobs,Arlott,Maykids,Yi Sun-shin,KennzyySkie,Moskov,A B O Y,Luo Yi
+16,9,2025-10-17,18:00,DEWA United,ONIC Esports,1,ONIC Esports,23.1,13,16,Reyy,Yi Sun-shin,Muezza,Gatotkaca,Octa,Selena,Maybe,Cici,QINN,Alice,Kairi,Hayabusa,Lutpiii,Arlott,S A N Z,Zhuxin,Kiboy,Badang,Skylar,Esmeralda
+16,9,2025-10-17,18:00,DEWA United,ONIC Esports,2,ONIC Esports,15.8,5,17,QINN,Arlott,Octa,Lunox,Reyy,Fredrinn,Muezza,Ruby,Maybe,Claude,Lutpiii,Yu Zhong,Skylar,Bane,Kiboy,Gatotkaca,S A N Z,Yve,Kairi,Hayabusa
+16,9,2025-10-18,14:00,EVOS Esports,Natus Vincere,1,EVOS Esports,14.1,13,5,Kyy,Grock,Swaylow,Lunox,Erlan,Granger,Rendyy,Lapu-Lapu,Alberttt,X.Borg,Andoryuuu,Baxia,APRHO,Khaleed,UK1R,Zhuxin,Xyve,Bruno,Karss,Esmeralda
+16,9,2025-10-18,14:00,EVOS Esports,Natus Vincere,2,Natus Vincere,15.6,4,19,Swaylow,Yve,Kyy,Grock,Alberttt,Fanny,Rendyy,Hilda,Erlan,Lunox,Andoryuuu,Baxia,Karss,Lapu-Lapu,Xyve,Granger,APRHO,Gatotkaca,UK1R,Lylia
+16,9,2025-10-18,14:00,EVOS Esports,Natus Vincere,3,EVOS Esports,17.7,10,6,Swaylow,Angela,Alberttt,Lancelot,Rendyy,Yu Zhong,Kyy,Grock,Erlan,Lapu-Lapu,UK1R,Kimmy,Andoryuuu,Yi Sun-shin,Karss,Alice,APRHO,Gatotkaca,Xyve,Granger
+16,9,2025-10-18,17:00,Team Liquid ID,RRQ Hoshi,1,Team Liquid ID,20.2,23,15,yehezkiel,Zhuxin,Widy,Gatotkaca,Aran,Arlott,Kabuki,Claude,JOOOO,Baxia,Rinz,Kimmy,Idok,Chip,Ferxiic,Fredrinn,ToYy,Granger,Dyrennn,Alice
+16,9,2025-10-18,17:00,Team Liquid ID,RRQ Hoshi,2,Team Liquid ID,15.6,24,10,yehezkiel,Kimmy,Kabuki,Ruby,Aran,Lapu-Lapu,JOOOO,Yi Sun-shin,Widy,Kalea,Idok,Gatotkaca,ToYy,Cici,Rinz,Valentina,Ferxiic,Lancelot,Dyrennn,Phoveus
+16,9,2025-10-18,20:00,ONIC Esports,ALTER EGO,1,ALTER EGO,12.7,4,12,Kairi,Hayabusa,S A N Z,Angela,Lutpiii,Arlott,Skylar,Harith,Kiboy,Kalea,Hijumee,Zhuxin,alekk,Gatotkaca,Yazukee,Yi Sun-shin,Nino,Uranus,Arfy,Ruby
+16,9,2025-10-18,20:00,ONIC Esports,ALTER EGO,2,ONIC Esports,11.8,19,1,Skylar,Esmeralda,Kairi,Hayabusa,Kiboy,Ruby,S A N Z,Angela,Lutpiii,Yu Zhong,Nino,Arlott,Yazukee,Yi Sun-shin,Hijumee,Lunox,alekk,Hilda,Arfy,Lapu-Lapu
+16,9,2025-10-18,20:00,ONIC Esports,ALTER EGO,3,ALTER EGO,10.4,4,10,Lutpiii,Yu Zhong,Kairi,Ling,S A N Z,Angela,Kiboy,Grock,Skylar,Ruby,Nino,Gatotkaca,Yazukee,Yi Sun-shin,Hijumee,Kimmy,alekk,Helcurt,Arfy,X.Borg
+16,9,2025-10-19,14:00,DEWA United,EVOS Esports,1,DEWA United,15.4,20,9,Maybe,Cici,Muezza,Gatotkaca,Reyy,Hayabusa,Octa,Zhuxin,QINN,Arlott,RoundeL,Kimmy,Kyy,Grock,Xorizo,Lapu-Lapu,Alberttt,Yi Sun-shin,Erlan,X.Borg
+16,9,2025-10-19,14:00,DEWA United,EVOS Esports,2,DEWA United,16.7,17,11,QINN,Yu Zhong,Muezza,Grock,Reyy,Joy,Maybe,Wanwan,Octa,Zhuxin,Xorizo,Esmeralda,Kyy,Badang,Erlan,Claude,Alberttt,Lancelot,RoundeL,Angela
+16,9,2025-10-19,17:00,ALTER EGO,Bigetron by Vitality,1,Bigetron by Vitality,21.9,14,17,alekk,Gatotkaca,Nino,Yu Zhong,Hijumee,Zhuxin,Arfy,Lapu-Lapu,Rinee,Yi Sun-shin,Finn,Kalea,Moreno,Kimmy,EMANN,X.Borg,Shogun,Alice,NNAEL,Hayabusa
+16,9,2025-10-19,17:00,ALTER EGO,Bigetron by Vitality,2,ALTER EGO,23.4,12,18,Nino,Alice,Rinee,Lancelot,Hijumee,Zhuxin,Arfy,Brody,alekk,Khaleed,EMANN,Esmeralda,Moreno,Yve,Shogun,Uranus,Finn,Gatotkaca,NNAEL,Yi Sun-shin
+16,9,2025-10-19,17:00,ALTER EGO,Bigetron by Vitality,3,Bigetron by Vitality,14.6,7,17,Nino,Phoveus,Rinee,Lancelot,alekk,Gatotkaca,Arfy,Natan,Hijumee,Zhuxin,NNAEL,Yi Sun-shin,Finn,Kalea,EMANN,Ruby,Shogun,Uranus,Moreno,Yve
+16,9,2025-10-19,20:00,RRQ Hoshi,Natus Vincere,1,RRQ Hoshi,18.4,14,8,Rinz,Kimmy,ToYy,Karrie,Idok,Kalea,Sutsujin,Fredrinn,Dyrennn,Alice,UK1R,Angela,Andoryuuu,Lancelot,Karss,Yu Zhong,APRHO,Gatotkaca,Xyve,Esmeralda
+16,9,2025-10-19,20:00,RRQ Hoshi,Natus Vincere,2,Natus Vincere,25.6,6,16,Idok,Hylos,Sutsujin,Fredrinn,Rinz,Pharsa,Dyrennn,Cici,ToYy,Granger,APRHO,Gatotkaca,Andoryuuu,Yi Sun-shin,Karss,Uranus,UK1R,Valentina,Xyve,Lapu-Lapu
+16,9,2025-10-19,20:00,RRQ Hoshi,Natus Vincere,3,RRQ Hoshi,12.5,17,6,Idok,Jawhead,ToYy,Cici,Rinz,Novaria,Sutsujin,Yi Sun-shin,Dyrennn,Alice,Woshipaul,Fredrinn,Karss,Arlott,xMagic,Lunox,Xyve,Granger,APRHO,Grock
+17,1,2026-03-27,15:00,Bigetron by Vitality,ALTER EGO,1,Bigetron by Vitality,15.8,25,13,Shogun,Phoveus,Nnael,Leomord,Morenooo,Yve,Finn,Gloo,EMANN,Claude,Nino,Sora,Yazukee,Uranus,Hijumee,Valentina,alekk,Hylos,Arfy,Yi Sun-shin
+17,1,2026-03-27,15:00,Bigetron by Vitality,ALTER EGO,2,ALTER EGO,14.0,8,16,Shogun,Sora,Nnael,Fredrinn,Morenooo,Lylia,Finn,Khaleed,EMANN,Granger,Nino,Phoveus,Yazukee,Suyou,Hijumee,Zetian,alekk,Marcel,Arfy,Obsidia
+17,1,2026-03-27,15:00,Bigetron by Vitality,ALTER EGO,3,Bigetron by Vitality,21.0,23,13,Morenooo,Yve,Nnael,Leomord,Finn,Hylos,Shogun,Uranus,EMANN,Freya,Nino,Lapu-Lapu,Yazukee,Guinevere,Hijumee,Valentina,alekk,Chou,Arfy,Yi Sun-shin
+17,1,2026-03-27,18:00,Natus Vincere,RRQ Hoshi,1,Natus Vincere,14.4,14,2,Karss,Lapu-Lapu,Andoryuuu,Leomord,uK1r,Faramis,Aprho,Marcel,Xyve,Harith,SuperDann,Uranus,SuperKenn,Fredrinn,Rinz,Zetian,SuperToYy,Obsidia,Idok,Khaleed
+17,1,2026-03-27,18:00,Natus Vincere,RRQ Hoshi,2,Natus Vincere,15.5,14,9,Karss,Phoveus,Andoryuuu,Harley,uK1r,Lylia,Aprho,Belerick,Xyve,Yi Sun-shin,SuperDann,Alice,SuperKenn,Leomord,Rinz,Valentina,Idok,Marcel,SuperToYy,Claude
+17,1,2026-03-28,14:00,EVOS Esports,Geek Fam ID,1,EVOS Esports,14.3,17,11,LUKE,Masha,Alberttt,Fredrinn,Treacky,Pharsa,Kyy,Chip,Erlan,Granger,marceL,X.Borg,Maykids,Suyou,A B O Y,Zetian,Baloyskie,Hilda,KennzyySkie,Claude
+17,1,2026-03-28,14:00,EVOS Esports,Geek Fam ID,2,EVOS Esports,15.6,20,8,LUKE,Valentina,Alberttt,Fanny,Treacky,Selena,Kyy,Gatotkaca,Erlan,Claude,marceL,Cici,Maykids,Fredrinn,A B O Y,Kimmy,Baloyskie,Hilda,KennzyySkie,Sora
+17,1,2026-03-28,17:00,ALTER EGO,ONIC Esports,1,ONIC Esports,13.9,6,18,Nino,Lukas,Yazukee,Fredrinn,Hijumee,Yve,alekk,Hilda,Arfy,Claude,Lutpi,Sora,Kairi,Guinevere,S A N Z,Pharsa,Kiboy,Chou,Kelra,Yi Sun-shin
+17,1,2026-03-28,17:00,ALTER EGO,ONIC Esports,2,ONIC Esports,16.1,10,17,Nino,Suyou,Yazukee,Joy,Hijumee,Zetian,alekk,Khaleed,Arfy,Claude,Lutpi,Lapu-Lapu,Kairi,Harley,S A N Z,Gord,Kiboy,Chou,Kelra,Yi Sun-shin
+17,1,2026-03-28,20:00,Team Liquid ID,Natus Vincere,1,Team Liquid ID,23.1,16,14,Aran,Phoveus,Kevinn,Lukas,Drichel,Zhuxin,Lyoni,Gloo,Kyouu,Karrie,Karss,Sora,Andoryuuu,Hayabusa,uK1r,Lylia,Aprho,Khaleed,Xyve,Freya
+17,1,2026-03-28,20:00,Team Liquid ID,Natus Vincere,2,Natus Vincere,22.3,9,18,Aran,Benedetta,Kevinn,Fredrinn,Drichel,Zhuxin,Lyoni,Chip,Kyouu,Karrie,Karss,Sora,Andoryuuu,Yi Sun-shin,uK1r,Yve,Aprho,Gloo,Xyve,Freya
+17,1,2026-03-28,20:00,Team Liquid ID,Natus Vincere,3,Team Liquid ID,18.5,15,14,Aran,Freya,Kevinn,Fredrinn,Drichel,Zetian,Lyoni,Gloo,Kyouu,Moskov,Karss,Esmeralda,Andoryuuu,Suyou,uK1r,Zhuxin,Aprho,Khaleed,Xyve,Harith
+17,1,2026-03-29,14:00,DEWA United,Bigetron by Vitality,1,DEWA United,15.2,12,4,QINN,Arlott,Octa,Pharsa,Muezza,Guinevere,Maybeee,Freya,Dolynn,Fanny,Lynch,Sora,Ryzaa,Valentina,Nnael,Leomord,Finn,Badang,Cliveee,Yi Sun-shin
+17,1,2026-03-29,14:00,DEWA United,Bigetron by Vitality,2,DEWA United,16.3,16,9,QINN,Arlott,Dolynn,Guinevere,Octa,Pharsa,Muezza,Gloo,Maybeee,Claude,Lynch,Sora,Nnael,Lancelot,Ryzaa,Zetian,Finn,Hylos,Cliveee,Yi Sun-shin
+17,1,2026-03-29,17:00,EVOS Esports,Team Liquid ID,1,Team Liquid ID,15.3,11,15,LUKE,Gloo,Alberttt,Fanny,Treacky,Selena,Egatzy,Gatotkaca,Erlan,Claude,Aran,Yu Zhong,Kevinn,Leomord,Drichel,Zhuxin,Lyoni,Hilda,Kyouu,Moskov
+17,1,2026-03-29,17:00,EVOS Esports,Team Liquid ID,2,Team Liquid ID,14.3,3,15,LUKE,Valentina,Alberttt,Suyou,Treacky,Kimmy,Egatzy,Chou,Erlan,Cici,Aran,Sora,Kevinn,Fredrinn,Drichel,Yve,Lyoni,Gloo,Kyouu,Karrie
+17,1,2026-03-29,20:00,RRQ Hoshi,ONIC Esports,1,ONIC Esports,15.4,10,13,SuperDann,Uranus,SuperKenn,Harley,Yehezkiel,Zetian,Idok,Grock,SuperToYy,Bruno,Lutpi,Yu Zhong,Kairi,Suyou,S A N Z,Zhuxin,Kiboy,Badang,Kelra,Harith
+17,1,2026-03-29,20:00,RRQ Hoshi,ONIC Esports,2,ONIC Esports,12.3,2,13,SuperDann,Phoveus,SuperKenn,Suyou,Yehezkiel,Lylia,Idok,Kalea,SuperToYy,Karrie,Lutpi,Sora,Kairi,Guinevere,S A N Z,Yve,Kiboy,Gatotkaca,Kelra,Granger
+17,2,2026-04-03,15:00,ONIC Esports,Geek Fam ID,1,ONIC Esports,15.2,26,13,Lutpi,Phoveus,Kairi,Baxia,S A N Z,Zhuxin,Kiboy,Khaleed,Kelra,Moskov,Ye3,Sora,Maykids,Suyou,A B O Y,Zetian,Baloyskie,Helcurt,KennzyySkie,Cici
+17,2,2026-04-03,15:00,ONIC Esports,Geek Fam ID,2,ONIC Esports,11.1,24,9,Lutpi,Sora,Kairi,Suyou,S A N Z,Zhuxin,Kiboy,Gatotkaca,Kelra,Karrie,Ye3,Freya,Maykids,Leomord,A B O Y,Zetian,Baloyskie,Chip,KennzyySkie,Masha
+17,2,2026-04-03,18:00,DEWA United,Natus Vincere,1,DEWA United,18.6,12,6,QINN,Valentina,Dolynn,Baxia,Octa,Zetian,Muezza,Gloo,Maybeee,Claude,Karss,Uranus,Andoryuuu,Guinevere,uK1r,Pharsa,Aprho,Chou,Xyve,Karrie
+17,2,2026-04-03,18:00,DEWA United,Natus Vincere,2,DEWA United,19.2,16,13,QINN,Valentina,Dolynn,Suyou,Octa,Lunox,Muezza,Gloo,Maybeee,Freya,Karss,Benedetta,Andoryuuu,Leomord,uK1r,Zhuxin,Aprho,Khaleed,Xyve,Esmeralda
+17,2,2026-04-04,14:00,Geek Fam ID,Bigetron by Vitality,1,Geek Fam ID,20.4,18,14,marceL,Sora,Maykids,Leomord,A B O Y,Zhuxin,Baloyskie,Gloo,KennzyySkie,Cici,Morenooo,Zetian,Nnael,Baxia,Shogun,Arlott,EMANN,Yi Sun-shin,Finn,Atlas
+17,2,2026-04-04,14:00,Geek Fam ID,Bigetron by Vitality,2,Geek Fam ID,15.3,16,8,marceL,Arlott,Maykids,Leomord,A B O Y,Zhuxin,Baloyskie,Gatotkaca,KennzyySkie,Granger,EMANN,Yi Sun-shin,Nnael,Harley,Finn,Hylos,Morenooo,Yve,Shogun,Lapu-Lapu
+17,2,2026-04-04,17:00,ALTER EGO,EVOS Esports,1,EVOS Esports,16.6,5,15,Nino,Uranus,Reyy,Harley,Hijumee,Yve,alekk,Grock,Arfy,Freya,LUKE,Sora,Alberttt,Leomord,Pheww,Zhuxin,Kyy,Gloo,Erlan,Claude
+17,2,2026-04-04,17:00,ALTER EGO,EVOS Esports,2,ALTER EGO,19.1,18,13,Nino,Freya,Reyy,Fanny,Hijumee,Yve,alekk,Gatotkaca,Arfy,Granger,LUKE,Sora,Alberttt,Suyou,Pheww,Zhuxin,Kyy,Kalea,Erlan,Claude
+17,2,2026-04-04,17:00,ALTER EGO,EVOS Esports,3,ALTER EGO,18.9,12,7,Nino,Cici,Reyy,Baxia,Hijumee,Zhuxin,alekk,Chou,Arfy,Obsidia,LUKE,Sora,Alberttt,Leomord,Pheww,Lylia,Kyy,Gatotkaca,Erlan,Karrie
+17,2,2026-04-04,20:00,Team Liquid ID,DEWA United,1,Team Liquid ID,11.9,11,9,Aran,Masha,Kevinn,Fredrinn,Drichel,Yve,Lyoni,Chip,Kyouu,Karrie,QINN,Valentina,Kayn,Baxia,Octa,Pharsa,Muezza,Badang,Maybeee,Claude
+17,2,2026-04-04,20:00,Team Liquid ID,DEWA United,2,DEWA United,15.4,9,20,Aran,Edith,Kevinn,Fredrinn,Drichel,Zetian,Lyoni,Gloo,Kyouu,Freya,QINN,Phoveus,Kayn,Baxia,Octa,Kimmy,Muezza,Zhuxin,Maybeee,Karrie
+17,2,2026-04-04,20:00,Team Liquid ID,DEWA United,3,Team Liquid ID,16.1,15,10,Aran,Freya,Kevinn,Fredrinn,Drichel,Yve,Lyoni,Gloo,Kyouu,Harith,QINN,Sora,Kayn,Uranus,Octa,Valentina,Muezza,Zhuxin,Maybeee,Karrie
+17,2,2026-04-05,14:00,Natus Vincere,ALTER EGO,1,ALTER EGO,17.4,10,20,Karss,Lapu-Lapu,Andoryuuu,Harley,uK1r,Zhuxin,Aprho,Chou,Xyve,Claude,Nino,Sora,Yazukee,Leomord,Cyruz,Yve,alekk,Gloo,Arfy,Moskov
+17,2,2026-04-05,14:00,Natus Vincere,ALTER EGO,2,Natus Vincere,14.2,14,8,Karss,Arlott,Andoryuuu,Harley,uK1r,Zhuxin,Aprho,Gloo,Xyve,Claude,Nino,Sora,Yazukee,Leomord,Cyruz,Yve,alekk,Chou,Arfy,Moskov
+17,2,2026-04-05,14:00,Natus Vincere,ALTER EGO,3,ALTER EGO,19.3,8,22,Karss,Uranus,Andoryuuu,Leomord,uK1r,Zhuxin,Aprho,Gatotkaca,Xyve,Obsidia,Nino,Sora,Yazukee,Harley,Cyruz,Odette,alekk,Kalea,Arfy,Claude
+17,2,2026-04-05,17:00,RRQ Hoshi,Team Liquid ID,1,Team Liquid ID,13.7,5,16,SuperDann,Lapu-Lapu,SuperKenn,Harley,Rinz,Selena,Idok,Marcel,Kuroky.,Yi Sun-shin,Aran,Phoveus,Kevinn,Suyou,Drichel,Valentina,Lyoni,Gloo,Kyouu,Moskov
+17,2,2026-04-05,17:00,RRQ Hoshi,Team Liquid ID,2,Team Liquid ID,18.0,16,23,SuperDann,Sora,SuperKenn,Gusion,Rinz,Valentina,Idok,Grock,Kuroky.,Yi Sun-shin,Aran,Masha,Kevinn,Fredrinn,Drichel,Yve,Lyoni,Chip,Kyouu,Karrie
+17,2,2026-04-05,20:00,Bigetron by Vitality,EVOS Esports,1,EVOS Esports,18.1,8,13,Shogun,Alice,Nnael,Leomord,Morenooo,Zhuxin,Finn,Khaleed,EMANN,Irithel,Vell,Lapu-Lapu,Alberttt,Yi Sun-shin,Pheww,Yve,Kyy,Chip,Erlan,Freya
+17,2,2026-04-05,20:00,Bigetron by Vitality,EVOS Esports,2,Bigetron by Vitality,14.9,11,5,Shogun,Arlott,Nnael,Guinevere,Morenooo,Pharsa,Finn,Grock,EMANN,Yi Sun-shin,Vell,Lapu-Lapu,Alberttt,Fredrinn,Pheww,Zetian,Kyy,Gloo,Erlan,Granger
+17,2,2026-04-05,20:00,Bigetron by Vitality,EVOS Esports,3,Bigetron by Vitality,17.8,13,4,Shogun,Sora,Nnael,Leomord,Morenooo,Pharsa,Finn,Gloo,EMANN,Harith,Vell,Cici,Alberttt,Harley,Pheww,Zhuxin,Kyy,Khaleed,Erlan,Obsidia
+17,3,2026-04-10,15:00,ONIC Esports,DEWA United,1,DEWA United,15.3,13,21,Lutpi,Sora,Kairi,Baxia,S A N Z,Yve,Kiboy,Khaleed,Kelra,Yi Sun-shin,QINN,Arlott,Dolynn,Guinevere,Octa,Pharsa,Muezza,Gloo,Maybeee,Claude
+17,3,2026-04-10,15:00,ONIC Esports,DEWA United,2,ONIC Esports,15.6,15,10,Kelra,Claude,Kairi,Fredrinn,S A N Z,Vexana,Kiboy,Marcel,Lutpi,Phoveus,QINN,Valentina,Dolynn,Suyou,Octa,Lylia,Muezza,Gloo,Maybeee,Granger
+17,3,2026-04-10,15:00,ONIC Esports,DEWA United,3,ONIC Esports,13.8,17,5,Lutpi,Yu Zhong,Kairi,Lancelot,S A N Z,Zetian,Kiboy,Marcel,Kelra,Obsidia,QINN,Valentina,Dolynn,Suyou,Octa,Odette,Muezza,Gloo,Maybeee,Harith
+17,3,2026-04-10,18:00,Natus Vincere,EVOS Esports,1,EVOS Esports,18.2,12,14,Karss,Sora,Andoryuuu,Suyou,uK1r,Zhuxin,Aprho,Khaleed,Xyve,Granger,LUKE,Arlott,Alberttt,Yi Sun-shin,Pheww,Valentina,Kyy,Gloo,Erlan,Uranus
+17,3,2026-04-10,18:00,Natus Vincere,EVOS Esports,2,EVOS Esports,15.9,2,12,Karss,Lapu-Lapu,Andoryuuu,Suyou,uK1r,Zhuxin,Aprho,Gatotkaca,Xyve,Yi Sun-shin,LUKE,Arlott,Alberttt,Leomord,Pheww,Yve,Kyy,Marcel,Erlan,Obsidia
+17,3,2026-04-11,14:00,Team Liquid ID,Geek Fam ID,1,Geek Fam ID,18.1,14,18,Kevinn,Fredrinn,Aran,Alice,Drichel,Zhuxin,Lyoni,Hylos,Kyouu,Karrie,marceL,Phoveus,Maykids,Leomord,A B O Y,Zetian,Baloyskie,Marcel,KennzyySkie,Claude
+17,3,2026-04-11,14:00,Team Liquid ID,Geek Fam ID,2,Geek Fam ID,8.9,3,14,Aran,Phoveus,Kevinn,Lukas,Drichel,Zhuxin,Lyoni,Gatotkaca,Kyouu,Karrie,marceL,Sora,Maykids,Leomord,A B O Y,Yve,Baloyskie,Kalea,KennzyySkie,Freya
+17,3,2026-04-11,17:00,ONIC Esports,Bigetron by Vitality,1,ONIC Esports,22.5,17,19,Lutpi,Alice,Kairi,Suyou,S A N Z,Yve,Kiboy,Hylos,Kelra,Freya,Shogun,Sora,Nnael,Leomord,Morenooo,Pharsa,Finn,Gatotkaca,EMANN,Yi Sun-shin
+17,3,2026-04-11,17:00,ONIC Esports,Bigetron by Vitality,2,Bigetron by Vitality,18.9,11,25,Lutpi,Cici,Kairi,Baxia,S A N Z,Kimmy,Kiboy,Khaleed,Kelra,Freya,Shogun,Sora,Nnael,Leomord,Morenooo,Zhuxin,Finn,Gloo,EMANN,Yi Sun-shin
+17,3,2026-04-11,17:00,ONIC Esports,Bigetron by Vitality,3,Bigetron by Vitality,15.8,5,12,Lutpi,Yu Zhong,Kairi,Yi Sun-shin,S A N Z,Zetian,Kiboy,Gatotkaca,Kelra,Freya,Shogun,Phoveus,Nnael,Harley,Morenooo,Zhuxin,Finn,Gloo,EMANN,Claude
+17,3,2026-04-11,20:00,RRQ Hoshi,ALTER EGO,1,ALTER EGO,17.4,11,26,SuperDann,Sora,SuperKenn,Guinevere,Yehezkiel,Zetian,Idok,Hylos,Kuroky.,Claude,Nino,Cici,Yazukee,Leomord,Cyruz,Zhuxin,alekk,Kalea,Arfy,Granger
+17,3,2026-04-11,20:00,RRQ Hoshi,ALTER EGO,2,RRQ Hoshi,13.8,16,3,SuperDann,Sora,SuperKenn,Guinevere,Yehezkiel,Zetian,Idok,Chip,Kuroky.,Karrie,Nino,Lapu-Lapu,Yazukee,Nolan,Cyruz,Zhuxin,alekk,Chou,Arfy,Claude
+17,3,2026-04-11,20:00,RRQ Hoshi,ALTER EGO,3,ALTER EGO,17.4,13,18,SuperDann,Sora,SuperKenn,Guinevere,Yehezkiel,Yve,Idok,Chou,Kuroky.,Claude,Nino,Uranus,Yazukee,Leomord,Cyruz,Zhuxin,alekk,Gloo,Arfy,Harith
+17,3,2026-04-12,14:00,Bigetron by Vitality,Natus Vincere,1,Bigetron by Vitality,21.1,6,10,Lynch,Arlott,Nnael,Suyou,Morenooo,Valir,Finn,Marcel,EMANN,Granger,Karss,Phoveus,Andoryuuu,Leomord,uK1r,Zhuxin,Aprho,Hilda,Xyve,Harith
+17,3,2026-04-12,14:00,Bigetron by Vitality,Natus Vincere,2,Natus Vincere,24.6,16,11,Lynch,Sora,Nnael,Suyou,Morenooo,Valentina,Finn,Marcel,EMANN,Yi Sun-shin,Karss,Arlott,Andoryuuu,Leomord,uK1r,Zhuxin,Aprho,Khufra,Xyve,Harith
+17,3,2026-04-12,14:00,Bigetron by Vitality,Natus Vincere,3,Natus Vincere,14.1,8,13,Lynch,Masha,Nnael,Fredrinn,Morenooo,Yve,Finn,Chip,EMANN,Yi Sun-shin,Karss,Lapu-Lapu,Andoryuuu,Leomord,uK1r,Lylia,Aprho,Gloo,Xyve,Claude
+17,3,2026-04-12,17:00,Geek Fam ID,RRQ Hoshi,1,RRQ Hoshi,16.4,5,20,Maykids,Leomord,marceL,Sora,KennzyySkie,Claude,Baloyskie,Gloo,A B O Y,Valentina,SuperDann,Lapu-Lapu,SuperKenn,Suyou,Yehezkiel,Zhuxin,Idok,Chip,Kuroky.,Karrie
+17,3,2026-04-12,17:00,Geek Fam ID,RRQ Hoshi,2,Geek Fam ID,13.9,11,3,marceL,Alice,Maykids,Leomord,A B O Y,Yve,Baloyskie,Kaja,KennzyySkie,Moskov,SuperDann,Gloo,SuperKenn,Suyou,Yehezkiel,Zhuxin,Idok,Tigreal,Kuroky.,Yi Sun-shin
+17,3,2026-04-12,17:00,Geek Fam ID,RRQ Hoshi,3,Geek Fam ID,20.9,23,13,marceL,Sora,Maykids,Leomord,A B O Y,Yve,Baloyskie,Hylos,KennzyySkie,Moskov,SuperDann,Yu Zhong,SuperKenn,Baxia,Yehezkiel,Zhuxin,Idok,Gloo,Kuroky.,Harith
+17,3,2026-04-12,20:00,ALTER EGO,DEWA United,1,DEWA United,14.8,9,27,Nino,Freya,Yazukee,Leomord,Hijumee,Yve,alekk,Grock,Arfy,Harith,QINN,Terizla,Dolynn,Guinevere,Octa,Zhuxin,Muezza,Helcurt,Maybeee,Claude
+17,3,2026-04-12,20:00,ALTER EGO,DEWA United,2,DEWA United,15.1,10,15,Nino,Uranus,Yazukee,Harley,Hijumee,Pharsa,alekk,Kalea,Arfy,Moskov,QINN,Alice,Dolynn,Fanny,Octa,Zetian,Muezza,Gatotkaca,Maybeee,Claude
+17,4,2026-04-17,15:00,Natus Vincere,ONIC Esports,1,ONIC Esports,11.7,2,12,Karss,Phoveus,Andoryuuu,Yi Sun-shin,uK1r,Yve,Aprho,Gatotkaca,Xyve,Harith,Lutpi,Sora,Kairi,Harley,S A N Z,Valentina,Kiboy,Kalea,Kelra,Granger
+17,4,2026-04-17,15:00,Natus Vincere,ONIC Esports,2,ONIC Esports,17.1,5,15,Karss,Alice,Andoryuuu,Suyou,uK1r,Zhuxin,Aprho,Khaleed,Xyve,Yi Sun-shin,Lutpi,Phoveus,Kairi,Harley,S A N Z,Lylia,Kiboy,Kalea,Kelra,Beatrix
+17,4,2026-04-17,18:00,EVOS Esports,DEWA United,1,EVOS Esports,13.8,15,6,LUKE,Arlott,Alberttt,Fredrinn,Pheww,Zhuxin,Kyy,Khaleed,Erlan,Moskov,QINN,Sora,Dolynn,Baxia,Octa,Kimmy,Muezza,Kalea,Maybeee,Claude
+17,4,2026-04-17,18:00,EVOS Esports,DEWA United,2,EVOS Esports,11.5,15,6,LUKE,Freya,Alberttt,Fredrinn,Pheww,Yve,Kyy,Gloo,Erlan,Moskov,QINN,Alice,Dolynn,Baxia,Octa,Kimmy,Muezza,Kalea,Maybeee,Claude
+17,4,2026-04-18,14:00,Team Liquid ID,Bigetron by Vitality,1,Team Liquid ID,14.7,16,4,Aran,Freya,Kevinn,Leomord,Drichel,Yve,Lyoni,Baxia,Kyouu,Harith,Shogun,Sora,Nnael,Suyou,Morenooo,Zhuxin,Finn,Chou,EMANN,Karrie
+17,4,2026-04-18,14:00,Team Liquid ID,Bigetron by Vitality,2,Bigetron by Vitality,15.0,10,17,Aran,Terizla,Kevinn,Leomord,Drichel,Valentina,Lyoni,Khaleed,Kyouu,Harith,Shogun,Sora,Nnael,Lancelot,Morenooo,Yve,Finn,Hylos,EMANN,Claude
+17,4,2026-04-18,14:00,Team Liquid ID,Bigetron by Vitality,3,Bigetron by Vitality,15.7,6,18,Kevinn,Fanny,Aran,Terizla,Drichel,Yve,Lyoni,Gatotkaca,Kyouu,Karrie,Shogun,Sora,Nnael,Leomord,Morenooo,Kadita,Finn,Kalea,EMANN,Moskov
+17,4,2026-04-18,17:00,RRQ Hoshi,EVOS Esports,1,EVOS Esports,24.4,15,20,SuperDann,Yu Zhong,SuperKenn,Baxia,Yehezkiel,Yve,Idok,Gloo,Kuroky.,Claude,LUKE,Alice,Alberttt,Fredrinn,Pheww,Zhuxin,Kyy,Khaleed,Erlan,Moskov
+17,4,2026-04-18,17:00,RRQ Hoshi,EVOS Esports,2,EVOS Esports,14.3,7,17,SuperDann,Cici,SuperKenn,Uranus,Yehezkiel,Zetian,Idok,Gloo,Kuroky.,Claude,LUKE,Alice,Alberttt,Fredrinn,Pheww,Zhuxin,Kyy,Hilda,Erlan,Moskov
+17,4,2026-04-18,20:00,Geek Fam ID,ALTER EGO,1,ALTER EGO,13.3,8,23,marceL,Gloo,Maykids,Fredrinn,A B O Y,Yve,Baloyskie,Valir,KennzyySkie,Freya,Nino,Lapu-Lapu,Hijumee,Zhuxin,Yazukee,Yi Sun-shin,alekk,Kalea,Arfy,Brody
+17,4,2026-04-18,20:00,Geek Fam ID,ALTER EGO,2,Geek Fam ID,13.2,18,7,marceL,Sora,Maykids,Harley,A B O Y,Yve,Baloyskie,Gloo,KennzyySkie,Granger,Nino,Uranus,Yazukee,Yi Sun-shin,Hijumee,Zhuxin,alekk,Khaleed,Arfy,Claude
+17,4,2026-04-18,20:00,Geek Fam ID,ALTER EGO,3,ALTER EGO,14.8,6,22,marceL,Alice,Maykids,Harley,A B O Y,Zetian,Baloyskie,Gloo,KennzyySkie,Moskov,Nino,Lapu-Lapu,Yazukee,Guinevere,Hijumee,Zhuxin,alekk,Khaleed,Arfy,Yi Sun-shin
+17,4,2026-04-19,14:00,ONIC Esports,Team Liquid ID,1,ONIC Esports,12.0,17,5,Lutpi,Lapu-Lapu,Kairi,Leomord,S A N Z,Valentina,Kiboy,Kalea,Kelra,Freya,Aran,Sora,Kevinn,Fredrinn,Lyoni,Valir,Drichel,Yve,Kyouu,Claude
+17,4,2026-04-19,14:00,ONIC Esports,Team Liquid ID,2,ONIC Esports,13.7,14,3,Lutpi,Terizla,Kairi,Fanny,S A N Z,Yve,Kiboy,Marcel,Kelra,Bruno,Aran,Phoveus,Kevinn,Suyou,Drichel,Zhuxin,Lyoni,Hylos,Kyouu,Moskov
+17,4,2026-04-19,17:00,Bigetron by Vitality,RRQ Hoshi,1,RRQ Hoshi,15.6,7,14,Shogun,Sora,Nnael,Leomord,Ryzaa,Yve,Finn,Gloo,EMANN,Obsidia,SuperDann,Phoveus,SuperKenn,Harley,Yehezkiel,Zhuxin,Idok,Khaleed,Kuroky.,Moskov
+17,4,2026-04-19,17:00,Bigetron by Vitality,RRQ Hoshi,2,Bigetron by Vitality,25.4,19,13,Shogun,Phoveus,Nnael,Leomord,Morenooo,Zhuxin,Finn,Khaleed,EMANN,Yi Sun-shin,SuperDann,Lapu-Lapu,SuperKenn,Harley,Yehezkiel,Yve,Idok,Kalea,Kuroky.,Karrie
+17,4,2026-04-19,17:00,Bigetron by Vitality,RRQ Hoshi,3,Bigetron by Vitality,15.9,19,6,Shogun,Terizla,Nnael,Leomord,Morenooo,Valentina,Finn,Gloo,EMANN,Harith,SuperDann,Yu Zhong,SuperKenn,Baxia,Yehezkiel,Zhuxin,Idok,Khaleed,Kuroky.,Moskov
+17,4,2026-04-19,20:00,DEWA United,Geek Fam ID,1,DEWA United,23.4,16,13,QINN,Phoveus,Dolynn,Suyou,Octa,Zhuxin,Muezza,Gloo,Maybeee,Yi Sun-shin,marceL,Freya,A B O Y,Yve,Maykids,Harley,Baloyskie,Valir,KennzyySkie,Cici
+17,4,2026-04-19,20:00,DEWA United,Geek Fam ID,2,DEWA United,13.6,11,9,QINN,Arlott,Dolynn,Suyou,Octa,Lunox,Muezza,Gloo,Maybeee,Freya,marceL,Lapu-Lapu,Maykids,Leomord,A B O Y,Zhuxin,Baloyskie,Khaleed,KennzyySkie,Moskov
+17,5,2026-04-24,15:00,Geek Fam ID,Natus Vincere,1,Natus Vincere,16.8,3,11,marceL,Uranus,A B O Y,Valentina,Baloyskie,Hylos,KennzyySkie,Claude,Nazara,Harley,Karss,Phoveus,Andoryuuu,Suyou,uK1r,Valir,Aprho,Marcel,Xyve,Harith
+17,5,2026-04-24,15:00,Geek Fam ID,Natus Vincere,2,Natus Vincere,14.4,3,15,marceL,Phoveus,Nazara,Suyou,A B O Y,Yve,Baloyskie,Kalea,KennzyySkie,Yi Sun-shin,Karss,Lapu-Lapu,Andoryuuu,Harley,uK1r,Pharsa,Aprho,Hylos,Xyve,Claude
+17,5,2026-04-24,18:00,EVOS Esports,ONIC Esports,1,ONIC Esports,19.6,11,21,LUKE,Arlott,Alberttt,Fredrinn,Pheww,Zhuxin,Egatzy,Khaleed,Erlan,Granger,Lutpi,Sora,Kairi,Harley,S A N Z,Zetian,Kiboy,Kalea,Kelra,Claude
+17,5,2026-04-24,18:00,EVOS Esports,ONIC Esports,2,ONIC Esports,16.0,5,9,LUKE,Phoveus,Alberttt,Baxia,Pheww,Valentina,Egatzy,Kalea,Erlan,Moskov,Lutpi,Uranus,Kairi,Fanny,S A N Z,Kimmy,Kiboy,Gatotkaca,Kelra,Harith
+17,5,2026-04-25,14:00,DEWA United,RRQ Hoshi,1,DEWA United,25.4,21,18,QINN,Arlott,Dolynn,Suyou,Octa,Zhuxin,Muezza,Khaleed,Maybeee,Claude,SuperDann,Phoveus,SuperKenn,Guinevere,Yehezkiel,Yve,Idok,Chou,SuperToYy,Karrie
+17,5,2026-04-25,14:00,DEWA United,RRQ Hoshi,2,DEWA United,11.8,16,5,QINN,Arlott,Dolynn,Guinevere,Octa,Pharsa,Muezza,Khaleed,Maybeee,Harith,SuperDann,Phoveus,SuperKenn,Yi Sun-shin,Yehezkiel,Zhuxin,Idok,Kalea,SuperToYy,Granger
+17,5,2026-04-25,17:00,ALTER EGO,Team Liquid ID,1,Team Liquid ID,11.1,11,15,Nino,Sora,Yazukee,Baxia,Hijumee,Valentina,alekk,Marcel,Arfy,Obsidia,Aran,Phoveus,Kevinn,Leomord,Drichel,Zetian,Lyoni,Khaleed,Kyouu,Claude
+17,5,2026-04-25,17:00,ALTER EGO,Team Liquid ID,2,ALTER EGO,17.4,20,7,Nino,Arlott,Yazukee,Leomord,Hijumee,Yve,alekk,Hilda,Arfy,Yi Sun-shin,Aran,Sora,Kevinn,Harley,Drichel,Zhuxin,Lyoni,Khaleed,Kyouu,Claude
+17,5,2026-04-25,17:00,ALTER EGO,Team Liquid ID,3,Team Liquid ID,20.8,10,21,Nino,Lapu-Lapu,Yazukee,Yi Sun-shin,Hijumee,Lylia,alekk,Kalea,Arfy,Clint,Aran,Phoveus,Kevinn,Leomord,Drichel,Zetian,Lyoni,Marcel,Kyouu,Claude
+17,5,2026-04-25,20:00,EVOS Esports,Bigetron by Vitality,1,Bigetron by Vitality,15.4,4,18,LUKE,Uranus,Alberttt,Leomord,Pheww,Valentina,Kyy,Khaleed,Erlan,Claude,Shogun,Arlott,Nnael,Harley,Morenooo,Zhuxin,Finn,Hylos,EMANN,Harith
+17,5,2026-04-25,20:00,EVOS Esports,Bigetron by Vitality,2,Bigetron by Vitality,27.3,13,19,LUKE,Uranus,Alberttt,Leomord,Pheww,Valentina,Kyy,Hylos,Erlan,Granger,Shogun,Phoveus,Nnael,Harley,Morenooo,Zhuxin,Finn,Khaleed,EMANN,Moskov
+17,5,2026-04-26,14:00,ALTER EGO,Natus Vincere,1,Natus Vincere,13.6,9,16,Nino,Uranus,Yazukee,Leomord,Cyruz,Zhuxin,alekk,Khaleed,Arfy,Yi Sun-shin,Karss,Sora,Andoryuuu,Suyou,uK1r,Valentina,Aprho,Marcel,Xyve,Claude
+17,5,2026-04-26,14:00,ALTER EGO,Natus Vincere,2,ALTER EGO,12.4,15,7,Nino,Alice,Yazukee,Leomord,Cyruz,Valentina,alekk,Khaleed,Arfy,Harith,Karss,Arlott,Andoryuuu,Fredrinn,uK1r,Pharsa,Aprho,Guinevere,Xyve,Claude
+17,5,2026-04-26,14:00,ALTER EGO,Natus Vincere,3,ALTER EGO,18.1,13,7,Nino,Yu Zhong,Yazukee,Leomord,Cyruz,Odette,alekk,Hilda,Arfy,Granger,Karss,Arlott,Andoryuuu,Suyou,uK1r,Valentina,Aprho,Kalea,Xyve,Harith
+17,5,2026-04-26,17:00,Geek Fam ID,ONIC Esports,1,ONIC Esports,16.2,10,18,marceL,Phoveus,Nazara,Leomord,A B O Y,Pharsa,Baloyskie,Kalea,KennzyySkie,Moskov,Lutpi,Lapu-Lapu,Kairi,Fanny,S A N Z,Lylia,Kiboy,Gatotkaca,Kelra,Harith
+17,5,2026-04-26,17:00,Geek Fam ID,ONIC Esports,2,Geek Fam ID,12.9,18,6,marceL,Phoveus,Nazara,Harley,A B O Y,Kimmy,Baloyskie,Kalea,KennzyySkie,Claude,Lutpi,Uranus,Kairi,Leomord,S A N Z,Valentina,Kiboy,Marcel,Kelra,Bruno
+17,5,2026-04-26,17:00,Geek Fam ID,ONIC Esports,3,Geek Fam ID,18.3,12,5,marceL,Lapu-Lapu,Nazara,Harley,A B O Y,Lylia,Baloyskie,Gatotkaca,KennzyySkie,Claude,Lutpi,Phoveus,Kairi,Leomord,S A N Z,Yve,Kiboy,Kalea,Kelra,Beatrix
+17,5,2026-04-26,20:00,DEWA United,Team Liquid ID,1,DEWA United,11.4,12,11,QINN,Freya,Dolynn,Suyou,Octa,Yve,Muezza,Hilda,Maybeee,Granger,Aran,Esmeralda,Kevinn,Leomord,Drichel,Zhuxin,Lyoni,Kalea,Kyouu,Harith
+17,5,2026-04-26,20:00,DEWA United,Team Liquid ID,2,DEWA United,11.6,16,6,QINN,Phoveus,Dolynn,Suyou,Octa,Lunox,Muezza,Khaleed,Maybeee,Harith,Aran,Yu Zhong,Kevinn,Leomord,Drichel,Zhuxin,Lyoni,Hilda,Kyouu,Claude
+17,6,2026-05-01,15:00,Natus Vincere,DEWA United,1,DEWA United,11.8,9,8,Karss,Sora,Andoryuuu,Harley,uK1r,Lylia,Aprho,Hylos,Xyve,Freya,QINN,Arlott,Dolynn,Suyou,Octa,Zhuxin,Muezza,Khaleed,Maybeee,Harith
+17,6,2026-05-01,15:00,Natus Vincere,DEWA United,2,Natus Vincere,20.4,17,18,Karss,Phoveus,Andoryuuu,Suyou,uK1r,Zhuxin,Aprho,Gatotkaca,Xyve,Claude,QINN,Arlott,Dolynn,Baxia,Octa,Pharsa,Muezza,Guinevere,Maybeee,Granger
+17,6,2026-05-01,15:00,Natus Vincere,DEWA United,3,DEWA United,13.6,5,17,Karss,Sora,Andoryuuu,Leomord,uK1r,Yve,Aprho,Khaleed,Xyve,Freya,QINN,Terizla,Dolynn,Suyou,Octa,Zhuxin,Muezza,Gloo,Maybeee,Harith
+17,6,2026-05-01,18:00,ALTER EGO,Geek Fam ID,1,Geek Fam ID,14.2,7,15,Nino,Arlott,Yazukee,Leomord,Hijumee,Kagura,alekk,Marcel,Arfy,Harith,marceL,Sora,Nazara,Harley,A B O Y,Faramis,KennzyySkie,Granger,Baloyskie,Kalea
+17,6,2026-05-01,18:00,ALTER EGO,Geek Fam ID,2,ALTER EGO,14.2,16,4,Nino,Phoveus,Yazukee,Harley,Hijumee,Yve,alekk,Hilda,Arfy,Claude,marceL,Sora,Nazara,Suyou,A B O Y,Zhuxin,Baloyskie,Gloo,KennzyySkie,Granger
+17,6,2026-05-01,18:00,ALTER EGO,Geek Fam ID,3,ALTER EGO,14.2,17,5,Nino,Phoveus,Yazukee,Harley,Hijumee,Yve,alekk,Gloo,Arfy,Karrie,marceL,Lapu-Lapu,Nazara,Suyou,A B O Y,Zhuxin,Baloyskie,Gatotkaca,KennzyySkie,Freya
+17,6,2026-05-02,14:00,EVOS Esports,ALTER EGO,1,ALTER EGO,20.4,17,15,LUKE,Lapu-Lapu,Alberttt,Leomord,Treacky,Pharsa,Kyy,Marcel,Erlan,Harith,Nino,Arlott,Yazukee,Suyou,Hijumee,Luo Yi,alekk,Hilda,Arfy,Granger
+17,6,2026-05-02,14:00,EVOS Esports,ALTER EGO,2,EVOS Esports,28.0,28,22,LUKE,Lapu-Lapu,Alberttt,Leomord,Treacky,Zhuxin,Kyy,Baxia,Erlan,Harith,Nino,Terizla,Yazukee,Suyou,Hijumee,Yve,alekk,Gloo,Arfy,Claude
+17,6,2026-05-02,14:00,EVOS Esports,ALTER EGO,3,EVOS Esports,18.4,12,6,LUKE,Terizla,Alberttt,Lancelot,Treacky,Zhuxin,Kyy,Hylos,Erlan,Harith,Nino,Arlott,Yazukee,Leomord,Hijumee,Yve,alekk,Hilda,Arfy,Karrie
+17,6,2026-05-02,17:00,Team Liquid ID,ONIC Esports,1,ONIC Esports,16.2,10,23,Aran,Badang,Kevinn,Baxia,Drichel,Kimmy,Lyoni,Marcel,Kyouu,Moskov,Lutpi,Terizla,Kairi,Fanny,S A N Z,Valentina,Kiboy,Atlas,Kelra,Harith
+17,6,2026-05-02,17:00,Team Liquid ID,ONIC Esports,2,ONIC Esports,14.4,7,17,Aran,Masha,Kevinn,Fredrinn,Drichel,Valentina,Lyoni,Chip,Kyouu,Granger,Lutpi,Terizla,Kairi,Suyou,S A N Z,Valir,Kiboy,Hylos,Kelra,Harith
+17,6,2026-05-02,20:00,RRQ Hoshi,Bigetron by Vitality,1,RRQ Hoshi,17.5,13,2,SuperDann,Phoveus,SuperKenn,Lancelot,Yehezkiel,Zhuxin,Idok,Hylos,SuperToYy,Granger,Shogun,Terizla,Nnael,Suyou,Morenooo,Vexana,Finn,Gloo,EMANN,Harith
+17,6,2026-05-02,20:00,RRQ Hoshi,Bigetron by Vitality,2,RRQ Hoshi,19.7,15,10,SuperDann,Phoveus,SuperKenn,Lancelot,Yehezkiel,Zhuxin,Idok,Khaleed,SuperToYy,Karrie,Shogun,Hylos,Nnael,Leomord,Morenooo,Valentina,Finn,Kalea,EMANN,Granger
+17,6,2026-05-03,14:00,Natus Vincere,Team Liquid ID,1,Natus Vincere,24.2,23,11,Karss,Sora,Andoryuuu,Suyou,uK1r,Zhuxin,Aprho,Gatotkaca,Xyve,Granger,Aran,Alice,Kevinn,Leomord,Lyoni,Kalea,Drichel,Yve,Kyouu,Harith
+17,6,2026-05-03,14:00,Natus Vincere,Team Liquid ID,2,Team Liquid ID,18.0,5,10,Karss,Alice,Andoryuuu,Suyou,uK1r,Luo Yi,Aprho,Gatotkaca,Xyve,Granger,Aran,Phoveus,Kevinn,Leomord,Drichel,Kimmy,Lyoni,Baxia,Kyouu,Harith
+17,6,2026-05-03,14:00,Natus Vincere,Team Liquid ID,3,Team Liquid ID,17.3,12,19,Karss,Sora,Andoryuuu,Suyou,uK1r,Zhuxin,Aprho,Hylos,Xyve,Claude,Aran,Terizla,Kevinn,Leomord,Drichel,Yve,Lyoni,Khaleed,Kyouu,Harith
+17,6,2026-05-03,17:00,ONIC Esports,RRQ Hoshi,1,ONIC Esports,13.2,12,4,Lutpi,Sora,Kairi,Harley,S A N Z,Valentina,Kiboy,Hilda,Kelra,Claude,SuperDann,Uranus,SuperKenn,Lancelot,Yehezkiel,Zhuxin,Idok,Khaleed,SuperToYy,Karrie
+17,6,2026-05-03,17:00,ONIC Esports,RRQ Hoshi,2,ONIC Esports,13.9,16,9,Lutpi,Phoveus,Kairi,Lancelot,S A N Z,Nana,Kiboy,Kalea,Kelra,Harith,SuperDann,Lapu-Lapu,SuperKenn,Guinevere,Yehezkiel,Yve,Idok,Hylos,SuperToYy,Moskov
+17,6,2026-05-03,20:00,Geek Fam ID,EVOS Esports,1,Geek Fam ID,19.6,15,8,marceL,Phoveus,Nazara,Hayabusa,A B O Y,Zhuxin,Baloyskie,Kalea,KennzyySkie,Harith,LUKE,Valir,Alberttt,Yi Sun-shin,Treacky,Zetian,Kyy,Hylos,Erlan,Freya
+17,6,2026-05-03,20:00,Geek Fam ID,EVOS Esports,2,Geek Fam ID,11.4,14,3,marceL,Phoveus,Nazara,Guinevere,A B O Y,Zhuxin,Baloyskie,Kalea,KennzyySkie,Granger,LUKE,Uranus,Alberttt,Yi Sun-shin,Treacky,Yve,Kyy,Khaleed,Erlan,Freya
+17,7,2026-05-08,15:00,Geek Fam ID,DEWA United,1,Geek Fam ID,9.4,17,1,marceL,Freya,Nazara,Leomord,A B O Y,Faramis,Baloyskie,Marcel,KennzyySkie,Claude,QINN,Terizla,Dolynn,Suyou,Octa,Yve,Muezza,Belerick,Maybeee,Harith
+17,7,2026-05-08,15:00,Geek Fam ID,DEWA United,2,DEWA United,14.4,4,19,marceL,Lapu-Lapu,Nazara,Suyou,A B O Y,Faramis,Baloyskie,Kalea,KennzyySkie,Harith,QINN,Arlott,Dolynn,Leomord,Octa,Pharsa,Muezza,Marcel,Maybeee,Freya
+17,7,2026-05-08,15:00,Geek Fam ID,DEWA United,3,DEWA United,15.3,12,19,marceL,Lapu-Lapu,Nazara,Fanny,A B O Y,Yve,Baloyskie,Gatotkaca,KennzyySkie,Harith,QINN,Phoveus,Dolynn,Suyou,Octa,Zetian,Muezza,Hylos,Maybeee,Claude
+17,7,2026-05-08,18:00,Bigetron by Vitality,Team Liquid ID,1,Team Liquid ID,19.0,22,15,Shogun,Sora,Morenooo,Zhuxin,Nnael,Harley,Finn,Kalea,EMANN,Beatrix,Aran,Phoveus,Kevinn,Leomord,Drichel,Zetian,Lyoni,Khaleed,Kyouu,Harith
+17,7,2026-05-08,18:00,Bigetron by Vitality,Team Liquid ID,2,Team Liquid ID,15.7,7,16,Shogun,Uranus,Nnael,Leomord,Morenooo,Lylia,Finn,Gatotkaca,EMANN,Harith,Aran,Phoveus,Kevinn,Suyou,Drichel,Yve,Lyoni,Hylos,Kyouu,Lunox
+17,7,2026-05-09,14:00,DEWA United,ALTER EGO,1,ALTER EGO,12.2,9,14,QINN,Freya,Dolynn,Suyou,Octa,Zetian,Muezza,Hylos,Maybeee,Moskov,Nino,Sora,Yazukee,Guinevere,Hijumee,Valentina,alekk,Gloo,Arfy,Obsidia
+17,7,2026-05-09,14:00,DEWA United,ALTER EGO,2,DEWA United,10.7,23,5,QINN,Freya,Dolynn,Guinevere,Octa,Pharsa,Muezza,Hilda,Maybeee,Harith,Nino,Alice,Yazukee,Suyou,Hijumee,Zhuxin,alekk,Khaleed,Arfy,Granger
+17,7,2026-05-09,14:00,DEWA United,ALTER EGO,3,ALTER EGO,14.0,5,15,QINN,Phoveus,Dolynn,Guinevere,Octa,Pharsa,Muezza,Gloo,Maybeee,Harith,Nino,Alice,Yazukee,Suyou,Hijumee,Luo Yi,alekk,Hilda,Arfy,Claude
+17,7,2026-05-09,17:00,EVOS Esports,RRQ Hoshi,1,EVOS Esports,16.2,15,3,LUKE,Lapu-Lapu,Alberttt,Harley,Pheww,Gord,Kyy,Kalea,Erlan,Claude,SuperDann,Uranus,SuperKenn,Lancelot,Rinz,Valentina,Idok,Gatotkaca,SuperToYy,Harith
+17,7,2026-05-09,17:00,EVOS Esports,RRQ Hoshi,2,EVOS Esports,13.2,13,4,LUKE,Gloo,Alberttt,Leomord,Pheww,Zhuxin,Kyy,Hylos,Erlan,Moskov,SuperDann,Phoveus,SuperKenn,Fanny,Rinz,Yve,Idok,Khaleed,SuperToYy,Bruno
+17,7,2026-05-09,20:00,ONIC Esports,Natus Vincere,1,ONIC Esports,16.8,11,5,Lutpi,Lapu-Lapu,Kairi,Harley,S A N Z,Gord,Kiboy,Gatotkaca,Kelra,Claude,Karss,Terizla,Andoryuuu,Suyou,Jiizee,Kimmy,Aprho,Kalea,Zeonn,Karrie
+17,7,2026-05-09,20:00,ONIC Esports,Natus Vincere,2,ONIC Esports,14.8,11,3,Lutpi,Terizla,Kairi,Suyou,S A N Z,Valentina,Kiboy,Chip,Kelra,Moskov,Karss,Phoveus,Andoryuuu,Nolan,Jiizee,Gord,Aprho,Marcel,Zeonn,Granger
+17,7,2026-05-10,14:00,RRQ Hoshi,Geek Fam ID,1,Geek Fam ID,28.6,17,20,SuperDann,Gloo,SuperKenn,Guinevere,Rinz,Vexana,Idok,Gatotkaca,SuperToYy,Moskov,marceL,Phoveus,Nazara,Suyou,A B O Y,Zetian,Baloyskie,Hylos,KennzyySkie,Claude
+17,7,2026-05-10,14:00,RRQ Hoshi,Geek Fam ID,2,Geek Fam ID,13.6,11,15,SuperDann,Sora,SuperKenn,Suyou,Rinz,Valir,Idok,Hylos,SuperToYy,Granger,marceL,Valentina,Nazara,Fredrinn,Baloyskie,Khaleed,A B O Y,Zhuxin,KennzyySkie,Harith
+17,7,2026-05-10,17:00,Natus Vincere,Bigetron by Vitality,1,Natus Vincere,23.1,14,15,Karss,Terizla,Andoryuuu,Harley,Jiizee,Pharsa,Aprho,Kalea,Zeonn,Claude,Shogun,Arlott,Nnael,Lancelot,Morenooo,Valentina,Finn,Baxia,EMANN,Harith
+17,7,2026-05-10,17:00,Natus Vincere,Bigetron by Vitality,2,Bigetron by Vitality,18.9,9,20,Karss,Minsitthar,Andoryuuu,Suyou,Jiizee,Zhuxin,Aprho,Badang,Zeonn,Claude,Shogun,Phoveus,Nnael,Leomord,Morenooo,Yve,Finn,Khaleed,EMANN,Harith
+17,7,2026-05-10,17:00,Natus Vincere,Bigetron by Vitality,3,Natus Vincere,15.9,11,3,Karss,Freya,Andoryuuu,Leomord,Jiizee,Zetian,Aprho,Badang,Zeonn,Moskov,Shogun,Hilda,Nnael,Suyou,Morenooo,Zhuxin,Finn,Khaleed,EMANN,Harith
+17,7,2026-05-10,20:00,Team Liquid ID,EVOS Esports,1,EVOS Esports,12.8,3,5,Aran,Sora,Kevinn,Leomord,Drichel,Yve,Lyoni,Baxia,Kyouu,Harith,LUKE,Lapu-Lapu,Alberttt,Suyou,Pheww,Zhuxin,Kyy,Hylos,Erlan,Claude
+17,7,2026-05-10,20:00,Team Liquid ID,EVOS Esports,2,EVOS Esports,20.7,4,13,Aran,Badang,Kevinn,Leomord,Drichel,Yve,Lyoni,Gatotkaca,Kyouu,Harith,LUKE,Lapu-Lapu,Alberttt,Suyou,Pheww,Zhuxin,Kyy,Hylos,Erlan,Claude
+17,8,2026-05-15,15:00,Bigetron by Vitality,Geek Fam ID,1,Geek Fam ID,14.9,8,14,Shogun,Sora,Nnael,Leomord,Morenooo,Yve,Finn,Khufra,EMANN,Harith,marceL,Valentina,Nazara,Guinevere,A B O Y,Zhuxin,Baloyskie,Hylos,KennzyySkie,Moskov
+17,8,2026-05-15,15:00,Bigetron by Vitality,Geek Fam ID,2,Geek Fam ID,15.4,11,12,Shogun,Arlott,Morenooo,Yve,Finn,Hylos,EMANN,Claude,Nnael,Yi Sun-shin,marceL,Yu Zhong,Nazara,Suyou,A B O Y,Zhuxin,Baloyskie,Chou,KennzyySkie,Harith
+17,8,2026-05-15,18:00,DEWA United,ONIC Esports,1,ONIC Esports,12.3,7,14,QINN,Alice,Dolynn,Suyou,Octa,Zetian,Muezza,Khaleed,Maybeee,Claude,Lutpi,Phoveus,Kairi,Nolan,S A N Z,Valentina,Kiboy,Marcel,Kelra,Harith
+17,8,2026-05-15,18:00,DEWA United,ONIC Esports,2,ONIC Esports,16.6,5,14,QINN,Terizla,Dolynn,Suyou,Octa,Valir,Muezza,Marcel,Maybeee,Harith,Lutpi,Sora,Kairi,Fredrinn,S A N Z,Zhuxin,Kiboy,Kalea,Kelra,Claude
+17,8,2026-05-16,14:00,EVOS Esports,Natus Vincere,1,Natus Vincere,18.3,5,21,LUKE,Chou,Alberttt,Suyou,Pheww,Zhuxin,Kyy,Hilda,Erlan,Claude,Karss,Terizla,Andoryuuu,Baxia,Jiizee,Gord,Aprho,Kalea,Zeonn,Harith
+17,8,2026-05-16,14:00,EVOS Esports,Natus Vincere,2,Natus Vincere,24.6,11,22,LUKE,Alice,Alberttt,Fanny,Pheww,Zhuxin,Kyy,Gloo,Erlan,Claude,Karss,Paquito,Andoryuuu,Guinevere,Jiizee,Pharsa,Aprho,Kalea,Zeonn,Harith
+17,8,2026-05-16,17:00,Team Liquid ID,RRQ Hoshi,1,Team Liquid ID,16.5,17,11,Aran,Phoveus,Kevinn,Harley,Drichel,Gord,Lyoni,Chou,Kyouu,Claude,Kuroky.,Terizla,SuperKenn,Suyou,Yehezkiel,Pharsa,Idok,Franco,SuperToYy,Karrie
+17,8,2026-05-16,17:00,Team Liquid ID,RRQ Hoshi,2,Team Liquid ID,13.8,18,9,Aran,Sora,Kevinn,Fredrinn,Drichel,Zhuxin,Lyoni,Gloo,Kyouu,Claude,Kuroky.,Terizla,SuperKenn,Harley,Yehezkiel,Gord,Idok,Kalea,SuperToYy,Moskov
+17,8,2026-05-16,20:00,ONIC Esports,ALTER EGO,1,ALTER EGO,20.6,14,18,Lutpi,Sora,Kairi,Harley,S A N Z,Pharsa,Kiboy,Gloo,Kelra,Claude,Nino,Valentina,Yazukee,Yi Sun-shin,Hijumee,Gord,alekk,Hilda,Arfy,Freya
+17,8,2026-05-16,20:00,ONIC Esports,ALTER EGO,2,ONIC Esports,17.7,18,9,Lutpi,Phoveus,Kairi,Leomord,S A N Z,Valentina,Kiboy,Marcel,Kelra,Harith,Nino,Uranus,Yazukee,Suyou,Hijumee,Gord,alekk,Khaleed,Arfy,Karrie
+17,8,2026-05-16,20:00,ONIC Esports,ALTER EGO,3,ONIC Esports,14.3,14,5,Lutpi,Lapu-Lapu,Kairi,Fanny,S A N Z,Lylia,Kiboy,Gatotkaca,Kelra,Harith,Nino,Cici,Yazukee,Leomord,Hijumee,Gord,alekk,Kalea,Arfy,Ruby
+17,8,2026-05-17,14:00,DEWA United,EVOS Esports,1,EVOS Esports,16.9,7,14,QINN,Alice,Dolynn,Guinevere,Octa,Zhuxin,Muezza,Gatotkaca,Maybeee,Claude,LUKE,Sora,Alberttt,Leomord,Pheww,Gord,Kyy,Kalea,Erlan,Harith
+17,8,2026-05-17,14:00,DEWA United,EVOS Esports,2,EVOS Esports,14.5,6,14,QINN,Phoveus,Dolynn,Suyou,Octa,Zhuxin,Muezza,Helcurt,Maybeee,Yi Sun-shin,LUKE,Gloo,Alberttt,Leomord,Pheww,Gord,Kyy,Gatotkaca,Erlan,Harith
+17,8,2026-05-17,17:00,ALTER EGO,Bigetron by Vitality,1,Bigetron by Vitality,13.4,2,11,Nino,Sora,Yazukee,Leomord,Hijumee,Zhuxin,alekk,Marcel,Arfy,Harith,Shogun,Uranus,Nnael,Lancelot,Morenooo,Gord,Finn,Kalea,EMANN,Claude
+17,8,2026-05-17,17:00,ALTER EGO,Bigetron by Vitality,2,Bigetron by Vitality,21.4,13,15,Nino,Yu Zhong,Yazukee,Guinevere,Hijumee,Valentina,alekk,Gloo,Arfy,Harith,Shogun,Uranus,Nnael,Yi Sun-shin,Morenooo,Yve,Finn,Kalea,EMANN,Claude
+17,8,2026-05-17,20:00,RRQ Hoshi,Natus Vincere,1,Natus Vincere,11.2,2,13,Kuroky.,Alice,SuperKenn,Suyou,Yehezkiel,Zhuxin,Idok,Hylos,SuperToYy,Claude,Karss,Phoveus,Andoryuuu,Leomord,Jiizee,Gord,Aprho,Kaja,Zeonn,Harith
+17,8,2026-05-17,20:00,RRQ Hoshi,Natus Vincere,2,Natus Vincere,10.9,3,14,Kuroky.,Phoveus,SuperKenn,Suyou,Yehezkiel,Lylia,Idok,Chou,SuperToYy,Harith,Karss,Terizla,Andoryuuu,Baxia,Jiizee,Zhuxin,Aprho,Hylos,Zeonn,Claude
+17,9,2026-05-22,15:00,Bigetron by Vitality,DEWA United,1,DEWA United,17.9,11,14,Shogun,Lapu-Lapu,Nnael,Harley,Morenooo,Zhuxin,Finn,Gloo,EMANN,Karrie,QINN,Uranus,Dolynn,Leomord,Octa,Lunox,Muezza,Chou,Maybeee,Claude
+17,9,2026-05-22,15:00,Bigetron by Vitality,DEWA United,2,Bigetron by Vitality,12.0,12,3,Shogun,Arlott,Morenooo,Valir,Finn,Gatotkaca,EMANN,Claude,Nnael,Yi Sun-shin,QINN,Paquito,Dolynn,Suyou,Octa,Yve,Muezza,Kalea,Maybeee,Karrie
+17,9,2026-05-22,15:00,Bigetron by Vitality,DEWA United,3,Bigetron by Vitality,14.4,19,10,Shogun,Alice,Nnael,Suyou,Morenooo,Zhuxin,Finn,Kalea,EMANN,Claude,QINN,Phoveus,Dolynn,Leomord,Octa,Zetian,Muezza,Marcel,Maybeee,Harith
+17,9,2026-05-22,18:00,Team Liquid ID,ALTER EGO,1,Team Liquid ID,11.9,21,6,Aran,Terizla,Kevinn,Fredrinn,Drichel,Gord,Lyoni,Marcel,Kyouu,Claude,Nino,Phoveus,Yazukee,Fanny,Cyruz,Zhuxin,alekk,Khaleed,Arfy,Yi Sun-shin
+17,9,2026-05-22,18:00,Team Liquid ID,ALTER EGO,2,Team Liquid ID,12.2,16,7,Aran,Terizla,Kevinn,Fredrinn,Drichel,Gord,Lyoni,Marcel,Kyouu,Claude,Nino,Sora,Yazukee,Fanny,Cyruz,Valentina,alekk,Khaleed,Arfy,Yi Sun-shin
+17,9,2026-05-23,14:00,Geek Fam ID,Team Liquid ID,1,Team Liquid ID,12.7,9,20,marceL,Phoveus,Nazara,Baxia,A B O Y,Gord,Baloyskie,Hylos,KennzyySkie,Clint,Aran,Gloo,Kevinn,Fredrinn,Drichel,Yve,Lyoni,Atlas,Kyouu,Claude
+17,9,2026-05-23,14:00,Geek Fam ID,Team Liquid ID,2,Team Liquid ID,13.6,11,16,marceL,Sora,Nazara,Leomord,A B O Y,Zhuxin,Baloyskie,Marcel,KennzyySkie,Karrie,Aran,Freya,Kevinn,Fredrinn,Drichel,Valentina,Lyoni,Hylos,Kyouu,Claude
+17,9,2026-05-23,17:00,ALTER EGO,RRQ Hoshi,1,ALTER EGO,14.1,14,8,Nino,Sora,Yazukee,Harley,Hijumee,Zhuxin,alekk,Hilda,Arfy,Granger,Kuroky.,Lapu-Lapu,SuperKenn,Baxia,Yehezkiel,Gord,Idok,Kaja,SuperToYy,Claude
+17,9,2026-05-23,17:00,ALTER EGO,RRQ Hoshi,2,RRQ Hoshi,14.6,7,11,Nino,Lapu-Lapu,Yazukee,Harley,Hijumee,Gord,alekk,Hilda,Arfy,Granger,Kuroky.,Phoveus,SuperKenn,Baxia,Yehezkiel,Zhuxin,Idok,Khaleed,SuperToYy,Claude
+17,9,2026-05-23,17:00,ALTER EGO,RRQ Hoshi,3,RRQ Hoshi,13.0,4,12,Nino,Terizla,Yazukee,Yi Sun-shin,Hijumee,Zhuxin,alekk,Gatotkaca,Arfy,Harith,Kuroky.,Phoveus,SuperKenn,Leomord,Yehezkiel,Lunox,Idok,Kalea,SuperToYy,Claude
+17,9,2026-05-23,20:00,Bigetron by Vitality,ONIC Esports,1,Bigetron by Vitality,17.4,15,4,Shogun,Phoveus,Nnael,Fanny,Morenooo,Valentina,Finn,Gatotkaca,EMANN,Claude,Lutpi,Terizla,Kairi,Suyou,S A N Z,Pharsa,Kiboy,Hylos,Kelra,Moskov
+17,9,2026-05-23,20:00,Bigetron by Vitality,ONIC Esports,2,ONIC Esports,15.7,6,15,Shogun,Gloo,Nnael,Suyou,Morenooo,Zhuxin,Finn,Hylos,EMANN,Claude,Lutpi,Paquito,Kairi,Yi Sun-shin,S A N Z,Valentina,Kiboy,Khaleed,Kelra,Freya
+17,9,2026-05-23,20:00,Bigetron by Vitality,ONIC Esports,3,Bigetron by Vitality,20.6,8,3,Shogun,Uranus,Nnael,Fanny,Morenooo,Valir,Finn,Gatotkaca,EMANN,Claude,Lutpi,Paquito,Kairi,Lancelot,S A N Z,Zhuxin,Kiboy,Kalea,Kelra,Moskov
+17,9,2026-05-24,14:00,RRQ Hoshi,DEWA United,1,DEWA United,15.4,4,17,Kuroky.,Lapu-Lapu,SuperKenn,Harley,Yehezkiel,Lylia,Idok,Khaleed,SuperToYy,Karrie,QINN,Valentina,Kayn,Suyou,Octa,Zhuxin,Kesu,Chou,Maybeee,Claude
+17,9,2026-05-24,14:00,RRQ Hoshi,DEWA United,2,RRQ Hoshi,26.1,21,18,Kuroky.,Uranus,SuperKenn,Leomord,Yehezkiel,Valir,Idok,Gloo,SuperToYy,Claude,QINN,Valentina,Kayn,Ling,Octa,Zhuxin,Kesu,Baxia,Maybeee,Harith
+17,9,2026-05-24,14:00,RRQ Hoshi,DEWA United,3,DEWA United,14.2,9,14,Kuroky.,Phoveus,SuperKenn,Leomord,Yehezkiel,Zhuxin,Idok,Gloo,SuperToYy,Karrie,QINN,Valentina,Dolynn,Baxia,Octa,Kadita,Muezza,Kaja,Maybeee,Granger
+17,9,2026-05-24,17:00,ONIC Esports,EVOS Esports,1,ONIC Esports,29.7,15,9,Lutpi,Uranus,Kairi,Suyou,S A N Z,Zhuxin,Kiboy,Gloo,Kelra,Claude,LUKE,Paquito,Alberttt,Harley,Pheww,Valentina,Kyy,Chip,Erlan,Granger
+17,9,2026-05-24,17:00,ONIC Esports,EVOS Esports,2,ONIC Esports,24.1,22,8,Lutpi,Phoveus,Kairi,Leomord,S A N Z,Valentina,Kiboy,Chou,Kelra,Irithel,LUKE,Gloo,Alberttt,Harley,Pheww,Valir,Kyy,Hilda,Erlan,Claude
+17,9,2026-05-24,20:00,Natus Vincere,Geek Fam ID,1,Geek Fam ID,13.9,4,13,Karss,Terizla,Andoryuuu,Barats,Jiizee,Zhuxin,Aprho,Khaleed,Zeonn,Harith,marceL,Lapu-Lapu,Nazara,Guinevere,A B O Y,Kimmy,Baloyskie,Kalea,KennzyySkie,Claude
+17,9,2026-05-24,20:00,Natus Vincere,Geek Fam ID,2,Natus Vincere,13.4,11,3,Karss,Paquito,Andoryuuu,Leomord,Jiizee,Zhuxin,Aprho,Gatotkaca,Zeonn,Harith,marceL,Terizla,Nazara,Suyou,A B O Y,Lylia,Baloyskie,Kalea,KennzyySkie,Claude
+17,9,2026-05-24,20:00,Natus Vincere,Geek Fam ID,3,Geek Fam ID,19.7,5,7,Karss,Terizla,Andoryuuu,Suyou,Jiizee,Gord,Aprho,Badang,Zeonn,Harith,marceL,Yu Zhong,Nazara,Harley,A B O Y,Zhuxin,Baloyskie,Gatotkaca,KennzyySkie,Claude
+18,1,2026-08-14,15:00,EVOS Esports,RRQ Hoshi,1,EVOS Esports,16.9,11,7,Rendyyy,Dyrroth,Alberttt,Paquito,DrianW,Eudora,Muezza,Belerick,Erlan,Melissa,Joshua,Esmeralda,Demonkite,Hirara,Hajirin,Kadita,Said,Tigreal,Arthur,Claude
+18,1,2026-08-14,15:00,EVOS Esports,RRQ Hoshi,2,EVOS Esports,24.7,9,9,Rendyyy,Uranus,Alberttt,Paquito,DrianW,Eudora,Muezza,Rafaela,Erlan,Clint,Joshua,Sora,Demonkite,Fredrinn,Hajirin,Valentina,Said,Mathilda,Arthur,Brody
+18,1,2026-08-14,18:00,Natus Vincere,ALTER EGO,1,ALTER EGO,22.7,16,21,Karss,Barats,Andoryuuu,Hirara,Jiizee,Lylia,Aprho,Valentina,Zeonn,Claude,Nino,Esmeralda,Yazukee,Paquito,Hijumee,Kimmy,alekk,Atlas,Arfy,Moskov
+18,1,2026-08-14,18:00,Natus Vincere,ALTER EGO,2,ALTER EGO,11.4,3,11,Karss,Barats,Andoryuuu,Paquito,Jiizee,Eudora,Aprho,Chou,Zeonn,Brody,Nino,Carmilla,Yazukee,Hirara,Hijumee,Cecilion,alekk,Belerick,Arfy,Melissa
+18,1,2026-08-15,14:00,Team Liquid ID,Geek Fam ID,1,Geek Fam ID,10.8,1,12,Aran,Uranus,Kevinn,Paquito,Drichel,Novaria,Lyoni,Minotaur,Keven,Melissa,MarceL,Freya,Nazara,Nolan,Aboyy,Eudora,AudyTzy,Kaja,KennzySkie,Brody
+18,1,2026-08-15,14:00,Team Liquid ID,Geek Fam ID,2,Team Liquid ID,10.8,17,3,Aran,Barats,Kevinn,Hirara,Drichel,Zhuxin,Lyoni,Carmilla,Keven,Claude,MarceL,Alice,Nazara,Yi Sun-shin,Aboyy,Odette,AudyTzy,Chip,KennzySkie,Masha
+18,1,2026-08-15,14:00,Team Liquid ID,Geek Fam ID,3,Team Liquid ID,12.6,21,5,Aran,Barats,Kevinn,Hirara,Drichel,Selena,Lyoni,Belerick,Keven,Claude,MarceL,Carmilla,Nazara,Yi Sun-shin,Aboyy,Odette,AudyTzy,Chip,KennzySkie,Masha
+18,1,2026-08-15,17:00,DEWA United,RRQ Hoshi,1,RRQ Hoshi,14.0,1,10,QINN,Ruby,Kayn,Paquito,Octa,Rafaela,Itoshi Kesu,Gloo,Maybeee,Brody,Joshua,Uranus,Demonkite,Hirara,Hajirin,Lylia,Said,Minotaur,Arthur,Moskov
+18,1,2026-08-15,17:00,DEWA United,RRQ Hoshi,2,DEWA United,19.7,25,14,QINN,Alice,Kayn,Hirara,Octa,Eudora,Itoshi Kesu,Belerick,Maybeee,Claude,Joshua,Uranus,Demonkite,Paquito,Hajirin,Zhuxin,Said,Gatotkaca,Arthur,Brody
+18,1,2026-08-15,17:00,DEWA United,RRQ Hoshi,3,RRQ Hoshi,22.5,19,15,QINN,Uranus,Kayn,Nolan,Octa,Lunox,Itoshi Kesu,Belerick,Maybeee,Claude,Joshua,Esmeralda,Demonkite,Harley,Hajirin,Eudora,Said,Ruby,Arthur,Moskov
+18,1,2026-08-15,20:00,EVOS Esports,Natus Vincere,1,Natus Vincere,10.9,2,7,Rendyyy,Uranus,Alberttt,Hirara,DrianW,Selena,Muezza,Minotaur,Erlan,Clint,Karss,Esmeralda,Andoryuuu,Paquito,Jiizee,Valentina,Aprho,Belerick,Zeonn,Claude
+18,1,2026-08-15,20:00,EVOS Esports,Natus Vincere,2,EVOS Esports,13.8,12,3,Rendyyy,Barats,Alberttt,Suyou,DrianW,Eudora,Muezza,Rafaela,Erlan,Melissa,Karss,Alice,Andoryuuu,Hirara,Jiizee,Zhuxin,Aprho,Belerick,Zeonn,Miya
+18,1,2026-08-15,20:00,EVOS Esports,Natus Vincere,3,Natus Vincere,20.9,5,14,Rendyyy,Uranus,Alberttt,Nolan,DrianW,Lylia,Muezza,Minotaur,Erlan,Melissa,Karss,Lapu-Lapu,Andoryuuu,Hirara,Jiizee,Novaria,Aprho,Belerick,Zeonn,Claude
+18,1,2026-08-16,14:00,Team Liquid ID,DEWA United,1,Team Liquid ID,14.3,16,6,Aran,Barats,Kevinn,Hirara,Drichel,Zetian,Lyoni,Carmilla,Keven,Moskov,QINN,Esmeralda,Kayn,Nolan,Octa,Lylia,Itoshi Kesu,Belerick,Maybeee,Melissa
+18,1,2026-08-16,14:00,Team Liquid ID,DEWA United,2,Team Liquid ID,11.5,11,3,Aran,Uranus,Kevinn,Paquito,Drichel,Zhuxin,Lyoni,Minotaur,Keven,Melissa,QINN,Arlott,Kayn,Harley,Octa,Lunox,Itoshi Kesu,Chou,Maybeee,Freya
+18,1,2026-08-16,17:00,Bigetron by Vitality,Geek Fam ID,1,Bigetron by Vitality,17.9,16,14,Shogun,Uranus,Nnael,Hayabusa,Morenooo,Novaria,Finn,Mathilda,EMANN,Ixia,MarceL,Barats,Nazara,Ling,Aboyy,Kimmy,AudyTzy,Kaja,KennzySkie,Brody
+18,1,2026-08-16,17:00,Bigetron by Vitality,Geek Fam ID,2,Geek Fam ID,22.3,16,24,Shogun,Barats,Nnael,Paquito,Morenooo,Selena,Finn,Mathilda,EMANN,Chou,MarceL,Alice,Nazara,Hirara,Aboyy,Eudora,AudyTzy,Chip,KennzySkie,Masha
+18,1,2026-08-16,17:00,Bigetron by Vitality,Geek Fam ID,3,Bigetron by Vitality,11.1,14,2,Shogun,Ruby,Nnael,Suyou,Morenooo,Novaria,Finn,Marcel,EMANN,Brody,MarceL,Uranus,Nazara,Harley,Aboyy,Zhuxin,AudyTzy,Mathilda,KennzySkie,Melissa
+18,1,2026-08-16,20:00,ALTER EGO,ONIC Esports,1,ONIC Esports,14.7,4,7,Nino,Dyrroth,Yazukee,Hirara,Hijumee,Zhuxin,alekk,Belerick,Arfy,Brody,Lutpi,Uranus,Kairi,Harley,S A N Z,Rafaela,Kiboy,Gatotkaca,Kelra,Melissa
+18,1,2026-08-16,20:00,ALTER EGO,ONIC Esports,2,ONIC Esports,17.2,4,13,Nino,Alice,Yazukee,Fanny,Hijumee,Novaria,alekk,Marcel,Arfy,Moskov,Lutpi,Ruby,Kairi,Yi Sun-shin,S A N Z,Eudora,Kiboy,Badang,Kelra,Paquito
+18,2,2026-08-21,15:00,Team Liquid ID,Natus Vincere,1,Natus Vincere,25.5,9,15,Aran,Barats,Kevinn,Yi Sun-shin,Drichel,Selena,Lyoni,Minotaur,Keven,Melissa,Karss,Belerick,Andoryuuu,Harley,Jiizee,Novaria,Aprho,Rafaela,Zeonn,Claude
+18,2,2026-08-21,15:00,Team Liquid ID,Natus Vincere,2,Natus Vincere,22.6,9,12,Aran,Barats,Kevinn,Paquito,Drichel,Eudora,Lyoni,Chip,Keven,Claude,Karss,Esmeralda,Andoryuuu,Hirara,Jiizee,Novaria,Aprho,Belerick,Zeonn,Moskov
+18,2,2026-08-21,18:00,Bigetron by Vitality,DEWA United,1,Bigetron by Vitality,11.8,9,3,Shogun,Uranus,Nnael,Nolan,Morenooo,Selena,Finn,Marcel,EMANN,Brody,QINN,Alice,Kayn,Hirara,Octa,Eudora,Itoshi Kesu,Belerick,Maybeee,Claude
+18,2,2026-08-21,18:00,Bigetron by Vitality,DEWA United,2,Bigetron by Vitality,23.5,14,16,Shogun,Uranus,Nnael,Hirara,Morenooo,Valentina,Finn,Mathilda,EMANN,Clint,QINN,Sora,Kayn,Nolan,Octa,Selena,Itoshi Kesu,Minotaur,Maybeee,Brody
+18,2,2026-08-22,14:00,Team Liquid ID,EVOS Esports,1,Team Liquid ID,16.5,12,9,Aran,Uranus,Kevinn,Suyou,Drichel,Lylia,Lyoni,Marcel,Keven,Melissa,Rendyyy,Barats,Alberttt,Hirara,Ryzaa,Selena,Muezza,Mathilda,Erlan,Brody
+18,2,2026-08-22,14:00,Team Liquid ID,EVOS Esports,2,Team Liquid ID,18.9,14,19,Aran,Esmeralda,Kevinn,Fanny,Drichel,Eudora,Lyoni,Hylos,Keven,Melissa,Rendyyy,Uranus,Alberttt,Suyou,Ryzaa,Valentina,Muezza,Marcel,Erlan,Claude
+18,2,2026-08-22,17:00,Natus Vincere,Geek Fam ID,1,Natus Vincere,23.4,16,10,Karss,Belerick,Andoryuuu,Hirara,Jiizee,Lylia,Aprho,Gloo,Zeonn,Claude,MarceL,Barats,Nazara,Paquito,Aboyy,Selena,AudyTzy,Minotaur,KennzySkie,Moskov
+18,2,2026-08-22,17:00,Natus Vincere,Geek Fam ID,2,Geek Fam ID,20.7,8,13,Karss,Esmeralda,Andoryuuu,Hirara,Jiizee,Valentina,Aprho,Belerick,Zeonn,Claude,MarceL,Barats,Nazara,Paquito,Aboyy,Eudora,AudyTzy,Ruby,KennzySkie,Brody
+18,2,2026-08-22,17:00,Natus Vincere,Geek Fam ID,3,Natus Vincere,18.3,11,6,Karss,Uranus,Andoryuuu,Hirara,Jiizee,Pharsa,Aprho,Marcel,Zeonn,Melissa,MarceL,Ruby,Nazara,Paquito,Aboyy,Vexana,AudyTzy,Belerick,KennzySkie,Brody
+18,2,2026-08-22,20:00,ONIC Esports,RRQ Hoshi,1,ONIC Esports,12.8,12,4,Lutpi,Barats,Kairi,Harley,S A N Z,Selena,Kiboy,Badang,Kelra,Freya,Joshua,Esmeralda,Demonkite,Hirara,Hajirin,Kadita,Said,Ruby,Arthur,Melissa
+18,2,2026-08-22,20:00,ONIC Esports,RRQ Hoshi,2,ONIC Esports,30.0,22,8,Lutpi,Terizla,Kairi,Hirara,S A N Z,Novaria,Kiboy,Belerick,Kelra,Clint,Joshua,Barats,Demonkite,Harley,Hajirin,Rafaela,Said,Chip,Arthur,Claude
+18,2,2026-08-23,14:00,DEWA United,ALTER EGO,1,ALTER EGO,10.7,6,15,QINN,Valentina,Kayn,Hirara,Octa,Lunox,Itoshi Kesu,Kaja,Maybeee,Brody,Nino,Uranus,Yazukee,Nolan,Hijumee,Eudora,alekk,Gloo,Arfy,Paquito
+18,2,2026-08-23,14:00,DEWA United,ALTER EGO,2,ALTER EGO,13.5,4,15,QINN,Uranus,Kayn,Hirara,Octa,Novaria,Itoshi Kesu,Khufra,Maybeee,Brody,Nino,Sora,Yazukee,Fanny,Hijumee,Mathilda,alekk,Kalea,Arfy,Melissa
+18,2,2026-08-23,17:00,ONIC Esports,Bigetron by Vitality,1,Bigetron by Vitality,20.5,10,19,Lutpi,Barats,Kairi,Fanny,S A N Z,Selena,Kiboy,Minotaur,Kelra,Claude,Shogun,Belerick,Nnael,Hirara,Morenooo,Lylia,Finn,Mathilda,EMANN,Brody
+18,2,2026-08-23,17:00,ONIC Esports,Bigetron by Vitality,2,ONIC Esports,22.9,11,14,Lutpi,Dyrroth,Kairi,Fanny,S A N Z,Eudora,Kiboy,Atlas,Kelra,Claude,Shogun,Uranus,Nnael,Hirara,Morenooo,Selena,Finn,Gatotkaca,EMANN,Moskov
+18,2,2026-08-23,17:00,ONIC Esports,Bigetron by Vitality,3,Bigetron by Vitality,19.4,7,18,Lutpi,Uranus,Kairi,Hirara,S A N Z,Valentina,Kiboy,Atlas,Kelra,Brody,Shogun,Belerick,Nnael,Fanny,Morenooo,Selena,Finn,Rafaela,EMANN,Claude
+18,2,2026-08-23,20:00,Geek Fam ID,EVOS Esports,1,EVOS Esports,14.4,6,11,MarceL,Uranus,Nazara,Fanny,Aboyy,Eudora,AudyTzy,Marcel,KennzySkie,Claude,Rendyyy,Ruby,Alberttt,Hirara,Ryzaa,Rafaela,Muezza,Belerick,Erlan,Melissa
+18,2,2026-08-23,20:00,Geek Fam ID,EVOS Esports,2,EVOS Esports,12.6,7,15,MarceL,Barats,Nazara,Paquito,Aboyy,Selena,AudyTzy,Badang,KennzySkie,Brody,Rendyyy,Freya,Alberttt,Hanzo,Ryzaa,Rafaela,Muezza,Carmilla,Erlan,Melissa
+18,3,2026-08-28,15:00,Bigetron by Vitality,Natus Vincere,1,Bigetron by Vitality,17.1,8,1,Shogun,Uranus,Nnael,Harley,Morenooo,Novaria,Finn,Belerick,EMANN,Claude,Karss,Ruby,Andoryuuu,Paquito,Jiizee,Pharsa,Aprho,Rafaela,Zeonn,Melissa
+18,3,2026-08-28,15:00,Bigetron by Vitality,Natus Vincere,2,Bigetron by Vitality,13.3,11,5,Shogun,Uranus,Nnael,Suyou,Morenooo,Novaria,Finn,Rafaela,EMANN,Melissa,Karss,Belerick,Andoryuuu,Hirara,Jiizee,Pharsa,Aprho,Chip,Zeonn,Claude
+18,3,2026-08-28,18:00,DEWA United,Geek Fam ID,1,DEWA United,13.3,13,12,QINN,Arlott,Hazle,Hanzo,Octa,Selena,Itoshi Kesu,Belerick,Maybeee,Melissa,MarceL,Terizla,Nazara,Paquito,Aboyy,Eudora,Frenzyy,Kalea,KennzySkie,Brody
+18,3,2026-08-28,18:00,DEWA United,Geek Fam ID,2,DEWA United,10.6,18,1,QINN,Arlott,Hazle,Hirara,Octa,Selena,Itoshi Kesu,Gatotkaca,Maybeee,Moskov,Febriii,Uranus,Nazara,Suyou,Aboyy,Lylia,Frenzyy,Gloo,KennzySkie,Melissa
+18,3,2026-08-29,14:00,Team Liquid ID,ONIC Esports,1,Team Liquid ID,13.2,12,3,Kevinn,Hirara,Aran,Barats,Drichel,Selena,Lyoni,Gloo,Keven,Claude,Lutpi,Belerick,Kairi,Suyou,S A N Z,Lylia,Kiboy,Mathilda,Kelra,Paquito
+18,3,2026-08-29,14:00,Team Liquid ID,ONIC Esports,2,ONIC Esports,17.7,5,21,Aran,Barats,Kevinn,Paquito,Drichel,Selena,Lyoni,Gloo,Keven,Hanabi,Lutpi,Carmilla,Kairi,Hirara,S A N Z,Mathilda,Kiboy,Belerick,Kelra,Moskov
+18,3,2026-08-29,14:00,Team Liquid ID,ONIC Esports,3,Team Liquid ID,21.9,7,12,Aran,Barats,Kevinn,Paquito,Drichel,Selena,Lyoni,Rafaela,Keven,Claude,Lutpi,Uranus,Kairi,Hayabusa,S A N Z,Mathilda,Kiboy,Belerick,Kelra,Brody
+18,3,2026-08-29,17:00,ALTER EGO,EVOS Esports,1,ALTER EGO,26.6,15,9,Nino,Hilda,Yazukee,Hirara,Hijumee,Zhuxin,alekk,Badang,Arfy,Claude,Rendyyy,Belerick,Alberttt,Harley,Ryzaa,Lylia,Muezza,Marcel,Erlan,Moskov
+18,3,2026-08-29,17:00,ALTER EGO,EVOS Esports,2,ALTER EGO,17.4,18,7,Nino,Barats,Yazukee,Yi Sun-shin,Hijumee,Eudora,alekk,Minotaur,Arfy,Brody,Rendyyy,Carmilla,Alberttt,Paquito,Ryzaa,Novaria,Muezza,Belerick,Erlan,Miya
+18,3,2026-08-29,20:00,RRQ Hoshi,Bigetron by Vitality,1,Bigetron by Vitality,10.9,2,16,Joshua,Ruby,Demonkite,Hirara,Hajirin,Eudora,Said,Gatotkaca,Arthur,Moskov,Shogun,Uranus,Nnael,Nolan,Morenooo,Lylia,Finn,Atlas,EMANN,Claude
+18,3,2026-08-29,20:00,RRQ Hoshi,Bigetron by Vitality,2,RRQ Hoshi,10.5,12,1,Joshua,Uranus,Demonkite,Hirara,Hajirin,Eudora,Said,Gloo,Arthur,Moskov,Shogun,Hylos,Nnael,Harley,Morenooo,Novaria,Finn,Marcel,EMANN,Claude
+18,3,2026-08-29,20:00,RRQ Hoshi,Bigetron by Vitality,3,Bigetron by Vitality,18.5,2,23,Joshua,Barats,Demonkite,Paquito,Hajirin,Valentina,Said,Rafaela,Arthur,Brody,Shogun,Atlas,Nnael,Hirara,Morenooo,Lylia,Finn,Mathilda,EMANN,Miya
+18,3,2026-08-30,14:00,Natus Vincere,ONIC Esports,1,Natus Vincere,24.2,13,6,Karss,Sora,Joshuaa,Nolan,Jiizee,Selena,Aprho,Marcel,Zeonn,Miya,Lutpi,Uranus,Kairi,Hirara,S A N Z,Eudora,Kiboy,Badang,Kelra,Claude
+18,3,2026-08-30,14:00,Natus Vincere,ONIC Esports,2,Natus Vincere,14.1,10,2,Karss,Uranus,Joshuaa,Hirara,Jiizee,Pharsa,Aprho,Belerick,Zeonn,Claude,Lutpi,Barats,Kairi,Harley,S A N Z,Eudora,Kiboy,Gloo,Kelra,Melissa
+18,3,2026-08-30,17:00,Geek Fam ID,RRQ Hoshi,1,RRQ Hoshi,11.8,1,11,MarceL,Uranus,Nazara,Fanny,Aboyy,Selena,Frenzyy,Badang,KennzySkie,Clint,Joshua,Esmeralda,Demonkite,Hirara,Hajirin,Rafaela,Said,Hylos,Arthur,Brody
+18,3,2026-08-30,17:00,Geek Fam ID,RRQ Hoshi,2,RRQ Hoshi,27.6,13,11,MarceL,Uranus,Nazara,Hirara,Aboyy,Zetian,Frenzyy,Belerick,KennzySkie,Moskov,Joshua,Barats,Demonkite,Paquito,Hajirin,Eudora,Said,Gloo,Arthur,Melissa
+18,3,2026-08-30,20:00,Team Liquid ID,ALTER EGO,1,ALTER EGO,13.4,5,14,Aran,Carmilla,Kevinn,Hirara,Drichel,Selena,Lyoni,Belerick,Keven,Claude,Nino,Barats,Yazukee,Nolan,Hijumee,Rafaela,alekk,Gloo,Arfy,Paquito
+18,3,2026-08-30,20:00,Team Liquid ID,ALTER EGO,2,Team Liquid ID,13.1,10,4,Aran,Freya,Kevinn,Hirara,Drichel,Zetian,Lyoni,Belerick,Keven,Claude,Nino,Phoveus,Yazukee,Harley,Hijumee,Eudora,alekk,Mathilda,Arfy,Melissa
+18,3,2026-08-30,20:00,Team Liquid ID,ALTER EGO,3,Team Liquid ID,11.9,17,3,Aran,Paquito,Kevinn,Hirara,Drichel,Eudora,Lyoni,Hylos,Keven,Moskov,Nino,Uranus,Yazukee,Fanny,Hijumee,Luo Yi,alekk,Minotaur,Arfy,Melissa
+18,4,2026-09-04,15:00,Natus Vincere,DEWA United,1,Natus Vincere,14.4,10,3,Karss,Atlas,Joshuaa,Paquito,Jiizee,Valentina,Aprho,Mathilda,Zeonn,Melissa,QINN,Belerick,Hazle,Hirara,Octa,Angela,Itoshi Kesu,Gatotkaca,Maybeee,Claude
+18,4,2026-09-04,15:00,Natus Vincere,DEWA United,2,Natus Vincere,15.3,14,4,Karss,Atlas,Joshuaa,Hirara,Jiizee,Eudora,Aprho,Mathilda,Zeonn,Moskov,QINN,Valentina,Hazle,Paquito,Octa,Selena,Itoshi Kesu,Belerick,Maybeee,Claude
+18,4,2026-09-04,18:00,Team Liquid ID,RRQ Hoshi,1,Team Liquid ID,13.8,14,2,Aran,Atlas,Kevinn,Paquito,Drichel,Zetian,Lyoni,Belerick,Keven,Claude,Joshua,Uranus,Demonkite,Suyou,Hajirin,Faramis,Said,Gloo,Arthur,Karrie
+18,4,2026-09-04,18:00,Team Liquid ID,RRQ Hoshi,2,Team Liquid ID,12.2,15,4,Aran,Barats,Kevinn,Paquito,Drichel,Novaria,Lyoni,Gloo,Keven,Miya,Joshua,Belerick,Demonkite,Suyou,Hajirin,Lylia,Said,Chip,Arthur,Melissa
+18,4,2026-09-05,14:00,DEWA United,ONIC Esports,1,DEWA United,13.8,13,0,QINN,Sora,Hazle,Yi Sun-shin,Octa,Eudora,Shanee,Minotaur,Maybeee,Paquito,Lutpi,Belerick,Kairi,Hirara,S A N Z,Selena,Kiboy,Rafaela,Kelra,Clint
+18,4,2026-09-05,14:00,DEWA United,ONIC Esports,2,ONIC Esports,18.6,6,21,QINN,Sora,Hazle,Yi Sun-shin,Octa,Valentina,Shanee,Belerick,Maybeee,Miya,Lutpi,Alice,Kairi,Fanny,S A N Z,Zhuxin,Kiboy,Atlas,Kelra,Claude
+18,4,2026-09-05,14:00,DEWA United,ONIC Esports,3,DEWA United,13.1,11,1,QINN,Ruby,Hazle,Nolan,Octa,Eudora,Shanee,Belerick,Maybeee,Melissa,Lutpi,Uranus,Kairi,Hirara,S A N Z,Novaria,Kiboy,Hylos,Kelra,Claude
+18,4,2026-09-05,17:00,EVOS Esports,Bigetron by Vitality,1,Bigetron by Vitality,16.6,4,9,Rendyyy,Esmeralda,Alberttt,Hirara,Ryzaa,Eudora,Muezza,Gloo,Erlan,Brody,Shogun,Uranus,Nnael,Yi Sun-shin,Morenooo,Lylia,Finn,Belerick,EMANN,Moskov
+18,4,2026-09-05,17:00,EVOS Esports,Bigetron by Vitality,2,EVOS Esports,31.1,20,23,Rendyyy,Barats,Alberttt,Nolan,Ryzaa,Valentina,Muezza,Hylos,Erlan,Melissa,Shogun,Atlas,Nnael,Hirara,Morenooo,Selena,Finn,Rafaela,EMANN,Claude
+18,4,2026-09-05,17:00,EVOS Esports,Bigetron by Vitality,3,EVOS Esports,15.6,17,13,Rendyyy,Gloo,Alberttt,Paquito,Ryzaa,Lylia,Muezza,Hylos,Erlan,Obsidia,Shogun,Belerick,Nnael,Fanny,Morenooo,Selena,Finn,Chou,EMANN,Moskov
+18,4,2026-09-05,20:00,ALTER EGO,Geek Fam ID,1,ALTER EGO,16.4,21,3,Nino,Barats,Yazukee,Hirara,Hijumee,Cecilion,alekk,Carmilla,Arfy,Paquito,MarceL,Belerick,MAYKIDSS,Hanzo,Aboyy,Zhuxin,Frenzyy,Rafaela,KennzySkie,Melissa
+18,4,2026-09-05,20:00,ALTER EGO,Geek Fam ID,2,ALTER EGO,24.2,21,23,Nino,Uranus,Yazukee,Hirara,Hijumee,Rafaela,alekk,Hylos,Arfy,Obsidia,MarceL,Sora,MAYKIDSS,Yi Sun-shin,Aboyy,Kimmy,Frenzyy,Atlas,KennzySkie,Masha
+18,4,2026-09-06,14:00,RRQ Hoshi,Natus Vincere,1,Natus Vincere,13.9,1,13,Joshua,Barats,Demonkite,Hirara,Clayyy,Pharsa,Said,Khaleed,Arthur,Brody,Karss,Uranus,Joshuaa,Paquito,Jiizee,Lylia,Aprho,Belerick,Zeonn,Miya
+18,4,2026-09-06,14:00,RRQ Hoshi,Natus Vincere,2,Natus Vincere,22.3,8,14,Joshua,Esmeralda,Demonkite,Paquito,Clayyy,Eudora,Said,Ruby,Arthur,Melissa,Karss,Uranus,Joshuaa,Hirara,Jiizee,Novaria,Aprho,Gatotkaca,Zeonn,Moskov
+18,4,2026-09-06,17:00,ONIC Esports,EVOS Esports,1,ONIC Esports,24.8,15,9,Lutpi,Barats,Kairi,Hirara,S A N Z,Rafaela,Kiboy,Chou,Kelra,Moskov,Rendyyy,Uranus,Alberttt,Suyou,Ryzaa,Lylia,Muezza,Belerick,Erlan,Obsidia
+18,4,2026-09-06,17:00,ONIC Esports,EVOS Esports,2,ONIC Esports,13.7,11,1,Lutpi,Alice,Kairi,Harley,S A N Z,Eudora,Kiboy,Belerick,Kelra,Brody,Rendyyy,Uranus,Alberttt,Paquito,Ryzaa,Zhuxin,Muezza,Gloo,Erlan,Miya
+18,4,2026-09-06,20:00,Bigetron by Vitality,ALTER EGO,1,ALTER EGO,11.3,5,18,Shogun,Atlas,Nnael,Nolan,Morenooo,Eudora,Finn,Belerick,EMANN,Obsidia,Nino,Uranus,Yazukee,Hirara,Hijumee,Selena,alekk,Hylos,Arfy,Miya
+18,4,2026-09-06,20:00,Bigetron by Vitality,ALTER EGO,2,ALTER EGO,10.9,3,13,Shogun,Esmeralda,Nnael,Paquito,Morenooo,Lylia,Finn,Belerick,EMANN,Claude,Nino,Atlas,Yazukee,Hirara,Hijumee,Selena,alekk,Badang,Arfy,Miya
+18,5,2026-09-11,18:00,Geek Fam ID,ONIC Esports,1,Geek Fam ID,13.7,9,4,Febriii,Alice,Maykidss,Hirara,Aboyy,Kimmy,Frenzyy,Belerick,KennzySkie,Obsidia,Lutpi,Dyrroth,Kairi,Paquito,SSAMUEL,Rafaela,Kiboy,Atlas,Kelra,Claude
+18,5,2026-09-11,18:00,Geek Fam ID,ONIC Esports,2,ONIC Esports,16.7,3,17,Febriii,Phoveus,Maykidss,Yi Sun-shin,Aboyy,Kimmy,Frenzyy,Belerick,KennzySkie,Minsitthar,Lutpi,Esmeralda,Kairi,Fanny,SSAMUEL,Lylia,Kiboy,Marcel,Kelra,Claude
+18,5,2026-09-11,18:00,Geek Fam ID,ONIC Esports,3,Geek Fam ID,14.1,17,2,Febriii,Belerick,Maykidss,Hirara,Aboyy,Kimmy,Frenzyy,Chou,KennzySkie,Obsidia,Lutpi,Atlas,Kairi,Nolan,SSAMUEL,Lylia,Kiboy,Gatotkaca,Kelra,Moskov
+18,5,2026-09-12,14:00,Team Liquid ID,Bigetron by Vitality,1,Team Liquid ID,12.8,9,8,Aran,Minotaur,Kevinn,Paquito,Drichel,Zetian,Lyoni,Gloo,Keven,Melissa,Shogun,Barats,Nnael,Guinevere,Morenooo,Selena,Finn,Carmilla,EMANN,Clint
+18,5,2026-09-12,14:00,Team Liquid ID,Bigetron by Vitality,2,Team Liquid ID,19.1,16,11,Aran,Minotaur,Kevinn,Paquito,Drichel,Rafaela,Lyoni,Carmilla,Keven,Miya,Shogun,Hylos,Nnael,Hirara,Morenooo,Selena,Finn,Gloo,EMANN,Granger
+18,5,2026-09-12,17:00,ALTER EGO,RRQ Hoshi,1,ALTER EGO,19.3,28,11,Nino,Atlas,Yazukee,Nolan,Hijumee,Eudora,alekk,Gloo,Arfy,Obsidia,Joshua,Paquito,Demonkite,Hirara,Clayyy,Angela,Excellent99,Belerick,Arthur,Miya
+18,5,2026-09-12,17:00,ALTER EGO,RRQ Hoshi,2,ALTER EGO,11.5,19,4,Nino,Esmeralda,Yazukee,Hirara,Hijumee,Valentina,alekk,Atlas,Arfy,Miya,Joshua,Uranus,Demonkite,Yi Sun-shin,Clayyy,Rafaela,Excellent99,Gatotkaca,Arthur,Paquito
+18,5,2026-09-12,20:00,Natus Vincere,EVOS Esports,1,Natus Vincere,23.4,18,10,Karss,Minotaur,Joshuaa,Hirara,Jiizee,Selena,Aprho,Gatotkaca,Zeonn,Miya,Vell,Barats,Alberttt,Paquito,Ryzaa,Lylia,Muezza,Belerick,Erlan,Obsidia
+18,5,2026-09-12,20:00,Natus Vincere,EVOS Esports,2,Natus Vincere,20.1,12,1,Karss,Dyrroth,Joshuaa,Paquito,Jiizee,Selena,Aprho,Gatotkaca,Zeonn,Obsidia,Vell,Esmeralda,Alberttt,Hirara,Ryzaa,Cecilion,Muezza,Carmilla,Erlan,Moskov
+18,5,2026-09-13,14:00,Geek Fam ID,Team Liquid ID,1,Team Liquid ID,15.4,5,12,Febriii,Alice,Maykidss,Hirara,Aboyy,Novaria,Frenzyy,Gloo,KennzySkie,Obsidia,Aran,Minotaur,Kevinn,Paquito,Drichel,Rafaela,Lyoni,Carmilla,Keven,Claude
+18,5,2026-09-13,14:00,Geek Fam ID,Team Liquid ID,2,Team Liquid ID,13.3,5,14,MarceL,Yu Zhong,Maykidss,Hanzo,Aboyy,Eudora,Frenzyy,Belerick,KennzySkie,Claude,Kevinn,Paquito,Aran,Minotaur,Drichel,Selena,Lyoni,Carmilla,Keven,Miya
+18,5,2026-09-13,17:00,ONIC Esports,ALTER EGO,1,ALTER EGO,16.3,6,12,Lutpi,Carmilla,Kairi,Suyou,SSAMUEL,Rafaela,Kiboy,Belerick,Kelra,Melissa,Nino,Barats,Yazukee,Nolan,Hijumee,Eudora,alekk,Gloo,Arfy,Paquito
+18,5,2026-09-13,17:00,ONIC Esports,ALTER EGO,2,ALTER EGO,27.1,26,28,Lutpi,Esmeralda,Kairi,Harley,SSAMUEL,Eudora,Kiboy,Atlas,Kelra,Melissa,Nino,Hilda,Yazukee,Hirara,Hijumee,Valentina,alekk,Badang,Arfy,Obsidia
+18,6,2026-09-18,14:00,ONIC Esports,Geek Fam ID,1,Geek Fam ID,11.1,3,13,Lutpi,Barats,Kairi,Paquito,Killuaa,Selena,Kiboy,Badang,Kelra,Moskov,MarceL,Belerick,Maykidss,Suyou,Aboyy,Cecilion,Frenzyy,Carmilla,KennzySkie,Obsidia
+18,6,2026-09-18,14:00,ONIC Esports,Geek Fam ID,2,Geek Fam ID,12.4,2,20,Lutpi,Belerick,Kairi,Paquito,Killuaa,Eudora,Kiboy,Chou,Kelra,Claude,MarceL,Terizla,Maykidss,Guinevere,Aboyy,Cecilion,Frenzyy,Carmilla,KennzySkie,Obsidia
+18,6,2026-09-18,17:00,DEWA United,EVOS Esports,1,EVOS Esports,13.9,4,15,QINN,Kalea,Hazle,Hirara,Octa,Pharsa,Shanee,Carmilla,Maybeee,Obsidia,Vell,Minotaur,Rendyyy,Paquito,Ryzaa,Eudora,EgaTzy,Gatotkaca,Erlan,Bruno
+18,6,2026-09-18,17:00,DEWA United,EVOS Esports,2,EVOS Esports,16.9,8,19,QINN,Cici,Hazle,Nolan,Octa,Kimmy,Shanee,Gatotkaca,Maybeee,Paquito,Vell,Minotaur,Rendyyy,Guinevere,Ryzaa,Zhuxin,EgaTzy,Chou,Erlan,Obsidia
+18,6,2026-09-18,20:00,RRQ Hoshi,DEWA United,1,DEWA United,11.9,8,15,Joshua,Sora,Faviannn,Hirara,Hajirin,Selena,Said,Belerick,Habil,Bruno,QINN,Aulus,Hazle,Paquito,Octa,Zhuxin,Shanee,Carmilla,Maybeee,Obsidia
+18,6,2026-09-18,20:00,RRQ Hoshi,DEWA United,2,RRQ Hoshi,20.9,14,8,Joshua,Freya,Faviannn,Fredrinn,Hajirin,Rafaela,Said,Belerick,Habil,Miya,QINN,Cici,Hazle,Paquito,Octa,Eudora,Shanee,Hylos,Maybeee,Obsidia
+18,6,2026-09-18,20:00,RRQ Hoshi,DEWA United,3,DEWA United,22.2,10,15,Joshua,Uranus,Faviannn,Paquito,Hajirin,Eudora,Said,Minotaur,Habil,Brody,QINN,Aulus,Hazle,Fanny,Octa,Zetian,Shanee,Belerick,Maybeee,Claude
+18,6,2026-09-19,14:00,Geek Fam ID,Natus Vincere,1,Natus Vincere,13.6,5,17,MarceL,Phoveus,Maykidss,Hirara,Aboyy,Valentina,Frenzyy,Gatotkaca,KennzySkie,Obsidia,Karss,Atlas,Joshuaa,Paquito,Jiizee,Kagura,Aprho,Gloo,Zeonn,Miya
+18,6,2026-09-19,14:00,Geek Fam ID,Natus Vincere,2,Natus Vincere,24.9,11,16,MarceL,Cici,Maykidss,Hirara,Aboyy,Zhuxin,Frenzyy,Gatotkaca,KennzySkie,Miya,Karss,Arlott,Joshuaa,Nolan,Jiizee,Selena,Aprho,Marcel,Zeonn,Moskov
+18,6,2026-09-19,17:00,RRQ Hoshi,ALTER EGO,1,RRQ Hoshi,15.4,13,4,Joshua,Atlas,Faviannn,Alpha,Hajirin,Zetian,Said,Rafaela,Habil,Obsidia,Nino,Esmeralda,Yazukee,Suyou,Hijumee,Valentina,alekk,Marcel,Arfy,Miya
+18,6,2026-09-19,17:00,RRQ Hoshi,ALTER EGO,2,ALTER EGO,11.3,5,20,Joshua,Edith,Faviannn,Hirara,Hajirin,Lylia,Said,Carmilla,Habil,Obsidia,Nino,Uranus,Yazukee,Paquito,Hijumee,Eudora,alekk,Gloo,Arfy,Moskov
+18,6,2026-09-19,17:00,RRQ Hoshi,ALTER EGO,3,ALTER EGO,16.8,5,15,Joshua,Arlott,Faviannn,Fredrinn,Hajirin,Zetian,Said,Atlas,Habil,Miya,Nino,Uranus,Yazukee,Nolan,Hijumee,Rafaela,alekk,Gloo,Arfy,Hanabi
+18,6,2026-09-19,20:00,Bigetron by Vitality,Team Liquid ID,1,Team Liquid ID,12.5,1,19,Shogun,Carmilla,Nnael,Paquito,Morenooo,Rafaela,Finn,Kalea,EMANN,Brody,Aran,Belerick,Kevinn,Hirara,Drichel,Zhuxin,Lyoni,Gatotkaca,Keven,Claude
+18,6,2026-09-19,20:00,Bigetron by Vitality,Team Liquid ID,2,Team Liquid ID,10.1,2,17,Shogun,Kalea,Nnael,Paquito,Morenooo,Selena,Finn,Minotaur,EMANN,Cici,Aran,Belerick,Kevinn,Hirara,Drichel,Zetian,Lyoni,Gatotkaca,Keven,Miya
+18,6,2026-09-20,14:00,ALTER EGO,DEWA United,1,DEWA United,18.1,12,19,Nino,Barats,Yazukee,Harley,Hijumee,Selena,alekk,Gloo,Arfy,Karrie,QINN,Aulus,Hazle,Saber,Octa,Vexana,Shanee,Minotaur,Maybeee,Obsidia
+18,6,2026-09-20,14:00,ALTER EGO,DEWA United,2,DEWA United,14.5,12,17,Nino,Freya,Yazukee,Harley,Hijumee,Rafaela,alekk,Hylos,Arfy,Miya,QINN,Lukas,Hazle,Saber,Octa,Eudora,Shanee,Minotaur,Maybeee,Obsidia
+18,6,2026-09-20,17:00,Bigetron by Vitality,ONIC Esports,1,ONIC Esports,20.2,13,20,Shogun,Barats,Nnael,Hayabusa,Morenooo,Valentina,Finn,Minotaur,EMANN,Obsidia,Lutpi,Alice,Kairi,Nolan,Killuaa,Cecilion,Kiboy,Carmilla,Kelra,Miya
+18,6,2026-09-20,17:00,Bigetron by Vitality,ONIC Esports,2,ONIC Esports,16.7,3,16,Shogun,Lukas,Nnael,Nolan,Morenooo,Novaria,Finn,Minotaur,EMANN,Moskov,Lutpi,Sora,Kairi,Yi Sun-shin,Killuaa,Cecilion,Kiboy,Carmilla,Kelra,Obsidia
+18,6,2026-09-20,20:00,EVOS Esports,Team Liquid ID,1,Team Liquid ID,21.1,8,13,Vell,Badang,Rendyyy,Harley,Ryzaa,Kimmy,EgaTzy,Hylos,Erlan,Freya,Aran,Minotaur,Kevinn,Paquito,Drichel,Zhuxin,Lyoni,Belerick,Keven,Claude
+18,6,2026-09-20,20:00,EVOS Esports,Team Liquid ID,2,EVOS Esports,22.1,18,14,Vell,Aulus,Rendyyy,Lukas,Ryzaa,Valentina,EgaTzy,Carmilla,Erlan,Moskov,Aran,Minotaur,Kevinn,Nolan,Drichel,Novaria,Lyoni,Atlas,Keven,Claude
+18,6,2026-09-20,20:00,EVOS Esports,Team Liquid ID,3,EVOS Esports,13.8,16,6,Vell,Hilda,Rendyyy,Alice,Ryzaa,Cecilion,EgaTzy,Carmilla,Erlan,Obsidia,Aran,Minotaur,Kevinn,Harley,Drichel,Valentina,Lyoni,Belerick,Keven,Claude
+18,7,2026-10-02,15:00,Geek Fam ID,Bigetron by Vitality,1,Bigetron by Vitality,17.4,13,17,MarceL,Arlott,Maykidss,Alice,Aboyy,Kimmy,Frenzyy,Minotaur,KennzySkie,Freya,Shogun,Lukas,Nnael,Aulus,Morenooo,Zhuxin,Finn,Gloo,EMANN,Cici
+18,7,2026-10-02,15:00,Geek Fam ID,Bigetron by Vitality,2,Geek Fam ID,16.5,17,14,MarceL,Arlott,Maykidss,Aulus,Aboyy,Faramis,Frenzyy,Minotaur,KennzySkie,Obsidia,Shogun,Alice,Nnael,Hirara,Morenooo,Angela,Finn,Gloo,EMANN,Lesley
+18,7,2026-10-02,15:00,Geek Fam ID,Bigetron by Vitality,3,Bigetron by Vitality,15.1,5,14,MarceL,Freya,Maykidss,Aulus,Aboyy,Lylia,Frenzyy,Belerick,KennzySkie,Obsidia,Shogun,Lukas,Nnael,Hirara,Morenooo,Selena,Finn,Mathilda,EMANN,Claude
+18,7,2026-10-02,18:00,DEWA United,Team Liquid ID,1,Team Liquid ID,10.2,1,14,QINN,Alpha,Hazle,Yi Sun-shin,Octa,Zhuxin,Shanee,Minotaur,Maybeee,Cici,Aran,Atlas,Kevinn,Nolan,Drichel,Yve,Lyoni,Carmilla,Keven,Miya
+18,7,2026-10-02,18:00,DEWA United,Team Liquid ID,2,DEWA United,15.3,14,5,QINN,Alpha,Hazle,Lukas,Octa,Valentina,Shanee,Mathilda,Maybeee,Claude,Aran,Cici,Kevinn,Alice,Drichel,Zhuxin,Lyoni,Carmilla,Keven,Moskov
+18,7,2026-10-02,18:00,DEWA United,Team Liquid ID,3,DEWA United,14.2,14,3,QINN,Alice,Hazle,Fanny,Octa,Selena,Shanee,Carmilla,Maybeee,Claude,Aran,Atlas,Kevinn,Nolan,Drichel,Valentina,Lyoni,Marcel,Keven,Obsidia
+18,7,2026-10-03,14:00,ALTER EGO,Natus Vincere,1,Natus Vincere,15.4,10,21,Nino,Arlott,Yazukee,Hirara,Hijumee,Selena,alekk,Atlas,Arfy,Harith,Karss,Phoveus,Joshuaa,Nolan,Jiizee,Valentina,Aprho,Minotaur,Zeonn,Miya
+18,7,2026-10-03,14:00,ALTER EGO,Natus Vincere,2,ALTER EGO,17.4,10,14,Nino,Aulus,Yazukee,Hayabusa,Hijumee,Yve,alekk,Badang,Arfy,Claude,Karss,Cici,Joshuaa,Leomord,Jiizee,Zhuxin,Aprho,Masha,Zeonn,Moskov
+18,7,2026-10-03,14:00,ALTER EGO,Natus Vincere,3,Natus Vincere,11.4,6,15,Nino,Freya,Yazukee,Yi Sun-shin,Hijumee,Yve,alekk,Masha,Arfy,Claude,Joshuaa,Aulus,Karss,Esmeralda,Jiizee,Zhuxin,Aprho,Khaleed,Zeonn,Cici
+18,7,2026-10-03,17:00,Bigetron by Vitality,RRQ Hoshi,1,Bigetron by Vitality,19.4,27,15,Shogun,Esmeralda,Nnael,Aulus,Morenooo,Eudora,Finn,Minotaur,EMANN,Chou,Joshua,Dyrroth,Faviannn,Paquito,Hajirin,Lunox,Said,Rafaela,Arthur,Freya
+18,7,2026-10-03,17:00,Bigetron by Vitality,RRQ Hoshi,2,RRQ Hoshi,22.1,21,16,Shogun,Freya,Nnael,Fanny,Morenooo,Selena,Finn,Minotaur,EMANN,Chou,Joshua,Phoveus,Faviannn,Paquito,Hajirin,Rafaela,Said,Badang,Arthur,Aulus
+18,7,2026-10-03,17:00,Bigetron by Vitality,RRQ Hoshi,3,Bigetron by Vitality,16.7,12,8,Shogun,Lukas,Nnael,Aulus,Morenooo,Valentina,Finn,Gloo,EMANN,Obsidia,Joshua,Phoveus,Faviannn,Nolan,Hajirin,Kimmy,Said,Minotaur,Arthur,Paquito
+18,7,2026-10-03,20:00,Geek Fam ID,DEWA United,1,Geek Fam ID,25.9,25,18,MarceL,Barats,Maykidss,Fanny,Aboyy,Zhuxin,Frenzyy,Belerick,KennzySkie,Claude,QINN,Alpha,Hazle,Alice,Octa,Kimmy,Shanee,Gloo,Maybeee,Aulus
+18,7,2026-10-03,20:00,Geek Fam ID,DEWA United,2,DEWA United,16.3,11,22,MarceL,Uranus,Maykidss,Nolan,Aboyy,Zhuxin,Frenzyy,Gatotkaca,KennzySkie,Cici,QINN,Alice,Hazle,Aulus,Octa,Zetian,Shanee,Hylos,Maybeee,Claude
+18,7,2026-10-03,20:00,Geek Fam ID,DEWA United,3,Geek Fam ID,14.3,10,2,MarceL,Terizla,Maykidss,Nolan,Aboyy,Zhuxin,Frenzyy,Atlas,KennzySkie,Miya,QINN,Aulus,Hazle,Hayabusa,Octa,Zetian,Shanee,Belerick,Maybeee,Claude
+18,7,2026-10-04,14:00,ALTER EGO,Team Liquid ID,1,Team Liquid ID,19.1,7,20,Nino,Atlas,Yazukee,Alpha,Hijumee,Zhuxin,alekk,Rafaela,Arfy,Moskov,Aran,Masha,Kevinn,Nolan,Drichel,Zetian,Lyoni,Belerick,Keven,Claude
+18,7,2026-10-04,14:00,ALTER EGO,Team Liquid ID,2,Team Liquid ID,13.4,4,12,Nino,Badang,Yazukee,Suyou,Hijumee,Zhuxin,alekk,Atlas,Arfy,Obsidia,Aran,Masha,Kevinn,Nolan,Drichel,Zetian,Lyoni,Gloo,Keven,Claude
+18,7,2026-10-04,17:00,RRQ Hoshi,EVOS Esports,1,RRQ Hoshi,14.7,8,10,Joshua,Freya,Faviannn,Leomord,Hajirin,Kimmy,Said,Rafaela,Arthur,Aulus,Vell,Cici,Alberttt,Paquito,Ryzaa,Valentina,EgaTzy,Minotaur,Erlan,Obsidia
+18,7,2026-10-04,17:00,RRQ Hoshi,EVOS Esports,2,EVOS Esports,14.6,5,17,Joshua,Aulus,Faviannn,Fanny,Hajirin,Zetian,Said,Minotaur,Arthur,Paquito,Vell,Sora,Alberttt,Alpha,Ryzaa,Cecilion,EgaTzy,Carmilla,Erlan,Obsidia
+18,7,2026-10-04,17:00,RRQ Hoshi,EVOS Esports,3,RRQ Hoshi,18.2,11,4,Joshua,Lukas,Faviannn,Nolan,Hajirin,Zetian,Said,Mathilda,Arthur,Aulus,Vell,Sora,Alberttt,Paquito,Ryzaa,Zhuxin,EgaTzy,Minotaur,Erlan,Freya
+18,7,2026-10-04,20:00,ONIC Esports,Natus Vincere,1,ONIC Esports,17.1,12,1,Lutpi,Sora,Kairi,Aulus,Killuaa,Valentina,Kiboy,Atlas,Kelra,Lukas,Karss,Freya,Joshuaa,Paquito,Jiizee,Novaria,Aprho,Masha,Zeonn,Cici
+18,7,2026-10-04,20:00,ONIC Esports,Natus Vincere,2,Natus Vincere,14.8,5,13,Lutpi,Dyrroth,Kairi,Hirara,Killuaa,Zhuxin,Kiboy,Minotaur,Kelra,Lukas,Karss,Uranus,Joshuaa,Aulus,Jiizee,Kimmy,Aprho,Marcel,Zeonn,Cici
+18,7,2026-10-04,20:00,ONIC Esports,Natus Vincere,3,ONIC Esports,14.3,15,6,Lutpi,Phoveus,Kairi,Hirara,Killuaa,Kimmy,Kiboy,Gloo,Kelra,Obsidia,Karss,Uranus,Joshuaa,Nolan,Jiizee,Valentina,Aprho,Minotaur,Zeonn,Miya
+18,8,2026-10-08,14:00,EVOS Esports,DEWA United,1,DEWA United,10.9,5,13,Rendyyy,Phoveus,Alberttt,Nolan,Ryzaa,Valir,EgaTzy,Masha,Erlan,Obsidia,QINN,Lukas,Hazle,Aulus,Octa,Valentina,Shanee,Minotaur,Maybeee,Hanabi
+18,8,2026-10-08,14:00,EVOS Esports,DEWA United,2,EVOS Esports,15.7,17,4,Rendyyy,Cici,Alberttt,Nolan,Ryzaa,Selena,Muezza,Gatotkaca,Erlan,Freya,QINN,Alice,Hazle,Aulus,Octa,Eudora,Shanee,Mathilda,Maybeee,Hanabi
+18,8,2026-10-08,14:00,EVOS Esports,DEWA United,3,EVOS Esports,11.0,15,3,Rendyyy,Alice,Alberttt,Alpha,Ryzaa,Lylia,Muezza,Masha,Erlan,Cici,QINN,Sora,Hazle,Aulus,Octa,Valentina,Shanee,Mathilda,Maybeee,Freya
+18,8,2026-10-08,17:00,ALTER EGO,Bigetron by Vitality,1,ALTER EGO,19.4,14,19,Nino,Freya,Yazukee,Hirara,Hijumee,Kimmy,alekk,Estes,Arfy,Paquito,Shogun,Lukas,Nnael,Aulus,Morenooo,Valentina,Finn,Atlas,EMANN,Chou
+18,8,2026-10-08,17:00,ALTER EGO,Bigetron by Vitality,2,ALTER EGO,13.4,9,8,Nino,Freya,Yazukee,Aulus,Hijumee,Cecilion,alekk,Hylos,Arfy,Paquito,Shogun,Lukas,Nnael,Nolan,Morenooo,Valentina,Finn,Mathilda,EMANN,Chou
+18,8,2026-10-08,20:00,Natus Vincere,Team Liquid ID,1,Natus Vincere,14.0,15,5,Karss,Alice,Joshuaa,Aulus,Jiizee,Zhuxin,Aprho,Gatotkaca,Zeonn,Cici,Aran,Masha,Kevinn,Paquito,Drichel,Kimmy,Lyoni,Estes,Keven,Freya
+18,8,2026-10-08,20:00,Natus Vincere,Team Liquid ID,2,Natus Vincere,21.3,16,12,Karss,Alice,Joshuaa,Aulus,Jiizee,Valir,Aprho,Gloo,Zeonn,Cici,Aran,Freya,Kevinn,Nolan,Drichel,Valentina,Lyoni,Masha,Keven,Claude
+18,8,2026-10-09,14:00,EVOS Esports,ONIC Esports,1,EVOS Esports,16.1,16,8,Rendyyy,Cici,Alberttt,Hirara,Ryzaa,Zhuxin,Muezza,Gatotkaca,Erlan,Aulus,Lutpi,Sora,Kairi,Nolan,Killuaa,Valentina,Kiboy,Atlas,Kelra,Harith
+18,8,2026-10-09,14:00,EVOS Esports,ONIC Esports,2,ONIC Esports,14.6,6,12,Rendyyy,Lukas,Alberttt,Alice,Ryzaa,Valentina,Muezza,Rafaela,Erlan,Argus,Lutpi,Phoveus,Kairi,Aulus,Killuaa,Kimmy,Kiboy,Marcel,Kelra,Obsidia
+18,8,2026-10-09,14:00,EVOS Esports,ONIC Esports,3,EVOS Esports,11.1,14,6,Rendyyy,Cici,Alberttt,Alice,Ryzaa,Cecilion,Muezza,Carmilla,Erlan,Obsidia,Lutpi,Sora,Kairi,Aulus,Killuaa,Zhuxin,Kiboy,Chou,Kelra,Ruby
+18,8,2026-10-09,17:00,RRQ Hoshi,Team Liquid ID,1,Team Liquid ID,14.4,9,17,Joshua,Freya,Faviannn,Fanny,Hajirin,Zhuxin,Said,Hylos,Arthur,Paquito,Aran,Esmeralda,Kevinn,Lukas,Drichel,Kimmy,Lyoni,Atlas,Keven,Cici
+18,8,2026-10-09,17:00,RRQ Hoshi,Team Liquid ID,2,Team Liquid ID,13.9,17,18,Joshua,Lukas,Faviannn,Alpha,Hajirin,Cecilion,Said,Carmilla,Arthur,Chou,Aran,Freya,Kevinn,Alice,Drichel,Zhuxin,Lyoni,Atlas,Keven,Cici
+18,8,2026-10-09,20:00,DEWA United,Natus Vincere,1,Natus Vincere,13.0,3,14,QINN,Alice,Hazle,Hirara,Octa,Zhuxin,Shanee,Minotaur,Maybeee,Claude,Karss,Esmeralda,Joshuaa,Nolan,Jiizee,Valentina,Aprho,Atlas,Zeonn,Obsidia
+18,8,2026-10-09,20:00,DEWA United,Natus Vincere,2,Natus Vincere,14.5,3,15,QINN,Lukas,Hazle,Fanny,Octa,Valentina,Shanee,Carmilla,Maybeee,Obsidia,Karss,Badang,Joshuaa,Hirara,Jiizee,Zhuxin,Aprho,Marcel,Zeonn,Moskov
+18,8,2026-10-11,14:00,EVOS Esports,Geek Fam ID,1,Geek Fam ID,22.6,15,20,Rendyyy,Cici,Alberttt,Alice,Ryzaa,Valentina,Muezza,Atlas,Erlan,Esmeralda,MarceL,Arlott,Maykidss,Nolan,Aboyy,Kimmy,Frenzyy,Marcel,KennzySkie,Freya
+18,8,2026-10-11,14:00,EVOS Esports,Geek Fam ID,2,Geek Fam ID,14.2,5,21,Rendyyy,Freya,Alberttt,Suyou,Ryzaa,Zhuxin,Muezza,Hylos,Erlan,Moskov,MarceL,Barats,Maykidss,Fanny,Aboyy,Kimmy,Frenzyy,Atlas,KennzySkie,Wanwan
+18,8,2026-10-11,17:00,RRQ Hoshi,ONIC Esports,1,ONIC Esports,17.7,6,18,Joshua,Freya,Faviannn,Saber,Hajirin,Kimmy,Said,Mathilda,Arthur,Aulus,Lutpi,Phoveus,Kairi,Nolan,Killuaa,Zhuxin,Kiboy,Atlas,Kelra,Cici
+18,8,2026-10-11,17:00,RRQ Hoshi,ONIC Esports,2,RRQ Hoshi,16.0,11,12,Joshua,Cici,Faviannn,Alpha,Hajirin,Zetian,Said,Atlas,Arthur,Paquito,Lutpi,Terizla,Kairi,Aulus,Killuaa,Lylia,Kiboy,Marcel,Kelra,Kimmy
+18,8,2026-10-11,17:00,RRQ Hoshi,ONIC Esports,3,ONIC Esports,16.9,4,16,Joshua,Uranus,Faviannn,Aulus,Hajirin,Cecilion,Said,Rafaela,Arthur,Paquito,Lutpi,Alice,Kairi,Nolan,Killuaa,Yve,Kiboy,Carmilla,Kelra,Freya
+18,8,2026-10-11,20:00,DEWA United,Bigetron by Vitality,1,Bigetron by Vitality,18.9,23,21,QINN,Arlott,Hazle,Aulus,Octa,Eudora,Shanee,Hylos,Maybeee,Esmeralda,Shogun,Freya,Nnael,Alpha,Morenooo,Valentina,Finn,Gloo,EMANN,Cici
+18,8,2026-10-11,20:00,DEWA United,Bigetron by Vitality,2,Bigetron by Vitality,13.1,4,15,QINN,Joy,Hazle,Alpha,Octa,Selena,Shanee,Carmilla,Maybeee,Cici,Shogun,Freya,Nnael,Aulus,Morenooo,Kimmy,Finn,Marcel,EMANN,Ruby
+18,9,2026-10-16,15:00,Natus Vincere,RRQ Hoshi,,,,,,,,,,,,,,,,,,,,,,,,,
+18,9,2026-10-16,18:00,Geek Fam ID,ALTER EGO,,,,,,,,,,,,,,,,,,,,,,,,,
+18,9,2026-10-17,14:00,ONIC Esports,DEWA United,,,,,,,,,,,,,,,,,,,,,,,,,
+18,9,2026-10-17,17:00,Bigetron by Vitality,EVOS Esports,,,,,,,,,,,,,,,,,,,,,,,,,
+18,9,2026-10-17,20:00,RRQ Hoshi,Geek Fam ID,,,,,,,,,,,,,,,,,,,,,,,,,
+18,9,2026-10-18,14:00,EVOS Esports,ALTER EGO,,,,,,,,,,,,,,,,,,,,,,,,,
+18,9,2026-10-18,17:00,Natus Vincere,Bigetron by Vitality,,,,,,,,,,,,,,,,,,,,,,,,,
+18,9,2026-10-18,20:00,ONIC Esports,Team Liquid ID,,,,,,,,,,,,,,,,,,,,,,,,,

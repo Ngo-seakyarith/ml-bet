@@ -2,15 +2,13 @@ import Papa from 'papaparse'
 import phSeasonsText from '../data/MPL_PH_Seasons.csv?raw'
 import idSeasonsText from '../data/MPL_ID_Seasons.csv?raw'
 import mySeasonsText from '../data/MPL_MY_Seasons.csv?raw'
-import type { Bet } from './types'
 
 /**
  * Regular-season tables. Each league has one results file holding all its
- * seasons (one row per series, score from team_1's side, blank when not
- * played yet). The current MPL PH season is the exception: it is read from
- * the betting CSV, which already holds every PH match, so PH results are never
- * entered twice. The betting CSV only has the ID and MY matches you tracked,
- * so their current season lives in the results file with the others.
+ * seasons, the current one included (fixtures not played yet have a blank
+ * score). MY has one row per series with its score; PH and ID have one row
+ * per game with that game's stats, and the series score is counted from the
+ * game winners.
  */
 const RESULT_FILES: readonly { league: string; text: string }[] = [
   { league: 'MPL PH', text: phSeasonsText },
@@ -29,6 +27,27 @@ export interface SeriesResult {
   /** Null for a fixture not played yet. */
   mapsA: number | null
   mapsB: number | null
+  /** Per-game detail, when the league's file has one row per game (PH, ID). */
+  details?: GameDetail[]
+}
+
+/** One player and the hero they played. */
+export interface Pick {
+  player: string
+  hero: string
+}
+
+/** One game of a series, with each stat as [teamA, teamB]. Null where the file has no such column. */
+export interface GameDetail {
+  game: number
+  winner: string
+  /** Minutes. */
+  duration: number | null
+  kills: [number, number] | null
+  lords: [number, number] | null
+  turtles: [number, number] | null
+  towers: [number, number] | null
+  picks: [Pick[], Pick[]]
 }
 
 export interface Season {
@@ -47,6 +66,8 @@ export interface TeamGame {
   /** Null until played. */
   mapsFor: number | null
   mapsAgainst: number | null
+  /** The series' games, when known; stats and picks are [this team, opponent]. */
+  details?: GameDetail[]
 }
 
 export interface StandingRow {
@@ -79,7 +100,40 @@ interface HistoryRow {
   date: string
   team_1: string
   team_2: string
-  score: string
+  /** Series files: the series score from team_1's side. */
+  score?: string
+  /** Per-game files: the game number (blank for a fixture not played) and its winner. */
+  game?: string
+  winner?: string
+  /** Per-game stats and lineups (team_1_player_1, team_1_hero_1, ...). */
+  [column: string]: string | undefined
+}
+
+const pair = (row: HistoryRow, name: string): [number, number] | null => {
+  const a = row[`${name}_1`]
+  const b = row[`${name}_2`]
+  if (a === undefined || b === undefined || a.trim() === '' || b.trim() === '') return null
+  return [Number(a), Number(b)]
+}
+
+function gameDetail(row: HistoryRow): GameDetail {
+  const picks = (side: 1 | 2): Pick[] =>
+    [1, 2, 3, 4, 5].flatMap((k) => {
+      const hero = (row[`team_${side}_hero_${k}`] ?? '').trim()
+      const player = (row[`team_${side}_player_${k}`] ?? '').trim()
+      return hero || player ? [{ player, hero }] : []
+    })
+  const duration = Number(row.duration ?? row.minutes ?? '')
+  return {
+    game: Number(row.game),
+    winner: row.winner ?? '',
+    duration: Number.isFinite(duration) && duration > 0 ? duration : null,
+    kills: pair(row, 'kills'),
+    lords: pair(row, 'lords'),
+    turtles: pair(row, 'turtles'),
+    towers: pair(row, 'towers'),
+    picks: [picks(1), picks(2)],
+  }
 }
 
 const slug = (league: string) => league.replace(/\W+/g, '-').toLowerCase()
@@ -89,10 +143,28 @@ function parseResultFiles(): Map<string, { league: string; season: number; resul
   const seasons = new Map<string, { league: string; season: number; results: SeriesResult[] }>()
   for (const file of RESULT_FILES) {
     const parsed = Papa.parse<HistoryRow>(file.text, { header: true, skipEmptyLines: true })
+    const perGame = parsed.meta.fields?.includes('game') ?? false
+    // Per-game files repeat a series once per game; its score is the games each side won.
+    const seriesOf = new Map<string, SeriesResult>()
     for (const row of parsed.data) {
-      const match = SCORE.exec((row.score ?? '').trim())
       const key = `${slug(file.league)}-${row.season}`
       const entry = seasons.get(key) ?? { league: file.league, season: Number(row.season), results: [] }
+      seasons.set(key, entry)
+      if (perGame) {
+        const id = `${key}|${row.date}|${row.team_1}|${row.team_2}`
+        let series = seriesOf.get(id)
+        if (!series) {
+          series = { week: Number(row.week), date: row.date, teamA: row.team_1, teamB: row.team_2, mapsA: null, mapsB: null }
+          seriesOf.set(id, series)
+          entry.results.push(series)
+        }
+        if ((row.game ?? '').trim() === '') continue
+        series.mapsA = (series.mapsA ?? 0) + (row.winner === row.team_1 ? 1 : 0)
+        series.mapsB = (series.mapsB ?? 0) + (row.winner === row.team_2 ? 1 : 0)
+        ;(series.details ??= []).push(gameDetail(row))
+        continue
+      }
+      const match = SCORE.exec((row.score ?? '').trim())
       entry.results.push({
         week: Number(row.week),
         date: row.date,
@@ -101,40 +173,17 @@ function parseResultFiles(): Map<string, { league: string; season: number; resul
         mapsA: match ? Number(match[1]) : null,
         mapsB: match ? Number(match[2]) : null,
       })
-      seasons.set(key, entry)
     }
   }
   return seasons
 }
 
-/** This season's MPL PH matches, from the betting CSV (played and upcoming). */
-function phFromBets(bets: readonly Bet[]): SeriesResult[] {
-  return bets
-    .filter((bet) => bet.league === 'MPL PH')
-    .map<SeriesResult>((bet) => ({
-      week: Number(/\d+/.exec(bet.officialWeek)?.[0] ?? 0),
-      date: bet.date,
-      teamA: bet.selectedTeam,
-      teamB: bet.opponent,
-      mapsA: bet.selectedMaps,
-      mapsB: bet.opponentMaps,
-    }))
-}
-
-/**
- * Every league's seasons, newest first within each league. The newest season
- * of a league is its current one; for MPL PH that is the season after the
- * last one in its results file, built from the betting CSV.
- */
-export function seasonsFor(bets: readonly Bet[]): Season[] {
+/** Every league's seasons, newest first within each league; the newest is its current one. */
+export function seasonsFor(): Season[] {
   const files = parseResultFiles()
   const out: Season[] = []
   for (const league of LEAGUES) {
     const list = [...files.values()].filter((s) => s.league === league).sort((a, b) => b.season - a.season)
-    if (league === 'MPL PH') {
-      const next = (list[0]?.season ?? 0) + 1
-      list.unshift({ league, season: next, results: phFromBets(bets) })
-    }
     list.forEach((s, i) =>
       out.push({
         id: `${slug(league)}-${s.season}`,
@@ -153,6 +202,13 @@ export function seasonsFor(bets: readonly Bet[]): Season[] {
  * wins, then map difference, then maps won: the order MPL PH uses, and the
  * one that reproduces the official final tables in the results file.
  */
+const swap = (p: [number, number] | null): [number, number] | null => (p ? [p[1], p[0]] : null)
+
+/** The same game seen from the other team's side. */
+function flip(d: GameDetail): GameDetail {
+  return { ...d, kills: swap(d.kills), lords: swap(d.lords), turtles: swap(d.turtles), towers: swap(d.towers), picks: [d.picks[1], d.picks[0]] }
+}
+
 export function standings(season: Season, throughWeek: number | null, previous: Season | null): StandingRow[] {
   const inRange = season.results.filter((r) => throughWeek === null || r.week <= throughWeek)
   const rows = new Map<string, Omit<StandingRow, 'rank' | 'previousRank'>>()
@@ -175,8 +231,8 @@ export function standings(season: Season, throughWeek: number | null, previous: 
       b.games.push({ week: r.week, date: r.date, opponent: r.teamA, mapsFor: null, mapsAgainst: null })
       continue
     }
-    a.games.push({ week: r.week, date: r.date, opponent: r.teamB, mapsFor: r.mapsA, mapsAgainst: r.mapsB })
-    b.games.push({ week: r.week, date: r.date, opponent: r.teamA, mapsFor: r.mapsB, mapsAgainst: r.mapsA })
+    a.games.push({ week: r.week, date: r.date, opponent: r.teamB, mapsFor: r.mapsA, mapsAgainst: r.mapsB, details: r.details })
+    b.games.push({ week: r.week, date: r.date, opponent: r.teamA, mapsFor: r.mapsB, mapsAgainst: r.mapsA, details: r.details?.map(flip) })
     for (const [me, mine, theirs] of [
       [a, r.mapsA, r.mapsB],
       [b, r.mapsB, r.mapsA],

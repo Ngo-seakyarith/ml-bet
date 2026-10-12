@@ -1,0 +1,670 @@
+{
+  "page": "https://liquipedia.net/mobilelegends/Portal:Heroes",
+  "heroes": [
+    {
+      "name": "Aamon",
+      "url": "https://liquipedia.net/commons/images/1/14/ML_icon_Aamon.png",
+      "file": "aamon.png"
+    },
+    {
+      "name": "Akai",
+      "url": "https://liquipedia.net/commons/images/a/a9/ML_icon_Akai_2022.png",
+      "file": "akai.png"
+    },
+    {
+      "name": "Aldous",
+      "url": "https://liquipedia.net/commons/images/a/a6/ML_icon_Aldous.png",
+      "file": "aldous.png"
+    },
+    {
+      "name": "Alice",
+      "url": "https://liquipedia.net/commons/images/5/5f/ML_icon_Alice_2025.png",
+      "file": "alice.png"
+    },
+    {
+      "name": "Alpha",
+      "url": "https://liquipedia.net/commons/images/c/c1/ML_icon_Alpha_2021.png",
+      "file": "alpha.png"
+    },
+    {
+      "name": "Alucard",
+      "url": "https://liquipedia.net/commons/images/f/f0/ML_icon_Alucard.png",
+      "file": "alucard.png"
+    },
+    {
+      "name": "Angela",
+      "url": "https://liquipedia.net/commons/images/6/6a/ML_icon_Angela_2024_v2.png",
+      "file": "angela.png"
+    },
+    {
+      "name": "Argus",
+      "url": "https://liquipedia.net/commons/images/6/60/ML_icon_Argus_2021.png",
+      "file": "argus.png"
+    },
+    {
+      "name": "Arlott",
+      "url": "https://liquipedia.net/commons/images/a/ab/ML_icon_Arlott.png",
+      "file": "arlott.png"
+    },
+    {
+      "name": "Atlas",
+      "url": "https://liquipedia.net/commons/images/d/d9/ML_icon_Atlas.png",
+      "file": "atlas.png"
+    },
+    {
+      "name": "Aulus",
+      "url": "https://liquipedia.net/commons/images/3/3c/ML_icon_Aulus_2026.png",
+      "file": "aulus.png"
+    },
+    {
+      "name": "Aurora",
+      "url": "https://liquipedia.net/commons/images/b/b5/ML_icon_Aurora_2024.png",
+      "file": "aurora.png"
+    },
+    {
+      "name": "Badang",
+      "url": "https://liquipedia.net/commons/images/6/68/ML_icon_Badang_2026.png",
+      "file": "badang.png"
+    },
+    {
+      "name": "Balmond",
+      "url": "https://liquipedia.net/commons/images/c/ca/ML_icon_Balmond_2025.png",
+      "file": "balmond.png"
+    },
+    {
+      "name": "Bane",
+      "url": "https://liquipedia.net/commons/images/5/50/ML_icon_Bane_2021.png",
+      "file": "bane.png"
+    },
+    {
+      "name": "Barats",
+      "url": "https://liquipedia.net/commons/images/3/37/ML_icon_Barats.png",
+      "file": "barats.png"
+    },
+    {
+      "name": "Baxia",
+      "url": "https://liquipedia.net/commons/images/1/10/ML_icon_Baxia.png",
+      "file": "baxia.png"
+    },
+    {
+      "name": "Beatrix",
+      "url": "https://liquipedia.net/commons/images/8/8f/ML_icon_Beatrix.png",
+      "file": "beatrix.png"
+    },
+    {
+      "name": "Belerick",
+      "url": "https://liquipedia.net/commons/images/c/c6/ML_icon_Belerick.png",
+      "file": "belerick.png"
+    },
+    {
+      "name": "Benedetta",
+      "url": "https://liquipedia.net/commons/images/d/d0/ML_icon_Benedetta.png",
+      "file": "benedetta.png"
+    },
+    {
+      "name": "Brody",
+      "url": "https://liquipedia.net/commons/images/thumb/a/a3/ML_icon_Brody_2026.png/128px-ML_icon_Brody_2026.png",
+      "file": "brody.png"
+    },
+    {
+      "name": "Bruno",
+      "url": "https://liquipedia.net/commons/images/thumb/3/35/ML_icon_Bruno_2026.png/128px-ML_icon_Bruno_2026.png",
+      "file": "bruno.png"
+    },
+    {
+      "name": "Carmilla",
+      "url": "https://liquipedia.net/commons/images/8/8c/ML_icon_Carmilla.png",
+      "file": "carmilla.png"
+    },
+    {
+      "name": "Cecilion",
+      "url": "https://liquipedia.net/commons/images/5/55/ML_icon_Cecilion.png",
+      "file": "cecilion.png"
+    },
+    {
+      "name": "Chang'e",
+      "url": "https://liquipedia.net/commons/images/5/55/ML_icon_Chang%27e.png",
+      "file": "chang-e.png"
+    },
+    {
+      "name": "Chip",
+      "url": "https://liquipedia.net/commons/images/3/32/ML_icon_Chip.png",
+      "file": "chip.png"
+    },
+    {
+      "name": "Chou",
+      "url": "https://liquipedia.net/commons/images/7/7f/ML_icon_Chou.png",
+      "file": "chou.png"
+    },
+    {
+      "name": "Cici",
+      "url": "https://liquipedia.net/commons/images/6/6b/ML_icon_Cici.png",
+      "file": "cici.png"
+    },
+    {
+      "name": "Claude",
+      "url": "https://liquipedia.net/commons/images/3/30/ML_icon_Claude_2024.png",
+      "file": "claude.png"
+    },
+    {
+      "name": "Clint",
+      "url": "https://liquipedia.net/commons/images/b/bd/ML_icon_Clint_2026.png",
+      "file": "clint.png"
+    },
+    {
+      "name": "Cyclops",
+      "url": "https://liquipedia.net/commons/images/7/75/ML_icon_Cyclops.png",
+      "file": "cyclops.png"
+    },
+    {
+      "name": "Diggie",
+      "url": "https://liquipedia.net/commons/images/2/2a/ML_icon_Diggie.png",
+      "file": "diggie.png"
+    },
+    {
+      "name": "Dyrroth",
+      "url": "https://liquipedia.net/commons/images/c/c7/ML_icon_Dyrroth_2025.png",
+      "file": "dyrroth.png"
+    },
+    {
+      "name": "Edith",
+      "url": "https://liquipedia.net/commons/images/0/01/ML_icon_Edith.png",
+      "file": "edith.png"
+    },
+    {
+      "name": "Esmeralda",
+      "url": "https://liquipedia.net/commons/images/1/12/ML_icon_Esmeralda.png",
+      "file": "esmeralda.png"
+    },
+    {
+      "name": "Estes",
+      "url": "https://liquipedia.net/commons/images/4/4b/ML_icon_Estes.png",
+      "file": "estes.png"
+    },
+    {
+      "name": "Eudora",
+      "url": "https://liquipedia.net/commons/images/8/88/ML_icon_Eudora_2026.png",
+      "file": "eudora.png"
+    },
+    {
+      "name": "Fanny",
+      "url": "https://liquipedia.net/commons/images/b/be/ML_icon_Fanny.png",
+      "file": "fanny.png"
+    },
+    {
+      "name": "Faramis",
+      "url": "https://liquipedia.net/commons/images/b/bf/ML_icon_Faramis_2022.png",
+      "file": "faramis.png"
+    },
+    {
+      "name": "Floryn",
+      "url": "https://liquipedia.net/commons/images/6/63/ML_icon_Floryn.png",
+      "file": "floryn.png"
+    },
+    {
+      "name": "Franco",
+      "url": "https://liquipedia.net/commons/images/d/db/ML_icon_Franco.png",
+      "file": "franco.png"
+    },
+    {
+      "name": "Fredrinn",
+      "url": "https://liquipedia.net/commons/images/b/bc/ML_icon_Fredrinn.png",
+      "file": "fredrinn.png"
+    },
+    {
+      "name": "Freya",
+      "url": "https://liquipedia.net/commons/images/a/a8/ML_icon_Freya_2025.png",
+      "file": "freya.png"
+    },
+    {
+      "name": "Gatotkaca",
+      "url": "https://liquipedia.net/commons/images/e/e8/ML_icon_Gatotkaca.png",
+      "file": "gatotkaca.png"
+    },
+    {
+      "name": "Gloo",
+      "url": "https://liquipedia.net/commons/images/0/09/ML_icon_Gloo_2025.png",
+      "file": "gloo.png"
+    },
+    {
+      "name": "Gord",
+      "url": "https://liquipedia.net/commons/images/6/6e/ML_icon_Gord_2025.png",
+      "file": "gord.png"
+    },
+    {
+      "name": "Granger",
+      "url": "https://liquipedia.net/commons/images/9/99/ML_icon_Granger_2024.png",
+      "file": "granger.png"
+    },
+    {
+      "name": "Grock",
+      "url": "https://liquipedia.net/commons/images/8/85/ML_icon_Grock_2025.png",
+      "file": "grock.png"
+    },
+    {
+      "name": "Guinevere",
+      "url": "https://liquipedia.net/commons/images/0/0d/ML_icon_Guinevere.png",
+      "file": "guinevere.png"
+    },
+    {
+      "name": "Gusion",
+      "url": "https://liquipedia.net/commons/images/b/b2/ML_icon_Gusion_2022.png",
+      "file": "gusion.png"
+    },
+    {
+      "name": "Hanabi",
+      "url": "https://liquipedia.net/commons/images/1/1c/ML_icon_Hanabi_2022.png",
+      "file": "hanabi.png"
+    },
+    {
+      "name": "Hanzo",
+      "url": "https://liquipedia.net/commons/images/7/72/ML_icon_Hanzo_2025.png",
+      "file": "hanzo.png"
+    },
+    {
+      "name": "Harith",
+      "url": "https://liquipedia.net/commons/images/f/f9/ML_icon_Harith.png",
+      "file": "harith.png"
+    },
+    {
+      "name": "Harley",
+      "url": "https://liquipedia.net/commons/images/a/aa/ML_icon_Harley.png",
+      "file": "harley.png"
+    },
+    {
+      "name": "Hayabusa",
+      "url": "https://liquipedia.net/commons/images/6/67/ML_icon_Hayabusa_2021.png",
+      "file": "hayabusa.png"
+    },
+    {
+      "name": "Helcurt",
+      "url": "https://liquipedia.net/commons/images/b/bc/ML_icon_Helcurt_2024.png",
+      "file": "helcurt.png"
+    },
+    {
+      "name": "Hilda",
+      "url": "https://liquipedia.net/commons/images/9/99/ML_icon_Hilda.png",
+      "file": "hilda.png"
+    },
+    {
+      "name": "Hirara",
+      "url": "https://liquipedia.net/commons/images/8/84/ML_icon_Hirara.png",
+      "file": "hirara.png"
+    },
+    {
+      "name": "Hylos",
+      "url": "https://liquipedia.net/commons/images/6/68/ML_icon_Hylos.png",
+      "file": "hylos.png"
+    },
+    {
+      "name": "Irithel",
+      "url": "https://liquipedia.net/commons/images/3/3c/ML_icon_Irithel_2026.png",
+      "file": "irithel.png"
+    },
+    {
+      "name": "Ixia",
+      "url": "https://liquipedia.net/commons/images/1/1a/ML_icon_Ixia.png",
+      "file": "ixia.png"
+    },
+    {
+      "name": "Jawhead",
+      "url": "https://liquipedia.net/commons/images/9/93/ML_icon_Jawhead.png",
+      "file": "jawhead.png"
+    },
+    {
+      "name": "Johnson",
+      "url": "https://liquipedia.net/commons/images/f/f2/ML_icon_Johnson_2023.png",
+      "file": "johnson.png"
+    },
+    {
+      "name": "Joy",
+      "url": "https://liquipedia.net/commons/images/d/db/ML_icon_Joy.png",
+      "file": "joy.png"
+    },
+    {
+      "name": "Julian",
+      "url": "https://liquipedia.net/commons/images/e/ec/ML_icon_Julian_dd.png",
+      "file": "julian.png"
+    },
+    {
+      "name": "Kadita",
+      "url": "https://liquipedia.net/commons/images/thumb/3/37/ML_icon_Kadita_2026.png/128px-ML_icon_Kadita_2026.png",
+      "file": "kadita.png"
+    },
+    {
+      "name": "Kagura",
+      "url": "https://liquipedia.net/commons/images/b/b7/ML_icon_Kagura_2021.png",
+      "file": "kagura.png"
+    },
+    {
+      "name": "Kaja",
+      "url": "https://liquipedia.net/commons/images/3/31/ML_icon_Kaja_2026.png",
+      "file": "kaja.png"
+    },
+    {
+      "name": "Kalea",
+      "url": "https://liquipedia.net/commons/images/3/38/ML_icon_Kalea.png",
+      "file": "kalea.png"
+    },
+    {
+      "name": "Karina",
+      "url": "https://liquipedia.net/commons/images/7/78/ML_icon_Karina_2021.png",
+      "file": "karina.png"
+    },
+    {
+      "name": "Karrie",
+      "url": "https://liquipedia.net/commons/images/d/df/ML_icon_Karrie.png",
+      "file": "karrie.png"
+    },
+    {
+      "name": "Khaleed",
+      "url": "https://liquipedia.net/commons/images/1/10/ML_icon_Khaleed.png",
+      "file": "khaleed.png"
+    },
+    {
+      "name": "Khufra",
+      "url": "https://liquipedia.net/commons/images/6/6e/ML_icon_Khufra.png",
+      "file": "khufra.png"
+    },
+    {
+      "name": "Kimmy",
+      "url": "https://liquipedia.net/commons/images/7/7d/ML_icon_Kimmy_2025.png",
+      "file": "kimmy.png"
+    },
+    {
+      "name": "Lancelot",
+      "url": "https://liquipedia.net/commons/images/8/8a/ML_icon_Lancelot_2021.png",
+      "file": "lancelot.png"
+    },
+    {
+      "name": "Lapu-Lapu",
+      "url": "https://liquipedia.net/commons/images/3/32/ML_icon_Lapu-Lapu.png",
+      "file": "lapu-lapu.png"
+    },
+    {
+      "name": "Layla",
+      "url": "https://liquipedia.net/commons/images/d/d8/ML_icon_Layla_2023.png",
+      "file": "layla.png"
+    },
+    {
+      "name": "Leomord",
+      "url": "https://liquipedia.net/commons/images/d/de/ML_icon_Leomord_2022.png",
+      "file": "leomord.png"
+    },
+    {
+      "name": "Lesley",
+      "url": "https://liquipedia.net/commons/images/a/a3/ML_icon_Lesley_2022.png",
+      "file": "lesley.png"
+    },
+    {
+      "name": "Ling",
+      "url": "https://liquipedia.net/commons/images/8/8e/ML_icon_Ling_2024.png",
+      "file": "ling.png"
+    },
+    {
+      "name": "Lolita",
+      "url": "https://liquipedia.net/commons/images/f/fe/ML_icon_Lolita_2023.png",
+      "file": "lolita.png"
+    },
+    {
+      "name": "Lukas",
+      "url": "https://liquipedia.net/commons/images/8/89/ML_icon_Lukas.png",
+      "file": "lukas.png"
+    },
+    {
+      "name": "Lunox",
+      "url": "https://liquipedia.net/commons/images/1/17/ML_icon_Lunox.png",
+      "file": "lunox.png"
+    },
+    {
+      "name": "Luo Yi",
+      "url": "https://liquipedia.net/commons/images/thumb/7/72/ML_icon_Luo_Yi_2026.png/128px-ML_icon_Luo_Yi_2026.png",
+      "file": "luo-yi.png"
+    },
+    {
+      "name": "Lylia",
+      "url": "https://liquipedia.net/commons/images/2/24/ML_icon_Lylia.png",
+      "file": "lylia.png"
+    },
+    {
+      "name": "Marcel",
+      "url": "https://liquipedia.net/commons/images/9/9a/ML_icon_Marcel.png",
+      "file": "marcel.png"
+    },
+    {
+      "name": "Martis",
+      "url": "https://liquipedia.net/commons/images/1/18/ML_icon_Martis.png",
+      "file": "martis.png"
+    },
+    {
+      "name": "Masha",
+      "url": "https://liquipedia.net/commons/images/f/f9/ML_icon_Masha_2026.png",
+      "file": "masha.png"
+    },
+    {
+      "name": "Mathilda",
+      "url": "https://liquipedia.net/commons/images/8/88/ML_icon_Mathilda.png",
+      "file": "mathilda.png"
+    },
+    {
+      "name": "Melissa",
+      "url": "https://liquipedia.net/commons/images/d/d4/ML_icon_Melissa.png",
+      "file": "melissa.png"
+    },
+    {
+      "name": "Minotaur",
+      "url": "https://liquipedia.net/commons/images/f/f7/ML_icon_Minotaur_2021.png",
+      "file": "minotaur.png"
+    },
+    {
+      "name": "Minsitthar",
+      "url": "https://liquipedia.net/commons/images/8/84/ML_icon_Minsitthar_2023.png",
+      "file": "minsitthar.png"
+    },
+    {
+      "name": "Miya",
+      "url": "https://liquipedia.net/commons/images/9/95/ML_icon_Miya_2023.png",
+      "file": "miya.png"
+    },
+    {
+      "name": "Moskov",
+      "url": "https://liquipedia.net/commons/images/f/fc/ML_icon_Moskov_2023.png",
+      "file": "moskov.png"
+    },
+    {
+      "name": "Nana",
+      "url": "https://liquipedia.net/commons/images/4/41/ML_icon_Nana.png",
+      "file": "nana.png"
+    },
+    {
+      "name": "Natalia",
+      "url": "https://liquipedia.net/commons/images/b/b7/ML_icon_Natalia.png",
+      "file": "natalia.png"
+    },
+    {
+      "name": "Natan",
+      "url": "https://liquipedia.net/commons/images/c/ce/ML_icon_Natan.png",
+      "file": "natan.png"
+    },
+    {
+      "name": "Nolan",
+      "url": "https://liquipedia.net/commons/images/6/67/ML_icon_Nolan.png",
+      "file": "nolan.png"
+    },
+    {
+      "name": "Novaria",
+      "url": "https://liquipedia.net/commons/images/f/fe/ML_icon_Novaria.png",
+      "file": "novaria.png"
+    },
+    {
+      "name": "Obsidia",
+      "url": "https://liquipedia.net/commons/images/f/f5/ML_icon_Obsidia.png",
+      "file": "obsidia.png"
+    },
+    {
+      "name": "Odette",
+      "url": "https://liquipedia.net/commons/images/b/bb/ML_icon_Odette_2021.png",
+      "file": "odette.png"
+    },
+    {
+      "name": "Paquito",
+      "url": "https://liquipedia.net/commons/images/thumb/7/77/ML_icon_Paquito_2026.png/128px-ML_icon_Paquito_2026.png",
+      "file": "paquito.png"
+    },
+    {
+      "name": "Pharsa",
+      "url": "https://liquipedia.net/commons/images/6/68/ML_icon_Pharsa.png",
+      "file": "pharsa.png"
+    },
+    {
+      "name": "Phoveus",
+      "url": "https://liquipedia.net/commons/images/b/b1/ML_icon_Phoveus_2024.png",
+      "file": "phoveus.png"
+    },
+    {
+      "name": "Popol and Kupa",
+      "url": "https://liquipedia.net/commons/images/e/eb/ML_icon_Popol_and_Kupa.png",
+      "file": "popol-and-kupa.png"
+    },
+    {
+      "name": "Rafaela",
+      "url": "https://liquipedia.net/commons/images/1/17/ML_icon_Rafaela.png",
+      "file": "rafaela.png"
+    },
+    {
+      "name": "Roger",
+      "url": "https://liquipedia.net/commons/images/8/84/ML_icon_Roger.png",
+      "file": "roger.png"
+    },
+    {
+      "name": "Ruby",
+      "url": "https://liquipedia.net/commons/images/9/98/ML_icon_Ruby.png",
+      "file": "ruby.png"
+    },
+    {
+      "name": "Saber",
+      "url": "https://liquipedia.net/commons/images/0/0f/ML_icon_Saber_2020.png",
+      "file": "saber.png"
+    },
+    {
+      "name": "Selena",
+      "url": "https://liquipedia.net/commons/images/6/64/ML_icon_Selena.png",
+      "file": "selena.png"
+    },
+    {
+      "name": "Silvanna",
+      "url": "https://liquipedia.net/commons/images/4/46/ML_icon_Silvanna.png",
+      "file": "silvanna.png"
+    },
+    {
+      "name": "Sora",
+      "url": "https://liquipedia.net/commons/images/1/10/ML_icon_Sora.png",
+      "file": "sora.png"
+    },
+    {
+      "name": "Sun",
+      "url": "https://liquipedia.net/commons/images/8/8a/ML_icon_Sun_2024.png",
+      "file": "sun.png"
+    },
+    {
+      "name": "Suyou",
+      "url": "https://liquipedia.net/commons/images/f/f7/ML_icon_Suyou.png",
+      "file": "suyou.png"
+    },
+    {
+      "name": "Terizla",
+      "url": "https://liquipedia.net/commons/images/2/2b/ML_icon_Terizla.png",
+      "file": "terizla.png"
+    },
+    {
+      "name": "Thamuz",
+      "url": "https://liquipedia.net/commons/images/1/19/ML_icon_Thamuz_2025.png",
+      "file": "thamuz.png"
+    },
+    {
+      "name": "Tigreal",
+      "url": "https://liquipedia.net/commons/images/8/88/ML_icon_Tigreal.png",
+      "file": "tigreal.png"
+    },
+    {
+      "name": "Uranus",
+      "url": "https://liquipedia.net/commons/images/8/88/ML_icon_Uranus.png",
+      "file": "uranus.png"
+    },
+    {
+      "name": "Vale",
+      "url": "https://liquipedia.net/commons/images/0/02/ML_icon_Vale.png",
+      "file": "vale.png"
+    },
+    {
+      "name": "Valentina",
+      "url": "https://liquipedia.net/commons/images/4/48/ML_icon_Valentina.png",
+      "file": "valentina.png"
+    },
+    {
+      "name": "Valir",
+      "url": "https://liquipedia.net/commons/images/8/8f/ML_icon_Valir.png",
+      "file": "valir.png"
+    },
+    {
+      "name": "Vexana",
+      "url": "https://liquipedia.net/commons/images/d/de/ML_icon_Vexana_2022.png",
+      "file": "vexana.png"
+    },
+    {
+      "name": "Wanwan",
+      "url": "https://liquipedia.net/commons/images/d/dd/ML_icon_Wanwan_2025.png",
+      "file": "wanwan.png"
+    },
+    {
+      "name": "X.Borg",
+      "url": "https://liquipedia.net/commons/images/4/4b/ML_icon_X.Borg_2023.png",
+      "file": "x-borg.png"
+    },
+    {
+      "name": "Xavier",
+      "url": "https://liquipedia.net/commons/images/6/6d/ML_icon_Xavier.png",
+      "file": "xavier.png"
+    },
+    {
+      "name": "Yi Sun-shin",
+      "url": "https://liquipedia.net/commons/images/1/18/ML_icon_Yi_Sun-Shin.png",
+      "file": "yi-sun-shin.png"
+    },
+    {
+      "name": "Yin",
+      "url": "https://liquipedia.net/commons/images/5/59/ML_icon_Yin_2024.png",
+      "file": "yin.png"
+    },
+    {
+      "name": "Yu Zhong",
+      "url": "https://liquipedia.net/commons/images/b/b6/ML_icon_Yu_Zhong_2024.png",
+      "file": "yu-zhong.png"
+    },
+    {
+      "name": "Yve",
+      "url": "https://liquipedia.net/commons/images/f/f4/ML_icon_Yve_2024.png",
+      "file": "yve.png"
+    },
+    {
+      "name": "Zetian",
+      "url": "https://liquipedia.net/commons/images/c/c8/ML_icon_Wu_Zetian.png",
+      "file": "zetian.png"
+    },
+    {
+      "name": "Zhask",
+      "url": "https://liquipedia.net/commons/images/c/c7/ML_icon_Zhask.png",
+      "file": "zhask.png"
+    },
+    {
+      "name": "Zhuxin",
+      "url": "https://liquipedia.net/commons/images/2/2c/ML_icon_Zhuxin.png",
+      "file": "zhuxin.png"
+    },
+    {
+      "name": "Zilong",
+      "url": "https://liquipedia.net/commons/images/5/55/ML_icon_Zilong_2024.png",
+      "file": "zilong.png"
+    }
+  ]
+}
