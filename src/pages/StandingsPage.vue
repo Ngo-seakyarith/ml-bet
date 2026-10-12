@@ -1,13 +1,14 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useDataset } from '../composables/useDataset'
-import { LEAGUES, PLAYOFF_FORMAT, clinchStatus, lastPlayedWeek, playbookEvidence, seasonsFor, standings, weeksIn, type StandingRow } from '../lib/standings'
+import { LEAGUES, PLAYOFF_FORMAT, clinchStatus, lastPlayedWeek, playbookEvidence, seasonsFor, standings, weeksIn, type StandingRow, type TeamGame } from '../lib/standings'
 import { measureMargins, otherSideOdds } from '../lib/stats'
 import type { Bet } from '../lib/types'
 import SectionCard from '../components/ui/SectionCard.vue'
 import TeamLogo from '../components/ui/TeamLogo.vue'
 import PlayoffBracket from '../components/PlayoffBracket.vue'
+import SeasonUpsets from '../components/SeasonUpsets.vue'
 import { odds, percent, shortDate } from '../lib/format'
 
 const { allBets } = useDataset()
@@ -125,6 +126,25 @@ function rowStyle(team: string, edge = false): Record<string, string> {
   return edge ? { background: tint, boxShadow: `inset 3px 0 0 ${color}` } : { background: tint }
 }
 
+/* Results column: one box per match; clicking a box opens that match under the row. */
+const openGame = ref<{ team: string; index: number } | null>(null)
+watch([league, () => season.value.id, throughWeek], () => (openGame.value = null))
+
+function toggleGame(team: string, index: number) {
+  const same = openGame.value?.team === team && openGame.value.index === index
+  openGame.value = same ? null : { team, index }
+}
+
+function openedGame(row: StandingRow): TeamGame | null {
+  return openGame.value?.team === row.team ? (row.games[openGame.value.index] ?? null) : null
+}
+
+function gameLabel(g: TeamGame): string {
+  if (g.mapsFor === null || g.mapsAgainst === null) return `Week ${g.week} · ${shortDate(g.date)} · v ${g.opponent} · not played yet`
+  const result = g.mapsFor > g.mapsAgainst ? 'won' : 'lost'
+  return `Week ${g.week} · ${shortDate(g.date)} · v ${g.opponent} · ${result} ${g.mapsFor}-${g.mapsAgainst}`
+}
+
 function movement(row: StandingRow): { text: string; tone: string } | null {
   if (row.previousRank === null) return null
   const change = row.previousRank - row.rank
@@ -210,7 +230,7 @@ const calls = computed(() => {
         } else {
           shown = `underdog ${odds(bookDog === a ? price.a : price.b)}`
           if (winRate(bookDog) > winRate(bookFav)) {
-            call = `${bookDog} to win, 2 units. They have the better record, so the bookmaker is pricing ${bookFav}'s name, not their form.`
+            call = `${bookDog} to win, 1 unit. They have the better record, so the bookmaker is pricing ${bookFav}'s name, not their form.`
             tone = 'strong'
           } else {
             call = `${bookDog} to win, 1 unit: MPL ID underdogs pay. Never 2-0.`
@@ -225,7 +245,7 @@ const calls = computed(() => {
           tone = 'skip'
         } else if (a === last || b === last) {
           const bottom = table.at(-1)!
-          call = `${tableFav} 2-0, 2 units. ${bottom.team} are last. The last-place team has been swept in ${sweptShare.value} of its losses over all seasons (${evidence.value.lastPlaceSwept} of ${evidence.value.lastPlaceLosses}), and ${share(bottom.l02, bottom.losses)} this season (${bottom.l02} of ${bottom.losses}).`
+          call = `${tableFav} 2-0, 1 unit. ${bottom.team} are last. The last-place team has been swept in ${sweptShare.value} of its losses over all seasons (${evidence.value.lastPlaceSwept} of ${evidence.value.lastPlaceLosses}), and ${share(bottom.l02, bottom.losses)} this season (${bottom.l02} of ${bottom.losses}).`
           tone = 'strong'
         } else {
           call = `${tableFav} favourite, 1 unit: 2-0 for the bigger payout, or to win for steadier returns.`
@@ -302,14 +322,13 @@ const calls = computed(() => {
               <th class="px-3 py-2 text-right font-medium text-ink-2" title="Losses by 1-2 / by 0-2">Lost 1-2 / 0-2</th>
               <th class="px-3 py-2 text-right font-medium text-ink-2" title="Share of wins that were 2-0">Sweeps</th>
               <th class="px-3 py-2 text-right font-medium text-ink-2" title="Share of losses where they took a map">Map in loss</th>
-              <th class="px-3 py-2 font-medium text-ink-2">Last 5</th>
+              <th class="px-3 py-2 font-medium text-ink-2">Results</th>
               <th class="px-3 py-2 text-right font-medium text-ink-2">Last season</th>
             </tr>
           </thead>
           <tbody>
+            <template v-for="row in rows" :key="row.team">
             <tr
-              v-for="row in rows"
-              :key="row.team"
               class="border-b border-rule last:border-b-0"
               :style="rowStyle(row.team)"
               :class="row.rank === PLAYOFF_SPOTS ? 'border-b-2 border-b-rule-strong' : cutLines.has(row.rank) ? 'border-b-rule-strong border-dashed' : ''"
@@ -342,14 +361,26 @@ const calls = computed(() => {
               <td class="tnum px-3 py-2 text-right">{{ share(row.l12, row.losses) }}</td>
               <td class="px-3 py-2">
                 <span class="inline-flex gap-0.5">
-                  <span
-                    v-for="(result, i) in row.form"
+                  <button
+                    v-for="(g, i) in row.games"
                     :key="i"
-                    class="inline-flex h-5 w-5 items-center justify-center rounded-[3px] text-[10.5px] font-bold text-white"
-                    :class="result === 'W' ? 'bg-good' : 'bg-critical'"
+                    type="button"
+                    class="inline-flex h-5 w-[18px] items-center justify-center rounded-[3px] text-[10px] font-bold"
+                    :class="[
+                      g.mapsFor === null
+                        ? 'border border-dashed border-rule-strong text-muted'
+                        : (g.mapsFor ?? 0) > (g.mapsAgainst ?? 0)
+                          ? 'bg-good text-white'
+                          : 'bg-critical text-white',
+                      openGame?.team === row.team && openGame.index === i ? 'ring-2 ring-ink ring-offset-1' : '',
+                    ]"
+                    :title="gameLabel(g)"
+                    :aria-label="gameLabel(g)"
+                    :aria-pressed="openGame?.team === row.team && openGame.index === i"
+                    @click="toggleGame(row.team, i)"
                   >
-                    {{ result }}
-                  </span>
+                    {{ g.mapsFor === null ? '' : (g.mapsFor ?? 0) > (g.mapsAgainst ?? 0) ? 'W' : 'L' }}
+                  </button>
                 </span>
               </td>
               <td class="tnum px-3 py-2 text-right text-ink-2">
@@ -360,6 +391,29 @@ const calls = computed(() => {
                 <template v-else>—</template>
               </td>
             </tr>
+            <!-- The match behind the clicked result box. -->
+            <tr v-if="openedGame(row)" class="border-b border-rule bg-sunken/60">
+              <td colspan="10" class="px-4 py-2.5">
+                <div class="sticky left-4 inline-flex flex-wrap items-center gap-x-2.5 gap-y-1 text-[13px]">
+                  <span class="tnum text-muted">Week {{ openedGame(row)!.week }} · {{ shortDate(openedGame(row)!.date) }}</span>
+                  <TeamLogo :team="row.team" :size="18" />
+                  <span class="font-semibold text-ink">{{ row.team }}</span>
+                  <span
+                    v-if="openedGame(row)!.mapsFor !== null"
+                    class="tnum rounded px-1.5 py-0.5 font-bold text-white"
+                    :class="(openedGame(row)!.mapsFor ?? 0) > (openedGame(row)!.mapsAgainst ?? 0) ? 'bg-good' : 'bg-critical'"
+                  >
+                    {{ openedGame(row)!.mapsFor }}-{{ openedGame(row)!.mapsAgainst }}
+                  </span>
+                  <span v-else class="text-muted">v</span>
+                  <TeamLogo :team="openedGame(row)!.opponent" :size="18" />
+                  <span class="font-semibold text-ink">{{ openedGame(row)!.opponent }}</span>
+                  <span v-if="openedGame(row)!.mapsFor === null" class="text-muted">· not played yet</span>
+                  <button type="button" class="ml-2 text-[12px] text-accent hover:underline" @click="openGame = null">Close</button>
+                </div>
+              </td>
+            </tr>
+            </template>
           </tbody>
         </table>
       </div>
@@ -370,6 +424,8 @@ const calls = computed(() => {
         that table is what sets Week 1–2 prices, and favourites built on it have won only {{ earlyShare }} of Week 1–2 matches ({{ evidence.earlyFavouriteWins }} of {{ evidence.earlyMatches }}).
       </p>
     </SectionCard>
+
+    <SeasonUpsets v-if="season.current" :league="league" :through-week="throughWeek" />
 
     <PlayoffBracket :league="league" :season="Number(seasonNumber(season.id))" :seeds="finalSeeds" />
 

@@ -39,6 +39,16 @@ export interface Season {
   results: SeriesResult[]
 }
 
+/** One of a team's matches, from that team's side. */
+export interface TeamGame {
+  week: number
+  date: string
+  opponent: string
+  /** Null until played. */
+  mapsFor: number | null
+  mapsAgainst: number | null
+}
+
 export interface StandingRow {
   rank: number
   team: string
@@ -52,8 +62,8 @@ export interface StandingRow {
   w21: number
   l12: number
   l02: number
-  /** Last five results, oldest first. */
-  form: ('W' | 'L')[]
+  /** Every match in the selected range, oldest first, including ones not played yet. */
+  games: TeamGame[]
   /** Final rank last season, when there is one. */
   previousRank: number | null
   /** Matches still to play in the selected range. */
@@ -149,7 +159,7 @@ export function standings(season: Season, throughWeek: number | null, previous: 
   const row = (team: string) => {
     let entry = rows.get(team)
     if (!entry) {
-      entry = { team, played: 0, wins: 0, losses: 0, mapsWon: 0, mapsLost: 0, w20: 0, w21: 0, l12: 0, l02: 0, form: [], remaining: 0 }
+      entry = { team, played: 0, wins: 0, losses: 0, mapsWon: 0, mapsLost: 0, w20: 0, w21: 0, l12: 0, l02: 0, games: [], remaining: 0 }
       rows.set(team, entry)
     }
     return entry
@@ -161,8 +171,12 @@ export function standings(season: Season, throughWeek: number | null, previous: 
     if (r.mapsA === null || r.mapsB === null) {
       a.remaining++
       b.remaining++
+      a.games.push({ week: r.week, date: r.date, opponent: r.teamB, mapsFor: null, mapsAgainst: null })
+      b.games.push({ week: r.week, date: r.date, opponent: r.teamA, mapsFor: null, mapsAgainst: null })
       continue
     }
+    a.games.push({ week: r.week, date: r.date, opponent: r.teamB, mapsFor: r.mapsA, mapsAgainst: r.mapsB })
+    b.games.push({ week: r.week, date: r.date, opponent: r.teamA, mapsFor: r.mapsB, mapsAgainst: r.mapsA })
     for (const [me, mine, theirs] of [
       [a, r.mapsA, r.mapsB],
       [b, r.mapsB, r.mapsA],
@@ -180,7 +194,6 @@ export function standings(season: Season, throughWeek: number | null, previous: 
         if (mine === 0) me.l02++
         else me.l12++
       }
-      me.form = [...me.form, won ? ('W' as const) : ('L' as const)].slice(-5)
     }
   }
   const prevRanks = previous ? new Map(standings(previous, null, null).map((r) => [r.team, r.rank])) : null
